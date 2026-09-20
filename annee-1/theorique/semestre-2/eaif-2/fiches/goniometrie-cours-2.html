@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="📐 Goniométrie — Cours 2 : Procédures — Mesure des amplitudes articulaires · F2 + P2 (15%)">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../assets/css/acces.css">
+<script src="../../../../../assets/js/acces.js"></script>
+<title>Goniométrie — Cours 2 · EAIF II</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../../assets/css/modules/eaif-2.css">
+
+<link rel="stylesheet" href="../../../../../assets/css/chrome.css">
+<style id="globalThemeOverride">
+:root { --bg: #0f1117 !important; --card: #1a1d2a !important; --surface: #1a1d2a !important; --border: #2a3050 !important; --text: #e8eaf0 !important; --text-primary: #e8eaf0 !important; --text-secondary: #6a7388 !important; --muted: #9aa3b8 !important; }
+html, body { background: #0f1117 !important; color: #e8eaf0 !important; font-family: 'Source Sans 3', sans-serif !important; }
+.site-header, .sidebar, footer, .qcm-section { display: none !important; }
+.layout { display: block !important; }
+.main-content { max-width: 1100px !important; margin: 0 auto !important; padding: 80px 24px 40px !important; }
+.page-title { font-family: 'Playfair Display', serif !important; font-size: clamp(28px, 4.5vw, 44px) !important; font-weight: 900 !important; line-height: 1.15 !important; margin: 0 0 14px 0 !important; background: linear-gradient(135deg, #ffffff 0%, #ff6b9d 60%, #ff5c6b 100%) !important; -webkit-background-clip: text !important; background-clip: text !important; -webkit-text-fill-color: transparent !important; letter-spacing: -0.5px !important; }
+h2.section, h2 { font-family: 'Playfair Display', serif !important; font-size: clamp(20px, 2.5vw, 26px) !important; font-weight: 700 !important; color: #ff6b9d !important; margin: 28px 0 14px 0 !important; }
+h3.subsection, h3 { font-size: 16px !important; font-weight: 700 !important; color: #ff8fa3 !important; text-transform: uppercase !important; letter-spacing: 1.2px !important; margin: 18px 0 10px 0 !important; }
+h4 { font-size: 14.5px !important; color: #e8eaf0 !important; font-weight: 700 !important; margin: 12px 0 6px 0 !important; }
+p, li { color: #ff8fa3 !important; line-height: 1.7 !important; font-size: 14.5px !important; }
+strong { color: #ff8fa3 !important; }
+.card, .alert { background: #1a1d2a !important; border: 1px solid #2a3050 !important; border-radius: 12px !important; padding: 18px 22px !important; margin-bottom: 14px !important; color: #e8eaf0 !important; box-shadow: 0 2px 12px rgba(0,0,0,0.30) !important; }
+.alert { background: linear-gradient(135deg, rgba(255,107,157,0.10), rgba(255,92,107,0.05)) !important; border-left: 3px solid #ff6b9d !important; }
+.alert-success { background: rgba(255,107,157,0.08) !important; }
+table { width: 100% !important; border-collapse: collapse !important; background: #1a1d2a !important; border: 1px solid #2a3050 !important; border-radius: 10px !important; overflow: hidden !important; margin: 12px 0 !important; font-size: 13.5px !important; }
+th { background: #0f1117 !important; color: #ff8fa3 !important; padding: 10px 14px !important; text-align: left !important; font-size: 11px !important; text-transform: uppercase !important; letter-spacing: 1px !important; font-weight: 700 !important; border-bottom: 1px solid #2a3050 !important; }
+td { padding: 10px 14px !important; border-bottom: 1px solid #2a3050 !important; color: #e8eaf0 !important; }
+tr:hover td { background: rgba(255,107,157,0.04) !important; }
+</style>
+</head>
+<body>
+<a href="../accueil-eaif-2.html" class="back-nav">← EAIF II</a>
+
+<div class="page-toggle"><div class="pt-inner"><a href="../qcm/qcm-goniometrie-cours-2.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+
+<main class="main-content">
+<h1 class="page-title">📐 Goniométrie — Cours 2 : Procédures</h1>
+<p style="color:#9aa3b8; font-size:14px; margin-bottom:24px;">Mesure des amplitudes articulaires · F2 + P2 (15%)</p>
+
+<h3 class="subsection" id="instrument">2.1 Le goniomètre</h3>
+
+<div class="card">
+<h4>Types de goniomètres</h4>
+<ul>
+ <li>Plastique / Métallique</li>
+ <li>Cercle complet (360°) / Demi-cercle (0-180°, plus utilisé et plus facile)</li>
+ <li>Grand / Petit</li>
+ <li>Manuel / Électronique</li>
+ <li>Goniomètre à gravité (inclinomètre)</li>
+ <li>Méthodes alternatives : photographie, radiographie, smartphones, estimation visuelle</li>
+</ul>
+</div>
+
+<div class="card">
+<h4>Composition</h4>
+<ul>
+ <li><strong>Corps</strong> (axe ou pivot)</li>
+ <li><strong>Bras fixe</strong></li>
+ <li><strong>Bras mobile</strong></li>
+</ul>
+<p>Attention à <strong>l'échelle et aux incréments</strong> (5° ou 10° généralement) pour éviter les erreurs de lecture. Identifier la ligne médiane.</p>
+</div>
+
+<div class="alert alert-success">La goniométrie est une méthode <strong>fiable</strong> : les valeurs intra- et inter-observateurs sont reproductibles, cohérentes, et permettent des évaluations universelles.</div>
+
+<h3 class="subsection" id="procedure">2.2 Procédure</h3>
+
+<div class="card">
+<h4>Étapes (ordre)</h4>
+<ol>
+ <li><strong>Expliquer</strong> à l'utilisateur, démontrer si nécessaire</li>
+ <li><strong>Positionnement</strong> (utilisateur, FT, goniomètre) et stabilisation</li>
+ <li><strong>Localiser</strong> les repères anatomiques</li>
+ <li><strong>Aligner</strong> les bras du goniomètre</li>
+ <li><strong>Mobiliser</strong> le segment</li>
+ <li><strong>Enregistrer</strong></li>
+</ol>
+</div>
+
+<div class="card">
+<h4>Positionnement</h4>
+<ul>
+ <li>Position <strong>sûre, détendue, confortable</strong> (réduit la tension des structures)</li>
+ <li>Articulation à <strong>0° de départ</strong></li>
+ <li>Permettre un mouvement <strong>complet et sans entrave</strong></li>
+ <li>L'évaluateur se place près de l'articulation (mécanique corporelle, prévention des douleurs)</li>
+ <li>Position adaptable si nécessaire — mais à <strong>noter dans le dossier</strong></li>
+ <li><strong>Standardiser</strong> : mêmes positions, même moment de la journée, mesures successives</li>
+</ul>
+</div>
+
+<div class="card">
+<h4>Alignement</h4>
+<ul>
+ <li>Bras du goniomètre alignés avec les <strong>points de référence anatomiques</strong></li>
+ <li>Corps du goniomètre aligné avec l'<strong>axe du mouvement</strong></li>
+ <li>Comme l'axe peut bouger, garder le corps proche du <strong>segment proximal</strong></li>
+ <li>Le regard centré pour éviter erreur de mesure (parallaxe)</li>
+</ul>
+</div>
+
+<div class="card">
+<h4>Stabilisation</h4>
+<ul>
+ <li>Stabiliser le <strong>segment proximal</strong> (table d'examen ou kinésithérapeute)</li>
+ <li>Éviter les mouvements combinés et compensations</li>
+ <li>Si stabilisation manuelle complexe : 2e personne</li>
+</ul>
+</div>
+
+<div class="card">
+<h4>Repères anatomiques</h4>
+<ul>
+ <li>Identification par <strong>observation et palpation</strong></li>
+ <li>Bras du goniomètre alignés avec segments proximal/distal</li>
+ <li>Distance bras-segment <strong>faible</strong> pour ne pas fausser</li>
+ <li>Mouvement <strong>passif</strong> ; le bras mobile suit le mouvement</li>
+</ul>
+</div>
+
+<h3 class="subsection" id="enregistrement">2.3 Enregistrement et interprétation</h3>
+
+<div class="card">
+<h4>Informations à consigner</h4>
+<ol>
+ <li>Nom, âge, sexe de l'utilisateur</li>
+ <li>Nom du kinésithérapeute</li>
+ <li>Date et lieu de l'évaluation</li>
+ <li>Type de goniomètre</li>
+ <li>Amplitudes articulaires (côté, mouvement)</li>
+ <li>Informations subjectives (douleur)</li>
+ <li>Informations objectives (spasmes)</li>
+ <li>Modification du positionnement</li>
+ <li>Marquer en <strong>rouge</strong> les amplitudes modifiées</li>
+</ol>
+</div>
+
+<div class="card">
+<h4>Exemples d'enregistrement</h4>
+<table>
+<tr><th>Articulation - Coude</th><th>Droite</th><th>Gauche</th><th>Référence</th></tr>
+<tr><td>Flexion</td><td>50 (Finition vide)</td><td>140</td><td>140°</td></tr>
+<tr><td>Extension</td><td>+5° (Finition dure)</td><td>0</td><td>0°</td></tr>
+</table>
+<p><strong>Légende :</strong> à la flexion du coude droit, douleur dès 30° (END 2/10) atteignant 10/10 à 70°. Goniomètre universel.</p>
+</div>
+
+<div class="card">
+<h4>Interprétation des résultats</h4>
+<ul>
+ <li><strong>Comparaison avec le côté controlatéral</strong> : essentielle, car les valeurs varient selon les individus</li>
+ <li><strong>Comparaison avec les valeurs de référence</strong></li>
+ <li>Travailler jusqu'à atteindre l'amplitude du <strong>membre non blessé</strong></li>
+</ul>
+</div>
+
+<div class="alert">Lorsque c'est justifié, accompagner d'un <strong>diagramme de mouvement</strong> (D = douleur, R = résistance, E = spasme) pour le comportement des symptômes le long de l'amplitude.</div>
+
+<div style="text-align:center; margin:30px auto; max-width:1100px;"><a href="../qcm/qcm-goniometrie-cours-2.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px;">🎯 Faire le QCM correspondant →</a></div>
+
+</main>
+</body>
+</html>

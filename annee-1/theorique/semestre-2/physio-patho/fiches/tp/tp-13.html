@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Physiopathologie des Maladies Obstructives · Fiche de révision complète">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../../assets/css/acces.css">
+<script src="../../../../../../assets/js/acces.js"></script>
+<title>Fiche de Révision – Maladies Obstructives</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../../../assets/css/chrome.css">
+<style>
+ :root {
+ --bg: #0f1117;
+ --surface: #1a1d2a;
+ --surface2: #1a1d2a;
+ --border: #3a4060;
+ --accent-blue: #f472b6;
+ --accent-teal: #ff6b9d;
+ --accent-amber: #ff8fa3;
+ --accent-rose: #ff6b9d;
+ --accent-violet: #f472b6;
+ --text: #e8eaf0;
+ --text-muted: #9aa3b8;
+ --heading: #ffffff;
+ }
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+ body {
+ background: var(--bg);
+ color: var(--text);
+ font-family: 'Source Serif 4', Georgia, serif;
+ font-size: 15px;
+ line-height: 1.75;
+ padding: 0 0 60px;
+ }
+ .hero {
+ background: linear-gradient(135deg, #161922 0%, #0f1117 40%, #ff5c6b 100%);
+ border-bottom: 1px solid var(--border);
+ padding: 60px 40px 50px;
+ text-align: center;
+ position: relative;
+ overflow: hidden;
+ }
+ .hero::before {
+ content: '';
+ position: absolute;
+ width: 600px; height: 600px;
+ border-radius: 50%;
+ background: radial-gradient(circle, rgba(255,107,157,0.07) 0%, transparent 70%);
+ top: -200px; left: 50%; transform: translateX(-50%);
+ pointer-events: none;
+ }
+ .hero-tag {
+ display: inline-block;
+ font-size: 11px;
+ letter-spacing: 3px;
+ text-transform: uppercase;
+ color: var(--accent-teal);
+ border: 1px solid rgba(255,107,157,0.3);
+ padding: 5px 14px;
+ border-radius: 20px;
+ margin-bottom: 20px;
+ animation: fadeUp 0.6s ease 0.1s both;
+ }
+ .hero h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(2rem, 5vw, 3.5rem);
+ font-weight: 900;
+ color: var(--heading);
+ line-height: 1.1;
+ animation: fadeUp 0.6s ease 0.2s both;
+ }
+ .hero h1 span { color: var(--accent-blue); }
+ .hero-sub {
+ margin-top: 14px;
+ color: var(--text-muted);
+ font-size: 13px;
+ font-style: italic;
+ animation: fadeUp 0.6s ease 0.35s both;
+ }
+ .nav-pills {
+ display: flex;
+ justify-content: center;
+ flex-wrap: wrap;
+ gap: 10px;
+ padding: 20px 24px;
+ background: var(--surface);
+ border-bottom: 1px solid var(--border);
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ }
+ .nav-pills a {
+ text-decoration: none;
+ font-size: 12px;
+ letter-spacing: 1px;
+ text-transform: uppercase;
+ padding: 6px 16px;
+ border-radius: 20px;
+ border: 1px solid var(--border);
+ color: var(--text-muted);
+ transition: all 0.25s;
+ }
+ .nav-pills a:hover { border-color: var(--accent-blue); color: var(--accent-blue); background: rgba(255,107,157,0.06); }
+ .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+ .section-header {
+ display: flex;
+ align-items: center;
+ gap: 16px;
+ padding: 50px 0 24px;
+ }
+ .section-icon {
+ width: 46px; height: 46px;
+ border-radius: 12px;
+ display: flex; align-items: center; justify-content: center;
+ font-size: 20px;
+ flex-shrink: 0;
+ }
+ .section-header h2 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.8rem;
+ font-weight: 700;
+ color: var(--heading);
+ }
+ .section-header p { color: var(--text-muted); font-size: 13px; margin-top: 2px; font-style: italic; }
+ .card-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+ gap: 16px;
+ margin-bottom: 12px;
+ }
+ .card {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ border-radius: 14px;
+ padding: 22px 22px 18px;
+ transition: transform 0.2s, border-color 0.2s;
+ }
+ .card:hover { transform: translateY(-2px); border-color: rgba(255,107,157,0.25); }
+ .card-title {
+ font-family: 'Playfair Display', serif;
+ font-size: 1rem;
+ font-weight: 700;
+ color: var(--heading);
+ margin-bottom: 10px;
+ display: flex;
+ align-items: center;
+ gap: 8px;
+ }
+ .dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; }
+ .card ul { list-style: none; }
+ .card ul li {
+ padding: 4px 0 4px 14px;
+ position: relative;
+ font-size: 14px;
+ color: var(--text);
+ border-bottom: 1px solid rgba(255,255,255,0.04);
+ }
+ .card ul li:last-child { border-bottom: none; }
+ .card ul li::before { content: '›'; position: absolute; left: 0; color: var(--text-muted); }
+ .highlight { color: var(--accent-amber); font-weight: 600; }
+ .highlight-blue { color: var(--accent-blue); font-weight: 600; }
+ .highlight-teal { color: var(--accent-teal); font-weight: 600; }
+ .highlight-rose { color: var(--accent-rose); font-weight: 600; }
+ .highlight-violet { color: var(--accent-violet); font-weight: 600; }
+ .highlight-amber { color: var(--accent-amber); font-weight: 600; }
+ .card-wide {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ border-radius: 14px;
+ padding: 24px;
+ margin-bottom: 16px;
+ }
+ .card-wide .card-title { margin-bottom: 14px; }
+ .compare-table { width: 100%; border-collapse: collapse; font-size: 13.5px; margin-bottom: 16px; }
+ .compare-table th {
+ font-family: 'Playfair Display', serif;
+ font-weight: 700;
+ padding: 12px 16px;
+ background: var(--surface2);
+ color: var(--heading);
+ text-align: left;
+ border-bottom: 2px solid var(--border);
+ }
+ .compare-table td { padding: 10px 16px; border-bottom: 1px solid var(--border); vertical-align: top; }
+ .compare-table tr:hover td { background: rgba(255,255,255,0.02); }
+ .compare-table .label { color: var(--text-muted); font-style: italic; font-size: 12px; }
+ .gold-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 16px; }
+ .gold-card { border-radius: 12px; padding: 18px 16px; text-align: center; }
+ .gold-card .level { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 900; margin-bottom: 4px; }
+ .gold-card .severity { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+ .gold-card .value { font-size: 13px; font-weight: 600; }
+ .gold1 { background: rgba(255,107,157,0.12); border: 1px solid rgba(255,107,157,0.3); color: var(--accent-teal); }
+ .gold2 { background: rgba(255,107,157,0.12); border: 1px solid rgba(255,107,157,0.3); color: var(--accent-blue); }
+ .gold3 { background: rgba(255,107,157,0.12); border: 1px solid rgba(255,107,157,0.3); color: var(--accent-amber); }
+ .gold4 { background: rgba(255,107,157,0.12); border: 1px solid rgba(255,107,157,0.3); color: var(--accent-rose); }
+ .flow { display: flex; align-items: center; flex-wrap: wrap; gap: 0; margin: 16px 0; }
+ .flow-step {
+ background: var(--surface2);
+ border: 1px solid var(--border);
+ border-radius: 10px;
+ padding: 12px 16px;
+ font-size: 13px;
+ text-align: center;
+ flex: 1;
+ min-width: 120px;
+ }
+ .flow-arrow { color: var(--text-muted); font-size: 18px; padding: 0 6px; flex-shrink: 0; }
+ .mnemonic {
+ background: linear-gradient(135deg, rgba(255,107,157,0.1), rgba(255,107,157,0.07));
+ border: 1px solid rgba(255,107,157,0.3);
+ border-radius: 14px;
+ padding: 20px 24px;
+ margin-bottom: 16px;
+ }
+ .mnemonic-title { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent-violet); margin-bottom: 10px; font-family: 'Playfair Display', serif; }
+ .mnemonic-grid { display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; align-items: baseline; }
+ .mnemonic-letter { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 900; color: var(--accent-violet); line-height: 1; }
+ .mnemonic-word { font-size: 14px; padding: 2px 0; }
+ .key-point {
+ background: rgba(255,107,157,0.08);
+ border-left: 3px solid var(--accent-amber);
+ border-radius: 0 10px 10px 0;
+ padding: 12px 18px;
+ margin: 12px 0;
+ font-size: 14px;
+ font-style: italic;
+ }
+ .key-point strong { color: var(--accent-amber); font-style: normal; }
+ .divider { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+ .tag { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 11px; font-weight: 600; letter-spacing: 0.5px; margin-left: 6px; vertical-align: middle; }
+ .tag-blue { background: rgba(255,107,157,0.15); color: var(--accent-blue); }
+ .tag-teal { background: rgba(255,107,157,0.15); color: var(--accent-teal); }
+ .tag-rose { background: rgba(255,107,157,0.15); color: var(--accent-rose); }
+ .footer { text-align: center; color: var(--text-muted); font-size: 12px; padding: 40px 24px 20px; border-top: 1px solid var(--border); margin-top: 60px; font-style: italic; }
+ @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+ @media (max-width: 700px) {
+ .gold-grid { grid-template-columns: repeat(2, 1fr); }
+ .flow-step { min-width: 90px; font-size: 12px; }
+ .hero { padding: 40px 20px 36px; }
+ }
+</style>
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/physio-patho.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-theme.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
+</head>
+<body>
+<a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
+<div class="page-toggle"><div class="pt-inner"><a href="../../qcm/tp/tp-13.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<div class="hero">
+ <div class="hero-tag">Licence en Physiothérapie · 1re Année · S2</div>
+ <h1>Physiopathologie des<br><span>Maladies Obstructives</span></h1>
+ <p class="hero-sub">Fiche de révision complète</p>
+</div>
+
+<nav class="nav-pills">
+ <a href="#intro">Vue générale</a>
+ <a href="#bpco">BPCO</a>
+ <a href="#gold">Classification GOLD</a>
+ <a href="#traitement">Traitement BPCO</a>
+ <a href="#asthme">Asthme</a>
+ <a href="#bronchiectasie">Bronchiectasie</a>
+ <a href="#comparaison">Comparaison</a>
+</nav>
+
+<div class="container">
+
+ <!-- VUE GÉNÉRALE -->
+ <div id="intro">
+ <div class="section-header">
+ <div class="section-icon" style="background:rgba(79,195,247,0.12);border:1px solid rgba(79,195,247,0.25);">🫁</div>
+ <div>
+ <h2>Vue générale</h2>
+ <p>Définition, caractéristiques communes, épidémiologie</p>
+ </div>
+ </div>
+ <div class="card-grid">
+ <div class="card">
+ <div class="card-title"><span class="dot" style="background:var(--accent-blue)"></span>Définition commune</div>
+ <ul>
+ <li><span class="highlight-blue">↑ résistance</span> au flux aérien (n'importe quel niveau des voies respiratoires)</li>
+ <li>Contraste avec maladies <span class="highlight">restrictives</span> (peuvent se superposer)</li>
+ <li>Diagnostic : <span class="highlight-teal">VEMS/CVF &lt; 0,7</span> à la spirométrie</li>
+ <li>Obstruction à des degrés divers selon la pathologie</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="dot" style="background:var(--accent-teal)"></span>Trois grandes maladies</div>
+ <ul>
+ <li><span class="highlight-blue">BPCO</span> — bronchite chronique + emphysème <span class="tag tag-rose">progressive</span></li>
+ <li><span class="highlight-teal">Asthme</span> — inflammation chronique <span class="tag tag-teal">réversible</span></li>
+ <li><span class="highlight-violet">Bronchiectasie</span> — dilatation irréversible des bronches</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="dot" style="background:var(--accent-amber)"></span>Épidémiologie BPCO</div>
+ <ul>
+ <li>Touche <span class="highlight">10,3 %</span> de la population mondiale</li>
+ <li>Prévision : <span class="highlight">23 %</span> d'ici 2050</li>
+ <li>Plus fréquente : fumeurs, hommes, &gt; 40 ans (↑ après 60 ans)</li>
+ <li>UE : 6 % des dépenses santé, dont 56 % liées à la BPCO</li>
+ <li>Souvent <span class="highlight-rose">subclinique</span>, mal diagnostiquée</li>
+ </ul>
+ </div>
+ </div>
+ <div class="key-point">
+ <strong>À retenir :</strong> La spirométrie (VEMS/CVF &lt; 0,7) est l'outil clé de confirmation de l'obstruction. Les maladies obstructives sont <em>souvent sous-diagnostiquées</em> car longtemps asymptomatiques.
+ </div>
+ </div>
+
+ <hr class="divider">
+
+ <!-- BPCO -->
+ <div id="bpco">
+ <div class="section-header">
+ <div class="section-icon" style="background:rgba(255,183,77,0.12);border:1px solid rgba(255,183,77,0.25);">🚬</div>
+ <div>
+ <h2>BPCO</h2>
+ <p>Broncho-Pneumopathie Chronique Obstructive</p>
+ </div>
+ </div>
+
+ <div class="card-wide">
+ <div class="card-title"><span class="dot" style="background:var(--accent-amber)"></span>Définition GOLD 2024-2025</div>
+ <p style="font-size:14px;">Affection pulmonaire <span class="highlight">hétérogène</span> caractérisée par des symptômes respiratoires (dyspnée, toux, production de sécrétions, exacerbation) dus à des anomalies des <span class="highlight-blue">voies aériennes</span> (bronchite, bronchiolite) et/ou des <span class="highlight-teal">alvéoles</span> (emphysème) provoquant une obstruction <em>progressive et persistante</em> du flux.</p>
+ </div>
+
+ <div class="card-grid">
+ <div class="card">
+ <div class="card-title"><span class="dot" style="background:var(--accent-rose)"></span>Étiologie</div>
+ <ul>
+ <li>Interaction <span class="highlight">génétique × environnement</span> tout au long de la vie</li>
+ <li>Principal facteur : <span class="highlight-rose">fumée de tabac</span>, particules toxiques, gaz (cuisinières à bois, pollution)</li>
+ <li>Facteurs génétiques : mutations <span class="highlight-blue">SERPINA1</span> → déficit en alpha-1-antitrypsine</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="dot" style="background:var(--accent-blue)"></span>Physiopathologie</div>
+ <ul>
+ <li><span class="highlight-blue">Obstruction</span> des voies respiratoires</li>
+ <li><span class="highlight-blue">Piégeage d'air</span></li>
+ <li><span class="highlight-blue">Hyperinflation</span></li>
+ <li>Anomalies des <span class="highlight-blue">échanges gazeux</span></li>
+ <li>Modifications musculaires systémiques</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="dot" style="background:var(--accent-teal)"></span>Présentation clinique</div>
+ <ul>
+ <li>Dyspnée progressive</li>
+ <li>Sifflements auscultatoires</li>
+ <li>Hypomobilité thoracique</li>
+ <li>Fatigue · Limitation des AVD</li>
+ <li>Toux sèche ou productive</li>
+ <li>Exacerbations · Comorbidités</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="card-wide" style="margin-top:4px;">
+ <div class="card-title"><span class="dot" style="background:var(--accent-violet)"></span>Pathogenèse — Mécanismes clés</div>
+ <div class="flow">
+ <div class="flow-step"><strong style="color:var(--accent-amber)">Tabac / pollution</strong><br>+ prédisposition génétique</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-step" style="border-color:rgba(156,143,230,0.3)">Stress oxydatif<br>Apoptose · Sénescence</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-step" style="border-color:rgba(240,98,146,0.3)">Cellules inflammatoires<br>Médiateurs libérés</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-step" style="border-color:rgba(79,195,247,0.3)">Déséquilibre<br>protéase / antiprotéase</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-step" style="border-color:rgba(240,98,146,0.4);background:rgba(240,98,146,0.08)"><strong style="color:var(--accent-rose)">Destruction<br>paroi alvéolaire</strong></div>
+ </div>
+ <div style="margin-top:16px;">
+ <div class="card-title" style="margin-bottom:10px;"><span class="dot" style="background:var(--accent-teal)"></span>Causes des modifications musculaires</div>
+ <div style="display:flex;flex-wrap:wrap;gap:10px;">
+ <span style="background:rgba(79,195,247,0.1);border:1px solid rgba(79,195,247,0.2);border-radius:8px;padding:6px 14px;font-size:13px;">Hypoxémie</span>
+ <span style="background:rgba(240,98,146,0.1);border:1px solid rgba(240,98,146,0.2);border-radius:8px;padding:6px 14px;font-size:13px;">Processus inflammatoire</span>
+ <span style="background:rgba(255,183,77,0.1);border:1px solid rgba(255,183,77,0.2);border-radius:8px;padding:6px 14px;font-size:13px;">Âge</span>
+ <span style="background:rgba(156,143,230,0.1);border:1px solid rgba(156,143,230,0.2);border-radius:8px;padding:6px 14px;font-size:13px;">Stress oxydatif</span>
+ <span style="background:rgba(38,198,160,0.15);border:1px solid rgba(38,198,160,0.35);border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;color:var(--accent-teal)">⚡ Inactivité physique</span>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <hr class="divider">
+
+ <!-- CLASSIFICATION GOLD -->
+ <div id="gold">
+ <div class="section-header">
+ <div class="section-icon" style="background:rgba(38,198,160,0.12);border:1px solid rgba(38,198,160,0.25);">📊</div>
+ <div>
+ <h2>Classification GOLD</h2>
+ <p>Degrés de sévérité de l'obstruction — VEMS post-bronchodilatateur</p>
+ </div>
+ </div>
+
+ <div class="gold-grid">
+ <div class="gold-card gold1">
+ <div class="level">GOLD 1</div>
+ <div class="severity">Légère</div>
+ <div class="value">VEMS ≥ 80 % prédit</div>
+ </div>
+ <div class="gold-card gold2">
+ <div class="level">GOLD 2</div>
+ <div class="severity">Modérée</div>
+ <div class="value">50 % ≤ VEMS &lt; 80 %</div>
+ </div>
+ <div class="gold-card gold3">
+ <div class="level">GOLD 3</div>
+ <div class="severity">Sévère</div>
+ <div class="value">30 % ≤ VEMS &lt; 50 %</div>
+ </div>
+ <div class="gold-card gold4">
+ <div class="level">GOLD 4</div>
+ <div class="severity">Très sévère</div>
+ <div class="value">VEMS &lt; 30 % prédit</div>
+ </div>
+ </div>
+
+ <div class="key-point">
+ <strong>Condition :</strong> Tous les grades GOLD s'appliquent aux patients avec VEMS/CVF &lt; 0,7. La pré-BPCO (ratio préservé) peut présenter un VEMS bas, un piégeage gazeux ou une hyperinflation <em>sans</em> remplir ce critère.
+ </div>
+
+ <div class="card-wide">
+ <div class="card-title"><span class="dot" style="background:var(--accent-blue)"></span>Groupes ABE — Évaluation initiale (GOLD 2024)</div>
+ <table class="compare-table">
+ <tr>
+ <th>Groupe</th>
+ <th>Exacerbations / an</th>
+ <th>Symptômes</th>
+ <th>Traitement pharmacologique initial</th>
+ </tr>
+ <tr>
+ <td><strong style="color:var(--accent-teal)">A</strong></td>
+ <td>0-1 modérée (sans hospit.)</td>
+ <td class="label">mMRC 0-1 / CAT &lt; 10</td>
+ <td>Un bronchodilatateur</td>
+ </tr>
+ <tr>
+ <td><strong style="color:var(--accent-blue)">B</strong></td>
+ <td>0-1 modérée (sans hospit.)</td>
+ <td class="label">mMRC ≥ 2 / CAT ≥ 10</td>
+ <td>LABA + LAMA</td>
+ </tr>
+ <tr>
+ <td><strong style="color:var(--accent-rose)">E</strong></td>
+ <td>≥ 2 modérées ou ≥ 1 hospit.</td>
+ <td class="label">Tous niveaux</td>
+ <td>LABA + LAMA (± ICS si éosinophiles ≥ 300/µL)</td>
+ </tr>
+ </table>
+ </div>
+ </div>
+
+ <hr class="divider">
+
+ <!-- TRAITEMENT BPCO -->
+ <div id="traitement">
+ <div class="section-header">
+ <div class="section-icon" style="background:rgba(156,143,230,0.12);border:1px solid rgba(156,143,230,0.25);">💊</div>
+ <div>
+ <h2>Traitement BPCO</h2>
+ <p>Approche pharmacologique et non pharmacologique</p>
+ </div>
+ </div>
+
+ <div class="card-grid">
+ <div class="card">
+ <div class="card-title"><span class="dot" style="background:var(--accent-rose)"></span>Non pharmacologique (groupes A)</div>
+ <ul>
+ <li><span class="highlight-rose">Arrêt du tabac</span> — priorité absolue</li>
+ <li>Activité physique recommandée</li>
+ <li>Vaccinations (grippe, pneumocoque, COVID, zona, coqueluche, VRS)</li>
+ <li>Éducation à l'autogestion (plan d'action écrit)</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="dot" style="background:var(--accent-blue)"></span>Non pharmacologique (groupes B et E)</div>
+ <ul>
+ <li>Arrêt du tabac</li>
+ <li><span class="highlight-blue">Réhabilitation pulmonaire</span> (essentielle)</li>
+ <li>Activité physique recommandée</li>
+ <li>Vaccinations</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="dot" style="background:var(--accent-amber)"></span>Méthode 5A (aide au sevrage tabagique)</div>
+ <ul>
+ <li><span class="highlight">Ask</span> — identifier tous les fumeurs systématiquement</li>
+ <li><span class="highlight">Advise</span> — conseiller fortement d'arrêter</li>
+ <li><span class="highlight">Assess</span> — évaluer la motivation / volonté</li>
+ <li><span class="highlight">Assist</span> — soutien + plan + pharmacothérapie</li>
+ <li><span class="highlight">Arrange</span> — planifier le suivi (présentiel ou téléphone)</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="card-wide" style="margin-top:4px;">
+ <div class="card-title"><span class="dot" style="background:var(--accent-teal)"></span>Preuves de réduction de mortalité (RCT)</div>
+ <table class="compare-table">
+ <tr>
+ <th>Thérapie</th>
+ <th>RCT</th>
+ <th>Profil patient</th>
+ </tr>
+ <tr>
+ <td><strong>LABA + LAMA + ICS</strong></td>
+ <td>Oui (IMPACT, ETHOS)</td>
+ <td>Symptomatiques, exacerbations fréquentes/sévères</td>
+ </tr>
+ <tr>
+ <td>Arrêt du tabac</td>
+ <td>Oui</td>
+ <td>Asymptomatiques à légèrement symptomatiques</td>
+ </tr>
+ <tr>
+ <td>Réhabilitation pulmonaire</td>
+ <td>Oui*</td>
+ <td>Hospitalisés pour exacerbation (≤ 4 sem. après sortie)</td>
+ </tr>
+ <tr>
+ <td>Oxygénothérapie longue durée (LTOT)</td>
+ <td>Oui</td>
+ <td>PaO₂ ≤ 55 mmHg ou cor pulmonale / polyglobulie</td>
+ </tr>
+ <tr>
+ <td>VNI (VPPNI)</td>
+ <td>Oui</td>
+ <td>BPCO stable avec hypercapnie marquée</td>
+ </tr>
+ <tr>
+ <td>Chirurgie réduction volumique</td>
+ <td>Oui</td>
+ <td>Emphysème lobe supérieur + faible capacité d'exercice</td>
+ </tr>
+ </table>
+ <p style="font-size:11px;color:var(--text-muted);margin-top:6px;">* Résultats non concluants selon populations. ICS : corticoïde inhalé ; LABA : β₂-agoniste longue durée ; LAMA : anticholinergique longue durée</p>
+ </div>
+
+ <div class="card-wide">
+ <div class="card-title"><span class="dot" style="background:var(--accent-violet)"></span>Cycle de gestion continu (GOLD)</div>
+ <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:12px;text-align:center;">
+ <div style="background:var(--surface2);border-radius:10px;padding:16px;">
+ <div style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--accent-violet);margin-bottom:8px;">Review</div>
+ <p style="font-size:13px;color:var(--text-muted);">Symptômes (dyspnée, CAT/mMRC), exacerbations, statut tabagique, facteurs de risque</p>
+ </div>
+ <div style="background:var(--surface2);border-radius:10px;padding:16px;">
+ <div style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--accent-blue);margin-bottom:8px;">Assess</div>
+ <p style="font-size:13px;color:var(--text-muted);">Technique inhalateur, adhérence, approches non-pharmaco (réhabilitation, éducation)</p>
+ </div>
+ <div style="background:var(--surface2);border-radius:10px;padding:16px;">
+ <div style="font-family:'Playfair Display',serif;font-size:1.1rem;color:var(--accent-teal);margin-bottom:8px;">Adjust</div>
+ <p style="font-size:13px;color:var(--text-muted);">Escalade / désescalade, changement molécule ou dispositif, spirométrie ≥ 1/an</p>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <hr class="divider">
+
+ <!-- ASTHME -->
+ <div id="asthme">
+ <div class="section-header">
+ <div class="section-icon" style="background:rgba(240,98,146,0.12);border:1px solid rgba(240,98,146,0.25);">💨</div>
+ <div>
+ <h2>Asthme bronchique</h2>
+ <p>Maladie inflammatoire chronique réversible des voies respiratoires</p>
+ </div>
+ </div>
+
+ <div class="card-wide">
+ <div class="card-title"><span class="dot" style="background:var(--accent-rose)"></span>Définition & Caractéristiques fondamentales</div>
+ <p style="font-size:14px;margin-bottom:12px;">L'asthme est une maladie <span class="highlight-rose">hétérogène</span> caractérisée par une <span class="highlight">inflammation chronique</span> des voies respiratoires et une obstruction du flux expiratoire (sifflements, modification des temps inspiro-expiratoires, hypomobilité thoracique, toux). L'obstruction est <span class="highlight-teal">partiellement ou totalement réversible</span> — spontanément ou par traitement.</p>
+ <div style="display:flex;flex-wrap:wrap;gap:10px;">
+ <span style="background:rgba(240,98,146,0.1);border:1px solid rgba(240,98,146,0.25);border-radius:8px;padding:7px 14px;font-size:13px;"><strong style="color:var(--accent-rose)">Hétérogène</strong> — phénotypes multiples</span>
+ <span style="background:rgba(240,98,146,0.1);border:1px solid rgba(240,98,146,0.25);border-radius:8px;padding:7px 14px;font-size:13px;"><strong style="color:var(--accent-rose)">Inflammation chronique</strong> des voies aériennes</span>
+ <span style="background:rgba(240,98,146,0.1);border:1px solid rgba(240,98,146,0.25);border-radius:8px;padding:7px 14px;font-size:13px;"><strong style="color:var(--accent-rose)">Symptômes variables</strong> au fil du temps</span>
+ <span style="background:rgba(240,98,146,0.1);border:1px solid rgba(240,98,146,0.25);border-radius:8px;padding:7px 14px;font-size:13px;"><strong style="color:var(--accent-rose)">Limitation variable</strong> du flux expiratoire</span>
+ </div>
+ </div>
+
+ <div class="card-grid">
+ <div class="card">
+ <div class="card-title"><span class="dot" style="background:var(--accent-amber)"></span>Facteurs de risque</div>
+ <ul>
+ <li>Prédisposition génétique</li>
+ <li>Âge (surtout les jeunes)</li>
+ <li>Rhinite et eczéma associés</li>
+ <li>Santé mentale</li>
+ <li>Facteurs environnementaux</li>
+ <li>Infections virales</li>
+ <li>Conditions socio-économiques</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="dot" style="background:var(--accent-rose)"></span>Facteurs déclenchants</div>
+ <ul>
+ <li>Allergènes (acariens, pollen, animaux…)</li>
+ <li>Type de profession / d'occupation</li>
+ <li>Tabagisme · Pollution atmosphérique</li>
+ <li>Infections (virales principalement)</li>
+ <li>Médicaments (AINS, bêtabloquants)</li>
+ <li><span class="highlight-rose">Exercice physique · Air froid · Agents toxiques</span></li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="dot" style="background:var(--accent-teal)"></span>Symptômes</div>
+ <ul>
+ <li>Dyspnée / difficulté à respirer</li>
+ <li>Sensation de serrement thoracique</li>
+ <li>Respiration sifflante</li>
+ <li>Toux (avec ou sans mucus)</li>
+ <li>Crises de fréquence et durée variables</li>
+ <li><span class="highlight-teal">Fonction pulmonaire normale</span> entre les crises</li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- Pathogenèse asthme -->
+ <div class="card-wide" style="margin-top:12px;">
+ <div class="card-title"><span class="dot" style="background:var(--accent-violet)"></span>Pathogenèse — Cascade inflammatoire</div>
+ <div class="flow" style="margin-bottom:18px;">
+ <div class="flow-step">Allergène / stimulus</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-step" style="border-color:rgba(156,143,230,0.3)">Cellule Th2<br>IgE · IL-4 · IL-5</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-step" style="border-color:rgba(240,98,146,0.3)">Mastocytes activés<br>Éosinophiles recrutés</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-step" style="border-color:rgba(240,98,146,0.4);background:rgba(240,98,146,0.08)"><strong style="color:var(--accent-rose)">Phase immédiate</strong><br>(min) Bronchoconstriction</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-step" style="border-color:rgba(255,183,77,0.4);background:rgba(255,183,77,0.08)"><strong style="color:var(--accent-amber)">Phase tardive</strong><br>(heures) Infiltration + remodelage</div>
+ </div>
+
+ <div class="card-title" style="margin-bottom:10px;"><span class="dot" style="background:var(--accent-blue)"></span>5 mécanismes d'obstruction lors d'une crise</div>
+ <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:10px;">
+ <div style="background:var(--surface2);border-radius:10px;padding:12px;font-size:13px;"><strong style="color:var(--accent-blue)">1.</strong> Spasme du muscle lisse (bronchoconstriction)</div>
+ <div style="background:var(--surface2);border-radius:10px;padding:12px;font-size:13px;"><strong style="color:var(--accent-blue)">2.</strong> Œdème de la muqueuse bronchique</div>
+ <div style="background:var(--surface2);border-radius:10px;padding:12px;font-size:13px;"><strong style="color:var(--accent-blue)">3.</strong> Hypersécrétion de mucus épais</div>
+ <div style="background:var(--surface2);border-radius:10px;padding:12px;font-size:13px;"><strong style="color:var(--accent-blue)">4.</strong> Infiltration cellulaire des parois</div>
+ <div style="background:var(--surface2);border-radius:10px;padding:12px;font-size:13px;"><strong style="color:var(--accent-blue)">5.</strong> Lésion et desquamation épithéliale</div>
+ </div>
+ </div>
+
+ <!-- Conséquences physiopathologiques -->
+ <div class="card-grid" style="margin-top:12px;">
+ <div class="card">
+ <div class="card-title"><span class="dot" style="background:var(--accent-amber)"></span>L'obstruction provoque…</div>
+ <ul>
+ <li>↑ pression alvéolaire à l'expiration</li>
+ <li>Recours aux muscles expiratoires accessoires</li>
+ <li>↑ pression péri-bronchique</li>
+ <li>Fermeture voies aériennes expiratoires</li>
+ <li>→ <span class="highlight-amber">Rétention gazeuse → Insufflation</span></li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="dot" style="background:var(--accent-rose)"></span>L'insufflation provoque…</div>
+ <ul>
+ <li>↓ débits expiratoires</li>
+ <li>↑ temps expiratoire</li>
+ <li>↑ volume résiduel</li>
+ <li>↓ capacité vitale</li>
+ <li>Asynchronisme ventilatoire alvéolaire</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="dot" style="background:var(--accent-blue)"></span>Impact gazométrique</div>
+ <ul>
+ <li><span class="highlight-teal">Asthme modéré</span> → Hypoxémie + hypocapnie → <em>Alcalose respiratoire</em></li>
+ <li><span class="highlight-rose">Asthme sévère</span> → Hypercapnie → <em>Acidose respiratoire</em></li>
+ <li>Rapport V/Q perturbé → Hypoxémie</li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- Classification + stades crise -->
+ <div class="card-wide" style="margin-top:12px;">
+ <div class="card-title"><span class="dot" style="background:var(--accent-teal)"></span>Classification par gravité</div>
+ <table class="compare-table">
+ <tr>
+ <th>Critère</th>
+ <th style="color:var(--accent-teal)">Intermittent</th>
+ <th style="color:var(--accent-blue)">Persistant léger</th>
+ <th style="color:var(--accent-amber)">Persistant modéré</th>
+ <th style="color:var(--accent-rose)">Persistant grave</th>
+ </tr>
+ <tr>
+ <td class="label">Symptômes</td>
+ <td>≤ 1 fois/sem.</td>
+ <td>≥ 1/sem., &lt; 1/j</td>
+ <td>Quotidiens discontinus</td>
+ <td>Quotidiens continus</td>
+ </tr>
+ <tr>
+ <td class="label">Activités</td>
+ <td>Normales</td>
+ <td>Limitées lors d'efforts intenses</td>
+ <td>Perturbées (exercice modéré)</td>
+ <td>Limitées (exercice léger / marche)</td>
+ </tr>
+ <tr>
+ <td class="label">Sympt. nocturnes</td>
+ <td>≤ 2 fois/mois</td>
+ <td>&gt; 2/mois ≤ 1/sem.</td>
+ <td>&gt; 1 fois/sem.</td>
+ <td>&gt; 2 fois/nuit</td>
+ </tr>
+ <tr>
+ <td class="label">Bronchodilatateur</td>
+ <td>≤ 1 fois/sem.</td>
+ <td>≤ 2 fois/sem.</td>
+ <td>&gt; 2/sem. &lt; 2/j</td>
+ <td>≥ 2 fois/jour</td>
+ </tr>
+ </table>
+ </div>
+
+ <div class="card-grid" style="margin-top:4px;">
+ <div class="card">
+ <div class="card-title"><span class="dot" style="background:var(--accent-rose)"></span>Stades de la crise asthmatique</div>
+ <ul>
+ <li><span class="highlight-teal">Crise simple</span> : anxiété, cyanose modérée, tachypnée, sifflements, ↑ temps expiratoire, hyperinsufflation</li>
+ <li><span class="highlight-amber">État de mal asthmatique</span> : dyspnée quasi ininterrompue, évaluer au repos et gazométrie</li>
+ <li><span class="highlight-rose">Mal asthmatique sévère</span> : confusion, dyspnée phonatoire, résistance au traitement → risque d'insuffisance respiratoire mortelle</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="dot" style="background:var(--accent-amber)"></span>Facteurs de risque de décès par asthme</div>
+ <ul>
+ <li>ATCD de crises graves soudaines</li>
+ <li>Hospit. en soins intensifs / ventilation mécanique</li>
+ <li>Usage excessif de β₂-agonistes courts</li>
+ <li>Absence de corticoïdes inhalés préventifs</li>
+ <li>Comorbidités (CV, BPCO…)</li>
+ <li>Niveau socio-économique bas · Âge ≥ 65 ans</li>
+ <li>Absence de suivi médical régulier</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="dot" style="background:var(--accent-teal)"></span>Traitement</div>
+ <ul>
+ <li><span class="highlight-teal">Anti-inflammatoire</span> : corticoïdes inhalés (de base) ou systémiques (crise)</li>
+ <li><span class="highlight-blue">Bronchodilatation</span> : β₂-agonistes (courte/longue durée), anticholinergiques</li>
+ <li>Immunothérapie · Éducation patient/famille</li>
+ <li>Non médicamenteux : <em>kiné, sport, nutrition, soutien psychosocial</em></li>
+ </ul>
+ </div>
+ </div>
+ </div>
+
+ <hr class="divider">
+
+ <!-- BRONCHIECTASIE -->
+ <div id="bronchiectasie">
+ <div class="section-header">
+ <div class="section-icon" style="background:rgba(156,143,230,0.12);border:1px solid rgba(156,143,230,0.25);">🔬</div>
+ <div>
+ <h2>Bronchiectasie</h2>
+ <p>Dilatation anormale et irréversible des bronches</p>
+ </div>
+ </div>
+
+ <div class="card-grid">
+ <div class="card">
+ <div class="card-title"><span class="dot" style="background:var(--accent-violet)"></span>Définition</div>
+ <ul>
+ <li>Dilatation <span class="highlight-violet">anormale et irréversible</span> des bronches</li>
+ <li>Causée par la destruction des composants <span class="highlight">élastiques et musculaires</span> des parois bronchiques</li>
+ <li>Résultat final d'une <span class="highlight-rose">inflammation chronique persistante</span></li>
+ <li>Généralement associée à des <span class="highlight-amber">sécrétions purulentes</span></li>
+ <li>La plupart des cas : <span class="highlight-rose">cause inconnue</span> (idiopathique)</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="dot" style="background:var(--accent-rose)"></span>Modifications anatomiques</div>
+ <ul>
+ <li>Perte des cils bronchiques</li>
+ <li>↑ production de mucus</li>
+ <li>Destruction de la paroi bronchique</li>
+ <li>Dilatation permanente de la lumière bronchique</li>
+ <li>Obstruction par accumulation de sécrétions</li>
+ <li>Formes : cylindrique, variqueuse, kystique</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="dot" style="background:var(--accent-amber)"></span>Complications et prise en charge kiné</div>
+ <ul>
+ <li>Infections récurrentes</li>
+ <li>Hémoptysie</li>
+ <li>Insuffisance respiratoire</li>
+ <li><span class="highlight-teal">Kiné :</span> désencombrement bronchique +++ (drainage postural, techniques d'expiration forcée, PEP)</li>
+ <li>Antibiotiques · Bronchodilatateurs</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+
+ <hr class="divider">
+
+ <!-- COMPARAISON -->
+ <div id="comparaison">
+ <div class="section-header">
+ <div class="section-icon" style="background:rgba(255,183,77,0.12);border:1px solid rgba(255,183,77,0.25);">⚖️</div>
+ <div>
+ <h2>Tableau comparatif</h2>
+ <p>BPCO vs Asthme vs Bronchiectasie — synthèse</p>
+ </div>
+ </div>
+
+ <div class="card-wide">
+ <table class="compare-table">
+ <tr>
+ <th>Critère</th>
+ <th style="color:var(--accent-amber)">BPCO</th>
+ <th style="color:var(--accent-rose)">Asthme</th>
+ <th style="color:var(--accent-violet)">Bronchiectasie</th>
+ </tr>
+ <tr>
+ <td class="label">Type d'obstruction</td>
+ <td>Progressive, permanente</td>
+ <td>Réversible (traitement ou spontanée)</td>
+ <td>Liée à la dilatation irréversible</td>
+ </tr>
+ <tr>
+ <td class="label">Cause principale</td>
+ <td>Tabac (80 %) + génétique (alpha-1-antitrypsine)</td>
+ <td>Inflammation allergique / non allergique</td>
+ <td>Souvent inconnue ; inflammation chronique</td>
+ </tr>
+ <tr>
+ <td class="label">Âge de début</td>
+ <td>&gt; 40 ans (surtout &gt; 60 ans)</td>
+ <td>Souvent enfance / adulte jeune</td>
+ <td>Variable</td>
+ </tr>
+ <tr>
+ <td class="label">Spirométrie</td>
+ <td>VEMS/CVF &lt; 0,7 (irréversible)</td>
+ <td>Réversibilité ≥ 12 % et 200 mL après β₂</td>
+ <td>Variable selon l'extension</td>
+ </tr>
+ <tr>
+ <td class="label">Sécrétions</td>
+ <td>Mucus chronique (bronchite)</td>
+ <td>Mucus épais lors des crises</td>
+ <td><strong>Sécrétions purulentes abondantes</strong></td>
+ </tr>
+ <tr>
+ <td class="label">Traitement pivot</td>
+ <td>LABA + LAMA (± ICS)</td>
+ <td>Corticoïdes inhalés + β₂-agonistes</td>
+ <td>Désencombrement + antibiotiques</td>
+ </tr>
+ <tr>
+ <td class="label">Rôle du kinésithérapeute</td>
+ <td>Réhabilitation pulmonaire (groupes B, E)</td>
+ <td>Exercice, éducation, désencombrement si besoin</td>
+ <td><strong>Désencombrement bronchique +++</strong></td>
+ </tr>
+ <tr>
+ <td class="label">Pronostic</td>
+ <td>Progression inéluctable si non traité</td>
+ <td>Bon si bien contrôlé</td>
+ <td>Variable selon la sévérité et les infections</td>
+ </tr>
+ </table>
+ </div>
+
+ <!-- MNÉMOTECHNIQUE -->
+ <div class="mnemonic">
+ <div class="mnemonic-title">📌 Mémo — Symptômes BPCO (D·T·E·S·H)</div>
+ <div class="mnemonic-grid">
+ <div class="mnemonic-letter">D</div><div class="mnemonic-word"><strong>D</strong>yspnée progressive d'effort</div>
+ <div class="mnemonic-letter">T</div><div class="mnemonic-word"><strong>T</strong>oux chronique (sèche ou productive)</div>
+ <div class="mnemonic-letter">E</div><div class="mnemonic-word"><strong>E</strong>xacerbations récidivantes</div>
+ <div class="mnemonic-letter">S</div><div class="mnemonic-word"><strong>S</strong>ifflements · Sécrétions</div>
+ <div class="mnemonic-letter">H</div><div class="mnemonic-word"><strong>H</strong>ypomobilité thoracique · fatigue</div>
+ </div>
+ </div>
+
+ <div class="key-point">
+ <strong>Point clé en physiothérapie :</strong> Dans les trois pathologies, la <em>réhabilitation pulmonaire</em>, le désencombrement bronchique et l'activité physique sont des piliers de la prise en charge. L'<em>inactivité physique</em> est un facteur aggravant reconnu des modifications musculaires dans la BPCO.
+ </div>
+
+ <!-- Diagnostic différentiel rapide -->
+ <div class="card-wide">
+ <div class="card-title"><span class="dot" style="background:var(--accent-teal)"></span>Diagnostic différentiel rapide — Questions clés</div>
+ <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin-top:4px;">
+ <div style="background:var(--surface2);border-radius:10px;padding:14px;font-size:13px;">
+ <div style="color:var(--accent-amber);font-weight:700;margin-bottom:6px;">→ Est-ce progressif et irréversible ?</div>
+ Oui → penser <span class="highlight-blue">BPCO</span> (ou bronchiectasie si purulent)
+ </div>
+ <div style="background:var(--surface2);border-radius:10px;padding:14px;font-size:13px;">
+ <div style="color:var(--accent-rose);font-weight:700;margin-bottom:6px;">→ Y a-t-il des crises avec intervalles libres ?</div>
+ Oui → penser <span class="highlight-rose">Asthme</span>
+ </div>
+ <div style="background:var(--surface2);border-radius:10px;padding:14px;font-size:13px;">
+ <div style="color:var(--accent-violet);font-weight:700;margin-bottom:6px;">→ Y a-t-il des sécrétions purulentes chroniques ?</div>
+ Oui → penser <span class="highlight-violet">Bronchiectasie</span>
+ </div>
+ <div style="background:var(--surface2);border-radius:10px;padding:14px;font-size:13px;">
+ <div style="color:var(--accent-teal);font-weight:700;margin-bottom:6px;">→ Le patient fume depuis + de 10 ans, &gt; 40 ans ?</div>
+ Oui → dépister la <span class="highlight-blue">BPCO</span> par spirométrie
+ </div>
+ </div>
+ </div>
+ </div>
+
+</div>
+
+<div class="footer">
+ Fiche de révision générée à partir du cours de · Licence Physiothérapie 1re année, 2e semestre<br>
+ Sources : GOLD Report 2024-2025 · JPneumol 28(Suppl.1) 2002 · Brito et al., Pulmonology 2025
+</div>
+
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-13.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+</body>
+</html>

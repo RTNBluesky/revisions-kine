@@ -1,0 +1,39 @@
+:root{--bg:#0f1117;--bg2:#1a1d2a;--bg3: #161922;--border:#2a3050;--ink:#e8eaf0;--muted:#9aa3b8;--rose:#ff5c6b;--orange: #ff8fa3;--vert: #ff6b9d;--bleu:#f472b6;--violet:#f472b6}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:'Segoe UI',system-ui,sans-serif;font-size:14px;line-height:1.55}
+header{background:linear-gradient(135deg,#0f1117 0%,#1a1d2a 100%);border-bottom:3px solid var(--rose);padding:1.5rem 2rem 1.2rem;text-align:center}
+header .badge{font-size:.7rem;text-transform:uppercase;letter-spacing:3px;color:var(--rose);font-weight:700;margin-bottom:.3rem}
+header h1{font-size:1.7rem;font-weight:800;color:#ffffff;line-height:1.2}
+header p.sub{color:var(--muted);font-size:.85rem;margin-top:.4rem;max-width:600px;margin-left:auto;margin-right:auto}
+nav.jumpbar{position:sticky;top:0;z-index:100;background:rgba(10,12,20,0.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:.7rem 1rem;display:flex;gap:.4rem;flex-wrap:wrap;justify-content:center}
+nav.jumpbar a{font-size:.72rem;font-weight:700;text-decoration:none;padding:.3rem .7rem;border-radius:14px;border:1px solid var(--rose);color:var(--rose);transition:all .15s}
+nav.jumpbar a:hover{color:#ffffff;background:var(--rose)}
+main{max-width:1100px;margin:0 auto;padding:1.5rem 1rem 3rem}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:1.2rem 1.4rem;margin-bottom:1.2rem;scroll-margin-top:60px;border-left:5px solid var(--rose)}
+.card h2{font-size:1.15rem;font-weight:800;color:#ffffff;margin-bottom:.5rem;display:flex;align-items:center;gap:.5rem}
+.card .badge-num{font-size:.65rem;font-weight:800;padding:.15rem .5rem;border-radius:10px;background:var(--bg3);color:var(--muted);text-transform:uppercase;letter-spacing:1.5px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:.7rem}
+@media (max-width:720px){.grid2{grid-template-columns:1fr}}
+.block h3{font-size:.7rem;text-transform:uppercase;letter-spacing:2px;font-weight:800;margin-bottom:.5rem;padding-left:.4rem;border-left:3px solid currentColor}
+.block.vocab h3{color:var(--orange)}
+.block.mech h3{color:var(--vert)}
+.block.must h3{color:#ffffff}
+.chips{display:flex;flex-wrap:wrap;gap:.3rem}
+.chip{display:inline-block;padding:.2rem .55rem;border-radius:12px;background:var(--bg3);color:var(--ink);font-size:.74rem;font-weight:600;border:1px solid var(--border)}
+.chip.r{background:rgba(255,92,107,0.10);border-color:rgba(255,92,107,0.4);color:#ff8fa3}
+.chip.o{background:rgba(255,107,157,0.10);border-color:rgba(255,107,157,0.4);color:#ff8fa3}
+.chip.v{background:rgba(61,214,140,0.10);border-color:rgba(61,214,140,0.4);color:#ff6b9d}
+.chip.b{background:rgba(255,107,157,0.10);border-color:rgba(255,107,157,0.4);color:#f472b6}
+.chip.p{background:rgba(255,107,157,0.10);border-color:rgba(255,107,157,0.4);color:#f472b6}
+.mech-list{list-style:none;padding:0;margin:0}
+.mech-list li{padding:.25rem 0;font-size:.82rem;border-bottom:1px dashed var(--border);display:flex;gap:.4rem;align-items:flex-start}
+.mech-list li:last-child{border-bottom:none}
+.mech-list li::before{content:"→";color:var(--vert);font-weight:800;flex-shrink:0}
+.must-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.3rem}
+.must-list li{font-size:.78rem;padding:.3rem .5rem;background:rgba(255,107,157,0.06);border-left:3px solid var(--orange);border-radius:4px}
+.must-list li strong{color:var(--orange)}
+.back-btn{position:fixed;top:14px;left:14px;z-index:200;background:rgba(15,17,23,0.92);backdrop-filter:blur(10px);border:1px solid rgba(255,92,107,0.30);color:#e8eaf0;padding:8px 13px;border-radius:10px;text-decoration:none;font-size:12.5px;font-weight:600}
+.back-btn:hover{border-color:var(--rose);color:#ffffff}
+footer{text-align:center;padding:1.5rem;color:var(--muted);font-size:.75rem;border-top:1px solid var(--border);margin-top:2rem}
+.intro-tip{background:rgba(255,107,157,0.08);border:1px solid rgba(255,107,157,0.3);border-radius:10px;padding:.9rem 1.1rem;margin:1rem 0;font-size:.85rem;color:#ff8fa3}
+.intro-tip strong{color:var(--orange)}

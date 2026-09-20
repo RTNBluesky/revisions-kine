@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Produire le mouvement Contraction musculaire & apport d'énergie — :root { --bg: #0f1117; --bg2: #0f1117; --bg3: #0f1117; --bg4: #161922; --orange: #a5a0ff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../assets/css/acces.css">
+<script src="../../assets/js/acces.js"></script>
+<title>Fiche 6 — Contraction musculaire et apport d'énergie | SVT Terminale</title>
+<link rel="stylesheet" href="../assets/css/chrome.css">
+<style>
+:root {
+ --bg: #0f1117;
+ --bg2: #0f1117;
+ --bg3: #0f1117;
+ --bg4: #161922;
+ --orange: #a5a0ff;
+ --blue: #6366f1;
+ --green: #6366f1;
+ --yellow: #a5a0ff;
+ --purple: #8b7cf8;
+ --text: #a5a0ff;
+ --muted: #6a7388;
+ --border: #2a3050;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;font-size:15px;line-height:1.75}
+
+/* ── HEADER ── */
+header{
+ background:linear-gradient(135deg,#0f1117 0%,#0f1117 100%);
+ border-bottom:3px solid var(--orange);
+ padding:2rem 2.5rem 1.6rem;
+}
+header .breadcrumb{font-size:.72rem;text-transform:uppercase;letter-spacing:2.5px;color:var(--orange);font-weight:700;margin-bottom:.4rem}
+header h1{font-size:1.7rem;font-weight:800;color:#e8eaf0;line-height:1.3}
+header .pills{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.8rem}
+header .pill{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:.2rem .8rem;font-size:.78rem;color:var(--muted)}
+
+/* ── NAV ── */
+nav{
+ background:var(--bg2);
+ border-bottom:1px solid var(--border);
+ padding:.65rem 2.5rem;
+ display:flex;gap:.45rem;flex-wrap:wrap;
+ position:sticky;top:0;z-index:100;
+}
+nav a{
+ color:var(--muted);text-decoration:none;font-size:.78rem;
+ padding:.25rem .75rem;border-radius:16px;background:var(--bg3);
+ border:1px solid transparent;transition:all .15s;
+}
+nav a:hover{color:var(--orange);border-color:var(--orange);background:rgba(32,36,58,.08)}
+
+/* ── MAIN ── */
+main{max-width:980px;margin:0 auto;padding:2rem 2.5rem}
+
+/* ── SECTION HEADERS ── */
+.section-header{display:flex;align-items:center;gap:.9rem;margin-bottom:1.4rem;margin-top:.3rem}
+.section-num{
+ width:32px;height:32px;border-radius:50%;
+ display:flex;align-items:center;justify-content:center;
+ font-weight:800;font-size:.85rem;flex-shrink:0;
+}
+.section-num.orange{background:rgba(32,36,58,.2);color:var(--orange);border:2px solid var(--orange)}
+.section-num.blue {background:rgba(32,36,58,.2);color:var(--blue); border:2px solid var(--blue)}
+.section-num.green {background:rgba(32,36,58,.2);color:var(--green); border:2px solid var(--green)}
+.section-num.yellow{background:rgba(32,36,58,.2);color:var(--yellow);border:2px solid var(--yellow)}
+.section-num.purple{background:rgba(32,36,58,.2);color:var(--purple);border:2px solid var(--purple)}
+h2{font-size:1.2rem;font-weight:700;color:#e8eaf0}
+h2 span{color:var(--muted);font-weight:400;font-size:.95rem;margin-left:.4rem}
+h3{font-size:.96rem;font-weight:700;color:var(--yellow);margin:1.3rem 0 .5rem;padding-left:.5rem;border-left:3px solid var(--yellow)}
+h4{font-size:.88rem;font-weight:600;color:var(--green);margin:.8rem 0 .3rem}
+
+section{margin-bottom:3rem}
+p{margin-bottom:.6rem}
+
+/* ── CARDS ── */
+.card{
+ background:var(--bg2);border:1px solid var(--border);
+ border-radius:10px;padding:1.1rem 1.3rem;margin-bottom:.8rem;
+}
+.card.o{border-left:4px solid var(--orange)}
+.card.b{border-left:4px solid var(--blue)}
+.card.g{border-left:4px solid var(--green)}
+.card.y{border-left:4px solid var(--yellow)}
+.card.p{border-left:4px solid var(--purple)}
+
+/* ── DEF BOX ── */
+.def{
+ background:#0f1117;border:1px solid #2a3050;
+ border-radius:8px;padding:.85rem 1.1rem;margin:.5rem 0 .9rem;
+}
+.def .lbl{font-size:.68rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--blue);font-weight:700;margin-bottom:.25rem}
+.def strong{color:var(--green)}
+
+/* ── WARN BOX ── */
+.warn{
+ background:#0f1117;border:1px solid rgba(58,64,96,.4);
+ border-radius:8px;padding:.8rem 1rem .8rem 1.2rem;margin:.8rem 0;
+ color:#a5a0ff;font-size:.88rem;position:relative;padding-left:2.4rem;
+}
+.warn::before{content:"⚠";position:absolute;left:.7rem;top:.8rem;font-size:1rem}
+
+/* ── SCHEMA BOX ── */
+.schema{
+ background:var(--bg3);border:1px dashed var(--border);
+ border-radius:8px;padding:1rem 1.2rem;margin:.6rem 0 .9rem;
+ font-family:'Cascadia Code','Courier New',monospace;
+ font-size:.83rem;color:var(--green);line-height:1.9;
+ overflow-x:auto;white-space:pre;
+}
+
+/* ── SARCOMÈRE DIAGRAM ── */
+.sarcomere-diagram{
+ background:var(--bg3);border:1px solid var(--border);
+ border-radius:10px;padding:1.2rem;margin:.6rem 0 1rem;
+ overflow-x:auto;
+}
+.sarcomere-diagram svg{display:block;margin:0 auto;max-width:100%}
+
+/* ── GRIDS ── */
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:.9rem;margin-bottom:.8rem}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.9rem;margin-bottom:.8rem}
+@media(max-width:680px){.g2,.g3{grid-template-columns:1fr}}
+
+/* ── VOIE CARD ── */
+.voie-card{
+ border-radius:12px;padding:1.2rem;
+ display:flex;flex-direction:column;gap:.4rem;
+}
+.voie-card .voie-title{font-weight:700;font-size:.95rem;margin-bottom:.2rem}
+.voie-card .badge{
+ display:inline-block;font-size:.72rem;font-weight:700;
+ padding:.1rem .55rem;border-radius:12px;margin-bottom:.3rem;
+}
+.voie-card .row{display:flex;gap:.5rem;font-size:.83rem;line-height:1.5}
+.voie-card .row .k{color:var(--muted);min-width:75px;flex-shrink:0}
+.voie-card .row .v{color:var(--text)}
+.vc-red {background:rgba(32,36,58,.1); border:2px solid var(--orange)}
+.vc-gold {background:rgba(32,36,58,.1);border:2px solid var(--yellow)}
+.vc-teal {background:rgba(32,36,58,.1); border:2px solid var(--green)}
+
+/* ── TABLES ── */
+table{width:100%;border-collapse:collapse;margin:.7rem 0 1.1rem;font-size:.84rem}
+th{background:var(--bg4);color:var(--orange);padding:.55rem .85rem;text-align:left;border-bottom:2px solid var(--orange);font-size:.8rem;text-transform:uppercase;letter-spacing:.5px}
+td{padding:.5rem .85rem;border-bottom:1px solid var(--border);vertical-align:top}
+tr:nth-child(even) td{background:#0f1117}
+
+/* ── MOTS-CLÉS ── */
+.kw{
+ display:inline-block;background:rgba(32,36,58,.1);
+ color:var(--orange);border:1px solid rgba(58,64,96,.3);
+ border-radius:5px;padding:.08rem .5rem;font-size:.77rem;
+ font-weight:600;margin:.14rem;
+}
+
+/* ── PLAN CARD ── */
+.plan{
+ background:linear-gradient(135deg,rgba(32,36,58,.08) 0%,rgba(32,36,58,.05) 100%);
+ border:1px solid rgba(32,36,58,.25);border-radius:12px;
+ padding:1.2rem 1.5rem;margin-bottom:2rem;
+}
+.plan ol{list-style:none;padding:0;display:flex;flex-direction:column;gap:.4rem}
+.plan ol li{display:flex;align-items:flex-start;gap:.7rem;font-size:.88rem}
+.plan ol li::before{
+ counter-increment:plan;
+ content:counter(plan);
+ background:var(--orange);color:#e8eaf0;
+ min-width:20px;height:20px;border-radius:50%;
+ display:flex;align-items:center;justify-content:center;
+ font-size:.72rem;font-weight:700;margin-top:.18rem;flex-shrink:0;
+}
+.plan ol{counter-reset:plan}
+
+/* ── CYCLE STEPS ── */
+.cycle{display:flex;flex-direction:column;gap:.1rem;margin:.5rem 0 .9rem}
+.cycle-step{
+ display:flex;align-items:flex-start;gap:.8rem;
+ background:var(--bg2);border:1px solid var(--border);
+ border-radius:8px;padding:.65rem 1rem;
+}
+.cycle-step .step-num{
+ min-width:26px;height:26px;border-radius:50%;
+ background:rgba(32,36,58,.15);border:2px solid var(--green);
+ color:var(--green);font-weight:700;font-size:.78rem;
+ display:flex;align-items:center;justify-content:center;flex-shrink:0;
+}
+.cycle-step .step-body strong{color:var(--yellow)}
+.cycle-step .step-body{font-size:.86rem;line-height:1.6}
+.cycle-arrow{text-align:center;color:var(--muted);font-size:.8rem;padding:.05rem 0}
+
+ul{padding-left:1.3rem;margin-bottom:.7rem}
+li{margin-bottom:.25rem}
+li::marker{color:var(--orange)}
+ol li::marker{color:var(--green);font-weight:700}
+
+footer{text-align:center;padding:1.8rem;color:var(--muted);font-size:.78rem;border-top:1px solid var(--border);margin-top:2rem}
+</style>
+</head>
+<body>
+
+<a href="../accueil-svt.html" class="back-nav">← SVT Bac 2026</a>
+
+<div class="page-toggle"><div class="pt-inner"><a href="../qcm/qcm6_contraction_musculaire.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+
+<header>
+ <div class="breadcrumb">Thème III — Corps humain et santé</div>
+ <h1>Produire le mouvement<br><span style="color:var(--orange)">Contraction musculaire &amp; apport d'énergie</span></h1>
+ <div class="pills">
+ <span class="pill">📚 4 semaines</span>
+ <span class="pill">🎯 SVT Terminale Spécialité</span>
+ <span class="pill">🗂 Fiche 6 / 7</span>
+ </div>
+</header>
+
+<nav>
+ <a href="../accueil-svt.html" style="background:rgba(32,36,58,.1);color:#8b7cf8;border:1px solid rgba(58,64,96,.3);text-decoration:none;font-size:.78rem;padding:.25rem .75rem;border-radius:16px;margin-right:.25rem">← Index</a>
+ <a href="#muscle">🔬 Structure</a>
+ <a href="#contraction">⚙️ Contraction</a>
+ <a href="#atp">⚡ ATP</a>
+ <a href="#voies">🔁 Voies ATP</a>
+ <a href="#effort">🏃 Effort &amp; dopage</a>
+ <a href="#glycemie">🩸 Glycémie</a>
+ <a href="#diabete">🔴 Diabètes</a>
+ <a href="#mots-cles">🏷 Mots-clés</a>
+</nav>
+
+<main>
+
+<!-- PLAN -->
+<div class="plan">
+ <h3 style="margin:0 0 .8rem;border:none;padding:0;color:var(--orange);font-size:1rem">💪 Plan du chapitre</h3>
+ <ol>
+ <li>Structure du muscle strié squelettique — le sarcomère</li>
+ <li>Mécanisme moléculaire de la contraction + myopathie de Duchenne</li>
+ <li>L'ATP, monnaie énergétique universelle</li>
+ <li>Les trois voies de resynthèse de l'ATP (PCr, fermentation, respiration)</li>
+ <li>Adaptation à l'effort physique + dopage</li>
+ <li>Régulation de la glycémie (milieu intérieur, pancréas, hormones)</li>
+ <li>Les diabètes type 1 et type 2</li>
+ </ol>
+</div>
+
+<!-- ══════════════════════════════════════════
+ 1. STRUCTURE MUSCULAIRE
+══════════════════════════════════════════ -->
+<section id="muscle">
+ <div class="section-header">
+ <div class="section-num orange">1</div>
+ <h2>Structure du muscle strié squelettique</h2>
+ </div>
+
+ <h3>Organisation hiérarchique</h3>
+ <div class="schema">
+Muscle
+ └─ Faisceau de fibres musculaires
+ └─ Fibre musculaire (= cellule géante multinucléée)
+ └─ Myofibrille
+ └─ Sarcomère ← unité contractile élémentaire
+ ├─ Filaments épais : Myosine II
+ └─ Filaments fins : Actine + Tropomyosine + Troponine</div>
+
+ <h3>Le sarcomère — unité contractile</h3>
+
+ <div class="sarcomere-diagram">
+ <svg viewBox="0 0 700 160" xmlns="http://www.w3.org/2000/svg" width="700" height="160">
+ <!-- Background -->
+ <rect width="700" height="160" fill="#1c2030" rx="8"/>
+
+ <!-- Zone labels -->
+ <!-- Bande I gauche -->
+ <rect x="50" y="60" width="100" height="40" fill="rgba(91,141,238,.15)" rx="4"/>
+ <text x="100" y="50" text-anchor="middle" fill="#5b8dee" font-size="11" font-family="monospace">Bande I</text>
+
+ <!-- Bande A (centre) -->
+ <rect x="150" y="50" width="400" height="60" fill="rgba(240,120,64,.15)" rx="4"/>
+ <text x="350" y="42" text-anchor="middle" fill="#f07840" font-size="11" font-family="monospace">Bande A (longueur constante)</text>
+
+ <!-- Zone H (centre de bande A) -->
+ <rect x="265" y="58" width="170" height="44" fill="rgba(243,197,107,.12)" rx="3"/>
+ <text x="350" y="140" text-anchor="middle" fill="#f3c56b" font-size="11" font-family="monospace">Zone H</text>
+
+ <!-- Bande I droite -->
+ <rect x="550" y="60" width="100" height="40" fill="rgba(91,141,238,.15)" rx="4"/>
+ <text x="600" y="50" text-anchor="middle" fill="#5b8dee" font-size="11" font-family="monospace">Bande I</text>
+
+ <!-- Ligne Z gauche -->
+ <line x1="50" y1="55" x2="50" y2="105" stroke="#4ecb8d" stroke-width="4"/>
+ <text x="50" y="120" text-anchor="middle" fill="#4ecb8d" font-size="10" font-family="monospace">Ligne Z</text>
+
+ <!-- Ligne Z droite -->
+ <line x1="650" y1="55" x2="650" y2="105" stroke="#4ecb8d" stroke-width="4"/>
+ <text x="650" y="120" text-anchor="middle" fill="#4ecb8d" font-size="10" font-family="monospace">Ligne Z</text>
+
+ <!-- Ligne M (centre) -->
+ <line x1="350" y1="58" x2="350" y2="102" stroke="#b07cf8" stroke-width="3" stroke-dasharray="4,3"/>
+ <text x="350" y="120" text-anchor="middle" fill="#b07cf8" font-size="10" font-family="monospace">Ligne M</text>
+
+ <!-- Filaments d'actine gauche -->
+ <line x1="55" y1="75" x2="265" y2="75" stroke="#5b8dee" stroke-width="5" stroke-linecap="round"/>
+ <line x1="55" y1="85" x2="265" y2="85" stroke="#5b8dee" stroke-width="5" stroke-linecap="round"/>
+ <line x1="55" y1="95" x2="265" y2="95" stroke="#5b8dee" stroke-width="5" stroke-linecap="round"/>
+
+ <!-- Filaments d'actine droite -->
+ <line x1="435" y1="75" x2="645" y2="75" stroke="#5b8dee" stroke-width="5" stroke-linecap="round"/>
+ <line x1="435" y1="85" x2="645" y2="85" stroke="#5b8dee" stroke-width="5" stroke-linecap="round"/>
+ <line x1="435" y1="95" x2="645" y2="95" stroke="#5b8dee" stroke-width="5" stroke-linecap="round"/>
+
+ <!-- Filaments de myosine -->
+ <line x1="155" y1="70" x2="545" y2="70" stroke="#f07840" stroke-width="7" stroke-linecap="round"/>
+ <line x1="155" y1="80" x2="545" y2="80" stroke="#f07840" stroke-width="7" stroke-linecap="round"/>
+ <line x1="155" y1="90" x2="545" y2="90" stroke="#f07840" stroke-width="7" stroke-linecap="round"/>
+ <line x1="155" y1="100" x2="545" y2="100" stroke="#f07840" stroke-width="7" stroke-linecap="round"/>
+
+ <!-- Légende -->
+ <rect x="60" y="132" width="14" height="7" fill="#5b8dee" rx="2"/>
+ <text x="80" y="140" fill="#dde1ef" font-size="10" font-family="monospace">Actine (filaments fins)</text>
+ <rect x="310" y="132" width="14" height="7" fill="#f07840" rx="2"/>
+ <text x="330" y="140" fill="#dde1ef" font-size="10" font-family="monospace">Myosine (filaments épais)</text>
+ </svg>
+ </div>
+
+ <table>
+ <tr><th>Repère</th><th>Contenu</th><th>Lors de la contraction</th></tr>
+ <tr><td><span style="color:#6366f1;font-weight:700">Bande I</span></td><td>Actine seule</td><td>S'amincit (raccourcit)</td></tr>
+ <tr><td><span style="color:#a5a0ff;font-weight:700">Bande A</span></td><td>Myosine + zone de chevauchement</td><td>Longueur constante</td></tr>
+ <tr><td><span style="color:#a5a0ff;font-weight:700">Zone H</span></td><td>Myosine seule (centre)</td><td>Disparaît (actine la remplace)</td></tr>
+ <tr><td><span style="color:#6366f1;font-weight:700">Ligne Z</span></td><td>Limite du sarcomère, ancre l'actine</td><td>Les deux lignes Z se rapprochent</td></tr>
+ <tr><td><span style="color:#8b7cf8;font-weight:700">Ligne M</span></td><td>Ancre les filaments de myosine</td><td>Reste au centre</td></tr>
+ </table>
+
+ <div class="def">
+ <div class="lbl">Protéines régulatrices</div>
+ <strong>Tropomyosine</strong> : filament qui masque les sites de fixation de l'actine au repos.<br>
+ <strong>Troponine</strong> : complexe protéique (TnC, TnI, TnT) fixé sur la tropomyosine ; la sous-unité TnC lie le Ca²⁺ → déplacement de la tropomyosine → exposition des sites.
+ </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+ 2. CONTRACTION
+══════════════════════════════════════════ -->
+<section id="contraction">
+ <div class="section-header">
+ <div class="section-num blue">2</div>
+ <h2>Mécanisme moléculaire de la contraction</h2>
+ </div>
+
+ <h3>Modèle des filaments glissants (Huxley, 1954)</h3>
+ <p>Lors de la contraction, les filaments d'actine <strong>glissent</strong> entre les filaments de myosine sans que les filaments eux-mêmes ne changent de longueur → le sarcomère raccourcit.</p>
+
+ <h3>Cycle des ponts actomyosine <span style="font-weight:400;color:var(--muted)">(4 étapes)</span></h3>
+ <div class="cycle">
+ <div class="cycle-step">
+ <div class="step-num">1</div>
+ <div class="step-body"><strong>Liaison</strong> : La tête de myosine chargée (ADP + Pᵢ) se fixe sur un site actif de l'actine → formation d'un pont actomyosine.</div>
+ </div>
+ <div class="cycle-arrow">↓</div>
+ <div class="cycle-step">
+ <div class="step-num">2</div>
+ <div class="step-body"><strong>Pivotement (coup de rame)</strong> : Libération du Pᵢ → changement de conformation de la tête → déplacement de l'actine d'environ <strong>10 nm</strong>. L'ADP est libéré.</div>
+ </div>
+ <div class="cycle-arrow">↓</div>
+ <div class="cycle-step">
+ <div class="step-num">3</div>
+ <div class="step-body"><strong>Détachement</strong> : Fixation d'un nouvel <strong>ATP</strong> sur la tête de myosine → détachement de l'actine.</div>
+ </div>
+ <div class="cycle-arrow">↓</div>
+ <div class="cycle-step">
+ <div class="step-num">4</div>
+ <div class="step-body"><strong>Recharge</strong> : Hydrolyse de l'ATP en <strong>ADP + Pᵢ</strong> → retour de la tête en position de haute énergie → prête pour un nouveau cycle.</div>
+ </div>
+ </div>
+
+ <div class="warn">Sans ATP (ex. après la mort), les ponts actomyosine restent formés → <strong>rigidité cadavérique</strong> (rigor mortis). L'ATP est nécessaire au <em>détachement</em>, pas à la liaison.</div>
+
+ <h3>Rôle du Ca²⁺ — couplage excitation-contraction</h3>
+ <div class="schema">PA du motoneurone
+ → Jonction neuromusculaire (ACh → récepteurs nicotiniques)
+ → PA de la fibre musculaire → propagé aux tubules T
+ → Activation du réticulum sarcoplasmique (RS)
+ → Libération de Ca²⁺ dans le cytosol
+ → Ca²⁺ + Troponine C → déplacement de la tropomyosine
+ → Sites actifs de l'actine exposés → contraction
+
+Fin du signal :
+ → SERCA (Ca²⁺-ATPase) recapture le Ca²⁺ dans le RS → relaxation</div>
+
+ <h3>Myopathie de Duchenne</h3>
+ <div class="def">
+ <div class="lbl">Dystrophine</div>
+ Protéine en bâtonnet codée par un gène du <strong>chromosome X</strong>. Elle relie les filaments d'actine à la matrice extracellulaire, assurant la cohérence structurale de la fibre musculaire.
+ </div>
+ <div class="g2">
+ <div class="card b">
+ <h4>Mécanisme</h4>
+ <ul>
+ <li>Mutation gène dystrophine (lié à l'X) → protéine absente ou non fonctionnelle</li>
+ <li>Microlésions répétées à chaque contraction → dégénérescence progressive</li>
+ <li>Affaiblissement de toute la musculature (squelettique + cardiaque)</li>
+ </ul>
+ </div>
+ <div class="card o">
+ <h4>Caractéristiques</h4>
+ <ul>
+ <li>Touche quasi exclusivement les <strong>garçons</strong> (gène récessif lié à X)</li>
+ <li>Début dans l'enfance, évolution sévère</li>
+ <li>Illustre l'importance des protéines du cytosquelette</li>
+ </ul>
+ </div>
+ </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+ 3. ATP
+══════════════════════════════════════════ -->
+<section id="atp">
+ <div class="section-header">
+ <div class="section-num yellow">3</div>
+ <h2>L'ATP, monnaie énergétique universelle</h2>
+ </div>
+
+ <div class="def">
+ <div class="lbl">Définition</div>
+ <strong>ATP</strong> (Adénosine TriPhosphate) : nucléotide à haute énergie. L'hydrolyse de sa dernière liaison phosphoanhydride libère environ <strong>−30 kJ/mol</strong> dans les conditions physiologiques.
+ </div>
+
+ <div class="schema"> ATP + H₂O ───ATPase───▶ ADP + Pᵢ + Énergie (~30 kJ/mol)
+ ADP + Pᵢ + Énergie ──────────▶ ATP (resynthèse)
+
+ ⚡ Réserve d'ATP musculaire : épuisée en ~2 secondes d'effort maximal
+ → resynthèse OBLIGATOIRE et continue</div>
+
+ <div class="warn">L'ATP ne peut pas être stocké en grande quantité. Le muscle doit en resynthétiser en permanence à partir d'autres substrats énergétiques.</div>
+</section>
+
+<!-- ══════════════════════════════════════════
+ 4. VOIES DE RESYNTHÈSE
+══════════════════════════════════════════ -->
+<section id="voies">
+ <div class="section-header">
+ <div class="section-num green">4</div>
+ <h2>Les trois voies de resynthèse de l'ATP</h2>
+ </div>
+
+ <div class="g3">
+ <div class="voie-card vc-red">
+ <span class="badge" style="background:rgba(32,36,58,.2);color:var(--orange)">⚡ Anaérobie alactique</span>
+ <div class="voie-title" style="color:var(--orange)">Voie PCr</div>
+ <div class="row"><span class="k">Substrat</span><span class="v">Phosphocréatine (PCr)</span></div>
+ <div class="row"><span class="k">Réaction</span><span class="v">PCr + ADP → Cr + ATP</span></div>
+ <div class="row"><span class="k">Délai</span><span class="v">Immédiat (< 1 s)</span></div>
+ <div class="row"><span class="k">Durée</span><span class="v">~10 secondes</span></div>
+ <div class="row"><span class="k">O₂ requis</span><span class="v" style="color:#a5a0ff">Non</span></div>
+ <div class="row"><span class="k">Déchets</span><span class="v">Aucun</span></div>
+ <div class="row"><span class="k">Exemple</span><span class="v">Sprint 100 m</span></div>
+ </div>
+ <div class="voie-card vc-gold">
+ <span class="badge" style="background:rgba(32,36,58,.2);color:var(--yellow)">🔥 Anaérobie lactique</span>
+ <div class="voie-title" style="color:var(--yellow)">Glycolyse</div>
+ <div class="row"><span class="k">Substrat</span><span class="v">Glucose</span></div>
+ <div class="row"><span class="k">Réaction</span><span class="v">Glucose → 2 lactate + 2 ATP</span></div>
+ <div class="row"><span class="k">Délai</span><span class="v">Quelques secondes</span></div>
+ <div class="row"><span class="k">Durée</span><span class="v">1–3 minutes</span></div>
+ <div class="row"><span class="k">O₂ requis</span><span class="v" style="color:#a5a0ff">Non</span></div>
+ <div class="row"><span class="k">Déchets</span><span class="v">Acide lactique → acidose</span></div>
+ <div class="row"><span class="k">Exemple</span><span class="v">400 m, 100 m natation</span></div>
+ </div>
+ <div class="voie-card vc-teal">
+ <span class="badge" style="background:rgba(32,36,58,.2);color:var(--green)">🌬️ Aérobie</span>
+ <div class="voie-title" style="color:var(--green)">Respiration</div>
+ <div class="row"><span class="k">Substrat</span><span class="v">Glucose, acides gras, AA</span></div>
+ <div class="row"><span class="k">Réaction</span><span class="v">Glucose + O₂ → CO₂ + H₂O + 30–32 ATP</span></div>
+ <div class="row"><span class="k">Délai</span><span class="v">2–3 minutes</span></div>
+ <div class="row"><span class="k">Durée</span><span class="v">Illimitée (si substrats)</span></div>
+ <div class="row"><span class="k">O₂ requis</span><span class="v" style="color:#6366f1">Oui</span></div>
+ <div class="row"><span class="k">Déchets</span><span class="v">CO₂ + H₂O</span></div>
+ <div class="row"><span class="k">Exemple</span><span class="v">Marathon, cyclisme</span></div>
+ </div>
+ </div>
+
+ <h3>La glycolyse <span style="font-weight:400;color:var(--muted)">(cytoplasme)</span></h3>
+ <p>Dégradation du glucose (6C) en 2 pyruvate (3C). Bilan net : <strong>2 ATP + 2 NADH,H⁺</strong> par glucose.</p>
+
+ <h3>Fermentation : deux types</h3>
+ <div class="g2">
+ <div class="card y">
+ <h4>Fermentation lactique — muscles</h4>
+ <p>Glucose → 2 lactate + <strong>2 ATP</strong></p>
+ <p style="font-size:.84rem">Pyruvate → lactate (NADH,H⁺ recyclé en NAD⁺). Permet l'effort intense bref sans O₂ supplémentaire. Produit de l'acidose musculaire → fatigue.</p>
+ </div>
+ <div class="card b">
+ <h4>Fermentation alcoolique — levures</h4>
+ <p>C₆H₁₂O₆ → 2 C₂H₅OH + 2 CO₂ + <strong>2 ATP</strong></p>
+ <p style="font-size:.84rem">Rendement très faible : 2 ATP (fermentation) vs 30–32 ATP (aérobie). Le glucose n'est pas complètement oxydé.</p>
+ </div>
+ </div>
+
+ <h3>La respiration mitochondriale</h3>
+ <div class="schema">Glucose
+ ↓ Glycolyse (cytoplasme) → 2 Pyruvate + 2 ATP + 2 NADH,H⁺
+ ↓ Décarboxylation oxydative (mitochondrie)
+ Acétyl-CoA
+ ↓ Cycle de Krebs (8 tours / glucose)
+ NADH,H⁺ + FADH₂
+ ↓ Chaîne respiratoire (membrane interne mitochondriale)
+ Gradient H⁺ → ATP synthase → ~28–30 ATP + H₂O
+ (O₂ = accepteur final des électrons)</div>
+
+ <h3>Lipides et β-oxydation</h3>
+ <div class="card g">
+ <p><strong>β-oxydation :</strong> dégradation des acides gras en acétyl-CoA dans la mitochondrie → cycle de Krebs. Très rentable (ex : palmitate C₁₆ → 129 ATP) mais lente → utilisée surtout lors des efforts prolongés d'intensité modérée.</p>
+ </div>
+
+ <h3>Seuil anaérobie et VO₂max</h3>
+ <div class="g2">
+ <div class="def">
+ <div class="lbl">Seuil anaérobie (SAN)</div>
+ Intensité d'effort à partir de laquelle l'organisme ne peut plus éliminer tout le lactate produit → accumulation → acidose → <strong>fatigue</strong>. L'entraînement d'endurance repousse ce seuil.
+ </div>
+ <div class="def">
+ <div class="lbl">VO₂max</div>
+ Consommation maximale d'O₂ par unité de temps. Meilleur indicateur de la capacité aérobie. Limité par le <strong>débit cardiaque</strong> (transport O₂) plutôt que par les muscles chez les sujets entraînés.
+ </div>
+ </div>
+</section>
+
+<!-- ══════════════════════════════════════════
+ 5. EFFORT PHYSIQUE & DOPAGE
+══════════════════════════════════════════ -->
+<section id="effort">
+ <div class="section-header">
+ <div class="section-num purple">5</div>
+ <h2>Adaptation à l'effort physique &amp; dopage</h2>
+ </div>
+
+ <h3>Adaptations aiguës <span style="font-weight:400;color:var(--muted)">(pendant l'effort)</span></h3>
+ <ul>
+ <li>↑ Fréquence cardiaque + volume d'éjection → ↑ débit cardiaque</li>
+ <li>↑ Ventilation → ↑ apport O₂ et élimination CO₂</li>
+ <li>Vasodilatation musculaire, vasoconstriction digestive/cutanée</li>
+ <li>Mobilisation glycogène hépatique + musculaire → ↑ glycémie</li>
+ </ul>
+
+ <h3>Adaptations chroniques <span style="font-weight:400;color:var(--muted)">(à l'entraînement)</span></h3>
+ <div class="g2">
+ <div class="card b">
+ <h4>Endurance</h4>
+ <ul>
+ <li>↑ VO₂max</li>
+ <li>↑ Densité capillaire musculaire</li>
+ <li>↑ Nombre et taille des mitochondries</li>
+ <li>Hypertrophie cardiaque (cœur d'athlète)</li>
+ <li>Meilleure utilisation des lipides</li>
+ </ul>
+ </div>
+ <div class="card o">
+ <h4>Force / Musculation</h4>
+ <ul>
+ <li>Hypertrophie musculaire (↑ taille des fibres)</li>
+ <li>↑ Synthèse des myofilaments</li>
+ <li>Meilleur recrutement neuromusculaire</li>
+ <li>↑ Réserves de PCr et glycogène</li>
+ </ul>
+ </div>
+ </div>
+
+ <h3>Dopage — substances et risques</h3>
+ <table>
+ <tr><th>Substance</th><th>Mécanisme</th><th>Risques</th></tr>
+ <tr>
+ <td><strong>Stéroïdes anabolisants</strong><br><span style="color:var(--muted);font-size:.8rem">dérivés testostérone</span></td>
+ <td>↑ Hypertrophie des fibres musculaires (taille, pas nombre) → ↑ masse et force</td>
+ <td>Cancer, stérilité, troubles cardiovasculaires, masculinisation ♀, perturbations hormonales</td>
+ </tr>
+ <tr>
+ <td><strong>Corticoïdes</strong><br><span style="color:var(--muted);font-size:.8rem">anti-inflammatoires</span></td>
+ <td>↓ Sensation de fatigue, masque la douleur → effort au-delà des limites physiologiques</td>
+ <td>Fractures de fatigue masquées, fragilité osseuse, immunosuppression</td>
+ </tr>
+ <tr>
+ <td><strong>EPO</strong><br><span style="color:#6a7388;font-size:.8rem">érythropoïétine</span></td>
+ <td>↑ Production de globules rouges → ↑ transport O₂ → ↑ endurance</td>
+ <td>Épaississement du sang → ↑ risque de caillots, infarctus, AVC (surtout la nuit)</td>
+ </tr>
+ </table>
+</section>
+
+<!-- ══════════════════════════════════════════
+ 6. RÉGULATION GLYCÉMIE
+══════════════════════════════════════════ -->
+<section id="glycemie">
+ <div class="section-header">
+ <div class="section-num orange">6</div>
+ <h2>Régulation de la glycémie</h2>
+ </div>
+
+ <div style="background:rgba(32,36,58,.08);border:1px solid rgba(58,64,96,.3);border-left:4px solid #3a4060;border-radius:8px;padding:.8rem 1.1rem;margin-bottom:1.2rem;color:#a5a0ff;font-size:.85rem">
+ ★ Pour un traitement plus détaillé du sujet, voir la <a href="fiche10_glycemie_diabetes.html" style="color:#8b7cf8;font-weight:700;text-decoration:underline">Fiche 10 — Glycémie &amp; diabètes</a>.
+ </div>
+
+ <h3>Milieu intérieur et glycémie</h3>
+ <div class="def">
+ <div class="lbl">Milieu intérieur (~15 L)</div>
+ Compartiment liquidien baignant les cellules. Comprend : <strong>lymphe interstitielle</strong> (baigne les cellules), <strong>lymphe canalisée</strong> (vaisseaux lymphatiques), <strong>plasma</strong> (~3 L, phase liquide du sang).
+ </div>
+ <p>La <strong>glycémie</strong> est maintenue à <strong>~1 g/L</strong>. Les cellules <strong>glucodépendantes</strong> (neurones, hématies, cellules médullosurrénales) consomment ~10 g/h → sans régulation, les réserves s'épuisent en &lt; 2 h.</p>
+
+ <h3>Organes effecteurs</h3>
+ <table>
+ <tr><th>Organe</th><th>Hyperglycémie (après repas)</th><th>Hypoglycémie (à jeun)</th></tr>
+ <tr>
+ <td><strong>Foie</strong> ★</td>
+ <td>Glycogenèse (glucose → glycogène) ; lipogenèse</td>
+ <td><strong>Glycogénolyse</strong> (glycogène → glucose) + <strong>Néoglucogenèse</strong> (lactate, AA, glycérol → glucose)</td>
+ </tr>
+ <tr>
+ <td><strong>Muscles</strong></td>
+ <td>Stockage en glycogène musculaire</td>
+ <td>Libèrent lactate + acides aminés au foie (ne peuvent PAS exporter du glucose)</td>
+ </tr>
+ <tr>
+ <td><strong>Tissu adipeux</strong></td>
+ <td>Lipogenèse (stockage en triglycérides)</td>
+ <td>Lipolyse → acides gras + glycérol pour le foie</td>
+ </tr>
+ </table>
+
+ <div class="def">
+ <div class="lbl">Néoglucogenèse</div>
+ Synthèse <em>de novo</em> de glucose par le <strong>foie</strong> (seul organe capable d'exporter du glucose) à partir de précurseurs non glucidiques : <strong>lactate, pyruvate, acides aminés, glycérol</strong>.
+ </div>
+
+ <h3>Le pancréas endocrine — îlots de Langerhans</h3>
+ <div class="g2">
+ <div class="card b">
+ <h4>Îlots de Langerhans</h4>
+ <ul>
+ <li><strong>Cellules β</strong> (centre) → sécrètent l'<strong>insuline</strong></li>
+ <li><strong>Cellules α</strong> (périphérie) → sécrètent le <strong>glucagon</strong></li>
+ </ul>
+ <p style="font-size:.83rem;margin-top:.4rem">Les cellules α et β détectent directement la glycémie et ajustent leur sécrétion en conséquence.</p>
+ </div>
+ <div class="card g">
+ <h4>Insuline vs Glucagon</h4>
+ <div style="display:flex;gap:.5rem;font-size:.83rem"><span style="color:#6366f1;min-width:90px;font-weight:600">Insuline</span><span>↑ glycémie → sécrétion insuline → glycogenèse + lipogenèse → glycémie ↓</span></div>
+ <div style="display:flex;gap:.5rem;font-size:.83rem;margin-top:.4rem"><span style="color:#a5a0ff;min-width:90px;font-weight:600">Glucagon</span><span>↓ glycémie → sécrétion glucagon → glycogénolyse + néoglucogenèse → glycémie ↑</span></div>
+ </div>
+ </div>
+
+ <h3>Boucle de régulation — rétrocontrôle négatif</h3>
+ <div class="schema">VARIATION GLYCÉMIE
+ ↓
+CAPTEURS : Cellules α et β des îlots de Langerhans
+ (détectent directement la glycémie plasmatique)
+ ↓
+MESSAGE : Rapport Insuline / Glucagon (message hormonal sanguin)
+ ↓
+EFFECTEURS : Foie ★ + Muscles + Tissu adipeux
+ ↓
+CORRECTION → Retour vers 1 g/L
+ ↑__________________________|
+ RÉTROCONTRÔLE NÉGATIF</div>
+</section>
+
+<!-- ══════════════════════════════════════════
+ 7. DIABÈTES
+══════════════════════════════════════════ -->
+<section id="diabete">
+ <div class="section-header">
+ <div class="section-num blue">7</div>
+ <h2>Les diabètes</h2>
+ </div>
+
+ <div class="def">
+ <div class="lbl">Définition — Diabète</div>
+ Hyperglycémie chronique : glycémie à jeun <strong>&gt; 1,26 g/L</strong> OU &gt; 2 g/L deux heures après ingestion de 75 g de glucose.
+ </div>
+
+ <div class="g2">
+ <div class="card o">
+ <h4>Diabète de type 1 — DID</h4>
+ <p><strong>Mécanisme :</strong> maladie <strong>auto-immune</strong> — lymphocytes T détruisent les cellules β → disparition totale de l'insuline.</p>
+ <p><strong>Population :</strong> jeunes (&lt; 40 ans) — 20–30 % des diabètes.</p>
+ <p><strong>Traitement :</strong> injections d'insuline obligatoires (<em>insulino-dépendant</em>).</p>
+ </div>
+ <div class="card y">
+ <h4>Diabète de type 2 — DNID</h4>
+ <p><strong>Mécanisme :</strong> insuline présente mais les organes cibles développent une <strong>insulinorésistance</strong> (défaut du récepteur ou de l'entrée du glucose).</p>
+ <p><strong>Population :</strong> adultes (&gt; 40 ans), souvent en surpoids — 70–80 % des diabètes.</p>
+ <p><strong>Traitement :</strong> régime + médicaments (non insulino-dépendant).</p>
+ </div>
+ </div>
+
+ <div class="g2">
+ <div class="card b">
+ <h4>Facteurs génétiques</h4>
+ <p style="font-size:.84rem">Prédisposition héréditaire (attestée dans les deux types). Certaines populations plus touchées (Indiens Pima, Sardaigne).</p>
+ </div>
+ <div class="card o">
+ <h4>Facteurs environnementaux</h4>
+ <p style="font-size:.84rem">Obésité, sédentarité, alimentation riche en sucres rapides → expliquent la progression mondiale du type 2.</p>
+ </div>
+ </div>
+ <div class="warn">L'apparition du diabète résulte d'une interaction <strong>gènes × environnement</strong>. Une prédisposition génétique ne conduit pas inévitablement à la maladie.</div>
+</section>
+
+<!-- ══════════════════════════════════════════
+ MOTS-CLÉS
+══════════════════════════════════════════ -->
+<section id="mots-cles">
+ <div class="section-header">
+ <div class="section-num orange">🏷</div>
+ <h2>Mots-clés à maîtriser</h2>
+ </div>
+ <div class="card">
+ <span class="kw">Sarcomère</span><span class="kw">Actine</span><span class="kw">Myosine</span>
+ <span class="kw">Tropomyosine</span><span class="kw">Troponine</span><span class="kw">Titine</span>
+ <span class="kw">Bande I / A / Zone H</span><span class="kw">Filaments glissants (Huxley 1954)</span>
+ <span class="kw">Pont actomyosine</span><span class="kw">Rigidité cadavérique</span>
+ <span class="kw">Réticulum sarcoplasmique</span><span class="kw">Ca²⁺</span>
+ <span class="kw">Couplage excitation-contraction</span><span class="kw">Tubules T</span>
+ <span class="kw">Dystrophine</span><span class="kw">Myopathie de Duchenne</span>
+ <span class="kw">ATP (~30 kJ/mol)</span><span class="kw">Phosphocréatine (PCr)</span>
+ <span class="kw">Glycolyse</span><span class="kw">Fermentation lactique</span><span class="kw">Fermentation alcoolique</span>
+ <span class="kw">Cycle de Krebs</span><span class="kw">Chaîne respiratoire</span>
+ <span class="kw">NADH,H⁺ / FADH₂</span><span class="kw">β-oxydation</span>
+ <span class="kw">Seuil anaérobie</span><span class="kw">VO₂max</span>
+ <span class="kw">Stéroïdes anabolisants</span><span class="kw">Corticoïdes</span><span class="kw">EPO</span>
+ <span class="kw">Milieu intérieur (~15 L)</span><span class="kw">Glycémie (1 g/L)</span>
+ <span class="kw">Cellules glucodépendantes</span><span class="kw">Glycogenèse</span>
+ <span class="kw">Glycogénolyse</span><span class="kw">Néoglucogenèse</span>
+ <span class="kw">Îlots de Langerhans</span><span class="kw">Cellules α / β</span>
+ <span class="kw">Insuline (hypoglycémiante)</span><span class="kw">Glucagon (hyperglycémiant)</span>
+ <span class="kw">Homéostasie</span><span class="kw">Rétrocontrôle négatif</span>
+ <span class="kw">Diabète type 1 (DID)</span><span class="kw">Diabète type 2 (DNID)</span>
+ <span class="kw">Insulinorésistance</span>
+ </div>
+</section>
+
+
+<a href="../qcm/qcm6_contraction_musculaire.html" style="display:block;background:linear-gradient(135deg,rgba(32,36,58,.14),rgba(32,36,58,.14));border:1px solid rgba(58,64,96,.35);border-radius:12px;padding:1.2rem;text-align:center;text-decoration:none;color:#e8eaf0;margin-top:2rem;font-weight:700;transition:all .2s">🎯 Tester mes connaissances — QCM Fiche 6</a>
+
+</main>
+<footer>SVT Terminale Spécialité · Bac 2026 — Fiche 6 / 10 · Contraction musculaire<a href="../accueil-svt.html" style="color:#6366f1">Retour à l'index</a></footer>
+</body>
+</html>

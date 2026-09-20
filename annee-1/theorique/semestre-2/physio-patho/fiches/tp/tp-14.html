@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Maladies Pulmonaires Restrictives — Fiche de révision complète">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../../assets/css/acces.css">
+<script src="../../../../../../assets/js/acces.js"></script>
+<title>Maladies Pulmonaires Restrictives — Fiche de Révision</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../../../assets/css/chrome.css">
+<style>
+ :root {
+ --bg: #161922;
+ --ink: #1a1d2a;
+ --accent: #ff5c6b;
+ --accent2: #f472b6;
+ --accent3: #ff6b9d;
+ --accent4: #ff8fa3;
+ --card: #1a1d2a;
+ --border: #3a4060;
+ --tag-bg: #161922;
+ --muted: #6a7388;
+ --warning: #ff8fa3;
+ }
+
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+
+ body {
+ background: var(--bg);
+ color: var(--ink);
+ font-family: 'Source Sans 3', sans-serif;
+ font-weight: 300;
+ line-height: 1.7;
+ min-height: 100vh;
+ }
+
+ /* HEADER */
+ header {
+ background: var(--ink);
+ color: #ff8fa3;
+ padding: 3rem 2rem 2.5rem;
+ position: relative;
+ overflow: hidden;
+ }
+ header::before {
+ content: '';
+ position: absolute;
+ top: -40px; right: -40px;
+ width: 260px; height: 260px;
+ border-radius: 50%;
+ background: rgba(255,92,107,0.18);
+ }
+ header::after {
+ content: '';
+ position: absolute;
+ bottom: -60px; left: 10%;
+ width: 180px; height: 180px;
+ border-radius: 50%;
+ background: rgba(255,107,157,0.12);
+ }
+ .header-inner {
+ max-width: 960px;
+ margin: 0 auto;
+ position: relative;
+ z-index: 1;
+ }
+ .header-tag {
+ display: inline-block;
+ font-size: 0.7rem;
+ letter-spacing: 0.2em;
+ text-transform: uppercase;
+ background: var(--accent);
+ color: white;
+ padding: 0.25rem 0.75rem;
+ border-radius: 2px;
+ margin-bottom: 1rem;
+ }
+ header h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(1.8rem, 4vw, 2.8rem);
+ font-weight: 700;
+ line-height: 1.15;
+ margin-bottom: 0.5rem;
+ }
+ header p {
+ color: #9aa3b8;
+ font-size: 0.9rem;
+ letter-spacing: 0.05em;
+ }
+
+ /* TOC */
+ .toc {
+ background: var(--ink);
+ border-top: 1px solid rgba(255,255,255,0.08);
+ padding: 1.2rem 2rem;
+ }
+ .toc-inner {
+ max-width: 960px;
+ margin: 0 auto;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.5rem 1.5rem;
+ }
+ .toc a {
+ color: #9aa3b8;
+ text-decoration: none;
+ font-size: 0.82rem;
+ letter-spacing: 0.03em;
+ transition: color 0.2s;
+ }
+ .toc a:hover { color: var(--accent); }
+ .toc-num {
+ color: var(--accent);
+ margin-right: 0.3em;
+ font-weight: 600;
+ }
+
+ /* MAIN */
+ main {
+ max-width: 960px;
+ margin: 0 auto;
+ padding: 2.5rem 1.5rem 4rem;
+ }
+
+ /* SECTION */
+ .section {
+ margin-bottom: 3rem;
+ animation: fadeUp 0.5s ease both;
+ }
+ @keyframes fadeUp {
+ from { opacity: 0; transform: translateY(18px); }
+ to { opacity: 1; transform: translateY(0); }
+ }
+
+ .section-title {
+ display: flex;
+ align-items: center;
+ gap: 0.75rem;
+ margin-bottom: 1.4rem;
+ padding-bottom: 0.6rem;
+ border-bottom: 2px solid var(--border);
+ }
+ .section-num {
+ font-family: 'Playfair Display', serif;
+ font-size: 2rem;
+ color: var(--border);
+ line-height: 1;
+ font-style: italic;
+ flex-shrink: 0;
+ }
+ .section-title h2 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.25rem;
+ font-weight: 700;
+ line-height: 1.2;
+ }
+ .section-accent { color: var(--accent); }
+ .section-accent2 { color: var(--accent2); }
+ .section-accent3 { color: var(--accent3); }
+ .section-accent4 { color: var(--accent4); }
+
+ /* CARDS */
+ .cards {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+ gap: 1rem;
+ }
+ .card {
+ background: var(--card);
+ border: 1px solid var(--border);
+ border-radius: 6px;
+ padding: 1.25rem 1.4rem;
+ position: relative;
+ }
+ .card-top {
+ display: flex;
+ align-items: center;
+ gap: 0.6rem;
+ margin-bottom: 0.8rem;
+ }
+ .card-icon {
+ width: 32px; height: 32px;
+ border-radius: 50%;
+ display: flex; align-items: center; justify-content: center;
+ font-size: 1rem;
+ flex-shrink: 0;
+ }
+ .card h3 {
+ font-size: 0.9rem;
+ font-weight: 600;
+ letter-spacing: 0.02em;
+ }
+ .card ul {
+ list-style: none;
+ padding: 0;
+ }
+ .card ul li {
+ font-size: 0.85rem;
+ padding: 0.3rem 0;
+ border-bottom: 1px solid var(--tag-bg);
+ display: flex;
+ align-items: flex-start;
+ gap: 0.4rem;
+ }
+ .card ul li:last-child { border-bottom: none; }
+ .card ul li::before {
+ content: '→';
+ color: var(--muted);
+ font-size: 0.75rem;
+ margin-top: 0.15rem;
+ flex-shrink: 0;
+ }
+
+ /* HIGHLIGHT BOX */
+ .highlight {
+ background: #ff8fa3;
+ border-left: 4px solid var(--accent);
+ border-radius: 0 6px 6px 0;
+ padding: 1rem 1.3rem;
+ margin: 1rem 0;
+ font-size: 0.88rem;
+ }
+ .highlight.blue { background: #ff8fa3; border-color: var(--accent2); }
+ .highlight.green { background: #ff6b9d; border-color: var(--accent3); }
+ .highlight.orange { background: #ff8fa3; border-color: var(--accent4); }
+ .highlight strong { display: block; margin-bottom: 0.3rem; font-weight: 600; }
+
+ /* TABLE */
+ table {
+ width: 100%;
+ border-collapse: collapse;
+ font-size: 0.85rem;
+ background: var(--card);
+ border: 1px solid var(--border);
+ border-radius: 6px;
+ overflow: hidden;
+ margin: 1rem 0;
+ }
+ th {
+ background: var(--ink);
+ color: #ff8fa3;
+ padding: 0.75rem 1rem;
+ text-align: left;
+ font-weight: 600;
+ font-size: 0.8rem;
+ letter-spacing: 0.05em;
+ text-transform: uppercase;
+ }
+ td {
+ padding: 0.65rem 1rem;
+ border-bottom: 1px solid var(--border);
+ vertical-align: top;
+ }
+ tr:last-child td { border-bottom: none; }
+ tr:nth-child(even) td { background: var(--tag-bg); }
+
+ /* BADGE */
+ .badge {
+ display: inline-block;
+ font-size: 0.7rem;
+ font-weight: 600;
+ letter-spacing: 0.06em;
+ text-transform: uppercase;
+ padding: 0.2rem 0.55rem;
+ border-radius: 3px;
+ margin-right: 0.3rem;
+ }
+ .badge-red { background: #ff8fa3; color: var(--accent); }
+ .badge-blue { background: #ff8fa3; color: var(--accent2); }
+ .badge-green { background: #ff6b9d; color: var(--accent3); }
+ .badge-orange { background: #ff8fa3; color: var(--accent4); }
+
+ /* TIMELINE / PHASES */
+ .timeline {
+ position: relative;
+ padding-left: 2.5rem;
+ margin: 1rem 0;
+ }
+ .timeline::before {
+ content: '';
+ position: absolute;
+ left: 0.6rem;
+ top: 0; bottom: 0;
+ width: 2px;
+ background: var(--border);
+ }
+ .tl-item {
+ position: relative;
+ margin-bottom: 1.2rem;
+ }
+ .tl-dot {
+ position: absolute;
+ left: -2.05rem;
+ top: 0.35rem;
+ width: 14px; height: 14px;
+ border-radius: 50%;
+ border: 2px solid var(--card);
+ box-shadow: 0 0 0 2px var(--border);
+ }
+ .tl-item h4 {
+ font-size: 0.9rem;
+ font-weight: 600;
+ margin-bottom: 0.3rem;
+ }
+ .tl-item p { font-size: 0.83rem; color: var(--muted); }
+
+ /* URGENT BOX */
+ .urgent {
+ background: #ff8fa3;
+ border: 2px solid var(--accent);
+ border-radius: 6px;
+ padding: 1rem 1.3rem;
+ margin: 1rem 0;
+ display: flex;
+ gap: 0.75rem;
+ align-items: flex-start;
+ }
+ .urgent-icon { font-size: 1.4rem; flex-shrink: 0; }
+ .urgent h4 { font-size: 0.9rem; font-weight: 700; color: var(--accent); margin-bottom: 0.3rem; }
+ .urgent p { font-size: 0.83rem; }
+
+ /* SCHEMA */
+ .schema {
+ background: var(--card);
+ border: 1px solid var(--border);
+ border-radius: 6px;
+ padding: 1.4rem;
+ margin: 1rem 0;
+ font-size: 0.85rem;
+ }
+ .schema-title { font-weight: 600; margin-bottom: 1rem; font-size: 0.88rem; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+ .flow {
+ display: flex;
+ flex-wrap: wrap;
+ align-items: center;
+ gap: 0.4rem;
+ }
+ .flow-box {
+ background: var(--tag-bg);
+ border: 1px solid var(--border);
+ border-radius: 4px;
+ padding: 0.4rem 0.75rem;
+ font-size: 0.8rem;
+ text-align: center;
+ }
+ .flow-arrow { color: var(--accent); font-weight: 700; font-size: 1rem; }
+
+ /* 2-COL */
+ .two-col {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 1rem;
+ }
+ @media (max-width: 600px) { .two-col { grid-template-columns: 1fr; } }
+
+ /* KEY NUMBERS */
+ .key-numbers {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 1rem;
+ margin: 1rem 0;
+ }
+ .kn {
+ background: var(--card);
+ border: 1px solid var(--border);
+ border-radius: 6px;
+ padding: 1rem 1.2rem;
+ text-align: center;
+ flex: 1;
+ min-width: 120px;
+ }
+ .kn-val {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.6rem;
+ font-weight: 700;
+ line-height: 1;
+ margin-bottom: 0.3rem;
+ }
+ .kn-label { font-size: 0.75rem; color: var(--muted); }
+
+ /* SEPARATOR */
+ .sep {
+ border: none;
+ border-top: 1px dashed var(--border);
+ margin: 1.5rem 0;
+ }
+
+ /* FOOTER */
+ footer {
+ text-align: center;
+ padding: 2rem;
+ font-size: 0.75rem;
+ color: var(--muted);
+ border-top: 1px solid var(--border);
+ }
+
+ @media print {
+ body { background: white; }
+ header { background: #1a1d2a !important; -webkit-print-color-adjust: exact; }
+ }
+</style>
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/physio-patho.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-theme.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
+</head>
+<body>
+<a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
+<div class="page-toggle"><div class="pt-inner"><a href="../../qcm/tp/tp-14.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<header>
+ <div class="header-inner">
+ <div class="header-tag">Physiothérapie · 1ère année · 2e semestre</div>
+ <h1>Maladies Pulmonaires<br>Restrictives</h1>
+ <p>Fiche de révision complète</p>
+ </div>
+</header>
+
+<nav class="toc">
+ <div class="toc-inner">
+ <a href="#s1"><span class="toc-num">01</span>Définition & Diagnostic</a>
+ <a href="#s2"><span class="toc-num">02</span>Étiologie</a>
+ <a href="#s3"><span class="toc-num">03</span>Maladies interstitielles</a>
+ <a href="#s4"><span class="toc-num">04</span>Clinique & Traitement</a>
+ <a href="#s5"><span class="toc-num">05</span>Plèvre & Épanchement</a>
+ <a href="#s6"><span class="toc-num">06</span>Pneumothorax</a>
+ <a href="#s7"><span class="toc-num">07</span>Hémothorax & Fibrothorax</a>
+ <a href="#s8"><span class="toc-num">08</span>Tumeurs pleurales</a>
+ </div>
+</nav>
+
+<main>
+
+ <!-- S1 — DÉFINITION -->
+ <section class="section" id="s1">
+ <div class="section-title">
+ <span class="section-num">01</span>
+ <h2 class="section-accent">Définition & Diagnostic fonctionnel</h2>
+ </div>
+
+ <div class="highlight">
+ <strong>🫁 Définition clé</strong>
+ Réduction de l'<strong>expansion du parenchyme pulmonaire</strong> avec <strong>diminution de la Capacité Pulmonaire Totale (CPT)</strong> — liée à des altérations du tissu conjonctif et du collagène.
+ </div>
+
+ <div class="schema">
+ <div class="schema-title">Profil spirométrique restrictif vs obstructif</div>
+ <table>
+ <thead>
+ <tr><th>Paramètre</th><th>Restrictif ✓</th><th>Obstructif</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>VEMS (FEV₁)</td><td>↓ Diminué</td><td>↓ Diminué</td></tr>
+ <tr><td>CVF (FVC)</td><td>↓ Diminué</td><td>Normal ou légèrement ↓</td></tr>
+ <tr><td><strong>VEMS/CVF</strong></td><td><strong>Normal (≥ 0,70)</strong></td><td><strong>↓ &lt; 0,70</strong></td></tr>
+ <tr><td>CPT (TLC)</td><td>↓ Diminuée</td><td>↑ Augmentée</td></tr>
+ <tr><td>Compliance</td><td>↓ Diminuée</td><td>↑ Augmentée</td></tr>
+ </tbody>
+ </table>
+ <p style="font-size:0.8rem;color:var(--muted);margin-top:0.5rem;">⚠️ Critère distinctif : réductions <em>proportionnelles</em> du VEMS et du CPT, avec rapport VEMS/CVF <em>conservé</em>.</p>
+ </div>
+ </section>
+
+ <!-- S2 — ÉTIOLOGIE -->
+ <section class="section" id="s2">
+ <div class="section-title">
+ <span class="section-num">02</span>
+ <h2 class="section-accent2">Classification étiologique</h2>
+ </div>
+
+ <div class="two-col">
+ <div class="card">
+ <div class="card-top">
+ <div class="card-icon" style="background:#e8f4fd;color:var(--accent2)">🦴</div>
+ <h3>Troubles extrinsèques (cage thoracique)</h3>
+ </div>
+ <ul>
+ <li><strong>Obésité sévère</strong> — tissu adipeux, diaphragme limité, ↓ V/Q</li>
+ <li><strong>Maladies pleurales</strong> — épanchements, fibrothorax</li>
+ <li><strong>Cyphoscoliose</strong> — déformation osseuse restrictive</li>
+ <li><strong>Maladies neuromusculaires</strong> — faiblesse des muscles respiratoires</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-top">
+ <div class="card-icon" style="background:#fde8e8;color:var(--accent)">🔬</div>
+ <h3>Troubles intrinsèques (parenchyme)</h3>
+ </div>
+ <ul>
+ <li><strong>Fibrose interstitielle idiopathique (FPI)</strong></li>
+ <li>Sarcoïdose</li>
+ <li>Pneumoconiose / Pneumonites d'hypersensibilité</li>
+ <li>Médicaments, radiations</li>
+ <li>Connectivites (polyarthrite rhumatoïde…)</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="highlight orange" style="margin-top:1rem;">
+ <strong>💡 Obésité — mécanisme physiopath</strong>
+ Tissu adipeux → rétrécissement des voies aériennes supérieures → mouvement diaphragmatique limité → ↓ volume d'air + possible faiblesse musculaire → altération du rapport V/Q → <strong>hypoventilation</strong>.
+ </div>
+
+ <div class="cards" style="margin-top:1rem;">
+ <div class="card">
+ <div class="card-top">
+ <div class="card-icon" style="background:#e8fdf0;color:var(--accent3)">⚗️</div>
+ <h3>Mécanismes étiologiques des MIP</h3>
+ </div>
+ <ul>
+ <li>Exposition environnementale / professionnelle</li>
+ <li>Tabagisme</li>
+ <li>Sénescence</li>
+ <li>Dysrégulation immunitaire</li>
+ <li>Facteurs génétiques</li>
+ </ul>
+ </div>
+ </div>
+ </section>
+
+ <!-- S3 — MALADIES INTERSTITIELLES -->
+ <section class="section" id="s3">
+ <div class="section-title">
+ <span class="section-num">03</span>
+ <h2 class="section-accent">Maladies de l'Interstitium Pulmonaire (MIP)</h2>
+ </div>
+
+ <div class="highlight">
+ <strong>📖 Définition</strong>
+ Groupe hétérogène de maladies diffuses du parenchyme pulmonaire partageant une <strong>inflammation chronique de toute la paroi alvéolaire</strong>, pouvant régresser ou évoluer vers une fibrose progressive.
+ </div>
+
+ <p style="margin:1rem 0 0.5rem;font-size:0.88rem;font-weight:600;">5 catégories des MIP :</p>
+ <div class="cards">
+ <div class="card">
+ <div class="card-top"><div class="card-icon" style="background:#f3e8fd;color:#8e44ad">1️⃣</div><h3>Maladies primaires</h3></div>
+ <ul><li>Sarcoïdose</li></ul>
+ </div>
+ <div class="card">
+ <div class="card-top"><div class="card-icon" style="background:#fef3e8;color:var(--accent4)">2️⃣</div><h3>Expositions environnementales</h3></div>
+ <ul><li>Pneumoconiose</li><li>Pneumonites d'hypersensibilité</li></ul>
+ </div>
+ <div class="card">
+ <div class="card-top"><div class="card-icon" style="background:#fde8e8;color:var(--accent)">3️⃣</div><h3>Iatrogènes</h3></div>
+ <ul><li>Médicaments</li><li>Radiations</li></ul>
+ </div>
+ <div class="card">
+ <div class="card-top"><div class="card-icon" style="background:#e8f4fd;color:var(--accent2)">4️⃣</div><h3>Connectivites</h3></div>
+ <ul><li>Polyarthrite rhumatoïde</li><li>Lupus, sclérodermie…</li></ul>
+ </div>
+ <div class="card">
+ <div class="card-top"><div class="card-icon" style="background:#e8fdf0;color:var(--accent3)">5️⃣</div><h3>Idiopathiques</h3></div>
+ <ul><li>Fibrose Pulmonaire Idiopathique (FPI)</li></ul>
+ </div>
+ </div>
+
+ <hr class="sep">
+
+ <p style="margin-bottom:0.75rem;font-weight:600;font-size:0.9rem;">Pathogenèse — Cascade inflammatoire :</p>
+ <div class="schema">
+ <div class="flow">
+ <div class="flow-box">Agression<br><small>paroi alvéolaire</small></div>
+ <span class="flow-arrow">→</span>
+ <div class="flow-box">Inflammation<br><small>Macrophages, LT, PNN</small></div>
+ <span class="flow-arrow">→</span>
+ <div class="flow-box">Médiateurs<br><small>cytokines pro-fibrotiques</small></div>
+ <span class="flow-arrow">→</span>
+ <div class="flow-box" style="background:#fde8e8;">Fibrose<br><small>tissu conjonctif ↑↑</small></div>
+ </div>
+ </div>
+
+ <div class="two-col" style="margin-top:1rem;">
+ <div class="highlight blue">
+ <strong>🔑 Présent à TOUS les stades</strong>
+ Épaississement du septum alvéolaire avec augmentation de la <strong>barrière alvéolo-capillaire</strong> → entrave aux échanges gazeux.
+ </div>
+ <div class="highlight">
+ <strong>🔑 Pas à tous les stades</strong>
+ La prolifération du tissu conjonctif et des fibroblastes n'est présente qu'aux stades avancés.
+ </div>
+ </div>
+ </section>
+
+ <!-- S4 — CLINIQUE & TRAITEMENT -->
+ <section class="section" id="s4">
+ <div class="section-title">
+ <span class="section-num">04</span>
+ <h2 class="section-accent3">Manifestations cliniques & Traitement</h2>
+ </div>
+
+ <div class="two-col">
+ <div>
+ <p style="font-weight:600;margin-bottom:0.6rem;font-size:0.88rem;">Symptômes :</p>
+ <div class="card">
+ <ul>
+ <li><strong>Dyspnée</strong> d'installation insidieuse, progressive</li>
+ <li><strong>Toux sèche</strong> et irritante</li>
+ <li>Fièvre chronique</li>
+ <li>Myalgies, malaise général</li>
+ <li>Auscultation : <strong>crépitements secs</strong> ("velcro")</li>
+ <li>Formes sévères : <strong>cyanose, hippocratisme digital</strong></li>
+ <li>Fibrose avancée : <strong>polypnée et dyspnée de repos</strong></li>
+ </ul>
+ </div>
+ </div>
+ <div>
+ <p style="font-weight:600;margin-bottom:0.6rem;font-size:0.88rem;">Examens complémentaires (MCDT) :</p>
+ <div class="card">
+ <ul>
+ <li>🩻 <strong>Radiologie</strong> : nodules 1–5 mm, aspect "nid d'abeille"</li>
+ <li>📊 <strong>Spirométrie</strong> : syndrome restrictif (↓ compliance)</li>
+ <li>🩸 <strong>Gazométrie</strong> : hypoxémie → à stade avancé : hypoxémie + hypercapnie</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+
+ <hr class="sep">
+
+ <p style="font-weight:600;margin-bottom:0.75rem;font-size:0.88rem;">Traitement :</p>
+ <div class="two-col">
+ <div class="card">
+ <div class="card-top">
+ <div class="card-icon" style="background:#fde8e8;color:var(--accent)">💊</div>
+ <h3>Pharmacologique</h3>
+ </div>
+ <ul>
+ <li><strong>Nintedanib</strong> — anti-fibrotique (inhibiteur tyrosine kinase)</li>
+ <li><strong>Pirfénidone</strong> — anti-fibrotique (anti-inflammatoire)</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-top">
+ <div class="card-icon" style="background:#e8f4fd;color:var(--accent2)">🏃</div>
+ <h3>Non pharmacologique</h3>
+ </div>
+ <ul>
+ <li>Supplémentation en O₂ (si hypoxémie)</li>
+ <li><strong>Rééducation respiratoire / kinésithérapie</strong></li>
+ </ul>
+ </div>
+ </div>
+ </section>
+
+ <!-- S5 — PLÈVRE & ÉPANCHEMENT -->
+ <section class="section" id="s5">
+ <div class="section-title">
+ <span class="section-num">05</span>
+ <h2 class="section-accent2">Plèvre & Épanchement pleural</h2>
+ </div>
+
+ <div class="two-col">
+ <div class="card">
+ <div class="card-top">
+ <div class="card-icon" style="background:#e8fdf0;color:var(--accent3)">🫧</div>
+ <h3>Plèvre viscérale</h3>
+ </div>
+ <ul>
+ <li>Recouvre tout le poumon, sauf le hile</li>
+ <li>Innervation : SNAutonome</li>
+ <li><strong>Pas de récepteurs douleur</strong> → indolore à la stimulation</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-top">
+ <div class="card-icon" style="background:#fde8e8;color:var(--accent)">⚡</div>
+ <h3>Plèvre pariétale</h3>
+ </div>
+ <ul>
+ <li>Costale, médiastinale, diaphragmatique</li>
+ <li>Innervation : nerfs intercostaux + nerf phrénique</li>
+ <li><strong>Très sensible aux stimuli nociceptifs</strong></li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="key-numbers" style="margin-top:1rem;">
+ <div class="kn"><div class="kn-val" style="color:var(--accent2)">3–15</div><div class="kn-label">ml de liquide pleural normal</div></div>
+ <div class="kn"><div class="kn-val" style="color:var(--accent)">&lt;0,5</div><div class="kn-label">ratio protéines LP/sérum → transsudat</div></div>
+ <div class="kn"><div class="kn-val" style="color:var(--accent3)">&gt;0,5</div><div class="kn-label">ratio protéines LP/sérum → exsudat</div></div>
+ </div>
+
+ <hr class="sep">
+
+ <div class="schema">
+ <div class="schema-title">Mécanismes d'accumulation du liquide pleural</div>
+ <div class="flow">
+ <div class="flow-box">↑ Pression hydrostatique<br><small>insuffisance cardiaque</small></div>
+ <span class="flow-arrow">+</span>
+ <div class="flow-box">↓ Pression oncotique<br><small>syndrome néphrotique</small></div>
+ <span class="flow-arrow">+</span>
+ <div class="flow-box">↑ Perméabilité capillaire<br><small>inflammation</small></div>
+ <span class="flow-arrow">+</span>
+ <div class="flow-box">Blocage lymphatique<br><small>tumeur</small></div>
+ <span class="flow-arrow">→</span>
+ <div class="flow-box" style="background:#fde8e8;"><strong>Épanchement</strong></div>
+ </div>
+ </div>
+
+ <hr class="sep">
+
+ <p style="font-weight:600;margin-bottom:0.75rem;font-size:0.9rem;">Transudat vs Exsudat :</p>
+ <table>
+ <thead>
+ <tr>
+ <th>Critère</th>
+ <th><span class="badge badge-blue">Transsudat</span></th>
+ <th><span class="badge badge-red">Exsudat</span></th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td>Mécanisme</td><td>↑ P. hydrostatique / ↓ P. oncotique</td><td>↑ Perméabilité / obstruction lymphatique</td></tr>
+ <tr><td>Aspect</td><td>Transparent, clair</td><td>Jaune, trouble, voire hématique</td></tr>
+ <tr><td>Protéines LP/sérum</td><td>&lt; 0,5</td><td>&gt; 0,5</td></tr>
+ <tr><td>Plèvres</td><td>Non atteintes directement</td><td>Surface pleurale compromise</td></tr>
+ <tr><td>Causes principales</td><td>Insuffisance cardiaque congestive, syndrome néphrotique, cirrhose, ascite</td><td>Néoplasmes, infections (pneumonie, TBC), embolie pulmonaire, hémothorax</td></tr>
+ </tbody>
+ </table>
+
+ <hr class="sep">
+
+ <p style="font-weight:600;margin-bottom:0.75rem;font-size:0.9rem;">Conséquences physiopathologiques :</p>
+ <div class="schema">
+ <div class="flow">
+ <div class="flow-box">↑ Travail respiratoire</div>
+ <span class="flow-arrow">→</span>
+ <div class="flow-box">Dyspnée</div>
+ </div>
+ <div class="flow" style="margin-top:0.5rem;">
+ <div class="flow-box">↓ Volume pulmonaire</div>
+ <span class="flow-arrow">→</span>
+ <div class="flow-box">Syndrome restrictif + ↓ perfusion</div>
+ <span class="flow-arrow">→</span>
+ <div class="flow-box" style="background:#fde8e8;">Hypoxémie</div>
+ </div>
+ <div class="flow" style="margin-top:0.5rem;">
+ <div class="flow-box">Douleur pleurale</div>
+ <span class="flow-arrow">→</span>
+ <div class="flow-box">Tachypnée</div>
+ <span class="flow-arrow">→</span>
+ <div class="flow-box" style="background:#fde8e8;">Hypoxémie + Dyspnée</div>
+ </div>
+ </div>
+
+ <hr class="sep">
+
+ <p style="font-weight:600;margin-bottom:0.75rem;font-size:0.9rem;">Sémiologie clinique :</p>
+ <div class="two-col">
+ <div class="card">
+ <h3 style="margin-bottom:0.6rem">Symptômes</h3>
+ <ul>
+ <li>Douleur pariétale : type élancement, liée à la respiration, peut irradier vers l'épaule</li>
+ <li>Dyspnée (dépend du volume et de la douleur)</li>
+ <li>Toux sèche</li>
+ <li>Fièvre</li>
+ </ul>
+ </div>
+ <div class="card">
+ <h3 style="margin-bottom:0.6rem">Examens complémentaires</h3>
+ <ul>
+ <li>Imagerie : Rx thorax, scanner, échographie</li>
+ <li>Thoracocentèse (ponction pleurale)</li>
+ <li>Analyse biochimique, bactériologique, cytologique du liquide</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="highlight blue" style="margin-top:1rem;">
+ <strong>🩻 Signe radiographique clé</strong>
+ <strong>Courbe de Damoiseau</strong> : oblitération de l'angle costo-phrénique + courbe de convexité vers le bas ; plus l'épanchement est volumineux, plus la courbe est haute.
+ </div>
+
+ <hr class="sep">
+
+ <p style="font-weight:600;margin-bottom:0.75rem;font-size:0.9rem;">Traitement :</p>
+ <div class="two-col">
+ <div class="card">
+ <div class="card-top"><div class="card-icon" style="background:#e8f4fd;color:var(--accent2)">🔵</div><h3>Transsudats</h3></div>
+ <ul>
+ <li>Thoracocentèse évacuatrice (dyspnée)</li>
+ <li>Pleurodèse si récidive (talc, tétracycline)</li>
+ <li>Drainage thoracique</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-top"><div class="card-icon" style="background:#fde8e8;color:var(--accent)">🔴</div><h3>Exsudats — Empyème</h3></div>
+ <ul>
+ <li>Antibiothérapie + drainage</li>
+ <li>Lavages pleuraux</li>
+ <li>Réexpansion thoracique (chirurgie/kiné)</li>
+ <li>Décortication si fibrothorax</li>
+ </ul>
+ </div>
+ </div>
+
+ <hr class="sep">
+
+ <p style="font-weight:600;margin-bottom:0.75rem;font-size:0.9rem;">Évolution de l'empyème — 3 phases :</p>
+ <div class="timeline">
+ <div class="tl-item">
+ <div class="tl-dot" style="background:var(--accent3)"></div>
+ <h4>Phase 1 — Exsudative (J0–J5)</h4>
+ <p>Épanchement simple, sans invasion bactérienne. ↑ Perméabilité capillaire, inflammation localisée, faible teneur cellulaire.</p>
+ </div>
+ <div class="tl-item">
+ <div class="tl-dot" style="background:var(--warning)"></div>
+ <h4>Phase 2 — Fibrinopurulente (J5–J10)</h4>
+ <p>Invasion bactérienne, inflammation intense. Formation de fibrine sur les deux plèvres → septa → <strong>loculation</strong> de l'épanchement (rend l'évacuation difficile).</p>
+ </div>
+ <div class="tl-item">
+ <div class="tl-dot" style="background:var(--accent)"></div>
+ <h4>Phase 3 — Organisation (à partir de J14–J28)</h4>
+ <p>Migration de fibroblastes → fibrose → <strong>pachypleurite</strong> et emprisonnement pulmonaire. Traitement : <strong>décortication pulmonaire</strong>.</p>
+ </div>
+ </div>
+
+ <div class="urgent">
+ <div class="urgent-icon">⚠️</div>
+ <div>
+ <h4>PHYSIOTHÉRAPIE URGENTE ET PRÉCOCE</h4>
+ <p>Pour éviter les séquelles : adhérences pleurales, pachypleurite, fibrothorax.</p>
+ </div>
+ </div>
+ </section>
+
+ <!-- S6 — PNEUMOTHORAX -->
+ <section class="section" id="s6">
+ <div class="section-title">
+ <span class="section-num">06</span>
+ <h2 class="section-accent">Pneumothorax</h2>
+ </div>
+
+ <div class="highlight">
+ <strong>📖 Définition</strong>
+ <strong>Présence d'air dans la cavité pleurale</strong> → collapse pulmonaire partiel ou total.
+ </div>
+
+ <table style="margin:1rem 0;">
+ <thead>
+ <tr><th>Type</th><th>Mécanisme</th><th>Population</th><th>Spécificités</th></tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td><span class="badge badge-blue">Spontané primaire</span></td>
+ <td>Rupture de bulles sous-pleurales (blebs)</td>
+ <td>Jeunes adultes ♂, tabagiques</td>
+ <td>Récidives fréquentes (30% puis 60–80%)</td>
+ </tr>
+ <tr>
+ <td><span class="badge badge-red">Spontané secondaire</span></td>
+ <td>Complication d'une maladie respiratoire</td>
+ <td>BPCO, tuberculose, pneumonie</td>
+ <td>Tableau plus grave, détresse respiratoire</td>
+ </tr>
+ <tr>
+ <td><span class="badge badge-orange">Traumatique</span></td>
+ <td>Traumatisme thoracique pénétrant</td>
+ <td>Tous âges</td>
+ <td>Souvent associé à un hémothorax</td>
+ </tr>
+ <tr>
+ <td><span class="badge badge-green">Iatrogène</span></td>
+ <td>Biopsie pleurale/pulmonaire, pose cathéter veineux, ventilation mécanique</td>
+ <td>Patients hospitalisés</td>
+ <td>Prévention importante</td>
+ </tr>
+ </tbody>
+ </table>
+
+ <div class="two-col">
+ <div class="card">
+ <div class="card-top"><div class="card-icon" style="background:#fde8e8;color:var(--accent)">🩺</div><h3>Symptômes (spontané primaire)</h3></div>
+ <ul>
+ <li>Douleur thoracique unilatérale intense ("coup de poing"), aggravée à l'inspiration</li>
+ <li>Dyspnée (liée à la douleur et/ou l'étendue du collapse)</li>
+ <li>Toux peu fréquente</li>
+ <li>Formes graves : cyanose, tachycardie, agitation</li>
+ <li>Hypomobilité de l'hémithorax affecté</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-top"><div class="card-icon" style="background:#e8f4fd;color:var(--accent2)">💉</div><h3>Traitement</h3></div>
+ <ul>
+ <li>Petit pneumothorax : surveillance passive</li>
+ <li>Drainage thoracique si persistance &gt; 1–2 sem. ou fistule broncho-pleurale</li>
+ <li>Thoracotomie : résection des bulles, pleurodèse abrasive, talcage par thoracoscopie</li>
+ <li>Oxygénothérapie + kinésithérapie</li>
+ </ul>
+ </div>
+ </div>
+
+ <hr class="sep">
+
+ <p style="font-weight:600;margin-bottom:0.75rem;font-size:0.9rem;">Complications du pneumothorax :</p>
+ <div class="urgent">
+ <div class="urgent-icon">🚨</div>
+ <div>
+ <h4>Pneumothorax hypertensif — URGENCE ABSOLUE</h4>
+ <p>Retour veineux altéré → détresse hémodynamique. Nécessite la pose d'un drain thoracique en <strong>urgence immédiate</strong>.</p>
+ </div>
+ </div>
+
+ <div class="cards" style="margin-top:0.75rem;">
+ <div class="card"><ul>
+ <li>Pneumothorax bilatéral simultané (très rare)</li>
+ <li>Hémopneumothorax (surtout post-traumatique)</li>
+ <li>Piopneumothorax (pneumonie nécrosante, abcès, TBC)</li>
+ <li>Pneumomédiastin (généralement bénin)</li>
+ </ul></div>
+ </div>
+ </section>
+
+ <!-- S7 — HÉMOTHORAX & FIBROTHORAX -->
+ <section class="section" id="s7">
+ <div class="section-title">
+ <span class="section-num">07</span>
+ <h2 class="section-accent4">Hémothorax & Fibrothorax</h2>
+ </div>
+
+ <div class="two-col">
+ <div>
+ <div class="highlight orange">
+ <strong>🩸 Hémothorax</strong>
+ Présence de sang dans l'espace pleural. La fibrine contenue dans le sang → séquelles importantes : <strong>pachipleurite / fibrothorax</strong>.
+ </div>
+ <div class="card" style="margin-top:0.75rem;">
+ <h3 style="margin-bottom:0.5rem">Causes</h3>
+ <ul>
+ <li>Traumatismes pénétrants (principale cause)</li>
+ <li>Iatrogène : pose de cathéter veineux central (sous-clavière, jugulaire interne)</li>
+ </ul>
+ </div>
+ </div>
+ <div>
+ <div class="highlight">
+ <strong>🧱 Fibrothorax</strong>
+ Épaisse couche de tissu fibreux sur la plèvre viscérale, enveloppant le poumon → restriction sévère.
+ </div>
+ <div class="card" style="margin-top:0.75rem;">
+ <h3 style="margin-bottom:0.5rem">Causes & Traitement</h3>
+ <ul>
+ <li>Causes : hémothorax, empyème, tuberculose pleurale</li>
+ <li>Signes : hémithorax rétracté, mobilité réduite</li>
+ <li>Traitement : <strong>décortication chirurgicale</strong></li>
+ <li>Pronostic selon les lésions pulmonaires sous-jacentes</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- S8 — TUMEURS PLEURALES -->
+ <section class="section" id="s8">
+ <div class="section-title">
+ <span class="section-num">08</span>
+ <h2 class="section-accent2">Tumeurs de la plèvre</h2>
+ </div>
+
+ <table>
+ <thead>
+ <tr><th>Type</th><th>Sous-type</th><th>Pronostic</th></tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td rowspan="2"><strong>Tumeurs primaires</strong><br><small>(mésothéliomes)</small></td>
+ <td>Bénigne — mésothéliome localisé</td>
+ <td>Favorable si résection complète</td>
+ </tr>
+ <tr>
+ <td>Maligne — mésothéliome diffus<br><small>Facteur principal : exposition à l'amiante</small></td>
+ <td style="color:var(--accent)"><strong>Très défavorable</strong><br>Survie : 5–27 mois</td>
+ </tr>
+ <tr>
+ <td><strong>Tumeurs secondaires</strong><br><small>(métastatiques)</small></td>
+ <td>Extension par contiguïté ou voie hématogène</td>
+ <td>Dépend de la tumeur primitive</td>
+ </tr>
+ </tbody>
+ </table>
+
+ <div class="highlight" style="margin-top:1rem;">
+ <strong>📌 À retenir</strong>
+ Le pronostic du mésothéliome malin est très sombre car le diagnostic est souvent posé tardivement. Il est fortement associé à une exposition prolongée à l'amiante.
+ </div>
+ </section>
+
+ <!-- SYNTHÈSE FINALE -->
+ <section class="section">
+ <div class="section-title">
+ <span class="section-num" style="color:var(--border)">✦</span>
+ <h2>Tableau synthétique — Pathologies pleurales</h2>
+ </div>
+ <table>
+ <thead>
+ <tr><th>Pathologie</th><th>Contenu</th><th>Symptôme clé</th><th>Traitement principal</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>Épanchement pleural</td><td>Liquide (transsudat ou exsudat)</td><td>Dyspnée + douleur pariétale</td><td>Thoracocentèse, drainage</td></tr>
+ <tr><td>Empyème</td><td>Pus</td><td>Fièvre + dyspnée</td><td>ATB + drainage URGENT + kiné</td></tr>
+ <tr><td>Pneumothorax</td><td>Air</td><td>Douleur thoracique aiguë unilatérale</td><td>Surveillance / drainage thoracique</td></tr>
+ <tr><td>Hémothorax</td><td>Sang</td><td>Dyspnée + contexte traumatique</td><td>Drainage + traitement causal</td></tr>
+ <tr><td>Fibrothorax</td><td>Fibrose pleurale</td><td>Restriction + mobilité ↓</td><td>Décortication chirurgicale</td></tr>
+ <tr><td>Mésothéliome</td><td>Tissu tumoral</td><td>Épanchement récidivant + douleur</td><td>Chimio/radio (pronostic sombre)</td></tr>
+ </tbody>
+ </table>
+ </section>
+
+</main>
+
+<footer>
+ Fiche de révision générée à partir du cours TP14<br>
+ Licence en Physiothérapie — 1ère année, 2e semestre
+</footer>
+
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-14.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+</body>
+</html>

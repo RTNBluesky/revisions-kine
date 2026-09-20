@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Physiologie du Système Reproducteur — Fiche de révision complète · Cours 4">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../assets/css/acces.css">
+<script src="../../../../../assets/js/acces.js"></script>
+<title>Fiche de Révision – Physiologie du Système Reproducteur</title>
+<link rel="stylesheet" href="../../../../../assets/css/chrome.css">
+<style>
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;1,400&display=swap');
+
+ :root {
+ --bg: #0f1117;
+ --surface: #161922;
+ --surface2: #1a1d2a;
+ --accent-blue: #f472b6;
+ --accent-teal: #ff6b9d;
+ --accent-rose: #f472b6;
+ --accent-amber: #ff8fa3;
+ --accent-violet: #f472b6;
+ --text: #9aa3b8;
+ --text-muted: #9aa3b8;
+ --border: rgba(255,255,255,0.07);
+ }
+
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+
+ body {
+ background: var(--bg);
+ color: var(--text);
+ font-family: 'Source Sans 3', sans-serif;
+ font-size: 15px;
+ line-height: 1.65;
+ padding: 40px 20px;
+ }
+
+ .page {
+ max-width: 1100px;
+ margin: 0 auto;
+ }
+
+ /* HEADER */
+ header {
+ text-align: center;
+ margin-bottom: 56px;
+ position: relative;
+ padding: 48px 0 40px;
+ }
+ header::before {
+ content: '';
+ position: absolute; inset: 0;
+ background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(255,107,157,0.12) 0%, transparent 70%);
+ pointer-events: none;
+ }
+ .badge {
+ display: inline-block;
+ background: rgba(255,107,157,0.15);
+ border: 1px solid rgba(255,107,157,0.3);
+ color: var(--accent-blue);
+ font-size: 11px;
+ font-weight: 600;
+ letter-spacing: 0.15em;
+ text-transform: uppercase;
+ padding: 5px 14px;
+ border-radius: 20px;
+ margin-bottom: 18px;
+ }
+ header h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(28px, 5vw, 50px);
+ font-weight: 900;
+ line-height: 1.1;
+ background: linear-gradient(135deg, #ff8fa3 0%, var(--accent-blue) 50%, var(--accent-teal) 100%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ background-clip: text;
+ margin-bottom: 12px;
+ }
+ header p {
+ color: var(--text-muted);
+ font-size: 14px;
+ letter-spacing: 0.03em;
+ }
+
+ /* GRID */
+ .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+ .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+ .full { grid-column: 1 / -1; }
+
+ /* SECTION TITLES */
+ .section-title {
+ font-family: 'Playfair Display', serif;
+ font-size: 22px;
+ font-weight: 700;
+ margin: 48px 0 20px;
+ display: flex;
+ align-items: center;
+ gap: 12px;
+ }
+ .section-title::after {
+ content: '';
+ flex: 1;
+ height: 1px;
+ background: var(--border);
+ }
+ .icon { font-size: 20px; }
+
+ /* CARDS */
+ .card {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ border-radius: 14px;
+ padding: 24px;
+ position: relative;
+ overflow: hidden;
+ transition: border-color 0.2s, transform 0.2s;
+ }
+ .card:hover {
+ border-color: rgba(255,255,255,0.14);
+ transform: translateY(-2px);
+ }
+ .card::before {
+ content: '';
+ position: absolute;
+ top: 0; left: 0; right: 0;
+ height: 2px;
+ }
+ .card.blue::before { background: linear-gradient(90deg, var(--accent-blue), transparent); }
+ .card.teal::before { background: linear-gradient(90deg, var(--accent-teal), transparent); }
+ .card.rose::before { background: linear-gradient(90deg, var(--accent-rose), transparent); }
+ .card.amber::before { background: linear-gradient(90deg, var(--accent-amber), transparent); }
+ .card.violet::before { background: linear-gradient(90deg, var(--accent-violet), transparent); }
+
+ .card h3 {
+ font-family: 'Playfair Display', serif;
+ font-size: 16px;
+ font-weight: 700;
+ margin-bottom: 14px;
+ display: flex;
+ align-items: center;
+ gap: 8px;
+ }
+ .card.blue h3 { color: var(--accent-blue); }
+ .card.teal h3 { color: var(--accent-teal); }
+ .card.rose h3 { color: var(--accent-rose); }
+ .card.amber h3 { color: var(--accent-amber); }
+ .card.violet h3 { color: var(--accent-violet); }
+
+ .card p { color: var(--text-muted); font-size: 13.5px; margin-bottom: 8px; }
+ .card ul { padding-left: 18px; color: var(--text-muted); font-size: 13.5px; }
+ .card li { margin-bottom: 5px; }
+
+ /* HIGHLIGHT PILL */
+ .pill {
+ display: inline-block;
+ padding: 2px 10px;
+ border-radius: 20px;
+ font-size: 12px;
+ font-weight: 600;
+ margin: 2px 3px;
+ }
+ .pill-blue { background: rgba(255,107,157,0.2); color: var(--accent-blue); }
+ .pill-teal { background: rgba(255,107,157,0.2); color: var(--accent-teal); }
+ .pill-rose { background: rgba(255,107,157,0.2); color: var(--accent-rose); }
+ .pill-amber { background: rgba(255,107,157,0.2); color: var(--accent-amber); }
+ .pill-violet { background: rgba(255,107,157,0.2); color: var(--accent-violet); }
+
+ /* TIMELINE */
+ .timeline {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ border-radius: 14px;
+ padding: 28px 32px;
+ position: relative;
+ }
+ .timeline::before {
+ content: '';
+ position: absolute; top: 0; left: 0; right: 0;
+ height: 2px;
+ background: linear-gradient(90deg, var(--accent-teal), var(--accent-blue), var(--accent-violet), var(--accent-rose));
+ }
+ .timeline-row {
+ display: grid;
+ grid-template-columns: 120px 1fr;
+ gap: 16px;
+ padding: 14px 0;
+ border-bottom: 1px solid var(--border);
+ }
+ .timeline-row:last-child { border-bottom: none; }
+ .tl-label {
+ font-weight: 700;
+ font-size: 13px;
+ color: var(--accent-teal);
+ align-self: start;
+ padding-top: 2px;
+ }
+ .tl-content { font-size: 13.5px; color: var(--text-muted); }
+ .tl-content strong { color: var(--text); font-weight: 600; }
+
+ /* HORMONE TABLE */
+ .htable {
+ width: 100%;
+ border-collapse: collapse;
+ font-size: 13px;
+ margin-top: 4px;
+ }
+ .htable th {
+ padding: 9px 12px;
+ text-align: left;
+ font-weight: 600;
+ font-size: 11px;
+ letter-spacing: 0.08em;
+ text-transform: uppercase;
+ color: var(--text-muted);
+ border-bottom: 1px solid var(--border);
+ }
+ .htable td {
+ padding: 9px 12px;
+ border-bottom: 1px solid var(--border);
+ vertical-align: top;
+ color: var(--text-muted);
+ }
+ .htable tr:last-child td { border-bottom: none; }
+ .htable tr:hover td { background: rgba(255,255,255,0.02); }
+ .htable td:first-child { color: var(--text); font-weight: 600; }
+
+ /* CYCLE DIAGRAM */
+ .cycle-container {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ border-radius: 14px;
+ padding: 28px;
+ }
+ .cycle-container::before {
+ content: '';
+ display: block;
+ height: 2px;
+ background: linear-gradient(90deg, var(--accent-rose), var(--accent-violet), var(--accent-blue));
+ border-radius: 1px;
+ margin-bottom: 24px;
+ }
+ .phases-row {
+ display: grid;
+ grid-template-columns: 1fr auto 1fr auto 1fr;
+ gap: 0;
+ align-items: stretch;
+ margin-bottom: 20px;
+ }
+ .phase-block {
+ background: var(--surface2);
+ border-radius: 10px;
+ padding: 16px 14px;
+ text-align: center;
+ }
+ .phase-block .phase-name {
+ font-family: 'Playfair Display', serif;
+ font-size: 14px;
+ font-weight: 700;
+ margin-bottom: 4px;
+ }
+ .phase-block .phase-days {
+ font-size: 11px;
+ color: var(--text-muted);
+ margin-bottom: 8px;
+ }
+ .phase-block p { font-size: 12px; color: var(--text-muted); }
+ .phase-arrow {
+ display: flex;
+ align-items: center;
+ padding: 0 8px;
+ color: var(--text-muted);
+ font-size: 20px;
+ }
+ .phase1 .phase-name { color: var(--accent-rose); }
+ .phase2 .phase-name { color: var(--accent-amber); }
+ .phase3 .phase-name { color: var(--accent-violet); }
+
+ /* COMPARISON BOX */
+ .compare {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 0;
+ background: var(--surface);
+ border: 1px solid var(--border);
+ border-radius: 14px;
+ overflow: hidden;
+ }
+ .compare::before {
+ content: '';
+ display: none;
+ }
+ .compare-col {
+ padding: 24px;
+ }
+ .compare-col:first-child {
+ border-right: 1px solid var(--border);
+ }
+ .compare-col h4 {
+ font-family: 'Playfair Display', serif;
+ font-size: 15px;
+ font-weight: 700;
+ margin-bottom: 14px;
+ }
+ .compare-col:first-child h4 { color: var(--accent-blue); }
+ .compare-col:last-child h4 { color: var(--accent-rose); }
+ .compare-col ul { padding-left: 16px; color: var(--text-muted); font-size: 13px; }
+ .compare-col li { margin-bottom: 5px; }
+
+ /* KEY CONCEPT BOX */
+ .key-box {
+ background: rgba(255,107,157,0.06);
+ border: 1px solid rgba(255,107,157,0.2);
+ border-left: 3px solid var(--accent-blue);
+ border-radius: 0 10px 10px 0;
+ padding: 14px 18px;
+ margin: 14px 0;
+ font-size: 13.5px;
+ color: var(--text-muted);
+ }
+ .key-box strong { color: var(--accent-blue); }
+
+ .warn-box {
+ background: rgba(255,166,87,0.06);
+ border: 1px solid rgba(255,166,87,0.2);
+ border-left: 3px solid var(--accent-amber);
+ border-radius: 0 10px 10px 0;
+ padding: 14px 18px;
+ margin: 14px 0;
+ font-size: 13.5px;
+ color: var(--text-muted);
+ }
+ .warn-box strong { color: var(--accent-amber); }
+
+ /* HORMONE FLOW */
+ .flow {
+ display: flex;
+ align-items: center;
+ flex-wrap: wrap;
+ gap: 6px;
+ padding: 16px 0;
+ }
+ .flow-step {
+ background: var(--surface2);
+ border: 1px solid var(--border);
+ border-radius: 8px;
+ padding: 8px 14px;
+ font-size: 12.5px;
+ text-align: center;
+ min-width: 90px;
+ }
+ .flow-step .fs-label { font-size: 10px; color: var(--text-muted); margin-bottom: 2px; text-transform: uppercase; letter-spacing: 0.06em; }
+ .flow-step .fs-hormone { font-weight: 700; font-size: 13px; }
+ .flow-arrow { color: var(--text-muted); font-size: 18px; }
+ .flow-neg { font-size: 11px; color: var(--accent-rose); font-weight: 700; }
+ .flow-pos { font-size: 11px; color: var(--accent-teal); font-weight: 700; }
+
+ /* EFFECTS GRID */
+ .effects-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+ gap: 12px;
+ }
+ .effect-item {
+ background: var(--surface2);
+ border: 1px solid var(--border);
+ border-radius: 10px;
+ padding: 14px;
+ display: flex;
+ gap: 10px;
+ align-items: flex-start;
+ }
+ .effect-num {
+ background: rgba(255,107,157,0.15);
+ color: var(--accent-amber);
+ width: 26px; height: 26px;
+ border-radius: 6px;
+ display: flex; align-items: center; justify-content: center;
+ font-weight: 700; font-size: 13px;
+ flex-shrink: 0;
+ }
+ .effect-text { font-size: 13px; color: var(--text-muted); }
+
+ /* FOOTER */
+ footer {
+ margin-top: 60px;
+ border-top: 1px solid var(--border);
+ padding-top: 28px;
+ text-align: center;
+ font-size: 12px;
+ color: var(--text-muted);
+ }
+
+ @media (max-width: 700px) {
+ .grid-2, .grid-3 { grid-template-columns: 1fr; }
+ .full { grid-column: auto; }
+ .phases-row { grid-template-columns: 1fr; }
+ .phase-arrow { display: none; }
+ .compare { grid-template-columns: 1fr; }
+ .compare-col:first-child { border-right: none; border-bottom: 1px solid var(--border); }
+ }
+</style>
+
+ <link rel="stylesheet" href="../../../../../assets/css/modules/fiche-theme.css">
+
+ <link rel="stylesheet" href="../../../../../assets/css/modules/fiche-layout.css">
+</head>
+<body>
+<a href="../accueil-physio.html" class="back-nav">← Physiologie II</a>
+<div class="page-toggle"><div class="pt-inner"><a href="../qcm/QCM_4_Systeme_reproducteur.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<div class="page">
+
+ <header>
+ <div class="badge">Physiologie II · Physiothérapie</div>
+ <h1>Physiologie du<br>Système Reproducteur</h1>
+ <p>Fiche de révision complète · Cours 4</p>
+ </header>
+
+ <!-- ===== 1. GAMÈTES ===== -->
+ <div class="section-title">
+ <span class="icon">🔬</span> 1. Les Gamètes
+ </div>
+
+ <div class="grid-2">
+ <div class="card blue">
+ <h3>♂ Spermatozoïde</h3>
+ <p>Petite cellule ayant perdu la majeure partie de son cytoplasme lors de sa formation.</p>
+ <ul>
+ <li><strong>Mobilité</strong> : se déplace grâce au battement de son <em>flagelle</em></li>
+ <li><strong>Tête</strong> : contient l'ADN (coiffe riche en enzymes)</li>
+ <li><strong>Partie médiane</strong> : riche en mitochondries (énergie)</li>
+ <li><strong>Queue</strong> : microtubules pour la locomotion</li>
+ </ul>
+ </div>
+ <div class="card rose">
+ <h3>♀ Ovule</h3>
+ <p>Plus gros que le spermatozoïde, ne se déplace pas seul.</p>
+ <ul>
+ <li><strong>Grande taille</strong> liée aux réserves nutritives : le <em>vitellus</em></li>
+ <li>Le vitellus nourrit l'embryon jusqu'à l'implantation</li>
+ <li>Cellule haploïde (n=23) après méiose complète</li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- ===== 2. GAMÉTOGENÈSE ===== -->
+ <div class="section-title">
+ <span class="icon">🧬</span> 2. Gamétogenèse
+ </div>
+
+ <div class="grid-2">
+ <div class="card blue">
+ <h3>Spermatogenèse (♂)</h3>
+ <p>Se déroule dans les <strong>tubules séminifères</strong> des testicules :</p>
+ <div class="timeline-row" style="display:flex; flex-direction:column; gap:6px; margin-top:10px;">
+ <div style="font-size:13px;color:var(--text-muted);">
+ <span class="pill pill-blue">Spermatogonie 2n</span> → <em>Mitose</em><br>
+ → <span class="pill pill-blue">Spermatocyte I 2n</span> → <em>Méiose I</em><br>
+ → <span class="pill pill-teal">Spermatocyte II n</span> → <em>Méiose II</em><br>
+ → <span class="pill pill-teal">Spermatides n</span> → <em>Spermiogenèse</em><br>
+ → <span class="pill pill-teal">Spermatozoïdes n</span>
+ </div>
+ </div>
+ <div class="key-box" style="margin-top:12px;">
+ <strong>Cellules de Sertoli</strong> : nourrissent et contrôlent les cellules germinales, sécrètent l'<strong>inhibine</strong><br>
+ <strong>Cellules de Leydig</strong> : produisent la testostérone
+ </div>
+ </div>
+ <div class="card rose">
+ <h3>Ovogenèse (♀)</h3>
+ <p>Commence avant la naissance, reprend à la puberté :</p>
+ <div style="font-size:13px;color:var(--text-muted); margin-top:10px;">
+ <span class="pill pill-rose">Oogonie 2n</span> → <em>Mitose</em><br>
+ → <span class="pill pill-rose">Ovocyte I 2n</span> → <em>Méiose I bloquée en prophase I (avant naissance)</em><br>
+ → <em>Reprend à la puberté</em> → <span class="pill pill-violet">Ovocyte II n</span> + 1er corps polaire<br>
+ → <em>Méiose II bloquée en métaphase II</em><br>
+ → <em>Débloquée par pénétration du spermatozoïde</em><br>
+ → <span class="pill pill-violet">Ovule n</span> + 2ème corps polaire
+ </div>
+ <div class="warn-box" style="margin-top:12px;">
+ <strong>Attention !</strong> La méiose II n'est complétée qu'<em>après</em> la fécondation.
+ </div>
+ </div>
+ </div>
+
+ <!-- ===== 3. PUBERTÉ ===== -->
+ <div class="section-title">
+ <span class="icon">📈</span> 3. Puberté
+ </div>
+
+ <div class="grid-3">
+ <div class="card amber">
+ <h3>Définition & Âges</h3>
+ <p>Âge auquel les individus deviennent sexuellement actifs (capables de se reproduire).</p>
+ <ul>
+ <li>♂ : <strong>12–14 ans</strong> (↑ testostérone)</li>
+ <li>♀ : <strong>11–13 ans</strong> (↑ œstrogènes + progestérone)</li>
+ </ul>
+ </div>
+ <div class="card teal">
+ <h3>Mécanisme hormonal</h3>
+ <p>Deux changements de sensibilité :</p>
+ <ul>
+ <li>↓ Sensibilité hypothalamus/hypophyse à la rétroaction négative</li>
+ <li>↑ Sensibilité des gonades à FSH/LH</li>
+ </ul>
+ <p style="margin-top:8px;">→ ↑ LH et FSH → croissance des gonades → ↑ hormones sexuelles → gamétogenèse</p>
+ </div>
+ <div class="card violet">
+ <h3>Facteurs influençants</h3>
+ <ul>
+ <li>Génétique</li>
+ <li>Environnement</li>
+ <li>Stress psychologique</li>
+ <li><strong>Nutrition</strong> (facteur majeur)</li>
+ </ul>
+ <p style="margin-top:8px;">La ménarche (♀) survient entre 11 et 13 ans, achevée vers 16 ans.</p>
+ </div>
+ </div>
+
+ <div class="compare" style="margin-bottom:20px;">
+ <div class="compare-col">
+ <h4>♂ Caractéristiques sexuelles secondaires</h4>
+ <ul>
+ <li>Augmentation volume larynx → voix grave</li>
+ <li>Augmentation masse musculaire</li>
+ <li>Pilosité faciale, axillaire, pubienne, corporelle</li>
+ <li>Peau plus rugueuse, plus sombre (↑ mélanine)</li>
+ <li>↑ Sécrétion glandes sébacées (acné)</li>
+ </ul>
+ </div>
+ <div class="compare-col">
+ <h4>♀ Caractéristiques sexuelles secondaires</h4>
+ <ul>
+ <li>Dépôt de graisse (seins, hanches)</li>
+ <li>Augmentation et développement des seins</li>
+ <li>Élargissement du bassin</li>
+ <li>Croissance des poils (aisselles, pubis)</li>
+ <li>Développement libido</li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- ===== 4. SYSTÈME REPRODUCTEUR MASCULIN ===== -->
+ <div class="section-title">
+ <span class="icon">⚙️</span> 4. Contrôle du Système Reproducteur Masculin
+ </div>
+
+ <div class="grid-2">
+ <div class="card blue">
+ <h3>Axe Hypothalamo-Hypophyso-Gonadique</h3>
+ <div class="flow">
+ <div class="flow-step">
+ <div class="fs-label">Hypothalamus</div>
+ <div class="fs-hormone" style="color:var(--accent-blue)">GnRH</div>
+ </div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-step">
+ <div class="fs-label">Adéno-hypophyse</div>
+ <div class="fs-hormone" style="color:var(--accent-teal)">LH + FSH</div>
+ </div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-step">
+ <div class="fs-label">Testicules</div>
+ <div class="fs-hormone" style="color:var(--accent-amber)">Testostérone</div>
+ </div>
+ </div>
+ <div class="key-box">
+ <strong>LH</strong> → cellules de Leydig → synthèse de testostérone<br>
+ <strong>FSH</strong> → cellules de Sertoli → développement des spermatozoïdes (synergie avec testostérone)
+ </div>
+ <p>Rétroaction négative : testostérone inhibe GnRH/LH ; inhibine inhibe FSH.</p>
+ </div>
+ <div class="card amber">
+ <h3>7 Effets de la Testostérone</h3>
+ <div class="effects-grid">
+ <div class="effect-item"><div class="effect-num">1</div><div class="effect-text">Croissance capillaire (pubis, corps, visage)</div></div>
+ <div class="effect-item"><div class="effect-num">2</div><div class="effect-text">Peau plus rugueuse + ↑ mélanine</div></div>
+ <div class="effect-item"><div class="effect-num">3</div><div class="effect-text">↑ Sécrétion sébacée → acné</div></div>
+ <div class="effect-item"><div class="effect-num">4</div><div class="effect-text">Hypertrophie larynx → voix grave</div></div>
+ <div class="effect-item"><div class="effect-num">5</div><div class="effect-text">↑ Métabolisme (BMR + élevé ♂ vs ♀)</div></div>
+ <div class="effect-item"><div class="effect-num">6</div><div class="effect-text">↑ Érythropoïèse (+20% globules rouges)</div></div>
+ <div class="effect-item"><div class="effect-num">7</div><div class="effect-text">↑ Synthèse protéique → ↑ masse musculaire</div></div>
+ </div>
+ </div>
+ </div>
+
+ <div class="card teal full" style="margin-bottom:20px;">
+ <h3>Glandes Accessoires & Composition du Sperme</h3>
+ <table class="htable">
+ <thead>
+ <tr>
+ <th>Source</th>
+ <th>% Volume</th>
+ <th>Nature</th>
+ <th>Rôles principaux</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Vésicules séminales</td>
+ <td><span class="pill pill-teal">60%</span></td>
+ <td>Visqueux, alcalin</td>
+ <td>Fructose (énergie ATP) • Prostaglandines (mobilité) • Protéines de coagulation • Neutralise acidité vagin</td>
+ </tr>
+ <tr>
+ <td>Prostate</td>
+ <td><span class="pill pill-blue">30%</span></td>
+ <td>Laiteux, légèrement acide (pH~6,5)</td>
+ <td>Acide citrique (Krebs) • Enzymes protéolytiques (décoagulation) • Plasma séminal (antibiotique) • Zinc (stabilise ADN)</td>
+ </tr>
+ <tr>
+ <td>Glandes de Cowper</td>
+ <td><span class="pill pill-violet">5%</span></td>
+ <td>Alcalin, épais</td>
+ <td>Lubrifie urètre • Neutralise acidité urine • Mucus lubrifiant</td>
+ </tr>
+ <tr>
+ <td>Testicules</td>
+ <td><span class="pill pill-amber">5%</span></td>
+ <td></td>
+ <td>Spermatozoïdes</td>
+ </tr>
+ </tbody>
+ </table>
+ <div class="warn-box" style="margin-top:14px;">
+ <strong>pH final du sperme ≈ 7,2–7,7</strong> (alcalin) malgré l'acidité du liquide prostatique, grâce au grand volume des vésicules séminales.
+ </div>
+ </div>
+
+ <!-- ===== 5. CYCLE REPRODUCTIF FÉMININ ===== -->
+ <div class="section-title">
+ <span class="icon">🌙</span> 5. Cycle Reproductif Féminin
+ </div>
+
+ <div class="cycle-container" style="margin-bottom:20px;">
+ <h3 style="font-family:'Playfair Display',serif; font-size:17px; margin-bottom:20px; color:var(--text);">Vue d'ensemble du cycle (~28 jours)</h3>
+ <div class="phases-row">
+ <div class="phase-block phase1">
+ <div class="phase-name">Phase Folliculaire</div>
+ <div class="phase-days">Jours 1–14</div>
+ <p><em>Cycle ovarien</em></p>
+ <p>= Période menstruelle + Phase proliférative</p>
+ <p><em>Cycle utérin</em></p>
+ </div>
+ <div class="phase-arrow">⟶</div>
+ <div class="phase-block phase2">
+ <div class="phase-name">Ovulation</div>
+ <div class="phase-days">~Jour 14</div>
+ <p>Pic de LH déclenche la libération de l'ovocyte II</p>
+ </div>
+ <div class="phase-arrow">⟶</div>
+ <div class="phase-block phase3">
+ <div class="phase-name">Phase Lutéale</div>
+ <div class="phase-days">Jours 14–28</div>
+ <p><em>Cycle ovarien</em></p>
+ <p>= Phase sécrétoire</p>
+ <p><em>Cycle utérin</em></p>
+ </div>
+ </div>
+ <div class="key-box" style="margin-top:16px;">
+ <strong>Durée variable :</strong> la phase folliculaire varie (6–16 jours selon la longueur du cycle) ; la phase lutéale est <em>constante = 14 jours</em>.
+ </div>
+ </div>
+
+ <div class="grid-2">
+ <div class="card rose">
+ <h3>Cycle Ovarien — Phase Folliculaire</h3>
+ <ul>
+ <li>FSH stimule ~25 follicules primaires</li>
+ <li>Un seul follicule dominant sera sélectionné</li>
+ <li>Follicules en maturation → sécrètent <strong>œstrogènes</strong> + inhibine</li>
+ <li>↑ Œstrogènes → rétroaction <em>négative</em> sur FSH/LH (début)<br>→ puis rétroaction <em>positive</em> (fin de phase → pic LH et FSH)</li>
+ <li>Follicule mature = follicule de Graaf (tertiaire)</li>
+ </ul>
+ <div class="warn-box">
+ <strong>Clé :</strong> le passage de rétroaction négative → positive des œstrogènes est le déclencheur de l'ovulation !
+ </div>
+ </div>
+ <div class="card violet">
+ <h3>Cycle Ovarien — Ovulation & Phase Lutéale</h3>
+ <p><strong>Ovulation :</strong></p>
+ <ul>
+ <li>Pic de LH → follicule œdémateux → rupture → libération ovocyte II</li>
+ <li>Le pic de LH achève la méiose I de l'ovocyte</li>
+ </ul>
+ <p style="margin-top:10px;"><strong>Phase lutéale :</strong></p>
+ <ul>
+ <li>Follicule éclaté → <strong>corps jaune</strong> → sécrète progestérone + œstrogènes</li>
+ <li>Progestérone → rétroaction négative sur GnRH → ↓ FSH/LH</li>
+ <li>Sans fécondation : corps jaune dégénère → ↓ hormones → menstruation</li>
+ <li>Avec fécondation : HCG maintient le corps jaune → pas de menstruation</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="card teal full" style="margin-bottom:20px;">
+ <h3>Cycle Utérin — Modifications de l'Endomètre</h3>
+ <table class="htable">
+ <thead>
+ <tr>
+ <th>Phase utérine</th>
+ <th>Jours</th>
+ <th>Hormone dominante</th>
+ <th>Modifications endométriales</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Période menstruelle</td>
+ <td>1–5</td>
+ <td><span class="pill pill-rose">↓ E2 + ↓ Progest.</span></td>
+ <td>Desquamation de la couche fonctionnelle. Flux = endomètre nécrosé + mucus + sang des artères spiralées. Contractions utérines.</td>
+ </tr>
+ <tr>
+ <td>Phase proliférative</td>
+ <td>6–14</td>
+ <td><span class="pill pill-teal">↑ Œstrogènes</span></td>
+ <td>↑ Prolifération cellules épithéliales. Formation de glandes tubulaires (glandes spiralées). Épaississement de l'endomètre.</td>
+ </tr>
+ <tr>
+ <td>Phase sécrétoire</td>
+ <td>15–28</td>
+ <td><span class="pill pill-violet">↑ Progestérone</span></td>
+ <td>Endomètre s'épaissit encore. Glandes spirales sécrètent solution riche en glycogène (prépare nidation). Inhibition des contractions utérines.</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+
+ <!-- ===== 6. RÉGULATION HORMONALE FÉMININE ===== -->
+ <div class="section-title">
+ <span class="icon">⚖️</span> 6. Régulation Hormonale du Cycle Féminin
+ </div>
+
+ <div class="grid-2">
+ <div class="card blue">
+ <h3>Axe Hypothalamo-Hypophyso-Ovarien</h3>
+ <div class="flow" style="flex-direction:column; align-items:flex-start; gap:8px;">
+ <div style="display:flex; align-items:center; gap:8px;">
+ <div class="flow-step"><div class="fs-label">Hypothalamus</div><div class="fs-hormone" style="color:var(--accent-blue)">GnRH</div></div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-step"><div class="fs-label">Adéno-hypophyse</div><div class="fs-hormone" style="color:var(--accent-teal)">FSH + LH</div></div>
+ </div>
+ <div style="margin-left:20px; font-size:12.5px; color:var(--text-muted);">
+ ↓ <strong style="color:var(--text);">FSH</strong> → cellules granulaires → androgènes → <span class="pill pill-rose">œstrogènes</span><br>
+ ↓ <strong style="color:var(--text);">LH</strong> → cellules thèque interne → androgènes
+ </div>
+ <div style="display:flex; align-items:center; gap:8px; margin-top:4px;">
+ <div class="flow-step"><div class="fs-label">Ovaires</div><div class="fs-hormone" style="color:var(--accent-rose)">E2 + Progest.</div></div>
+ <div class="flow-arrow flow-neg">⊣</div>
+ <div style="font-size:12px; color:var(--text-muted);">Rétroaction négative (habituelle)<br><span class="flow-pos">→ positive</span> en fin de phase folliculaire</div>
+ </div>
+ </div>
+ </div>
+ <div class="card amber">
+ <h3>Rôles des Hormones Ovariennes</h3>
+ <table class="htable">
+ <thead><tr><th>Hormone</th><th>Effets principaux</th></tr></thead>
+ <tbody>
+ <tr>
+ <td>Œstrogènes</td>
+ <td>Prolifération endomètre • ↑ contractilité utérine • Caractères sexuels ♀ • Rétroaction – puis + sur hypophyse</td>
+ </tr>
+ <tr>
+ <td>Progestérone</td>
+ <td>↑ Sécrétions utérines (glycogène) • Inhibe contractions utérines • Rétroaction – sur GnRH/FSH/LH</td>
+ </tr>
+ <tr>
+ <td>Inhibine</td>
+ <td>Inhibe spécifiquement la sécrétion de FSH par l'hypophyse</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+
+ <!-- ===== 7. MÉNOPAUSE ===== -->
+ <div class="section-title">
+ <span class="icon">🔄</span> 7. Ménopause
+ </div>
+
+ <div class="card violet full" style="margin-bottom:20px;">
+ <h3>Ménopause — Absence définitive de menstruation</h3>
+ <div class="grid-2" style="margin-top:12px; gap:16px;">
+ <div>
+ <p><strong style="color:var(--text);">Périménopause / Climactère :</strong> processus de 3 à 5 ans au cours duquel le cycle devient irrégulier, puis l'ovulation cesse.</p>
+ <p style="margin-top:10px;"><strong style="color:var(--text);">Mécanisme :</strong> Les follicules restants sont peu nombreux et peu sensibles à la FSH et LH. Malgré des taux élevés de FSH et LH, il n'y a plus d'ovulation ni de production suffisante d'œstrogènes.</p>
+ </div>
+ <div>
+ <p><strong style="color:var(--text);">Conséquences :</strong></p>
+ <ul style="color:var(--text-muted); font-size:13.5px; padding-left:18px; margin-top:6px;">
+ <li>Arrêt des cycles menstruels</li>
+ <li>↓ Œstrogènes et progestérone</li>
+ <li>↑ FSH et LH (absence de rétroaction négative)</li>
+ <li>Modifications des caractères sexuels secondaires</li>
+ <li>Modifications osseuses, cardiovasculaires, etc.</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+
+ <!-- ===== 8. MÉMO RAPIDE ===== -->
+ <div class="section-title">
+ <span class="icon">⚡</span> 8. Mémo Rapide — Points Clés
+ </div>
+
+ <div class="grid-3">
+ <div class="card blue">
+ <h3>🧠 Hormones à retenir</h3>
+ <ul>
+ <li><strong>GnRH</strong> : hypothalamus → stimule hypophyse</li>
+ <li><strong>FSH</strong> : follicules + spermatogenèse</li>
+ <li><strong>LH</strong> : ovulation + testostérone (Leydig)</li>
+ <li><strong>Inhibine</strong> : inhibe FSH (Sertoli / granulaires)</li>
+ <li><strong>HCG</strong> : maintient corps jaune si grossesse</li>
+ </ul>
+ </div>
+ <div class="card teal">
+ <h3>📅 Chronologie du cycle</h3>
+ <ul>
+ <li>Jour 1 : début des règles = début du cycle</li>
+ <li>Jours 1–14 : phase folliculaire</li>
+ <li>~Jour 14 : pic LH → ovulation</li>
+ <li>Jours 14–28 : phase lutéale (toujours 14j)</li>
+ <li>Jour 28 : menstruation si pas de fécondation</li>
+ </ul>
+ </div>
+ <div class="card rose">
+ <h3>⚠️ Pièges fréquents</h3>
+ <ul>
+ <li>La méiose II de l'ovocyte est complétée <em>après</em> fécondation</li>
+ <li>La phase lutéale est <em>constante</em> (14j), c'est la folliculaire qui varie</li>
+ <li>Le pic de LH précède celui de FSH en amplitude</li>
+ <li>Spermatozoïdes = 5% du sperme seulement</li>
+ <li>Rétroaction : œstrogènes peuvent être + ou – selon leur taux</li>
+ </ul>
+ </div>
+ </div>
+
+ <footer>
+ <p>Fiche de révision · Physiologie II – Physiothérapie</p>
+ <p style="margin-top:6px; font-style:italic; opacity:0.6;">Générée à partir des diapositives du Cours 4 – Système Reproducteur</p>
+ </footer>
+
+</div>
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../qcm/QCM_4_Systeme_reproducteur.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+</body>
+</html>

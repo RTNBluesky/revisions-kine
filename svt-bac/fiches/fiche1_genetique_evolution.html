@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Génétique et évolution — :root { --bg: #0f1117; --bg2: #0f1117; --bg3: #161922; --accent: #6366f1; --accent2: #a5a0ff; --accent3: #a5a0ff; --accent4: #a5a0ff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../assets/css/acces.css">
+<script src="../../assets/js/acces.js"></script>
+<title>Fiche 1 — Génétique et évolution | SVT Terminale</title>
+<link rel="stylesheet" href="../assets/css/chrome.css">
+<style>
+ :root {
+ --bg: #0f1117; --bg2: #0f1117; --bg3: #161922;
+ --accent: #6366f1; --accent2: #a5a0ff; --accent3: #a5a0ff;
+ --accent4: #a5a0ff; --text: #a5a0ff; --muted: #9aa3b8;
+ --border: #2a3050; --tag-bg: #161922;
+ }
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; font-size: 15px; line-height: 1.7; }
+
+ header {
+ background: linear-gradient(135deg, #0f1117 0%, #0f1117 100%);
+ border-bottom: 2px solid var(--accent);
+ padding: 2rem 2.5rem; display: flex; flex-direction: column; gap: 0.5rem;
+ }
+ header .tag { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); font-weight: 700; }
+ header h1 { font-size: 2rem; font-weight: 800; color: #e8eaf0; }
+ header .meta { color: var(--muted); font-size: 0.88rem; display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 0.25rem; }
+
+ nav { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 0.75rem 2.5rem; display: flex; gap: 0.6rem; flex-wrap: wrap; }
+ nav a { color: var(--muted); text-decoration: none; font-size: 0.82rem; padding: 0.3rem 0.8rem; border-radius: 20px; background: var(--bg3); transition: all 0.2s; }
+ nav a:hover { color: var(--accent); background: var(--tag-bg); }
+
+ main { max-width: 960px; margin: 0 auto; padding: 2rem 2.5rem; }
+ section { margin-bottom: 2.8rem; }
+
+ .chapter-badge {
+ display: inline-block; background: var(--accent); color: #e8eaf0;
+ font-size: 0.72rem; font-weight: 800; letter-spacing: 1px;
+ text-transform: uppercase; padding: 0.2rem 0.7rem; border-radius: 4px;
+ margin-bottom: 0.6rem;
+ }
+
+ h2 { font-size: 1.3rem; font-weight: 800; color: #e8eaf0; margin-bottom: 0.3rem; }
+ .h2-sub { color: var(--muted); font-size: 0.88rem; margin-bottom: 1.3rem; }
+ .section-divider { border: none; border-top: 2px solid var(--accent); margin-bottom: 1.5rem; }
+
+ h3 { font-size: 1rem; font-weight: 700; color: var(--accent2); margin: 1.2rem 0 0.5rem; }
+ h4 { font-size: 0.93rem; font-weight: 600; color: var(--accent3); margin: 0.9rem 0 0.3rem; }
+
+ p { margin-bottom: 0.7rem; color: var(--text); }
+
+ .card { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; }
+ .card.green { border-left: 4px solid var(--accent2); }
+ .card.blue { border-left: 4px solid var(--accent); }
+ .card.yellow { border-left: 4px solid var(--accent3); }
+ .card.red { border-left: 4px solid var(--accent4); }
+
+ .def-box { background: #0f1117; border: 1px solid #2a3050; border-radius: 8px; padding: 0.9rem 1.2rem; margin: 0.5rem 0 1rem; }
+ .def-box .label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent3); font-weight: 700; margin-bottom: 0.3rem; }
+ .def-box strong { color: var(--accent2); }
+
+ ul { padding-left: 1.4rem; margin-bottom: 0.8rem; }
+ ul li { margin-bottom: 0.3rem; }
+ ul li::marker { color: var(--accent); }
+ ol { padding-left: 1.4rem; margin-bottom: 0.8rem; }
+ ol li { margin-bottom: 0.4rem; }
+ ol li::marker { color: var(--accent2); font-weight: 700; }
+
+ table { width: 100%; border-collapse: collapse; margin: 0.8rem 0 1.2rem; font-size: 0.88rem; }
+ th { background: var(--bg3); color: var(--accent); padding: 0.6rem 0.9rem; text-align: left; border-bottom: 2px solid var(--accent); }
+ td { padding: 0.55rem 0.9rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+ tr:nth-child(even) td { background: #0f1117; }
+
+ .keyword { display: inline-block; background: var(--tag-bg); color: var(--accent2); border: 1px solid #2a3050; border-radius: 4px; padding: 0.1rem 0.5rem; font-size: 0.8rem; font-weight: 600; margin: 0.15rem; }
+
+ .important { background: #0f1117; border: 1px solid #2a3050; border-radius: 8px; padding: 0.8rem 1.1rem; margin: 0.8rem 0; color: var(--accent3); }
+ .important::before { content: "⚠ À retenir — "; font-weight: 700; }
+
+ .schema-box { background: var(--bg3); border: 1px dashed var(--border); border-radius: 8px; padding: 1rem; margin: 0.8rem 0; font-family: monospace; font-size: 0.85rem; color: var(--accent2); line-height: 2; white-space: pre; }
+
+ .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+ @media(max-width:640px) { .grid2 { grid-template-columns: 1fr; } }
+
+ footer { text-align: center; padding: 2rem; color: var(--muted); font-size: 0.8rem; border-top: 1px solid var(--border); margin-top: 2rem; }
+</style>
+</head>
+<body>
+
+<a href="../accueil-svt.html" class="back-nav">← SVT Bac 2026</a>
+
+<div class="page-toggle"><div class="pt-inner"><a href="../qcm/qcm1_genetique_evolution.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+
+<header>
+ <div class="tag">Thème I — La Terre, la vie et l'organisation du vivant</div>
+ <h1>Génétique et évolution</h1>
+ <div class="meta">
+ <span>📚 4,5 semaines · 4 cours</span>
+ <span>🎯 SVT Terminale Spécialité</span>
+ <span>🗂 Fiche 1 / 7</span>
+ </div>
+</header>
+
+<nav>
+ <a href="../accueil-svt.html" style="background:rgba(32,36,58,.1);color:#8b7cf8;border:1px solid rgba(58,64,96,.3);text-decoration:none;font-size:.78rem;padding:.25rem .75rem;border-radius:16px;margin-right:.25rem">← Index</a>
+ <a href="#c0">1.0 Stabilité &amp; évolution clonale</a>
+ <a href="#c1">1.1 Origine du génotype</a>
+ <a href="#c2">1.2 Complexification des génomes</a>
+ <a href="#c3">1.3 Évolution des génomes</a>
+ <a href="#c4">1.4 Autres mécanismes</a>
+ <a href="#mots-cles">Mots-clés</a>
+</nav>
+
+<main>
+
+ <!-- ══════════════════════════════════════════
+ COURS 1.0 — Stabilité & évolution clonale
+ ══════════════════════════════════════════ -->
+ <section id="c0">
+ <div class="chapter-badge">Cours 1.0</div>
+ <h2>Stabilité génétique &amp; évolution clonale</h2>
+ <p class="h2-sub">Comment le génome est-il conservé d'une cellule à l'autre ? Comment une lignée cellulaire peut-elle néanmoins évoluer ?</p>
+ <hr class="section-divider">
+
+ <h3>Le cycle cellulaire — réplication et mitose</h3>
+ <div class="schema-box">Cycle cellulaire :
+ G1 (croissance) → S (réplication ADN) → G2 (préparation) → M (mitose) → G1...
+ ↑
+ doublement de l'ADN (2n à 2 chromatides)</div>
+
+ <div class="grid2">
+ <div class="card green">
+ <h4 style="margin-top:0">Réplication semi-conservative (phase S)</h4>
+ <p>Chaque double hélice s'ouvre, chaque brin sert de matrice à un brin néo-synthétisé. <strong>ADN polymérase</strong>. Aboutit à 2 molécules identiques d'ADN (2 chromatides sœurs par chromosome).</p>
+ </div>
+ <div class="card blue">
+ <h4 style="margin-top:0">Mitose — division conforme</h4>
+ <p>Prophase → Métaphase → Anaphase → Télophase. Les chromatides sœurs se séparent à l'identique → <strong>2 cellules-filles génétiquement identiques</strong> à la cellule-mère. C'est la base de la stabilité génétique au sein d'un clone.</p>
+ </div>
+ </div>
+
+ <h3>Les points de contrôle (checkpoints)</h3>
+ <p>Le cycle cellulaire est surveillé par des <strong>points de contrôle</strong> qui vérifient l'intégrité de l'ADN avant de poursuivre :</p>
+ <ul>
+ <li><strong>Point G1/S</strong> : vérifie la taille de la cellule, les nutriments et l'absence d'altérations de l'ADN avant la réplication.</li>
+ <li><strong>Point G2/M</strong> : vérifie que la réplication est complète et sans erreur avant la mitose.</li>
+ <li><strong>Point M (fuseau)</strong> : vérifie l'attachement correct des chromosomes au fuseau avant l'anaphase.</li>
+ </ul>
+ <div class="def-box">
+ <div class="label">Acteurs clés</div>
+ <strong>P53</strong> (« gardien du génome ») arrête le cycle si l'ADN est endommagé, déclenche la réparation ou l'<strong>apoptose</strong>. Sa perte de fonction favorise les cancers (cf. fiche 9).
+ </div>
+
+ <h3>Évolution clonale — la diversité à l'intérieur d'un clone</h3>
+ <p>Un <strong>clone cellulaire</strong> est l'ensemble des descendantes d'une cellule unique par mitoses successives. En théorie, toutes les cellules d'un clone ont le même génome. Mais en pratique :</p>
+ <ul>
+ <li>Des <strong>mutations somatiques</strong> apparaissent aléatoirement au fil des divisions (erreurs de réplication, agents mutagènes).</li>
+ <li>Elles donnent naissance à des <strong>sous-clones</strong> avec leurs propres caractéristiques génétiques.</li>
+ <li>Si la mutation confère un <strong>avantage prolifératif</strong>, le sous-clone se développe plus vite que les autres → <strong>sélection cellulaire</strong>.</li>
+ </ul>
+
+ <div class="card red">
+ <h4 style="margin-top:0">Applications biologiques</h4>
+ <ul>
+ <li><strong>Cancérogenèse</strong> : accumulation de mutations dans une lignée cellulaire → clones sélectionnés pour leur prolifération → tumeur (cf. fiche 9).</li>
+ <li><strong>Lymphocytes B</strong> : hypermutation somatique + sélection clonale → maturation de l'affinité des anticorps.</li>
+ <li><strong>Vieillissement</strong> : accumulation de mutations somatiques dans les tissus (mosaïcisme).</li>
+ </ul>
+ </div>
+
+ <div class="important">
+ Mitose + réplication assurent la <strong>stabilité génétique</strong> intra-organisme. Mais les <strong>mutations somatiques</strong> et la <strong>sélection cellulaire</strong> font qu'une lignée de cellules peut <strong>évoluer</strong> au sein même d'un individu — c'est l'évolution clonale.
+ </div>
+ </section>
+
+ <!-- ══════════════════════════════════════════
+ COURS 1.1
+ ══════════════════════════════════════════ -->
+ <section id="c1">
+ <div class="chapter-badge">Cours 1.1</div>
+ <h2>L'origine du génotype des individus</h2>
+ <p class="h2-sub">Comment la reproduction sexuée génère-t-elle la diversité génétique des individus ?</p>
+ <hr class="section-divider">
+
+ <h3>La méiose — deux sources de brassage</h3>
+ <p>La méiose produit 4 cellules haploïdes (n chromosomes) à partir d'une cellule diploïde (2n). Elle est à l'origine de la diversité génétique par deux mécanismes :</p>
+
+ <div class="grid2">
+ <div class="card green">
+ <h4 style="margin-top:0">Brassage intrachromosomique</h4>
+ <p>En <strong>prophase I</strong> : les chromosomes homologues forment des bivalents et échangent des segments par <strong>crossing-over (enjambement)</strong>. Les gènes liés sur le même chromosome peuvent être dissociés → <strong>recombinaison</strong>.</p>
+ </div>
+ <div class="card yellow">
+ <h4 style="margin-top:0">Brassage interchromosomique</h4>
+ <p>En <strong>anaphase I</strong> : les chromosomes homologues se répartissent aléatoirement dans chaque cellule fille.<br>
+ → 2ⁿ combinaisons possibles (n = nb de paires).<br>
+ Chez l'Homme : 2²³ ≈ <strong>8 millions</strong> de combinaisons.</p>
+ </div>
+ </div>
+
+ <h3>La fécondation — troisième source de diversité</h3>
+ <p>Union aléatoire de deux gamètes. Chez l'Homme : (2²³)² ≈ <strong>70 000 milliards</strong> de combinaisons possibles, sans compter les crossing-overs → diversité quasi infinie.</p>
+
+ <div class="important">
+ La reproduction sexuée <strong>ne crée pas de nouveaux allèles</strong>. Elle réassortit les allèles existants. La vraie source de nouveauté allélique = les <strong>mutations</strong>.
+ </div>
+
+ <h3>Gènes liés et carte génétique</h3>
+ <p>Deux gènes sur le même chromosome sont <strong>liés</strong>. La fréquence de recombinaison (% de recombinés dans la descendance d'un test-cross) est proportionnelle à leur distance génétique, exprimée en <strong>centiMorgans (cM)</strong>.</p>
+ <div class="def-box">
+ <div class="label">Règle</div>
+ <strong>1 cM = 1 % de recombinaison.</strong> Si deux gènes sont à plus de 50 cM, ils se comportent comme indépendants (assortiment libre apparent).
+ </div>
+ </section>
+
+ <!-- ══════════════════════════════════════════
+ COURS 1.2
+ ══════════════════════════════════════════ -->
+ <section id="c2">
+ <div class="chapter-badge">Cours 1.2</div>
+ <h2>La complexification des génomes : transferts horizontaux et endosymbioses</h2>
+ <p class="h2-sub">Comment les génomes peuvent-ils acquérir de nouveaux gènes autrement que par héritage vertical ?</p>
+ <hr class="section-divider">
+
+ <h3>Les transferts horizontaux de gènes (THG)</h3>
+ <div class="def-box">
+ <div class="label">Définition</div>
+ <strong>Transfert horizontal (ou latéral) :</strong> transmission de matériel génétique entre organismes <em>non apparentés</em>, sans reproduction (≠ transmission verticale parent → descendant).
+ </div>
+
+ <h4>Mécanismes chez les procaryotes</h4>
+ <ul>
+ <li><strong>Transformation :</strong> captation d'ADN libre dans le milieu extracellulaire</li>
+ <li><strong>Conjugaison :</strong> transfert d'un plasmide via un pont cytoplasmique (pilus)</li>
+ <li><strong>Transduction :</strong> transfert de gènes via un bactériophage (virus)</li>
+ </ul>
+
+ <h4>Importance évolutive des THG</h4>
+ <ul>
+ <li>Rôle majeur dans la diffusion de la <strong>résistance aux antibiotiques</strong> entre bactéries</li>
+ <li>Accélèrent l'évolution bactérienne en contournant la reproduction sexuée</li>
+ <li>Des THG anciens ont intégré des gènes d'origine bactérienne dans le génome eucaryote</li>
+ </ul>
+
+ <div class="important">
+ Les THG rendent la reconstruction de l'arbre du vivant (phylogénie) plus complexe chez les procaryotes : leur histoire génétique ressemble plus à un <strong>réseau</strong> qu'à un arbre.
+ </div>
+
+ <h4>Expériences historiques : Griffith et Avery</h4>
+ <div class="grid2">
+ <div class="card blue">
+ <h4 style="margin-top:0">Griffith (1928) — Principe transformant</h4>
+ <p>Mélange de bactéries pathogènes S tuées + bactéries vivantes non pathogènes R → souris meurent. Les bactéries R ont acquis le caractère pathogène → existence d'un <strong>principe transformant</strong> transmissible.</p>
+ </div>
+ <div class="card green">
+ <h4 style="margin-top:0">Avery, MacLeod, McCarty (1944) — L'ADN est l'hérédité</h4>
+ <p>En traitant l'extrait avec DNase, RNase ou protéase : seule la <strong>DNase détruit</strong> le principe transformant. → <strong>L'ADN est le support de l'information génétique</strong>, transférable d'une bactérie à une autre.</p>
+ </div>
+ </div>
+
+ <h4>Transferts horizontaux d'origine virale — les rétrovirus</h4>
+ <ul>
+ <li><strong>Rétrovirus</strong> (ex. VIH) : virus à ARN → la <strong>transcriptase inverse</strong> convertit l'ARN viral en ADN → intégration dans le génome hôte = <strong>provirus</strong></li>
+ <li>Ces intégrations héritables → <strong>rétrovirus endogènes (ERV)</strong>, transmis de génération en génération</li>
+ <li>Environ <strong>8 à 10 % du génome humain</strong> est d'origine virale (séquences ERV accumulées au cours de l'évolution)</li>
+ <li>Certaines séquences virales ont été <em>détournées</em> pour de nouvelles fonctions cellulaires (ex. formation du placenta chez les mammifères)</li>
+ </ul>
+
+ <h4>Applications biotechnologiques des THG</h4>
+ <ul>
+ <li><strong>Production de protéines thérapeutiques :</strong> gène d'intérêt humain inséré dans un plasmide bactérien → bactéries productrices d'<strong>insuline humaine</strong>, d'hormone de croissance, d'interférons</li>
+ <li><strong>Bactéries recombinantes :</strong> <em>E. coli</em> utilisée comme "usine moléculaire" pour exprimer des gènes étrangers à grande échelle</li>
+ <li><strong>Transgénèse :</strong> vecteurs plasmidiques ou viraux pour introduire des gènes dans des cellules d'organismes cibles</li>
+ </ul>
+ <div class="important">
+ Le génie génétique exploite directement les mécanismes naturels de transfert horizontal (transformation, vecteurs viraux) pour produire des molécules à usage médical ou industriel.
+ </div>
+
+ <h3>La théorie de l'endosymbiose</h3>
+ <div class="def-box">
+ <div class="label">Théorie de Margulis (1967)</div>
+ <strong>Endosymbiose :</strong> intégration d'une bactérie à l'intérieur d'une cellule hôte (relation symbiotique interne) → la bactérie devient un organite.
+ </div>
+
+ <div class="schema-box">Ancêtre α-protéobactérie → englouti par cellule hôte → MITOCHONDRIE
+Ancêtre cyanobactérie → englouti par cellule hôte → CHLOROPLASTE</div>
+
+ <h4>Preuves de l'endosymbiose</h4>
+ <ul>
+ <li>Mitochondries et chloroplastes possèdent leur <strong>propre ADN circulaire</strong> (ressemblant à l'ADN bactérien)</li>
+ <li>Leurs ribosomes (70S) sont de type <strong>procaryote</strong>, différents des ribosomes cytoplasmiques eucaryotes (80S)</li>
+ <li>Ils se divisent par <strong>fission binaire</strong> comme les bactéries</li>
+ <li>Ils sont entourés de <strong>deux membranes</strong> (la membrane interne = membrane de la bactérie ancestrale)</li>
+ <li>Leur <strong>séquence d'ARNr 16S</strong> est proche de celle des α-protéobactéries (mitochondries) et des cyanobactéries (chloroplastes)</li>
+ </ul>
+
+ <h4>Transfert de gènes endosymbiotiques vers le noyau (EGNT)</h4>
+ <p>Au fil de l'évolution, la plupart des gènes bactériens ont été <strong>transférés vers le noyau</strong> de la cellule hôte. Les génomes mitochondriaux et chloroplastiques actuels sont donc très réduits par rapport aux bactéries libres ancestrales.</p>
+
+ <h3>Les familles multigéniques</h3>
+ <p>La <strong>duplication de gènes</strong> suivie de mutations indépendantes génère des familles de gènes homologues au sein du même génome.</p>
+ <div class="card blue">
+ <h4 style="margin-top:0">Exemple : famille des globines</h4>
+ <p>Un gène ancestral unique a été dupliqué et divergé → <strong>myoglobine, α-hémoglobine, β-hémoglobine, hémoglobine fœtale (HbF)</strong>, etc. Chaque copie a pu évoluer vers une fonction spécialisée.</p>
+ </div>
+ <p>Ce mécanisme est une source majeure de <strong>nouveauté fonctionnelle</strong> au cours de l'évolution.</p>
+ </section>
+
+ <!-- ══════════════════════════════════════════
+ COURS 1.3
+ ══════════════════════════════════════════ -->
+ <section id="c3">
+ <div class="chapter-badge">Cours 1.3</div>
+ <h2>L'inéluctable évolution des génomes au sein des populations</h2>
+ <p class="h2-sub">Quelles forces font évoluer les fréquences alléliques au sein d'une population ?</p>
+ <hr class="section-divider">
+
+ <h3>Population et pool génique</h3>
+ <div class="def-box">
+ <div class="label">Définition</div>
+ <strong>Population :</strong> ensemble d'individus de la même espèce vivant dans le même milieu au même moment et pouvant se reproduire entre eux.<br>
+ <strong>Pool génique :</strong> ensemble des allèles de tous les gènes présents dans une population.
+ </div>
+
+ <h3>Le modèle de Hardy-Weinberg — la population à l'équilibre</h3>
+ <div class="def-box">
+ <div class="label">Modèle théorique (Hardy &amp; Weinberg, 1908)</div>
+ Dans une <strong>population idéale</strong> respectant certaines conditions, les <strong>fréquences alléliques restent constantes</strong> d'une génération à l'autre : la population n'évolue pas.
+ </div>
+
+ <h4>Conditions de l'équilibre Hardy-Weinberg</h4>
+ <ul>
+ <li>Population de <strong>taille infinie</strong> (→ pas de dérive génétique)</li>
+ <li>Population <strong>fermée</strong> (→ pas de migration)</li>
+ <li><strong>Pas de sélection naturelle</strong> (tous les génotypes ont la même valeur sélective)</li>
+ <li><strong>Pas de mutations</strong> nouvelles</li>
+ <li>Reproduction <strong>aléatoire — panmixie</strong> (tous les croisements sont équiprobables)</li>
+ </ul>
+
+ <div class="schema-box">Pour un gène à 2 allèles A (fréquence p) et a (fréquence q), avec p + q = 1 :
+
+Fréquences génotypiques à l'équilibre :
+ [AA] = p² [Aa] = 2pq [aa] = q²
+
+Vérification : p² + 2pq + q² = (p + q)² = 1 ✓</div>
+
+ <div class="card yellow">
+ <h4 style="margin-top:0">Utilisation pratique</h4>
+ <p>Si une population <em>respecte</em> les fréquences Hardy-Weinberg → elle n'évolue pas. Si elle <em>dévie</em> de ces fréquences → une ou plusieurs forces évolutives agissent. On peut ainsi <strong>détecter une évolution en cours</strong> en comparant les fréquences observées aux fréquences théoriques.</p>
+ </div>
+
+ <div class="important">
+ Hardy-Weinberg est une référence <strong>théorique (population imaginaire)</strong>. Dans la réalité, toutes les populations dévient de cet équilibre sous l'action des forces évolutives listées ci-dessous.
+ </div>
+
+ <h3>La sélection naturelle</h3>
+ <p>Certains phénotypes conférent un avantage reproductif dans un environnement donné → modification des fréquences alléliques au fil des générations.</p>
+
+ <table>
+ <tr><th>Type de sélection</th><th>Effet sur la population</th><th>Exemple</th></tr>
+ <tr><td>Directionnelle</td><td>Déplace la moyenne vers un extrême</td><td>Phalène du bouleau (mélanisme industriel)</td></tr>
+ <tr><td>Stabilisante</td><td>Élimine les extrêmes, favorise la moyenne</td><td>Poids de naissance humain</td></tr>
+ <tr><td>Diversifiante</td><td>Favorise les deux extrêmes → polymorphisme</td><td>Bec des pinsons des Galápagos</td></tr>
+ </table>
+
+ <div class="card yellow">
+ <h4 style="margin-top:0">Drépanocytose et paludisme — avantage de l'hétérozygote</h4>
+ <p>L'allèle HbS homozygote est mortel. Mais l'hétérozygote HbA/HbS est <strong>protégé contre le paludisme</strong> → maintien de l'allèle HbS en zone endémique. C'est un exemple de <strong>sélection balancée</strong> (polymorphisme maintenu).</p>
+ </div>
+
+ <h3>La dérive génétique</h3>
+ <div class="def-box">
+ <div class="label">Définition</div>
+ <strong>Dérive génétique :</strong> variations aléatoires des fréquences alléliques dues au tirage au sort des gamètes lors de la reproduction. D'autant plus forte que la population est <strong>petite</strong>.
+ </div>
+ <ul>
+ <li>Peut conduire à la <strong>fixation</strong> (fréq. = 1) ou à l'<strong>élimination</strong> (fréq. = 0) d'un allèle, indépendamment de sa valeur sélective</li>
+ <li><strong>Effet fondateur :</strong> une petite population colonise un nouveau territoire avec un pool génique peu représentatif → perte de diversité</li>
+ <li><strong>Goulot d'étranglement :</strong> réduction brutale de taille d'une population (catastrophe naturelle…) → même effet</li>
+ </ul>
+
+ <h3>La migration (flux de gènes)</h3>
+ <p>Déplacement d'individus entre populations → échange d'allèles → tend à <strong>homogénéiser</strong> les fréquences alléliques entre populations et à s'opposer à la différenciation.</p>
+
+ <h3>Bilan des forces évolutives</h3>
+ <table>
+ <tr><th>Force</th><th>Dirigée ?</th><th>Effet principal</th></tr>
+ <tr><td>Mutation</td><td>Non (aléatoire)</td><td>Crée de nouveaux allèles</td></tr>
+ <tr><td>Sélection naturelle</td><td>Oui (par l'environnement)</td><td>Modifie les fréquences selon la valeur sélective</td></tr>
+ <tr><td>Dérive génétique</td><td>Non (hasard)</td><td>Fixe ou élimine des allèles (surtout petites pop.)</td></tr>
+ <tr><td>Migration</td><td>Variable</td><td>Homogénéise les populations</td></tr>
+ </table>
+
+ <h3>La spéciation</h3>
+ <div class="def-box">
+ <div class="label">Concept biologique de l'espèce (Mayr)</div>
+ <strong>Espèce :</strong> ensemble d'individus interféconds dans la nature produisant une descendance fertile.
+ </div>
+
+ <div class="grid2">
+ <div class="card blue">
+ <h4 style="margin-top:0">Spéciation allopatrique</h4>
+ <p>Isolement géographique → divergence génétique indépendante → isolement reproducteur → deux espèces. Mécanisme le plus fréquent.</p>
+ </div>
+ <div class="card green">
+ <h4 style="margin-top:0">Spéciation sympatrique</h4>
+ <p>Sans isolement géographique. Ex. polyploïdisation chez les plantes, sélection divergente très forte.</p>
+ </div>
+ </div>
+
+ <h4 style="color:#a5a0ff;margin-top:1rem">Barrières d'isolement reproductif</h4>
+ <div class="grid2">
+ <div class="card yellow">
+ <h4 style="margin-top:0">Pré-zygotiques (avant fécondation)</h4>
+ <ul style="margin:.3rem 0 0 1.2rem">
+ <li><strong>Écologique</strong> : habitats différents</li>
+ <li><strong>Temporelle</strong> : périodes de reproduction décalées</li>
+ <li><strong>Comportementale</strong> : parades nuptiales incompatibles</li>
+ <li><strong>Mécanique</strong> : organes reproducteurs incompatibles</li>
+ <li><strong>Gamétique</strong> : gamètes incompatibles chimiquement</li>
+ </ul>
+ </div>
+ <div class="card purple">
+ <h4 style="margin-top:0">Post-zygotiques (après fécondation)</h4>
+ <ul style="margin:.3rem 0 0 1.2rem">
+ <li><strong>Inviabilité</strong> de l'hybride (zygote ne se développe pas)</li>
+ <li><strong>Stérilité</strong> de l'hybride (ex : mulet = cheval × âne)</li>
+ <li><strong>Faiblesse</strong> sélective des descendants hybrides F2</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="def-box" style="margin-top:.8rem">
+ <div class="label">Idée clé</div>
+ Une <strong>espèce</strong> est définie par son <strong>isolement reproductif</strong> vis-à-vis des autres espèces. La spéciation = apparition de barrières reproductives entre populations divergentes.
+ </div>
+ </section>
+
+ <!-- ══════════════════════════════════════════
+ COURS 1.4
+ ══════════════════════════════════════════ -->
+ <section id="c4">
+ <div class="chapter-badge">Cours 1.4</div>
+ <h2>D'autres mécanismes contribuent à la diversité du vivant</h2>
+ <p class="h2-sub">Symbioses et transmission culturelle : des sources de diversité non héréditaires au sens classique</p>
+ <hr class="section-divider">
+
+ <!-- PARTIE I : SYMBIOSES NON HÉRÉDITAIRES -->
+ <h3>I — Les symbioses : associations non héréditaires génératrices de diversité</h3>
+ <div class="def-box">
+ <div class="label">Définition</div>
+ <strong>Symbiose :</strong> association durable et intime entre deux organismes d'espèces différentes, bénéfique pour les deux partenaires. Ces associations ne sont <em>pas codées dans l'ADN de la lignée germinale</em> → diversité <strong>non héréditaire</strong> au sens mendélien.
+ </div>
+
+ <div class="card green">
+ <h4 style="margin-top:0">Le lichen — algue + champignon</h4>
+ <p>Un lichen est l'association d'un <strong>champignon (mycobionte)</strong> et d'une <strong>algue verte ou cyanobactérie (photobionte)</strong>.</p>
+ <ul>
+ <li>Le champignon apporte : protection, structure, eau et sels minéraux</li>
+ <li>L'algue apporte : matière organique par photosynthèse</li>
+ <li>→ L'organisme composite colonise des milieux extrêmes (rochers, toundra) <em>inaccessibles aux deux partenaires seuls</em></li>
+ </ul>
+ </div>
+
+ <div class="card blue">
+ <h4 style="margin-top:0">La mycorhize — champignon + racine de plante</h4>
+ <p>Association entre des champignons du sol et les racines de la plupart des plantes terrestres.</p>
+ <ul>
+ <li>Le champignon étend considérablement la surface d'absorption racinaire → meilleure absorption d'eau et de sels minéraux (notamment le <strong>phosphore</strong>)</li>
+ <li>La plante fournit des glucides (produits de photosynthèse) au champignon</li>
+ <li>Rôle majeur dans les écosystèmes terrestres : ~80 % des plantes vasculaires sont mycorhizées</li>
+ </ul>
+ </div>
+
+ <div class="card yellow">
+ <h4 style="margin-top:0">Le corail — cnidaire + zooxanthelles</h4>
+ <p>Les coraux constructeurs de récifs hébergent des <strong>zooxanthelles</strong> (algues unicellulaires dinoflagellées) dans leurs tissus.</p>
+ <ul>
+ <li>Les zooxanthelles réalisent la photosynthèse et fournissent jusqu'à <strong>90 % des besoins énergétiques</strong> du corail</li>
+ <li>Le corail fournit abri, CO₂ et sels minéraux aux algues</li>
+ <li>Stress thermique → expulsion des zooxanthelles → <strong>blanchissement du corail</strong> → mort si prolongé</li>
+ </ul>
+ </div>
+
+ <div class="important">
+ Ces symbioses génèrent une diversité phénotypique <strong>non codée dans le génome</strong> des organismes : c'est une diversité <em>acquise</em> au cours de la vie de l'individu, non transmise par voie héréditaire classique.
+ </div>
+
+ <!-- PARTIE II : TRANSMISSION CULTURELLE -->
+ <h3>II — La transmission culturelle des comportements</h3>
+ <div class="def-box">
+ <div class="label">Définition</div>
+ <strong>Transmission culturelle :</strong> acquisition de comportements par apprentissage (imitation, enseignement) et non par hérédité génétique. Elle peut générer une diversité comportementale importante au sein d'une espèce.
+ </div>
+
+ <h4>Exemples de transmission culturelle chez les animaux</h4>
+ <table>
+ <tr><th>Comportement</th><th>Espèce</th><th>Mode de transmission</th></tr>
+ <tr><td><strong>Chant des oiseaux</strong></td><td>Pinsons, mésanges</td><td>Apprentissage par imitation du chant des adultes — variations régionales (« dialectes »)</td></tr>
+ <tr><td><strong>Utilisation d'outils</strong></td><td>Chimpanzés</td><td>Transmission par observation et imitation (casser des noix avec pierres, pêche aux termites avec brindille)</td></tr>
+ <tr><td><strong>Lavage des aliments</strong></td><td>Macaques du Japon</td><td>Comportement apparu chez un individu, propagé à tout le groupe par imitation</td></tr>
+ <tr><td><strong>Techniques de chasse</strong></td><td>Orques, humains</td><td>Transmises de génération en génération au sein du groupe social</td></tr>
+ </table>
+
+ <h4>L'empreinte comportementale (imprinting)</h4>
+ <p>Certains comportements s'acquièrent lors d'une <strong>période sensible</strong> (fenêtre temporelle critique au cours du développement).</p>
+ <ul>
+ <li>Ex. empreinte filiale : les poussins de bernache suivent le premier objet mobile qu'ils voient à l'éclosion (expériences de Lorenz)</li>
+ <li>Ex. empreinte du chant : le pinson apprend le chant de son espèce uniquement durant une période sensible précise</li>
+ <li>→ Ces comportements sont <strong>irréversibles</strong> après la période sensible</li>
+ </ul>
+
+ <h4>L'épigénétique comportementale</h4>
+ <p>Le comportement peut également être influencé par des mécanismes <strong>épigénétiques</strong> (modifications de l'expression des gènes sans modification de la séquence ADN) :</p>
+ <ul>
+ <li><strong>Soins maternels chez le rat :</strong> rats dont les mères sont très soignantes → méthylation réduite du gène du récepteur glucocorticoïde dans l'hippocampe → meilleure gestion du stress à l'âge adulte</li>
+ <li>L'environnement social précoce peut ainsi <strong>programmer</strong> durablement certains comportements via l'épigénome</li>
+ <li>Ces modifications épigénétiques peuvent parfois être <strong>transmises aux générations suivantes</strong> (hérédité épigénétique transgénérationnelle)</li>
+ </ul>
+
+ <div class="important">
+ La transmission culturelle et l'épigénétique comportementale montrent que la diversité du vivant ne repose pas uniquement sur la diversité génétique. Le <strong>phénotype comportemental</strong> résulte de l'interaction entre gènes, épigénome et environnement social.
+ </div>
+
+ <h3>Bilan — Sources de diversité non héréditaires (au sens mendélien)</h3>
+ <table>
+ <tr><th>Mécanisme</th><th>Nature</th><th>Transmissible ?</th></tr>
+ <tr><td>Symbiose (lichen, mycorhize, corail)</td><td>Acquis durant la vie</td><td>Non (doit être réacquis)</td></tr>
+ <tr><td>Apprentissage culturel / imitation</td><td>Comportemental</td><td>Oui, par transmission sociale (non génétique)</td></tr>
+ <tr><td>Épigénétique comportementale</td><td>Moléculaire (méthylation…)</td><td>Parfois, sur quelques générations</td></tr>
+ </table>
+ </section>
+
+ <!-- MOTS CLÉS -->
+ <section id="mots-cles">
+ <div class="chapter-badge" style="background: var(--accent2);">Tous les cours</div>
+ <h2>Mots-clés à maîtriser</h2>
+ <hr class="section-divider">
+ <div class="card">
+ <span class="keyword">Cycle cellulaire (G1/S/G2/M)</span>
+ <span class="keyword">Mitose</span>
+ <span class="keyword">Réplication semi-conservative</span>
+ <span class="keyword">Points de contrôle</span>
+ <span class="keyword">P53</span>
+ <span class="keyword">Apoptose</span>
+ <span class="keyword">Clone cellulaire</span>
+ <span class="keyword">Sous-clone</span>
+ <span class="keyword">Évolution clonale</span>
+ <span class="keyword">Sélection cellulaire</span>
+ <span class="keyword">Mutation somatique</span>
+ <span class="keyword">Brassage génétique</span>
+ <span class="keyword">Crossing-over</span>
+ <span class="keyword">Recombinaison</span>
+ <span class="keyword">centiMorgan</span>
+ <span class="keyword">Mutation</span>
+ <span class="keyword">Duplication de gène</span>
+ <span class="keyword">Famille multigénique</span>
+ <span class="keyword">Transfert horizontal (THG)</span>
+ <span class="keyword">Conjugaison / Transformation / Transduction</span>
+ <span class="keyword">Griffith / Avery</span>
+ <span class="keyword">Rétrovirus / Provirus / ERV</span>
+ <span class="keyword">Transcriptase inverse</span>
+ <span class="keyword">Biotechnologie / Insuline recombinante</span>
+ <span class="keyword">Endosymbiose</span>
+ <span class="keyword">Mitochondrie / Chloroplaste</span>
+ <span class="keyword">Hardy-Weinberg</span>
+ <span class="keyword">Panmixie</span>
+ <span class="keyword">Pool génique</span>
+ <span class="keyword">Sélection naturelle</span>
+ <span class="keyword">Sélection sexuelle</span>
+ <span class="keyword">Valeur sélective (fitness)</span>
+ <span class="keyword">Avantage hétérozygote</span>
+ <span class="keyword">Dérive génétique</span>
+ <span class="keyword">Migration / Flux de gènes</span>
+ <span class="keyword">Spéciation allopatrique</span>
+ <span class="keyword">Spéciation sympatrique</span>
+ <span class="keyword">Isolement reproductif (pré/post-zygotique)</span>
+ <span class="keyword">Symbiose</span>
+ <span class="keyword">Transmission culturelle</span>
+ <span class="keyword">Mémétique</span>
+ </div>
+ </section>
+
+<a href="../qcm/qcm1_genetique_evolution.html" style="display:block;background:linear-gradient(135deg,rgba(32,36,58,.14),rgba(32,36,58,.14));border:1px solid rgba(58,64,96,.35);border-radius:12px;padding:1.2rem;text-align:center;text-decoration:none;color:#e8eaf0;margin-top:2rem;font-weight:700;transition:all .2s">🎯 Tester mes connaissances — QCM Fiche 1</a>
+
+</main>
+<footer>SVT Terminale Spécialité · Bac 2026 — Fiche 1 / 10 · Génétique et évolution<a href="../accueil-svt.html" style="color:#6366f1">Retour à l'index</a></footer>
+</body>
+</html>

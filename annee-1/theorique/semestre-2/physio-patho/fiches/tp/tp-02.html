@@ -1,0 +1,1245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Physiopathologie 1 — :root { --bg: #0f1117; --surface: #161922; --surface2: #1a1d2a; --border: #2a3050; --accent: #ff8fa3; --accent2: #f472b6; --accent3: #ff6">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../../assets/css/acces.css">
+<script src="../../../../../../assets/js/acces.js"></script>
+<title>Fiche de Révision — Physiopathologie 1</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=IBM+Plex+Mono:wght@400;600&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../../../assets/css/chrome.css">
+<style>
+ :root {
+ --bg: #0f1117;
+ --surface: #161922;
+ --surface2: #1a1d2a;
+ --border: #2a3050;
+ --accent: #ff8fa3;
+ --accent2: #f472b6;
+ --accent3: #ff6b9d;
+ --accent4: #ff6b9d;
+ --text: #9aa3b8;
+ --text-muted: #9aa3b8;
+ --text-dim: #6a7388;
+ --reversible: #ff6b9d;
+ --irreversible: #ff6b9d;
+ --adaptation: #f472b6;
+ --accumulation: #ff8fa3;
+ }
+
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+
+ body {
+ background: var(--bg);
+ color: var(--text);
+ font-family: 'Source Serif 4', Georgia, serif;
+ font-size: 15px;
+ line-height: 1.7;
+ min-height: 100vh;
+ }
+
+ /* ─── HEADER ─────────────────────────────────────── */
+ .hero {
+ background: linear-gradient(135deg, #0f1117 0%, #161922 50%, #161922 100%);
+ border-bottom: 1px solid var(--border);
+ padding: 60px 40px 50px;
+ position: relative;
+ overflow: hidden;
+ }
+
+ .hero::before {
+ content: '';
+ position: absolute;
+ inset: 0;
+ background: radial-gradient(ellipse 60% 80% at 80% 50%, rgba(255,107,157,0.07) 0%, transparent 70%),
+ radial-gradient(ellipse 40% 60% at 20% 80%, rgba(255,107,157,0.06) 0%, transparent 70%);
+ }
+
+ .hero-label {
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 11px;
+ letter-spacing: 3px;
+ text-transform: uppercase;
+ color: var(--accent);
+ margin-bottom: 16px;
+ opacity: 0.9;
+ }
+
+ .hero h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(36px, 5vw, 64px);
+ font-weight: 900;
+ line-height: 1.1;
+ color: var(--text);
+ margin-bottom: 12px;
+ position: relative;
+ }
+
+ .hero h1 span { color: var(--accent); }
+
+ .hero-sub {
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 13px;
+ color: var(--text-muted);
+ letter-spacing: 1px;
+ margin-top: 10px;
+ }
+
+ .hero-tags {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 8px;
+ margin-top: 28px;
+ }
+
+ .tag {
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 10px;
+ letter-spacing: 1.5px;
+ text-transform: uppercase;
+ padding: 5px 14px;
+ border-radius: 2px;
+ border: 1px solid;
+ }
+
+ .tag-adapt { border-color: var(--adaptation); color: var(--adaptation); background: rgba(255,107,157,0.08); }
+ .tag-lesion { border-color: var(--reversible); color: var(--reversible); background: rgba(255,107,157,0.08); }
+ .tag-mort { border-color: var(--irreversible); color: var(--irreversible); background: rgba(255,92,107,0.08); }
+ .tag-acc { border-color: var(--accumulation); color: var(--accumulation); background: rgba(255,107,157,0.08); }
+
+ /* ─── NAV ─────────────────────────────────────────── */
+ .nav-bar {
+ background: var(--surface);
+ border-bottom: 1px solid var(--border);
+ padding: 0 40px;
+ display: flex;
+ gap: 0;
+ overflow-x: auto;
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ }
+
+ .nav-bar a {
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 11px;
+ letter-spacing: 1px;
+ text-transform: uppercase;
+ color: var(--text-muted);
+ text-decoration: none;
+ padding: 16px 20px;
+ border-bottom: 2px solid transparent;
+ white-space: nowrap;
+ transition: all 0.2s;
+ }
+
+ .nav-bar a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+
+ /* ─── LAYOUT ──────────────────────────────────────── */
+ .main { max-width: 1200px; margin: 0 auto; padding: 50px 40px 80px; }
+
+ /* ─── SECTION TITLES ─────────────────────────────── */
+ .section {
+ margin-bottom: 70px;
+ animation: fadeUp 0.5s ease both;
+ }
+
+ @keyframes fadeUp {
+ from { opacity: 0; transform: translateY(20px); }
+ to { opacity: 1; transform: translateY(0); }
+ }
+
+ .section-header {
+ display: flex;
+ align-items: center;
+ gap: 20px;
+ margin-bottom: 32px;
+ padding-bottom: 16px;
+ border-bottom: 1px solid var(--border);
+ }
+
+ .section-num {
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 11px;
+ color: var(--text-dim);
+ letter-spacing: 2px;
+ min-width: 32px;
+ }
+
+ .section-title {
+ font-family: 'Playfair Display', serif;
+ font-size: 28px;
+ font-weight: 700;
+ color: var(--text);
+ }
+
+ .section-title span { color: var(--accent); }
+
+ .section-tag {
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 10px;
+ padding: 4px 10px;
+ border-radius: 2px;
+ letter-spacing: 1px;
+ text-transform: uppercase;
+ margin-left: auto;
+ }
+
+ /* ─── CARDS GRID ─────────────────────────────────── */
+ .cards {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ gap: 16px;
+ margin-bottom: 24px;
+ }
+
+ .card {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ border-radius: 4px;
+ padding: 24px;
+ position: relative;
+ overflow: hidden;
+ transition: border-color 0.2s, transform 0.2s;
+ }
+
+ .card:hover { transform: translateY(-2px); }
+
+ .card::before {
+ content: '';
+ position: absolute;
+ top: 0; left: 0; right: 0;
+ height: 3px;
+ }
+
+ .card-blue::before { background: var(--adaptation); }
+ .card-green::before { background: var(--reversible); }
+ .card-red::before { background: var(--irreversible); }
+ .card-gold::before { background: var(--accumulation); }
+ .card-purple::before { background: #f472b6; }
+
+ .card-title {
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 11px;
+ letter-spacing: 2px;
+ text-transform: uppercase;
+ margin-bottom: 14px;
+ display: flex;
+ align-items: center;
+ gap: 8px;
+ }
+
+ .card-title .dot {
+ width: 6px; height: 6px;
+ border-radius: 50%;
+ display: inline-block;
+ flex-shrink: 0;
+ }
+
+ .dot-blue { background: var(--adaptation); }
+ .dot-green { background: var(--reversible); }
+ .dot-red { background: var(--irreversible); }
+ .dot-gold { background: var(--accumulation); }
+ .dot-purple { background: #f472b6; }
+
+ .card h3 {
+ font-family: 'Playfair Display', serif;
+ font-size: 19px;
+ font-weight: 700;
+ color: var(--text);
+ margin-bottom: 12px;
+ line-height: 1.3;
+ }
+
+ .card p { color: var(--text-muted); font-size: 14px; line-height: 1.65; margin-bottom: 10px; }
+ .card p:last-child { margin-bottom: 0; }
+
+ .card strong { color: var(--text); font-weight: 600; }
+
+ /* ─── DEFINITION BOX ─────────────────────────────── */
+ .def-box {
+ background: var(--surface2);
+ border-left: 3px solid var(--accent);
+ padding: 20px 24px;
+ margin-bottom: 20px;
+ font-style: italic;
+ font-size: 15px;
+ color: var(--text);
+ border-radius: 0 4px 4px 0;
+ }
+
+ .def-box strong { font-style: normal; color: var(--accent); }
+
+ /* ─── TABLE ───────────────────────────────────────── */
+ .table-wrap {
+ overflow-x: auto;
+ margin-bottom: 24px;
+ border-radius: 4px;
+ border: 1px solid var(--border);
+ }
+
+ table {
+ width: 100%;
+ border-collapse: collapse;
+ font-size: 13.5px;
+ }
+
+ thead tr {
+ background: var(--surface2);
+ }
+
+ thead th {
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 10px;
+ letter-spacing: 1.5px;
+ text-transform: uppercase;
+ color: var(--text-muted);
+ padding: 14px 18px;
+ text-align: left;
+ border-bottom: 1px solid var(--border);
+ white-space: nowrap;
+ }
+
+ tbody tr {
+ border-bottom: 1px solid var(--border);
+ transition: background 0.15s;
+ }
+
+ tbody tr:last-child { border-bottom: none; }
+ tbody tr:hover { background: var(--surface2); }
+
+ tbody td {
+ padding: 13px 18px;
+ color: var(--text-muted);
+ vertical-align: top;
+ line-height: 1.6;
+ }
+
+ tbody td:first-child {
+ color: var(--text);
+ font-weight: 600;
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 12px;
+ letter-spacing: 0.5px;
+ white-space: nowrap;
+ }
+
+ .highlight-green { color: var(--reversible) !important; }
+ .highlight-red { color: var(--irreversible) !important; }
+ .highlight-blue { color: var(--adaptation) !important; }
+ .highlight-gold { color: var(--accumulation) !important; }
+
+ /* ─── FLOW DIAGRAM ────────────────────────────────── */
+ .flow {
+ display: flex;
+ align-items: center;
+ flex-wrap: wrap;
+ gap: 8px;
+ margin: 20px 0;
+ padding: 20px 24px;
+ background: var(--surface);
+ border: 1px solid var(--border);
+ border-radius: 4px;
+ }
+
+ .flow-node {
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 11px;
+ letter-spacing: 1px;
+ padding: 8px 14px;
+ border-radius: 3px;
+ white-space: nowrap;
+ }
+
+ .flow-arrow {
+ color: var(--text-dim);
+ font-size: 18px;
+ flex-shrink: 0;
+ }
+
+ .fn-normal { background: rgba(255,107,157,0.15); border: 1px solid rgba(255,107,157,0.4); color: var(--adaptation); }
+ .fn-adapt { background: rgba(255,107,157,0.1); border: 1px solid rgba(255,107,157,0.3); color: var(--adaptation); }
+ .fn-rev { background: rgba(255,107,157,0.1); border: 1px solid rgba(255,107,157,0.3); color: var(--reversible); }
+ .fn-irrev { background: rgba(255,92,107,0.1); border: 1px solid rgba(255,92,107,0.3); color: var(--irreversible); }
+ .fn-necr { background: rgba(255,92,107,0.2); border: 1px solid rgba(255,92,107,0.5); color: var(--irreversible); }
+ .fn-apo { background: rgba(255,107,157,0.15); border: 1px solid rgba(255,107,157,0.4); color: #f472b6; }
+
+ /* ─── DEUX COLONNES ───────────────────────────────── */
+ .two-col {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 16px;
+ margin-bottom: 20px;
+ }
+
+ @media (max-width: 700px) {
+ .two-col { grid-template-columns: 1fr; }
+ .nav-bar a { padding: 14px 12px; }
+ .main { padding: 30px 20px 60px; }
+ .hero { padding: 40px 20px 36px; }
+ }
+
+ /* ─── MÉCANISMES LIST ─────────────────────────────── */
+ .mech-list { list-style: none; }
+
+ .mech-list li {
+ display: flex;
+ gap: 14px;
+ padding: 12px 0;
+ border-bottom: 1px solid var(--border);
+ align-items: flex-start;
+ font-size: 14px;
+ color: var(--text-muted);
+ }
+
+ .mech-list li:last-child { border-bottom: none; }
+
+ .mech-num {
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 10px;
+ color: var(--accent);
+ letter-spacing: 1px;
+ min-width: 28px;
+ padding-top: 2px;
+ flex-shrink: 0;
+ }
+
+ .mech-list strong { color: var(--text); }
+
+ /* ─── PILL BADGE ──────────────────────────────────── */
+ .pill {
+ display: inline-block;
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 9px;
+ letter-spacing: 1px;
+ text-transform: uppercase;
+ padding: 2px 8px;
+ border-radius: 20px;
+ margin-left: 6px;
+ vertical-align: middle;
+ }
+
+ .pill-physio { background: rgba(255,107,157,0.2); color: var(--reversible); border: 1px solid rgba(255,107,157,0.4); }
+ .pill-patho { background: rgba(255,92,107,0.2); color: var(--irreversible); border: 1px solid rgba(255,92,107,0.4); }
+
+ /* ─── SÉPARATEUR ─────────────────────────────────── */
+ .sep {
+ height: 1px;
+ background: linear-gradient(90deg, transparent, var(--border), transparent);
+ margin: 32px 0;
+ }
+
+ /* ─── INFO BOX ────────────────────────────────────── */
+ .info-box {
+ background: var(--surface2);
+ border: 1px solid var(--border);
+ border-radius: 4px;
+ padding: 18px 22px;
+ margin-bottom: 16px;
+ font-size: 14px;
+ color: var(--text-muted);
+ }
+
+ .info-box .info-title {
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 10px;
+ letter-spacing: 2px;
+ text-transform: uppercase;
+ color: var(--accent2);
+ margin-bottom: 10px;
+ }
+
+ .info-box ul {
+ padding-left: 18px;
+ }
+
+ .info-box li { margin-bottom: 6px; }
+ .info-box li:last-child { margin-bottom: 0; }
+ .info-box strong { color: var(--text); }
+
+ /* ─── COMPARE ─────────────────────────────────────── */
+ .compare-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 16px;
+ margin-bottom: 20px;
+ }
+
+ @media (max-width: 600px) {
+ .compare-grid { grid-template-columns: 1fr; }
+ }
+
+ .compare-box {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ border-radius: 4px;
+ padding: 22px;
+ }
+
+ .compare-box.green-box { border-top: 3px solid var(--reversible); }
+ .compare-box.red-box { border-top: 3px solid var(--irreversible); }
+
+ .compare-box h4 {
+ font-family: 'Playfair Display', serif;
+ font-size: 17px;
+ font-weight: 700;
+ margin-bottom: 14px;
+ }
+
+ .compare-box.green-box h4 { color: var(--reversible); }
+ .compare-box.red-box h4 { color: var(--irreversible); }
+
+ /* ─── FOOTER ──────────────────────────────────────── */
+ .footer {
+ background: var(--surface);
+ border-top: 1px solid var(--border);
+ padding: 30px 40px;
+ text-align: center;
+ font-family: 'IBM Plex Mono', monospace;
+ font-size: 11px;
+ color: var(--text-dim);
+ letter-spacing: 1px;
+ }
+
+ /* ─── SCROLL BEHAVIOUR ────────────────────────────── */
+ html { scroll-behavior: smooth; }
+</style>
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/physio-patho.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-theme.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
+</head>
+<body>
+<a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
+<div class="page-toggle"><div class="pt-inner"><a href="../../qcm/tp/tp-02.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<!-- HERO -->
+<div class="hero">
+ <div class="hero-label">Licence en Physiothérapie · 1ère Année · 2e Semestre</div>
+ <h1>Physiopathologie <span>1</span></h1>
+ <div class="hero-sub">Enseignante D — Fiche de révision complète</div>
+ <div class="hero-tags">
+ <div class="tag tag-adapt">Adaptation cellulaire</div>
+ <div class="tag tag-lesion">Lésion réversible</div>
+ <div class="tag tag-mort">Mort cellulaire</div>
+ <div class="tag tag-acc">Accumulations & Calcifications</div>
+ </div>
+</div>
+
+<!-- NAV -->
+<nav class="nav-bar">
+ <a href="#intro">Introduction</a>
+ <a href="#reponses">Réponses cellulaires</a>
+ <a href="#adaptations">Adaptations</a>
+ <a href="#lesion">Lésion cellulaire</a>
+ <a href="#reversible">Lésion réversible</a>
+ <a href="#mort">Mort cellulaire</a>
+ <a href="#necrose">Nécrose</a>
+ <a href="#apoptose">Apoptose</a>
+ <a href="#accumulations">Accumulations</a>
+ <a href="#comparaison">Comparaison</a>
+</nav>
+
+<!-- MAIN -->
+<div class="main">
+
+ <!-- ── 0. INTRODUCTION ── -->
+ <section class="section" id="intro">
+ <div class="section-header">
+ <span class="section-num">00</span>
+ <h2 class="section-title">La <span>Physiopathologie</span></h2>
+ </div>
+
+ <div class="def-box">
+ <strong>Définition :</strong> Science qui étudie les causes des maladies, les mécanismes de leur développement associés à des <strong>altérations morphologiques, biochimiques et fonctionnelles</strong> qui entraînent des <strong>manifestations cliniques</strong>.
+ </div>
+
+ <div class="cards">
+ <div class="card card-blue">
+ <div class="card-title"><span class="dot dot-blue"></span>Étiologie</div>
+ <h3>Cause initiale</h3>
+ <p>Facteurs <strong>génétiques</strong> (mutations, polymorphismes) ou <strong>environnementaux</strong> (infectieux, nutritionnels, chimiques, physiques). La plupart des maladies sont multifactorielles.</p>
+ </div>
+ <div class="card card-gold">
+ <div class="card-title"><span class="dot dot-gold"></span>Pathogenèse</div>
+ <h3>Séquence d'événements</h3>
+ <p>Événements moléculaires, biochimiques et cellulaires conduisant au développement d'une maladie. Pont entre étiologie et manifestations cliniques.</p>
+ </div>
+ <div class="card card-green">
+ <div class="card-title"><span class="dot dot-green"></span>Changements morphologiques</div>
+ <h3>Altérations structurelles</h3>
+ <p>Modifications des cellules ou tissus <strong>caractéristiques d'une maladie</strong>. Pierre angulaire du diagnostic, complétée par analyse moléculaire et génétique.</p>
+ </div>
+ <div class="card card-red">
+ <div class="card-title"><span class="dot dot-red"></span>Manifestations cliniques</div>
+ <h3>Symptômes & Signes</h3>
+ <p>Conséquences fonctionnelles des altérations. Déterminent l'évolution clinique et l'issue. Corrélations clinico-pathologiques essentielles.</p>
+ </div>
+ </div>
+ </section>
+
+ <!-- ── 1. RÉPONSES CELLULAIRES ── -->
+ <section class="section" id="reponses">
+ <div class="section-header">
+ <span class="section-num">01</span>
+ <h2 class="section-title">Vue d'ensemble des <span>Réponses Cellulaires</span></h2>
+ </div>
+
+ <p style="color:var(--text-muted); margin-bottom: 20px; font-size: 14px;">La cellule normale maintient l'<strong style="color:var(--text)">homéostasie</strong>. Face au stress, elle peut s'adapter, être lésée de façon réversible, ou mourir.</p>
+
+ <div class="flow">
+ <div class="flow-node fn-normal">Cellule Normale (Homéostasie)</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-node fn-adapt">Stress / Stimulus nocif</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-node fn-adapt">ADAPTATION</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-node fn-rev">Lésion RÉVERSIBLE</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-node fn-irrev">Lésion IRRÉVERSIBLE</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-node fn-necr">NÉCROSE</div>
+ <span style="color:var(--text-dim); font-size:14px; margin: 0 4px;">ou</span>
+ <div class="flow-node fn-apo">APOPTOSE</div>
+ </div>
+
+ <div class="info-box">
+ <div class="info-title">📌 Ce qui détermine si la lésion est réversible ou irréversible</div>
+ <ul>
+ <li><strong>Type de lésion</strong> — nature du stimulus nocif</li>
+ <li><strong>Durée de la lésion</strong> — exposition brève vs prolongée</li>
+ <li><strong>Gravité</strong> — intensité du stress</li>
+ <li><strong>Capacité d'adaptation et génétique de l'hôte</strong> — variabilité individuelle</li>
+ </ul>
+ </div>
+ </section>
+
+ <!-- ── 2. ADAPTATIONS CELLULAIRES ── -->
+ <section class="section" id="adaptations">
+ <div class="section-header">
+ <span class="section-num">02</span>
+ <h2 class="section-title">Adaptations <span>Cellulaires</span></h2>
+ </div>
+
+ <div class="def-box">
+ <strong>Adaptation :</strong> Réponse fonctionnelle et structurelle <strong>réversible</strong> à des changements d'état physiologique ou à certains stimuli pathologiques. Se produit via des signaux moléculaires, messagers chimiques et facteurs de croissance. Si le stimulus est supprimé, la réponse cesse.
+ </div>
+
+ <!-- 2.1 Hypertrophie -->
+ <div class="sep"></div>
+ <h3 style="font-family:'Playfair Display',serif; font-size:22px; margin-bottom:16px; color:var(--accent2);">1. Hypertrophie</h3>
+ <div class="def-box">Augmentation de la <strong>taille des cellules</strong> (↑ protéines et organites, pas de nouvelles cellules) → augmentation de la taille de l'organe. Concerne les cellules à capacité de division limitée (myocytes cardiaques, myocytes lisses).</div>
+
+ <div class="compare-grid">
+ <div class="compare-box green-box">
+ <h4>Physiologique <span class="pill pill-physio">normale</span></h4>
+ <ul class="mech-list">
+ <li><span class="mech-num">→</span><span><strong>Utérus</strong> pendant la grossesse (stimulation par les œstrogènes)</span></li>
+ <li><span class="mech-num">→</span><span><strong>Muscle squelettique</strong> lors d'efforts physiques intenses (musculation)</span></li>
+ </ul>
+ </div>
+ <div class="compare-box red-box">
+ <h4>Pathologique <span class="pill pill-patho">anormale</span></h4>
+ <ul class="mech-list">
+ <li><span class="mech-num">→</span><span><strong>Cœur</strong> en réponse à l'hypertension ou valvulopathie (loi de Frank-Starling)</span></li>
+ <li><span class="mech-num">→</span><span>Peut évoluer vers insuffisance cardiaque si non compensée</span></li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="info-box">
+ <div class="info-title">⚙️ Mécanismes moléculaires de l'hypertrophie myocardique</div>
+ <ul>
+ <li><strong>Capteurs mécaniques</strong> (intégrines) détectent l'augmentation de charge</li>
+ <li>Activation de voies de signalisation → PI3K/AKT (physiologique), récepteurs couplés aux protéines G (pathologique)</li>
+ <li>Facteurs de transcription activés : <strong>GATA4, NFAT, MEF2</strong></li>
+ <li>↑ Synthèse de protéines contractiles, production de facteurs de croissance (TGF-β, IGF1)</li>
+ </ul>
+ </div>
+
+ <!-- 2.2 Hyperplasie -->
+ <div class="sep"></div>
+ <h3 style="font-family:'Playfair Display',serif; font-size:22px; margin-bottom:16px; color:var(--accent2);">2. Hyperplasie</h3>
+ <div class="def-box">Augmentation du <strong>nombre de cellules</strong> par prolifération (cellules différenciées + cellules souches). Concerne les cellules capables de se répliquer (épiderme, intestin, épithélium glandulaire).</div>
+
+ <div class="compare-grid">
+ <div class="compare-box green-box">
+ <h4>Physiologique <span class="pill pill-physio">normale</span></h4>
+ <ul class="mech-list">
+ <li><span class="mech-num">→</span><span><strong>Hormonale</strong> : sein et utérus à la puberté et grossesse</span></li>
+ <li><span class="mech-num">→</span><span><strong>Compensatoire</strong> : foie après résection partielle (retrouve son poids normal)</span></li>
+ </ul>
+ </div>
+ <div class="compare-box red-box">
+ <h4>Pathologique <span class="pill pill-patho">anormale</span></h4>
+ <ul class="mech-list">
+ <li><span class="mech-num">→</span><span><strong>Endomètre</strong> : déséquilibre œstrogène/progestérone → saignements anormaux</span></li>
+ <li><span class="mech-num">→</span><span><strong>Cicatrisation des plaies</strong>, cancer de la peau</span></li>
+ <li><span class="mech-num">→</span><span>Terrain fertile pour transformation maligne (↑ divisions = ↑ risque mutations)</span></li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- 2.3 Atrophie -->
+ <div class="sep"></div>
+ <h3 style="font-family:'Playfair Display',serif; font-size:22px; margin-bottom:16px; color:var(--accent2);">3. Atrophie / Hypotrophie</h3>
+ <div class="def-box">Diminution de la <strong>taille des cellules</strong> (perte de substance cellulaire) → réduction de la taille de l'organe. Les cellules ne sont pas mortes. Mécanismes : ↓ synthèse protéique, ↑ dégradation protéique (voie ubiquitine-protéasome), ↑ autophagie.</div>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th>Cause</th>
+ <th>Physiologique ou Pathologique</th>
+ <th>Exemple</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td>Réduction hormonale</td><td class="highlight-green">Physio</td><td>Atrophie utérine post-partum, atrophie endomètre à la ménopause</td></tr>
+ <tr><td>Vieillissement</td><td class="highlight-green">Physio</td><td>Atrophie cérébrale sénile</td></tr>
+ <tr><td>Perte d'innervation</td><td class="highlight-red">Patho</td><td>Atrophie musculaire par dénervation</td></tr>
+ <tr><td>Immobilisation</td><td class="highlight-red">Patho</td><td>Atrophie musculaire lors d'un plâtre</td></tr>
+ <tr><td>Réduction apport sanguin</td><td class="highlight-red">Patho</td><td>Ischémie chronique → atrophie tissulaire</td></tr>
+ <tr><td>Mauvaise alimentation</td><td class="highlight-red">Patho</td><td>Cachexie (cancer, maladies chroniques)</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <!-- 2.4 Métaplasie -->
+ <div class="sep"></div>
+ <h3 style="font-family:'Playfair Display',serif; font-size:22px; margin-bottom:16px; color:var(--accent2);">4. Métaplasie</h3>
+ <div class="def-box">Un type cellulaire différencié est <strong>remplacé par un autre type</strong> mieux adapté à l'agression. Résulte d'une reprogrammation des cellules souches tissulaires (pas d'une transformation directe). Peut être précurseur de cancer si stimulus persiste.</div>
+
+ <div class="cards">
+ <div class="card card-gold">
+ <div class="card-title"><span class="dot dot-gold"></span>Exemple — Voies respiratoires</div>
+ <h3>Métaplasie malpighienne</h3>
+ <p>Tabagisme : épithélium cylindrique cilié → <strong>épithélium pavimenteux stratifié</strong>. Perte des cils et mucus = ↓ protection. Risque de carcinome épidermoïde.</p>
+ </div>
+ <div class="card card-gold">
+ <div class="card-title"><span class="dot dot-gold"></span>Exemple — Œsophage</div>
+ <h3>Œsophage de Barrett</h3>
+ <p>Reflux gastrique : épithélium malpighien → <strong>épithélium cylindrique de type intestinal</strong>. Risque d'adénocarcinome. (Métaplasie inverse : cylindrique → malpighien)</p>
+ </div>
+ <div class="card card-gold">
+ <div class="card-title"><span class="dot dot-gold"></span>Exemple — Tissu conjonctif</div>
+ <h3>Formation osseuse ectopique</h3>
+ <p>Formation d'os dans les tissus mous (ex. muscles après hémorragie). Moins associée à un risque cancéreux.</p>
+ </div>
+ </div>
+
+ <!-- 2.5 Dysplasie -->
+ <div class="sep"></div>
+ <h3 style="font-family:'Playfair Display',serif; font-size:22px; margin-bottom:16px; color:var(--accent2);">5. Dysplasie</h3>
+ <div class="def-box">Perturbation de la croissance cellulaire avec <strong>variation de la taille, de la forme et de l'organisation cellulaire</strong>. Processus adaptatif (réversible si stimulus supprimé). Précurseur du cancer, mais ne conduit pas nécessairement au cancer.</div>
+
+ <div class="info-box">
+ <div class="info-title">📍 Localisations fréquentes</div>
+ <ul>
+ <li><strong>Col de l'utérus</strong> — modèle le plus étudié (degrés mineurs liés à irritation/inflammation chronique)</li>
+ <li><strong>Épithélium cylindrique stratifié pulmonaire</strong></li>
+ <li>Distinguer dysplasie (réversible) du cancer (irréversible)</li>
+ </ul>
+ </div>
+ </section>
+
+ <!-- ── 3. LÉSION CELLULAIRE — CAUSES ── -->
+ <section class="section" id="lesion">
+ <div class="section-header">
+ <span class="section-num">03</span>
+ <h2 class="section-title">Causes des <span>Lésions Cellulaires</span></h2>
+ </div>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th>#</th>
+ <th>Cause</th>
+ <th>Mécanisme principal</th>
+ <th>Exemples</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>1</td>
+ <td class="highlight-red">Privation d'O₂</td>
+ <td>Hypoxie → ↓ respiration oxydative aérobie → ↓ ATP</td>
+ <td>Ischémie, anémie, obstruction artérielle, alvéoles remplies de liquide</td>
+ </tr>
+ <tr>
+ <td>2</td>
+ <td>Agents chimiques</td>
+ <td>Modification de la perméabilité membranaire, production de radicaux libres</td>
+ <td>Glucose/sel hypertonique, poisons (arsenic, cyanure), alcool, pollution</td>
+ </tr>
+ <tr>
+ <td>3</td>
+ <td>Agents infectieux</td>
+ <td>Liaison à la cellule hôte → mort/dysfonction, libération de toxines, réponse immune</td>
+ <td>Grippe, tuberculose, virus, bactéries, parasites</td>
+ </tr>
+ <tr>
+ <td>4</td>
+ <td>Réactions immunitaires</td>
+ <td>Réactions auto-immunes, dépôts d'immunocomplexes</td>
+ <td>Lupus, polyarthrite rhumatoïde</td>
+ </tr>
+ <tr>
+ <td>5</td>
+ <td>Modifications génétiques</td>
+ <td>Dysfonction protéique, accumulation d'ADN endommagé/protéines mal repliées</td>
+ <td>Anémie falciforme, syndrome de Down, mucoviscidose</td>
+ </tr>
+ <tr>
+ <td>6</td>
+ <td>Déséquilibres nutritionnels</td>
+ <td>Déficits ou excès de nutriments → dégradation cellulaire</td>
+ <td>Obésité (athérosclérose), anorexie (cachexie), diabète</td>
+ </tr>
+ <tr>
+ <td>7</td>
+ <td>Agents physiques</td>
+ <td>Traumatisme mécanique, températures extrêmes, rayonnements</td>
+ <td>Choc, traumatisme, brûlures, froid, choc électrique</td>
+ </tr>
+ <tr>
+ <td>8</td>
+ <td>Vieillissement</td>
+ <td>↓ capacité proliférative, exposition continue à facteurs exogènes, accumulation de lésions</td>
+ <td>Raccourcissement télomères, ↑ ROS, ↓ réparation ADN</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+
+ <!-- Mécanismes de lésion -->
+ <h3 style="font-family:'Playfair Display',serif; font-size:20px; margin-bottom:16px; margin-top:32px; color:var(--text);">Mécanismes fondamentaux de lésion</h3>
+
+ <div class="cards">
+ <div class="card card-red">
+ <div class="card-title"><span class="dot dot-red"></span>Mécanisme 1</div>
+ <h3>Déplétion en ATP / Hypoxie</h3>
+ <p>↓ O₂ → métabolisme anaérobie → ↑ acide lactique → ↓ pH. Défaillance pompe Na⁺/K⁺ → ↑ Na⁺ intracellulaire → gonflement. ↓ synthèse protéique, ↑ mauvais repliement.</p>
+ </div>
+ <div class="card card-red">
+ <div class="card-title"><span class="dot dot-red"></span>Mécanisme 2</div>
+ <h3>Formation de Radicaux Libres (ROS)</h3>
+ <p>Espèces chimiques avec électron non apparié → très réactifs. Peroxydation lipidique (membranes), modification oxydative des protéines, lésions ADN. <strong>Stress oxydatif</strong> = production ROS > capacité à les neutraliser.</p>
+ </div>
+ <div class="card card-red">
+ <div class="card-title"><span class="dot dot-red"></span>Mécanisme 3</div>
+ <h3>Perturbation de l'homéostasie calcique</h3>
+ <p>↑ Ca²⁺ intracellulaire → activation inappropriée : <strong>phospholipase</strong> (membrane), <strong>protéase</strong> (cytosquelette), <strong>ATPase</strong> (↓ ATP), <strong>endonucléase</strong> (fragmentation chromatine).</p>
+ </div>
+ </div>
+ </section>
+
+ <!-- ── 4. LÉSION RÉVERSIBLE ── -->
+ <section class="section" id="reversible">
+ <div class="section-header">
+ <span class="section-num">04</span>
+ <h2 class="section-title">Lésion Cellulaire <span>Réversible</span></h2>
+ </div>
+
+ <div class="def-box">
+ Altérations fonctionnelles et structurelles à un stade précoce ou légères, <strong>corrigibles si le stimulus nocif est supprimé</strong>. Deux caractéristiques systématiquement observées :
+ </div>
+
+ <div class="two-col">
+ <div class="card card-green">
+ <div class="card-title"><span class="dot dot-green"></span>Caractéristique 1</div>
+ <h3>Gonflement cellulaire (tuméfaction)</h3>
+ <p>Manifestation la plus précoce. Causé par défaillance pompe Na⁺/K⁺. Affecte de nombreuses cellules → pâleur, ↑ turgescence, ↑ poids de l'organe.</p>
+ <p><strong>Modifications visibles :</strong> vacuoles cytoplasmiques (RER distendu), changement hydrique, perte ARN, éosinophilie accrue.</p>
+ <p><strong>Ultrastructure :</strong> vésicules membranaires, gonflement mitochondries, dilatation RE, désagrégation éléments granulaires nucléaires.</p>
+ </div>
+ <div class="card card-green">
+ <div class="card-title"><span class="dot dot-green"></span>Caractéristique 2</div>
+ <h3>Dégénérescence graisseuse</h3>
+ <p>Implique le métabolisme des lipides, principalement dans le <strong>foie</strong>. Lésion toxique → accumulation rapide de vacuoles lipidiques (triglycérides) dans le cytoplasme.</p>
+ <p>Réversible si stimulus retiré.</p>
+ </div>
+ </div>
+
+ <div class="info-box">
+ <div class="info-title">🔬 Modifications des organites dans le gonflement cellulaire</div>
+ <ul>
+ <li><strong>Membrane plasmique</strong> : défaillance pompe Na/K dépendante de l'ATP → bulles, aplatissement, perte microvillosités</li>
+ <li><strong>RER</strong> : tuméfaction, détache les ribosomes → ↓ synthèse protéique</li>
+ <li><strong>Mitochondries</strong> : tuméfaction, ↓ fonction</li>
+ <li><strong>Noyau</strong> : désagrégation des éléments granulaires et fibrillaires</li>
+ </ul>
+ </div>
+ </section>
+
+ <!-- ── 5. MORT CELLULAIRE ── -->
+ <section class="section" id="mort">
+ <div class="section-header">
+ <span class="section-num">05</span>
+ <h2 class="section-title">Mort <span>Cellulaire</span></h2>
+ </div>
+
+ <p style="color:var(--text-muted); margin-bottom: 20px; font-size: 14px;">Les lésions réversibles peuvent évoluer vers des lésions irréversibles. Deux voies principales : <strong style="color:var(--irreversible)">Nécrose</strong> et <strong style="color:#b07ec9">Apoptose</strong>.</p>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th>Caractéristique</th>
+ <th class="highlight-red">Nécrose</th>
+ <th class="highlight-blue" style="color:#b07ec9;">Apoptose</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Taille de la cellule</td>
+ <td class="highlight-red">Augmentée (gonflement / tuméfaction)</td>
+ <td style="color:#b07ec9;">Réduite (rétrécissement)</td>
+ </tr>
+ <tr>
+ <td>Noyau</td>
+ <td class="highlight-red">Pycnose → caryorrhexie → caryolyse</td>
+ <td style="color:#b07ec9;">Fragmentation en fragments de la taille d'un nucléosome. Pycnose périphérique</td>
+ </tr>
+ <tr>
+ <td>Membrane plasmique</td>
+ <td class="highlight-red">Rompue / perturbée</td>
+ <td style="color:#b07ec9;">Intacte ; structure altérée (orientation lipides)</td>
+ </tr>
+ <tr>
+ <td>Contenu cellulaire</td>
+ <td class="highlight-red">Digestion enzymatique ; fuite possible</td>
+ <td style="color:#b07ec9;">Intacte ; libérée dans les corps apoptotiques</td>
+ </tr>
+ <tr>
+ <td>Inflammation adjacente</td>
+ <td class="highlight-red">Fréquente (DAMP)</td>
+ <td style="color:#b07ec9;">Non (phagocytose rapide)</td>
+ </tr>
+ <tr>
+ <td>Rôle physiologique/pathologique</td>
+ <td class="highlight-red">Invariablement pathologique (lésion irréversible)</td>
+ <td style="color:#b07ec9;">Souvent physiologique ; peut être pathologique (lésions ADN)</td>
+ </tr>
+ <tr>
+ <td>Caspases</td>
+ <td class="highlight-red">Non impliquées</td>
+ <td style="color:#b07ec9;">Mécanisme central (caspases 8, 9, 3…)</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </section>
+
+ <!-- ── 6. NÉCROSE ── -->
+ <section class="section" id="necrose">
+ <div class="section-header">
+ <span class="section-num">06</span>
+ <h2 class="section-title"><span>Nécrose</span></h2>
+ </div>
+
+ <div class="def-box">
+ <strong>Définition :</strong> Mort cellulaire survenue dans un organisme vivant, <strong>suivie de phénomènes d'autolyse</strong>. Processus pathologique consécutif à une lésion grave. Dénaturation des protéines + fuite du contenu cellulaire + inflammation locale + digestion enzymatique.
+ </div>
+
+ <h3 style="font-family:'Playfair Display',serif; font-size:20px; margin:20px 0 16px; color:var(--text);">Altérations cellulaires (microscopiques)</h3>
+ <ul class="mech-list">
+ <li><span class="mech-num">A</span><span><strong>Éosinophilie accrue</strong> — perte ARN cytoplasmique + accumulation protéines dénaturées</span></li>
+ <li><span class="mech-num">B</span><span><strong>Augmentation du volume cellulaire</strong> — aspect homogène vitreux</span></li>
+ <li><span class="mech-num">C</span><span><strong>Pycnose</strong> — condensation de la chromatine (noyau rétréci)</span></li>
+ <li><span class="mech-num">D</span><span><strong>Caryorrhexie</strong> — fragmentation du noyau pycnotique</span></li>
+ <li><span class="mech-num">E</span><span><strong>Caryolyse</strong> — dissolution du noyau (perte de couleur)</span></li>
+ </ul>
+
+ <div class="sep"></div>
+
+ <h3 style="font-family:'Playfair Display',serif; font-size:20px; margin-bottom:16px; color:var(--text);">Types de nécrose tissulaire</h3>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th>Type</th>
+ <th>Mécanisme</th>
+ <th>Aspect macroscopique</th>
+ <th>Localisation typique</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Coagulative</td>
+ <td>Dénaturation protéines + enzymes → préserve architecture tissu</td>
+ <td>Tissu ferme, contours cellulaires préservés</td>
+ <td>Rein, cœur (infarctus), tous organes sauf SNC</td>
+ </tr>
+ <tr>
+ <td>Liquéfactive</td>
+ <td>Digestion enzymatique intense → liquéfaction</td>
+ <td>Masse visqueuse (pus si infection)</td>
+ <td>SNC (hypoxie), infections bactériennes focales</td>
+ </tr>
+ <tr>
+ <td>Gangréneuse</td>
+ <td>Nécrose coagulative + infection bactérienne (gangrène humide)</td>
+ <td>Tissu noir, malodorant</td>
+ <td>Membres, intestins (ischémie distale)</td>
+ </tr>
+ <tr>
+ <td>Caséeuse</td>
+ <td>Granulome → débris amorphes</td>
+ <td>Aspect « fromage » blanc jaunâtre et friable</td>
+ <td>Tuberculose pulmonaire, ganglions lymphatiques</td>
+ </tr>
+ <tr>
+ <td>Graisseuse</td>
+ <td>Libération lipases pancréatiques activées</td>
+ <td>Zones blanches crayeuses (saponification)</td>
+ <td>Pancréatite aiguë, mésentère</td>
+ </tr>
+ <tr>
+ <td>Fibrinoïde</td>
+ <td>Dépôt d'immunocomplexes dans parois vasculaires</td>
+ <td>Aspect rose vif amorphe (colorations H&E)</td>
+ <td>Vascularite à médiation immunologique, lupus</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </section>
+
+ <!-- ── 7. APOPTOSE ── -->
+ <section class="section" id="apoptose">
+ <div class="section-header">
+ <span class="section-num">07</span>
+ <h2 class="section-title"><span>Apoptose</span></h2>
+ </div>
+
+ <div class="def-box">
+ <strong>Définition :</strong> Mort cellulaire <strong>programmée</strong> dans laquelle des enzymes (caspases) sont activées et forment des <strong>corps apoptotiques</strong>. Mécanisme régulé, sans inflammation. Du grec « tomber ».
+ </div>
+
+ <div class="compare-grid">
+ <div class="compare-box green-box">
+ <h4>Apoptose Physiologique <span class="pill pill-physio">normale</span></h4>
+ <ul class="mech-list">
+ <li><span class="mech-num">→</span><span>Destruction programmée pendant l'embryogenèse (formation des doigts, etc.)</span></li>
+ <li><span class="mech-num">→</span><span>Involution des tissus hormono-dépendants (endomètre, glande mammaire après sevrage)</span></li>
+ <li><span class="mech-num">→</span><span>Cellules ayant rempli leur rôle (neutrophiles, lymphocytes en fin de réponse immunitaire)</span></li>
+ <li><span class="mech-num">→</span><span>Élimination lymphocytes auto-réactifs</span></li>
+ </ul>
+ </div>
+ <div class="compare-box red-box">
+ <h4>Apoptose Pathologique <span class="pill pill-patho">anormale</span></h4>
+ <ul class="mech-list">
+ <li><span class="mech-num">→</span><span><strong>Lésions ADN</strong> : rayonnements, températures extrêmes, médicaments cytotoxiques</span></li>
+ <li><span class="mech-num">→</span><span><strong>Infections virales</strong> : VIH, adénovirus + réponse LT cytotoxiques</span></li>
+ <li><span class="mech-num">→</span><span>Atrophie des organes parenchymateux après obstruction de canal (pancréas, rein)</span></li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="sep"></div>
+
+ <h3 style="font-family:'Playfair Display',serif; font-size:20px; margin-bottom:16px; color:var(--text);">Modifications cellulaires de l'apoptose</h3>
+
+ <ul class="mech-list" style="margin-bottom:24px;">
+ <li><span class="mech-num">1</span><span><strong>Rétrécissement cellulaire</strong> — cytoplasme dense et éosinophile (≠ gonflement de la nécrose)</span></li>
+ <li><span class="mech-num">2</span><span><strong>Condensation de la chromatine</strong> — agrégation à la périphérie sous la membrane nucléaire (pycnose)</span></li>
+ <li><span class="mech-num">3</span><span><strong>Formation de vésicules cytoplasmiques et corps apoptotiques</strong> — fragments liés à la membrane avec cytoplasme et fragments nucléaires</span></li>
+ <li><span class="mech-num">4</span><span><strong>Phagocytose</strong> par les macrophages (efférocytose) — rapide, sans inflammation</span></li>
+ </ul>
+
+ <h3 style="font-family:'Playfair Display',serif; font-size:20px; margin-bottom:16px; color:var(--text);">Deux voies de l'apoptose</h3>
+
+ <div class="two-col">
+ <div class="card card-purple" style="--border-top: #b07ec9; border-top: 3px solid #b07ec9;">
+ <div class="card-title"><span class="dot dot-purple"></span>Voie intrinsèque (mitochondriale)</div>
+ <h3>Voie principale</h3>
+ <p>Déclenchée par : <strong>perte signaux de survie, dommages ADN, stress RE</strong>. Les protéines BH3-only activent BAX/BAK → perméabilisation membrane mitochondriale externe → fuite <strong>cytochrome c</strong> → APAF-1 → apoptosome → <strong>caspase-9</strong> → caspases exécutrices (caspase-3).</p>
+ <p>Régulée par famille BCL2 : anti-apoptotiques (BCL2, BCL-XL) vs pro-apoptotiques (BAX, BAK).</p>
+ </div>
+ <div class="card card-purple" style="border-top: 3px solid #b07ec9;">
+ <div class="card-title"><span class="dot dot-purple"></span>Voie extrinsèque (récepteurs de mort)</div>
+ <h3>Via récepteurs membranaires</h3>
+ <p>Liaison <strong>FasL → Fas</strong> (ou TNF → TNFR1) → recrutement FADD → pro-caspase-8 → <strong>caspase-8</strong> active → caspases exécutrices. Élimine lymphocytes auto-réactifs, cellules infectées par virus.</p>
+ <p>Peut être inhibée par la protéine <strong>FLIP</strong>.</p>
+ </div>
+ </div>
+ </section>
+
+ <!-- ── 8. ACCUMULATIONS INTRACELLULAIRES & CALCIFICATION ── -->
+ <section class="section" id="accumulations">
+ <div class="section-header">
+ <span class="section-num">08</span>
+ <h2 class="section-title">Accumulations <span>Intracellulaires</span> & Calcifications</h2>
+ </div>
+
+ <div class="def-box">
+ <strong>Accumulation intracellulaire :</strong> Accumulation de substances que la cellule ne peut ni utiliser immédiatement ni éliminer. Peut être temporaire ou permanent, bénigne ou toxique. Se produit normalement dans le lysosome et le noyau.
+ </div>
+
+ <h3 style="font-family:'Playfair Display',serif; font-size:20px; margin:20px 0 16px; color:var(--text);">4 mécanismes d'accumulation</h3>
+
+ <div class="cards">
+ <div class="card card-gold">
+ <div class="card-title"><span class="dot dot-gold"></span>Mécanisme 1</div>
+ <h3>Métabolisme anormal</h3>
+ <p>Élimination inadéquate d'une substance normale. Ex. : <strong>stéatose hépatique</strong> (lipides/triglycérides dans le foie — alcoolisme, obésité).</p>
+ </div>
+ <div class="card card-gold">
+ <div class="card-title"><span class="dot dot-gold"></span>Mécanisme 2</div>
+ <h3>Défaut de repliement/transport</h3>
+ <p>Protéines accumulées en raison de mutation. Ex. : <strong>α1-antitrypsine</strong> (accumulation dans hépatocytes → emphysème).</p>
+ </div>
+ <div class="card card-gold">
+ <div class="card-title"><span class="dot dot-gold"></span>Mécanisme 3</div>
+ <h3>Déficit enzymatique héréditaire</h3>
+ <p>Incapacité à dégrader un métabolite. Ex. : <strong>maladies de surcharge lysosomale</strong> (Tay-Sachs, Niemann-Pick).</p>
+ </div>
+ <div class="card card-gold">
+ <div class="card-title"><span class="dot dot-gold"></span>Mécanisme 4</div>
+ <h3>Substance exogène non digestible</h3>
+ <p>Pas de mécanisme enzymatique disponible. Ex. : <strong>poussière de carbone, silice</strong> dans les macrophages pulmonaires.</p>
+ </div>
+ </div>
+
+ <div class="sep"></div>
+
+ <h3 style="font-family:'Playfair Display',serif; font-size:20px; margin-bottom:16px; color:var(--text);">Substances accumulées</h3>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th>Substance</th>
+ <th>Exemples cliniques</th>
+ <th>Organe cible</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td>Lipides (triglycérides)</td><td>Stéatose hépatique (alcool, obésité)</td><td>Foie</td></tr>
+ <tr><td>Cholestérol</td><td>Athérosclérose (cellules spumeuses), xanthomes</td><td>Artères, peau, tendons</td></tr>
+ <tr><td>Protéines</td><td>Corps de Russell (plasmocytes), α1-antitrypsine</td><td>Foie, rein</td></tr>
+ <tr><td>Glucides (glycogène)</td><td>Diabète sucré, glycogénoses</td><td>Foie, rein, muscle</td></tr>
+ <tr><td>Mélanine</td><td>Tumeurs mélanocytaires</td><td>Peau, mélanocytes</td></tr>
+ <tr><td>Bilirubine</td><td>Ictère (destruction GR, obstruction biliaire, insuffisance hépatique)</td><td>Foie, peau, sclérotiques</td></tr>
+ <tr><td>Lipofuscine</td><td>Vieillissement cellulaire, cachexie</td><td>Cœur, foie (pigment brun)</td></tr>
+ <tr><td>Hémosidérine</td><td>Ecchymoses, hémochromatose, surcharge en fer</td><td>Foie, rate, moelle</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <div class="sep"></div>
+
+ <h3 style="font-family:'Playfair Display',serif; font-size:20px; margin-bottom:16px; color:var(--text);">Calcification pathologique</h3>
+
+ <div class="def-box">Dépôt anormal de <strong>sels de calcium</strong> accompagné de petites quantités de fer, magnésium et sels minéraux. Deux formes selon l'état du tissu et le contexte métabolique.</div>
+
+ <div class="compare-grid">
+ <div class="compare-box green-box">
+ <h4>Dystrophique</h4>
+ <ul class="mech-list">
+ <li><span class="mech-num">→</span><span>Dépôt dans <strong>zones de nécrose et lésions</strong></span></li>
+ <li><span class="mech-num">→</span><span>Calcémie sérique <strong>normale</strong></span></li>
+ <li><span class="mech-num">→</span><span>Ex. : athérosclérose avancée, valves cardiaques vieillissantes, tuberculose</span></li>
+ </ul>
+ </div>
+ <div class="compare-box red-box">
+ <h4>Métastatique</h4>
+ <ul class="mech-list">
+ <li><span class="mech-num">→</span><span>Dépôt dans <strong>tissus normaux</strong> suite à hypercalcémie</span></li>
+ <li><span class="mech-num">→</span><span>Causes : ↑ PTH (hyperparathyroïdie), tumeurs malignes, intoxication vitamine D, insuffisance rénale</span></li>
+ <li><span class="mech-num">→</span><span>Localisation : muqueuse gastrique, rein, poumons, artères</span></li>
+ </ul>
+ </div>
+ </div>
+ </section>
+
+ <!-- ── 9. TABLEAU COMPARATIF FINAL ── -->
+ <section class="section" id="comparaison">
+ <div class="section-header">
+ <span class="section-num">09</span>
+ <h2 class="section-title">Tableau Comparatif <span>Récapitulatif</span></h2>
+ </div>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th>Type</th>
+ <th>Réversible ?</th>
+ <th>Mécanisme clé</th>
+ <th>Caractéristiques morphologiques</th>
+ <th>Inflammation ?</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td class="highlight-blue">Adaptation</td>
+ <td class="highlight-green">✓ Oui</td>
+ <td>Signaux mécaniques, hormones, facteurs de croissance</td>
+ <td>↑ ou ↓ taille/nombre de cellules, changement phénotype</td>
+ <td>Non</td>
+ </tr>
+ <tr>
+ <td class="highlight-green">Lésion réversible</td>
+ <td class="highlight-green">✓ Si stimulus retiré</td>
+ <td>↓ ATP, ↑ Ca²⁺, ROS</td>
+ <td>Gonflement cellulaire, vacuoles lipidiques, éosinophilie débutante</td>
+ <td>Non</td>
+ </tr>
+ <tr>
+ <td class="highlight-red">Nécrose</td>
+ <td class="highlight-red">✗ Non</td>
+ <td>Dommages membranaires massifs, fuite enzymatique</td>
+ <td>Éosinophilie, pycnose → caryorrhexie → caryolyse, rupture membrane</td>
+ <td class="highlight-red">Oui (DAMP)</td>
+ </tr>
+ <tr>
+ <td style="color:#b07ec9;">Apoptose</td>
+ <td class="highlight-red">✗ Non</td>
+ <td>Caspases (voies intrinsèque/extrinsèque)</td>
+ <td>Rétrécissement, condensation chromatine périphérique, corps apoptotiques</td>
+ <td class="highlight-green">Non (efférocytose)</td>
+ </tr>
+ <tr>
+ <td class="highlight-gold">Accumulation intracellulaire</td>
+ <td>Variable</td>
+ <td>Défaut métabolisme, enzyme, transport</td>
+ <td>Vacuoles lipidiques, granules, inclusions</td>
+ <td>Parfois</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+
+ <!-- Points clés à retenir -->
+ <div class="info-box" style="margin-top:32px;">
+ <div class="info-title">🎯 Points clés absolus à retenir pour l'examen</div>
+ <ul>
+ <li>La <strong>physiopathologie</strong> étudie étiologie, pathogenèse, morphologie et manifestations cliniques</li>
+ <li><strong>Hypertrophie</strong> = ↑ taille cellule (pas de nouvelles cellules) ; <strong>Hyperplasie</strong> = ↑ nombre cellules</li>
+ <li>L'<strong>atrophie</strong> réduit la fonction mais les cellules ne sont pas mortes</li>
+ <li>La <strong>métaplasie</strong> est réversible ; la <strong>dysplasie</strong> est un précurseur du cancer (réversible aussi)</li>
+ <li>Lésion réversible = <strong>gonflement cellulaire</strong> + <strong>dégénérescence graisseuse</strong></li>
+ <li>Nécrose : <strong>invariablement pathologique</strong>, avec inflammation ; apoptose souvent physiologique, <strong>sans inflammation</strong></li>
+ <li>Nécrose coagulative → <strong>rein/cœur</strong> ; Liquéfactive → <strong>SNC</strong> ; Caséeuse → <strong>tuberculose</strong></li>
+ <li>Apoptose voie intrinsèque : caspase-9 ; voie extrinsèque (Fas/FasL) : caspase-8</li>
+ <li>Calcification <strong>dystrophique</strong> = tissu nécrotique, calcémie normale ; <strong>métastatique</strong> = tissu normal + hypercalcémie</li>
+ <li>Bilirubine ↑ = ictère (destruction GR, obstruction biliaire, ou insuffisance hépatique)</li>
+ </ul>
+ </div>
+ </section>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+ Physiopathologie 1 — Licence en Physiothérapie · Fiche de révision complète · Enseignante D
+</div>
+
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-02.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+</body>
+</html>

@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Cours 5 — Physiologie de l'Exercice — Fiche de révision complète · Enseignante J">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../assets/css/acces.css">
+<script src="../../../../../assets/js/acces.js"></script>
+<title>Fiche de Révision – Physiologie de l'Exercice</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../../assets/css/chrome.css">
+<style>
+ :root {
+ --bg: #0f1117;
+ --bg2: #161922;
+ --bg3: #1a1d2a;
+ --card: #1a1d2a;
+ --card2: #1a1d2a;
+ --accent1: #f472b6;
+ --accent2: #ff6b9d;
+ --accent3: #ff8fa3;
+ --accent4: #ff8fa3;
+ --accent5: #f472b6;
+ --text: #9aa3b8;
+ --text2: #9aa3b8;
+ --text3: #6a7388;
+ --border: rgba(255,107,157,0.15);
+ --glow: 0 0 20px rgba(255,107,157,0.15);
+ }
+
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+
+ body {
+ font-family: 'Source Sans 3', sans-serif;
+ background: var(--bg);
+ color: var(--text);
+ line-height: 1.7;
+ min-height: 100vh;
+ }
+
+ /* HEADER */
+ header {
+ background: linear-gradient(135deg, #20243a 0%, #ff5c6b 50%, #20243a 100%);
+ border-bottom: 2px solid var(--accent1);
+ padding: 50px 40px 40px;
+ text-align: center;
+ position: relative;
+ overflow: hidden;
+ }
+ header::before {
+ content: '';
+ position: absolute; inset: 0;
+ background: radial-gradient(ellipse at 50% 0%, rgba(255,107,157,0.12) 0%, transparent 70%);
+ }
+ header .badge {
+ display: inline-block;
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 0.7rem;
+ letter-spacing: 0.2em;
+ color: var(--accent1);
+ text-transform: uppercase;
+ border: 1px solid var(--accent1);
+ padding: 4px 14px;
+ border-radius: 20px;
+ margin-bottom: 16px;
+ opacity: 0.85;
+ }
+ header h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(2rem, 5vw, 3.2rem);
+ font-weight: 900;
+ color: #ffffff;
+ letter-spacing: -0.02em;
+ line-height: 1.15;
+ position: relative;
+ z-index: 1;
+ }
+ header h1 span { color: var(--accent1); }
+ header p {
+ margin-top: 12px;
+ color: var(--text2);
+ font-size: 1rem;
+ position: relative;
+ z-index: 1;
+ }
+
+ /* NAV TABS */
+ nav {
+ background: var(--bg2);
+ border-bottom: 1px solid var(--border);
+ display: flex;
+ flex-wrap: wrap;
+ gap: 4px;
+ padding: 12px 24px;
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ backdrop-filter: blur(10px);
+ }
+ nav a {
+ font-size: 0.78rem;
+ font-weight: 600;
+ text-decoration: none;
+ padding: 6px 14px;
+ border-radius: 6px;
+ color: var(--text2);
+ transition: all 0.2s;
+ white-space: nowrap;
+ letter-spacing: 0.02em;
+ }
+ nav a:hover { background: var(--card); color: var(--accent1); }
+
+ /* MAIN LAYOUT */
+ main {
+ max-width: 1200px;
+ margin: 0 auto;
+ padding: 40px 24px 80px;
+ display: flex;
+ flex-direction: column;
+ gap: 40px;
+ }
+
+ /* SECTION */
+ section {
+ background: var(--card);
+ border: 1px solid var(--border);
+ border-radius: 16px;
+ overflow: hidden;
+ box-shadow: var(--glow);
+ animation: fadeUp 0.4s ease both;
+ }
+ @keyframes fadeUp {
+ from { opacity: 0; transform: translateY(16px); }
+ to { opacity: 1; transform: translateY(0); }
+ }
+
+ .section-header {
+ padding: 22px 30px 18px;
+ border-bottom: 1px solid var(--border);
+ display: flex;
+ align-items: center;
+ gap: 14px;
+ }
+ .section-icon {
+ width: 40px; height: 40px;
+ border-radius: 10px;
+ display: flex; align-items: center; justify-content: center;
+ font-size: 1.2rem;
+ flex-shrink: 0;
+ }
+ .section-header h2 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.35rem;
+ font-weight: 700;
+ color: #ffffff;
+ }
+ .section-header .section-num {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 0.7rem;
+ color: var(--text3);
+ letter-spacing: 0.1em;
+ margin-top: 2px;
+ }
+ .section-body { padding: 24px 30px; }
+
+ /* COLOR THEMES */
+ .theme-blue .section-icon { background: rgba(255,107,157,0.15); color: var(--accent1); }
+ .theme-blue .section-header { background: rgba(255,107,157,0.04); }
+ .theme-green .section-icon { background: rgba(255,107,157,0.15); color: var(--accent2); }
+ .theme-green .section-header { background: rgba(255,107,157,0.04); }
+ .theme-orange .section-icon { background: rgba(255,107,157,0.15); color: var(--accent3); }
+ .theme-orange .section-header { background: rgba(255,107,157,0.04); }
+ .theme-pink .section-icon { background: rgba(255,107,157,0.15); color: var(--accent4); }
+ .theme-pink .section-header { background: rgba(255,107,157,0.04); }
+ .theme-purple .section-icon { background: rgba(255,107,157,0.15); color: var(--accent5); }
+ .theme-purple .section-header { background: rgba(255,107,157,0.04); }
+
+ /* SUBSECTIONS */
+ .sub {
+ background: var(--card2);
+ border: 1px solid rgba(255,255,255,0.06);
+ border-radius: 12px;
+ padding: 20px 22px;
+ margin-bottom: 16px;
+ }
+ .sub:last-child { margin-bottom: 0; }
+ .sub h3 {
+ font-size: 0.95rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: 0.07em;
+ margin-bottom: 12px;
+ display: flex;
+ align-items: center;
+ gap: 8px;
+ }
+ .sub h3 span.dot {
+ width: 8px; height: 8px; border-radius: 50%;
+ display: inline-block; flex-shrink: 0;
+ }
+ .theme-blue .sub h3 { color: var(--accent1); }
+ .theme-blue .sub h3 span.dot { background: var(--accent1); }
+ .theme-green .sub h3 { color: var(--accent2); }
+ .theme-green .sub h3 span.dot { background: var(--accent2); }
+ .theme-orange .sub h3 { color: var(--accent3); }
+ .theme-orange .sub h3 span.dot { background: var(--accent3); }
+ .theme-pink .sub h3 { color: var(--accent4); }
+ .theme-pink .sub h3 span.dot { background: var(--accent4); }
+ .theme-purple .sub h3 { color: var(--accent5); }
+ .theme-purple .sub h3 span.dot { background: var(--accent5); }
+
+ /* GRID */
+ .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+ .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
+ @media(max-width: 768px) {
+ .grid-2, .grid-3 { grid-template-columns: 1fr; }
+ .section-body { padding: 16px 16px; }
+ .section-header { padding: 16px 18px 14px; }
+ }
+
+ /* CARDS */
+ .card {
+ background: var(--bg3);
+ border: 1px solid rgba(255,255,255,0.07);
+ border-radius: 10px;
+ padding: 16px 18px;
+ }
+ .card .card-title {
+ font-size: 0.8rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: 0.08em;
+ margin-bottom: 8px;
+ }
+
+ /* KV (Key-Value) */
+ .kv { display: flex; flex-direction: column; gap: 8px; }
+ .kv-row {
+ display: flex;
+ align-items: flex-start;
+ gap: 12px;
+ padding: 8px 12px;
+ background: rgba(0,0,0,0.2);
+ border-radius: 8px;
+ border-left: 3px solid transparent;
+ }
+ .theme-blue .kv-row { border-left-color: var(--accent1); }
+ .theme-green .kv-row { border-left-color: var(--accent2); }
+ .theme-orange .kv-row { border-left-color: var(--accent3); }
+ .theme-pink .kv-row { border-left-color: var(--accent4); }
+ .theme-purple .kv-row { border-left-color: var(--accent5); }
+ .kv-key {
+ font-size: 0.78rem;
+ font-weight: 700;
+ min-width: 140px;
+ flex-shrink: 0;
+ color: var(--text2);
+ font-family: 'JetBrains Mono', monospace;
+ letter-spacing: 0.02em;
+ padding-top: 1px;
+ }
+ .kv-val { font-size: 0.9rem; color: var(--text); }
+
+ /* PILLS */
+ .pill-row { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+ .pill {
+ font-size: 0.78rem;
+ padding: 4px 12px;
+ border-radius: 20px;
+ font-weight: 600;
+ letter-spacing: 0.03em;
+ }
+ .pill-blue { background: rgba(255,107,157,0.15); color: var(--accent1); border: 1px solid rgba(255,107,157,0.3); }
+ .pill-green { background: rgba(255,107,157,0.15); color: var(--accent2); border: 1px solid rgba(255,107,157,0.3); }
+ .pill-orange { background: rgba(255,107,157,0.15); color: var(--accent3); border: 1px solid rgba(255,107,157,0.3); }
+ .pill-pink { background: rgba(255,107,157,0.15); color: var(--accent4); border: 1px solid rgba(255,107,157,0.3); }
+ .pill-purple { background: rgba(255,107,157,0.15); color: var(--accent5); border: 1px solid rgba(255,107,157,0.3); }
+
+ /* TABLE */
+ table { width: 100%; border-collapse: collapse; font-size: 0.87rem; }
+ th {
+ background: rgba(0,0,0,0.3);
+ color: var(--text2);
+ font-weight: 700;
+ font-size: 0.75rem;
+ text-transform: uppercase;
+ letter-spacing: 0.08em;
+ padding: 10px 14px;
+ text-align: left;
+ border-bottom: 2px solid var(--border);
+ }
+ td {
+ padding: 9px 14px;
+ border-bottom: 1px solid rgba(255,255,255,0.05);
+ color: var(--text);
+ vertical-align: top;
+ }
+ tr:hover td { background: rgba(255,255,255,0.03); }
+
+ /* FORMULA BOX */
+ .formula {
+ font-family: 'JetBrains Mono', monospace;
+ background: rgba(0,0,0,0.35);
+ border: 1px solid rgba(255,107,157,0.3);
+ border-radius: 8px;
+ padding: 10px 16px;
+ font-size: 0.85rem;
+ color: var(--accent1);
+ margin: 8px 0;
+ display: block;
+ text-align: center;
+ }
+
+ /* ALERT/KEY POINT */
+ .alert {
+ border-radius: 10px;
+ padding: 14px 18px;
+ margin: 14px 0;
+ display: flex;
+ gap: 12px;
+ align-items: flex-start;
+ font-size: 0.9rem;
+ }
+ .alert-icon { font-size: 1.1rem; flex-shrink: 0; }
+ .alert-blue { background: rgba(255,107,157,0.1); border: 1px solid rgba(255,107,157,0.25); }
+ .alert-green { background: rgba(255,107,157,0.1); border: 1px solid rgba(255,107,157,0.25); }
+ .alert-orange { background: rgba(255,107,157,0.1); border: 1px solid rgba(255,107,157,0.25); }
+ .alert-pink { background: rgba(255,107,157,0.1); border: 1px solid rgba(255,107,157,0.25); }
+
+ /* STEPS */
+ .steps { display: flex; flex-direction: column; gap: 10px; }
+ .step {
+ display: flex;
+ gap: 14px;
+ align-items: flex-start;
+ }
+ .step-num {
+ width: 28px; height: 28px;
+ border-radius: 50%;
+ display: flex; align-items: center; justify-content: center;
+ font-size: 0.75rem;
+ font-weight: 700;
+ flex-shrink: 0;
+ font-family: 'JetBrains Mono', monospace;
+ }
+ .step-blue { background: rgba(255,107,157,0.2); color: var(--accent1); }
+ .step-green { background: rgba(255,107,157,0.2); color: var(--accent2); }
+ .step-orange { background: rgba(255,107,157,0.2); color: var(--accent3); }
+ .step-text { font-size: 0.9rem; padding-top: 3px; }
+
+ /* HIGHLIGHT */
+ .hl-blue { color: var(--accent1); font-weight: 600; }
+ .hl-green { color: var(--accent2); font-weight: 600; }
+ .hl-orange { color: var(--accent3); font-weight: 600; }
+ .hl-pink { color: var(--accent4); font-weight: 600; }
+ .hl-purple { color: var(--accent5); font-weight: 600; }
+
+ p { color: var(--text2); font-size: 0.9rem; line-height: 1.7; margin-bottom: 8px; }
+ p:last-child { margin-bottom: 0; }
+ ul { padding-left: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; }
+ ul li { font-size: 0.9rem; color: var(--text2); padding-left: 18px; position: relative; }
+ ul li::before { content: '›'; position: absolute; left: 4px; color: var(--text3); }
+
+ /* FLOW CHART */
+ .flow {
+ display: flex;
+ align-items: center;
+ flex-wrap: wrap;
+ gap: 6px;
+ margin: 12px 0;
+ }
+ .flow-box {
+ font-size: 0.78rem;
+ font-weight: 600;
+ padding: 6px 12px;
+ border-radius: 8px;
+ text-align: center;
+ }
+ .flow-arrow {
+ color: var(--text3);
+ font-size: 1.1rem;
+ }
+
+ /* METABOLIC PATHWAY TIMELINE */
+ .pathway-line {
+ display: flex;
+ align-items: stretch;
+ gap: 0;
+ overflow-x: auto;
+ padding-bottom: 8px;
+ margin: 16px 0;
+ }
+ .pathway-item {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 6px;
+ min-width: 100px;
+ position: relative;
+ }
+ .pathway-item:not(:last-child)::after {
+ content: '→';
+ position: absolute;
+ right: -10px;
+ top: 18px;
+ color: var(--text3);
+ font-size: 1.2rem;
+ z-index: 1;
+ }
+ .pathway-circle {
+ width: 44px; height: 44px;
+ border-radius: 50%;
+ display: flex; align-items: center; justify-content: center;
+ font-size: 0.7rem;
+ font-weight: 700;
+ text-align: center;
+ line-height: 1.1;
+ }
+ .pathway-label {
+ font-size: 0.7rem;
+ text-align: center;
+ color: var(--text2);
+ max-width: 90px;
+ }
+
+ .divider { height: 1px; background: var(--border); margin: 18px 0; }
+
+ /* SCROLL BAR */
+ ::-webkit-scrollbar { width: 6px; height: 6px; }
+ ::-webkit-scrollbar-track { background: var(--bg); }
+ ::-webkit-scrollbar-thumb { background: var(--card); border-radius: 3px; }
+ ::-webkit-scrollbar-thumb:hover { background: var(--card2); }
+
+ /* PRINT */
+ @media print {
+ body { background: white; color: black; }
+ nav { display: none; }
+ section { break-inside: avoid; }
+ }
+</style>
+
+ <link rel="stylesheet" href="../../../../../assets/css/modules/fiche-theme.css">
+
+ <link rel="stylesheet" href="../../../../../assets/css/modules/fiche-layout.css">
+</head>
+<body>
+<a href="../accueil-physio.html" class="back-nav">← Physiologie II</a>
+<div class="page-toggle"><div class="pt-inner"><a href="../qcm/QCM_5_Physio_exercice.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<header>
+ <div class="badge">Physiologie II — Physiothérapie</div>
+ <h1>Cours 5 — <span>Physiologie de l'Exercice</span></h1>
+ <p>Fiche de révision complète</p>
+</header>
+
+<nav>
+ <a href="#muscle">🏋️ Muscle</a>
+ <a href="#nutrition">🥗 Nutrition</a>
+ <a href="#circulation">❤️ Circulation</a>
+ <a href="#ventilation">🫁 Ventilation</a>
+ <a href="#vo2max">📈 VO₂ max</a>
+ <a href="#metabolisme">⚗️ Métabolisme</a>
+ <a href="#voies">⚡ Voies Énerg.</a>
+ <a href="#glycolyse">🔬 Glycolyse</a>
+ <a href="#aerobique">🌀 Aérobie</a>
+ <a href="#substrats">🔋 Substrats</a>
+ <a href="#seuil">📊 Seuil lactique</a>
+ <a href="#qr">🧮 QR</a>
+</nav>
+
+<main>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- 1. MUSCLE SQUELETTIQUE -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="theme-blue" id="muscle">
+ <div class="section-header">
+ <div class="section-icon">🏋️</div>
+ <div>
+ <h2>Muscle Squelettique</h2>
+ <div class="section-num">5.1 — STRUCTURE & ORGANISATION</div>
+ </div>
+ </div>
+ <div class="section-body">
+ <div class="grid-2">
+ <div class="sub">
+ <h3><span class="dot"></span>Organisation hiérarchique</h3>
+ <div class="steps">
+ <div class="step">
+ <div class="step-num step-blue">1</div>
+ <div class="step-text"><span class="hl-blue">Muscle entier</span> — entouré de l'épimysium (fascia)</div>
+ </div>
+ <div class="step">
+ <div class="step-num step-blue">2</div>
+ <div class="step-text"><span class="hl-blue">Fascicule</span> — faisceau de fibres musculaires, entouré du périmysium</div>
+ </div>
+ <div class="step">
+ <div class="step-num step-blue">3</div>
+ <div class="step-text"><span class="hl-blue">Fibre musculaire</span> (cellule) — entourée de l'endomysium</div>
+ </div>
+ <div class="step">
+ <div class="step-num step-blue">4</div>
+ <div class="step-text"><span class="hl-blue">Myofibrille</span> — contient sarcomères (unité contractile)</div>
+ </div>
+ <div class="step">
+ <div class="step-num step-blue">5</div>
+ <div class="step-text"><span class="hl-blue">Filaments</span> : épais (myosine) + fins (actine)</div>
+ </div>
+ </div>
+ </div>
+ <div class="sub">
+ <h3><span class="dot"></span>Composants de la fibre musculaire</h3>
+ <div class="kv">
+ <div class="kv-row"><span class="kv-key">Sarcolemme</span><span class="kv-val">Membrane plasmique de la fibre musculaire</span></div>
+ <div class="kv-row"><span class="kv-key">Tubules T</span><span class="kv-val">Invaginations du sarcolemme, transmettent le PA en profondeur</span></div>
+ <div class="kv-row"><span class="kv-key">Réticulum sarcoplasmique</span><span class="kv-val">Stockage et libération du Ca²⁺ (déclencheur de la contraction)</span></div>
+ <div class="kv-row"><span class="kv-key">Triade</span><span class="kv-val">Tubule T + 2 citernes du RS (jonction tripartite)</span></div>
+ <div class="kv-row"><span class="kv-key">Mitochondries</span><span class="kv-val">Production d'ATP (voie aérobie)</span></div>
+ <div class="kv-row"><span class="kv-key">Noyaux</span><span class="kv-val">Multiples par fibre (cellule multinucléée)</span></div>
+ </div>
+ </div>
+ </div>
+ <div class="alert alert-blue" style="margin-top: 14px;">
+ <span class="alert-icon">💡</span>
+ <div>La <strong>plasticité des fibres musculaires</strong> permet l'adaptation à l'entraînement : conversion entre types de fibres, hypertrophie, augmentation de la densité mitochondriale.</div>
+ </div>
+ </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- 2. NUTRITION -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="theme-green" id="nutrition">
+ <div class="section-header">
+ <div class="section-icon">🥗</div>
+ <div>
+ <h2>Nutrition & Alimentation</h2>
+ <div class="section-num">5.1 — RÈGLES GÉNÉRALES & SPORTIFS</div>
+ </div>
+ </div>
+ <div class="section-body">
+ <div class="grid-2">
+ <div class="sub">
+ <h3><span class="dot"></span>Répartition pour la population générale</h3>
+ <div class="grid-3" style="gap:10px; margin-bottom:14px;">
+ <div class="card" style="border-left: 3px solid var(--accent1); text-align:center;">
+ <div class="card-title" style="color:var(--accent1)">Glucides</div>
+ <div style="font-size:1.8rem; font-weight:900; color:#fff;">50%</div>
+ </div>
+ <div class="card" style="border-left: 3px solid var(--accent3); text-align:center;">
+ <div class="card-title" style="color:var(--accent3)">Lipides</div>
+ <div style="font-size:1.8rem; font-weight:900; color:#fff;">30%</div>
+ </div>
+ <div class="card" style="border-left: 3px solid var(--accent4); text-align:center;">
+ <div class="card-title" style="color:var(--accent4)">Protéines</div>
+ <div style="font-size:1.8rem; font-weight:900; color:#fff;">15%</div>
+ </div>
+ </div>
+ <div class="kv">
+ <div class="kv-row"><span class="kv-key">Glucides complexes</span><span class="kv-val">À privilégier (digestion lente → stabilité glycémique)</span></div>
+ <div class="kv-row"><span class="kv-key">Lipides insaturés</span><span class="kv-val">Préférés aux saturés (max 10% graisses saturées)</span></div>
+ <div class="kv-row"><span class="kv-key">Fibres</span><span class="kv-val">Essentielles au transit intestinal</span></div>
+ <div class="kv-row"><span class="kv-key">Sel</span><span class="kv-val">Modération (attention en cas d'HTA)</span></div>
+ <div class="kv-row"><span class="kv-key">Alcool</span><span class="kv-val">Calories vides + diurétique → déshydratation</span></div>
+ </div>
+ </div>
+ <div class="sub">
+ <h3><span class="dot"></span>Alimentation du sportif</h3>
+ <div class="grid-2" style="gap:10px; margin-bottom:14px;">
+ <div class="card" style="border-left: 3px solid var(--accent2); text-align:center;">
+ <div class="card-title" style="color:var(--accent2)">Glucides</div>
+ <div style="font-size:1.6rem; font-weight:900; color:#fff;">60–70%</div>
+ <div style="font-size:0.75rem; color:var(--text2); margin-top:4px;">Glycogène musculaire</div>
+ </div>
+ <div class="card" style="border-left: 3px solid var(--accent4); text-align:center;">
+ <div class="card-title" style="color:var(--accent4)">Protéines</div>
+ <div style="font-size:1.6rem; font-weight:900; color:#fff;">12%</div>
+ <div style="font-size:0.75rem; color:var(--text2); margin-top:4px;">Attention au fer et calcium</div>
+ </div>
+ </div>
+ <div class="alert alert-orange">
+ <span class="alert-icon">⚠️</span>
+ <div>Avant une épreuve : aliments <strong>faciles à digérer</strong>. Les liquides se vident plus vite que les solides. Ordre de digestion : sucres → glucides complexes → protéines → lipides.</div>
+ </div>
+ </div>
+ </div>
+ <div class="sub" style="margin-top: 14px;">
+ <h3><span class="dot"></span>💧 Hydratation — équilibre hydrique</h3>
+ <div class="kv">
+ <div class="kv-row"><span class="kv-key">Rôles de l'eau</span><span class="kv-val">Refroidissement corporel, transport des nutriments, maintien du volume sanguin</span></div>
+ <div class="kv-row"><span class="kv-key">Préhydratation</span><span class="kv-val">10–15 min avant l'effort → 600 à 800 mL (adultes)</span></div>
+ <div class="kv-row"><span class="kv-key">Pendant l'effort</span><span class="kv-val">Petites quantités toutes les 10–15 min</span></div>
+ <div class="kv-row"><span class="kv-key">Après l'effort</span><span class="kv-val">Réhydratation = aspect essentiel de la récupération</span></div>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- 3. ADAPTATIONS CIRCULATOIRES -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="theme-pink" id="circulation">
+ <div class="section-header">
+ <div class="section-icon">❤️</div>
+ <div>
+ <h2>Adaptations Circulatoires & Réponse à l'Exercice</h2>
+ <div class="section-num">5.1 — SYSTÈME CARDIOVASCULAIRE</div>
+ </div>
+ </div>
+ <div class="section-body">
+ <div class="grid-2">
+ <div class="sub">
+ <h3><span class="dot"></span>Valeurs comparatives Repos / Exercice</h3>
+ <table>
+ <thead>
+ <tr><th>Paramètre</th><th>Repos</th><th>Exercice max.</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>Débit cardiaque</td><td>5 L/min</td><td>25–30 L/min</td></tr>
+ <tr><td>FC (fréquence cardiaque)</td><td>70–80 cycles/min</td><td>~160 cycles/min</td></tr>
+ <tr><td>Débit musculaire</td><td>15–20% DC</td><td>15–20 L/min (×20)</td></tr>
+ <tr><td>Ventilation (air)</td><td>6 L/min</td><td>jusqu'à 100 L/min</td></tr>
+ <tr><td>FC athlète</td><td></td><td>×6 de la valeur repos</td></tr>
+ <tr><td>FC personne normale</td><td></td><td>×4 de la valeur repos</td></tr>
+ </tbody>
+ </table>
+ </div>
+ <div class="sub">
+ <h3><span class="dot"></span>Mécanismes de vasodilatation / vasoconstriction</h3>
+ <div class="alert alert-pink" style="margin-bottom:12px;">
+ <span class="alert-icon">🔴</span>
+ <div><strong>Effet presseur de l'exercice</strong> : augmentation de la pression artérielle (surtout systolique), plus prononcé pour les membres supérieurs.</div>
+ </div>
+ <div class="kv">
+ <div class="kv-row"><span class="kv-key">Dilatation musculaire</span><span class="kv-val">SN sympathique → ouverture capillaires + ↓O₂, ↑CO₂, ↑température locale</span></div>
+ <div class="kv-row"><span class="kv-key">Constriction digestive</span><span class="kv-val">Réduction du flux sanguin vers le tube digestif et rein</span></div>
+ <div class="kv-row"><span class="kv-key">Retour veineux ↑</span><span class="kv-val">Contraction musculaire + ↑fréquence respi + constriction veines</span></div>
+ </div>
+ </div>
+ </div>
+ <div class="sub" style="margin-top:14px;">
+ <h3><span class="dot"></span>🌡️ Thermorégulation à l'exercice</h3>
+ <div class="grid-3" style="gap:10px;">
+ <div class="card">
+ <div class="card-title" style="color:var(--accent4)">Vasodilatation cutanée</div>
+ <p>↑ pertes de chaleur du sang vers l'extérieur</p>
+ </div>
+ <div class="card">
+ <div class="card-title" style="color:var(--accent4)">Transpiration</div>
+ <p>Évaporation de la sueur → refroidissement de la peau</p>
+ </div>
+ <div class="card">
+ <div class="card-title" style="color:var(--accent4)">Ventilation ↑</div>
+ <p>Pertes de chaleur par libération d'air chaud</p>
+ </div>
+ </div>
+ <div class="alert alert-orange" style="margin-top:12px;">
+ <span class="alert-icon">⚠️</span>
+ <div>Si la transpiration ne suffit pas (chaleur + humidité élevées) → risque de <strong>coup de chaleur</strong> → refroidissement artificiel nécessaire.</div>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- 4. ADAPTATIONS VENTILATOIRES -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="theme-blue" id="ventilation">
+ <div class="section-header">
+ <div class="section-icon">🫁</div>
+ <div>
+ <h2>Adaptations Ventilatoires à l'Exercice</h2>
+ <div class="section-num">5.1 — SYSTÈME RESPIRATOIRE</div>
+ </div>
+ </div>
+ <div class="section-body">
+ <div class="grid-2">
+ <div class="sub">
+ <h3><span class="dot"></span>Mécanismes d'adaptation</h3>
+ <div class="kv">
+ <div class="kv-row"><span class="kv-key">Mécanisme principal</span><span class="kv-val">↑ fréquence respiratoire + ↑ amplitude (volume courant)</span></div>
+ <div class="kv-row"><span class="kv-key">Chez l'athlète</span><span class="kv-val">Prédomine l'↑ du volume courant plutôt que la fréquence</span></div>
+ <div class="kv-row"><span class="kv-key">Limite VT</span><span class="kv-val">Volume courant se stabilise à ~60% de la capacité vitale</span></div>
+ <div class="kv-row"><span class="kv-key">Hyperpnée</span><span class="kv-val">Pas de modification de la PO₂, PCO₂ ou [H⁺] plasmatique → maintien homéostasie</span></div>
+ </div>
+ </div>
+ <div class="sub">
+ <h3><span class="dot"></span>3 Phases de la réponse hyperpnéique</h3>
+ <div class="steps">
+ <div class="step">
+ <div class="step-num step-blue">I</div>
+ <div class="step-text"><span class="hl-blue">Augmentation brusque</span> dès le début → stimuli du cortex cérébral → centre respiratoire (tronc cérébral). Plateau court (~20 s).</div>
+ </div>
+ <div class="step">
+ <div class="step-num step-blue">II</div>
+ <div class="step-text">Ajustement progressif jusqu'à <span class="hl-blue">équilibre</span> entre ventilation alvéolaire et besoins métaboliques.</div>
+ </div>
+ <div class="step">
+ <div class="step-num step-blue">III</div>
+ <div class="step-text"><span class="hl-blue">Maintien</span> de l'équilibre ventilation/métabolisme en régime permanent.</div>
+ </div>
+ <div class="step">
+ <div class="step-num step-blue">↩</div>
+ <div class="step-text">Fin de l'exercice : <span class="hl-blue">↓ brusque</span> puis plateau (~20 s) puis récupération progressive.</div>
+ </div>
+ </div>
+ </div>
+ </div>
+ <div class="sub" style="margin-top:14px;">
+ <h3><span class="dot"></span>Autres adaptations respiratoires</h3>
+ <div class="grid-3" style="gap:10px;">
+ <div class="card">
+ <div class="card-title" style="color:var(--accent1)">Hématose pulmonaire ↑</div>
+ <p>Ouverture capillaires + vasodilatation → ↑ surface d'échange + ↑ gradient de pression alvéoles/capillaires</p>
+ </div>
+ <div class="card">
+ <div class="card-title" style="color:var(--accent1)">Espace mort ↓</div>
+ <p>Diminution du volume d'espace mort anatomique → meilleure efficacité des échanges</p>
+ </div>
+ <div class="card">
+ <div class="card-title" style="color:var(--accent1)">Utilisation O₂ ↑</div>
+ <p>↑ ventilation alvéolaire → ↑ utilisation O₂ par les fibres musculaires → resynthèse ATP aérobie</p>
+ </div>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- 5. VO2 MAX -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="theme-orange" id="vo2max">
+ <div class="section-header">
+ <div class="section-icon">📈</div>
+ <div>
+ <h2>VO₂ max — Consommation Maximale d'Oxygène</h2>
+ <div class="section-num">5.1 — CAPACITÉ AÉROBIE MAXIMALE</div>
+ </div>
+ </div>
+ <div class="section-body">
+ <div class="grid-2">
+ <div class="sub">
+ <h3><span class="dot"></span>Définition & Valeurs</h3>
+ <div class="kv">
+ <div class="kv-row"><span class="kv-key">Définition</span><span class="kv-val">Quantité maximale d'O₂ qu'un individu peut utiliser pendant un exercice de haute intensité</span></div>
+ <div class="kv-row"><span class="kv-key">Valeur absolue</span><span class="kv-val">Exprimée en <span class="hl-orange">L/min</span></span></div>
+ <div class="kv-row"><span class="kv-key">Valeur relative</span><span class="kv-val">Exprimée en <span class="hl-orange">mL/kg/min</span></span></div>
+ <div class="kv-row"><span class="kv-key">Jeune adulte moyen</span><span class="kv-val">~50 mL/kg/min</span></div>
+ <div class="kv-row"><span class="kv-key">Application pratique</span><span class="kv-val">Maintien d'un effort intense ≥ 4–5 min</span></div>
+ </div>
+ </div>
+ <div class="sub">
+ <h3><span class="dot"></span>3 systèmes déterminants du VO₂ max</h3>
+ <div class="steps">
+ <div class="step">
+ <div class="step-num step-orange">1</div>
+ <div class="step-text"><span class="hl-orange">Poumons (captation)</span> — hématose, surface d'échange, gradient de pression alvéolaire</div>
+ </div>
+ <div class="step">
+ <div class="step-num step-orange">2</div>
+ <div class="step-text"><span class="hl-orange">Cœur + circulation (transport)</span> — débit cardiaque, volume d'éjection systolique, hémoglobine</div>
+ </div>
+ <div class="step">
+ <div class="step-num step-orange">3</div>
+ <div class="step-text"><span class="hl-orange">Muscles (utilisation)</span> — enzymes oxydatives, densité mitochondriale, myoglobine</div>
+ </div>
+ </div>
+ </div>
+ </div>
+ <div class="sub" style="margin-top:14px;">
+ <h3><span class="dot"></span>Déficit en O₂ & EPOC</h3>
+ <div class="grid-2" style="gap:12px;">
+ <div class="card">
+ <div class="card-title" style="color:var(--accent3)">Déficit en O₂</div>
+ <p>Non-utilisation de l'O₂ <em>au début</em> de l'exercice (avant stabilisation du VO₂). Les athlètes entraînés ont un déficit plus faible (stabilisation plus rapide).</p>
+ </div>
+ <div class="card">
+ <div class="card-title" style="color:var(--accent3)">EPOC</div>
+ <p><strong>Excess Post-exercise O₂ Consumption</strong> — consommation d'O₂ élevée <em>après</em> l'exercice pour rétablir les conditions métaboliques. Plus important après exercice de haute intensité.</p>
+ </div>
+ </div>
+ </div>
+ <div class="alert alert-orange" style="margin-top:14px;">
+ <span class="alert-icon">🏆</span>
+ <div>Au-delà du VO₂ max, poumons, cœur et muscles ont atteint leur limite. L'énergie supplémentaire est alors couverte par le métabolisme anaérobie (~10–20% à la vitesse du VO₂ max).</div>
+ </div>
+ </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- 6. MÉTABOLISME ÉNERGÉTIQUE -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="theme-purple" id="metabolisme">
+ <div class="section-header">
+ <div class="section-icon">⚗️</div>
+ <div>
+ <h2>Métabolisme Énergétique</h2>
+ <div class="section-num">5.2 — BIOÉNERGÉTIQUE</div>
+ </div>
+ </div>
+ <div class="section-body">
+ <div class="grid-2">
+ <div class="sub">
+ <h3><span class="dot"></span>Définitions fondamentales</h3>
+ <div class="kv">
+ <div class="kv-row"><span class="kv-key">Métabolisme</span><span class="kv-val">Ensemble des processus d'acquisition et d'utilisation d'énergie (catabolisme + anabolisme)</span></div>
+ <div class="kv-row"><span class="kv-key">Catabolisme</span><span class="kv-val">Dégradation de molécules complexes → énergie libérée → resynthèse ATP/NADH</span></div>
+ <div class="kv-row"><span class="kv-key">Anabolisme</span><span class="kv-val">Biosynthèse à partir de pyruvate, acétyl-CoA, intermédiaires TCA</span></div>
+ <div class="kv-row"><span class="kv-key">Métabolites</span><span class="kv-val">Produits intermédiaires ou finaux des voies métaboliques</span></div>
+ <div class="kv-row"><span class="kv-key">Acétyl-CoA</span><span class="kv-val">Intermédiaire clé de convergence de l'oxydation des glucides, lipides, AA</span></div>
+ <div class="kv-row"><span class="kv-key">ATP musculaire</span><span class="kv-val">Concentration ~6 mM/kg → seulement quelques secondes de contraction</span></div>
+ </div>
+ </div>
+ <div class="sub">
+ <h3><span class="dot"></span>Profils métaboliques par organe</h3>
+ <div class="kv">
+ <div class="kv-row">
+ <span class="kv-key">🧠 Cerveau</span>
+ <span class="kv-val">Utilise uniquement glucose (normal). Pas de stock de glycogène → apport constant requis. Adapte en corps cétoniques lors de jeûne prolongé.</span>
+ </div>
+ <div class="kv-row">
+ <span class="kv-key">🫀 Foie</span>
+ <span class="kv-val">Contrôle glycémie (glycogène ↔ glucose). Synthèse corps cétoniques. Cycle de l'urée (élimination NH₂ des AA).</span>
+ </div>
+ <div class="kv-row">
+ <span class="kv-key">💪 Muscle</span>
+ <span class="kv-val">Utilise glucose, AG, corps cétoniques, AA. Réserve de phosphocréatine (PCr → ATP sans dépenser glucose).</span>
+ </div>
+ </div>
+ </div>
+ </div>
+ <div class="sub" style="margin-top:14px;">
+ <h3><span class="dot"></span>🔋 Sources d'ATP musculaire — Vue globale</h3>
+ <div class="grid-3" style="gap:10px;">
+ <div class="card" style="border-top: 3px solid var(--accent1);">
+ <div class="card-title" style="color:var(--accent1)">① Anaérobie Alactique</div>
+ <p>Phosphocréatine (PCr) → ATP + Créatine<br><span class="hl-blue">Durée ≤ 20 sec</span></p>
+ </div>
+ <div class="card" style="border-top: 3px solid var(--accent3);">
+ <div class="card-title" style="color:var(--accent3)">② Anaérobie Lactique</div>
+ <p>Glycolyse → pyruvate → lactate<br><span class="hl-orange">Durée 20 s à ~2 min</span></p>
+ </div>
+ <div class="card" style="border-top: 3px solid var(--accent2);">
+ <div class="card-title" style="color:var(--accent2)">③ Aérobie</div>
+ <p>Krebs + CTE → CO₂ + H₂O<br><span class="hl-green">Durée illimitée si substrat</span></p>
+ </div>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- 7. VOIES ÉNERGÉTIQUES DÉTAILLÉES -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="theme-orange" id="voies">
+ <div class="section-header">
+ <div class="section-icon">⚡</div>
+ <div>
+ <h2>Voies Énergétiques — Comparatif Détaillé</h2>
+ <div class="section-num">5.2 — ATP-CP · LACTIQUE · AÉROBIE</div>
+ </div>
+ </div>
+ <div class="section-body">
+ <table>
+ <thead>
+ <tr>
+ <th>Caractéristique</th>
+ <th style="color:var(--accent1)">① Anaérobie Alactique (ATP-CP)</th>
+ <th style="color:var(--accent3)">② Anaérobie Lactique</th>
+ <th style="color:var(--accent2)">③ Aérobie (Oxydative)</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td><strong>Substrat</strong></td>
+ <td>Phosphocréatine (PCr)</td>
+ <td>Glycogène / Glucose</td>
+ <td>Glucides, Lipides, Protéines</td>
+ </tr>
+ <tr>
+ <td><strong>O₂ requis</strong></td>
+ <td>Non</td>
+ <td>Non</td>
+ <td>Oui</td>
+ </tr>
+ <tr>
+ <td><strong>Produit final</strong></td>
+ <td>Créatine + ATP</td>
+ <td>Pyruvate → Lactate + 2 ATP</td>
+ <td>CO₂ + H₂O + 36–38 ATP</td>
+ </tr>
+ <tr>
+ <td><strong>Durée dominante</strong></td>
+ <td>≤ 20 secondes</td>
+ <td>20 s → ~2 min</td>
+ <td>> 2–3 min (illimité)</td>
+ </tr>
+ <tr>
+ <td><strong>Intensité</strong></td>
+ <td>Maximale</td>
+ <td>Élevée</td>
+ <td>Faible à modérée</td>
+ </tr>
+ <tr>
+ <td><strong>Rendement ATP</strong></td>
+ <td>Très rapide, faible quantité</td>
+ <td>Rapide, quantité modérée</td>
+ <td>Lent, très grande quantité</td>
+ </tr>
+ <tr>
+ <td><strong>Fatigue</strong></td>
+ <td>Épuisement rapide des PCr</td>
+ <td>Acidose (↓ pH) par lactate</td>
+ <td>Épuisement des substrats</td>
+ </tr>
+ <tr>
+ <td><strong>Exemples sportifs</strong></td>
+ <td>Sprint 100 m, saut, lancer</td>
+ <td>400–800 m, boxe intensive</td>
+ <td>Marathon, cyclisme, natation de fond</td>
+ </tr>
+ </tbody>
+ </table>
+ <div class="sub" style="margin-top: 16px;">
+ <h3><span class="dot"></span>Créatine & Phosphocréatine</h3>
+ <div class="grid-2" style="gap:12px;">
+ <div class="kv">
+ <div class="kv-row"><span class="kv-key">Localisation</span><span class="kv-val">Cerveau, muscles squelettiques et cardiaques</span></div>
+ <div class="kv-row"><span class="kv-key">Réaction</span><span class="kv-val">PCr + ADP → Créatine + ATP (créatine kinase)</span></div>
+ <div class="kv-row"><span class="kv-key">Avantage</span><span class="kv-val">Resynthèse d'ATP même en anaérobiose</span></div>
+ </div>
+ <div class="kv">
+ <div class="kv-row"><span class="kv-key">Élimination</span><span class="kv-val">PCr → dégradation en créatinine → éliminée par voie rénale</span></div>
+ <div class="kv-row"><span class="kv-key">Reconstitution</span><span class="kv-val">Lente → limite la durée de l'effort anaérobie alactique</span></div>
+ </div>
+ </div>
+ </div>
+ <div class="sub" style="margin-top:14px;">
+ <h3><span class="dot"></span>Cycle de Cori (recyclage du lactate)</h3>
+ <div class="flow">
+ <div class="flow-box" style="background:rgba(255,183,77,0.15); color:var(--accent3); border:1px solid rgba(255,183,77,0.3);">Muscle actif<br>(respiration anaérobie)</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-box" style="background:rgba(79,195,247,0.15); color:var(--accent1); border:1px solid rgba(79,195,247,0.3);">Lactate<br>sanguin</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-box" style="background:rgba(129,199,132,0.15); color:var(--accent2); border:1px solid rgba(129,199,132,0.3);">Foie<br>(conversion)</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-box" style="background:rgba(206,147,216,0.15); color:var(--accent5); border:1px solid rgba(206,147,216,0.3);">Glucose<br>(néoglucogenèse)</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-box" style="background:rgba(255,183,77,0.15); color:var(--accent3); border:1px solid rgba(255,183,77,0.3);">Retour<br>au muscle</div>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- 8. GLYCOLYSE -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="theme-green" id="glycolyse">
+ <div class="section-header">
+ <div class="section-icon">🔬</div>
+ <div>
+ <h2>Glycolyse</h2>
+ <div class="section-num">5.2 — CATABOLISME DU GLUCOSE · 10 ÉTAPES</div>
+ </div>
+ </div>
+ <div class="section-body">
+ <div class="alert alert-green" style="margin-bottom:16px;">
+ <span class="alert-icon">📖</span>
+ <div><strong>Glycolyse</strong> (du grec glyks = sucré + lysis = rupture) — voie universelle du catabolisme du glucose, se déroulant dans le cytoplasme.</div>
+ </div>
+ <div class="grid-2">
+ <div class="sub">
+ <h3><span class="dot"></span>Phase d'investissement (étapes 1–5)</h3>
+ <div class="steps">
+ <div class="step"><div class="step-num step-green">1</div><div class="step-text"><strong>Phosphorylation du glucose</strong> → Glucose-6-P (consomme 1 ATP, enzyme : hexokinase)</div></div>
+ <div class="step"><div class="step-num step-green">2</div><div class="step-text"><strong>Isomérisation</strong> G-6-P → Fructose-6-P (phosphoglucose isomérase)</div></div>
+ <div class="step"><div class="step-num step-green">3</div><div class="step-text"><strong>Phosphorylation</strong> F-6-P → Fructose-1,6-bisP (consomme 1 ATP, enzyme clé : <span class="hl-green">phosphofructokinase</span>)</div></div>
+ <div class="step"><div class="step-num step-green">4</div><div class="step-text"><strong>Clivage</strong> F-1,6-bisP → DHAP + G-3-P (aldolase)</div></div>
+ <div class="step"><div class="step-num step-green">5</div><div class="step-text"><strong>Isomérisation</strong> DHAP → G-3-P (triose phosphate isomérase)</div></div>
+ </div>
+ </div>
+ <div class="sub">
+ <h3><span class="dot"></span>Phase de retour énergétique (étapes 6–10)</h3>
+ <div class="steps">
+ <div class="step"><div class="step-num step-green">6</div><div class="step-text"><strong>Oxydation</strong> G-3-P → 1,3-bisphosphoglycérate (↗ NADH)</div></div>
+ <div class="step"><div class="step-num step-green">7</div><div class="step-text"><strong>Phosphorylation substrat</strong> → 3-PG + 2 ATP (×2)</div></div>
+ <div class="step"><div class="step-num step-green">8</div><div class="step-text"><strong>Isomérisation</strong> 3-PG → 2-PG (phosphoglycérate mutase)</div></div>
+ <div class="step"><div class="step-num step-green">9</div><div class="step-text"><strong>Déshydratation</strong> 2-PG → Phosphoénolpyruvate (énolase)</div></div>
+ <div class="step"><div class="step-num step-green">10</div><div class="step-text"><strong>Phosphorylation substrat</strong> PEP → Pyruvate + 2 ATP (×2) (pyruvate kinase)</div></div>
+ </div>
+ </div>
+ </div>
+ <div class="sub" style="margin-top:14px;">
+ <h3><span class="dot"></span>Bilan de la glycolyse</h3>
+ <code class="formula">1 Glucose → 2 Pyruvate + 2 NADH + 4 ATP − 2 ATP (investis) = <strong>+ 2 ATP net</strong></code>
+ <div class="grid-2" style="gap:12px; margin-top:12px;">
+ <div class="card">
+ <div class="card-title" style="color:var(--accent2)">En aérobie (suite)</div>
+ <p>Le pyruvate entre dans la mitochondrie → conversion en Acétyl-CoA → Cycle de Krebs → Chaîne de transport des électrons</p>
+ </div>
+ <div class="card">
+ <div class="card-title" style="color:var(--accent3)">En anaérobie (fermentation)</div>
+ <p>Le pyruvate est réduit en <strong>lactate</strong> (muscles) ou en <strong>éthanol + CO₂</strong> (levures). Réoxyde le NADH → NAD⁺ pour maintenir la glycolyse.</p>
+ </div>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- 9. VOIE AÉROBIE -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="theme-green" id="aerobique">
+ <div class="section-header">
+ <div class="section-icon">🌀</div>
+ <div>
+ <h2>Voie Aérobie — Respiration Cellulaire</h2>
+ <div class="section-num">5.2 — CYCLE DE KREBS · CHAÎNE DE TRANSPORT</div>
+ </div>
+ </div>
+ <div class="section-body">
+ <div class="sub">
+ <h3><span class="dot"></span>Étapes de la voie aérobie</h3>
+ <div class="flow" style="align-items:flex-start; gap:10px; flex-wrap:nowrap; overflow-x:auto; padding:10px 0;">
+ <div style="text-align:center; min-width:100px;">
+ <div style="background:rgba(129,199,132,0.15); border:1px solid rgba(129,199,132,0.3); border-radius:10px; padding:10px 8px; color:var(--accent2); font-size:0.78rem; font-weight:700; margin-bottom:6px;">CYTOPLASME</div>
+ <div style="font-size:0.75rem; color:var(--text2);">Glucose<br>↓ glycolyse<br><strong>2 Pyruvate</strong><br>+ 2 ATP net<br>+ 2 NADH</div>
+ </div>
+ <div style="color:var(--text3); font-size:1.5rem; padding-top:40px;">→</div>
+ <div style="text-align:center; min-width:110px;">
+ <div style="background:rgba(79,195,247,0.15); border:1px solid rgba(79,195,247,0.3); border-radius:10px; padding:10px 8px; color:var(--accent1); font-size:0.78rem; font-weight:700; margin-bottom:6px;">MITOCHONDRIE</div>
+ <div style="font-size:0.75rem; color:var(--text2);"><strong>Pyruvate → Acétyl-CoA</strong><br>+ CO₂ + NADH<br>(×2 pyruv.)</div>
+ </div>
+ <div style="color:var(--text3); font-size:1.5rem; padding-top:40px;">→</div>
+ <div style="text-align:center; min-width:120px;">
+ <div style="background:rgba(206,147,216,0.15); border:1px solid rgba(206,147,216,0.3); border-radius:10px; padding:10px 8px; color:var(--accent5); font-size:0.78rem; font-weight:700; margin-bottom:6px;">CYCLE KREBS</div>
+ <div style="font-size:0.75rem; color:var(--text2);">×2 tours<br>2×(2CO₂ + 3NADH<br>+ GTP + FADH₂)</div>
+ </div>
+ <div style="color:var(--text3); font-size:1.5rem; padding-top:40px;">→</div>
+ <div style="text-align:center; min-width:120px;">
+ <div style="background:rgba(255,183,77,0.15); border:1px solid rgba(255,183,77,0.3); border-radius:10px; padding:10px 8px; color:var(--accent3); font-size:0.78rem; font-weight:700; margin-bottom:6px;">CHAÎNE TRANSPORT e⁻</div>
+ <div style="font-size:0.75rem; color:var(--text2);">NADH → 3 ATP<br>FADH₂ → 2 ATP<br>Gradient H⁺<br>O₂ → H₂O</div>
+ </div>
+ </div>
+ </div>
+ <div class="grid-2" style="margin-top:14px; gap:14px;">
+ <div class="sub">
+ <h3><span class="dot"></span>Bilan complet (1 glucose)</h3>
+ <div class="kv">
+ <div class="kv-row"><span class="kv-key">Glycolyse</span><span class="kv-val">−2 ATP + 4 ATP + 2 NADH + 2 pyruvate</span></div>
+ <div class="kv-row"><span class="kv-key">Pyruvate → Acétyl-CoA</span><span class="kv-val">2 × (Acétyl-CoA + CO₂ + NADH)</span></div>
+ <div class="kv-row"><span class="kv-key">Cycle de Krebs</span><span class="kv-val">2 × (2CO₂ + 3NADH + GTP + FADH₂)</span></div>
+ <div class="kv-row"><span class="kv-key">Total ATP direct</span><span class="kv-val">4 ATP bruts (net: −2 + 4 + 2 GTP = <strong>4 ATP</strong>)</span></div>
+ <div class="kv-row"><span class="kv-key">Réoxydation NADH</span><span class="kv-val">10 NADH × 3 = <strong>30 ATP</strong></span></div>
+ <div class="kv-row"><span class="kv-key">Réoxydation FADH₂</span><span class="kv-val">2 FADH₂ × 2 = <strong>4 ATP</strong></span></div>
+ </div>
+ <code class="formula">Total ≈ 36–38 ATP / mol de glucose</code>
+ <div class="alert alert-green" style="margin-top:10px;">
+ <span class="alert-icon">🎯</span>
+ <div>Efficacité ≈ <strong>40%</strong> (1 mol glucose = 686 Kcal ; 1 mol ATP = 7,3 Kcal). Les ~60% restants sont dissipés en chaleur.</div>
+ </div>
+ </div>
+ <div class="sub">
+ <h3><span class="dot"></span>Contrôle de la respiration cellulaire</h3>
+ <div class="kv">
+ <div class="kv-row"><span class="kv-key">Point de contrôle 1</span><span class="kv-val">Glycolyse : <span class="hl-green">phosphofructokinase</span> (enzyme-clé)</span></div>
+ <div class="kv-row"><span class="kv-key">Point de contrôle 2</span><span class="kv-val">Cycle de Krebs : <span class="hl-green">isocitrate déshydrogénase</span></span></div>
+ <div class="kv-row"><span class="kv-key">Point de contrôle 3</span><span class="kv-val">Chaîne transport : <span class="hl-green">cytochrome oxydase</span></span></div>
+ <div class="kv-row"><span class="kv-key">Rétrocontrôle ATP</span><span class="kv-val">↑ ATP → inhibe production. ↓ ATP + ↑ ADP+Pi → stimule production</span></div>
+ <div class="kv-row"><span class="kv-key">Ca²⁺</span><span class="kv-val">Stimule le métabolisme aérobie (signal de contraction musculaire)</span></div>
+ </div>
+ <div class="sub" style="margin-top:12px; padding:14px;">
+ <h3 style="font-size:0.8rem;"><span class="dot"></span>Nature amphibolique du cycle de Krebs</h3>
+ <p>Le cycle de Krebs est à la fois <strong>catabolique</strong> (dégradation) et <strong>anabolique</strong> : ses intermédiaires servent de précurseurs pour la synthèse d'acides aminés, nucléotides, lipides et sucres.</p>
+ </div>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- 10. SÉLECTION DES SUBSTRATS -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="theme-orange" id="substrats">
+ <div class="section-header">
+ <div class="section-icon">🔋</div>
+ <div>
+ <h2>Sélection & Interaction des Substrats</h2>
+ <div class="section-num">5.2 — GLUCIDES · LIPIDES · PROTÉINES</div>
+ </div>
+ </div>
+ <div class="section-body">
+ <div class="grid-2">
+ <div class="sub">
+ <h3><span class="dot"></span>Selon l'intensité</h3>
+ <div class="kv">
+ <div class="kv-row"><span class="kv-key">Faible intensité<br>&lt; 30% VO₂ max</span><span class="kv-val"><span class="hl-orange">Lipides prédominants</span> (acides gras libres plasmatiques libérés par adipocytes)</span></div>
+ <div class="kv-row"><span class="kv-key">Haute intensité<br>&gt; 70% VO₂ max</span><span class="kv-val"><span class="hl-green">Glucides dominants</span> — fibres rapides (+ enzymes glycolytiques) + ↑ adrénaline → glycogénolyse</span></div>
+ </div>
+ </div>
+ <div class="sub">
+ <h3><span class="dot"></span>Selon la durée</h3>
+ <div class="kv">
+ <div class="kv-row"><span class="kv-key">Exercice prolongé<br>&gt; 30 min</span><span class="kv-val"><span class="hl-orange">↑ Utilisation des lipides</span> (lipolyse stimulée par adrénaline, noradrénaline, glucagon — processus lent, débute après qques minutes)</span></div>
+ <div class="kv-row"><span class="kv-key">Piège sucré pré-effort</span><span class="kv-val">↑ insuline → inhibe lipases → ↓ métabolisme des graisses pendant l'effort</span></div>
+ <div class="kv-row"><span class="kv-key">Très long (> 2h)</span><span class="kv-val">↑ catabolisme protéique (AA → foie/muscle). > 3–5h : protéines peuvent atteindre <strong>15%</strong> de l'apport</span></div>
+ </div>
+ </div>
+ </div>
+ <div class="sub" style="margin-top:14px;">
+ <h3><span class="dot"></span>Interactions des substrats — Résumé</h3>
+ <table>
+ <thead><tr><th>Substrat</th><th>Source</th><th>Contexte d'utilisation préférentiel</th></tr></thead>
+ <tbody>
+ <tr><td><span class="pill pill-blue">Glycogène musculaire</span></td><td>Muscles + Foie</td><td>Haute intensité — source directe d'HC pour les muscles</td></tr>
+ <tr><td><span class="pill pill-orange">Acides gras libres</span></td><td>Adipocytes (lipolyse)</td><td>Faible intensité. À intensité 65–85% VO₂ max : ~50/50 avec triglycérides musculaires</td></tr>
+ <tr><td><span class="pill pill-pink">Protéines (AA)</span></td><td>Foie + muscles</td><td>Exercice prolongé > 2h. Max 15% à > 3–5h d'effort</td></tr>
+ <tr><td><span class="pill pill-green">Lactate</span></td><td>Muscles (anaérobie)</td><td>Substrat pour la néoglucogenèse hépatique (cycle de Cori)</td></tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- 11. SEUIL LACTIQUE -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="theme-pink" id="seuil">
+ <div class="section-header">
+ <div class="section-icon">📊</div>
+ <div>
+ <h2>Seuil Lactique & Seuil Anaérobie</h2>
+ <div class="section-num">5.2 — LACTACIDÉMIE & ENTRAÎNEMENT</div>
+ </div>
+ </div>
+ <div class="section-body">
+ <div class="grid-2">
+ <div class="sub">
+ <h3><span class="dot"></span>Définitions essentielles</h3>
+ <div class="kv">
+ <div class="kv-row"><span class="kv-key">Seuil lactique</span><span class="kv-val">Point où le lactate sanguin augmente <em>systématiquement</em> lors d'un exercice progressif</span></div>
+ <div class="kv-row"><span class="kv-key">Seuil anaérobie</span><span class="kv-val">Intensité maximale avec équilibre entre production et élimination du lactate. ≈ seuil lactique</span></div>
+ <div class="kv-row"><span class="kv-key">Cinétique</span><span class="kv-val">Bi-exponentielle avec point d'inflexion entre 1ère et 2ème augmentation</span></div>
+ <div class="kv-row"><span class="kv-key">Lactacidémie</span><span class="kv-val">Indicateur de l'intensité de l'exercice</span></div>
+ </div>
+ </div>
+ <div class="sub">
+ <h3><span class="dot"></span>Applications et adaptations</h3>
+ <div class="steps">
+ <div class="step"><div class="step-num step-pink">1</div><div class="step-text">La lactacidémie est un <span class="hl-pink">indicateur d'intensité</span> fiable</div></div>
+ <div class="step"><div class="step-num step-pink">2</div><div class="step-text">Le seuil anaérobie est <span class="hl-pink">sensible à l'entraînement</span> → glisse vers de plus hautes intensités</div></step>
+ <div class="step"><div class="step-num step-pink">3</div><div class="step-text">Applications : <span class="hl-pink">prédiction des performances</span> + indication de l'intensité d'entraînement optimale</div></div>
+ <div class="step"><div class="step-num step-pink">4</div><div class="step-text">Les transporteurs lactate (MCT) : leur activité <span class="hl-pink">↑ avec l'entraînement</span> → meilleure élimination</div></div>
+ </div>
+ </div>
+ </div>
+ <div class="alert alert-pink" style="margin-top:14px;">
+ <span class="alert-icon">🏃</span>
+ <div>Au-delà du VO₂ max : les poumons, le cœur et les muscles sont saturés. Les besoins supplémentaires sont couverts par la voie anaérobie. L'entraînement au seuil (vitesse VO₂ max) maximise les bénéfices aérobies tout en minimisant la composante anaérobie.</div>
+ </div>
+ </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- 12. COEFFICIENT RESPIRATOIRE -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="theme-purple" id="qr">
+ <div class="section-header">
+ <div class="section-icon">🧮</div>
+ <div>
+ <h2>Coefficient Respiratoire (QR)</h2>
+ <div class="section-num">5.2 — RATIOS CO₂/O₂ SELON LE SUBSTRAT</div>
+ </div>
+ </div>
+ <div class="section-body">
+ <div class="alert alert-blue" style="margin-bottom:16px;">
+ <span class="alert-icon">📐</span>
+ <div><strong>QR = VCO₂ produit / VO₂ consommé</strong> — Permet d'identifier le substrat énergétique préférentiellement utilisé.</div>
+ </div>
+ <div class="grid-3">
+ <div class="sub" style="border-top: 3px solid var(--accent1); text-align:center;">
+ <h3 style="justify-content:center;"><span class="dot" style="background:var(--accent1)"></span>Glucides</h3>
+ <code class="formula" style="font-size:0.75rem;">C₆H₁₂O₆ + 6O₂ → 6CO₂ + 6H₂O</code>
+ <div style="font-size:2.5rem; font-weight:900; color:var(--accent1); margin: 12px 0;">QR = 1,0</div>
+ <p style="font-size:0.8rem;">Autant de CO₂ produit que d'O₂ consommé</p>
+ </div>
+ <div class="sub" style="border-top: 3px solid var(--accent3); text-align:center;">
+ <h3 style="justify-content:center;"><span class="dot" style="background:var(--accent3)"></span>Lipides</h3>
+ <code class="formula" style="font-size:0.75rem;">Acide palmitique (C₁₆)</code>
+ <div style="font-size:2.5rem; font-weight:900; color:var(--accent3); margin: 12px 0;">QR = 0,71</div>
+ <p style="font-size:0.8rem;">Plus d'O₂ consommé que de CO₂ produit (lipides plus réduits)</p>
+ </div>
+ <div class="sub" style="border-top: 3px solid var(--accent4); text-align:center;">
+ <h3 style="justify-content:center;"><span class="dot" style="background:var(--accent4)"></span>Protéines</h3>
+ <code class="formula" style="font-size:0.75rem;">Désamination hépatique → azote (urine) + soufre</code>
+ <div style="font-size:2.5rem; font-weight:900; color:var(--accent4); margin: 12px 0;">QR = 0,82</div>
+ <p style="font-size:0.8rem;">Fragments cétoniques oxydés en CO₂ + H₂O</p>
+ </div>
+ </div>
+ <div class="sub" style="margin-top:14px;">
+ <h3><span class="dot"></span>Interprétation du QR en pratique sportive</h3>
+ <div class="kv">
+ <div class="kv-row"><span class="kv-key">QR proche de 0,71</span><span class="kv-val">Prédominance du métabolisme <strong>lipidique</strong> (exercice faible intensité prolongé)</span></div>
+ <div class="kv-row"><span class="kv-key">QR proche de 1,0</span><span class="kv-val">Prédominance du métabolisme <strong>glucidique</strong> (exercice haute intensité)</span></div>
+ <div class="kv-row"><span class="kv-key">QR > 1,0</span><span class="kv-val">Hyperventilation / effort supramaximal → production de CO₂ supplémentaire par tampon bicarbonate</span></div>
+ <div class="kv-row"><span class="kv-key">Lipides vs glucides</span><span class="kv-val">&lt; 30% VO₂ max → lipides. &gt; 70% VO₂ max → glucides. Entre les deux : mélange des substrats.</span></div>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- ═══════════════════════════════════════════════════ -->
+<!-- TABLEAU SYNTHÈSE FINAL -->
+<!-- ═══════════════════════════════════════════════════ -->
+<section class="theme-blue">
+ <div class="section-header">
+ <div class="section-icon">📋</div>
+ <div>
+ <h2>Tableau Synthèse — Points Clés à Retenir</h2>
+ <div class="section-num">RÉVISION RAPIDE</div>
+ </div>
+ </div>
+ <div class="section-body">
+ <div class="grid-2" style="gap:14px;">
+ <div class="sub">
+ <h3><span class="dot"></span>Chiffres essentiels</h3>
+ <div class="kv">
+ <div class="kv-row"><span class="kv-key">ATP musculaire</span><span class="kv-val">~6 mM/kg → contraction quelques secondes</span></div>
+ <div class="kv-row"><span class="kv-key">Anaérobie alactique</span><span class="kv-val">≤ <strong>20 secondes</strong></span></div>
+ <div class="kv-row"><span class="kv-key">VO₂ max jeune adulte</span><span class="kv-val">~<strong>50 mL/kg/min</strong></span></div>
+ <div class="kv-row"><span class="kv-key">Débit card. repos → effort</span><span class="kv-val">5 L/min → <strong>25–30 L/min</strong></span></div>
+ <div class="kv-row"><span class="kv-key">Débit musculaire ×</span><span class="kv-val">×<strong>20</strong> au maximum</span></div>
+ <div class="kv-row"><span class="kv-key">Ventilation repos → effort</span><span class="kv-val">6 L/min → <strong>100 L/min</strong></span></div>
+ <div class="kv-row"><span class="kv-key">ATP / mol glucose (aérobie)</span><span class="kv-val"><strong>36–38 ATP</strong> (efficacité ~40%)</span></div>
+ <div class="kv-row"><span class="kv-key">ATP / glycolyse (anaérobie)</span><span class="kv-val"><strong>2 ATP</strong> nets</span></div>
+ </div>
+ </div>
+ <div class="sub">
+ <h3><span class="dot"></span>Associations Intensité → Substrat → Voie</h3>
+ <table>
+ <thead><tr><th>Intensité</th><th>Substrat ↑</th><th>Voie</th></tr></thead>
+ <tbody>
+ <tr><td>Maximale (≤20 s)</td><td>PCr</td><td>Anaérobie alactique</td></tr>
+ <tr><td>Très haute (20 s–2 min)</td><td>Glycogène</td><td>Anaérobie lactique</td></tr>
+ <tr><td>Haute (&gt; 70% VO₂)</td><td>Glucides</td><td>Aérobie (glycolytique)</td></tr>
+ <tr><td>Modérée</td><td>Mixte</td><td>Aérobie mixte</td></tr>
+ <tr><td>Faible (&lt; 30% VO₂)</td><td>Lipides</td><td>Aérobie (β-oxydation)</td></tr>
+ <tr><td>Prolongé (&gt; 2–3h)</td><td>+ Protéines</td><td>Aérobie + néoglucogenèse</td></tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+ <div class="sub" style="margin-top:14px;">
+ <h3><span class="dot"></span>Mots-clés de révision</h3>
+ <div class="pill-row">
+ <span class="pill pill-blue">Sarcomère</span>
+ <span class="pill pill-blue">Tubules T</span>
+ <span class="pill pill-blue">Réticulum sarcoplasmique</span>
+ <span class="pill pill-green">Phosphocréatine</span>
+ <span class="pill pill-green">Glycolyse</span>
+ <span class="pill pill-green">Acétyl-CoA</span>
+ <span class="pill pill-green">Cycle de Krebs</span>
+ <span class="pill pill-green">CTE</span>
+ <span class="pill pill-orange">VO₂ max</span>
+ <span class="pill pill-orange">EPOC</span>
+ <span class="pill pill-orange">Déficit O₂</span>
+ <span class="pill pill-orange">QR</span>
+ <span class="pill pill-pink">Seuil lactique</span>
+ <span class="pill pill-pink">Cycle de Cori</span>
+ <span class="pill pill-pink">Hyperpnée</span>
+ <span class="pill pill-purple">Bioénergétique</span>
+ <span class="pill pill-purple">Catabolisme</span>
+ <span class="pill pill-purple">Anabolisme</span>
+ <span class="pill pill-purple">Phosphofructokinase</span>
+ <span class="pill pill-blue">Hématose</span>
+ <span class="pill pill-blue">Effet presseur</span>
+ <span class="pill pill-orange">Lipolyse</span>
+ <span class="pill pill-pink">Lactacidémie</span>
+ </div>
+ </div>
+ </div>
+</section>
+
+</main>
+
+<footer style="text-align:center; padding:30px; color:var(--text3); font-size:0.8rem; border-top: 1px solid var(--border);">
+ Physiologie II — Physiothérapie · Cours 5 — Physiologie de l'Exercice
+</footer>
+
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../qcm/QCM_5_Physio_exercice.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+/* === ROSE/RED DARK THEME — Override unifié === */
+:root {
+  --bg: #0f1117 !important;
+  --bg2: #161922 !important;
+  --bg-2: #161922 !important;
+  --card: #1a1d2a !important;
+  --card2: #20243a !important;
+  --card-2: #20243a !important;
+  --surface: #161922 !important;
+  --surface2: #1a1d2a !important;
+  --navy: #0f1117 !important;
+  --deep: #1a1d2a !important;
+  --border: #2a3050 !important;
+  --border-strong: #3a4060 !important;
+  --ink: #e8eaf0 !important;
+  --text: #e8eaf0 !important;
+  --cream: #e8eaf0 !important;
+  --white: #ffffff !important;
+  --muted: #9aa3b8 !important;
+  --text-muted: #9aa3b8 !important;
+  --text-dim: #6a7388 !important;
+  --dim: #6a7388 !important;
+  --gray: #9aa3b8 !important;
+  --accent: #ff5c6b !important;
+  --accent2: #ff6b9d !important;
+  --accent3: #f472b6 !important;
+  --accent4: #ff8fa3 !important;
+  --accent5: #ff6b9d !important;
+  --accent6: #ff5c6b !important;
+  --accent-red: #ff5c6b !important;
+  --accent-rose: #ff6b9d !important;
+  --accent-pink: #6a7388 !important;
+  --accent-blue: #ff6b9d !important;
+  --accent-teal: #ff8fa3 !important;
+  --accent-green: #ff6b9d !important;
+  --accent-yellow: #ff8fa3 !important;
+  --accent-purple: #ff6b9d !important;
+  --accent-violet: #ff6b9d !important;
+  --accent-amber: #ff5c6b !important;
+  --accent-orange: #ff5c6b !important;
+  --teal: #ff6b9d !important;
+  --teal-light: #ff8fa3 !important;
+  --gold: #ff5c6b !important;
+  --gold-light: #ff8fa3 !important;
+  --red-accent: #ff5c6b !important;
+  --green-accent: #ff8fa3 !important;
+  --bg-elevated: #1a1d2a !important;
+  --tag-bg: #0f1117 !important;
+  --correct: #ff6b9d !important;
+  --wrong: #ff5c6b !important;
+}
+html, body { background: #0f1117 !important; color: #e8eaf0 !important; }
+body::before, body::after {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255,107,157,0.10), transparent 40%),
+    radial-gradient(circle at 85% 10%, rgba(255,92,107,0.10), transparent 40%),
+    radial-gradient(circle at 50% 90%, rgba(255,107,157,0.08), transparent 40%) !important;
+}
+.hero h1 span, h1 span {
+  background: linear-gradient(135deg, #ff5c6b, #ff6b9d) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+.btn-primary, .btn-cta.primary, .start-btn, .check-btn, .restart-btn {
+  background: linear-gradient(135deg, #ff5c6b, #ff6b9d) !important;
+  color: #ffffff !important;
+  box-shadow: 0 6px 20px rgba(255,107,157,0.35) !important;
+}
+.mode-btn.active { background: linear-gradient(135deg, #ff5c6b, #ff6b9d) !important; }
+.section-title, .section-header h2 { color: #ff6b9d !important; }
+.hero h1, header h1 {
+  background: linear-gradient(135deg, #ffffff 0%, #ff6b9d 50%, #ff5c6b 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+.card-link.qcm, .card-link {
+  border-color: rgba(255,107,157,0.20) !important;
+}
+.card-link:hover {
+  border-color: #ff6b9d !important;
+  box-shadow: 0 8px 24px rgba(255,107,157,0.20) !important;
+}
+.num-pill {
+  background: rgba(255,107,157,0.15) !important;
+  color: #ff8fa3 !important;
+}

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Chapitre 5 — Comment chercher la meilleure preuve scientifique — :root{--bg:#0f1117;--panel:#1a1d2a;--panel2: #1a1d2a;--text: #9aa3b8;--muted:#9aa3b8;--accent">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../assets/css/acces.css">
+<script src="../../../../../assets/js/acces.js"></script>
+<title>Ch.5 - Chercher la meilleure preuve scientifique</title>
+<link rel="stylesheet" href="../../../../../assets/css/chrome.css">
+<style>
+:root{--bg:#0f1117;--panel:#1a1d2a;--panel2: #1a1d2a;--text: #9aa3b8;--muted:#9aa3b8;--accent:#f472b6;--accent2: #ff6b9d;--accent3: #ff8fa3;--danger:#ff5c6b;--border:#2a3050;}
+*{box-sizing:border-box;}body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;}
+.container{max-width:1100px;margin:0 auto;padding:32px 24px 64px;}
+header{border-bottom:2px solid var(--accent);padding-bottom:18px;margin-bottom:28px;}
+h1{color:var(--accent);font-size:2em;margin:0 0 6px;}
+header .sub{color:var(--muted);font-size:0.95em;}
+h2{color:var(--accent2);border-left:4px solid var(--accent2);padding-left:12px;margin-top:38px;font-size:1.45em;}
+h3{color:var(--accent3);font-size:1.15em;margin-top:24px;}
+h4{color:#f472b6;margin-top:18px;}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:18px 22px;margin:14px 0;}
+.callout{background:var(--panel2);border-left:4px solid var(--accent);padding:14px 18px;border-radius:6px;margin:14px 0;}
+.warn{border-left-color:var(--danger);}.good{border-left-color:var(--accent2);}.tip{border-left-color:var(--accent3);}
+ul,ol{padding-left:22px;}li{margin:5px 0;}
+table{width:100%;border-collapse:collapse;margin:14px 0;background:var(--panel);}
+th,td{border:1px solid var(--border);padding:9px 12px;text-align:left;vertical-align:top;}
+th{background:var(--panel2);color:var(--accent);}
+.key{color:var(--accent2);font-weight:600;}
+.danger{color:var(--danger);font-weight:600;}
+.flash{background:linear-gradient(135deg,#ff5c6b 0%,#ff5c6b 100%);border:1px solid var(--accent);border-radius:10px;padding:14px 18px;margin:16px 0;}
+.def{background:var(--panel2);border-radius:6px;padding:10px 14px;margin:8px 0;border-left:3px solid var(--accent3);}
+hr{border:none;border-top:1px solid var(--border);margin:30px 0;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;}
+code{background:var(--panel2);padding:1px 6px;border-radius:4px;color:var(--accent3);font-size:0.92em;}
+.op{display:inline-block;background:var(--accent);color:#0f1117;font-weight:700;padding:2px 10px;border-radius:4px;margin:0 4px;}
+</style>
+ <link rel="stylesheet" href="../../../../../assets/css/modules/mtr-theme.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<a href="../accueil-methodes-et-techniques-de-recherche.html" class="back-nav">← MTR I</a>
+
+<div class="page-toggle"><div class="pt-inner"><a href="../qcm/chapitre_5_chercher_preuve.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<div class="container">
+<header>
+<h1>Chapitre 5 — Comment chercher la meilleure preuve scientifique</h1>
+<div class="sub">Bases de données · Recherche avancée · MeSH · Opérateurs booléens</div>
+</header>
+
+<h2>1. La recherche scientifique : un processus structuré</h2>
+<ol>
+<li>Une <strong>question</strong> (problème clinique, doute)</li>
+<li>Une <strong>recherche d'informations</strong> (bases, guidelines, articles)</li>
+<li>Une <strong>analyse critique</strong> des preuves</li>
+<li>Une <strong>application raisonnée</strong> en pratique</li>
+</ol>
+<div class="callout warn">
+Ce n'est <strong>PAS</strong> une « chasse au hasard sur Google » : c'est une démarche organisée avec règles, outils et étapes.
+</div>
+
+<h2>2. Méthodes de recherche : 3 grandes questions</h2>
+<div class="flash">
+<strong>Type de question</strong> → <strong>Type d'étude</strong> → <strong>Base de données adaptée</strong>
+</div>
+
+<table>
+<tr><th>Type de question</th><th>Exemple</th><th>Type d'étude</th></tr>
+<tr><td>Intervention</td><td>Excentrique vs concentrique dans la tendinite d'Achille ?</td><td>RCT, méta-analyses</td></tr>
+<tr><td>Diagnostic</td><td>Test de Lasègue fiable pour sciatalgie ?</td><td>Étude diagnostique (Se/Sp)</td></tr>
+<tr><td>Pronostic</td><td>Délai retour au sport après entorse de cheville ?</td><td>Études de cohorte</td></tr>
+<tr><td>Étiologie</td><td>Facteurs associés à la lombalgie chez étudiants ?</td><td>Cas-témoins, cohortes</td></tr>
+<tr><td>Fréquence</td><td>Prévalence de scoliose chez ados ?</td><td>Études transversales</td></tr>
+<tr><td>Expérience patient</td><td>Comment vit-on la douleur chronique ?</td><td>Études qualitatives</td></tr>
+</table>
+
+<h2>3. Trois niveaux de preuves</h2>
+<div class="grid">
+<div class="card">
+<h4>1. Études primaires</h4>
+<p>Produisent des <span class="key">données nouvelles</span></p>
+<ul>
+<li>RCT, cohortes, cas-témoins</li>
+<li>Séries de cas, transversales</li>
+</ul>
+<p><em>Limite : une seule étude = + risque de biais</em></p>
+</div>
+<div class="card">
+<h4>2. Études secondaires</h4>
+<p><span class="key">Synthétisent plusieurs études primaires</span></p>
+<ul>
+<li>Revues systématiques</li>
+<li>Méta-analyses</li>
+<li>« Overviews » (revues de revues)</li>
+</ul>
+<p><em>Très rentables pour un étudiant.</em></p>
+</div>
+<div class="card">
+<h4>3. Guidelines</h4>
+<p><span class="key">Recommandations officielles</span> (NICE, GIN, sociétés savantes)</p>
+<p>Fournissent : conduites recommandées, grades de recommandation, niveaux de preuve.</p>
+</div>
+</div>
+
+<h2>4. Pyramide des preuves</h2>
+<table>
+<tr><th>Niveau</th><th>Études</th></tr>
+<tr><td>🔺 Haut (robustesse +++)</td><td>Revues systématiques, méta-analyses, guidelines</td></tr>
+<tr><td>🔸 Milieu</td><td>RCT, bonnes cohortes</td></tr>
+<tr><td>🔻 Bas (puissance limitée)</td><td>Rapports de cas, séries de cas, opinions d'experts, petites obs.</td></tr>
+</table>
+<div class="callout tip">
+Stratégie : chercher d'abord en haut (guidelines, revues systématiques), descendre si insuffisant.
+</div>
+
+<h2>5. Bases de données par type de preuve</h2>
+<table>
+<tr><th>Type</th><th>Bases</th></tr>
+<tr><td>Études primaires</td><td><span class="key">PubMed</span><span class="key">PEDro</span> (kiné, avec score qualité) · Cochrane Clinical Trials</td></tr>
+<tr><td>Études secondaires</td><td><span class="key">Cochrane Reviews</span></td></tr>
+<tr><td>Guidelines</td><td>GIN, NICE, sociétés savantes</td></tr>
+<tr><td>Généralistes</td><td>Google Scholar, B-On, SciELO</td></tr>
+</table>
+
+<h2>6. Bonne question (niveau de zoom)</h2>
+<div class="grid">
+<div class="callout warn">
+<strong>Trop large</strong><br>« La physiothérapie traite-t-elle la douleur ? »
+</div>
+<div class="callout warn">
+<strong>Trop spécifique</strong><br>« Aquathérapie 3×/sem 28 jours pour femmes de 52 ans avec lombalgie chronique et IMC 24,5–26… »
+</div>
+<div class="callout good">
+<strong>Équilibré</strong><br>« La physiothérapie aquatique améliore-t-elle la douleur chez les lombalgiques chroniques ? »
+</div>
+</div>
+
+<h2>7. Qu'est-ce qu'une base de données ?</h2>
+<div class="card">
+Rassemble des millions de références organisées en <strong>fiches</strong> :
+<ul>
+<li>Titre, auteurs, année, journal</li>
+<li>Mots-clés, résumé (abstract)</li>
+<li>DOI, lien vers le texte intégral</li>
+</ul>
+→ permet la recherche par mots-clés, filtres, équations complexes.
+</div>
+
+<h2>8. Recherche simple vs avancée</h2>
+<table>
+<tr><th>Simple</th><th>Avancée</th></tr>
+<tr><td>1 champ, large, « tâter le terrain »</td><td>Combine plusieurs champs (Title/Abstract, MeSH)</td></tr>
+<tr><td></td><td>Opérateurs booléens (AND, OR, NOT)</td></tr>
+<tr><td></td><td>Filtres (date, type d'étude, langue)</td></tr>
+<tr><td></td><td>Termes MeSH</td></tr>
+</table>
+
+<h2>9. Les 6 éléments de la recherche avancée</h2>
+<ol>
+<li><strong>MeSH Terms</strong> — descripteurs normalisés (langage contrôlé)</li>
+<li><strong>Opérateurs booléens</strong> — <span class="op">AND</span> <span class="op">OR</span> <span class="op">NOT</span></li>
+<li><strong>Troncatures</strong> — <code>*</code> <code>?</code> <code>$</code> pour les variantes</li>
+<li><strong>Opérateurs de proximité</strong> — guillemets pour expressions exactes</li>
+<li><strong>Parenthèses</strong> — structurer la logique de la requête</li>
+<li><strong>Filtres</strong> — année, âge, type d'étude, langue, espèces humaines</li>
+</ol>
+
+<h2>10. MeSH Terms (Medical Subject Headings)</h2>
+<div class="card">
+Vocabulaire contrôlé utilisé pour indexer les articles dans PubMed.
+<ul>
+<li>Évite les ambiguïtés linguistiques</li>
+<li>Regroupe articles sous un même descripteur, même si les auteurs utilisent des synonymes</li>
+<li>Trouve plus d'articles pertinents avec moins de bruit</li>
+</ul>
+</div>
+<div class="callout tip">Si peu de résultats avec mots libres → utiliser le MeSH.</div>
+
+<h2>11. Opérateurs booléens (à maîtriser absolument)</h2>
+<table>
+<tr><th>Opérateur</th><th>Effet</th><th>Exemple</th></tr>
+<tr><td><span class="op">AND</span></td><td><span class="danger">Réduit</span> les résultats (intersection)</td><td><code>"low back pain" AND exercise</code></td></tr>
+<tr><td><span class="op">OR</span></td><td><span class="key">Élargit</span> les résultats (union) - synonymes</td><td><code>physiotherapy OR "physical therapy"</code></td></tr>
+<tr><td><span class="op">NOT</span></td><td><span class="danger">Exclut</span> un terme</td><td><code>"low back pain" NOT surgery</code></td></tr>
+</table>
+
+<h2>12. Troncature</h2>
+<div class="card">
+Cherche plusieurs formes d'un même mot :
+<ul>
+<li><code>child*</code> → child, children, childhood</li>
+<li><code>diabet*</code> → diabetes, diabetic</li>
+<li><code>behavio?r</code> → behavior / behaviour</li>
+</ul>
+</div>
+
+<h2>13. Guillemets (proximité)</h2>
+<div class="callout">
+<code>"low back pain"</code> → expression exacte<br>
+Sans guillemets : le moteur peut interpréter les mots séparément (moins pertinent).
+</div>
+
+<h2>14. Parenthèses (logique)</h2>
+<div class="card">
+Structurent la requête. La position des parenthèses change tout :
+<ul>
+<li><code>("low back pain" OR backache) AND "bed rest"</code> → 556 articles</li>
+<li><code>("low back pain" AND "bed rest") OR backache</code> → 88 601 articles</li>
+</ul>
+</div>
+
+<h2>15. Filtres et limites</h2>
+<ul>
+<li>Période (ex. 10 dernières années)</li>
+<li>Type d'étude (RCT, review…)</li>
+<li>Langue (FR, EN, PT…)</li>
+<li>Humain, tranches d'âge</li>
+</ul>
+
+<h2>16. Règles pratiques avant de chercher</h2>
+<ol>
+<li>Préparer une liste de mots-clés et synonymes</li>
+<li>Choisir le champ (Title/Abstract, MeSH…)</li>
+<li>Combiner avec AND / OR / NOT</li>
+<li>Guillemets pour les expressions</li>
+<li>Troncatures si approprié</li>
+</ol>
+
+<h2>17. Journal vs Périodique (journal scientifique)</h2>
+<table>
+<tr><th>Journal (grand public)</th><th>Périodique scientifique</th></tr>
+<tr><td>Écrit par des journalistes</td><td>Écrit par des chercheurs</td></tr>
+<tr><td>Langage de vulgarisation</td><td>Évalué par des pairs (peer review)</td></tr>
+<tr><td>Pas de revue par les pairs</td><td>Méthodes, résultats, discussion, références</td></tr>
+<tr><td class="danger">Non adapté pour un mémoire</td><td class="key">Base de la rédaction scientifique</td></tr>
+</table>
+
+<h3>Journaux de physiothérapie</h3>
+<ul>
+<li>Archives of Physical Medicine and Rehabilitation</li>
+<li>Physical Therapy</li>
+<li>Journal of Physical Therapy Science</li>
+<li>Physiotherapy Theory & Practice</li>
+</ul>
+
+<h2>18. Construire sa propre base de références</h2>
+<div class="card">
+Outils de gestion bibliographique :
+<ul>
+<li><span class="key">EndNote</span></li>
+<li><span class="key">Mendeley</span></li>
+<li><span class="key">Zotero</span></li>
+</ul>
+Permettent : sauvegarder, stocker les PDF, prendre des notes, insérer automatiquement les citations dans Word.
+</div>
+
+<hr>
+<h2>🎯 À retenir absolument</h2>
+<div class="card">
+<ul>
+<li>Type de question → type d'étude → base de données adaptée</li>
+<li>3 niveaux de preuves : primaire / secondaire / guidelines</li>
+<li>Pyramide : commencer par le haut</li>
+<li>Bases clés : PubMed, PEDro, Cochrane, NICE</li>
+<li>AND = ∩ · OR = ∪ · NOT = exclusion</li>
+<li>Troncature <code>*</code>Guillemets pour expressions · Parenthèses pour la logique</li>
+<li>MeSH = vocabulaire contrôlé PubMed</li>
+<li>Outils biblio : Zotero, Mendeley, EndNote</li>
+</ul>
+</div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Variation génétique & santé — :root { --bg:#0f1117;--bg2:#0f1117;--bg3:#0f1117;--bg4:#161922; --orange:#a5a0ff;--blue:#6366f1;--green:#6366f1;--yellow:#a5a0ff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../assets/css/acces.css">
+<script src="../../assets/js/acces.js"></script>
+<title>Fiche 9 — Variation génétique et santé | SVT Terminale</title>
+<link rel="stylesheet" href="../assets/css/chrome.css">
+<style>
+:root {
+ --bg:#0f1117;--bg2:#0f1117;--bg3:#0f1117;--bg4:#161922;
+ --orange:#a5a0ff;--blue:#6366f1;--green:#6366f1;--yellow:#a5a0ff;--purple:#8b7cf8;--red:#8b7cf8;
+ --text:#a5a0ff;--muted:#6a7388;--border:#2a3050;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;font-size:15px;line-height:1.75}
+
+header{background:linear-gradient(135deg,#0f1117 0%,#0f1117 100%);border-bottom:3px solid var(--orange);padding:2rem 2.5rem 1.6rem}
+header .breadcrumb{font-size:.72rem;text-transform:uppercase;letter-spacing:2.5px;color:var(--orange);font-weight:700;margin-bottom:.4rem}
+header h1{font-size:1.7rem;font-weight:800;color:#e8eaf0;line-height:1.3}
+header .pills{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.8rem}
+header .pill{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:.2rem .8rem;font-size:.78rem;color:var(--muted)}
+header .pill.bonus{background:rgba(32,36,58,.15);border-color:rgba(58,64,96,.4);color:var(--purple)}
+
+nav{background:var(--bg2);border-bottom:1px solid var(--border);padding:.65rem 2.5rem;display:flex;gap:.45rem;flex-wrap:wrap;position:sticky;top:0;z-index:100}
+nav a{color:var(--muted);text-decoration:none;font-size:.78rem;padding:.25rem .75rem;border-radius:16px;background:var(--bg3);border:1px solid transparent;transition:all .15s}
+nav a:hover{color:var(--orange);border-color:var(--orange);background:rgba(32,36,58,.08)}
+nav .back{background:rgba(32,36,58,.1);color:var(--purple);border-color:rgba(58,64,96,.3)}
+
+main{max-width:980px;margin:0 auto;padding:2rem 2.5rem}
+.section-header{display:flex;align-items:center;gap:.9rem;margin-bottom:1.4rem;margin-top:.3rem}
+.section-num{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.85rem;flex-shrink:0}
+.section-num.orange{background:rgba(32,36,58,.2);color:var(--orange);border:2px solid var(--orange)}
+.section-num.blue{background:rgba(32,36,58,.2);color:var(--blue);border:2px solid var(--blue)}
+.section-num.green{background:rgba(32,36,58,.2);color:var(--green);border:2px solid var(--green)}
+.section-num.yellow{background:rgba(32,36,58,.2);color:var(--yellow);border:2px solid var(--yellow)}
+.section-num.red{background:rgba(32,36,58,.2);color:var(--red);border:2px solid var(--red)}
+h2{font-size:1.2rem;font-weight:700;color:#e8eaf0}
+h3{font-size:.96rem;font-weight:700;color:var(--yellow);margin:1.3rem 0 .5rem;padding-left:.5rem;border-left:3px solid var(--yellow)}
+h4{font-size:.88rem;font-weight:600;color:var(--green);margin:.8rem 0 .3rem}
+section{margin-bottom:3rem}
+p{margin-bottom:.6rem}
+ul,ol{margin:.4rem 0 .8rem 1.4rem}
+li{margin-bottom:.25rem}
+
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.1rem 1.3rem;margin-bottom:.8rem}
+.card.o{border-left:4px solid var(--orange)}
+.card.b{border-left:4px solid var(--blue)}
+.card.g{border-left:4px solid var(--green)}
+.card.y{border-left:4px solid var(--yellow)}
+.card.p{border-left:4px solid var(--purple)}
+.card.r{border-left:4px solid var(--red)}
+
+.def{background:#0f1117;border:1px solid #2a3050;border-radius:8px;padding:.85rem 1.1rem;margin:.5rem 0 .9rem}
+.def .lbl{font-size:.68rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--blue);font-weight:700;margin-bottom:.25rem}
+.def strong{color:var(--green)}
+
+.warn{background:#0f1117;border:1px solid rgba(58,64,96,.4);border-radius:8px;padding:.8rem 1rem .8rem 1.2rem;margin:.8rem 0;color:#a5a0ff;font-size:.88rem;position:relative;padding-left:2.4rem}
+.warn::before{content:"⚠";position:absolute;left:.7rem;top:.8rem;font-size:1rem}
+
+.bonus-banner{background:rgba(32,36,58,.08);border:1px solid rgba(58,64,96,.3);border-left:4px solid var(--purple);border-radius:8px;padding:.8rem 1.1rem;margin-bottom:1.5rem;color:#a5a0ff;font-size:.85rem}
+
+.schema{background:var(--bg3);border:1px dashed var(--border);border-radius:8px;padding:1rem 1.2rem;margin:.6rem 0 .9rem;font-family:'Cascadia Code','Courier New',monospace;font-size:.83rem;color:var(--green);line-height:1.9;overflow-x:auto;white-space:pre}
+
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:.9rem;margin-bottom:.8rem}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.9rem;margin-bottom:.8rem}
+@media(max-width:720px){.g2,.g3{grid-template-columns:1fr}}
+
+table{width:100%;border-collapse:collapse;margin:.6rem 0 1rem;background:var(--bg2);border-radius:8px;overflow:hidden;font-size:.88rem}
+th{background:var(--bg3);text-align:left;padding:.55rem .8rem;color:var(--orange);font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:1px}
+td{padding:.55rem .8rem;border-top:1px solid var(--border);vertical-align:top}
+
+.keywords{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.5rem}
+.kw{background:var(--bg3);border:1px solid var(--border);border-radius:14px;padding:.18rem .65rem;font-size:.75rem;color:var(--text)}
+.kw.g{color:var(--green);border-color:rgba(58,64,96,.4)}
+.kw.b{color:var(--blue);border-color:rgba(58,64,96,.4)}
+.kw.o{color:var(--orange);border-color:rgba(58,64,96,.4)}
+.kw.r{color:var(--red);border-color:rgba(58,64,96,.4)}
+
+.qcm-link{display:block;background:linear-gradient(135deg,rgba(32,36,58,.12),rgba(32,36,58,.12));border:1px solid rgba(58,64,96,.3);border-radius:12px;padding:1.2rem;text-align:center;text-decoration:none;color:#e8eaf0;margin-top:2rem;font-weight:700;transition:all .2s}
+.qcm-link:hover{background:linear-gradient(135deg,rgba(32,36,58,.2),rgba(32,36,58,.2));transform:translateY(-2px)}
+
+footer{text-align:center;padding:2rem;color:var(--muted);font-size:.78rem;border-top:1px solid var(--border);margin-top:2rem}
+</style>
+</head>
+<body>
+
+<a href="../accueil-svt.html" class="back-nav">← SVT Bac 2026</a>
+
+<div class="page-toggle"><div class="pt-inner"><a href="../qcm/qcm9_variation_genetique_sante.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+
+<header>
+ <div class="breadcrumb">Thème III — Corps humain et santé · Rappels Première</div>
+ <h1>Variation génétique <span style="color:var(--orange)">&amp; santé</span></h1>
+ <div class="pills">
+ <span class="pill">🧬 Mutations · Cancer · Antibiorésistance</span>
+ <span class="pill">🎯 SVT Spécialité</span>
+ <span class="pill bonus">★ Rappel Première (utile pour le bac)</span>
+ <span class="pill">🗂 Fiche 9</span>
+ </div>
+</header>
+
+<nav>
+ <a href="../accueil-svt.html" class="back">← Index</a>
+ <a href="#mutations">🧬 Mutations</a>
+ <a href="#cancer">🔴 Cancer</a>
+ <a href="#bacteries">🦠 Bactéries</a>
+ <a href="#antibio">💊 Antibiorésistance</a>
+ <a href="#keys">🏷 Mots-clés</a>
+</nav>
+
+<main>
+
+<div class="bonus-banner">
+ ★ <strong>Fiche bonus.</strong> Ce chapitre relève du programme de <strong>Première spécialité SVT</strong> (Thème III) mais c'est un prérequis indispensable pour aborder la Terminale (génétique et santé, raisonnement évolutif). Les notions de mutations somatiques/germinales et d'évolution bactérienne reviennent souvent dans les sujets de Tle.
+</div>
+
+<!-- 1. MUTATIONS -->
+<section id="mutations">
+ <div class="section-header">
+ <div class="section-num blue">1</div>
+ <h2>Mutations : origine de la variation génétique</h2>
+ </div>
+
+ <div class="def">
+ <div class="lbl">Définition</div>
+ Une <strong>mutation</strong> = modification de la séquence d'ADN. Elles surviennent <strong>spontanément</strong> lors de la réplication ou sont <strong>induites</strong> par un agent mutagène (UV, radiations, tabac, virus...).
+ </div>
+
+ <h3>Mutations somatiques vs germinales</h3>
+ <table>
+ <tr><th>Type</th><th>Cellules concernées</th><th>Transmission</th><th>Conséquence</th></tr>
+ <tr><td><strong style="color:var(--orange)">Somatique</strong></td><td>Cellules du corps</td><td>Aux cellules-filles (clone cellulaire) — pas aux descendants</td><td>Mosaïque, cancer possible</td></tr>
+ <tr><td><strong style="color:var(--blue)">Germinale</strong></td><td>Cellules reproductrices (gamètes)</td><td>À toute la descendance</td><td>Maladie génétique, polymorphisme, évolution</td></tr>
+ </table>
+
+ <h3>Types de mutations</h3>
+ <div class="g3">
+ <div class="card b">
+ <h4>Substitution</h4>
+ <p>Un nucléotide remplacé. <strong>Silencieuse</strong>, <strong>faux-sens</strong> ou <strong>non-sens</strong> selon le codon.</p>
+ </div>
+ <div class="card g">
+ <h4>Délétion / Insertion</h4>
+ <p>Perte / ajout de nucléotides. Décalage du cadre de lecture si non multiple de 3 → protéine non fonctionnelle.</p>
+ </div>
+ <div class="card y">
+ <h4>Grandes réorganisations</h4>
+ <p>Duplication, inversion, translocation. Souvent visibles au caryotype.</p>
+ </div>
+ </div>
+
+ <h3>Réparation de l'ADN</h3>
+ <p>Les cellules disposent de systèmes de réparation très efficaces (correction de copie, excision-resynthèse, recombinaison). <strong>Une mutation n'apparaît que si la réparation échoue.</strong></p>
+</section>
+
+<!-- 2. CANCER -->
+<section id="cancer">
+ <div class="section-header">
+ <div class="section-num red">2</div>
+ <h2>Mutations somatiques &amp; cancer</h2>
+ </div>
+
+ <div class="def">
+ <div class="lbl">Définition</div>
+ Un <strong>cancer</strong> = prolifération incontrôlée d'un <strong>clone de cellules</strong> issues d'une cellule ayant accumulé plusieurs mutations.
+ </div>
+
+ <h3>Cellules cancéreuses : caractéristiques</h3>
+ <div class="card r">
+ <ul>
+ <li><strong>Prolifération anarchique</strong> (perte du contrôle du cycle cellulaire)</li>
+ <li><strong>Échappent à l'apoptose</strong> (mort cellulaire programmée)</li>
+ <li><strong>Insensibilité aux signaux d'inhibition</strong> de croissance</li>
+ <li>Formation d'une <strong>tumeur</strong>, puis <strong>angiogenèse</strong>, puis <strong>métastases</strong></li>
+ </ul>
+ </div>
+
+ <h3>Gènes impliqués</h3>
+ <div class="g2">
+ <div class="card o">
+ <h4>Proto-oncogènes → oncogènes</h4>
+ <p>Gènes activateurs du cycle cellulaire. Une mutation les rend hyperactifs (« <em>accélérateur bloqué</em> »).<br><em>Ex : RAS, MYC</em></p>
+ </div>
+ <div class="card b">
+ <h4>Gènes suppresseurs de tumeur</h4>
+ <p>Inhibiteurs naturels de la prolifération. Une mutation les inactive (« <em>frein cassé</em> »).<br><em>Ex : P53 (« gardien du génome »), RB</em></p>
+ </div>
+ </div>
+
+ <div class="warn">Le cancer est <strong>multi-étapes</strong> : il faut généralement <strong>plusieurs mutations</strong> accumulées dans la même lignée cellulaire (souvent 5 à 7) pour qu'une cellule devienne franchement cancéreuse. C'est pourquoi le risque augmente avec l'âge.</div>
+
+ <h3>Facteurs de risque</h3>
+ <div class="g3">
+ <div class="card o">
+ <h4>Chimiques</h4>
+ <ul><li>Tabac (poumon)</li><li>Alcool (digestif)</li><li>Amiante (plèvre)</li><li>Polluants</li></ul>
+ </div>
+ <div class="card y">
+ <h4>Physiques</h4>
+ <ul><li>UV (mélanome)</li><li>Rayonnements ionisants</li></ul>
+ </div>
+ <div class="card g">
+ <h4>Biologiques</h4>
+ <ul><li>HPV (col de l'utérus)</li><li>VHB, VHC (foie)</li><li>EBV</li><li>Hérédité (BRCA1/2)</li></ul>
+ </div>
+ </div>
+
+ <h3>Prévention &amp; dépistage</h3>
+ <ul>
+ <li><strong>Primaire</strong> : éviter les expositions (tabac, alcool, soleil sans protection)</li>
+ <li><strong>Secondaire</strong> : dépistage (mammographie, frottis, coloscopie, dosage PSA)</li>
+ <li><strong>Vaccination</strong> contre HPV et VHB</li>
+ </ul>
+</section>
+
+<!-- 3. BACTÉRIES -->
+<section id="bacteries">
+ <div class="section-header">
+ <div class="section-num green">3</div>
+ <h2>Variation génétique chez les bactéries</h2>
+ </div>
+
+ <p>Les bactéries ont un <strong>cycle de vie très court</strong> (≈ 20 min entre deux divisions) et de très grandes populations. <strong>Toute mutation favorable est rapidement sélectionnée.</strong></p>
+
+ <h3>Sources de variation génétique bactérienne</h3>
+ <div class="g2">
+ <div class="card b">
+ <h4>1. Mutations spontanées</h4>
+ <p>Apparaissent au hasard lors de la réplication. Rares à l'échelle individuelle (~10⁻⁹/base) mais inévitables vu la taille des populations.</p>
+ </div>
+ <div class="card g">
+ <h4>2. Transferts horizontaux</h4>
+ <p>Échanges d'ADN <strong>entre bactéries</strong>, même d'espèces différentes :</p>
+ <ul>
+ <li><strong>Conjugaison</strong> : pili → plasmide</li>
+ <li><strong>Transformation</strong> : ADN libre du milieu</li>
+ <li><strong>Transduction</strong> : virus bactériophage</li>
+ </ul>
+ </div>
+ </div>
+</section>
+
+<!-- 4. ANTIBIORÉSISTANCE -->
+<section id="antibio">
+ <div class="section-header">
+ <div class="section-num orange">4</div>
+ <h2>Antibiotiques &amp; antibiorésistance</h2>
+ </div>
+
+ <div class="def">
+ <div class="lbl">Définitions</div>
+ <strong>Antibiotique</strong> = molécule qui tue (<strong>bactéricide</strong>) ou bloque la croissance (<strong>bactériostatique</strong>) des bactéries, sans nuire aux cellules eucaryotes de l'hôte.<br>
+ <strong>Antibiorésistance</strong> = capacité d'une bactérie à survivre à un antibiotique qui devrait normalement l'éliminer.
+ </div>
+
+ <h3>Mécanisme : la sélection naturelle en action</h3>
+ <div class="schema">Population bactérienne hétérogène (mutations préexistantes)
+ ↓
+Exposition à l'antibiotique
+ ↓
+Bactéries sensibles : ÉLIMINÉES
+Bactéries résistantes : SURVIVENT et se MULTIPLIENT
+ ↓
+Population entièrement résistante en quelques générations</div>
+
+ <div class="card o">
+ <h4>⚠ Point clé</h4>
+ <p>L'antibiotique <strong>ne provoque pas</strong> la mutation : il <strong>sélectionne</strong> les bactéries qui en portaient déjà une. C'est un exemple emblématique de <strong>sélection naturelle</strong>.</p>
+ </div>
+
+ <h3>Comment les bactéries résistent ?</h3>
+ <ul>
+ <li><strong>Enzymes</strong> qui détruisent l'antibiotique (β-lactamases)</li>
+ <li><strong>Modification de la cible</strong> de l'antibiotique</li>
+ <li><strong>Pompes à efflux</strong> qui expulsent l'antibiotique</li>
+ <li><strong>Imperméabilité</strong> de la paroi</li>
+ </ul>
+
+ <h3>Causes de l'aggravation</h3>
+ <div class="warn">L'antibiorésistance progresse à cause de la <strong>surprescription</strong> en médecine humaine (rhumes viraux traités à tort), des <strong>traitements interrompus trop tôt</strong>, et de l'usage massif en <strong>élevage</strong> (facteur de croissance, prophylaxie).</div>
+
+ <h3>Lutter contre l'antibiorésistance</h3>
+ <div class="g3">
+ <div class="card g">
+ <h4>Bon usage</h4>
+ <ul><li>Antibiogramme avant prescription</li><li>Respecter dose &amp; durée</li><li>« Les antibiotiques c'est pas automatique »</li></ul>
+ </div>
+ <div class="card b">
+ <h4>Recherche</h4>
+ <ul><li>Nouveaux antibiotiques</li><li>Phagothérapie</li><li>Vaccins</li></ul>
+ </div>
+ <div class="card y">
+ <h4>Élevage &amp; environnement</h4>
+ <ul><li>Réduction en élevage</li><li>Surveillance OMS</li><li>Approche « One Health »</li></ul>
+ </div>
+ </div>
+</section>
+
+<!-- MOTS-CLÉS -->
+<section id="keys">
+ <div class="section-header">
+ <div class="section-num blue">★</div>
+ <h2>Mots-clés à connaître</h2>
+ </div>
+ <div class="keywords">
+ <span class="kw b">Mutation somatique</span>
+ <span class="kw b">Mutation germinale</span>
+ <span class="kw b">Agent mutagène</span>
+ <span class="kw g">Substitution</span>
+ <span class="kw g">Délétion / Insertion</span>
+ <span class="kw g">Décalage de lecture</span>
+ <span class="kw r">Cancer</span>
+ <span class="kw r">Clone cellulaire</span>
+ <span class="kw r">Tumeur · Métastase</span>
+ <span class="kw o">Oncogène</span>
+ <span class="kw o">Gène suppresseur de tumeur</span>
+ <span class="kw o">P53</span>
+ <span class="kw o">Apoptose</span>
+ <span class="kw g">Conjugaison</span>
+ <span class="kw g">Transformation</span>
+ <span class="kw g">Transduction</span>
+ <span class="kw g">Plasmide</span>
+ <span class="kw o">Antibiogramme</span>
+ <span class="kw o">Antibiorésistance</span>
+ <span class="kw o">β-lactamase</span>
+ <span class="kw">Sélection naturelle</span>
+ <span class="kw">Phagothérapie</span>
+ </div>
+</section>
+
+<a href="../qcm/qcm9_variation_genetique_sante.html" class="qcm-link">🎯 Tester mes connaissances — QCM Fiche 9</a>
+
+</main>
+
+<footer>SVT Terminale Spécialité · Bac 2026 — Fiche 9 / 10<a href="../accueil-svt.html" style="color:var(--orange)">Retour à l'index</a></footer>
+
+</body>
+</html>

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="De la plante sauvage à la plante domestiquée — :root { --bg: #0f1117; --bg2: #0f1117; --bg3: #161922; --accent: #a5a0ff; --accent2: #6366f1; --accent3: #a5a0f">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../assets/css/acces.css">
+<script src="../../assets/js/acces.js"></script>
+<title>Fiche 3 — De la plante sauvage à la plante domestiquée | SVT Terminale</title>
+<link rel="stylesheet" href="../assets/css/chrome.css">
+<style>
+ :root {
+ --bg: #0f1117; --bg2: #0f1117; --bg3: #161922;
+ --accent: #a5a0ff; --accent2: #6366f1; --accent3: #a5a0ff;
+ --accent4: #a5a0ff; --text: #a5a0ff; --muted: #9aa3b8;
+ --border: #2a3050; --tag-bg: #161922;
+ }
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; font-size: 15px; line-height: 1.7; }
+ header { background: linear-gradient(135deg, #0f1117 0%, #0f1117 100%); border-bottom: 2px solid var(--accent); padding: 2rem 2.5rem; display: flex; flex-direction: column; gap: 0.5rem; }
+ header .tag { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); font-weight: 700; }
+ header h1 { font-size: 2rem; font-weight: 800; color: #e8eaf0; }
+ header .meta { color: var(--muted); font-size: 0.88rem; display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 0.25rem; }
+ nav { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 0.75rem 2.5rem; display: flex; gap: 0.6rem; flex-wrap: wrap; }
+ nav a { color: var(--muted); text-decoration: none; font-size: 0.82rem; padding: 0.3rem 0.8rem; border-radius: 20px; background: var(--bg3); }
+ nav a:hover { color: var(--accent); }
+ main { max-width: 960px; margin: 0 auto; padding: 2rem 2.5rem; }
+ section { margin-bottom: 2.5rem; }
+ h2 { font-size: 1.25rem; font-weight: 700; color: var(--accent); border-left: 4px solid var(--accent); padding-left: 0.9rem; margin-bottom: 1.2rem; margin-top: 0.5rem; }
+ h3 { font-size: 1rem; font-weight: 700; color: var(--accent3); margin: 1.1rem 0 0.5rem; }
+ h4 { font-size: 0.93rem; font-weight: 600; color: var(--accent2); margin: 0.9rem 0 0.3rem; }
+ p { margin-bottom: 0.7rem; }
+ .card { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; }
+ .card.green { border-left: 4px solid var(--accent); }
+ .card.blue { border-left: 4px solid var(--accent2); }
+ .card.yellow{ border-left: 4px solid var(--accent3); }
+ .card.red { border-left: 4px solid var(--accent4); }
+ .def-box { background: #0f1117; border: 1px solid #2a3050; border-radius: 8px; padding: 0.9rem 1.2rem; margin: 0.5rem 0 1rem; }
+ .def-box .label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent3); font-weight: 700; margin-bottom: 0.3rem; }
+ .def-box strong { color: var(--accent); }
+ ul { padding-left: 1.4rem; margin-bottom: 0.8rem; }
+ ul li { margin-bottom: 0.3rem; }
+ ul li::marker { color: var(--accent); }
+ ol { padding-left: 1.4rem; margin-bottom: 0.8rem; }
+ ol li { margin-bottom: 0.4rem; }
+ ol li::marker { color: var(--accent2); font-weight: 700; }
+ table { width: 100%; border-collapse: collapse; margin: 0.8rem 0 1.2rem; font-size: 0.88rem; }
+ th { background: var(--bg3); color: var(--accent); padding: 0.6rem 0.9rem; text-align: left; border-bottom: 2px solid var(--accent); }
+ td { padding: 0.55rem 0.9rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+ tr:nth-child(even) td { background: #0f1117; }
+ .keyword { display: inline-block; background: var(--tag-bg); color: var(--accent); border: 1px solid #2a3050; border-radius: 4px; padding: 0.1rem 0.5rem; font-size: 0.8rem; font-weight: 600; margin: 0.15rem; }
+ .important { background: #0f1117; border: 1px solid #2a3050; border-radius: 8px; padding: 0.8rem 1.1rem; margin: 0.8rem 0; color: var(--accent); }
+ .important::before { content: "⚠ À retenir — "; font-weight: 700; }
+ .schema-box { background: var(--bg3); border: 1px dashed var(--border); border-radius: 8px; padding: 1rem; margin: 0.8rem 0; font-family: monospace; font-size: 0.85rem; color: var(--accent); line-height: 2; }
+ .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+ @media(max-width:640px){ .grid2 { grid-template-columns: 1fr; } }
+ footer { text-align: center; padding: 2rem; color: var(--muted); font-size: 0.8rem; border-top: 1px solid var(--border); margin-top: 2rem; }
+</style>
+</head>
+<body>
+
+<a href="../accueil-svt.html" class="back-nav">← SVT Bac 2026</a>
+
+<div class="page-toggle"><div class="pt-inner"><a href="../qcm/qcm3_plante_sauvage_domestiquee.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+
+<header>
+ <div class="tag">Thème II — Enjeux planétaires contemporains</div>
+ <h1>De la plante sauvage à la plante domestiquée</h1>
+ <div class="meta">
+ <span>📚 4 semaines</span>
+ <span>🎯 SVT Terminale Spécialité</span>
+ <span>🗂 Fiche 3 / 7</span>
+ </div>
+</header>
+
+<nav>
+ <a href="../accueil-svt.html" style="background:rgba(32,36,58,.1);color:#8b7cf8;border:1px solid rgba(58,64,96,.3);text-decoration:none;font-size:.78rem;padding:.25rem .75rem;border-radius:16px;margin-right:.25rem">← Index</a>
+ <a href="#organisation">Organisation fonctionnelle</a>
+ <a href="#matiere">Production de matière</a>
+ <a href="#reproduction">Reproduction</a>
+ <a href="#domestication">Domestication & Amélioration</a>
+ <a href="#mots-cles">Mots-clés</a>
+</nav>
+
+<main>
+
+ <section>
+ <div class="card blue">
+ <h3 style="margin-top:0">🌿 Plan du chapitre (4 cours)</h3>
+ <ol>
+ <li>L'organisation fonctionnelle des plantes à fleurs</li>
+ <li>La plante, productrice de matière organique</li>
+ <li>Reproduction entre vie fixée et mobilité</li>
+ <li>La domestication des plantes et amélioration variétale</li>
+ </ol>
+ </div>
+ </section>
+
+ <!-- COURS 1 : ORGANISATION FONCTIONNELLE -->
+ <section id="organisation">
+ <h2>1. L'organisation fonctionnelle des plantes à fleurs</h2>
+
+ <h3>1.1 La feuille — organe des échanges gazeux</h3>
+ <p>La feuille est l'organe principal de la photosynthèse. Entre deux épidermes, on trouve des <strong>cellules chlorophylliennes</strong> organisées en parenchyme :</p>
+ <div class="grid2">
+ <div class="card green">
+ <h4 style="margin-top:0">Parenchyme palissadique</h4>
+ <p>Cellules allongées, très serrées, riches en chloroplastes → côté adaxial (face supérieure) → optimise la capture lumineuse.</p>
+ </div>
+ <div class="card yellow">
+ <h4 style="margin-top:0">Parenchyme lacuneux</h4>
+ <p>Cellules séparées par de grands espaces remplis d'air → côté abaxial (face inférieure) → facilite la diffusion des gaz (CO₂, O₂, H₂O).</p>
+ </div>
+ </div>
+
+ <h4>Les stomates</h4>
+ <p>Au niveau de l'épiderme inférieur : pores constitués de deux <strong>cellules de garde</strong> délimitant une ouverture nommée <strong>ostiole</strong>. Les stomates s'ouvrent (entrée CO₂, sortie H₂O) ou se ferment (déshydratation, nuit) selon les conditions externes.</p>
+ <div class="important">
+ Les stomates sont majoritairement sur la face inférieure : permet l'entrée de CO₂ tout en <strong>limitant la perte d'eau</strong> par évapotranspiration (moins exposée au soleil).
+ </div>
+
+ <h3>1.2 Les vaisseaux conducteurs — circulation de la sève</h3>
+ <div class="grid2">
+ <div class="card green">
+ <h4 style="margin-top:0">Xylème → sève brute</h4>
+ <p>Transport de la <strong>sève brute</strong> (eau + ions minéraux) du sol vers toute la plante. Circulation ascendante (sol → feuilles). La transpiration crée une dépression qui aspire la sève.</p>
+ </div>
+ <div class="card blue">
+ <h4 style="margin-top:0">Phloème → sève élaborée</h4>
+ <p>Transport de la <strong>sève élaborée</strong> (saccharose et photo-assimilats) depuis les feuilles vers tous les organes non chlorophylliens (racines, fruits, bourgeons…).</p>
+ </div>
+ </div>
+
+ <h3>1.3 Les méristèmes — zones de croissance</h3>
+ <div class="def-box">
+ <div class="label">Apex et méristème</div>
+ <strong>Apex :</strong> extrémité des racines et bourgeons où la croissance a lieu.<br>
+ <strong>Méristème :</strong> zone de cellules indifférenciées à gros noyau, sans vacuoles, en forte activité de division (mitoses) → production de nouvelles cellules.
+ </div>
+ <div class="schema-box">Méristème (apex)
+ → Zone d'élongation (allongement cellulaire)
+ → Zone de différenciation (spécialisation des cellules)
+ → Tissus fonctionnels (xylème, phloème, épiderme, parenchyme…)</div>
+ <p>Les tiges feuillées sont construites de façon modulaire : chaque <strong>phytomère</strong> = un entre-nœud + un nœud portant une feuille et un bourgeon axillaire. Cette organisation est contrôlée par des hormones végétales.</p>
+ </section>
+
+ <!-- COURS 2 : PRODUCTION DE MATIÈRE ORGANIQUE -->
+ <section id="matiere">
+ <h2>2. La plante, productrice de matière organique</h2>
+
+ <h3>2.1 La photosynthèse — les deux phases</h3>
+ <div class="def-box">
+ <div class="label">Bilan global</div>
+ <strong>6 CO₂ + 6 H₂O → C₆H₁₂O₆ + 6 O₂</strong><br>
+ Conversion d'énergie lumineuse en énergie chimique. Se déroule uniquement dans les <strong>chloroplastes</strong>.
+ </div>
+
+ <table>
+ <tr><th>Phase</th><th>Localisation dans le chloroplaste</th><th>Réactions</th></tr>
+ <tr><td><strong>Phase photochimique</strong> (rapide, dépend de la lumière)</td><td>Membrane des <strong>thylakoïdes</strong> (pigments : chlorophylle a et b, xanthophylles, carotènes)</td><td>Photolyse de l'eau : H₂O → O₂ + H⁺ + e⁻ ; production d'ATP et NADPH</td></tr>
+ <tr><td><strong>Phase chimique / Cycle de Calvin</strong> (lente, indépendante de la lumière)</td><td><strong>Stroma</strong> — enzyme <strong>Rubisco</strong></td><td>Fixation du CO₂ sur le RuBP → production de glucides (triose-phosphate → glucose, amidon)</td></tr>
+ </table>
+
+ <div class="important">
+ La Rubisco fixe le CO₂ atmosphérique dans le stroma. 3 molécules de CO₂ + 3 RuBP (C5) → 6 APG → 6 trioses-phosphate (5 régénèrent le RuBP, 1 = gain net → glucides).
+ </div>
+
+ <h3>2.2 Le devenir des produits — métabolites secondaires</h3>
+ <p>Les photo-assimilats sont exportés via la sève élaborée vers tous les organes, puis transformés en <strong>métabolites secondaires</strong> assurant diverses fonctions :</p>
+ <table>
+ <tr><th>Métabolite</th><th>Rôle</th></tr>
+ <tr><td><strong>Cellulose</strong></td><td>Constituant principal de la paroi cellulaire, rigidité</td></tr>
+ <tr><td><strong>Lignine</strong></td><td>Imperméabilise les cellules du xylème ; donne le bois aux plantes ligneuses</td></tr>
+ <tr><td><strong>Amidon</strong></td><td>Réserve glucidique (tubercules, graines)</td></tr>
+ <tr><td><strong>Tanins, anthocyanes</strong></td><td>Protection contre les herbivores et parasites</td></tr>
+ <tr><td><strong>Molécules odorantes, nectar</strong></td><td>Attraction des pollinisateurs</td></tr>
+ </table>
+
+ <h4>La paroi cellulaire et la turgescence</h4>
+ <p>La <strong>paroi pecto-cellulosique</strong> est rigide mais extensible chez les jeunes cellules. L'élongation cellulaire résulte de 3 processus :</p>
+ <ol>
+ <li>Relâchement de la structure de la paroi (rupture de liaisons)</li>
+ <li><strong>Pression de turgescence</strong> : les solutés de la vacuole créent un appel d'eau → gonflement de la cellule</li>
+ <li>Synthèse de nouvelle paroi au fur et à mesure de l'extension</li>
+ </ol>
+ <p>Ce mécanisme est sous le contrôle de l'hormone <strong>auxine</strong>. Sans eau → cellule plasmolysée → plante flétrit.</p>
+ </section>
+
+ <!-- COURS 3 : REPRODUCTION -->
+ <section id="reproduction">
+ <h2>3. Reproduction entre vie fixée et mobilité</h2>
+
+ <h3>3.1 La reproduction sexuée — pollinisation</h3>
+ <p>La pollinisation est le transport du grain de pollen (organe mâle = étamine) jusqu'au stigmate du pistil (organe femelle). Elle peut être :</p>
+ <ul>
+ <li><strong>Anémogame :</strong> transport par le vent (maïs, noisetier…)</li>
+ <li><strong>Zoogame :</strong> transport par des animaux (insectes, oiseaux, chauves-souris…)</li>
+ </ul>
+
+ <h4>Adaptations favorisant la fécondation croisée</h4>
+ <table>
+ <tr><th>Mécanisme</th><th>Exemple</th><th>Avantage</th></tr>
+ <tr><td>Plantes <strong>dioïques</strong> (♂ et ♀ séparés)</td><td>Kiwi, figuier, ortie</td><td>Fécondation croisée obligatoire</td></tr>
+ <tr><td>Plantes <strong>monoïques</strong> (fleurs ♂ et ♀ séparées sur même pied)</td><td>Maïs, noisetier</td><td>Favorise la fécondation croisée</td></tr>
+ <tr><td><strong>Dichogamie</strong> (décalage temporel de maturation)</td><td>Arum</td><td>Empêche l'autofécondation</td></tr>
+ <tr><td><strong>Auto-incompatibilité</strong> (incompatibilité moléculaire)</td><td>Primevères</td><td>Empêche l'autofécondation</td></tr>
+ </table>
+
+ <h4>Coévolution fleurs-pollinisateurs</h4>
+ <div class="card green">
+ <p>Des relations étroites se sont établies entre plantes et pollinisateurs par <strong>coévolution</strong> : la plante produit couleur, parfum, forme, nectar pour attirer les insectes ; les pollinisateurs développent des structures adaptées (trompe, corbeilles à pollen sur les pattes). Ex. : le papillon <em>Xanthopan morgani</em> a une trompe de 28 cm, correspondant exactement à l'éperon nectarifère de l'orchidée qu'il butine.</p>
+ </div>
+
+ <h4>De la fleur au fruit — de l'ovule à la graine</h4>
+ <div class="schema-box">Pollinisation → Fécondation
+ → Ovule fécondé → GRAINE (embryon + réserves + téguments)
+ → Ovaire → FRUIT (protège et dissémine les graines)</div>
+ <p>Réserves des graines : glucidiques (blé, riz), lipidiques (noix, amande) ou protéiques (pois, lentille).</p>
+
+ <h4>Dissémination des graines</h4>
+ <ul>
+ <li><strong>Anémochorie :</strong> dispersion par le vent (pissenlit, érable)</li>
+ <li><strong>Zoochorie :</strong> dispersion par les animaux (fruits charnus, crochets, poils)</li>
+ <li><strong>Hydrochorie :</strong> dispersion par l'eau (noix de coco)</li>
+ </ul>
+
+ <h3>3.2 La reproduction asexuée</h3>
+ <div class="def-box">
+ <div class="label">Définition</div>
+ <strong>Reproduction asexuée :</strong> reproduction sans fécondation, à partir d'un individu unique → descendants génétiquement identiques (clones). Repose sur la <strong>totipotence</strong> des cellules végétales.
+ </div>
+ <table>
+ <tr><th>Organe</th><th>Exemple</th><th>Mécanisme</th></tr>
+ <tr><td><strong>Stolon</strong></td><td>Fraisier</td><td>Tige rampante à la surface du sol ; chaque nœud produit une plantule</td></tr>
+ <tr><td><strong>Drageon</strong></td><td>Framboisier, lilas</td><td>Stolon souterrain issu des racines</td></tr>
+ <tr><td><strong>Tubercule</strong></td><td>Pomme de terre</td><td>Tige souterraine renflée de réserves</td></tr>
+ <tr><td><strong>Rhizome</strong></td><td>Iris, gingembre</td><td>Tige souterraine horizontale</td></tr>
+ <tr><td><strong>Bulbe</strong></td><td>Tulipe, oignon</td><td>Tige courte entourée de feuilles charnues</td></tr>
+ </table>
+ <div class="important">
+ La totipotence végétale = toute cellule végétale peut, en théorie, donner une plante entière. C'est ce principe qui est exploité en culture in vitro et en transgénèse (régénération de plantes transformées).
+ </div>
+ </section>
+
+ <!-- COURS 4 : DOMESTICATION -->
+ <section id="domestication">
+ <h2>4. La domestication des plantes et amélioration variétale</h2>
+
+ <div class="def-box">
+ <div class="label">Définition</div>
+ <strong>Domestication :</strong> Processus par lequel l'être humain a transformé des plantes sauvages en plantes cultivées par sélection artificielle sur des millénaires, modifiant profondément leur génome et leur phénotype.
+ </div>
+
+ <h3>1.1 Origine et chronologie</h3>
+ <p>La domestication des plantes débute il y a environ <strong>10 000 ans</strong> au Néolithique, dans plusieurs foyers indépendants :</p>
+ <table>
+ <tr><th>Région</th><th>Date</th><th>Plantes domestiquées</th></tr>
+ <tr><td>Croissant Fertile (Moyen-Orient)</td><td>~10 000 ans</td><td>Blé, orge, lentille, pois</td></tr>
+ <tr><td>Chine</td><td>~8 000 ans</td><td>Riz, millet</td></tr>
+ <tr><td>Méso-Amérique</td><td>~7 000 ans</td><td>Maïs (teosinte), courge, haricot</td></tr>
+ <tr><td>Andes</td><td>~5 000 ans</td><td>Pomme de terre, quinoa, tomate</td></tr>
+ </table>
+
+ <h3>1.2 Le syndrome de domestication</h3>
+ <p>Ensemble des modifications phénotypiques communes aux plantes domestiquées par rapport à leurs ancêtres sauvages :</p>
+ <div class="grid2">
+ <div class="card green">
+ <h4 style="margin-top:0">Modifications favorables à l'homme</h4>
+ <ul>
+ <li>Augmentation de la taille des graines/fruits</li>
+ <li>Perte de la dormance (germination rapide et uniforme)</li>
+ <li>Perte de la dispersion des graines (non-déhiscence)</li>
+ <li>Cycle de vie annuel raccourci</li>
+ <li>Augmentation du rendement</li>
+ </ul>
+ </div>
+ <div class="card red">
+ <h4 style="margin-top:0">Contre-parties</h4>
+ <ul>
+ <li>Perte de diversité génétique</li>
+ <li>Diminution de la résistance aux maladies</li>
+ <li>Dépendance à l'irrigation, aux intrants</li>
+ <li>Incapacité à se reproduire sans intervention humaine (maïs)</li>
+ </ul>
+ </div>
+ </div>
+
+ <h3>1.3 Mécanismes génétiques de la domestication</h3>
+ <ul>
+ <li><strong>Sélection artificielle :</strong> les humains ont conservé et reproduit les plantes présentant les traits souhaités → modifications des fréquences alléliques</li>
+ <li><strong>Bottleneck (goulot) :</strong> seul un petit nombre d'individus sauvages ont été domestiqués → réduction drastique de la diversité génétique</li>
+ <li><strong>Polyploïdisation :</strong> très fréquente chez les plantes cultivées (blé hexaploïde 6n=42, fraise octaploïde)</li>
+ <li><strong>Hybridation interspécifique :</strong> croisements entre espèces (ex. blé = hybride naturel de 3 espèces)</li>
+ </ul>
+
+ <div class="important">
+ Le maïs actuel est méconnaissable par rapport à son ancêtre la <strong>téosinte</strong> (Zea mays subsp. parviglumis). Quelques gènes majeurs (dont <em>tb1</em> et <em>tga1</em>) contrôlent les principales différences morphologiques.
+ </div>
+ </section>
+
+ <!-- 2. AMÉLIORATION -->
+ <section id="amelioration">
+ <h2>2. L'amélioration variétale traditionnelle</h2>
+
+ <h3>2.1 La sélection massale</h3>
+ <p>Méthode ancienne : on sélectionne les meilleurs individus dans une population et on les reproduit. Amélioration lente mais accessible.</p>
+
+ <h3>2.2 Les hybridations</h3>
+ <p>Croisement contrôlé de deux variétés aux caractères complémentaires pour créer une <strong>lignée F1</strong> combinant les avantages des deux parents.</p>
+ <ul>
+ <li><strong>Hétérosis (vigueur hybride) :</strong> les hybrides F1 dépassent souvent les performances des deux parents.</li>
+ <li>Inconvénient : les graines F2 ne maintiennent pas l'hétérosis → achat de semences F1 chaque année.</li>
+ </ul>
+
+ <h3>2.3 La polyploïdisation artificielle</h3>
+ <p>Utilisation de la <strong>colchicine</strong> (inhibe la formation du fuseau mitotique) pour doubler les chromosomes → création de polyploïdes stériles (triploïdes : banane, raisin sans pépins) ou fertiles.</p>
+
+ <div class="schema-box">
+Diploïde (2n) ──colchicine──→ Tétraploïde (4n) [fertiles, souvent plus grands]
+Diploïde (2n) × Tétraploïde (4n) ──→ Triploïde (3n) [stérile = sans graines]
+ </div>
+
+ <h3>2.4 La mutagenèse artificielle</h3>
+ <p>Exposition de semences à des agents mutagènes (UV, rayons gamma, EMS) pour créer une diversité génétique accrue puis sélectionner les variants utiles. Technique ancienne, autorisée en agriculture biologique (contrairement aux OGM).</p>
+ </section>
+
+ <!-- 3. OGM -->
+ <section id="ogm">
+ <h2>3. Biotechnologies modernes</h2>
+
+ <h3>3.1 Les OGM (Organismes Génétiquement Modifiés)</h3>
+ <div class="def-box">
+ <div class="label">Définition</div>
+ <strong>OGM :</strong> organisme dont le génome a été modifié par insertion d'un ou plusieurs gènes étrangers (transgènes) grâce aux techniques de l'ADN recombinant.
+ </div>
+
+ <h4>Technique de transformation par Agrobacterium</h4>
+ <ol>
+ <li>Le gène d'intérêt est inséré dans le plasmide Ti de la bactérie <em>Agrobacterium tumefaciens</em></li>
+ <li>La bactérie infecte la plante et intègre l'ADN-T dans le génome végétal</li>
+ <li>Les cellules transformées sont sélectionnées et régénèrent une plante entière (totipotence)</li>
+ </ol>
+
+ <h4>Autres méthodes</h4>
+ <ul>
+ <li><strong>Biolistique (canon à particules) :</strong> projection de microparticules d'or enrobées d'ADN</li>
+ <li><strong>Électroporation :</strong> choc électrique qui rend la membrane perméable</li>
+ </ul>
+
+ <h4>Exemples d'OGM commercialisés</h4>
+ <table>
+ <tr><th>OGM</th><th>Transgène introduit</th><th>Avantage</th></tr>
+ <tr><td>Maïs Bt</td><td>Gène de Bacillus thuringiensis (toxine Cry)</td><td>Résistance aux insectes ravageurs</td></tr>
+ <tr><td>Soja RR (Roundup Ready)</td><td>Gène EPSPS modifié</td><td>Tolérance au glyphosate (herbicide)</td></tr>
+ <tr><td>Riz doré</td><td>Gènes de biosynthèse du bêta-carotène</td><td>Prévention carence en vitamine A</td></tr>
+ <tr><td>Papaye arc-en-ciel</td><td>Gène de capside du virus PRSV</td><td>Résistance virale</td></tr>
+ </table>
+
+ <div class="important">
+ En France et en Europe, la culture des OGM est très réglementée. Les débats portent sur la <strong>biosécurité</strong> (résistance des ravageurs, flux de gènes vers les sauvages), les <strong>enjeux économiques</strong> (brevets) et <strong>éthiques</strong>.
+ </div>
+
+ <h3>3.2 CRISPR-Cas9 — l'édition génomique</h3>
+ <div class="def-box">
+ <div class="label">Principe</div>
+ <strong>CRISPR-Cas9 :</strong> outil moléculaire (ciseau moléculaire) issu du système immunitaire bactérien, permettant de couper l'ADN à un endroit précis pour inactiver, corriger ou insérer un gène.
+ </div>
+ <ul>
+ <li><strong>ARN guide (sgRNA) :</strong> reconnaît la séquence cible par complémentarité</li>
+ <li><strong>Protéine Cas9 :</strong> enzyme de restriction (endonucléase) qui coupe l'ADN double brin</li>
+ <li>Différent des OGM classiques : pas forcément d'ADN étranger → réglementation encore en débat</li>
+ </ul>
+ </section>
+
+ <!-- 4. BIODIVERSITE -->
+ <section id="biodiversite">
+ <h2>4. Biodiversité cultivée et enjeux durables</h2>
+
+ <h3>4.1 L'érosion de la biodiversité cultivée</h3>
+ <p>La modernisation de l'agriculture a conduit à l'abandon de milliers de variétés locales au profit de quelques variétés à haut rendement. Cette <strong>uniformisation génétique</strong> fragilise les cultures face aux maladies et aux changements climatiques.</p>
+
+ <div class="card yellow">
+ <p><strong>Exemple :</strong> la banane Gros Michel a été quasi-éliminée dans les années 1950 par le champignon <em>Fusarium oxysporum</em> (maladie de Panama). Aujourd'hui, la variété Cavendish (qui la remplace) est à son tour menacée par la souche TR4.</p>
+ </div>
+
+ <h3>4.2 La conservation des ressources génétiques</h3>
+ <ul>
+ <li><strong>Banques de semences :</strong> ex. Svalbard Global Seed Vault (Norvège) — 1,3 million d'échantillons</li>
+ <li><strong>Conservation in situ :</strong> maintien des variétés locales dans leur milieu naturel ou en ferme</li>
+ <li><strong>Collections de germoplasme</strong> (herbiers, cultures in vitro)</li>
+ </ul>
+
+ <h3>4.3 Agriculture durable et enjeux futurs</h3>
+ <ul>
+ <li>Réduire les pesticides et intrants tout en maintenant le rendement</li>
+ <li>Adapter les cultures au changement climatique (tolérance à la sécheresse, à la chaleur)</li>
+ <li>Valoriser la diversité génétique pour créer de nouvelles variétés résilientes</li>
+ <li>Développer l'<strong>agroécologie</strong> et les associations culturales</li>
+ </ul>
+
+ <div class="important">
+ La <strong>Convention sur la diversité biologique</strong> (Rio, 1992) et le <strong>Protocole de Nagoya</strong> (2010) encadrent l'accès aux ressources génétiques et le partage équitable des avantages.
+ </div>
+ </section>
+
+ <!-- MOTS CLÉS -->
+ <section id="mots-cles">
+ <h2>5. Mots-clés à maîtriser</h2>
+ <div class="card">
+ <span class="keyword">Parenchyme palissadique / lacuneux</span>
+ <span class="keyword">Stomate / Ostiole / Cellules de garde</span>
+ <span class="keyword">Xylème / Sève brute</span>
+ <span class="keyword">Phloème / Sève élaborée</span>
+ <span class="keyword">Méristème / Apex</span>
+ <span class="keyword">Zone d'élongation / Différenciation</span>
+ <span class="keyword">Phytomère</span>
+ <span class="keyword">Photosynthèse</span>
+ <span class="keyword">Phase photochimique (thylakoïdes)</span>
+ <span class="keyword">Phase chimique / Cycle de Calvin (stroma)</span>
+ <span class="keyword">Rubisco</span>
+ <span class="keyword">Chlorophylle a et b</span>
+ <span class="keyword">Métabolites secondaires</span>
+ <span class="keyword">Cellulose / Lignine / Tanins</span>
+ <span class="keyword">Turgescence / Auxine</span>
+ <span class="keyword">Pollinisation (anémogamie / zoogamie)</span>
+ <span class="keyword">Plante dioïque / monoïque / hermaphrodite</span>
+ <span class="keyword">Coévolution fleurs-pollinisateurs</span>
+ <span class="keyword">Dissémination (anémochorie / zoochorie)</span>
+ <span class="keyword">Totipotence</span>
+ <span class="keyword">Stolon / Rhizome / Tubercule / Bulbe</span>
+ <span class="keyword">Domestication</span>
+ <span class="keyword">Syndrome de domestication</span>
+ <span class="keyword">Téosinte / gènes TB1 et TGA1</span>
+ <span class="keyword">Sélection artificielle / Hétérosis</span>
+ <span class="keyword">Polyploïdisation / Colchicine</span>
+ <span class="keyword">Mutagenèse</span>
+ <span class="keyword">OGM / Agrobacterium / ADN-T</span>
+ <span class="keyword">CRISPR-Cas9</span>
+ <span class="keyword">Banque de semences</span>
+ <span class="keyword">Érosion génétique</span>
+ </div>
+ </section>
+
+
+<a href="../qcm/qcm3_plante_sauvage_domestiquee.html" style="display:block;background:linear-gradient(135deg,rgba(32,36,58,.14),rgba(32,36,58,.14));border:1px solid rgba(58,64,96,.35);border-radius:12px;padding:1.2rem;text-align:center;text-decoration:none;color:#e8eaf0;margin-top:2rem;font-weight:700;transition:all .2s">🎯 Tester mes connaissances — QCM Fiche 3</a>
+
+</main>
+<footer>SVT Terminale Spécialité · Bac 2026 — Fiche 3 / 10 · Plantes domestiquées<a href="../accueil-svt.html" style="color:#6366f1">Retour à l'index</a></footer>
+</body>
+</html>

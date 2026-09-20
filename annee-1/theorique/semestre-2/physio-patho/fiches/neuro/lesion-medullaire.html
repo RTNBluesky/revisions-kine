@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Lésions Médullaires — Fiche de révision complète · Cláudia Costa, FT, MSc · 21/03/2025">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../../assets/css/acces.css">
+<script src="../../../../../../assets/js/acces.js"></script>
+<title>Fiche de Révision — Lésions Médullaires</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../../../assets/css/chrome.css">
+<style>
+ :root {
+ --orange: #ff5c6b;
+ --orange-light: #ff8fa3;
+ --orange-pale: #ff8fa3;
+ --dark: #0f1117;
+ --mid: #ff8fa3;
+ --cream: #ff8fa3;
+ --white: #FFFFFF;
+ --gray: #6a7388;
+ --gray-light: #ff8fa3;
+ --red: #ff5c6b;
+ --blue: #f472b6;
+ --blue-light: #ff8fa3;
+ --green: #ff6b9d;
+ --green-light: #ff6b9d;
+ --purple: #f472b6;
+ --purple-light: #ff8fa3;
+ --shadow: 0 4px 24px rgba(26,18,8,0.10);
+ --shadow-lg: 0 12px 48px rgba(26,18,8,0.16);
+ }
+
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+
+ body {
+ font-family: 'DM Sans', sans-serif;
+ background: var(--cream);
+ color: var(--dark);
+ line-height: 1.65;
+ font-size: 15px;
+ }
+
+ /* ─── HEADER ─── */
+ header {
+ background: var(--dark);
+ color: var(--cream);
+ padding: 3rem 2rem 2.5rem;
+ text-align: center;
+ position: relative;
+ overflow: hidden;
+ }
+ header::before {
+ content: '';
+ position: absolute; inset: 0;
+ background: repeating-linear-gradient(
+ 45deg,
+ transparent,
+ transparent 40px,
+ rgba(255,107,157,0.07) 40px,
+ rgba(255,107,157,0.07) 41px
+ );
+ }
+ header .badge {
+ display: inline-block;
+ background: var(--orange);
+ color: white;
+ font-family: 'DM Mono', monospace;
+ font-size: 0.72rem;
+ letter-spacing: 0.15em;
+ padding: 0.3rem 0.9rem;
+ border-radius: 2px;
+ margin-bottom: 1rem;
+ text-transform: uppercase;
+ }
+ header h1 {
+ font-family: 'DM Serif Display', serif;
+ font-size: clamp(2rem, 5vw, 3.2rem);
+ font-weight: 400;
+ line-height: 1.15;
+ margin-bottom: 0.5rem;
+ }
+ header h1 em {
+ color: var(--orange-light);
+ font-style: italic;
+ }
+ header p {
+ color: var(--gray);
+ font-size: 0.9rem;
+ font-weight: 300;
+ margin-top: 0.5rem;
+ }
+
+ /* ─── NAV ─── */
+ nav {
+ background: var(--white);
+ border-bottom: 2px solid var(--gray-light);
+ padding: 0.9rem 2rem;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.5rem 1.2rem;
+ justify-content: center;
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+ }
+ nav a {
+ color: var(--mid);
+ text-decoration: none;
+ font-size: 0.82rem;
+ font-weight: 500;
+ padding: 0.3rem 0.7rem;
+ border-radius: 4px;
+ transition: all 0.2s;
+ letter-spacing: 0.02em;
+ }
+ nav a:hover {
+ background: var(--orange-pale);
+ color: var(--orange);
+ }
+
+ /* ─── LAYOUT ─── */
+ main {
+ max-width: 1100px;
+ margin: 0 auto;
+ padding: 2.5rem 1.5rem 4rem;
+ }
+
+ /* ─── SECTIONS ─── */
+ section {
+ margin-bottom: 3rem;
+ animation: fadeUp 0.5s ease both;
+ }
+ @keyframes fadeUp {
+ from { opacity: 0; transform: translateY(16px); }
+ to { opacity: 1; transform: translateY(0); }
+ }
+
+ .section-header {
+ display: flex;
+ align-items: center;
+ gap: 1rem;
+ margin-bottom: 1.5rem;
+ padding-bottom: 0.75rem;
+ border-bottom: 2px solid var(--orange);
+ }
+ .section-number {
+ background: var(--orange);
+ color: white;
+ font-family: 'DM Serif Display', serif;
+ font-size: 1.4rem;
+ width: 44px; height: 44px;
+ border-radius: 50%;
+ display: flex; align-items: center; justify-content: center;
+ flex-shrink: 0;
+ }
+ .section-header h2 {
+ font-family: 'DM Serif Display', serif;
+ font-size: 1.5rem;
+ font-weight: 400;
+ color: var(--dark);
+ }
+
+ /* ─── CARDS GRID ─── */
+ .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.2rem; }
+ .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem; }
+ .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; }
+
+ /* ─── BASE CARD ─── */
+ .card {
+ background: var(--white);
+ border-radius: 10px;
+ padding: 1.4rem 1.5rem;
+ box-shadow: var(--shadow);
+ border-left: 4px solid var(--orange);
+ transition: box-shadow 0.2s, transform 0.2s;
+ }
+ .card:hover { box-shadow: var(--shadow-lg); transform: translateY(-2px); }
+ .card h3 {
+ font-family: 'DM Serif Display', serif;
+ font-size: 1.05rem;
+ margin-bottom: 0.7rem;
+ color: var(--orange);
+ }
+ .card.blue { border-left-color: var(--blue); }
+ .card.blue h3 { color: var(--blue); }
+ .card.green { border-left-color: var(--green); }
+ .card.green h3 { color: var(--green); }
+ .card.purple{ border-left-color: var(--purple); }
+ .card.purple h3{ color: var(--purple); }
+ .card.red { border-left-color: var(--red); }
+ .card.red h3 { color: var(--red); }
+ .card.dark { border-left-color: var(--dark); }
+
+ /* ─── LISTS ─── */
+ ul.clean { list-style: none; }
+ ul.clean li {
+ padding: 0.25rem 0 0.25rem 1.2rem;
+ position: relative;
+ font-size: 0.9rem;
+ }
+ ul.clean li::before {
+ content: '▸';
+ position: absolute; left: 0;
+ color: var(--orange);
+ font-size: 0.75rem;
+ top: 0.35rem;
+ }
+ .card.blue ul.clean li::before { color: var(--blue); }
+ .card.green ul.clean li::before { color: var(--green); }
+ .card.purple ul.clean li::before { color: var(--purple); }
+ .card.red ul.clean li::before { color: var(--red); }
+
+ /* ─── HIGHLIGHT BOXES ─── */
+ .highlight {
+ background: var(--orange-pale);
+ border: 1px solid var(--orange-light);
+ border-radius: 8px;
+ padding: 1rem 1.3rem;
+ margin: 1rem 0;
+ font-size: 0.9rem;
+ }
+ .highlight.blue { background: var(--blue-light); border-color: var(--blue); }
+ .highlight.green { background: var(--green-light); border-color: var(--green); }
+ .highlight.purple { background: var(--purple-light); border-color: var(--purple); }
+ .highlight strong { font-weight: 600; }
+
+ /* ─── TABLE ─── */
+ .table-wrap { overflow-x: auto; border-radius: 10px; box-shadow: var(--shadow); }
+ table {
+ width: 100%;
+ border-collapse: collapse;
+ background: var(--white);
+ font-size: 0.87rem;
+ }
+ thead { background: var(--dark); color: var(--cream); }
+ thead th {
+ padding: 0.9rem 1rem;
+ text-align: left;
+ font-weight: 500;
+ font-family: 'DM Mono', monospace;
+ font-size: 0.78rem;
+ letter-spacing: 0.06em;
+ text-transform: uppercase;
+ }
+ tbody tr { border-bottom: 1px solid var(--gray-light); transition: background 0.15s; }
+ tbody tr:hover { background: var(--orange-pale); }
+ tbody td { padding: 0.75rem 1rem; vertical-align: top; }
+ tbody td:first-child { font-weight: 600; color: var(--orange); font-family: 'DM Mono', monospace; font-size: 0.82rem; }
+ .blue-row td:first-child { color: var(--blue); }
+ .green-row td:first-child { color: var(--green); }
+
+ /* ─── SYNDROME BLOCKS ─── */
+ .syndrome-block {
+ background: var(--white);
+ border-radius: 10px;
+ overflow: hidden;
+ box-shadow: var(--shadow);
+ margin-bottom: 1.2rem;
+ }
+ .syndrome-block .syn-header {
+ padding: 1rem 1.5rem;
+ display: flex;
+ align-items: center;
+ gap: 0.8rem;
+ font-family: 'DM Serif Display', serif;
+ font-size: 1.05rem;
+ cursor: pointer;
+ user-select: none;
+ transition: background 0.2s;
+ }
+ .syndrome-block .syn-header:hover { filter: brightness(0.96); }
+ .syn-header .syn-icon { font-size: 1.4rem; }
+ .syndrome-block .syn-body {
+ padding: 1.2rem 1.5rem;
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ gap: 1rem;
+ background: var(--white);
+ }
+ .syn-col h4 {
+ font-size: 0.78rem;
+ text-transform: uppercase;
+ letter-spacing: 0.1em;
+ font-weight: 600;
+ margin-bottom: 0.5rem;
+ color: var(--gray);
+ }
+ .syn-col ul { list-style: none; }
+ .syn-col ul li { font-size: 0.88rem; padding: 0.2rem 0; }
+ .syn-col ul li::before { content: '• '; color: var(--orange); }
+
+ /* SYNDROME COLORS */
+ .syn-total .syn-header { background: linear-gradient(135deg, #161922, #ff5c6b); color: white; }
+ .syn-ant .syn-header { background: linear-gradient(135deg, #ff5c6b, #f472b6); color: white; }
+ .syn-brown .syn-header { background: linear-gradient(135deg, #ff6b9d, #ff6b9d); color: white; }
+ .syn-centro.syn-header { background: linear-gradient(135deg, #ff5c6b, #f472b6); color: white; }
+ .syn-cone .syn-header { background: linear-gradient(135deg, #ff5c6b, var(--red)); color: white; }
+
+ /* ─── NIVEAU TABLE ─── */
+ .niveau-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+ gap: 0.7rem;
+ }
+ .niveau-item {
+ background: var(--white);
+ border-radius: 8px;
+ padding: 0.8rem 1rem;
+ box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+ border-top: 3px solid var(--orange);
+ transition: transform 0.15s;
+ }
+ .niveau-item:hover { transform: translateY(-2px); }
+ .niveau-item.cervical { border-top-color: #ff5c6b; }
+ .niveau-item.dorsal { border-top-color: #f472b6; }
+ .niveau-item.lombaire { border-top-color: #ff6b9d; }
+ .niveau-item .niv-code {
+ font-family: 'DM Mono', monospace;
+ font-weight: 600;
+ font-size: 1rem;
+ margin-bottom: 0.3rem;
+ }
+ .niveau-item .niv-desc { font-size: 0.78rem; color: var(--gray); }
+ .cervical .niv-code { color: #ff5c6b; }
+ .dorsal .niv-code { color: #f472b6; }
+ .lombaire .niv-code { color: #ff6b9d; }
+
+ /* ─── ASIA ─── */
+ .asia-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.8rem; }
+ .asia-card {
+ border-radius: 8px;
+ padding: 1rem;
+ text-align: center;
+ color: white;
+ box-shadow: var(--shadow);
+ }
+ .asia-card .asia-grade {
+ font-family: 'DM Serif Display', serif;
+ font-size: 2.5rem;
+ line-height: 1;
+ margin-bottom: 0.4rem;
+ }
+ .asia-card h4 { font-size: 0.78rem; margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.1em; }
+ .asia-card p { font-size: 0.78rem; opacity: 0.9; }
+ .asia-a { background: linear-gradient(135deg, #ff5c6b, #ff5c6b); }
+ .asia-b { background: linear-gradient(135deg, #ff8fa3, #ff5c6b); }
+ .asia-c { background: linear-gradient(135deg, #ff6b9d, #ff6b9d); }
+ .asia-d { background: linear-gradient(135deg, #ff5c6b, #f472b6); }
+ .asia-e { background: linear-gradient(135deg, #2a3050, #3a4060); }
+
+ /* ─── EPID STATS ─── */
+ .stat-row { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; }
+ .stat-box {
+ background: var(--white);
+ border-radius: 10px;
+ padding: 1.2rem 1.5rem;
+ text-align: center;
+ flex: 1 1 140px;
+ box-shadow: var(--shadow);
+ border-bottom: 3px solid var(--orange);
+ }
+ .stat-box .stat-val {
+ font-family: 'DM Serif Display', serif;
+ font-size: 2rem;
+ color: var(--orange);
+ line-height: 1;
+ margin-bottom: 0.3rem;
+ }
+ .stat-box .stat-lbl { font-size: 0.78rem; color: var(--gray); font-weight: 500; }
+
+ /* ─── COMPLICATION TAGS ─── */
+ .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem; }
+ .tag {
+ background: var(--orange-pale);
+ color: var(--orange);
+ border: 1px solid var(--orange-light);
+ border-radius: 100px;
+ padding: 0.2rem 0.7rem;
+ font-size: 0.78rem;
+ font-weight: 500;
+ }
+ .tag.blue { background: var(--blue-light); color: var(--blue); border-color: var(--blue); }
+ .tag.green { background: var(--green-light); color: var(--green); border-color: var(--green); }
+ .tag.purple { background: var(--purple-light); color: var(--purple); border-color: var(--purple); }
+ .tag.red { background: #ff8fa3; color: var(--red); border-color: var(--red); }
+
+ /* ─── LEGEND ─── */
+ .legend { display: flex; flex-wrap: wrap; gap: 0.5rem 1.2rem; font-size: 0.8rem; color: var(--gray); margin-bottom: 1rem; }
+ .legend-dot { width: 10px; height: 10px; border-radius: 50%; display: inline-block; margin-right: 4px; vertical-align: middle; }
+
+ /* ─── MÉMO BOX ─── */
+ .memo {
+ background: var(--dark);
+ color: var(--cream);
+ border-radius: 10px;
+ padding: 1.5rem;
+ font-family: 'DM Mono', monospace;
+ font-size: 0.83rem;
+ line-height: 1.9;
+ box-shadow: var(--shadow-lg);
+ }
+ .memo span { color: var(--orange-light); font-weight: 500; }
+
+ /* ─── FOOTER ─── */
+ footer {
+ background: var(--dark);
+ color: var(--gray);
+ text-align: center;
+ padding: 1.5rem;
+ font-size: 0.8rem;
+ letter-spacing: 0.03em;
+ }
+ footer strong { color: var(--orange-light); }
+
+ @media(max-width:600px){
+ nav { gap: 0.3rem 0.7rem; }
+ .asia-card .asia-grade { font-size: 2rem; }
+ }
+</style>
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/physio-patho.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-theme.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
+</head>
+<body>
+<a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
+<div class="page-toggle"><div class="pt-inner"><a href="../../qcm/neuro/lesion-medullaire.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<header>
+ <div class="badge">Physiopathologie I</div>
+ <h1>Lésions <em>Médullaires</em></h1>
+ <p>Fiche de révision complète · Cláudia Costa, FT, MSc · 21/03/2025</p>
+</header>
+
+<nav>
+ <a href="#anatomie">🧠 Anatomie</a>
+ <a href="#voies">⚡ Voies</a>
+ <a href="#definition">📋 Définition</a>
+ <a href="#syndromes">🩺 Syndromes</a>
+ <a href="#physiopathologie">🔬 Physiopatho</a>
+ <a href="#niveaux">📍 Niveaux</a>
+ <a href="#degre">📊 Degré</a>
+ <a href="#asia">🏥 ASIA</a>
+ <a href="#complications">⚠️ Complications</a>
+ <a href="#epidemio">📈 Épidémio</a>
+ <a href="#entites">🔎 Entités</a>
+</nav>
+
+<main>
+
+ <!-- ══════════════════════════════════════
+ 1. ANATOMIE
+ ══════════════════════════════════════ -->
+ <section id="anatomie">
+ <div class="section-header">
+ <div class="section-number">1</div>
+ <h2>Anatomophysiologie de la Moelle Épinière</h2>
+ </div>
+
+ <div class="grid-2" style="margin-bottom:1.2rem">
+
+ <div class="card">
+ <h3>Structure & Étendue</h3>
+ <ul class="clean">
+ <li>De l'orifice occipital → <strong>L1/L2</strong></li>
+ <li><strong>Région cervicale</strong> (C1–C8)</li>
+ <li><strong>Région dorsale/thoracique</strong> (T1–T12)</li>
+ <li><strong>Cône médullaire</strong> (lombo-sacré)</li>
+ <li><strong>Queue de cheval</strong> — racines L2–S5 libres</li>
+ </ul>
+ </div>
+
+ <div class="card blue">
+ <h3>Méninges (de l'extérieur → intérieur)</h3>
+ <ul class="clean">
+ <li>Espace épidural (graisse, veines)</li>
+ <li><strong>Dure-mère</strong></li>
+ <li>Espace sous-dural</li>
+ <li><strong>Arachnoïde</strong></li>
+ <li>Espace sous-arachnoïdien (LCR)</li>
+ <li><strong>Pie-mère</strong> (accolée à la moelle)</li>
+ </ul>
+ </div>
+
+ <div class="card green">
+ <h3>Substance Grise</h3>
+ <ul class="clean">
+ <li>Neurones afférents, efférents, interneurones (propriospinal)</li>
+ <li><strong>2 cornes antérieures</strong> → moteur</li>
+ <li><strong>2 cornes postérieures</strong> → sensoriel</li>
+ <li>2 cornes latérales (SNA)</li>
+ <li>Commissure grise</li>
+ <li>Distribution variable selon le niveau</li>
+ </ul>
+ </div>
+
+ <div class="card purple">
+ <h3>Substance Blanche</h3>
+ <ul class="clean">
+ <li>Axones, dendrites, neuroglie, vaisseaux</li>
+ <li><strong>Colonne antérieure</strong> — voies motrices descendantes</li>
+ <li><strong>Colonnes latérales</strong> — voies mixtes</li>
+ <li><strong>Colonne postérieure</strong> — voies sensitives ascendantes</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="highlight blue">
+ <strong>🔑 Règle mnémotechnique :</strong> <em>Antérieur = moteur, Postérieur = sensitif</em> — valable pour les cornes ET les cordons.
+ </div>
+ </section>
+
+ <!-- ══════════════════════════════════════
+ 2. VOIES
+ ══════════════════════════════════════ -->
+ <section id="voies">
+ <div class="section-header">
+ <div class="section-number">2</div>
+ <h2>Voies de Connexion</h2>
+ </div>
+
+ <div class="grid-2">
+ <div class="card blue">
+ <h3>⬆️ Voies Sensitives Ascendantes</h3>
+ <ul class="clean">
+ <li><strong>Spinothalamique latérale</strong> — douleur & température (croisée)</li>
+ <li><strong>Épine antérieure / Spinothalamique ant.</strong> — toucher, pression</li>
+ <li><strong>Spinocérébelleuses V & D</strong> — sensibilité profonde inconsciente</li>
+ <li><strong>Colonne postérieure</strong> (gracile + cunéiforme) — proprioception, vibration, toucher fin</li>
+ </ul>
+ <div class="highlight blue" style="margin-top:0.8rem;font-size:0.83rem">
+ Trajet : <strong>1er</strong> neurone → Ganglion<strong>2e</strong> → Thalamus<strong>3e</strong> → Cortex pariétal
+ </div>
+ </div>
+
+ <div class="card">
+ <h3>⬇️ Voies Motrices Descendantes</h3>
+ <ul class="clean">
+ <li><strong>Pyramidales :</strong> corticospinale & corticobulbaire</li>
+ <li>1er neurone → cortex cérébral (aire 4)</li>
+ <li>2e neurone → racine nerveuse médullaire / tronc</li>
+ <li><strong>Extrapyramidales :</strong></li>
+ <li style="margin-left:0.8rem">Réticulo-spinale, Tecto-spinale</li>
+ <li style="margin-left:0.8rem">Rubéro-spinale, Vestibulo-spinale</li>
+ </ul>
+ </div>
+
+ <div class="card green">
+ <h3>🔄 Voies Intersegmentaires</h3>
+ <ul class="clean">
+ <li>Connexions intra- et intersegmentaires</li>
+ <li>Système proprio-spinal (descendant & ascendant)</li>
+ <li>Courtes et longues</li>
+ <li>Recherche active sur la <strong>régénération</strong></li>
+ </ul>
+ </div>
+
+ <div class="card purple">
+ <h3>🏛️ Centres Médullaires</h3>
+ <ul class="clean">
+ <li><strong>Centre de la miction</strong> (S2–S4)<br><small>→ réflexe jusqu'à 2 ans, puis contrôle supra-médullaire</small></li>
+ <li><strong>Générateurs Centraux de Schémas (CPG)</strong><br><small>→ coordination locomotrice automatique</small></li>
+ </ul>
+ </div>
+ </div>
+
+ <div style="margin-top:1.2rem">
+ <h3 style="font-family:'DM Serif Display',serif;font-size:1.1rem;margin-bottom:1rem;color:var(--dark)">Dermatomes & Myotomes</h3>
+ <div class="grid-2">
+ <div class="card">
+ <h3>Dermatomes</h3>
+ <p style="font-size:0.88rem;color:var(--gray);margin-bottom:0.7rem">Zone spécifique de peau innervée par <em>une seule racine nerveuse</em> — organisation segmentaire.</p>
+ <ul class="clean">
+ <li>Chaque dermatome ↔ une racine spinale</li>
+ <li>23 dermatomes testés dans l'échelle ASIA</li>
+ <li>Utilisé pour localiser le niveau lésionnel</li>
+ </ul>
+ </div>
+ <div class="card blue">
+ <h3>Myotomes (exemples)</h3>
+ <ul class="clean">
+ <li><strong>C1–C2</strong> — Flexion du cou</li>
+ <li><strong>C3</strong> — Flexion latérale</li>
+ <li><strong>C4</strong> — Élévation de l'épaule</li>
+ <li><strong>C5</strong> — Abduction du bras</li>
+ <li><strong>C6</strong> — Flexion coude / extension poignet</li>
+ <li><strong>C7</strong> — Extension coude / flexion poignet</li>
+ <li><strong>C8–T1</strong> — Main / doigts</li>
+ <li><strong>L2</strong> — Flexion hanche<strong>L3</strong> — Extension genou</li>
+ <li><strong>L4</strong> — Dorsiflexion<strong>L5</strong> — Extension hallux</li>
+ <li><strong>S1</strong> — Flexion plantaire</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- ══════════════════════════════════════
+ 3. DÉFINITION & ÉTIOLOGIE
+ ══════════════════════════════════════ -->
+ <section id="definition">
+ <div class="section-header">
+ <div class="section-number">3</div>
+ <h2>Définition & Étiologie</h2>
+ </div>
+
+ <div class="highlight" style="margin-bottom:1.2rem;font-size:0.95rem">
+ <strong>Définition :</strong> Lésion aiguë grave de la moelle épinière entraînant une <strong>réduction des fonctions motrices, sensitives et autonomes</strong> (viscérales, sexuelles, trophiques) <em>en dessous du niveau lésionnel</em> — durée &gt; 24 h à 4 semaines.
+ </div>
+
+ <div class="grid-2">
+ <div class="card">
+ <h3>Étiologies Traumatiques</h3>
+ <ul class="clean">
+ <li>Fractures vertébrales</li>
+ <li>Luxation</li>
+ <li>Compression</li>
+ </ul>
+ </div>
+ <div class="card blue">
+ <h3>Étiologies Non Traumatiques</h3>
+ <ul class="clean">
+ <li>Infectieuses (myélite)</li>
+ <li>Vasculaires (AVC médullaire)</li>
+ <li>Tumorales / néoplasiques</li>
+ <li>Dégénératives (spondylose)</li>
+ </ul>
+ </div>
+ </div>
+
+ <div style="margin-top:1.2rem">
+ <h3 style="font-family:'DM Serif Display',serif;font-size:1.05rem;margin-bottom:0.8rem;color:var(--dark)">Topographie de la Lésion</h3>
+ <div class="grid-3">
+ <div class="card green">
+ <h3>Intra-durale Intramédullaire</h3>
+ <ul class="clean">
+ <li>À l'intérieur de la moelle</li>
+ <li>Ex : tumeurs gliales, syringomyélie</li>
+ </ul>
+ </div>
+ <div class="card purple">
+ <h3>Intra-durale Extramédullaire</h3>
+ <ul class="clean">
+ <li>Sous la dure-mère, hors moelle</li>
+ <li>Ex : méningiome, schwannome</li>
+ </ul>
+ </div>
+ <div class="card red">
+ <h3>Extradural</h3>
+ <ul class="clean">
+ <li>En dehors de la dure-mère</li>
+ <li>Ex : hernie discale, métastase</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- ══════════════════════════════════════
+ 4. SYNDROMES CLINIQUES
+ ══════════════════════════════════════ -->
+ <section id="syndromes">
+ <div class="section-header">
+ <div class="section-number">4</div>
+ <h2>Syndromes Cliniques</h2>
+ </div>
+
+ <!-- SECTION TOTALE -->
+ <div class="syndrome-block syn-total">
+ <div class="syn-header">
+ <span class="syn-icon">🔴</span>
+ <div>
+ <div style="font-size:0.72rem;opacity:0.7;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:2px">Syndrome</div>
+ Section Totale
+ </div>
+ </div>
+ <div class="syn-body">
+ <div class="syn-col">
+ <h4>Lésion</h4>
+ <ul><li>Interruption complète de toutes les voies</li><li>Motrices, sensitives & autonomes</li><li>Lésion des racines nerveuses au niveau sectionné</li></ul>
+ </div>
+ <div class="syn-col">
+ <h4>Conséquences</h4>
+ <ul><li>Paralysie complète sous la lésion</li><li>Anesthésie complète</li><li>Troubles sphinctériens</li><li>Dysfonction autonome</li></ul>
+ </div>
+ </div>
+ </div>
+
+ <!-- SYNDROME ANTÉRIEUR -->
+ <div class="syndrome-block syn-ant">
+ <div class="syn-header">
+ <span class="syn-icon">🔵</span>
+ <div>
+ <div style="font-size:0.72rem;opacity:0.7;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:2px">Syndrome</div>
+ Antérieur (Artère spinale antérieure)
+ </div>
+ </div>
+ <div class="syn-body">
+ <div class="syn-col">
+ <h4>Moteur</h4>
+ <ul><li>Perte de la fonction motrice</li><li>Lésion 1er neurone (sous le niveau)</li><li>Lésion 2e neurone (au niveau)</li><li>Dysfonctionnement sphinctérien</li></ul>
+ </div>
+ <div class="syn-col">
+ <h4>Sensitif — Perdu</h4>
+ <ul><li>Douleur (spinothalamique) bilatérale</li><li>Température (spinothalamique) bilatérale</li></ul>
+ </div>
+ <div class="syn-col">
+ <h4>Sensitif — Préservé</h4>
+ <ul><li>Colonne postérieure intacte !</li><li>Proprioception</li><li>Vibration</li><li>Toucher fin épicritique</li></ul>
+ </div>
+ </div>
+ </div>
+
+ <!-- BROWN-SÉQUARD -->
+ <div class="syndrome-block syn-brown">
+ <div class="syn-header">
+ <span class="syn-icon">🟢</span>
+ <div>
+ <div style="font-size:0.72rem;opacity:0.7;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:2px">Syndrome</div>
+ Brown-Séquard (Hémisection)
+ </div>
+ </div>
+ <div class="syn-body">
+ <div class="syn-col">
+ <h4>Côté Ipsilatéral (même côté)</h4>
+ <ul><li>Perte fonction motrice</li><li>Perte proprioception</li><li>Perte sensibilité épicritique (vibration, toucher fin)</li></ul>
+ </div>
+ <div class="syn-col">
+ <h4>Côté Controlatéral (côté opposé)</h4>
+ <ul><li>Perte sensibilité protopathique</li><li>Perte douleur</li><li>Perte température</li><li>Perte pression grossière</li></ul>
+ </div>
+ <div class="syn-col">
+ <h4>Pourquoi ?</h4>
+ <ul><li>Spinothalamique : croisée → deficit controlatéral</li><li>Corticospinale : croisée au niveau bulbaire → déficit moteur ipsilatéral</li><li>Colonne postérieure : homolatérale → sensitive ipsilatérale</li></ul>
+ </div>
+ </div>
+ </div>
+
+ <!-- CENTROMÉDULLAIRE -->
+ <div class="syndrome-block syn-centro">
+ <div class="syn-header">
+ <span class="syn-icon">🟣</span>
+ <div>
+ <div style="font-size:0.72rem;opacity:0.7;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:2px">Syndrome</div>
+ Centromédullaire
+ </div>
+ </div>
+ <div class="syn-body">
+ <div class="syn-col">
+ <h4>Déficit Moteur</h4>
+ <ul><li><strong>Membres supérieurs &gt; membres inférieurs</strong></li><li>Souvent mains très touchées</li></ul>
+ </div>
+ <div class="syn-col">
+ <h4>Sensitif & Sphinctérien</h4>
+ <ul><li>Perte sensorielle variable sous la lésion</li><li>Rétention urinaire (fréquente)</li></ul>
+ </div>
+ <div class="syn-col">
+ <h4>Mécanisme</h4>
+ <ul><li>Hyperextension cervicale</li><li>Compression médullaire centrale</li><li>Lésion des fibres centrales (MS > MI dans tractus corticospinal)</li></ul>
+ </div>
+ </div>
+ </div>
+
+ <!-- CÔNE -->
+ <div class="syndrome-block syn-cone">
+ <div class="syn-header">
+ <span class="syn-icon">🔴</span>
+ <div>
+ <div style="font-size:0.72rem;opacity:0.7;text-transform:uppercase;letter-spacing:0.1em;margin-bottom:2px">Syndrome</div>
+ Cône Médullaire (S2–S5)
+ </div>
+ </div>
+ <div class="syn-body">
+ <div class="syn-col">
+ <h4>Sphinctérien / Pelvien</h4>
+ <ul><li>Incontinence anale</li><li>Paralysie flasque de la vessie</li><li>Impuissance sexuelle</li><li>Suppression des réflexes anaux</li></ul>
+ </div>
+ <div class="syn-col">
+ <h4>Sensitif</h4>
+ <ul><li>Anesthésie en selle (périnée, face interne cuisses)</li></ul>
+ </div>
+ <div class="syn-col">
+ <h4>Particularité</h4>
+ <ul><li>Réflexes profonds des membres inférieurs <strong>préservés</strong></li><li>Combine signes 1er et 2e neurone</li></ul>
+ </div>
+ </div>
+ </div>
+
+ <!-- TABLEAU RÉCAP -->
+ <div class="table-wrap" style="margin-top:1.5rem">
+ <table>
+ <thead>
+ <tr>
+ <th>Syndrome</th>
+ <th>Moteur</th>
+ <th>Sensitif perdu</th>
+ <th>Sensitif préservé</th>
+ <th>Réflexes</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Section totale</td>
+ <td>Complet bilatéral</td>
+ <td>Tout bilatéral</td>
+ <td>Rien</td>
+ <td>Aréflexie initiale puis retour</td>
+ </tr>
+ <tr>
+ <td>Antérieur</td>
+ <td>Bilatéral</td>
+ <td>Douleur + T° (bilatéral)</td>
+ <td>Proprioception, vibration</td>
+ <td>Hyperréflexie possible</td>
+ </tr>
+ <tr>
+ <td>Brown-Séquard</td>
+ <td>Ipsilatéral</td>
+ <td>Douleur + T° controlatéral</td>
+ <td>Proprioception / moteur opposé</td>
+ <td>Hyperréflexie ipsilatérale</td>
+ </tr>
+ <tr>
+ <td>Centromédullaire</td>
+ <td>MS &gt; MI</td>
+ <td>Variable sous lésion</td>
+ <td>MI souvent préservé</td>
+ <td>Hyperréflexie MI</td>
+ </tr>
+ <tr>
+ <td>Cône médullaire</td>
+ <td>Sphincters, périnée</td>
+ <td>Anesthésie en selle</td>
+ <td>Réflexes MI profonds</td>
+ <td>Aréflexie anale/bulbocaverneux</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </section>
+
+ <!-- ══════════════════════════════════════
+ 5. PHYSIOPATHOLOGIE
+ ══════════════════════════════════════ -->
+ <section id="physiopathologie">
+ <div class="section-header">
+ <div class="section-number">5</div>
+ <h2>Physiopathologie</h2>
+ </div>
+
+ <div class="grid-2">
+ <div class="card">
+ <h3>Phase 1 — Lésion Primaire</h3>
+ <ul class="clean">
+ <li>Rupture des vaisseaux sanguins</li>
+ <li>Lésion directe des cellules nerveuses</li>
+ <li>Rompement des axones</li>
+ <li>Hémorragie et nécrose de la substance grise</li>
+ </ul>
+ </div>
+
+ <div class="card red">
+ <h3>Phase 2 — Lésion Secondaire</h3>
+ <ul class="clean">
+ <li>Réduction du flux sanguin → ischémie étendue</li>
+ <li>Mort des cellules non initialement lésées</li>
+ <li>Altérations du canal vertébral</li>
+ <li>Œdème médullaire</li>
+ <li>Réduction pression systémique</li>
+ <li>Infiltration cellules inflammatoires</li>
+ <li>Libération ATP, K+, glutamate (excitotoxicité)</li>
+ <li>Signalisation pro-apoptotique</li>
+ <li>Démyélinisation axonale (processus graduel, jours)</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="highlight" style="margin:1rem 0">
+ <strong>⚠️ Important :</strong> La séparation physique des axones est un <em>processus graduel</em> (jours post-traumatisme), lié à la lésion membranaire et protéique — <strong>pas</strong> une séparation physique immédiate (sauf blessures par balle).
+ </div>
+
+ <div class="grid-2" style="margin-top:1rem">
+ <div class="card blue">
+ <h3>Choc Médullaire — Signes</h3>
+ <ul class="clean">
+ <li>Anesthésie superficielle & profonde</li>
+ <li><strong>Paralysie flasque</strong></li>
+ <li>Aréflexie superficielle & profonde</li>
+ <li>Aréflexie vésicale</li>
+ <li>Atonie intestinale</li>
+ <li>Absence d'érection / éjaculation</li>
+ <li>Aménorrhée</li>
+ </ul>
+ </div>
+
+ <div class="card green">
+ <h3>Après Retour de l'Activité Réflexe</h3>
+ <div class="grid-2" style="gap:0.8rem">
+ <div>
+ <strong style="font-size:0.8rem;color:var(--orange)">Lésion 1er neurone (SNC)</strong>
+ <ul class="clean">
+ <li>Paralysie</li>
+ <li>Spasticité</li>
+ <li>Spasmes / mvts automatiques</li>
+ <li>Hyperréflexie</li>
+ <li>Anesthésie</li>
+ </ul>
+ </div>
+ <div>
+ <strong style="font-size:0.8rem;color:var(--blue)">Lésion 2e neurone (SNP)</strong>
+ <ul class="clean">
+ <li>Paralysie</li>
+ <li>Flaccidité</li>
+ <li>Aréflexie</li>
+ <li>Anesthésie</li>
+ <li>Atrophie musculaire</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+
+ <div class="card purple">
+ <h3>Vessie Neurogène</h3>
+ <ul class="clean">
+ <li><strong>Lésion 1er neurone :</strong></li>
+ <li style="margin-left:0.8rem">Complète → Vessie réflexe</li>
+ <li style="margin-left:0.8rem">Incomplète → Vessie non inhibée</li>
+ <li><strong>Lésion 2e neurone :</strong></li>
+ <li style="margin-left:0.8rem">Vessie autonome / flasque</li>
+ </ul>
+ </div>
+
+ <div class="card dark">
+ <h3>Modifications Sexuelles</h3>
+ <ul class="clean">
+ <li><strong>Femme :</strong> modification lubrification vaginale, fertilité <em>préservée</em></li>
+ <li><strong>Homme :</strong> dysfonction érectile, éjaculation rétrograde, infertilité</li>
+ </ul>
+ </div>
+ </div>
+ </section>
+
+ <!-- ══════════════════════════════════════
+ 6. NIVEAUX DE LÉSION
+ ══════════════════════════════════════ -->
+ <section id="niveaux">
+ <div class="section-header">
+ <div class="section-number">6</div>
+ <h2>Niveaux de Lésion</h2>
+ </div>
+
+ <div class="highlight" style="margin-bottom:1rem">
+ <strong>Règle générale :</strong> Au-dessus de D1 → <strong>tétraplégie/tétraparésie</strong>Au-dessous de D1 → <strong>paraplégie/paraparésie</strong>Au-dessous de L2 → atteinte des racines nerveuses (queue de cheval)
+ </div>
+
+ <div class="legend">
+ <span><span class="legend-dot" style="background:#E8722A"></span>Cervical</span>
+ <span><span class="legend-dot" style="background:#2E6FA3"></span>Dorsal / Thoracique</span>
+ <span><span class="legend-dot" style="background:#27735B"></span>Lombo-sacré</span>
+ </div>
+
+ <div class="niveau-grid">
+ <div class="niveau-item cervical"><div class="niv-code">C1</div><div class="niv-desc">Cerveau, oreilles, yeux, os faciaux, sinus, SNS</div></div>
+ <div class="niveau-item cervical"><div class="niv-code">C2</div><div class="niv-desc">Nerfs auditifs, front, cœur, os mastoïdes, nerfs optiques, sinus, langue</div></div>
+ <div class="niveau-item cervical"><div class="niv-code">C3</div><div class="niv-desc">Diaphragme, sensation faciale, muscles rotatoires de la tête, bouche</div></div>
+ <div class="niveau-item cervical"><div class="niv-code">C4</div><div class="niv-desc">Trompe d'Eustache, poumons, membranes muqueuses, nez, lèvres, muscles haussement d'épaules</div></div>
+ <div class="niveau-item cervical"><div class="niv-code">C5</div><div class="niv-desc">Biceps, dessus du bras et épaule, glandes du cou, pharynx, muscles déglutition, cordes vocales</div></div>
+ <div class="niveau-item cervical"><div class="niv-code">C6</div><div class="niv-desc">Muscles du cou, rotation poignet vers l'extérieur, amygdales, extension du poignet</div></div>
+ <div class="niveau-item cervical"><div class="niv-code">C7</div><div class="niv-desc">Extension coude, fléchisseurs des doigts, bourse de l'épaule, glande thyroïde, triceps</div></div>
+ <div class="niveau-item cervical"><div class="niv-code">C8–T1</div><div class="niv-desc">Œsophage, doigts, avant-bras, mains, trachée</div></div>
+ <div class="niveau-item dorsal"><div class="niv-code">T2</div><div class="niv-desc">Tubes bronchiques, artères coronaires, cœur, valves cardiaques, muscles intercostaux, muscles thoraciques</div></div>
+ <div class="niveau-item dorsal"><div class="niv-code">T3</div><div class="niv-desc">Seins, poitrine, plèvre, couverture pulmonaire</div></div>
+ <div class="niveau-item dorsal"><div class="niv-code">T4</div><div class="niv-desc">Canal cholédoque, vésicule biliaire</div></div>
+ <div class="niveau-item dorsal"><div class="niv-code">T5</div><div class="niv-desc">Circulation générale, foie, plexus solaire, estomac</div></div>
+ <div class="niveau-item dorsal"><div class="niv-code">T6</div><div class="niv-desc">Duodénum, œsophage, foie, péritoine</div></div>
+ <div class="niveau-item dorsal"><div class="niv-code">T7</div><div class="niv-desc">Muscles abdominaux, reins, rate, pancréas</div></div>
+ <div class="niveau-item dorsal"><div class="niv-code">T8</div><div class="niv-desc">Cortex surrénalien, valve pylorique, petits intestins</div></div>
+ <div class="niveau-item dorsal"><div class="niv-code">T9</div><div class="niv-desc">Ovaires, rate, utérus</div></div>
+ <div class="niveau-item dorsal"><div class="niv-code">T10</div><div class="niv-desc">Gros intestin, reins</div></div>
+ <div class="niveau-item dorsal"><div class="niv-code">T11</div><div class="niv-desc">Médullaire surrénale, valve iléo-cæcale, jonction gros-petit intestin, uretères</div></div>
+ <div class="niveau-item dorsal"><div class="niv-code">T12</div><div class="niv-desc">Muscles abdominaux, circulation lymphatique</div></div>
+ <div class="niveau-item lombaire"><div class="niv-code">L1</div><div class="niv-desc">Anneaux inguinaux, face antérieure cuisse, muscles quadriceps</div></div>
+ <div class="niveau-item lombaire"><div class="niv-code">L2</div><div class="niv-desc">Abdomen, appendice, membres supérieurs des jambes</div></div>
+ <div class="niveau-item lombaire"><div class="niv-code">L3</div><div class="niv-desc">Vessie, ischio-jambiers, genou, prostate, organes sexuels</div></div>
+ <div class="niveau-item lombaire"><div class="niv-code">L4</div><div class="niv-desc">Muscles lombaires inférieurs, jambe inférieure, nerf sciatique</div></div>
+ <div class="niveau-item lombaire"><div class="niv-code">L5</div><div class="niv-desc">Fessiers, chevilles, pieds, orteils</div></div>
+ </div>
+
+ <div class="highlight blue" style="margin-top:1rem">
+ <strong>Résumé fonctionnel :</strong> C3–C5 → diaphragme (respiration !) · C5–C6 → abduction épaule/flexion coude · C6–C7 → extension poignet/coude · C8–T1 → main · T1–T12 → tronc · L1–L2 → hanche · L3–L4 → genou · L4–L5 → pied
+ </div>
+ </section>
+
+ <!-- ══════════════════════════════════════
+ 7. DEGRÉ DE LÉSION
+ ══════════════════════════════════════ -->
+ <section id="degre">
+ <div class="section-header">
+ <div class="section-number">7</div>
+ <h2>Degré de la Lésion</h2>
+ </div>
+
+ <div class="grid-2">
+ <div class="card blue">
+ <h3>Plan Longitudinal</h3>
+ <ul class="clean">
+ <li>Atteinte de tous les segments sous la lésion</li>
+ <li>Lésion ascendante possible (œdème, hématomyélie)</li>
+ <li>Nécrose ischémique progressive</li>
+ </ul>
+ </div>
+ <div class="card green">
+ <h3>Plan Transversal</h3>
+ <ul class="clean">
+ <li><strong>Complète :</strong> absence totale de sensibilité, motricité et fonctions sous la lésion → <em>paralysie flasque</em>, aucun passage neuronal</li>
+ <li><strong>Incomplète :</strong> préservation de certaines fonctions → <em>paralysie spastique ou hyperréflexie</em>, passage neuronal partiel</li>
+ </ul>
+ <div class="highlight green" style="margin-top:0.8rem;font-size:0.82rem">
+ <strong>NB :</strong> Certaines voies inconscientes (ex. proprio-spinales) sont difficiles à tester → prudence dans la classification complète/incomplète.
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- ══════════════════════════════════════
+ 8. ÉCHELLE ASIA
+ ══════════════════════════════════════ -->
+ <section id="asia">
+ <div class="section-header">
+ <div class="section-number">8</div>
+ <h2>Classification ASIA</h2>
+ </div>
+
+ <p style="font-size:0.88rem;color:var(--gray);margin-bottom:1.2rem">American Spinal Injury Association — standard de classification neurologique des lésions médullaires. Teste <strong>23 dermatomes</strong> (sensitif) et <strong>10 myotomes clés</strong> (moteur).</p>
+
+ <div class="asia-grid">
+ <div class="asia-card asia-a">
+ <div class="asia-grade">A</div>
+ <h4>Complète</h4>
+ <p>Aucune fonction motrice ou sensorielle préservée dans les segments sacrés S4–S5</p>
+ </div>
+ <div class="asia-card asia-b">
+ <div class="asia-grade">B</div>
+ <h4>Incomplète Sensitive</h4>
+ <p>Sensibilité préservée sous le niveau neurologique et dans S4–S5 — aucune motricité</p>
+ </div>
+ <div class="asia-card asia-c">
+ <div class="asia-grade">C</div>
+ <h4>Incomplète Motrice</h4>
+ <p>Motricité préservée sous le niveau — majorité des muscles clés &lt; 3/5</p>
+ </div>
+ <div class="asia-card asia-d">
+ <div class="asia-grade">D</div>
+ <h4>Incomplète Motrice</h4>
+ <p>Motricité préservée sous le niveau — majorité des muscles clés ≥ 3/5</p>
+ </div>
+ <div class="asia-card asia-e">
+ <div class="asia-grade">E</div>
+ <h4>Normale</h4>
+ <p>Fonctions motrices et sensitives normales</p>
+ </div>
+ </div>
+
+ <div class="memo" style="margin-top:1.2rem">
+ <span>Cotation motrice ASIA (0–5) :</span><br>
+ 0 = Paralysie totale · 1 = Contraction visible ou palpable · 2 = Mvt actif, pesanteur éliminée<br>
+ 3 = Mvt actif contre pesanteur · 4 = Mvt actif contre résistance partielle<span>5 = Force normale</span>
+ </div>
+ </section>
+
+ <!-- ══════════════════════════════════════
+ 9. COMPLICATIONS
+ ══════════════════════════════════════ -->
+ <section id="complications">
+ <div class="section-header">
+ <div class="section-number">9</div>
+ <h2>Complications</h2>
+ </div>
+
+ <div class="grid-2">
+ <div class="card">
+ <h3>🚽 Urologiques</h3>
+ <div class="tags">
+ <span class="tag">Fistules péno-scrotales</span>
+ <span class="tag">Calculs vésicaux</span>
+ <span class="tag">Hydronéphrose</span>
+ <span class="tag">Dyssynergie vésico-sphinctérienne</span>
+ <span class="tag">Insuffisance rénale</span>
+ </div>
+ <p style="font-size:0.82rem;margin-top:0.7rem;color:var(--gray)">Prévention : entraînement vésical, cathétérismes intermittents/permanents.</p>
+ </div>
+
+ <div class="card blue">
+ <h3>🫀 Vasculaires</h3>
+ <div class="tags">
+ <span class="tag blue">Hypotension orthostatique</span>
+ <span class="tag blue">Thrombose veineuse profonde</span>
+ <span class="tag blue">Crises hypertensives autonomiques</span>
+ </div>
+ <p style="font-size:0.82rem;margin-top:0.7rem;color:var(--gray)">Prévention : verticalisation progressive, mobilisation des membres, attention à l'état général.</p>
+ </div>
+
+ <div class="card green">
+ <h3>🦴 Ostéo-Articulaires</h3>
+ <div class="tags">
+ <span class="tag green">Ostéoporose</span>
+ <span class="tag green">Fractures</span>
+ <span class="tag green">Déformations osseuses</span>
+ <span class="tag green">Calcification hétérotopique</span>
+ </div>
+ <p style="font-size:0.82rem;margin-top:0.7rem;color:var(--gray)">Prévention : mise en charge, positionnement adéquat, mobilisation, compléments alimentaires.</p>
+ </div>
+
+ <div class="card red">
+ <h3>🩹 Téguments</h3>
+ <div class="tags">
+ <span class="tag red">Ulcères de pression / Escarre</span>
+ </div>
+ <ul class="clean" style="margin-top:0.7rem">
+ <li>Facteurs : immobilité, altérations sensorielles, état nutritionnel</li>
+ <li>Sites : occiput, omoplate, coude, sacrum, ischio, talon, malléole</li>
+ </ul>
+ <p style="font-size:0.82rem;margin-top:0.7rem;color:var(--gray)">Prévention : positionnement adéquat, changements de position réguliers, mobilisation.</p>
+ </div>
+ </div>
+ </section>
+
+ <!-- ══════════════════════════════════════
+ 10. ÉPIDÉMIOLOGIE
+ ══════════════════════════════════════ -->
+ <section id="epidemio">
+ <div class="section-header">
+ <div class="section-number">10</div>
+ <h2>Épidémiologie</h2>
+ </div>
+
+ <div class="stat-row">
+ <div class="stat-box"><div class="stat-val">37,6</div><div class="stat-lbl">âge moyen (ans)</div></div>
+ <div class="stat-box"><div class="stat-val">80%</div><div class="stat-lbl">hommes</div></div>
+ <div class="stat-box"><div class="stat-val">48%</div><div class="stat-lbl">accidents de la route</div></div>
+ <div class="stat-box"><div class="stat-val">23%</div><div class="stat-lbl">chutes</div></div>
+ <div class="stat-box"><div class="stat-val">14%</div><div class="stat-lbl">violence</div></div>
+ <div class="stat-box"><div class="stat-val">9%</div><div class="stat-lbl">sport</div></div>
+ </div>
+
+ <h3 style="font-family:'DM Serif Display',serif;font-size:1.05rem;margin:1rem 0 0.8rem;color:var(--dark)">Répartition selon ASIA (depuis 2015)</h3>
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr><th>Classification ASIA</th><th>Type</th><th>%</th></tr>
+ </thead>
+ <tbody>
+ <tr class="blue-row"><td>ASIA B–D</td><td>Tétraplégie incomplète</td><td>~47,4 %</td></tr>
+ <tr class="blue-row"><td>ASIA B–D</td><td>Paraplégie incomplète</td><td>~20,9 %</td></tr>
+ <tr><td>ASIA A</td><td>Paraplégie complète</td><td>~23,1 %</td></tr>
+ <tr class="green-row"><td>ASIA A</td><td>Tétraplégie complète</td><td>~12,3 %</td></tr>
+ </tbody>
+ </table>
+ </div>
+ <p style="font-size:0.78rem;color:var(--gray);margin-top:0.5rem">Source : Centre national de statistiques sur les lésions médullaires, 2005 & données 2024 (USA : ~305 000 personnes vivant avec LM, 18 000 nouveaux cas/an)</p>
+ </section>
+
+ <!-- ══════════════════════════════════════
+ 11. ENTITÉS CLINIQUES NON TRAUMATIQUES
+ ══════════════════════════════════════ -->
+ <section id="entites">
+ <div class="section-header">
+ <div class="section-number">11</div>
+ <h2>Entités Cliniques Non Traumatiques</h2>
+ </div>
+
+ <div class="grid-2">
+ <div class="card">
+ <h3>Hernie Discale</h3>
+ <p style="font-size:0.88rem;color:var(--gray);margin-bottom:0.7rem">Extrusion du noyau pulpeux avec compression radiculaire ou médullaire.</p>
+ <ul class="clean">
+ <li>L3–L4 (racine L4) : douleur région lombaire, parésie quadriceps, réflexe rotulien ↓</li>
+ <li>L4–L5 (racine L5) : douleur face latérale jambe, difficultés marche sur talons, réflexe tibial postérieur ↓</li>
+ </ul>
+ </div>
+
+ <div class="card blue">
+ <h3>Lésion Occupant l'Espace (LOE)</h3>
+ <ul class="clean">
+ <li>Tumeurs médullaires, osseuses ou vasculaires</li>
+ <li>Infiltratives ou compressives</li>
+ <li>Progression lente vs. aiguë</li>
+ </ul>
+ </div>
+
+ <div class="card purple">
+ <h3>Myélite Transverse</h3>
+ <ul class="clean">
+ <li>Processus inflammatoire de la moelle épinière</li>
+ <li>Peut toucher plusieurs segments</li>
+ <li>Début rapide, tableau similaire à une lésion traumatique</li>
+ <li>Cause : auto-immune, infectieuse, paranéoplasique</li>
+ </ul>
+ </div>
+
+ <div class="card green">
+ <h3>Spondylolisthésis</h3>
+ <ul class="clean">
+ <li>Glissement d'une vertèbre sur l'autre</li>
+ <li>Lésion de la moelle et/ou des racines</li>
+ <li>Souvent L4–L5 ou L5–S1</li>
+ </ul>
+ </div>
+
+ <div class="card red">
+ <h3>Myélopathie Cervicale Spondylotique</h3>
+ <ul class="clean">
+ <li>Processus dégénératif de la colonne cervicale</li>
+ <li>Compression médullaire chronique</li>
+ <li>Symptômes progressifs : troubles de la marche, maladresse des mains, troubles sphinctériens</li>
+ </ul>
+ </div>
+
+ <div class="card dark">
+ <h3>Spondylose Lombaire</h3>
+ <ul class="clean">
+ <li>Dégénérescence lombaire avec compression de la moelle/queue de cheval</li>
+ <li>Claudication neurogène</li>
+ <li>Douleurs aggravées en extension (canal rétréci)</li>
+ </ul>
+ </div>
+ </div>
+ </section>
+
+ <!-- ══════════════════════════════════════
+ MÉMO FINAL
+ ══════════════════════════════════════ -->
+ <section>
+ <div class="section-header">
+ <div class="section-number" style="background:var(--dark)">★</div>
+ <h2>Mémo Express — Points Clés à Retenir</h2>
+ </div>
+ <div class="memo">
+<span>ANATOMIE :</span> Moelle = C1 → L1/L2 · Ant = moteur · Post = sensitif · Spinothalamique croise !
+
+<span>SYNDROMES :</span>
+→ Section totale : tout perdu bilatéral
+→ Antérieur : moteur + douleur/T° perdus · proprioception PRÉSERVÉE
+→ Brown-Séquard : moteur + proprioception ipsi · douleur/T° contra
+→ Centro-médullaire: MS &gt; MI atteint · hyperextension cervicale
+→ Cône médullaire : périnée, sphincters, réflexes MI préservés
+
+<span>PHYSIOPATHO :</span> Choc médullaire = flasque + aréflexie · Puis 1er neurone = spasticité/hyperréflexie
+
+<span>ASIA :</span> A = complet · B = sensitif seul · C = moteur &lt;3 · D = moteur ≥3 · E = normal
+
+<span>ÉPIDÉMIO :</span> 80% hommes · âge 37,6 ans · route 48% · Tétra incomplète la plus fréquente
+
+<span>COMPLICATIONS :</span> escarre · TVP · hypotension orthostatique · ostéoporose · calcification hétérotopique
+ </div>
+ </section>
+
+</main>
+
+<footer>
+ <strong>Physiopathologie I</strong>Lésions médullaires · Cláudia Costa, FT, MSc<br>
+ Fiche de révision — pour usage pédagogique
+</footer>
+
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/neuro/lesion-medullaire.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+</body>
+</html>

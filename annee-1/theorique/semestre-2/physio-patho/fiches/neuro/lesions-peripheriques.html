@@ -1,0 +1,1264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Lésions Périphériques — Fiche de révision complète · Cláudia Costa, FT, MSc">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../../assets/css/acces.css">
+<script src="../../../../../../assets/js/acces.js"></script>
+<title>Fiche de Révision — Lésions Périphériques</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../../../assets/css/chrome.css">
+<style>
+ :root {
+ --bg: #161922;
+ --surface: #1a1d2a;
+ --orange: #ff8fa3;
+ --orange-light: #ff8fa3;
+ --orange-pale: #ff8fa3;
+ --dark: #0f1117;
+ --mid: #ff8fa3;
+ --muted: #6a7388;
+ --green: #ff6b9d;
+ --green-pale: #ff6b9d;
+ --red: #ff5c6b;
+ --red-pale: #ff8fa3;
+ --blue: #f472b6;
+ --blue-pale: #ff8fa3;
+ --border: #3a4060;
+ --shadow: 0 4px 24px rgba(255,107,157,0.10);
+ }
+
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+
+ body {
+ font-family: 'DM Sans', sans-serif;
+ background: var(--bg);
+ color: var(--dark);
+ min-height: 100vh;
+ }
+
+ /* HERO */
+ .hero {
+ background: var(--dark);
+ padding: 60px 40px 50px;
+ position: relative;
+ overflow: hidden;
+ }
+ .hero::before {
+ content: '';
+ position: absolute;
+ inset: 0;
+ background: radial-gradient(ellipse at 80% 20%, rgba(255,107,157,0.25) 0%, transparent 60%);
+ }
+ .hero-tag {
+ font-family: 'DM Mono', monospace;
+ font-size: 11px;
+ letter-spacing: 3px;
+ text-transform: uppercase;
+ color: var(--orange-light);
+ margin-bottom: 16px;
+ }
+ .hero h1 {
+ font-family: 'DM Serif Display', serif;
+ font-size: clamp(32px, 5vw, 52px);
+ color: var(--surface);
+ line-height: 1.1;
+ max-width: 700px;
+ position: relative;
+ }
+ .hero h1 em {
+ color: var(--orange-light);
+ font-style: italic;
+ }
+ .hero-meta {
+ margin-top: 20px;
+ color: var(--muted);
+ font-size: 14px;
+ font-weight: 300;
+ position: relative;
+ }
+
+ /* NAV */
+ .toc {
+ background: var(--surface);
+ border-bottom: 2px solid var(--orange);
+ padding: 18px 40px;
+ display: flex;
+ flex-wrap: wrap;
+ gap: 8px 24px;
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+ }
+ .toc a {
+ font-size: 13px;
+ font-weight: 500;
+ color: var(--mid);
+ text-decoration: none;
+ transition: color .2s;
+ white-space: nowrap;
+ }
+ .toc a:hover { color: var(--orange); }
+
+ /* LAYOUT */
+ .container {
+ max-width: 1100px;
+ margin: 0 auto;
+ padding: 48px 32px;
+ }
+
+ /* SECTION */
+ .section {
+ margin-bottom: 64px;
+ animation: fadeUp .5s ease both;
+ }
+ @keyframes fadeUp {
+ from { opacity:0; transform:translateY(16px); }
+ to { opacity:1; transform:translateY(0); }
+ }
+
+ .section-header {
+ display: flex;
+ align-items: center;
+ gap: 16px;
+ margin-bottom: 28px;
+ padding-bottom: 14px;
+ border-bottom: 2px solid var(--border);
+ }
+ .section-num {
+ font-family: 'DM Mono', monospace;
+ font-size: 12px;
+ color: var(--surface);
+ background: var(--orange);
+ padding: 4px 10px;
+ border-radius: 4px;
+ flex-shrink: 0;
+ }
+ .section-header h2 {
+ font-family: 'DM Serif Display', serif;
+ font-size: 26px;
+ color: var(--dark);
+ }
+
+ /* CARDS GRID */
+ .cards {
+ display: grid;
+ gap: 16px;
+ }
+ .cards-2 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+ .cards-3 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+
+ .card {
+ background: var(--surface);
+ border: 1.5px solid var(--border);
+ border-radius: 12px;
+ padding: 22px 24px;
+ box-shadow: var(--shadow);
+ transition: transform .2s, box-shadow .2s;
+ }
+ .card:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(255,107,157,0.14); }
+
+ .card-title {
+ font-family: 'DM Serif Display', serif;
+ font-size: 17px;
+ color: var(--orange);
+ margin-bottom: 12px;
+ display: flex;
+ align-items: center;
+ gap: 8px;
+ }
+ .card-title .icon { font-size: 18px; }
+
+ .card ul {
+ list-style: none;
+ display: flex;
+ flex-direction: column;
+ gap: 7px;
+ }
+ .card ul li {
+ font-size: 14px;
+ line-height: 1.5;
+ padding-left: 16px;
+ position: relative;
+ color: var(--mid);
+ }
+ .card ul li::before {
+ content: '→';
+ position: absolute;
+ left: 0;
+ color: var(--orange-light);
+ font-size: 12px;
+ }
+
+ /* TYPE CARDS — lésion types */
+ .lesion-grid {
+ display: grid;
+ gap: 12px;
+ }
+ .lesion-card {
+ background: var(--surface);
+ border-radius: 10px;
+ border-left: 5px solid var(--orange);
+ padding: 16px 20px;
+ box-shadow: var(--shadow);
+ }
+ .lesion-card.green { border-left-color: var(--green); }
+ .lesion-card.blue { border-left-color: var(--blue); }
+ .lesion-card.red { border-left-color: var(--red); }
+
+ .lesion-card h3 {
+ font-family: 'DM Serif Display', serif;
+ font-size: 16px;
+ margin-bottom: 8px;
+ }
+ .lesion-card.green h3 { color: var(--green); }
+ .lesion-card.blue h3 { color: var(--blue); }
+ .lesion-card.red h3 { color: var(--red); }
+ .lesion-card h3 span { color: var(--muted); font-size: 12px; font-family: 'DM Mono', monospace; margin-left: 8px; }
+
+ .lesion-card p, .lesion-card li {
+ font-size: 13.5px;
+ color: var(--mid);
+ line-height: 1.55;
+ }
+ .lesion-card ul { list-style: disc; padding-left: 18px; margin-top: 6px; }
+ .lesion-card .recovery {
+ display: inline-block;
+ margin-top: 10px;
+ font-size: 12px;
+ font-family: 'DM Mono', monospace;
+ background: var(--orange-pale);
+ color: var(--orange);
+ padding: 3px 10px;
+ border-radius: 20px;
+ }
+ .lesion-card.green .recovery { background: var(--green-pale); color: var(--green); }
+ .lesion-card.blue .recovery { background: var(--blue-pale); color: var(--blue); }
+ .lesion-card.red .recovery { background: var(--red-pale); color: var(--red); }
+
+ /* TABLE */
+ .table-wrap {
+ overflow-x: auto;
+ border-radius: 12px;
+ box-shadow: var(--shadow);
+ border: 1.5px solid var(--border);
+ }
+ table {
+ width: 100%;
+ border-collapse: collapse;
+ background: var(--surface);
+ font-size: 13.5px;
+ }
+ th {
+ background: var(--dark);
+ color: var(--surface);
+ padding: 12px 16px;
+ text-align: left;
+ font-weight: 500;
+ font-size: 12px;
+ letter-spacing: .5px;
+ text-transform: uppercase;
+ }
+ th:first-child { border-radius: 10px 0 0 0; }
+ th:last-child { border-radius: 0 10px 0 0; }
+ td {
+ padding: 11px 16px;
+ border-bottom: 1px solid var(--border);
+ color: var(--mid);
+ vertical-align: top;
+ }
+ tr:last-child td { border-bottom: none; }
+ tr:nth-child(even) td { background: #ff8fa3; }
+ td:first-child { font-weight: 600; color: var(--orange); font-family: 'DM Mono', monospace; font-size: 12px; }
+
+ /* HIGHLIGHT BOX */
+ .highlight {
+ background: var(--orange-pale);
+ border: 1.5px solid var(--orange-light);
+ border-radius: 10px;
+ padding: 18px 22px;
+ margin: 16px 0;
+ font-size: 14px;
+ color: var(--mid);
+ line-height: 1.6;
+ }
+ .highlight strong { color: var(--orange); }
+
+ .highlight-blue {
+ background: var(--blue-pale);
+ border-color: var(--blue);
+ }
+ .highlight-blue strong { color: var(--blue); }
+
+ .highlight-green {
+ background: var(--green-pale);
+ border-color: var(--green);
+ }
+ .highlight-green strong { color: var(--green); }
+
+ /* PROCESS STEPS */
+ .steps {
+ display: flex;
+ flex-direction: column;
+ gap: 0;
+ position: relative;
+ }
+ .steps::before {
+ content: '';
+ position: absolute;
+ left: 20px;
+ top: 40px;
+ bottom: 40px;
+ width: 2px;
+ background: var(--border);
+ }
+ .step {
+ display: flex;
+ gap: 20px;
+ align-items: flex-start;
+ padding: 14px 0;
+ }
+ .step-num {
+ width: 40px;
+ height: 40px;
+ background: var(--orange);
+ color: white;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-family: 'DM Mono', monospace;
+ font-size: 14px;
+ font-weight: 500;
+ flex-shrink: 0;
+ position: relative;
+ z-index: 1;
+ }
+ .step-content h4 {
+ font-weight: 600;
+ color: var(--dark);
+ margin-bottom: 4px;
+ font-size: 15px;
+ }
+ .step-content p { font-size: 13.5px; color: var(--mid); line-height: 1.55; }
+
+ /* TAGS */
+ .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+ .tag {
+ font-size: 12px;
+ padding: 4px 12px;
+ border-radius: 20px;
+ font-weight: 500;
+ }
+ .tag-orange { background: var(--orange-pale); color: var(--orange); }
+ .tag-green { background: var(--green-pale); color: var(--green); }
+ .tag-blue { background: var(--blue-pale); color: var(--blue); }
+ .tag-red { background: var(--red-pale); color: var(--red); }
+
+ /* MNEMONIC */
+ .mnemonic {
+ background: var(--dark);
+ color: var(--surface);
+ border-radius: 10px;
+ padding: 20px 24px;
+ margin: 16px 0;
+ }
+ .mnemonic .label {
+ font-family: 'DM Mono', monospace;
+ font-size: 10px;
+ letter-spacing: 2px;
+ text-transform: uppercase;
+ color: var(--orange-light);
+ margin-bottom: 10px;
+ }
+ .mnemonic .letters {
+ display: flex;
+ gap: 12px;
+ flex-wrap: wrap;
+ }
+ .mnemonic .letter-item { text-align: center; }
+ .mnemonic .letter-item .letter {
+ font-family: 'DM Serif Display', serif;
+ font-size: 28px;
+ color: var(--orange-light);
+ display: block;
+ }
+ .mnemonic .letter-item .word {
+ font-size: 11px;
+ color: #e8eaf0;
+ display: block;
+ margin-top: 2px;
+ }
+
+ /* PATHOLOGIES */
+ .patho-block {
+ background: var(--surface);
+ border: 1.5px solid var(--border);
+ border-radius: 12px;
+ overflow: hidden;
+ box-shadow: var(--shadow);
+ margin-bottom: 20px;
+ }
+ .patho-header {
+ background: var(--orange);
+ padding: 14px 22px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ }
+ .patho-header h3 {
+ font-family: 'DM Serif Display', serif;
+ color: white;
+ font-size: 18px;
+ }
+ .patho-header .badge {
+ font-family: 'DM Mono', monospace;
+ font-size: 11px;
+ background: rgba(255,255,255,0.25);
+ color: white;
+ padding: 3px 10px;
+ border-radius: 12px;
+ }
+ .patho-body {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ gap: 0;
+ }
+ .patho-col {
+ padding: 18px 22px;
+ border-right: 1px solid var(--border);
+ }
+ .patho-col:last-child { border-right: none; }
+ .patho-col h4 {
+ font-size: 11px;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ color: var(--muted);
+ font-family: 'DM Mono', monospace;
+ margin-bottom: 10px;
+ }
+ .patho-col ul { list-style: none; }
+ .patho-col li {
+ font-size: 13.5px;
+ color: var(--mid);
+ padding: 3px 0 3px 14px;
+ position: relative;
+ line-height: 1.5;
+ }
+ .patho-col li::before { content: '•'; position: absolute; left: 0; color: var(--orange-light); }
+
+ /* COMPARISON TABLE — paralysie périphérique vs centrale */
+ .compare-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 16px;
+ }
+ .compare-col {
+ background: var(--surface);
+ border-radius: 10px;
+ overflow: hidden;
+ border: 1.5px solid var(--border);
+ box-shadow: var(--shadow);
+ }
+ .compare-col-header {
+ padding: 12px 18px;
+ font-weight: 600;
+ font-size: 14px;
+ color: white;
+ }
+ .compare-col-header.orange { background: var(--orange); }
+ .compare-col-header.blue { background: var(--blue); }
+ .compare-col ul { padding: 14px 18px; list-style: none; }
+ .compare-col li {
+ font-size: 13.5px;
+ color: var(--mid);
+ padding: 4px 0 4px 14px;
+ position: relative;
+ border-bottom: 1px solid var(--border);
+ line-height: 1.5;
+ }
+ .compare-col li:last-child { border-bottom: none; }
+ .compare-col li::before { content: '▸'; position: absolute; left: 0; color: var(--muted); font-size: 10px; top: 7px; }
+
+ /* FOOTER */
+ footer {
+ background: var(--dark);
+ color: var(--muted);
+ text-align: center;
+ padding: 28px;
+ font-size: 13px;
+ margin-top: 32px;
+ }
+ footer span { color: var(--orange-light); }
+
+ @media (max-width: 600px) {
+ .toc { padding: 12px 16px; }
+ .container { padding: 32px 16px; }
+ .hero { padding: 40px 20px; }
+ .compare-grid { grid-template-columns: 1fr; }
+ .patho-body { grid-template-columns: 1fr; }
+ .patho-col { border-right: none; border-bottom: 1px solid var(--border); }
+ }
+</style>
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/physio-patho.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-theme.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
+</head>
+<body>
+<a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
+<div class="page-toggle"><div class="pt-inner"><a href="../../qcm/neuro/lesions-peripheriques.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<!-- HERO -->
+<div class="hero">
+ <div class="hero-tag">Physiopathologie I · 13/03/2025</div>
+ <h1>Lésions <em>Périphériques</em></h1>
+ <p class="hero-meta">Fiche de révision complète · Cláudia Costa, FT, MSc</p>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<nav class="toc">
+ <a href="#anatomie">1. Anatomophysiologie</a>
+ <a href="#lesion">2. Lésion & Types</a>
+ <a href="#regeneration">3. Régénération</a>
+ <a href="#classification">4. Classification</a>
+ <a href="#paralysie">5. Paralysie Faciale</a>
+ <a href="#polyneuropathies">6. Polyneuropathies</a>
+ <a href="#guillain">7. Guillain-Barré</a>
+ <a href="#diabetique">8. Pol. Diabétique</a>
+ <a href="#plexus">9. Lésions du Plexus</a>
+</nav>
+
+<div class="container">
+
+ <!-- ===== 1. ANATOMOPHYSIOLOGIE ===== -->
+ <section class="section" id="anatomie">
+ <div class="section-header">
+ <span class="section-num">01</span>
+ <h2>Anatomophysiologie du Système Nerveux</h2>
+ </div>
+
+ <div class="cards cards-2">
+ <div class="card">
+ <div class="card-title"><span class="icon">⬆️</span> Voies Ascendantes (Sensitives)</div>
+ <ul>
+ <li>Postérieures / Dorsales</li>
+ <li>Périphérique → Central</li>
+ <li>Nerfs afférents / sensoriels</li>
+ <li>Peau et organes des sens</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="icon">⬇️</span> Voies Descendantes (Motrices)</div>
+ <ul>
+ <li>Antérieures / Ventrales</li>
+ <li>Central → Périphérique</li>
+ <li>Nerfs efférents / moteurs</li>
+ <li>Somatiques → Muscles</li>
+ <li>Autonomes / végétatifs → Glandes</li>
+ </ul>
+ </div>
+ </div>
+
+ <br>
+ <div class="cards cards-3">
+ <div class="card">
+ <div class="card-title"><span class="icon">🧬</span> Structure du Nerf</div>
+ <ul>
+ <li><strong>Axone</strong> — conducteur principal</li>
+ <li><strong>Gaine de myéline</strong> — isolation électrique</li>
+ <li><strong>Cellule de Schwann</strong> — myélinisation (SNP)</li>
+ <li><strong>Endonèvre</strong> — entoure chaque fibre</li>
+ <li><strong>Périnèvre</strong> — entoure les faisceaux</li>
+ <li><strong>Épinèvre</strong> — entoure le nerf entier</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="icon">⚡</span> Flux Nerveux</div>
+ <ul>
+ <li>Dépolarisation → potentiel d'action</li>
+ <li>Nœuds de Ranvier → conduction saltatoire</li>
+ <li>Myéline intacte → ~400 km/h</li>
+ <li>Myéline détruite → ~4 km/h</li>
+ <li>Transmission chimique via synapses</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="icon">🔌</span> SNP — Systèmes</div>
+ <ul>
+ <li><strong>Somatique</strong> — neurone unique, axone très myélinisé → muscle squelettique (ACh)</li>
+ <li><strong>Sympathique</strong> — 2 neurones, axone pré-ganglionnaire peu myélinisé (NE)</li>
+ <li><strong>Parasympathique</strong> — 2 neurones, post-ganglionnaire non myélinisé (ACh)</li>
+ </ul>
+ </div>
+ </div>
+ </section>
+
+ <!-- ===== 2. LÉSION & TYPES ===== -->
+ <section class="section" id="lesion">
+ <div class="section-header">
+ <span class="section-num">02</span>
+ <h2>Lésion — Physiopathologie & Types</h2>
+ </div>
+
+ <div class="highlight">
+ <strong>Définition :</strong> La neuropathie périphérique est un trouble fonctionnel ou organique du SNP survenant en raison d'une dégénérescence ou d'un traumatisme du nerf périphérique qui innerve les extrémités → <strong>perte de sensation, faiblesse musculaire, atrophie.</strong>
+ </div>
+
+ <div class="cards cards-2" style="margin:20px 0;">
+ <div class="card">
+ <div class="card-title">📋 Étiologie</div>
+ <ul>
+ <li>Traumatique</li>
+ <li>Dégénérative</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title">⚙️ Mécanismes</div>
+ <ul>
+ <li>Ischémie</li>
+ <li>Traction</li>
+ <li>Compression</li>
+ <li>Lacération</li>
+ <li>Brûlure</li>
+ </ul>
+ </div>
+ </div>
+
+ <h3 style="font-family:'DM Serif Display',serif; color:var(--mid); margin-bottom:16px; font-size:20px;">Classification de Seddon (1948) & Sunderland (1945)</h3>
+
+ <div class="lesion-grid">
+ <div class="lesion-card green">
+ <h3>Ischémie Transitoire <span>— Stade 0</span></h3>
+ <p>Compression neurale aiguë avec anoxie endonévrale aiguë. Altérations sensitives (paresthésies) et motrices <strong>transitoires</strong>.</p>
+ <span class="recovery">Récupération en ~10 minutes</span>
+ </div>
+
+ <div class="lesion-card green">
+ <h3>Neuropraxie <span>Seddon I / Sunderland I</span></h3>
+ <ul>
+ <li>Compression neurale chronique</li>
+ <li>Perte transitoire de conductivité électrique <strong>sans perte de continuité</strong></li>
+ <li>Préservation anatomique de tous les éléments</li>
+ <li>Perte temporaire de la fonction <strong>motrice</strong>, sensibilité généralement préservée ± dysesthésies</li>
+ </ul>
+ <span class="recovery">Récupération en quelques jours à semaines</span>
+ </div>
+
+ <div class="lesion-card blue">
+ <h3>Axonotmèse <span>Seddon II / Sunderland II-IV</span></h3>
+ <ul>
+ <li>Interruption segmentaire de l'axone</li>
+ <li>Perte de conduction</li>
+ <li>Tubes neuraux (endonèvre) intacts</li>
+ <li><strong>Dégénérescence de Waller</strong> en partie distale</li>
+ <li>Régénération axonale : <strong>1–2 mm/jour</strong> (ralentit avec la distance au corps cellulaire)</li>
+ </ul>
+ <span class="recovery">Récupération en quelques semaines à mois</span>
+ </div>
+
+ <div class="lesion-card red">
+ <h3>Neurotmèse <span>Seddon III / Sunderland V</span></h3>
+ <ul>
+ <li>Division complète du nerf</li>
+ <li>Tubes neuraux détruits</li>
+ <li>Perte de conduction totale</li>
+ <li>Lors de la régénération : formation d'un <strong>névrome</strong> (fibres régénératives + cellules de Schwann + fibroblastes)</li>
+ <li>Fonction peut être adéquate mais <strong>jamais normale</strong>, même après chirurgie</li>
+ </ul>
+ <span class="recovery">Récupération incomplète — intervention chirurgicale souvent nécessaire</span>
+ </div>
+ </div>
+
+ <div class="highlight" style="margin-top:20px;">
+ <strong>Dégénérescence de Waller :</strong> Processus de dégénérescence des tubes neuraux en aval de la lésion. Plus la régénération prend de temps, plus il sera difficile de récupérer le flux neural.
+ </div>
+ </section>
+
+ <!-- ===== 3. RÉGÉNÉRATION ===== -->
+ <section class="section" id="regeneration">
+ <div class="section-header">
+ <span class="section-num">03</span>
+ <h2>Régénération Axonale</h2>
+ </div>
+
+ <div class="steps">
+ <div class="step">
+ <div class="step-num">1</div>
+ <div class="step-content">
+ <h4>Réponse du corps cellulaire</h4>
+ <p>Formation de nouvelles ramifications/pousses (germination). Changement central de la cellule.</p>
+ </div>
+ </div>
+ <div class="step">
+ <div class="step-num">2</div>
+ <div class="step-content">
+ <h4>Allongement des nouvelles ramifications</h4>
+ <p>Cône de croissance guidé par les cellules de Schwann et les facteurs chimiques (angioneurines). Division des cellules de Schwann.</p>
+ </div>
+ </div>
+ <div class="step">
+ <div class="step-num">3</div>
+ <div class="step-content">
+ <h4>Cessation & Synaptogenèse</h4>
+ <p>Arrêt de l'allongement axonal et formation de nouvelles synapses. Remyélinisation progressive.</p>
+ </div>
+ </div>
+ </div>
+
+ <div class="highlight-blue" style="margin-top:20px;">
+ <strong>Complications de la régénération :</strong> Fibroses · Synkinésies · Non-régénération (facteurs extrinsèques) · Plasticité mal dirigée
+ </div>
+
+ <div class="highlight" style="margin-top:12px;">
+ <strong>Synkinésies :</strong> Séquelles attribuées à l'hyperexcitabilité nucléaire ou à la régénération anormale des fibres nerveuses. Mouvement involontaire associé à un mouvement volontaire — <strong>mauvais pronostic</strong>, récupération non totale.
+ </div>
+ </section>
+
+ <!-- ===== 4. CLASSIFICATION ===== -->
+ <section class="section" id="classification">
+ <div class="section-header">
+ <span class="section-num">04</span>
+ <h2>Classification des Lésions Périphériques</h2>
+ </div>
+
+ <div class="cards cards-3">
+ <div class="card">
+ <div class="card-title"><span class="icon">🎯</span> Mononeuropathies</div>
+ <ul>
+ <li>Lésions affectant des <strong>nerfs isolés</strong> (crâniens ou rachidiens)</li>
+ <li>Ex : paralysie faciale, névralgie du trijumeau, syndrome du canal carpien, neuropathie ulnaire, neuropathie péronière</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="icon">🌐</span> Polyneuropathies</div>
+ <ul>
+ <li>Atteinte <strong>symétrique, distale et bilatérale</strong> du SNP</li>
+ <li>Polyradiculopathie si racines spinales atteintes</li>
+ <li>Ex : Guillain-Barré, pol. diabétique, maladie de Lyme</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="icon">🕸️</span> Lésions des Plexus</div>
+ <ul>
+ <li>Atteinte d'un <strong>groupe fonctionnel</strong> de nerfs périphériques</li>
+ <li>Ex : plexopathie brachiale, plexopathie lombo-sacrée</li>
+ </ul>
+ </div>
+ </div>
+ </section>
+
+ <!-- ===== 5. PARALYSIE FACIALE ===== -->
+ <section class="section" id="paralysie">
+ <div class="section-header">
+ <span class="section-num">05</span>
+ <h2>Paralysie Faciale — VII<sup>e</sup> paire crânienne</h2>
+ </div>
+
+ <div class="highlight">
+ <strong>Définition :</strong> Paralysie des muscles du visage, unilatérale ou bilatérale. Interruption temporaire ou non des mouvements de la musculature faciale. Peut être <strong>périphérique</strong> ou <strong>centrale</strong>.
+ </div>
+
+ <h3 style="font-family:'DM Serif Display',serif; font-size:18px; color:var(--mid); margin:20px 0 12px;">Fonctions du nerf facial (VII)</h3>
+ <div class="cards cards-3" style="margin-bottom:20px;">
+ <div class="card">
+ <div class="card-title">👅 Sensorielle</div>
+ <ul>
+ <li>Papilles gustatives — 2/3 antérieurs de la langue</li>
+ <li>Palais, oreille externe, angle de la mandibule</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title">💪 Motrice</div>
+ <ul>
+ <li>Majeure partie des muscles faciaux</li>
+ <li>Muscle stapédien</li>
+ <li>Sans fuseaux neuromusculaires</li>
+ <li>Petites unités motrices</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title">🫗 Parasympathique</div>
+ <ul>
+ <li>Glandes salivaires sous-maxillaires et sublinguales</li>
+ <li>Glande lacrymale</li>
+ <li>Glandes de la cavité nasale et du palais</li>
+ </ul>
+ </div>
+ </div>
+
+ <h3 style="font-family:'DM Serif Display',serif; font-size:18px; color:var(--mid); margin:20px 0 12px;">Périphérique vs Centrale</h3>
+ <div class="compare-grid">
+ <div class="compare-col">
+ <div class="compare-col-header orange">Paralysie Périphérique</div>
+ <ul>
+ <li>Lésion du VII<sup>e</sup> nerf crânien</li>
+ <li>Du même côté que la paralysie</li>
+ <li>Touche TOUT le visage (supérieur + inférieur)</li>
+ <li>Incapacité à fermer l'œil (lagophtalmie)</li>
+ <li>Perte du goût (2/3 antérieurs de la langue)</li>
+ </ul>
+ </div>
+ <div class="compare-col">
+ <div class="compare-col-header blue">Paralysie Centrale</div>
+ <ul>
+ <li>Lésion au-dessus du noyau du VII</li>
+ <li>Endommage le faisceau pyramidal du cortex</li>
+ <li>Touche surtout la partie <strong>inférieure</strong> du visage</li>
+ <li>Front épargné (innervation bilatérale)</li>
+ <li>Souvent associée à un AVC</li>
+ </ul>
+ </div>
+ </div>
+
+ <h3 style="font-family:'DM Serif Display',serif; font-size:18px; color:var(--mid); margin:20px 0 12px;">Étiologies</h3>
+ <div class="tags">
+ <span class="tag tag-orange">Congénitale</span>
+ <span class="tag tag-red">Traumatique</span>
+ <span class="tag tag-blue">Neurologique</span>
+ <span class="tag tag-orange">Virale (zona, herpès)</span>
+ <span class="tag tag-green">Bactérienne (Lyme)</span>
+ <span class="tag tag-blue">Métabolique</span>
+ <span class="tag tag-red">Idiopathique (Bell)</span>
+ </div>
+
+ <div class="highlight" style="margin-top:16px;">
+ <strong>Cause :</strong> Pas encore totalement connue. Traitement = guérison naturelle ou intervention chirurgicale selon l'étiologie.
+ </div>
+
+ <h3 style="font-family:'DM Serif Display',serif; font-size:18px; color:var(--mid); margin:20px 0 12px;">Traitement</h3>
+ <div class="cards cards-3">
+ <div class="card">
+ <div class="card-title">🏥 Médical</div>
+ <ul>
+ <li>Corticoïdes (anti-inflammatoires)</li>
+ <li>Antiviraux si origine virale</li>
+ <li>Décompression neurale chirurgicale</li>
+ <li>Anastomose hypoglosse-facial</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title">🤲 Physiothérapie</div>
+ <ul>
+ <li>Rééducation neuromusculaire faciale</li>
+ <li>Biofeedback</li>
+ <li>Massage facial</li>
+ <li>Exercices de mimique</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title">✨ Esthétique & Chirurgie</div>
+ <ul>
+ <li>Toxine botulique (syncinésies)</li>
+ <li>Chirurgie reconstructive statique</li>
+ <li>Vêtements / coupe de cheveux adaptés</li>
+ </ul>
+ </div>
+ </div>
+ </section>
+
+ <!-- ===== 6. POLYNEUROPATHIES ===== -->
+ <section class="section" id="polyneuropathies">
+ <div class="section-header">
+ <span class="section-num">06</span>
+ <h2>Polyneuropathies</h2>
+ </div>
+
+ <div class="highlight">
+ <strong>Définition :</strong> Surviennent lorsque des maladies provoquent une altération <strong>symétrique, distale et bilatérale</strong> de la fonction des nerfs périphériques. Apparition insidieuse ou soudaine.
+ </div>
+
+ <div class="table-wrap" style="margin-top:20px;">
+ <table>
+ <thead>
+ <tr>
+ <th>Type</th>
+ <th>Exemple</th>
+ <th>Mécanisme principal</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Héréditaire / Dégénérative</td>
+ <td>Amyloïdose familiale (paramyloïdose)</td>
+ <td>Dépôt de protéines amyloïdes dans les nerfs</td>
+ </tr>
+ <tr>
+ <td>Infectieuse</td>
+ <td>Maladie de Lyme</td>
+ <td>Invasion bactérienne (Borrelia)</td>
+ </tr>
+ <tr>
+ <td>Neurotoxique</td>
+ <td>Médicaments (chimiothérapie)</td>
+ <td>Toxicité directe sur les fibres nerveuses</td>
+ </tr>
+ <tr>
+ <td>Auto-immune</td>
+ <td>Guillain-Barré</td>
+ <td>Attaque des cellules de Schwann</td>
+ </tr>
+ <tr>
+ <td>Métabolique</td>
+ <td>Polyneuropathie diabétique</td>
+ <td>Hyperglycémie chronique → lésions vasculaires et axonales</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </section>
+
+ <!-- ===== 7. GUILLAIN-BARRÉ ===== -->
+ <section class="section" id="guillain">
+ <div class="section-header">
+ <span class="section-num">07</span>
+ <h2>Syndrome de Guillain-Barré</h2>
+ </div>
+
+ <div class="patho-block">
+ <div class="patho-header" style="background:#2563a8;">
+ <h3>Guillain-Barré</h3>
+ <span class="badge">Maladie auto-immune</span>
+ </div>
+ <div class="patho-body">
+ <div class="patho-col">
+ <h4>Physiopathologie</h4>
+ <ul>
+ <li>Attaque des cellules de Schwann (SNP)</li>
+ <li>Démyélinisation → ralentissement/blocage de la conduction</li>
+ <li>Associée à un épisode infectieux préalable (↑ activité immunitaire)</li>
+ </ul>
+ </div>
+ <div class="patho-col">
+ <h4>Épidémiologie</h4>
+ <ul>
+ <li>1 cas / 100 000 habitants</li>
+ <li>30% des patients présentent des séquelles</li>
+ <li>Tous âges confondus</li>
+ </ul>
+ </div>
+ <div class="patho-col">
+ <h4>Clinique</h4>
+ <ul>
+ <li>Défaillance musculaire rapide</li>
+ <li>Ascendante (pieds → tronc → bras)</li>
+ <li>Paresthésies membres sup. & inf.</li>
+ <li>Perte des réflexes</li>
+ <li>⚠️ Muscles respiratoires → insuffisance respiratoire → ventilation</li>
+ </ul>
+ </div>
+ <div class="patho-col">
+ <h4>Traitement</h4>
+ <ul>
+ <li>Physiothérapie (rééducation)</li>
+ <li>Immunoglobulines IV</li>
+ <li>Plasmaphérèse</li>
+ <li>Corticoïdes</li>
+ <li>Soins intensifs si atteinte respiratoire</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- ===== 8. POL. DIABÉTIQUE ===== -->
+ <section class="section" id="diabetique">
+ <div class="section-header">
+ <span class="section-num">08</span>
+ <h2>Polyneuropathie Diabétique</h2>
+ </div>
+
+ <div class="highlight">
+ <strong>Caractéristique :</strong> Neuropathie <strong>sensitivo-motrice symétrique distale</strong>. Très fréquente chez les diabétiques.
+ </div>
+
+ <h3 style="font-family:'DM Serif Display',serif; font-size:18px; color:var(--mid); margin:20px 0 12px;">Physiopathologie — cascade de lésions</h3>
+
+ <div class="steps">
+ <div class="step">
+ <div class="step-num">1</div>
+ <div class="step-content">
+ <h4>Fragilité vasculaire distale</h4>
+ <p>Hyperglycémie chronique → altérations des vaisseaux sanguins périphériques (microangiopathie).</p>
+ </div>
+ </div>
+ <div class="step">
+ <div class="step-num">2</div>
+ <div class="step-content">
+ <h4>Processus ischémique</h4>
+ <p>Ischémie secondaire à la microangiopathie → manque d'oxygène et de nutriments pour les nerfs.</p>
+ </div>
+ </div>
+ <div class="step">
+ <div class="step-num">3</div>
+ <div class="step-content">
+ <h4>Modifications des protéines structurelles</h4>
+ <p>Glycation des protéines nerveuses due à l'hyperglycémie chronique.</p>
+ </div>
+ </div>
+ <div class="step">
+ <div class="step-num">4</div>
+ <div class="step-content">
+ <h4>Excès de radicaux libres</h4>
+ <p>Métabolisme glucidique altéré → stress oxydatif → lésions cellulaires.</p>
+ </div>
+ </div>
+ <div class="step">
+ <div class="step-num">5</div>
+ <div class="step-content">
+ <h4>Dégénérescence axonale + Démyélinisation secondaire</h4>
+ <p>Résultat final : perte des fibres nerveuses → déficits sensitifs et moteurs distaux.</p>
+ </div>
+ </div>
+ </div>
+
+ <div class="highlight" style="margin-top:16px; background:var(--red-pale); border-color:var(--red);">
+ <strong style="color:var(--red);">Complication grave :</strong> Nécrose distale et amputation possible (pied diabétique). Surveillance rigoureuse des pieds indispensable.
+ </div>
+
+ <div class="cards cards-3" style="margin-top:16px;">
+ <div class="card">
+ <div class="card-title">🤲 Physiothérapie</div>
+ <ul><li>Rééducation sensitivo-motrice</li><li>Balnéothérapie</li><li>Prévention des chutes</li></ul>
+ </div>
+ <div class="card">
+ <div class="card-title">💊 Médicaments</div>
+ <ul><li>Contrôle glycémique strict</li><li>Antalgiques neuropathiques</li><li>Antioxydants</li></ul>
+ </div>
+ <div class="card">
+ <div class="card-title">😴 Repos</div>
+ <ul><li>Décharge des zones atteintes</li><li>Orthèses de protection</li></ul>
+ </div>
+ </div>
+ </section>
+
+ <!-- ===== 9. LÉSION DU PLEXUS ===== -->
+ <section class="section" id="plexus">
+ <div class="section-header">
+ <span class="section-num">09</span>
+ <h2>Lésions du Plexus Brachial</h2>
+ </div>
+
+ <div class="highlight">
+ <strong>Plexopathie :</strong> Atteinte d'un groupe fonctionnel de nerfs périphériques, par entités cliniques ou traumatisme.
+ </div>
+
+ <div class="patho-block" style="margin-top:20px;">
+ <div class="patho-header" style="background:#3d7a5a;">
+ <h3>Plexus Brachial</h3>
+ <span class="badge">C5 · C6 · C7 · C8 · T1</span>
+ </div>
+ <div class="patho-body">
+ <div class="patho-col">
+ <h4>Formation</h4>
+ <ul>
+ <li>Branches antérieures de C5, C6, C7, C8 et T1</li>
+ <li>Troncs → Divisions → Faisceaux → Nerfs terminaux</li>
+ </ul>
+ </div>
+ <div class="patho-col">
+ <h4>Localisation</h4>
+ <ul>
+ <li>Latéral à la colonne cervicale</li>
+ <li>Entre scalènes antérieur et moyen</li>
+ <li>Postérieur au sterno-cléido-mastoïdien</li>
+ <li>Derrière la clavicule → accompagne l'artère axillaire</li>
+ </ul>
+ </div>
+ <div class="patho-col">
+ <h4>Causes</h4>
+ <ul>
+ <li>Traumatisme (accident, traction à la naissance)</li>
+ <li>Maladie auto-immune (amyotrophie neurale)</li>
+ <li>Tumeur / compression</li>
+ </ul>
+ </div>
+ <div class="patho-col">
+ <h4>Traitement</h4>
+ <ul>
+ <li>Physiothérapie</li>
+ <li>Transposition / décompression neurale</li>
+ <li>Chirurgie reconstructive statique</li>
+ <li>Greffe nerveuse</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+
+ <div class="highlight-blue" style="margin-top:16px;">
+ <strong>Manifestations :</strong> Troubles moteurs et sensitifs au niveau des extrémités ou du trajet neural du plexus, selon le <strong>niveau</strong> et la <strong>pathogenèse</strong> de la lésion.
+ </div>
+
+ <div class="table-wrap" style="margin-top:20px;">
+ <table>
+ <thead>
+ <tr>
+ <th>Niveau</th>
+ <th>Tronc concerné</th>
+ <th>Déficit principal</th>
+ <th>Nom clinique</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>C5 – C6</td>
+ <td>Tronc supérieur</td>
+ <td>Abduction épaule, flexion coude, rotation ext.</td>
+ <td>Paralysie d'Erb-Duchenne</td>
+ </tr>
+ <tr>
+ <td>C7</td>
+ <td>Tronc moyen</td>
+ <td>Extension poignet, doigts, coude</td>
+ <td>Atteinte du nerf radial</td>
+ </tr>
+ <tr>
+ <td>C8 – T1</td>
+ <td>Tronc inférieur</td>
+ <td>Muscles intrinsèques main, flexion doigts</td>
+ <td>Paralysie de Klumpke</td>
+ </tr>
+ <tr>
+ <td>C5 – T1</td>
+ <td>Plexus entier</td>
+ <td>Déficit complet du membre supérieur</td>
+ <td>Atteinte totale</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </section>
+
+ <!-- ===== TABLEAU RÉCAPITULATIF ===== -->
+ <section class="section">
+ <div class="section-header">
+ <span class="section-num">📊</span>
+ <h2>Tableau Comparatif — Types de Lésions Nerveuses</h2>
+ </div>
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th>Type</th>
+ <th>Axone</th>
+ <th>Endonèvre</th>
+ <th>Périnèvre</th>
+ <th>Épinèvre</th>
+ <th>Dég. Waller</th>
+ <th>Pronostic</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Ischémie transit.</td>
+ <td>Intact</td>
+ <td>Intact</td>
+ <td>Intact</td>
+ <td>Intact</td>
+ <td>Non</td>
+ <td>Excellent (10 min)</td>
+ </tr>
+ <tr>
+ <td>Neuropraxie (I)</td>
+ <td>Intact</td>
+ <td>Intact</td>
+ <td>Intact</td>
+ <td>Intact</td>
+ <td>Non</td>
+ <td>Très bon (j–sem)</td>
+ </tr>
+ <tr>
+ <td>Axonotmèse (II)</td>
+ <td>Interrompu</td>
+ <td>Intact</td>
+ <td>Intact</td>
+ <td>Intact</td>
+ <td>Oui</td>
+ <td>Bon (mois)</td>
+ </tr>
+ <tr>
+ <td>Axonotmèse (III)</td>
+ <td>Interrompu</td>
+ <td>Détruit</td>
+ <td>Intact</td>
+ <td>Intact</td>
+ <td>Oui</td>
+ <td>Partiel</td>
+ </tr>
+ <tr>
+ <td>Axonotmèse (IV)</td>
+ <td>Interrompu</td>
+ <td>Détruit</td>
+ <td>Détruit</td>
+ <td>Intact</td>
+ <td>Oui</td>
+ <td>Mauvais</td>
+ </tr>
+ <tr>
+ <td>Neurotmèse (V)</td>
+ <td>Interrompu</td>
+ <td>Détruit</td>
+ <td>Détruit</td>
+ <td>Détruit</td>
+ <td>Oui</td>
+ <td>Jamais normal</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </section>
+
+ <!-- POINTS CLÉS -->
+ <section class="section">
+ <div class="section-header">
+ <span class="section-num">💡</span>
+ <h2>Points Clés à Retenir</h2>
+ </div>
+ <div class="cards cards-2">
+ <div class="card">
+ <div class="card-title">⚡ Conduction nerveuse</div>
+ <ul>
+ <li>Myéline intacte → conduction saltatoire rapide (~400 km/h)</li>
+ <li>Myéline détruite → conduction lente (~4 km/h)</li>
+ <li>Nœuds de Ranvier → potentiel d'action saute de nœud en nœud</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title">🔄 Régénération</div>
+ <ul>
+ <li>SNP : régénération POSSIBLE (contrairement au SNC)</li>
+ <li>Vitesse : 1–2 mm/jour</li>
+ <li>Plus le délai est long → moins bonne récupération</li>
+ <li>Tubes neuraux intacts = meilleure régénération</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title">😮 Paralysie Faciale — alertes</div>
+ <ul>
+ <li>Lagophtalmie → protection oculaire indispensable</li>
+ <li>Syncinésies = mauvais pronostic</li>
+ <li>Distinguer périphérique (tout le visage) / centrale (1/2 inférieur)</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title">🩺 Urgences cliniques</div>
+ <ul>
+ <li>Guillain-Barré → surveiller la respiration +++</li>
+ <li>Pol. Diabétique → contrôle glycémique + surveillance du pied</li>
+ <li>Plexus brachial néonatal → diagnostic précoce essentiel</li>
+ </ul>
+ </div>
+ </div>
+ </section>
+
+</div>
+
+<footer>
+ Fiche de révision — <span>Lésions Périphériques</span>Physiopathologie I · Cláudia Costa, FT, MSc
+</footer>
+
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/neuro/lesions-peripheriques.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+</body>
+</html>

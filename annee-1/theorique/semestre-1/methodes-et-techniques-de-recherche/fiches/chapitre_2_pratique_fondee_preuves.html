@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Chapitre 2 — Pratique fondée sur les preuves — :root{--bg:#0f1117;--panel:#1a1d2a;--panel2: #1a1d2a;--text: #9aa3b8;--muted:#9aa3b8;--accent:#f472b6;--accent2">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../assets/css/acces.css">
+<script src="../../../../../assets/js/acces.js"></script>
+<title>Ch.2 - Pratique fondée sur les preuves (PBE/PIE)</title>
+<link rel="stylesheet" href="../../../../../assets/css/chrome.css">
+<style>
+:root{--bg:#0f1117;--panel:#1a1d2a;--panel2: #1a1d2a;--text: #9aa3b8;--muted:#9aa3b8;--accent:#f472b6;--accent2: #ff6b9d;--accent3: #ff8fa3;--danger:#ff5c6b;--border:#2a3050;}
+*{box-sizing:border-box;}
+body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;}
+.container{max-width:1100px;margin:0 auto;padding:32px 24px 64px;}
+header{border-bottom:2px solid var(--accent);padding-bottom:18px;margin-bottom:28px;}
+h1{color:var(--accent);font-size:2em;margin:0 0 6px;}
+header .sub{color:var(--muted);font-size:0.95em;}
+h2{color:var(--accent2);border-left:4px solid var(--accent2);padding-left:12px;margin-top:38px;font-size:1.45em;}
+h3{color:var(--accent3);font-size:1.15em;margin-top:24px;}
+h4{color:#f472b6;margin-top:18px;}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:18px 22px;margin:14px 0;}
+.callout{background:var(--panel2);border-left:4px solid var(--accent);padding:14px 18px;border-radius:6px;margin:14px 0;}
+.warn{border-left-color:var(--danger);}.good{border-left-color:var(--accent2);}.tip{border-left-color:var(--accent3);}
+ul,ol{padding-left:22px;}li{margin:5px 0;}
+table{width:100%;border-collapse:collapse;margin:14px 0;background:var(--panel);}
+th,td{border:1px solid var(--border);padding:9px 12px;text-align:left;vertical-align:top;}
+th{background:var(--panel2);color:var(--accent);}
+.key{color:var(--accent2);font-weight:600;}
+.danger{color:var(--danger);font-weight:600;}
+.flash{background:linear-gradient(135deg,#ff5c6b 0%,#ff5c6b 100%);border:1px solid var(--accent);border-radius:10px;padding:14px 18px;margin:16px 0;}
+.def{background:var(--panel2);border-radius:6px;padding:10px 14px;margin:8px 0;border-left:3px solid var(--accent3);}
+hr{border:none;border-top:1px solid var(--border);margin:30px 0;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;}
+.pyramid{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:18px;text-align:center;}
+.lvl{margin:6px auto;padding:10px;border-radius:6px;color:#0f1117;font-weight:600;}
+.lvl1{background:#ff6b9d;width:40%;}
+.lvl2{background:#f472b6;width:55%;}
+.lvl3{background:#f472b6;width:70%;}
+.lvl4{background:#ff8fa3;width:85%;}
+.lvl5{background:#ff5c6b;width:100%;color:#ffffff;}
+</style>
+ <link rel="stylesheet" href="../../../../../assets/css/modules/mtr-theme.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<a href="../accueil-methodes-et-techniques-de-recherche.html" class="back-nav">← MTR I</a>
+
+<div class="page-toggle"><div class="pt-inner"><a href="../qcm/chapitre_2_pratique_fondee_preuves.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<div class="container">
+<header>
+<h1>Chapitre 2 — Pratique fondée sur les preuves</h1>
+<div class="sub">PBE / PIE · Les 5 étapes de l'EBP · Pyramide de l'évidence</div>
+</header>
+
+<h2>1. PBE vs PIE — définitions</h2>
+<div class="grid">
+<div class="card">
+<h4>🔹 PBE — Pratique Basée sur l'Évidence</h4>
+<p><em>Evidence-Based Practice</em></p>
+<p>Démarche <span class="key">rigoureuse et systématique</span> :</p>
+<ol>
+<li>Identifier une question clinique (PICO)</li>
+<li>Chercher et sélectionner les meilleures preuves</li>
+<li>Appliquer au patient avec raisonnement justifié</li>
+</ol>
+<p><strong>Exige une mise à jour continue.</strong></p>
+</div>
+<div class="card">
+<h4>🔹 PIE — Pratique Informée par l'Évidence</h4>
+<p><em>Evidence-Informed Practice</em></p>
+<p>Approche plus <span class="key">souple et adaptable</span> :</p>
+<ul>
+<li>Utilise les preuves sans automatisme</li>
+<li>Tient compte de la variabilité des patients</li>
+<li>Reconnaît les limites de la littérature</li>
+</ul>
+</div>
+</div>
+
+<div class="flash">
+🎯 <strong>Objectif commun :</strong> améliorer la qualité des soins et rendre les décisions cliniques plus fiables, justifiées, cohérentes et adaptées.
+</div>
+
+<h3>Exemple : tendinopathie d'Achille</h3>
+<div class="callout">
+RCT → exercices excentriques efficaces.<br>
+✔ <strong>PBE</strong> = appliquer le protocole tel quel.<br>
+✔ <strong>PIE</strong> = adapter si appréhension, comorbidité, calendrier sportif particulier.
+</div>
+
+<h2>2. PBE — Définition de Sackett (2000) : les 3 piliers</h2>
+<table>
+<tr><th>Pilier</th><th>Contenu</th></tr>
+<tr><td><strong>Meilleure preuve scientifique</strong></td><td>Méta-analyses, RCT, guidelines internationales</td></tr>
+<tr><td><strong>Expertise clinique</strong></td><td>Expérience, compétences techniques, raisonnement clinique du professionnel</td></tr>
+<tr><td><strong>Valeurs et préférences du patient</strong></td><td>Objectifs, limites, motivation, représentation personnelle de la santé</td></tr>
+</table>
+<div class="callout tip">
+La science seule ne suffit pas, l'expérience seule peut être biaisée. <span class="key">Le patient est au centre.</span>
+</div>
+
+<h2>3. Ce que la PBE valorise / dévalorise</h2>
+<div class="grid">
+<div class="card">
+<h4 style="color:var(--danger)">❌ Dévalorise</h4>
+<ul>
+<li>Pratiques par habitude ou intuition</li>
+<li>Protocoles « magiques » non validés</li>
+<li>Traditions sans fondement</li>
+<li>« On a toujours fait comme ça »</li>
+<li>« Ça marche sur moi »</li>
+<li>« J'ai vu ça sur Instagram »</li>
+</ul>
+</div>
+<div class="card">
+<h4 style="color:var(--accent2)">✔ Valorise</h4>
+<ul>
+<li>Protocoles validés, reproductibles, mesurables</li>
+<li>Lecture critique d'articles (niveau de preuve + qualité)</li>
+<li>Mise à jour continue</li>
+</ul>
+</div>
+</div>
+
+<h2>4. Les 5 étapes de la PBE — « les 5 A »</h2>
+<table>
+<tr><th>Étape</th><th>Action</th></tr>
+<tr><td><strong>ASK</strong></td><td>Formuler une question précise → <span class="key">PICO</span></td></tr>
+<tr><td><strong>ACQUIRE</strong></td><td>Chercher les preuves dans des bases reconnues</td></tr>
+<tr><td><strong>APPRAISE</strong></td><td>Évaluer la méthodologie (randomisation ? biais ? applicabilité ?)</td></tr>
+<tr><td><strong>APPLY</strong></td><td>Appliquer la preuve en tenant compte du patient</td></tr>
+<tr><td><strong>ANALYZE</strong></td><td>Observer le résultat → ajuster</td></tr>
+</table>
+<div class="callout"><strong>Pourquoi un cycle ?</strong> Parce que la pratique clinique est dynamique et la science évolue.</div>
+
+<h2>5. La pyramide de l'évidence</h2>
+<div class="pyramid">
+<div class="lvl1">Méta-analyses · Revues systématiques · Guidelines</div>
+<div class="lvl2">Essais cliniques randomisés (RCT)</div>
+<div class="lvl3">Études de cohorte</div>
+<div class="lvl4">Études cas-témoins · transversales</div>
+<div class="lvl5">Séries de cas · opinions d'experts</div>
+<p style="color:var(--muted);font-size:0.9em;margin-top:14px;">Plus on monte, moins il y a de risque de biais</p>
+</div>
+
+<table>
+<tr><th>Niveau</th><th>Types d'études</th><th>Fiabilité</th></tr>
+<tr><td>🔻 Base</td><td>Opinions d'experts, transversales, séries de cas</td><td>Faible (utile si littérature rare)</td></tr>
+<tr><td>🔸 Intermédiaire</td><td>Cohortes, cas-témoins, essais contrôlés</td><td>Variable selon la rigueur</td></tr>
+<tr><td>🔺 Sommet</td><td>Revues systématiques, méta-analyses, guidelines</td><td>Robuste</td></tr>
+</table>
+<div class="callout tip">Pour un mémoire : <strong>commencez toujours par les revues systématiques</strong>.</div>
+
+<h2>6. PIE — Pratique Informée par l'Évidence</h2>
+<div class="card">
+<p>La PIE insiste sur :</p>
+<ul>
+<li><span class="key">L'adaptabilité</span></li>
+<li><span class="key">La contextualisation</span></li>
+<li><span class="key">L'individualisation</span> du soin</li>
+</ul>
+</div>
+
+<h3>4 limites de la littérature qui justifient la PIE</h3>
+<ol>
+<li>Données parfois incomplètes</li>
+<li>Conflits entre études</li>
+<li>Populations d'étude différentes des patients réels</li>
+<li>Contraintes de vie du patient</li>
+</ol>
+
+<h3>Fonctionnement de la PIE (cycle)</h3>
+<div class="callout">
+Consulter l'évidence → Intégrer l'expérience → Tenir compte du patient → <strong>Ajuster</strong> (observer → analyser → modifier → réévaluer)
+</div>
+
+<h3>Exemple PIE — lombalgie aiguë + patient anxieux</h3>
+<div class="callout warn">
+Science : activité physique + éducation.<br>
+Patient : peur du mouvement, demande repos, conseils opposés de l'entourage.<br>
+➡ <strong>PIE</strong> = preuve + négociation thérapeutique + éducation graduée + exercices acceptables.
+</div>
+
+<h2>7. PBE vs PIE — synthèse</h2>
+<table>
+<tr><th></th><th>PBE</th><th>PIE</th></tr>
+<tr><td>Priorité</td><td>Rigueur scientifique</td><td>Adaptabilité + rigueur</td></tr>
+<tr><td>Focus</td><td>Protocoles validés</td><td>Application contextualisée</td></tr>
+<tr><td>Risque</td><td>Standardisation excessive</td><td>Risque de subjectivité</td></tr>
+</table>
+
+<h2>8. EBPP (APTA) — définition complète</h2>
+<div class="flash">
+La pratique basée sur l'évidence inclut :<br>
+✓ le jugement clinique expert<br>
+✓ les préférences du patient<br>
+✓ les preuves scientifiques<br>
+✓ le contexte social et environnemental<br>
+→ <strong>l'approche la plus complète, qui connecte science et humain</strong>
+</div>
+
+<h2>9. Recherche documentaire vs étude scientifique</h2>
+<table>
+<tr><th>Recherche documentaire</th><th>Étude scientifique</th></tr>
+<tr><td>Consulter les preuves existantes</td><td>Produire des données nouvelles</td></tr>
+<tr><td>Revue narrative, systématique, méta-analyse, guidelines</td><td>Concevoir protocole, recruter, collecter, analyser, publier</td></tr>
+<tr><td>Quotidien du clinicien</td><td>Quotidien du chercheur</td></tr>
+</table>
+
+<hr>
+<h2>🎯 À retenir absolument</h2>
+<div class="card">
+<ul>
+<li><strong>PBE</strong> = rigueur, méthode, protocoles validés</li>
+<li><strong>PIE</strong> = flexibilité, adaptation au patient réel</li>
+<li>Sackett 2000 → <strong>3 piliers</strong> : preuve + expertise + patient</li>
+<li>Les <strong>5 A</strong> : Ask, Acquire, Appraise, Apply, Analyze</li>
+<li>Pyramide : sommet = méta-analyse / base = avis d'expert</li>
+<li>EBPP = preuve + expertise + patient + contexte</li>
+</ul>
+</div>
+
+</div>
+</body>
+</html>

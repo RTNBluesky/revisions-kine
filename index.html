@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="assets/css/acces.css">
+<script src="assets/js/acces.js"></script>
+<title>Accueil — Révisions Kinésithérapie</title>
+<meta name="description" content="Choisis ton année — 4 années de kinésithérapie : K1, K2, K3, K4..">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+ :root {
+ --bg: #0f1117;
+ --bg2: #161922;
+ --card: #1a1d2a;
+ --card2: #20243a;
+ --ink: #e8eaf0;
+ --muted: #9aa3b8;
+ --dim: #6a7388;
+ --border: rgba(255,255,255,0.08);
+ --border-strong: rgba(255,255,255,0.14);
+ --accent: #ff5c6b;
+ --accent2: #ff6b9d;
+ --accent3: #f472b6;
+ --accent4: #ff8fa3;
+ --accent5: #ff6b9d;
+ }
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+ html { scroll-behavior: smooth; }
+ body {
+ font-family: 'Source Sans 3', system-ui, sans-serif;
+ background: var(--bg);
+ color: var(--ink);
+ line-height: 1.6;
+ min-height: 100vh;
+ overflow-x: hidden;
+ display: flex;
+ flex-direction: column;
+ }
+ body::before {
+ content: '';
+ position: fixed;
+ inset: 0;
+ background:
+ radial-gradient(circle at 15% 20%, rgba(255,107,157,0.10), transparent 40%),
+ radial-gradient(circle at 85% 10%, rgba(255,92,107,0.10), transparent 40%),
+ radial-gradient(circle at 50% 90%, rgba(255,107,157,0.08), transparent 40%);
+ z-index: -1;
+ pointer-events: none;
+ }
+ .container { max-width: 1180px; margin: 0 auto; padding: 0 24px; width: 100%; }
+ main { flex: 1; }
+
+ /* HERO */
+ .hero { padding: 90px 24px 50px; text-align: center; }
+ .hero-tag {
+ display: inline-flex; align-items: center; gap: 8px;
+ padding: 6px 14px;
+ background: rgba(255,107,157,0.10);
+ border: 1px solid rgba(255,107,157,0.25);
+ border-radius: 30px;
+ font-size: 12px;
+ color: var(--accent2);
+ font-weight: 600;
+ letter-spacing: 0.6px;
+ text-transform: uppercase;
+ margin-bottom: 22px;
+ }
+ .hero-tag::before {
+ content: ''; width: 6px; height: 6px;
+ background: var(--accent); border-radius: 50%;
+ box-shadow: 0 0 10px var(--accent);
+ }
+ .hero h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(44px, 8vw, 84px);
+ font-weight: 900;
+ line-height: 1.02;
+ letter-spacing: -1.8px;
+ margin-bottom: 18px;
+ background: linear-gradient(135deg, #20243a 0%, var(--accent2) 50%, var(--accent) 100%);
+ -webkit-background-clip: text;
+ background-clip: text;
+ -webkit-text-fill-color: transparent;
+ }
+ .hero h1 .accent {
+ background: linear-gradient(135deg, var(--accent), var(--accent3));
+ -webkit-background-clip: text;
+ background-clip: text;
+ -webkit-text-fill-color: transparent;
+ }
+ .hero p {
+ font-size: clamp(15px, 2vw, 18px);
+ color: var(--muted);
+ max-width: 580px;
+ margin: 0 auto 28px;
+ line-height: 1.65;
+ font-weight: 300;
+ }
+ .hero-meta {
+ display: flex; justify-content: center; gap: 12px;
+ flex-wrap: wrap;
+ }
+ .hero-meta span {
+ font-size: 13px; color: var(--muted);
+ background: rgba(255,255,255,0.04);
+ padding: 6px 14px; border-radius: 20px;
+ border: 1px solid var(--border);
+ }
+
+ /* YEAR GRID */
+ .years-section {
+ padding: 30px 0 80px;
+ }
+ .years-grid {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ gap: 24px;
+ }
+ @media (max-width: 720px) {
+ .years-grid { grid-template-columns: 1fr; }
+ }
+
+ .year-card {
+ background: var(--card);
+ border: 1px solid var(--border);
+ border-radius: 24px;
+ padding: 36px 32px;
+ text-decoration: none;
+ color: inherit;
+ transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+ position: relative;
+ overflow: hidden;
+ display: flex;
+ flex-direction: column;
+ gap: 22px;
+ min-height: 320px;
+ }
+ .year-card::before {
+ content: '';
+ position: absolute;
+ top: 0; left: 0; right: 0;
+ height: 5px;
+ background: var(--year-accent, var(--accent2));
+ opacity: 0.55;
+ transition: opacity 0.3s;
+ }
+ .year-card::after {
+ content: '';
+ position: absolute;
+ top: -100px; right: -100px;
+ width: 320px; height: 320px;
+ background: radial-gradient(circle, var(--year-accent, var(--accent2)), transparent 60%);
+ opacity: 0.10;
+ transition: opacity 0.4s;
+ pointer-events: none;
+ }
+ .year-card:hover {
+ transform: translateY(-6px);
+ border-color: var(--year-accent, var(--accent2));
+ box-shadow: 0 24px 56px rgba(0,0,0,0.5), 0 0 0 1px var(--year-accent, var(--accent2));
+ }
+ .year-card:hover::before { opacity: 1; }
+ .year-card:hover::after { opacity: 0.20; }
+
+ .year-card-head {
+ display: flex; align-items: center; gap: 20px;
+ }
+ .year-badge {
+ width: 78px; height: 78px;
+ border-radius: 22px;
+ background: linear-gradient(135deg, var(--year-accent, var(--accent2)), var(--accent));
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-family: 'Playfair Display', serif;
+ font-weight: 900;
+ font-size: 38px;
+ color: #e8eaf0;
+ flex-shrink: 0;
+ box-shadow: 0 10px 28px rgba(255,107,157,0.30);
+ }
+ .year-card-titles { flex: 1; }
+ .year-eyebrow {
+ font-size: 11px;
+ color: var(--dim);
+ font-weight: 700;
+ letter-spacing: 1.5px;
+ text-transform: uppercase;
+ margin-bottom: 4px;
+ }
+ .year-title {
+ font-family: 'Playfair Display', serif;
+ font-size: 34px;
+ font-weight: 800;
+ line-height: 1.05;
+ letter-spacing: -0.5px;
+ color: var(--ink);
+ }
+ .year-card .desc {
+ color: var(--muted);
+ font-size: 15px;
+ line-height: 1.6;
+ flex: 1;
+ }
+ .year-card .desc strong { color: var(--accent4); font-weight: 600; }
+ .year-card .stats {
+ display: flex;
+ gap: 18px;
+ flex-wrap: wrap;
+ padding: 16px 0;
+ border-top: 1px solid var(--border);
+ border-bottom: 1px solid var(--border);
+ }
+ .year-card .stat {
+ display: flex; flex-direction: column; gap: 2px;
+ }
+ .year-card .stat .num {
+ font-size: 24px;
+ font-weight: 800;
+ color: var(--year-accent, var(--accent2));
+ font-family: 'Playfair Display', serif;
+ line-height: 1;
+ }
+ .year-card .stat .lbl {
+ font-size: 11px;
+ color: var(--muted);
+ text-transform: uppercase;
+ letter-spacing: 0.6px;
+ font-weight: 600;
+ }
+ .year-card .foot {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ margin-top: auto;
+ }
+ .year-tags { display: flex; gap: 6px; flex-wrap: wrap; }
+ .year-tag {
+ font-size: 11px;
+ background: rgba(255,255,255,0.04);
+ border: 1px solid var(--border);
+ padding: 4px 10px;
+ border-radius: 8px;
+ color: var(--muted);
+ font-weight: 600;
+ letter-spacing: 0.3px;
+ }
+ .year-cta {
+ display: inline-flex;
+ align-items: center;
+ gap: 8px;
+ color: var(--year-accent, var(--accent2));
+ font-weight: 700;
+ font-size: 14.5px;
+ transition: gap 0.25s;
+ }
+ .year-card:hover .year-cta { gap: 14px; }
+
+ /* Year themes */
+ .year-card.year-1 { --year-accent: #ff6b9d; }
+ .year-card.year-2 { --year-accent: #f472b6; }
+ .year-card.year-3 { --year-accent: #ff6b9d; }
+ .year-card.year-4 { --year-accent: #ff5c6b; }
+ .year-card.bac { --year-accent: #f472b6; }
+
+ /* Divider title */
+ .extra-divider {
+ display: flex;
+ align-items: center;
+ gap: 18px;
+ margin: 70px 0 30px;
+ }
+ .extra-divider .ed-line {
+ flex: 1;
+ height: 1px;
+ background: var(--border);
+ }
+ .extra-divider .ed-label {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(20px, 2.5vw, 26px);
+ font-weight: 800;
+ background: linear-gradient(135deg, #20243a, #20243a 60%, #20243a);
+ -webkit-background-clip: text;
+ background-clip: text;
+ -webkit-text-fill-color: transparent;
+ letter-spacing: -0.3px;
+ }
+ .extra-divider .ed-sub {
+ font-size: 12px;
+ color: var(--muted);
+ text-transform: uppercase;
+ letter-spacing: 1.5px;
+ font-weight: 600;
+ }
+ .extra-grid {
+ display: grid;
+ grid-template-columns: 1fr;
+ gap: 24px;
+ max-width: 720px;
+ margin: 0 auto;
+ }
+
+ /* Future/disabled */
+ .year-card.future {
+ opacity: 0.65;
+ cursor: default;
+ }
+ .year-card.future:hover {
+ transform: none;
+ border-color: var(--border);
+ box-shadow: none;
+ }
+ .year-card.future::before { opacity: 0.3; }
+ .year-card.future .year-badge {
+ background: linear-gradient(135deg, #2a3050, #1a1d2a);
+ color: var(--dim);
+ box-shadow: none;
+ }
+ .year-card.future .year-cta {
+ color: var(--muted);
+ }
+ .year-card.future .stat .num { color: var(--muted); }
+ .year-card.future:hover .year-cta { gap: 8px; }
+
+ /* FOOTER */
+ footer {
+ padding: 30px 24px;
+ border-top: 1px solid var(--border);
+ text-align: center;
+ color: var(--dim);
+ font-size: 13px;
+ }
+
+ @media (max-width: 600px) {
+ .hero { padding: 60px 16px 30px; }
+ .year-card { padding: 28px 24px; min-height: auto; }
+ .year-title { font-size: 28px; }
+ .year-badge { width: 64px; height: 64px; font-size: 30px; }
+ }
+</style>
+</head>
+<body>
+
+<main>
+<header class="hero container">
+ <div class="hero-tag">Kinésithérapie</div>
+ <h1>Choisis ton <span class="accent">année</span></h1>
+ <p>Toutes tes révisions de kinésithérapie, organisées par année universitaire. Fiches synthétiques et QCM interactifs avec correction immédiate, modes entraînement et examen.</p>
+ <div class="hero-meta">
+ <span>📚 Fiches & QCM</span>
+ <span>🎯 Mode révision · examen</span>
+ <span>🌙 Mode sombre</span>
+ </div>
+</header>
+
+<section class="container years-section">
+ <div class="years-grid">
+
+ <!-- Année 1 (active) -->
+ <a href="annee-1/accueil-k1.html" class="year-card year-1">
+ <div class="year-card-head">
+ <div class="year-badge">1</div>
+ <div class="year-card-titles">
+ <div class="year-eyebrow">Année universitaire</div>
+ <div class="year-title">K1 · 1ère année</div>
+ </div>
+ </div>
+ <div class="desc">
+ <strong>Théorique &amp; Pratique</strong>, semestres 1 &amp; 2. Cours : Psycho, Biomécanique, EAIF I &amp; II, Physio I &amp; II, MTR, Anatomie I &amp; II, Physiopatho, Socio. TP : palpation, massage, mobilisations, goniométrie, testing.
+ </div>
+ <div class="stats">
+ <div class="stat"><span class="num">19</span><span class="lbl">Modules</span></div>
+ <div class="stat"><span class="num">184</span><span class="lbl">Fiches</span></div>
+ <div class="stat"><span class="num">188</span><span class="lbl">QCM</span></div>
+ <div class="stat"><span class="num">9 470</span><span class="lbl">Questions</span></div>
+ </div>
+ <div class="foot">
+ <div class="year-tags">
+ <span class="year-tag">Théorique</span>
+ <span class="year-tag">Pratique</span>
+ <span class="year-tag">S1 · S2</span>
+ </div>
+ <span class="year-cta">Ouvrir →</span>
+ </div>
+ </a>
+
+ <!-- Année 2 -->
+ <a href="annee-2/accueil-k2.html" class="year-card year-2">
+ <div class="year-card-head">
+ <div class="year-badge">2</div>
+ <div class="year-card-titles">
+ <div class="year-eyebrow">Année universitaire</div>
+ <div class="year-title">K2 · 2ème année</div>
+ </div>
+ </div>
+ <div class="desc">
+ <strong>Théorique &amp; Pratique</strong>, semestres 1 &amp; 2. Cours : Musculo-squelettique, Cardio-respiratoire, EAIF III, MF II, Physiopatho II, Neuro-musculo-squelettique, PBE, Pharmaco &amp; imagerie, RC I. Les 9 modules théoriques et les 4 matières de la pratique sont complets : fiches, QCM et antisèches.
+ </div>
+ <div class="stats">
+ <div class="stat"><span class="num">13</span><span class="lbl">Modules</span></div>
+ <div class="stat"><span class="num">111</span><span class="lbl">Fiches</span></div>
+ <div class="stat"><span class="num">109</span><span class="lbl">QCM</span></div>
+ <div class="stat"><span class="num">5 450</span><span class="lbl">Questions</span></div>
+ </div>
+ <div class="foot">
+ <div class="year-tags">
+ <span class="year-tag">Théorique</span>
+ <span class="year-tag">Pratique</span>
+ <span class="year-tag">En cours</span>
+ </div>
+ <span class="year-cta">Ouvrir →</span>
+ </div>
+ </a>
+
+ <!-- Année 3 -->
+ <a href="annee-3/accueil-k3.html" class="year-card year-3 future">
+ <div class="year-card-head">
+ <div class="year-badge">3</div>
+ <div class="year-card-titles">
+ <div class="year-eyebrow">Année universitaire</div>
+ <div class="year-title">K3 · 3ème année</div>
+ </div>
+ </div>
+ <div class="desc">
+ Structure prête : Théorique et Pratique, semestres 1 &amp; 2. Les modules viendront s'y ranger au fur et à mesure de l'année.
+ </div>
+ <div class="stats">
+ <div class="stat"><span class="num">—</span><span class="lbl">Modules</span></div>
+ <div class="stat"><span class="num">—</span><span class="lbl">Fiches</span></div>
+ <div class="stat"><span class="num">—</span><span class="lbl">QCM</span></div>
+ <div class="stat"><span class="num">—</span><span class="lbl">Questions</span></div>
+ </div>
+ <div class="foot">
+ <div class="year-tags">
+ <span class="year-tag">À venir</span>
+ </div>
+ <span class="year-cta">Ouvrir →</span>
+ </div>
+ </a>
+
+ <!-- Année 4 -->
+ <a href="annee-4/accueil-k4.html" class="year-card year-4 future">
+ <div class="year-card-head">
+ <div class="year-badge">4</div>
+ <div class="year-card-titles">
+ <div class="year-eyebrow">Année universitaire</div>
+ <div class="year-title">K4 · 4ème année</div>
+ </div>
+ </div>
+ <div class="desc">
+ Structure prête : Théorique et Pratique, semestres 1 &amp; 2. Les modules viendront s'y ranger au fur et à mesure de l'année.
+ </div>
+ <div class="stats">
+ <div class="stat"><span class="num">—</span><span class="lbl">Modules</span></div>
+ <div class="stat"><span class="num">—</span><span class="lbl">Fiches</span></div>
+ <div class="stat"><span class="num">—</span><span class="lbl">QCM</span></div>
+ <div class="stat"><span class="num">—</span><span class="lbl">Questions</span></div>
+ </div>
+ <div class="foot">
+ <div class="year-tags">
+ <span class="year-tag">À venir</span>
+ </div>
+ <span class="year-cta">Ouvrir →</span>
+ </div>
+ </a>
+
+ </div>
+
+ <!-- Divider + Lycée Bac -->
+ <div class="extra-divider">
+ <div class="ed-line"></div>
+ <div>
+ <div class="ed-label">Avant la kiné</div>
+ <div class="ed-sub">Préparation Bac · Lycée</div>
+ </div>
+ <div class="ed-line"></div>
+ </div>
+
+ <div class="extra-grid">
+ <a href="svt-bac/accueil-svt.html" class="year-card bac">
+ <div class="year-card-head">
+ <div class="year-badge" style="font-size:24px; letter-spacing:1px;">SVT</div>
+ <div class="year-card-titles">
+ <div class="year-eyebrow">Terminale Spécialité · Bac 2026</div>
+ <div class="year-title">SVT · Bac 2026</div>
+ </div>
+ </div>
+ <div class="desc">
+ <strong>10 fiches de révision</strong> couvrant les 3 thèmes du programme : Terre &amp; vie · Enjeux planétaires · Corps humain. Avec QCM interactifs, méthodologie de l'épreuve et annales corrigées.
+ </div>
+ <div class="stats">
+ <div class="stat"><span class="num">10</span><span class="lbl">Fiches</span></div>
+ <div class="stat"><span class="num">10</span><span class="lbl">QCM</span></div>
+ <div class="stat"><span class="num">500</span><span class="lbl">Questions</span></div>
+ <div class="stat"><span class="num">10</span><span class="lbl">Annales</span></div>
+ </div>
+ <div class="foot">
+ <div class="year-tags">
+ <span class="year-tag">Génétique</span>
+ <span class="year-tag">Climats</span>
+ <span class="year-tag">Corps humain</span>
+ </div>
+ <span class="year-cta">Ouvrir →</span>
+ </div>
+ </a>
+ </div>
+
+</section>
+</main>
+
+<footer>
+ <div class="container">
+ <div>Révisions Kinésithérapie</div>
+ <div style="margin-top:8px; font-size:11.5px;">Mode sombre · Conçu pour la révision · 4 années</div>
+ </div>
+</footer>
+
+</body>
+</html>

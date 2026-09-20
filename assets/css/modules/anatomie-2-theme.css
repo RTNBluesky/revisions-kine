@@ -1,0 +1,29 @@
+:root { --bg: #0f1117 !important; --card: #1a1d2a !important; --surface: #1a1d2a !important; --border: #2a3050 !important; --text: #e8eaf0 !important; --text-secondary: #6a7388 !important; --muted: #9aa3b8 !important; --accent: #ff6b9d !important; }
+html, body { background: #0f1117 !important; color: #e8eaf0 !important; font-family: 'Source Sans 3', sans-serif !important; }
+.top-nav, footer { display: none !important; }
+.container { max-width: 1100px !important; margin: 0 auto !important; padding: 80px 24px 40px !important; }
+.page-eyebrow { color: #ff8fa3 !important; text-transform: uppercase !important; letter-spacing: 1.2px !important; font-size: 12px !important; font-weight: 700 !important; }
+.page-title { font-family: 'Playfair Display', serif !important; font-size: clamp(28px, 4.5vw, 44px) !important; font-weight: 900 !important; line-height: 1.15 !important; margin: 10px 0 14px 0 !important; background: linear-gradient(135deg, #ffffff 0%, #ff6b9d 60%, #ff5c6b 100%) !important; -webkit-background-clip: text !important; background-clip: text !important; -webkit-text-fill-color: transparent !important; }
+.page-subtitle { color: #ff8fa3 !important; font-size: 15px !important; line-height: 1.6 !important; margin-bottom: 22px !important; }
+.toc { background: #1a1d2a !important; border: 1px solid #2a3050 !important; border-radius: 12px !important; padding: 18px 22px !important; margin-bottom: 24px !important; }
+.toc-title { color: #ff8fa3 !important; text-transform: uppercase !important; letter-spacing: 1.2px !important; font-size: 12px !important; font-weight: 700 !important; margin-bottom: 8px !important; }
+.toc ol li a, .toc a { color: #ff8fa3 !important; }
+.toc ol li a:hover { color: #ff8fa3 !important; }
+.fiche section { background: #1a1d2a !important; border: 1px solid #2a3050 !important; border-radius: 12px !important; padding: 22px 26px !important; margin-bottom: 18px !important; color: #e8eaf0 !important; }
+.fiche h2 { font-family: 'Source Sans 3', sans-serif !important; font-size: 17px !important; font-weight: 700 !important; color: #ff8fa3 !important; text-transform: uppercase !important; letter-spacing: 1.2px !important; margin-bottom: 14px !important; }
+.fiche h3 { font-size: 15px !important; color: #e8eaf0 !important; font-weight: 700 !important; margin: 14px 0 8px 0 !important; }
+.fiche h4 { font-size: 14.5px !important; color: #e8eaf0 !important; font-weight: 700 !important; margin: 10px 0 6px 0 !important; }
+.section-num { color: #ff6b9d !important; font-weight: 900 !important; margin-right: 10px !important; }
+.fiche p, .fiche li, .fiche td { color: #ff8fa3 !important; line-height: 1.7 !important; font-size: 14.5px !important; }
+.fiche strong { color: #ff8fa3 !important; }
+.fiche table { width: 100% !important; border-collapse: collapse !important; background: #0f1117 !important; border: 1px solid #2a3050 !important; border-radius: 10px !important; overflow: hidden !important; margin: 12px 0 !important; font-size: 13.5px !important; }
+.fiche th { background: #0f1117 !important; color: #ff8fa3 !important; padding: 10px 14px !important; text-align: left !important; font-size: 11px !important; text-transform: uppercase !important; }
+.fiche td { padding: 10px 14px !important; border-bottom: 1px solid #2a3050 !important; }
+.def { background: #0f1117 !important; border: 1px solid #2a3050 !important; border-radius: 10px !important; padding: 12px 16px !important; margin-bottom: 10px !important; }
+.def-term { color: #ff8fa3 !important; font-weight: 700 !important; margin-bottom: 4px !important; font-size: 13.5px !important; }
+.def-content { color: #ff8fa3 !important; font-size: 14px !important; }
+.grid-2, .grid-3 { display: grid !important; gap: 12px !important; }
+.grid-2 { grid-template-columns: 1fr 1fr !important; }
+.grid-3 { grid-template-columns: 1fr 1fr 1fr !important; }
+@media (max-width: 700px) { .grid-2, .grid-3 { grid-template-columns: 1fr !important; } }
+.callout, .note, .warning, .key-point, .clinical { background: #0f1117 !important; border: 1px solid #2a3050 !important; border-left: 3px solid #ff6b9d !important; border-radius: 10px !important; padding: 12px 16px !important; margin: 12px 0 !important; color: #ff8fa3 !important; }

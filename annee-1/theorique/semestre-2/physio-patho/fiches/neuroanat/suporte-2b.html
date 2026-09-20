@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Audition & fonction vestibulaire — Anatomie & disorders auditifs · Système vestibulaire · Vertige · BPPV · Ménière">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../../assets/css/acces.css">
+<script src="../../../../../../assets/js/acces.js"></script>
+<title>Support Neurophysio 2b — Audition & Vestibulaire</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../../../assets/css/chrome.css">
+<style>
+ :root {
+ --orange: #ff5c6b; --orange-light: #ff8fa3; --orange-pale: #161922;
+ --bg: #0f1117; --surface: #0f1117; --surface-2: #161922;
+ --text: #9aa3b8; --mid: #9aa3b8; --muted: #6a7388;
+ --teal: #ff6b9d; --teal-light: #20243a;
+ --gold: #ff8fa3; --red: #ff5c6b; --red-light: #161922;
+ --green: #ff6b9d; --green-light: #1a1d2a;
+ --blue: #f472b6; --blue-light: #ff5c6b;
+ --purple: #f472b6; --purple-light: #ff5c6b;
+ --border: #3a4060;
+ color-scheme: dark;
+ }
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+ body { font-family: 'Source Sans 3', sans-serif; background: var(--bg); color: var(--text); font-size: 15px; line-height: 1.6; }
+ .hero { background: linear-gradient(135deg, #0f1117 0%, #0f1117 100%); padding: 56px 40px 40px; position: relative; overflow: hidden; border-bottom: 1px solid var(--border); }
+ .hero::before { content: ''; position: absolute; top: -80px; right: -80px; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(255,107,157,0.22) 0%, transparent 70%); }
+ .hero-tag { font-size: 11px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--purple); margin-bottom: 12px; position: relative; z-index: 1; }
+ .hero h1 { font-family: 'Playfair Display', serif; font-size: 50px; font-weight: 900; color: #ff8fa3; line-height: 1.1; position: relative; z-index: 1; }
+ .hero h1 em { font-style: normal; color: var(--purple); }
+ .hero-meta { color: rgba(255,255,255,0.55); font-size: 14px; margin-top: 12px; position: relative; z-index: 1; }
+ .container { max-width: 1100px; margin: 0 auto; padding: 40px 32px 80px; }
+ .toc { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 40px; padding: 18px 22px; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; position: sticky; top: 0; z-index: 100; }
+ .toc a { color: var(--mid); font-size: 13px; text-decoration: none; padding: 6px 12px; border-radius: 6px; transition: all 0.15s; }
+ .toc a:hover { background: var(--purple-light); color: var(--purple); }
+ .section { margin-bottom: 56px; scroll-margin-top: 80px; }
+ .section-header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; padding-bottom: 14px; border-bottom: 2px solid var(--border); }
+ .section-num { background: var(--purple); color: #0f1117; font-family: 'Playfair Display', serif; font-weight: 900; font-size: 22px; width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+ .section-title { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: #ff8fa3; }
+ .section-title em { font-style: normal; color: var(--purple); }
+ .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+ .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+ .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 22px; }
+ .card.teal { border-color: rgba(255,107,157,0.3); background: linear-gradient(135deg, var(--surface) 0%, rgba(255,107,157,0.05) 100%); }
+ .card.orange { border-color: rgba(255,107,157,0.3); background: linear-gradient(135deg, var(--surface) 0%, rgba(255,107,157,0.05) 100%); }
+ .card.red { border-color: rgba(255,92,107,0.3); background: linear-gradient(135deg, var(--surface) 0%, rgba(255,92,107,0.05) 100%); }
+ .card.gold { border-color: rgba(255,107,157,0.3); background: linear-gradient(135deg, var(--surface) 0%, rgba(255,107,157,0.05) 100%); }
+ .card.blue { border-color: rgba(255,107,157,0.3); background: linear-gradient(135deg, var(--surface) 0%, rgba(255,107,157,0.05) 100%); }
+ .card.purple { border-color: rgba(255,107,157,0.3); background: linear-gradient(135deg, var(--surface) 0%, rgba(255,107,157,0.05) 100%); }
+ .card-title { font-family: 'Playfair Display', serif; font-size: 17px; font-weight: 700; color: #ff8fa3; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+ .card-title .icon { font-size: 20px; }
+ .clean { list-style: none; }
+ .clean li { padding: 4px 0 4px 18px; position: relative; color: var(--mid); }
+ .clean li::before { content: '▸'; position: absolute; left: 0; color: var(--purple); font-size: 12px; top: 7px; }
+ .clean li strong { color: #ff8fa3; }
+ .highlight { background: rgba(255,107,157,0.08); border-left: 4px solid var(--purple); padding: 14px 18px; border-radius: 6px; margin: 14px 0; font-size: 14px; color: var(--mid); }
+ .highlight.orange { background: rgba(255,107,157,0.08); border-left-color: var(--orange); }
+ .highlight.red { background: rgba(255,92,107,0.08); border-left-color: var(--red); }
+ .highlight.gold { background: rgba(255,107,157,0.08); border-left-color: var(--gold); }
+ .highlight.teal { background: rgba(255,107,157,0.08); border-left-color: var(--teal); }
+ .highlight strong { color: #ff8fa3; }
+ table { width: 100%; border-collapse: collapse; margin: 14px 0; background: var(--surface); border-radius: 10px; overflow: hidden; border: 1px solid var(--border); font-size: 13.5px; }
+ th { background: rgba(255,107,157,0.1); color: var(--purple); font-weight: 700; text-align: left; padding: 12px 14px; text-transform: uppercase; letter-spacing: 1px; font-size: 11px; border-bottom: 1px solid var(--border); }
+ td { padding: 11px 14px; color: var(--mid); border-bottom: 1px solid var(--border); }
+ td strong { color: #ff8fa3; }
+ tr:last-child td { border-bottom: none; }
+ tr:nth-child(even) { background: rgba(255,255,255,0.02); }
+ .nav-back { display: inline-flex; align-items: center; gap: 8px; color: var(--mid); text-decoration: none; font-size: 13px; padding: 10px 16px; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 24px; transition: all 0.15s; }
+ .nav-back:hover { color: var(--purple); border-color: var(--purple); }
+ .qcm-link { display: inline-flex; align-items: center; gap: 8px; background: var(--purple); color: #0f1117; text-decoration: none; font-weight: 700; padding: 14px 22px; border-radius: 10px; font-size: 14px; letter-spacing: 0.5px; text-transform: uppercase; margin-top: 24px; transition: all 0.15s; }
+ .qcm-link:hover { background: #f472b6; transform: translateY(-1px); }
+ footer { background: #0f1117; color: var(--muted); text-align: center; padding: 28px; font-size: 13px; border-top: 1px solid var(--border); }
+ footer strong { color: var(--purple); }
+ @media (max-width: 700px) { .hero { padding: 40px 24px 32px; } .hero h1 { font-size: 36px; } .container { padding: 24px 16px 60px; } }
+</style>
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-theme.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
+</head>
+<body>
+<a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
+<div class="page-toggle"><div class="pt-inner"><a href="../../qcm/neuroanat/suporte-2b.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<div class="hero">
+ <div class="hero-tag">Support Neurophysio · Partie 2b · Niveau K1</div>
+ <h1>Audition <em>&</em><br>fonction vestibulaire</h1>
+ <p class="hero-meta">Anatomie & disorders auditifs · Système vestibulaire · Vertige · BPPV · Ménière</p>
+</div>
+
+<div class="container">
+ <nav class="toc">
+ <a href="#anat-oreille">1. Anatomie de l'oreille</a>
+ <a href="#otite-ext">2. Otologie externe/moyenne</a>
+ <a href="#interne">3. Oreille interne & cochlée</a>
+ <a href="#surdite">4. Surdités</a>
+ <a href="#vest-anat">5. Système vestibulaire</a>
+ <a href="#vertige">6. Vertige & nystagmus</a>
+ <a href="#bppv-mn">7. BPPV / Ménière / Neuronite</a>
+ </nav>
+
+ <!-- ============ ANAT OREILLE ============ -->
+ <section class="section" id="anat-oreille">
+ <div class="section-header"><div class="section-num">1</div><h2 class="section-title">Anatomie de <em>l'oreille</em></h2></div>
+ <div class="highlight">L'oreille = 3 compartiments : <strong>externe</strong> (capter le son), <strong>moyenne</strong> (transmettre/amplifier), <strong>interne</strong> (transduction sensorielle de l'audition + équilibre).</div>
+ <div class="grid-3">
+ <div class="card teal">
+ <div class="card-title"><span class="icon">👂</span>Oreille EXTERNE</div>
+ <ul class="clean">
+ <li><strong>Pavillon (auricle)</strong> : cartilage élastique + lobule</li>
+ <li><strong>Conduit auditif externe (CAE)</strong> : 2-3 cm en S, glandes cérumineuses</li>
+ <li>Cérumen = anti-microbien</li>
+ <li>Innervation : NC V (auriculo-temporal), VII, IX, X (vagal → réflexe vomissement à l'otoscopie chez l'enfant)</li>
+ <li><strong>Tympan</strong> : ~1 cm, cône concave, umbo, pars tensa + flaccida</li>
+ </ul>
+ </div>
+ <div class="card orange">
+ <div class="card-title"><span class="icon">🔧</span>Oreille MOYENNE</div>
+ <ul class="clean">
+ <li>Cavité aérienne dans l'os temporal</li>
+ <li><strong>3 osselets</strong> (chaîne ossiculaire) :<br>Marteau (malleus) → Enclume (incus) → Étrier (stapes)</li>
+ <li>Étrier sur la fenêtre ovale</li>
+ <li><strong>Trompe d'Eustache</strong> : équilibre la pression, draine</li>
+ <li>Communique avec le rhinopharynx</li>
+ </ul>
+ </div>
+ <div class="card purple">
+ <div class="card-title"><span class="icon">🐌</span>Oreille INTERNE</div>
+ <ul class="clean">
+ <li><strong>Labyrinthe osseux</strong> (perilymphe) + <strong>labyrinthe membraneux</strong> (endolymphe)</li>
+ <li><strong>Cochlée</strong> : audition (organe de Corti)</li>
+ <li><strong>Vestibule + canaux semi-circulaires</strong> : équilibre</li>
+ <li>NC <strong>VIII (vestibulo-cochléaire)</strong></li>
+ </ul>
+ </div>
+ </div>
+ </section>
+
+ <!-- ============ OTITE EXTERNE/MOYENNE ============ -->
+ <section class="section" id="otite-ext">
+ <div class="section-header"><div class="section-num">2</div><h2 class="section-title">Pathologies <em>externes & moyennes</em></h2></div>
+ <div class="grid-2">
+ <div class="card teal">
+ <div class="card-title">Bouchon de cérumen</div>
+ <ul class="clean">
+ <li>Cause fréquente d'hypoacousie réversible</li>
+ <li>Acuité ↓ + sensation d'oreille pleine</li>
+ <li>Tx : ramollissement (huile, bicarbonate) + lavage</li>
+ </ul>
+ </div>
+ <div class="card orange">
+ <div class="card-title">Otite externe ("oreille du nageur")</div>
+ <ul class="clean">
+ <li>Inflammation/infection du CAE</li>
+ <li>Souvent : <em>Pseudomonas aeruginosa</em>, <em>S. aureus</em></li>
+ <li>Douleur intense à la traction du pavillon</li>
+ <li>Tx : gouttes auriculaires antibiotiques ± corticoïdes</li>
+ </ul>
+ </div>
+ <div class="card red">
+ <div class="card-title">Dysfonction de la trompe d'Eustache</div>
+ <ul class="clean">
+ <li>Obstruction → ↓ pression dans l'oreille moyenne</li>
+ <li>Sensation d'oreille bouchée, autophonie</li>
+ <li>Causes : rhume, allergies, anatomie</li>
+ <li>Risque : otite séreuse, atélectasie tympanique</li>
+ </ul>
+ </div>
+ <div class="card gold">
+ <div class="card-title">Barotraumatisme</div>
+ <ul class="clean">
+ <li>Différentiel rapide de pression (avion, plongée)</li>
+ <li>Dysfonction tubaire empêchant l'équilibrage</li>
+ <li>Otalgie, hypoacousie, hémotympan possible</li>
+ <li>Prévention : déglutition, manœuvre de Valsalva</li>
+ </ul>
+ </div>
+ </div>
+
+ <h3 style="font-family:'Playfair Display',serif; font-size:20px; color:#FEFCFA; margin:20px 0 12px;">Otite Moyenne Aiguë (OMA)</h3>
+ <div class="card">
+ <ul class="clean">
+ <li><strong>1ère cause de consultation pédiatrique</strong> + 1ère cause de prescription d'antibiotiques chez l'enfant</li>
+ <li>Souvent post-rhume, dysfonction tubaire</li>
+ <li>Germes : <em>S. pneumoniae</em>, <em>H. influenzae</em>, <em>M. catarrhalis</em></li>
+ <li>Otalgie + fièvre + tympan rouge bombé</li>
+ <li>Risque : perforation tympanique (otorrhée), mastoïdite</li>
+ <li>Tx : amoxicilline en 1ère intention (si bactérienne, enfant &lt; 2 ans)</li>
+ </ul>
+ </div>
+
+ <h3 style="font-family:'Playfair Display',serif; font-size:20px; color:#FEFCFA; margin:20px 0 12px;">Otosclérose</h3>
+ <div class="card purple">
+ <ul class="clean">
+ <li>Dystrophie osseuse autour de l'<strong>étrier</strong> et de la fenêtre ovale</li>
+ <li><strong>Surdité de transmission progressive</strong></li>
+ <li>Hérédité fréquente · femme jeune · aggravée par grossesse</li>
+ <li>Tx : prothèse auditive ou chirurgie (stapédectomie)</li>
+ </ul>
+ </div>
+ </section>
+
+ <!-- ============ INTERNE ============ -->
+ <section class="section" id="interne">
+ <div class="section-header"><div class="section-num">3</div><h2 class="section-title">Oreille interne & <em>cochlée</em></h2></div>
+ <div class="card">
+ <div class="card-title"><span class="icon">🐌</span>Cochlée — anatomie</div>
+ <ul class="clean">
+ <li>Spirale osseuse de 2,5 tours autour du modiolus</li>
+ <li><strong>3 rampes</strong> : scala vestibuli (perilymphe) + scala media (endolymphe) + scala tympani (perilymphe)</li>
+ <li><strong>Membrane vestibulaire (Reissner)</strong> : sépare scala vestibuli/media</li>
+ <li><strong>Membrane basilaire</strong> : porte l'ORGANE DE CORTI (cellules ciliées)</li>
+ <li>Endolymphe : riche en K⁺ ; perilymphe : riche en Na⁺</li>
+ </ul>
+ </div>
+
+ <div class="card teal" style="margin-top:14px">
+ <div class="card-title">Mécanique auditive (transduction)</div>
+ <ol class="clean">
+ <li>Onde sonore → tympan vibre</li>
+ <li>Vibration transmise par chaîne ossiculaire (marteau→enclume→étrier)</li>
+ <li>Étrier → fenêtre ovale → onde dans la perilymphe (scala vestibuli)</li>
+ <li>Mise en mouvement de la membrane basilaire</li>
+ <li>Cils des cellules ciliées (organe de Corti) bougent → ouverture canaux ioniques → dépolarisation</li>
+ <li>Influx vers <strong>nerf cochléaire (VIII)</strong> → noyaux cochléaires (pont) → décussation partielle → colliculi inférieurs → corps géniculé médian (thalamus) → cortex auditif primaire (aire 41, gyrus temporal supérieur)</li>
+ </ol>
+ </div>
+
+ <div class="card orange" style="margin-top:14px">
+ <div class="card-title">Tonotopie</div>
+ <ul class="clean">
+ <li>La membrane basilaire est <strong>"accordée"</strong> sur des fréquences précises</li>
+ <li><strong>Aigus</strong> : base de la cochlée</li>
+ <li><strong>Graves</strong> : apex de la cochlée</li>
+ <li>Audition humaine : 20-20 000 Hz · sensibilité max 1000-3000 Hz</li>
+ </ul>
+ </div>
+
+ <h3 style="font-family:'Playfair Display',serif; font-size:20px; color:#FEFCFA; margin:20px 0 12px;">Acouphènes (tinnitus)</h3>
+ <div class="card red">
+ <ul class="clean">
+ <li>Perception d'un son sans stimulus externe (sifflement, bourdonnement)</li>
+ <li>Touche ~1/5 Américains, 40-70 ans le plus</li>
+ <li><strong>Subjectif</strong> (la majorité) vs <strong>objectif</strong> (rare, audible par l'examinateur, vasculaire)</li>
+ <li>Causes : bouchon, trauma sonore, ototoxiques (aspirine, aminosides), presbyacousie, HTA, athérosclérose</li>
+ <li>Souvent associé à une perte auditive</li>
+ <li>Tx : suppression du facteur causal, masqueurs sonores, antidépresseurs, benzodiazépines</li>
+ </ul>
+ </div>
+ </section>
+
+ <!-- ============ SURDITES ============ -->
+ <section class="section" id="surdite">
+ <div class="section-header"><div class="section-num">4</div><h2 class="section-title">Surdités (<em>hearing loss</em>)</h2></div>
+ <div class="grid-2">
+ <div class="card teal">
+ <div class="card-title">Surdité de TRANSMISSION (conductive)</div>
+ <ul class="clean">
+ <li>Atteinte de l'oreille externe ou moyenne</li>
+ <li>Le son n'est pas correctement TRANSMIS à l'oreille interne</li>
+ <li>Causes : bouchon, otite moyenne, otosclérose, perforation tympanique, malformation</li>
+ <li><strong>Rinne négatif</strong> (CO &gt; CA) ; <strong>Weber latéralisé du côté ATTEINT</strong></li>
+ <li>Audiogramme : courbe aérienne abaissée, osseuse normale</li>
+ </ul>
+ </div>
+ <div class="card orange">
+ <div class="card-title">Surdité de PERCEPTION (sensorineurale)</div>
+ <ul class="clean">
+ <li>Atteinte de l'oreille interne (cochlée) ou des voies nerveuses (VIII, voies centrales)</li>
+ <li>Causes : presbyacousie, traumatisme sonore, ototoxiques, génétique, infection (CMV, méningite), Ménière, neurinome de l'acoustique</li>
+ <li><strong>Rinne positif</strong> (CA &gt; CO) ; <strong>Weber latéralisé du côté SAIN</strong></li>
+ <li>Audiogramme : aérienne et osseuse également abaissées</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="highlight orange" style="margin-top:14px">
+ <strong>Mnémo Rinne / Weber</strong> :<br>
+ • Rinne <strong>+</strong> = normal ou perception (CA &gt; CO)<br>
+ • Rinne <strong>−</strong> = transmission (CO &gt; CA)<br>
+ • Weber latéralisé = <em>vers l'oreille atteinte</em> en <strong>transmission</strong>, <em>vers l'oreille saine</em> en <strong>perception</strong>
+ </div>
+
+ <table>
+ <thead><tr><th>Population</th><th>Caractéristiques</th></tr></thead>
+ <tbody>
+ <tr><td><strong>Nourrissons / enfants</strong></td><td>Dépistage néonatal universel (OEA, PEA). Hypoacousie → retard de langage et apprentissage</td></tr>
+ <tr><td><strong>Personnes âgées</strong></td><td><strong>Presbyacousie</strong> (perte progressive bilatérale, fréquences aiguës d'abord). Impact social et cognitif (lien démence)</td></tr>
+ <tr><td><strong>Tx</strong></td><td>Prothèses auditives, implants cochléaires (sourdité profonde), aides à la communication</td></tr>
+ </tbody>
+ </table>
+ </section>
+
+ <!-- ============ VESTIBULAIRE ANAT ============ -->
+ <section class="section" id="vest-anat">
+ <div class="section-header"><div class="section-num">5</div><h2 class="section-title">Système <em>vestibulaire</em></h2></div>
+ <div class="highlight purple">
+ Le système vestibulaire <strong>maintient la posture</strong> et garantit un <strong>champ visuel stable</strong> malgré les mouvements de la tête. Information transmise au tronc cérébral (réflexes rapides), puis au cervelet, thalamus, cortex.
+ </div>
+ <div class="grid-2">
+ <div class="card teal">
+ <div class="card-title">Canaux semi-circulaires (3)</div>
+ <ul class="clean">
+ <li><strong>Latéral (horizontal)</strong>, <strong>antérieur (supérieur)</strong>, <strong>postérieur (inférieur)</strong></li>
+ <li>Disposés dans les 3 plans de l'espace (perpendiculaires)</li>
+ <li>Détectent l'<strong>accélération angulaire</strong> (rotations)</li>
+ <li>Ampoule + crista ampullaris + cellules ciliées + cupule</li>
+ <li>Mvt de la tête → endolymphe en retard → déformation cupule → activation/inhibition</li>
+ </ul>
+ </div>
+ <div class="card orange">
+ <div class="card-title">Saccule + Utricule (otolithes)</div>
+ <ul class="clean">
+ <li>Détectent l'<strong>accélération linéaire et la position</strong> de la tête (gravité)</li>
+ <li><strong>Macula</strong> : épithélium sensoriel + cellules ciliées</li>
+ <li>Membrane otolithique avec <strong>otolithes (cristaux de carbonate de calcium)</strong></li>
+ <li>Inclinaison de la tête → otolithes glissent → déformation cils → potentiel</li>
+ <li>Utricule : plan horizontal · Saccule : plan vertical</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="card purple" style="margin-top:14px">
+ <div class="card-title">Voies nerveuses</div>
+ <ul class="clean">
+ <li>Ganglion vestibulaire (Scarpa) → <strong>nerf vestibulaire (NC VIII)</strong> → noyaux vestibulaires du tronc cérébral (pont/bulbe)</li>
+ <li><strong>Réflexe vestibulo-oculaire (VOR)</strong> : NC III/IV/VI → garde l'image stable sur la rétine pendant les mvts de tête</li>
+ <li><strong>Réflexes vestibulo-spinaux</strong> : tractus vestibulospinal → ajustements posturaux musculo-squelettiques</li>
+ <li>Projections vers le cervelet, thalamus, cortex temporal/pariétal</li>
+ <li>Connexions vers la zone gâchette → nausées/vomissements lors des troubles vestibulaires</li>
+ </ul>
+ </div>
+ </section>
+
+ <!-- ============ VERTIGE NYSTAGMUS ============ -->
+ <section class="section" id="vertige">
+ <div class="section-header"><div class="section-num">6</div><h2 class="section-title">Vertige & <em>nystagmus</em></h2></div>
+ <div class="card teal">
+ <div class="card-title">Vertige</div>
+ <ul class="clean">
+ <li><strong>Illusion de mouvement</strong> (rotation ++) : soit le sujet bouge dans un décor fixe (subjectif), soit le décor tourne autour du sujet (objectif)</li>
+ <li>À distinguer des sensations vagues : étourdissement, lipothymie, déséquilibre</li>
+ <li><strong>~85 % périphérique</strong> (intense, épisodique, bref, signes auditifs possibles, nystagmus horizonto-rotatoire)</li>
+ <li><strong>~15 % central</strong> (modéré, continu, chronique, signes neurologiques associés, nystagmus vertical possible)</li>
+ </ul>
+ </div>
+
+ <div class="card orange" style="margin-top:14px">
+ <div class="card-title">Nystagmus</div>
+ <ul class="clean">
+ <li>Mouvements oculaires rythmiques involontaires</li>
+ <li><strong>Phase lente</strong> (vestibulaire compensatoire) + <strong>phase rapide</strong> (recentrage)</li>
+ <li>Direction nommée par la phase rapide</li>
+ <li>Types : horizontal, vertical, rotatoire, mixte</li>
+ <li><strong>Spontané sans mvt = pathologique</strong></li>
+ <li>Vertical = évoque atteinte centrale</li>
+ <li>Tests : épreuves caloriques, rotation</li>
+ </ul>
+ </div>
+
+ <table>
+ <thead><tr><th>Vertige PÉRIPHÉRIQUE</th><th>Vertige CENTRAL</th></tr></thead>
+ <tbody>
+ <tr><td>Intense, brutal</td><td>Modéré, progressif</td></tr>
+ <tr><td>Épisodique (sec-min)</td><td>Continu (heures-jours)</td></tr>
+ <tr><td>Nystagmus horizonto-rotatoire</td><td>Nystagmus vertical possible</td></tr>
+ <tr><td>Nausées/vomissements +++</td><td>Modérés</td></tr>
+ <tr><td>Signes auditifs possibles (acouphènes, hypoacousie)</td><td>Signes neurologiques (ataxie, déficit, dysarthrie)</td></tr>
+ <tr><td>Pas de signes du tronc</td><td>Signes du tronc cérébral</td></tr>
+ </tbody>
+ </table>
+
+ <div class="card gold" style="margin-top:14px">
+ <div class="card-title">Mal des transports (motion sickness)</div>
+ <ul class="clean">
+ <li>Vertige PHYSIOLOGIQUE par stimulation rythmique répétée</li>
+ <li>Voiture, avion, bateau</li>
+ <li>Vertige + malaise + nausée + vomissements + sueurs + tachycardie + hypotension</li>
+ <li>Causes : <strong>conflit sensoriel</strong> entre signaux vestibulaires, visuels et proprioceptifs</li>
+ <li>Améliorée en regardant l'horizon (cohérence vision/vestibulaire)</li>
+ <li>Tx : antihistaminiques (méclizine, diménhydrinate), scopolamine</li>
+ </ul>
+ </div>
+ </section>
+
+ <!-- ============ BPPV / Ménière / Neuronite ============ -->
+ <section class="section" id="bppv-mn">
+ <div class="section-header"><div class="section-num">7</div><h2 class="section-title">BPPV · Ménière<em>Neuronite</em></h2></div>
+
+ <div class="card purple">
+ <div class="card-title"><span class="icon">🎯</span>Vertige Positionnel Paroxystique Bénin (VPPB / BPPV)</div>
+ <ul class="clean">
+ <li><strong>Cause la plus fréquente de vertige</strong> pathologique</li>
+ <li>Mécanisme : <strong>déplacement d'otolithes</strong> de l'utricule vers les canaux semi-circulaires (souvent postérieur)</li>
+ <li>Vertige bref (&lt; 1 min) déclenché par les <strong>changements de position de la tête</strong></li>
+ <li>Survient dans le lit (rotations), en se levant, en se baissant</li>
+ <li>Délai de quelques sec entre mvt et début du vertige</li>
+ <li>Diagnostic : <strong>manœuvre de Dix-Hallpike</strong> (déclenche vertige + nystagmus)</li>
+ <li>Pas de troubles auditifs</li>
+ <li>Tx : <strong>manœuvres de repositionnement</strong> (Epley, Semont) +++</li>
+ <li>Médicaments anti-vertigineux peu utiles (limités à la nausée)</li>
+ </ul>
+ </div>
+
+ <div class="card teal" style="margin-top:14px">
+ <div class="card-title"><span class="icon">🌀</span>Maladie de Ménière</div>
+ <ul class="clean">
+ <li>Cause idiopathique (souvent virale, hydrops endolymphatique)</li>
+ <li><strong>Tétrade caractéristique</strong> :
+ <ul style="margin-top:4px;list-style:none">
+ <li>1. <strong>Vertige rotatoire violent</strong> (heures, oblige à s'allonger)</li>
+ <li>2. <strong>Acouphènes</strong></li>
+ <li>3. <strong>Hypoacousie fluctuante</strong> (souvent unilatérale au début)</li>
+ <li>4. <strong>Sensation de plénitude auriculaire</strong></li>
+ </ul>
+ </li>
+ <li>Crises récurrentes, signes autonomes (pâleur, sueurs, nausées, vomissements)</li>
+ <li>Hypoacousie progressive entre les crises</li>
+ <li>Tx :
+ <ul style="margin-top:4px;list-style:none">
+ <li>• Régime hyposodé, diurétiques</li>
+ <li>• Bétahistine (vasodilatateur cochléaire)</li>
+ <li>• Anti-vertigineux en crise</li>
+ <li>• Chirurgie en dernier recours (labyrinthectomie, gentamycine intra-tympanique)</li>
+ </ul>
+ </li>
+ </ul>
+ </div>
+
+ <div class="card orange" style="margin-top:14px">
+ <div class="card-title"><span class="icon">⚡</span>Neuronite vestibulaire aiguë</div>
+ <ul class="clean">
+ <li>Probablement <strong>virale</strong> (post-infection ORL)</li>
+ <li>Vertige rotatoire <strong>brutal et durable</strong> (jours)</li>
+ <li>Nausées, vomissements importants</li>
+ <li><strong>SANS hypoacousie ni acouphènes</strong> (différentiel avec Ménière)</li>
+ <li>Examen : nystagmus horizontal du côté sain (déviation vers le côté atteint)</li>
+ <li>Évolution favorable en quelques jours/semaines (compensation centrale)</li>
+ <li>Tx : repos initial, anti-vertigineux courts, <strong>rééducation vestibulaire précoce</strong> (kiné spécialisée)</li>
+ </ul>
+ </div>
+
+ <div class="card red" style="margin-top:14px">
+ <div class="card-title"><span class="icon">🧠</span>Vertiges centraux (à ne pas manquer)</div>
+ <ul class="clean">
+ <li>AVC du tronc cérébral / cervelet (PICA, AICA, vertébrale)</li>
+ <li>SEP (atteinte du tronc)</li>
+ <li>Tumeurs de la fosse postérieure (neurinome de l'acoustique++ : vertige + hypoacousie unilatérale + acouphènes + atteinte VII/V)</li>
+ <li>Migraine vestibulaire</li>
+ <li><strong>Drapeaux rouges</strong> : céphalée brutale, déficit neurologique focal, nystagmus vertical, dysarthrie, dysphagie, troubles de la marche</li>
+ <li>→ Imagerie urgente (IRM ++)</li>
+ </ul>
+ </div>
+
+ <div class="highlight gold" style="margin-top:14px">
+ <strong>Rôle du KINÉ en rééducation vestibulaire</strong> :
+ <ul class="clean" style="margin-top:6px">
+ <li>Manœuvres libératoires (Epley, Semont) pour BPPV</li>
+ <li>Habituation : exercices répétés provoquant le vertige pour favoriser la compensation centrale</li>
+ <li>Exercices de stabilisation du regard (VOR)</li>
+ <li>Rééducation posturale et de l'équilibre</li>
+ <li>Particulièrement efficace après neuronite vestibulaire et chez la personne âgée</li>
+ </ul>
+ </div>
+ </section>
+
+ <a href="../../qcm/neuroanat/suporte-2b.html" class="qcm-link">📝 Tester ses connaissances avec le QCM →</a>
+</div>
+
+<footer>
+ Fiche d'après <strong>Disorders of Hearing and Vestibular Function (Chapter 24)</strong>Niveau Kiné K1 · Mode sombre</footer>
+
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/neuroanat/suporte-2b.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+</body>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Méthodes & Techniques de Recherche — En chips — 7 chapitres · Acronymes essentiels · démarche scientifique · APA 7.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../assets/css/acces.css">
+<script src="../../../../assets/js/acces.js"></script>
+<title>Antisèche MTR — À lire avant l'exam</title>
+<link rel="stylesheet" href="../../../../assets/css/chrome.css">
+<style>
+:root{--bg:#0f1117;--bg2:#1a1d2a;--bg3: #161922;--border:#2a3050;--ink:#e8eaf0;--muted:#9aa3b8;--rose:#ff5c6b;--orange: #ff8fa3;--vert: #ff6b9d;--bleu:#f472b6;--violet:#f472b6}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:'Segoe UI',system-ui,sans-serif;font-size:14px;line-height:1.55}
+header{background:linear-gradient(135deg,#0f1117 0%,#1a1d2a 100%);border-bottom:3px solid var(--rose);padding:1.5rem 2rem 1.2rem;text-align:center}
+header .badge{font-size:.7rem;text-transform:uppercase;letter-spacing:3px;color:var(--rose);font-weight:700;margin-bottom:.3rem}
+header h1{font-size:1.7rem;font-weight:800;color:#ffffff;line-height:1.2}
+header p.sub{color:var(--muted);font-size:.85rem;margin-top:.4rem;max-width:600px;margin-left:auto;margin-right:auto}
+nav.jumpbar{position:sticky;top:0;z-index:100;background:rgba(10,12,20,0.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:.7rem 1rem;display:flex;gap:.4rem;flex-wrap:wrap;justify-content:center}
+nav.jumpbar a{font-size:.72rem;font-weight:700;text-decoration:none;padding:.3rem .7rem;border-radius:14px;border:1px solid var(--rose);color:var(--rose);transition:all .15s}
+nav.jumpbar a:hover{color:#ffffff;background:var(--rose)}
+main{max-width:1100px;margin:0 auto;padding:1.5rem 1rem 3rem}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:1.2rem 1.4rem;margin-bottom:1.2rem;scroll-margin-top:60px;border-left:5px solid var(--rose)}
+.card h2{font-size:1.15rem;font-weight:800;color:#ffffff;margin-bottom:.5rem;display:flex;align-items:center;gap:.5rem}
+.card .badge-num{font-size:.65rem;font-weight:800;padding:.15rem .5rem;border-radius:10px;background:var(--bg3);color:var(--muted);text-transform:uppercase;letter-spacing:1.5px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:.7rem}
+@media (max-width:720px){.grid2{grid-template-columns:1fr}}
+.block h3{font-size:.7rem;text-transform:uppercase;letter-spacing:2px;font-weight:800;margin-bottom:.5rem;padding-left:.4rem;border-left:3px solid currentColor}
+.block.vocab h3{color:var(--orange)}
+.block.mech h3{color:var(--vert)}
+.block.chiffres h3{color:var(--rose)}
+.block.must h3{color:#ffffff}
+.chips{display:flex;flex-wrap:wrap;gap:.3rem}
+.chip{display:inline-block;padding:.2rem .55rem;border-radius:12px;background:var(--bg3);color:var(--ink);font-size:.74rem;font-weight:600;border:1px solid var(--border)}
+.chip.r{background:rgba(255,92,107,0.10);border-color:rgba(255,92,107,0.4);color:#ff8fa3}
+.chip.o{background:rgba(255,107,157,0.10);border-color:rgba(255,107,157,0.4);color:#ff8fa3}
+.chip.v{background:rgba(61,214,140,0.10);border-color:rgba(61,214,140,0.4);color:#ff6b9d}
+.chip.b{background:rgba(255,107,157,0.10);border-color:rgba(255,107,157,0.4);color:#f472b6}
+.chip.p{background:rgba(255,107,157,0.10);border-color:rgba(255,107,157,0.4);color:#f472b6}
+.mech-list{list-style:none;padding:0;margin:0}
+.mech-list li{padding:.25rem 0;font-size:.82rem;border-bottom:1px dashed var(--border);display:flex;gap:.4rem;align-items:flex-start}
+.mech-list li:last-child{border-bottom:none}
+.mech-list li::before{content:"→";color:var(--vert);font-weight:800;flex-shrink:0}
+.num-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:.5rem}
+.num{background:#0f1117;border:1px solid var(--border);border-radius:8px;padding:.5rem;text-align:center}
+.num .v{font-size:.9rem;font-weight:800;color:var(--orange)}
+.num .l{font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-top:.2rem}
+.must-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.3rem}
+.must-list li{font-size:.78rem;padding:.3rem .5rem;background:rgba(255,107,157,0.06);border-left:3px solid var(--orange);border-radius:4px}
+.must-list li strong{color:var(--orange)}
+.back-btn{position:fixed;top:14px;left:14px;z-index:200;background:rgba(15,17,23,0.92);backdrop-filter:blur(10px);border:1px solid rgba(255,92,107,0.30);color:#e8eaf0;padding:8px 13px;border-radius:10px;text-decoration:none;font-size:12.5px;font-weight:600}
+.back-btn:hover{border-color:var(--rose);color:#ffffff}
+footer{text-align:center;padding:1.5rem;color:var(--muted);font-size:.75rem;border-top:1px solid var(--border);margin-top:2rem}
+.intro-tip{background:rgba(255,107,157,0.08);border:1px solid rgba(255,107,157,0.3);border-radius:10px;padding:.9rem 1.1rem;margin:1rem 0;font-size:.85rem;color:#ff8fa3}
+.intro-tip strong{color:var(--orange)}
+</style>
+</head>
+<body>
+<a href="accueil-methodes-et-techniques-de-recherche.html" class="back-nav">← MTR I</a>
+
+<a href="accueil-methodes-et-techniques-de-recherche.html" class="back-btn">← MTR</a>
+
+<header>
+ <div class="badge">📝 Antisèche · À lire avant l'exam</div>
+ <h1>Méthodes &amp; Techniques de Recherche — En chips</h1>
+ <p class="sub">7 chapitres · Acronymes essentiels · démarche scientifique · APA 7.</p>
+</header>
+
+<nav class="jumpbar">
+ <a href="#c1">1. Fondements</a>
+ <a href="#c2">2. PBE</a>
+ <a href="#c3">3. Projet</a>
+ <a href="#c4">4. Méthodologie</a>
+ <a href="#c5">5. Chercher la preuve</a>
+ <a href="#c6">6. Organisation</a>
+ <a href="#c7">7. Rédaction (APA 7)</a>
+</nav>
+
+<main>
+
+<div class="intro-tip">
+ <strong>📌 MTR = acronymes :</strong> PICOT, PICO, FINER, SMART, IMRaD, 5A, 3 piliers, etc. Mémorise-les comme ton numéro de téléphone.
+</div>
+
+<!-- 1. FONDEMENTS -->
+<div id="c1" class="card">
+ <h2><span class="badge-num">Ch. 1</span> 📐 Fondements de la recherche scientifique</h2>
+ <div class="grid2">
+ <div class="block vocab">
+ <h3>📌 Vocabulaire</h3>
+ <div class="chips">
+ <span class="chip r">démarche scientifique</span><span class="chip r">recherche fondamentale</span><span class="chip r">recherche appliquée</span><span class="chip r">recherche clinique</span><span class="chip o">observation</span><span class="chip o">question</span><span class="chip o">expérimentation</span><span class="chip o">analyse</span><span class="chip o">interprétation</span><span class="chip v">IMRaD</span><span class="chip v">méta-analyse</span><span class="chip v">revue systématique</span><span class="chip v">guidelines</span><span class="chip b">intervention</span><span class="chip b">étiologie</span><span class="chip b">pronostic</span><span class="chip b">diagnostic</span><span class="chip b">prévalence</span><span class="chip b">incidence</span><span class="chip b">qualitatif</span><span class="chip p">sensibilité</span><span class="chip p">spécificité</span><span class="chip p">vrai positif</span><span class="chip p">faux négatif</span>
+ </div>
+ </div>
+ <div class="block mech">
+ <h3>⚙️ Démarche scientifique</h3>
+ <ul class="mech-list">
+ <li>Observation → Question → Expérimentation → Analyse</li>
+ <li>IMRaD : Intro · Méthodes · Résultats · Discussion</li>
+ <li>NE sont PAS des preuves : opinion, tradition, intuition seule</li>
+ <li>6 types de questions cliniques : intervention, étiologie, pronostic, diagnostic, fréquence, expérience</li>
+ </ul>
+ </div>
+ </div>
+ <div class="grid2" style="margin-top:1rem">
+ <div class="block chiffres">
+ <h3>🔢 Diagnostic</h3>
+ <div class="num-grid">
+ <div class="num"><div class="v">Sensibilité</div><div class="l">↑ vrais positifs</div></div>
+ <div class="num"><div class="v">Spécificité</div><div class="l">↑ vrais négatifs</div></div>
+ <div class="num"><div class="v">6 types</div><div class="l">questions cliniques</div></div>
+ </div>
+ </div>
+ <div class="block must">
+ <h3>🎯 À retenir</h3>
+ <ul class="must-list">
+ <li><strong>Sensible</strong> = peu de faux NÉGATIFS (dépiste bien)</li>
+ <li><strong>Spécifique</strong> = peu de faux POSITIFS (confirme bien)</li>
+ </ul>
+ </div>
+ </div>
+</div>
+
+<!-- 2. PBE -->
+<div id="c2" class="card">
+ <h2><span class="badge-num">Ch. 2</span> 🎯 Pratique fondée sur les preuves (PBE / EBM)</h2>
+ <div class="grid2">
+ <div class="block vocab">
+ <h3>📌 Vocabulaire</h3>
+ <div class="chips">
+ <span class="chip r">PBE</span><span class="chip r">EBM</span><span class="chip r">PIE</span><span class="chip r">Sackett</span><span class="chip o">3 piliers</span><span class="chip o">meilleure preuve</span><span class="chip o">expertise clinique</span><span class="chip o">valeurs patient</span><span class="chip v">5 A</span><span class="chip v">Ask</span><span class="chip v">Acquire</span><span class="chip v">Appraise</span><span class="chip v">Apply</span><span class="chip v">Analyze</span><span class="chip b">PICO</span><span class="chip b">méta-analyse</span><span class="chip b">RCT</span><span class="chip b">guideline</span><span class="chip p">randomisation</span><span class="chip p">biais</span><span class="chip p">applicabilité</span>
+ </div>
+ </div>
+ <div class="block mech">
+ <h3>⚙️ Cycle PBE — 5A</h3>
+ <ul class="mech-list">
+ <li>1. ASK → formuler question (PICO)</li>
+ <li>2. ACQUIRE → chercher dans bases reconnues</li>
+ <li>3. APPRAISE → évaluer (randomisation, biais)</li>
+ <li>4. APPLY → appliquer au patient</li>
+ <li>5. ANALYZE → observer + ajuster</li>
+ <li>PBE = protocole tel quel · PIE = adapté au patient</li>
+ </ul>
+ </div>
+ </div>
+ <div class="grid2" style="margin-top:1rem">
+ <div class="block chiffres">
+ <h3>🔢 Sackett 2000</h3>
+ <div class="num-grid">
+ <div class="num"><div class="v">3 piliers</div><div class="l">preuve + expertise + patient</div></div>
+ <div class="num"><div class="v">5 A</div><div class="l">Ask Acquire Appraise Apply Analyze</div></div>
+ </div>
+ </div>
+ <div class="block must">
+ <h3>🎯 À retenir</h3>
+ <ul class="must-list">
+ <li><strong>3 piliers</strong> = preuve + expertise + valeurs patient</li>
+ <li>Pour un mémoire → commencer par <strong>revues systématiques</strong></li>
+ <li><strong>PIE</strong> = preuve + négociation + éducation + exos acceptables</li>
+ </ul>
+ </div>
+ </div>
+</div>
+
+<!-- 3. PROJET -->
+<div id="c3" class="card">
+ <h2><span class="badge-num">Ch. 3</span> 📋 Projet de recherche</h2>
+ <div class="grid2">
+ <div class="block vocab">
+ <h3>📌 Vocabulaire</h3>
+ <div class="chips">
+ <span class="chip r">projet de recherche</span><span class="chip r">protocole</span><span class="chip r">objectif</span><span class="chip r">hypothèse</span><span class="chip o">variable indépendante (VI)</span><span class="chip o">variable dépendante (VD)</span><span class="chip o">cause</span><span class="chip o">effet</span><span class="chip v">PICOT</span><span class="chip v">P</span><span class="chip v">I</span><span class="chip v">C</span><span class="chip v">O</span><span class="chip v">T</span><span class="chip b">FINER</span><span class="chip b">SMART</span><span class="chip b">éthique</span><span class="chip b">quantifiable</span><span class="chip p">EVA</span><span class="chip p">goniomètre</span><span class="chip p">dynamomètre</span><span class="chip p">comité d'éthique</span>
+ </div>
+ </div>
+ <div class="block mech">
+ <h3>⚙️ 6 étapes du projet</h3>
+ <ul class="mech-list">
+ <li>1. Question → 2. Revue litt. → 3. Méthodologie</li>
+ <li>4. Collecte/analyse → 5. Diffusion → 6. Application</li>
+ <li>PICOT structure la question</li>
+ <li>FINER = pertinence du projet</li>
+ <li>SMART = qualité des objectifs</li>
+ </ul>
+ </div>
+ </div>
+ <div class="grid2" style="margin-top:1rem">
+ <div class="block chiffres">
+ <h3>🔢 Acronymes</h3>
+ <div class="num-grid">
+ <div class="num"><div class="v">PICOT</div><div class="l">Patient · Intervention · Compar. · Outcome · Time</div></div>
+ <div class="num"><div class="v">FINER</div><div class="l">Faisable Intéressant Nouveau Éthique Relevant</div></div>
+ <div class="num"><div class="v">SMART</div><div class="l">Spécifique Mesurable Atteignable Relevant Temporel</div></div>
+ </div>
+ </div>
+ <div class="block must">
+ <h3>🎯 À retenir</h3>
+ <ul class="must-list">
+ <li><strong>VI</strong> = on manipule (cause)<strong>VD</strong> = on mesure (effet)</li>
+ <li>Revue litt. ≠ résumé d'articles : <strong>analyse critique</strong></li>
+ </ul>
+ </div>
+ </div>
+</div>
+
+<!-- 4. MÉTHODOLOGIE -->
+<div id="c4" class="card">
+ <h2><span class="badge-num">Ch. 4</span> 🔬 Méthodologie</h2>
+ <div class="grid2">
+ <div class="block vocab">
+ <h3>📌 Vocabulaire</h3>
+ <div class="chips">
+ <span class="chip r">quantitatif</span><span class="chip r">qualitatif</span><span class="chip r">expérimental</span><span class="chip r">observationnel</span><span class="chip o">transversale</span><span class="chip o">cas-témoins</span><span class="chip o">cohorte</span><span class="chip o">rétrospectif</span><span class="chip o">prospectif</span><span class="chip v">RCT</span><span class="chip v">randomisation</span><span class="chip v">groupe expérimental</span><span class="chip v">groupe contrôle</span><span class="chip v">double aveugle</span><span class="chip b">VI</span><span class="chip b">VD</span><span class="chip b">parasite</span><span class="chip b">confondante</span><span class="chip p">H0</span><span class="chip p">H1</span><span class="chip p">H2</span><span class="chip p">hypothèse nulle</span><span class="chip p">odds ratio</span><span class="chip p">risque relatif</span><span class="chip p">validité</span><span class="chip p">fiabilité</span>
+ </div>
+ </div>
+ <div class="block mech">
+ <h3>⚙️ Types d'études</h3>
+ <ul class="mech-list">
+ <li>Transversale → instant T (prévalence)</li>
+ <li>Cas-témoins → rétrospectif (Odds Ratio · facteurs de risque)</li>
+ <li>Cohorte → suivi temps (risque, pronostic)</li>
+ <li>RCT = randomisation + exp + contrôle → cause-effet</li>
+ <li>Quantitatif → efficacité · Qualitatif → expérience</li>
+ </ul>
+ </div>
+ </div>
+ <div class="grid2" style="margin-top:1rem">
+ <div class="block chiffres">
+ <h3>🔢 Hypothèses</h3>
+ <div class="num-grid">
+ <div class="num"><div class="v">H0</div><div class="l">nulle (aucune relation)</div></div>
+ <div class="num"><div class="v">H1</div><div class="l">alternative ⊕</div></div>
+ <div class="num"><div class="v">H2</div><div class="l">alternative ⊖</div></div>
+ </div>
+ </div>
+ <div class="block must">
+ <h3>🎯 À ne pas confondre</h3>
+ <ul class="must-list">
+ <li><strong>Validité</strong> (on mesure ce qu'on veut) ≠ <strong>Fiabilité</strong> (reproductibilité)</li>
+ <li>RCT = seul à montrer un lien <strong>causal</strong> robuste</li>
+ <li>VI manipulée · VD mesurée · confondantes contrôlées</li>
+ </ul>
+ </div>
+ </div>
+</div>
+
+<!-- 5. CHERCHER PREUVE -->
+<div id="c5" class="card">
+ <h2><span class="badge-num">Ch. 5</span> 🔍 Chercher la preuve (PubMed, PEDro, Cochrane)</h2>
+ <div class="grid2">
+ <div class="block vocab">
+ <h3>📌 Vocabulaire</h3>
+ <div class="chips">
+ <span class="chip r">PubMed</span><span class="chip r">PEDro</span><span class="chip r">Cochrane</span><span class="chip r">Embase</span><span class="chip r">Google Scholar</span><span class="chip o">MeSH</span><span class="chip o">descripteur</span><span class="chip o">langage contrôlé</span><span class="chip v">opérateurs booléens</span><span class="chip v">AND</span><span class="chip v">OR</span><span class="chip v">NOT</span><span class="chip b">troncature</span><span class="chip b">*</span><span class="chip b">?</span><span class="chip b">guillemets</span><span class="chip b">parenthèses</span><span class="chip b">filtres</span><span class="chip p">équation de recherche</span><span class="chip p">requête</span>
+ </div>
+ </div>
+ <div class="block mech">
+ <h3>⚙️ Méthode</h3>
+ <ul class="mech-list">
+ <li>Type question → type étude → base adaptée</li>
+ <li>PEDro = physiothérapie · Cochrane = revues</li>
+ <li>MeSH + booléens + troncatures + filtres</li>
+ <li>Équilibrer : ni trop large, ni trop spécifique</li>
+ </ul>
+ </div>
+ </div>
+ <div class="grid2" style="margin-top:1rem">
+ <div class="block chiffres">
+ <h3>🔢 Opérateurs</h3>
+ <div class="num-grid">
+ <div class="num"><div class="v">AND</div><div class="l">intersection (resserre)</div></div>
+ <div class="num"><div class="v">OR</div><div class="l">union (élargit)</div></div>
+ <div class="num"><div class="v">NOT</div><div class="l">exclure</div></div>
+ </div>
+ </div>
+ <div class="block must">
+ <h3>🎯 À retenir</h3>
+ <ul class="must-list">
+ <li>« » → expression exacte</li>
+ <li>* → troncature (variantes du mot)</li>
+ <li>Filtres : année, type étude, langue, humain</li>
+ </ul>
+ </div>
+ </div>
+</div>
+
+<!-- 6. ORGANISATION -->
+<div id="c6" class="card">
+ <h2><span class="badge-num">Ch. 6</span> 📁 Organisation d'un document scientifique</h2>
+ <div class="grid2">
+ <div class="block vocab">
+ <h3>📌 Vocabulaire</h3>
+ <div class="chips">
+ <span class="chip r">pré-textuels</span><span class="chip r">textuels</span><span class="chip r">post-textuels</span><span class="chip o">couverture</span><span class="chip o">page de garde</span><span class="chip o">dédicace</span><span class="chip o">résumé</span><span class="chip o">abstract</span><span class="chip o">keywords</span><span class="chip v">introduction</span><span class="chip v">revue de littérature</span><span class="chip v">méthodologie</span><span class="chip v">résultats</span><span class="chip v">discussion</span><span class="chip v">conclusion</span><span class="chip b">bibliographie</span><span class="chip b">appendices</span><span class="chip b">annexes</span><span class="chip p">mémoire</span><span class="chip p">article</span><span class="chip p">thèse</span>
+ </div>
+ </div>
+ <div class="block mech">
+ <h3>⚙️ Structure</h3>
+ <ul class="mech-list">
+ <li>Pré → textuels → post</li>
+ <li>Résumé rédigé en DERNIER (~ 100-150 mots)</li>
+ <li>Revue litt. : organiser par THÈMES, pas étude par étude</li>
+ <li>Résultats = DÉCRIRE · Discussion = INTERPRÉTER</li>
+ </ul>
+ </div>
+ </div>
+ <div class="grid2" style="margin-top:1rem">
+ <div class="block chiffres">
+ <h3>🔢 Keywords</h3>
+ <div class="num-grid">
+ <div class="num"><div class="v">3 à 6</div><div class="l">mots-clés</div></div>
+ <div class="num"><div class="v">100-150</div><div class="l">mots résumé</div></div>
+ </div>
+ </div>
+ <div class="block must">
+ <h3>🎯 À ne pas confondre</h3>
+ <ul class="must-list">
+ <li><strong>Appendices</strong> (créés par auteurs) ≠ <strong>Annexes</strong> (externes)</li>
+ <li>Toute <strong>abréviation</strong> définie la 1ère fois</li>
+ </ul>
+ </div>
+ </div>
+</div>
+
+<!-- 7. RÉDACTION APA 7 -->
+<div id="c7" class="card">
+ <h2><span class="badge-num">Ch. 7</span> ✍️ Rédaction scientifique &amp; normes APA 7</h2>
+ <div class="grid2">
+ <div class="block vocab">
+ <h3>📌 Vocabulaire</h3>
+ <div class="chips">
+ <span class="chip r">APA 7</span><span class="chip r">paraphrase</span><span class="chip r">citation</span><span class="chip r">référencement</span><span class="chip o">objectivité</span><span class="chip o">clarté</span><span class="chip o">cohérence</span><span class="chip o">rigueur</span><span class="chip v">Times New Roman</span><span class="chip v">Arial</span><span class="chip v">taille 12</span><span class="chip v">gras</span><span class="chip v">italique</span><span class="chip b">et al.</span><span class="chip b">DOI</span><span class="chip b">parenthèses</span><span class="chip b">auteur sujet</span><span class="chip p">plagiat</span><span class="chip p">citation littérale</span><span class="chip p">bibliographie</span><span class="chip p">retrait bloc</span>
+ </div>
+ </div>
+ <div class="block mech">
+ <h3>⚙️ Règles APA 7</h3>
+ <ul class="mech-list">
+ <li>1-9 en lettres · 10+ en chiffres (sauf résultats toujours chiffres)</li>
+ <li>3+ auteurs → <em>et al.</em> dès la 1ère citation</li>
+ <li>Jusqu'à 20 auteurs listés en biblio</li>
+ <li>DOI = lien complet (https://doi.org/...)</li>
+ <li>Tout cité doit être en biblio (et inversement)</li>
+ <li>Préférer la <strong>paraphrase</strong> à la citation littérale</li>
+ </ul>
+ </div>
+ </div>
+ <div class="grid2" style="margin-top:1rem">
+ <div class="block chiffres">
+ <h3>🔢 Format</h3>
+ <div class="num-grid">
+ <div class="num"><div class="v">3+ auteurs</div><div class="l">et al. dès la 1ère</div></div>
+ <div class="num"><div class="v">20 auteurs</div><div class="l">max listés en biblio</div></div>
+ <div class="num"><div class="v">12 pt</div><div class="l">taille de base</div></div>
+ </div>
+ </div>
+ <div class="block must">
+ <h3>🎯 À ne pas confondre</h3>
+ <ul class="must-list">
+ <li>Citation = mot à mot · Paraphrase = reformulation</li>
+ <li>Pas d'« à mon avis » → objectivité</li>
+ <li>Alinéa <strong>OU</strong> espace entre paragraphes (pas les deux)</li>
+ </ul>
+ </div>
+ </div>
+</div>
+
+</main>
+
+<footer>
+ 📝 Antisèche MTR · Kinésithérapie<a href="accueil-methodes-et-techniques-de-recherche.html" style="color:var(--orange);text-decoration:none">retour à l'index</a>
+</footer>
+
+</body>
+</html>

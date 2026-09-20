@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Physiologie du Système Digestif — :root { --bg: #0f1117; --ink: #e8eaf0; --accent: #ff5c6b; --accent2: #ff8fa3; --accent3: #ff6b9d; --accent4: #f472b6; --acce">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../assets/css/acces.css">
+<script src="../../../../../assets/js/acces.js"></script>
+<title>Fiche de Révision – Physiologie du Système Digestif</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../../assets/css/chrome.css">
+<style>
+ :root {
+ --bg: #0f1117;
+ --ink: #e8eaf0;
+ --accent: #ff5c6b;
+ --accent2: #ff8fa3;
+ --accent3: #ff6b9d;
+ --accent4: #f472b6;
+ --accent5: #f472b6;
+ --muted: #9aa3b8;
+ --card: #1a1d2a;
+ --border: #2a3050;
+ --tag-bg: #0f1117;
+ }
+
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+
+ body {
+ font-family: 'Source Sans 3', sans-serif;
+ background: var(--bg);
+ color: var(--ink);
+ font-size: 14px;
+ line-height: 1.6;
+ }
+
+ /* HEADER */
+ .header {
+ background: linear-gradient(135deg, #0f1117 0%, #1a1d2a 100%);
+ color: #e8eaf0;
+ padding: 32px 40px 24px;
+ position: relative;
+ overflow: hidden;
+ border-bottom: 2px solid var(--accent2);
+ }
+ .header::before {
+ content: '';
+ position: absolute;
+ top: -40px; right: -40px;
+ width: 200px; height: 200px;
+ border-radius: 50%;
+ background: var(--accent);
+ opacity: 0.15;
+ }
+ .header::after {
+ content: '';
+ position: absolute;
+ bottom: -30px; left: 200px;
+ width: 120px; height: 120px;
+ border-radius: 50%;
+ background: var(--accent2);
+ opacity: 0.12;
+ }
+ .header-top {
+ display: flex;
+ justify-content: space-between;
+ align-items: flex-start;
+ flex-wrap: wrap;
+ gap: 12px;
+ position: relative; z-index: 1;
+ }
+ .header h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: 28px;
+ font-weight: 900;
+ letter-spacing: -0.5px;
+ line-height: 1.1;
+ }
+ .header h1 span { color: var(--accent2); }
+ .header-meta {
+ text-align: right;
+ font-size: 12px;
+ opacity: 0.7;
+ font-weight: 300;
+ letter-spacing: 0.5px;
+ }
+ .tags {
+ display: flex;
+ gap: 8px;
+ flex-wrap: wrap;
+ margin-top: 14px;
+ position: relative; z-index: 1;
+ }
+ .tag {
+ border: 1px solid rgba(255,255,255,0.3);
+ border-radius: 20px;
+ padding: 3px 12px;
+ font-size: 11px;
+ font-weight: 600;
+ letter-spacing: 0.8px;
+ text-transform: uppercase;
+ }
+
+ /* MAIN GRID */
+ .main {
+ padding: 28px 28px 40px;
+ max-width: 1100px;
+ margin: 0 auto;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 16px;
+ }
+
+ .section {
+ background: var(--card);
+ border-radius: 10px;
+ padding: 18px;
+ border: 1px solid var(--border);
+ box-shadow: 0 2px 12px rgba(0,0,0,0.4);
+ break-inside: avoid;
+ }
+ .section.wide { grid-column: span 2; }
+ .section.full { grid-column: span 3; }
+
+ .section-header {
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ margin-bottom: 14px;
+ padding-bottom: 10px;
+ border-bottom: 2px solid var(--border);
+ }
+ .section-icon {
+ width: 30px; height: 30px;
+ border-radius: 8px;
+ display: flex; align-items: center; justify-content: center;
+ font-size: 15px;
+ flex-shrink: 0;
+ }
+ .section-title {
+ font-family: 'Playfair Display', serif;
+ font-size: 14px;
+ font-weight: 700;
+ line-height: 1.2;
+ }
+
+ /* Color themes per section */
+ .red .section-icon { background: rgba(255, 92, 107, 0.15); }
+ .red .section-title { color: var(--accent); }
+ .red .section-header { border-color: rgba(255, 92, 107, 0.3); }
+
+ .orange .section-icon { background: rgba(255,107,157,0.15); }
+ .orange .section-title { color: var(--accent2); }
+ .orange .section-header { border-color: rgba(255,107,157,0.3); }
+
+ .green .section-icon { background: rgba(61, 214, 140, 0.15); }
+ .green .section-title { color: var(--accent3); }
+ .green .section-header { border-color: rgba(61, 214, 140, 0.3); }
+
+ .blue .section-icon { background: rgba(255,107,157,0.15); }
+ .blue .section-title { color: var(--accent4); }
+ .blue .section-header { border-color: rgba(255,107,157,0.3); }
+
+ .purple .section-icon { background: rgba(255,107,157,0.15); }
+ .purple .section-title { color: var(--accent5); }
+ .purple .section-header { border-color: rgba(255,107,157,0.3); }
+
+ .dark .section-icon { background: rgba(232, 234, 240, 0.1); }
+ .dark .section-title { color: var(--ink); }
+ .dark .section-header { border-color: var(--border); }
+
+ /* CONTENT ELEMENTS */
+ .organ-path {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 4px;
+ align-items: center;
+ }
+ .organ-badge {
+ background: linear-gradient(135deg, var(--accent4), var(--accent5));
+ color: #ffffff;
+ border-radius: 5px;
+ padding: 3px 9px;
+ font-size: 11px;
+ font-weight: 600;
+ box-shadow: 0 2px 6px rgba(255,107,157,0.25);
+ }
+ .arrow {
+ color: var(--accent2);
+ font-size: 14px;
+ font-weight: bold;
+ }
+
+ .func-list { list-style: none; }
+ .func-list li {
+ padding: 5px 0;
+ border-bottom: 1px dashed var(--border);
+ font-size: 13px;
+ }
+ .func-list li:last-child { border: none; }
+ .func-list li strong {
+ color: var(--accent);
+ font-weight: 600;
+ }
+
+ .two-col {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 12px;
+ }
+ .three-col {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ gap: 10px;
+ }
+
+ .mini-card {
+ background: rgba(10, 12, 20, 0.5);
+ border-radius: 8px;
+ padding: 10px 12px;
+ border: 1px solid var(--border);
+ }
+ .mini-card h4 {
+ font-size: 12px;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: 0.6px;
+ margin-bottom: 6px;
+ color: var(--muted);
+ }
+ .mini-card p, .mini-card li {
+ font-size: 12px;
+ color: var(--ink);
+ }
+ .mini-card ul { padding-left: 14px; }
+ .mini-card ul li { margin-bottom: 3px; }
+
+ .phase-block {
+ border-left: 3px solid;
+ padding: 8px 10px;
+ border-radius: 0 6px 6px 0;
+ margin-bottom: 8px;
+ background: rgba(10, 12, 20, 0.5);
+ font-size: 12.5px;
+ }
+ .phase-block.ceph { border-color: var(--accent4); }
+ .phase-block.gast { border-color: var(--accent3); }
+ .phase-block.intes { border-color: var(--accent); }
+
+ .phase-block strong {
+ display: block;
+ font-size: 12px;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: 0.5px;
+ margin-bottom: 3px;
+ }
+ .phase-block.ceph strong { color: var(--accent4); }
+ .phase-block.gast strong { color: var(--accent3); }
+ .phase-block.intes strong { color: var(--accent); }
+
+ .table-wrap { overflow-x: auto; }
+ table {
+ width: 100%;
+ border-collapse: collapse;
+ font-size: 12px;
+ }
+ th {
+ background: #0f1117;
+ color: #e8eaf0;
+ padding: 6px 10px;
+ text-align: left;
+ font-weight: 600;
+ font-size: 11px;
+ text-transform: uppercase;
+ letter-spacing: 0.5px;
+ border-bottom: 2px solid var(--accent2);
+ }
+ td {
+ padding: 6px 10px;
+ border-bottom: 1px solid var(--border);
+ vertical-align: top;
+ }
+ tr:nth-child(even) td { background: rgba(10, 12, 20, 0.4); }
+ td strong { color: var(--accent); }
+
+ .highlight-box {
+ background: linear-gradient(135deg, #0f1117, #1a1d2a);
+ color: #e8eaf0;
+ border-radius: 8px;
+ padding: 12px 14px;
+ font-size: 12.5px;
+ margin-top: 8px;
+ border: 1px solid var(--border);
+ }
+ .highlight-box strong { color: var(--accent2); }
+
+ .key-fact {
+ display: flex;
+ align-items: flex-start;
+ gap: 8px;
+ padding: 6px 0;
+ font-size: 12.5px;
+ border-bottom: 1px dashed var(--border);
+ }
+ .key-fact:last-child { border: none; }
+ .key-fact .dot {
+ width: 8px; height: 8px;
+ border-radius: 50%;
+ flex-shrink: 0;
+ margin-top: 4px;
+ }
+
+ .ph-bar {
+ display: flex;
+ flex-direction: column;
+ gap: 5px;
+ margin-top: 4px;
+ }
+ .ph-item {
+ display: flex;
+ align-items: center;
+ gap: 8px;
+ font-size: 12px;
+ }
+ .ph-label { width: 90px; font-weight: 600; flex-shrink: 0; }
+ .ph-track {
+ flex: 1;
+ height: 14px;
+ border-radius: 7px;
+ background: var(--border);
+ position: relative;
+ overflow: hidden;
+ }
+ .ph-fill {
+ position: absolute; left: 0; top: 0; height: 100%;
+ border-radius: 7px;
+ }
+ .ph-val { font-size: 11px; font-weight: 700; min-width: 60px; text-align: right; }
+
+ .enzyme-grid {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 6px;
+ margin-top: 6px;
+ }
+ .enz-pill {
+ background: rgba(10, 12, 20, 0.5);
+ border: 1px solid var(--border);
+ border-radius: 6px;
+ padding: 6px 8px;
+ text-align: center;
+ font-size: 11px;
+ }
+ .enz-pill .name { font-weight: 700; color: var(--ink); }
+ .enz-pill .target { color: var(--muted); font-size: 10px; margin-top: 2px; }
+
+ .footer {
+ background: #0f1117;
+ color: rgba(232, 234, 240, 0.5);
+ text-align: center;
+ padding: 12px;
+ font-size: 11px;
+ letter-spacing: 0.5px;
+ border-top: 1px solid var(--border);
+ }
+
+ @media print {
+ body { font-size: 12px; }
+ .main { padding: 12px; gap: 10px; }
+ .header { padding: 16px 20px; }
+ }
+</style>
+
+ <link rel="stylesheet" href="../../../../../assets/css/modules/fiche-theme.css">
+
+ <link rel="stylesheet" href="../../../../../assets/css/modules/fiche-layout.css">
+</head>
+<body>
+<a href="../accueil-physio.html" class="back-nav">← Physiologie II</a>
+<div class="page-toggle"><div class="pt-inner"><a href="../qcm/QCM_1_Systeme_digestif.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<!-- HEADER -->
+<div class="header">
+ <div class="header-top">
+ <div>
+ <h1>Physiologie du<br><span>Système Digestif</span></h1>
+ </div>
+ <div class="header-meta"><br>Physiologie II – Physiothérapie<br>Enseignante J
+ </div>
+ </div>
+ <div class="tags">
+ <span class="tag">Organisation générale</span>
+ <span class="tag">Fonctions</span>
+ <span class="tag">Digestion</span>
+ <span class="tag">Absorption</span>
+ <span class="tag">Nutriments</span>
+ </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+
+ <!-- 1. TUBE DIGESTIF -->
+ <div class="section red" style="grid-column: span 3;">
+ <div class="section-header">
+ <div class="section-icon">🫁</div>
+ <div class="section-title">Tube Digestif – Trajet de la bouche à l'anus</div>
+ </div>
+ <div class="organ-path">
+ <span class="organ-badge">Bouche / Cavité buccale</span>
+ <span class="arrow">→</span>
+ <span class="organ-badge">Pharynx</span>
+ <span class="arrow">→</span>
+ <span class="organ-badge">Œsophage</span>
+ <span class="arrow">→</span>
+ <span class="organ-badge">Estomac</span>
+ <span class="arrow">→</span>
+ <span class="organ-badge">Intestin grêle</span>
+ <span class="arrow" style="font-size:11px">duodénum · jéjunum · iléon</span>
+ <span class="arrow">→</span>
+ <span class="organ-badge">Intestin gros</span>
+ <span class="arrow" style="font-size:11px">cæcum · côlon · rectum · canal anal</span>
+ <span class="arrow">→</span>
+ <span class="organ-badge">Anus</span>
+ </div>
+ <div style="margin-top:10px; font-size:12.5px; color:var(--muted)">
+ <strong style="color:var(--ink)">Structures annexes :</strong> Dents · Langue · Glandes salivaires (sublinguale, submandibulaire, parotide) · Foie · Vésicule biliaire · Pancréas
+ </div>
+ </div>
+
+ <!-- 2. 8 FONCTIONS -->
+ <div class="section orange wide">
+ <div class="section-header">
+ <div class="section-icon">⚙️</div>
+ <div class="section-title">Les 8 Fonctions du Système Digestif</div>
+ </div>
+ <ul class="func-list">
+ <li><strong>1. Ingestion</strong> – Introduction d'aliments liquides ou solides dans l'estomac</li>
+ <li><strong>2. Mastication</strong> – Broyage des aliments par les dents dans la bouche</li>
+ <li><strong>3. Propulsion</strong> – Déglutition (bouche → œsophage) + Péristaltisme (progression le long du tube)</li>
+ <li><strong>4. Mélange</strong> – Contractions segmentaires : déplacement bidirectionnel des aliments</li>
+ <li><strong>5. Sécrétion</strong> – Mucus (lubrification) + Eau (liquéfaction) + Enzymes (dégradation)</li>
+ <li><strong>6. Digestion</strong> – Mécanique (mastication/mélange) + Chimique (enzymes digestives)</li>
+ <li><strong>7. Absorption</strong> – Passage des molécules vers la circulation sanguine ou lymphatique</li>
+ <li><strong>8. Élimination</strong> – Excrétion des déchets (catabolites) de l'organisme</li>
+ </ul>
+ </div>
+
+ <!-- 3. pH -->
+ <div class="section blue">
+ <div class="section-header">
+ <div class="section-icon">🧪</div>
+ <div class="section-title">pH le long du tube digestif</div>
+ </div>
+ <div class="ph-bar">
+ <div class="ph-item">
+ <span class="ph-label">Cavité orale</span>
+ <div class="ph-track"><div class="ph-fill" style="width:55%;background:#2980b9;"></div></div>
+ <span class="ph-val">6,8 – 7,5</span>
+ </div>
+ <div class="ph-item">
+ <span class="ph-label">Estomac</span>
+ <div class="ph-track"><div class="ph-fill" style="width:10%;background:#c0392b;"></div></div>
+ <span class="ph-val" style="color:var(--accent)">1,5 – 2,0 🔴</span>
+ </div>
+ <div class="ph-item">
+ <span class="ph-label">Duodénum</span>
+ <div class="ph-track"><div class="ph-fill" style="width:50%;background:#e67e22;"></div></div>
+ <span class="ph-val">5,6 – 8,0</span>
+ </div>
+ <div class="ph-item">
+ <span class="ph-label">Intestin grêle</span>
+ <div class="ph-track"><div class="ph-fill" style="width:62%;background:#27ae60;"></div></div>
+ <span class="ph-val">7,2 – 7,5</span>
+ </div>
+ <div class="ph-item">
+ <span class="ph-label">Côlon</span>
+ <div class="ph-track"><div class="ph-fill" style="width:68%;background:#8e44ad;"></div></div>
+ <span class="ph-val">7,9 – 8,5</span>
+ </div>
+ </div>
+ </div>
+
+ <!-- 4. DÉGLUTITION -->
+ <div class="section green wide">
+ <div class="section-header">
+ <div class="section-icon">🌀</div>
+ <div class="section-title">Processus de Déglutition – 3 phases</div>
+ </div>
+ <div class="three-col">
+ <div class="mini-card">
+ <h4 style="color:var(--accent4)">Phase Céphalique</h4>
+ <p>Formation du bol alimentaire dans la bouche. La <strong>langue</strong> le pousse contre le palais dur puis vers l'oropharynx.</p>
+ </div>
+ <div class="mini-card">
+ <h4 style="color:var(--accent3)">Phase Pharyngée</h4>
+ <ul>
+ <li>Palais mou se soulève (ferme le nasopharynx)</li>
+ <li>Muscles constricteurs propulsent le bol</li>
+ <li>Sphincter œsophagien supérieur se relâche</li>
+ </ul>
+ </div>
+ <div class="mini-card">
+ <h4 style="color:var(--accent)">Phase Œsophagienne</h4>
+ <p>Progression du bol de l'œsophage vers l'estomac par <strong>contractions péristaltiques</strong>. Sphincter gastro-œsophagien s'ouvre.</p>
+ </div>
+ </div>
+ </div>
+
+ <!-- 5. SÉCRÉTIONS GASTRIQUES -->
+ <div class="section purple">
+ <div class="section-header">
+ <div class="section-icon">🔬</div>
+ <div class="section-title">Sécrétions Gastriques – 3 phases</div>
+ </div>
+ <div class="phase-block ceph">
+ <strong>Phase Céphalique</strong>
+ Goût, odorat, souvenirs → stimulation gastrique via nerf vague
+ </div>
+ <div class="phase-block gast">
+ <strong>Phase Gastrique</strong>
+ Présence d'aliments dans l'estomac → <em>plus grand volume</em> de sécrétions. Distension + chémorécepteurs → gastrine
+ </div>
+ <div class="phase-block intes">
+ <strong>Phase Intestinale</strong>
+ pH &lt; 2 et/ou lipides dans le duodénum → <em>inhibition</em> des sécrétions gastriques (sécrétine, CCK, GIP)
+ </div>
+ </div>
+
+ <!-- 6. MOUVEMENTS ESTOMAC -->
+ <div class="section dark wide">
+ <div class="section-header">
+ <div class="section-icon">🌊</div>
+ <div class="section-title">Mouvements de l'Estomac</div>
+ </div>
+ <div class="three-col">
+ <div class="mini-card">
+ <h4>Remplissage</h4>
+ <p>Les plis gastriques s'atténuent → volume augmente à mesure que les aliments entrent</p>
+ </div>
+ <div class="mini-card">
+ <h4>Mélange du contenu</h4>
+ <p><strong>Ondes de mélange</strong> (~20 sec) + <strong>Ondes péristaltiques</strong> (plus fortes) → formation du <strong>chyme</strong></p>
+ </div>
+ <div class="mini-card">
+ <h4>Vidange gastrique</h4>
+ <p>Sphincter pylorique partiellement fermé. Chaque contraction péristaltique envoie un peu de chyme vers le duodénum = <strong>pompe pylorique</strong></p>
+ </div>
+ </div>
+ </div>
+
+ <!-- 7. FOIE -->
+ <div class="section orange">
+ <div class="section-header">
+ <div class="section-icon">🫀</div>
+ <div class="section-title">Rôles du Foie</div>
+ </div>
+ <ul class="func-list">
+ <li><strong>Production de bile</strong> – 600 à 1000 ml/jour ; émulsifie les graisses ; neutralise le pH</li>
+ <li><strong>Stockage</strong> – Glycogène, graisses, vitamines (A, B₁₂, D, E, K), cuivre, fer</li>
+ <li><strong>Biotransformation</strong> – Conversion de nutriments selon les besoins tissulaires</li>
+ <li><strong>Détoxification</strong> – Modification des substances toxiques → moins nocives et éliminables</li>
+ <li><strong>Phagocytose</strong> – GR, GB âgés, bactéries, débris circulants</li>
+ <li><strong>Synthèse</strong> – Production de protéines et molécules propres</li>
+ </ul>
+ <div class="highlight-box" style="margin-top:8px; font-size:11.5px;">
+ <strong>Veine porte hépatique :</strong> Nutriments absorbés → foie (traitement) avant la circulation systémique. Sang traité repart par les <em>veines hépatiques → veine cave inférieure</em>.
+ </div>
+ </div>
+
+ <!-- 8. PANCRÉAS & VÉSICULE -->
+ <div class="section blue">
+ <div class="section-header">
+ <div class="section-icon">🧬</div>
+ <div class="section-title">Pancréas & Vésicule Biliaire</div>
+ </div>
+ <div style="font-size:12.5px; font-weight:700; margin-bottom:6px; color:var(--accent4)">Suc Pancréatique</div>
+ <div class="two-col" style="margin-bottom:10px;">
+ <div class="mini-card">
+ <h4>Composant aqueux</h4>
+ <p>Ions Na⁺ et K⁺ (≈ liquide extracellulaire). Neutralise l'acidité gastrique.</p>
+ </div>
+ <div class="mini-card">
+ <h4>Composant enzymatique</h4>
+ <ul>
+ <li>Protéines → trypsine, chymotrypsine, carboxypeptidase</li>
+ <li>Polysaccharides → amylase</li>
+ <li>Lipides → lipases</li>
+ <li>ADN/ARN → nucléases</li>
+ </ul>
+ </div>
+ </div>
+ <div style="font-size:12.5px; font-weight:700; margin-bottom:4px; color:var(--accent4)">Vésicule Biliaire</div>
+ <p style="font-size:12px;">Stocke 40–70 ml de bile. L'eau est réabsorbée → sels biliaires 5 à 10× plus concentrés. Sécrète dans le duodénum jusqu'à sa vidange.</p>
+ </div>
+
+ <!-- 9. INTESTIN GRÊLE & GROS INTESTIN -->
+ <div class="section green">
+ <div class="section-header">
+ <div class="section-icon">🔄</div>
+ <div class="section-title">Intestin Grêle & Gros Intestin</div>
+ </div>
+ <div style="font-size:12.5px; font-weight:700; margin-bottom:4px; color:var(--accent3)">Intestin grêle (duodénum · jéjunum · iléon)</div>
+ <div class="key-fact">
+ <div class="dot" style="background:var(--accent3)"></div>
+ <span><strong>Site principal</strong> de la digestion et de l'absorption</span>
+ </div>
+ <div class="key-fact">
+ <div class="dot" style="background:var(--accent3)"></div>
+ <span><strong>Contractions segmentaires</strong> → mélange du contenu</span>
+ </div>
+ <div class="key-fact">
+ <div class="dot" style="background:var(--accent3)"></div>
+ <span><strong>Contractions péristaltiques</strong> → progression vers le gros intestin</span>
+ </div>
+ <div style="font-size:12.5px; font-weight:700; margin: 10px 0 4px; color:var(--accent5)">Gros intestin (cæcum · côlon · rectum · canal anal)</div>
+ <div class="key-fact">
+ <div class="dot" style="background:var(--accent5)"></div>
+ <span>Sécrétion de mucus (peu d'enzymes)</span>
+ </div>
+ <div class="key-fact">
+ <div class="dot" style="background:var(--accent5)"></div>
+ <span><strong>Mouvements de masse</strong> : 3–4×/jour</span>
+ </div>
+ <div class="key-fact">
+ <div class="dot" style="background:var(--accent5)"></div>
+ <span>Selles : eau + solides non digérés + micro-organismes + cellules épithéliales</span>
+ </div>
+ <div class="key-fact" style="border:none">
+ <div class="dot" style="background:var(--accent5)"></div>
+ <span>Gaz produits par l'activité bactérienne</span>
+ </div>
+ </div>
+
+ <!-- 10. DIGESTION DES NUTRIMENTS - TABLE -->
+ <div class="section full dark">
+ <div class="section-header">
+ <div class="section-icon">🍽️</div>
+ <div class="section-title">Digestion et Absorption des Nutriments</div>
+ </div>
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th>Macronutriment</th>
+ <th>Formes ingérées</th>
+ <th>Lieu de digestion</th>
+ <th>Enzymes clés</th>
+ <th>Produits absorbés</th>
+ <th>Voie d'absorption</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td><strong>Glucides</strong></td>
+ <td>Polysaccharides, disaccharides, monosaccharides</td>
+ <td>Bouche → estomac → intestin grêle</td>
+ <td>Amylase salivaire / gastrique / pancréatique ; Maltase, Sucrase, Lactase</td>
+ <td>Glucose, Fructose, Galactose</td>
+ <td>Veine porte hépatique → foie</td>
+ </tr>
+ <tr>
+ <td><strong>Lipides</strong></td>
+ <td>Triglycérides, phospholipides, stéroïdes, vitamines liposolubles</td>
+ <td>Intestin grêle (principalement)</td>
+ <td>Lipases pancréatique et intestinale ; émulsification par sels biliaires</td>
+ <td>Acides gras + monoglycérides → chylomicrons</td>
+ <td>Vaisseaux lymphatiques (lactéals) → circulation systémique</td>
+ </tr>
+ <tr>
+ <td><strong>Protéines</strong></td>
+ <td>Protéines alimentaires (chaînes d'acides aminés)</td>
+ <td>Estomac (début) → intestin grêle (complétion)</td>
+ <td>Pepsine (estomac) ; Trypsine, Chymotrypsine, Carboxypeptidase (pancréas) ; Aminopeptidase, Peptidase (intestin)</td>
+ <td>Acides aminés, dipeptides, tripeptides</td>
+ <td>Veine porte hépatique → foie</td>
+ </tr>
+ <tr>
+ <td><strong>Eau</strong></td>
+ <td>Eau ingérée + sécrétions intestinales</td>
+ <td>Intestin grêle (92%) + gros intestin (6–7%)</td>
+ <td>Osmose (bidirectionnelle)</td>
+ <td>H₂O</td>
+ <td>Seulement 1% éliminé dans les selles</td>
+ </tr>
+ <tr>
+ <td><strong>Ions & Vitamines</strong></td>
+ <td>Na⁺, K⁺, Ca²⁺, Mg²⁺, PO₄³⁻, Cl⁻ ; vitamines A/D/E/K/B</td>
+ <td>Intestin grêle</td>
+ <td>Transport actif (Na⁺, K⁺, Ca²⁺ avec vit. D) ; Transport passif (Cl⁻ dans duodénum/jéjunum)</td>
+ <td>Minéraux et vitamines</td>
+ <td>Sang ou lymphe selon type</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+
+ <!-- 11. MOTS CLÉS -->
+ <div class="section red">
+ <div class="section-header">
+ <div class="section-icon">🔑</div>
+ <div class="section-title">Mots-Clés Essentiels</div>
+ </div>
+ <div class="key-fact">
+ <div class="dot" style="background:var(--accent)"></div>
+ <span><strong>Péristaltisme</strong> : contractions progressives propulsant le contenu</span>
+ </div>
+ <div class="key-fact">
+ <div class="dot" style="background:var(--accent)"></div>
+ <span><strong>Bolus</strong> = masse alimentaire après mastication</span>
+ </div>
+ <div class="key-fact">
+ <div class="dot" style="background:var(--accent)"></div>
+ <span><strong>Chyme</strong> = mélange aliments + sécrétions gastriques</span>
+ </div>
+ <div class="key-fact">
+ <div class="dot" style="background:var(--accent)"></div>
+ <span><strong>Chylomicrons</strong> = lipoprotéines formées après absorption des lipides</span>
+ </div>
+ <div class="key-fact">
+ <div class="dot" style="background:var(--accent)"></div>
+ <span><strong>Villosités / Microvillosités</strong> = augmentent la surface d'absorption</span>
+ </div>
+ <div class="key-fact">
+ <div class="dot" style="background:var(--accent)"></div>
+ <span><strong>Hépatocytes</strong> = cellules fonctionnelles du foie</span>
+ </div>
+ <div class="key-fact">
+ <div class="dot" style="background:var(--accent)"></div>
+ <span><strong>Pompe pylorique</strong> = mécanisme de vidange gastrique progressive</span>
+ </div>
+ <div class="key-fact" style="border:none">
+ <div class="dot" style="background:var(--accent)"></div>
+ <span><strong>Émulsification</strong> = fragmentation des grosses gouttelettes lipidiques par la bile</span>
+ </div>
+ </div>
+
+ <!-- 12. RÉCAP ORGANES-FONCTIONS -->
+ <div class="section blue wide">
+ <div class="section-header">
+ <div class="section-icon">📋</div>
+ <div class="section-title">Récapitulatif Organe → Fonctions clés</div>
+ </div>
+ <div class="three-col">
+ <div class="mini-card">
+ <h4>Cavité orale</h4>
+ <ul>
+ <li>Ingestion, mastication</li>
+ <li>Digestion glucides (amylase salivaire)</li>
+ <li>Formation du bolus + déglutition</li>
+ </ul>
+ </div>
+ <div class="mini-card">
+ <h4>Estomac</h4>
+ <ul>
+ <li>Stockage et mélange → chyme</li>
+ <li>Début digestion protéines (pepsine + HCl)</li>
+ <li>Absorption : alcool, aspirine</li>
+ <li>Sécrétion gastrine, facteur intrinsèque</li>
+ </ul>
+ </div>
+ <div class="mini-card">
+ <h4>Intestin grêle</h4>
+ <ul>
+ <li>Neutralisation par NaHCO₃ (pancréas + bile)</li>
+ <li>Digestion complète glucides/protéines/lipides</li>
+ <li>Absorption majeure des nutriments</li>
+ </ul>
+ </div>
+ <div class="mini-card">
+ <h4>Foie & Vésicule</h4>
+ <ul>
+ <li>Production et stockage de bile</li>
+ <li>Métabolisme des nutriments, détox</li>
+ <li>Veine porte hépatique</li>
+ </ul>
+ </div>
+ <div class="mini-card">
+ <h4>Pancréas (exocrine)</h4>
+ <ul>
+ <li>Suc pancréatique : enzymes pour tous les nutriments</li>
+ <li>NaHCO₃ → neutralise acidité</li>
+ </ul>
+ </div>
+ <div class="mini-card">
+ <h4>Gros intestin</h4>
+ <ul>
+ <li>Absorption eau, ions, vitamines (K, bactériennes)</li>
+ <li>Formation et stockage des selles</li>
+ <li>Défécation (sphincters int. + ext.)</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+
+</div>
+
+<div class="footer">
+ Fiche de révision – Physiologie II | · Cours 1 : Système Digestif
+</div>
+
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../qcm/QCM_1_Systeme_digestif.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+</body>
+</html>

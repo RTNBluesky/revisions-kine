@@ -1,0 +1,251 @@
+/* === UNIFIED FICHE LAYOUT — applies on top of theme override === */
+body {
+  font-family: 'Source Sans 3', -apple-system, system-ui, sans-serif !important;
+  background: #0f1117 !important;
+  color: #e8eaf0 !important;
+  font-size: 15px !important;
+  line-height: 1.65 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Typography normalization */
+h1, header h1, .hero h1, .header h1 {
+  font-family: 'Playfair Display', serif !important;
+  font-size: clamp(28px, 4.5vw, 44px) !important;
+  font-weight: 900 !important;
+  line-height: 1.15 !important;
+  color: #e8eaf0 !important;
+  margin: 0 0 14px 0 !important;
+  background: linear-gradient(135deg, #ffffff 0%, #ff6b9d 60%, #ff5c6b 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  letter-spacing: -0.5px !important;
+}
+
+h2, .section-title, .section-header h2 {
+  font-family: 'Playfair Display', serif !important;
+  font-size: clamp(20px, 2.5vw, 26px) !important;
+  font-weight: 700 !important;
+  color: #ff6b9d !important;
+  margin: 28px 0 14px 0 !important;
+  line-height: 1.25 !important;
+}
+
+h3, .subsection-title {
+  font-family: 'Source Sans 3', sans-serif !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+  color: #ff8fa3 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1.2px !important;
+  margin: 18px 0 10px 0 !important;
+}
+
+h4 {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: #e8eaf0 !important;
+  margin: 12px 0 6px 0 !important;
+}
+
+p, li {
+  font-size: 14.5px !important;
+  color: #ff8fa3 !important;
+  line-height: 1.7 !important;
+}
+p strong, li strong, td strong { color: #ff8fa3 !important; font-weight: 600 !important; }
+
+/* Hero / Header — unify */
+.hero, header.hero, .header, header:not(.hero) {
+  background: linear-gradient(135deg, #1a1d2a 0%, #0f1117 100%) !important;
+  border-bottom: 2px solid rgba(255,107,157,0.30) !important;
+  padding: 56px 32px 44px !important;
+  text-align: left !important;
+  position: relative !important;
+  overflow: hidden !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-top: none !important;
+}
+.hero::before, header.hero::before, .header::before {
+  content: '' !important;
+  position: absolute !important;
+  top: -120px !important; right: -120px !important;
+  width: 400px !important; height: 400px !important;
+  border-radius: 50% !important;
+  background: radial-gradient(circle, rgba(255,107,157,0.20) 0%, transparent 70%) !important;
+  pointer-events: none !important;
+}
+.hero::after, header.hero::after, .header::after {
+  content: '' !important;
+  position: absolute !important;
+  bottom: -80px !important; left: 80px !important;
+  width: 280px !important; height: 280px !important;
+  border-radius: 50% !important;
+  background: radial-gradient(circle, rgba(255,92,107,0.14) 0%, transparent 70%) !important;
+  pointer-events: none !important;
+}
+
+/* Containers */
+.container, .page, .main, main, body > div:not(.hero):not(.header):not(.toc) {
+  max-width: 1100px !important;
+  margin: 0 auto !important;
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+
+/* Section / card / surface elements — uniform pill-card style */
+.section, .card, .mini-card, .kv-card, .highlight, .formula-box,
+.timeline, .cycle-container, .table-wrap, .alert, .success,
+.memo, .memory-card, .review-q, .feedback, .question-card,
+section > div:not(.section-head):not(.section-divider) > .card,
+.intro-card, .key-points {
+  background: #1a1d2a !important;
+  border: 1px solid #2a3050 !important;
+  border-radius: 12px !important;
+  padding: 18px 22px !important;
+  margin-bottom: 14px !important;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.30) !important;
+  color: #e8eaf0 !important;
+}
+.card:hover {
+  border-color: rgba(255,107,157,0.40) !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 8px 24px rgba(255,107,157,0.15) !important;
+  transition: all 0.2s !important;
+}
+
+/* Highlight box variants */
+.highlight, .formula-box {
+  background: linear-gradient(135deg, rgba(255,107,157,0.08), rgba(255,92,107,0.04)) !important;
+  border-left: 3px solid #ff6b9d !important;
+}
+.alert {
+  background: rgba(255,92,107,0.08) !important;
+  border-left: 3px solid #ff5c6b !important;
+  color: #ff8fa3 !important;
+}
+.success {
+  background: rgba(255,107,157,0.08) !important;
+  border-left: 3px solid #ff6b9d !important;
+  color: #ff8fa3 !important;
+}
+
+/* Tables */
+table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  margin: 12px 0 !important;
+  background: #1a1d2a !important;
+  border: 1px solid #2a3050 !important;
+  border-radius: 10px !important;
+  overflow: hidden !important;
+  font-size: 13.5px !important;
+}
+th, thead th {
+  background: #0f1117 !important;
+  color: #ff8fa3 !important;
+  font-family: 'Source Sans 3', sans-serif !important;
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 1px !important;
+  padding: 10px 14px !important;
+  text-align: left !important;
+  border-bottom: 1px solid #2a3050 !important;
+}
+td, tbody td {
+  padding: 10px 14px !important;
+  border-bottom: 1px solid #2a3050 !important;
+  color: #e8eaf0 !important;
+  vertical-align: top !important;
+}
+tr:last-child td { border-bottom: none !important; }
+tr:hover td { background: rgba(255,107,157,0.04) !important; }
+
+/* Tags / pills / badges */
+.tag, .badge, .pill, .chip, .organ-badge, .flow-step, .num-pill,
+.q-difficulty, .info-pill, .qtag, .card-tag {
+  display: inline-flex !important;
+  align-items: center !important;
+  padding: 4px 12px !important;
+  border-radius: 20px !important;
+  background: rgba(255,107,157,0.12) !important;
+  border: 1px solid rgba(255,107,157,0.28) !important;
+  color: #ff8fa3 !important;
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.5px !important;
+}
+
+/* Buttons */
+button:not(.tab):not(.mode-btn):not(.choice):not(.opt):not(.start-btn):not(.check-btn):not(.restart-btn):not(.btn):not(#startBtn):not(#restartBtn) {
+  background: #1a1d2a !important;
+  color: #e8eaf0 !important;
+  border: 1px solid #2a3050 !important;
+  padding: 8px 16px !important;
+  border-radius: 8px !important;
+  cursor: pointer !important;
+  font-family: inherit !important;
+}
+
+/* Lists */
+ul, ol {
+  padding-left: 22px !important;
+  margin: 8px 0 !important;
+}
+ul li, ol li { padding: 3px 0 !important; }
+
+/* Accents inside cards */
+.card-title { color: #e8eaf0 !important; font-weight: 700 !important; }
+.card-desc { color: #ff8fa3 !important; }
+.card-cta { color: #ff8fa3 !important; font-weight: 700 !important; }
+
+/* Print-friendly print rules removed */
+.print, .no-print { color: inherit !important; }
+
+/* Section dividers */
+hr, .sep {
+  border: none !important;
+  border-top: 1px solid #2a3050 !important;
+  margin: 32px 0 !important;
+}
+
+/* Code blocks */
+code, pre {
+  background: #0f1117 !important;
+  color: #ff8fa3 !important;
+  border: 1px solid #2a3050 !important;
+  border-radius: 6px !important;
+  padding: 2px 8px !important;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace !important;
+  font-size: 13px !important;
+}
+pre { padding: 14px 18px !important; overflow-x: auto !important; }
+
+/* Footer */
+footer {
+  text-align: center !important;
+  margin-top: 48px !important;
+  padding: 32px 24px !important;
+  border-top: 1px solid #2a3050 !important;
+  color: #6a7388 !important;
+  font-size: 13px !important;
+}
+
+/* Force any "warm" or "cream" background to dark */
+[style*="background:#ffffff"], [style*="background: #ffffff"],
+[style*="background:#ffffff"], [style*="background: #ffffff"] {
+  background: #1a1d2a !important;
+}
+
+/* Cleanup vibrant per-section colors so they all come back to the rose family */
+[class*="ceph"] strong, [class*="gast"] strong, [class*="intes"] strong { color: #ff8fa3 !important; }
+
+/* Responsive */
+@media (max-width: 700px) {
+  .container, .page, .main, main { padding: 0 16px !important; }
+  .hero, header.hero, .header { padding: 36px 20px 28px !important; }
+}

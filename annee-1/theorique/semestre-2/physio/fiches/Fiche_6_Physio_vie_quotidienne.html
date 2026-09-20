@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Physiologie appliquée à la vie quotidienne — :root { --bg: #0f1117; --surface: #161922; --surface2: #20243a; --border: #2a3050; --accent: #ff8fa3; --accent2:">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../assets/css/acces.css">
+<script src="../../../../../assets/js/acces.js"></script>
+<title>Fiche de Révision — Physiologie de la Vie Quotidienne</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../../assets/css/chrome.css">
+<style>
+ :root {
+ --bg: #0f1117;
+ --surface: #161922;
+ --surface2: #20243a;
+ --border: #2a3050;
+ --accent: #ff8fa3;
+ --accent2: #f472b6;
+ --accent3: #ff6b9d;
+ --accent4: #ff5c6b;
+ --accent5: #f472b6;
+ --text: #9aa3b8;
+ --text-muted: #9aa3b8;
+ --text-dim: #6a7388;
+ }
+
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+
+ body {
+ background: var(--bg);
+ color: var(--text);
+ font-family: 'DM Sans', sans-serif;
+ font-weight: 300;
+ line-height: 1.7;
+ min-height: 100vh;
+ }
+
+ /* ---- HEADER ---- */
+ .hero {
+ position: relative;
+ padding: 60px 40px 50px;
+ border-bottom: 1px solid var(--border);
+ overflow: hidden;
+ }
+ .hero::before {
+ content: '';
+ position: absolute;
+ inset: 0;
+ background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(255,107,157,0.12) 0%, transparent 70%);
+ }
+ .hero-label {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 11px;
+ color: var(--accent);
+ letter-spacing: 3px;
+ text-transform: uppercase;
+ margin-bottom: 14px;
+ }
+ .hero h1 {
+ font-family: 'DM Serif Display', serif;
+ font-size: clamp(2rem, 4vw, 3.2rem);
+ font-weight: 400;
+ line-height: 1.15;
+ color: var(--text);
+ max-width: 700px;
+ }
+ .hero h1 em {
+ font-style: italic;
+ color: var(--accent);
+ }
+ .hero-sub {
+ margin-top: 16px;
+ color: var(--text-muted);
+ font-size: 14px;
+ display: flex;
+ gap: 24px;
+ flex-wrap: wrap;
+ }
+ .hero-sub span {
+ display: flex;
+ align-items: center;
+ gap: 6px;
+ }
+ .hero-sub span::before {
+ content: '';
+ display: inline-block;
+ width: 6px; height: 6px;
+ border-radius: 50%;
+ background: var(--accent);
+ }
+
+ /* ---- NAV ---- */
+ .toc {
+ background: var(--surface);
+ border-bottom: 1px solid var(--border);
+ padding: 14px 40px;
+ display: flex;
+ gap: 6px;
+ flex-wrap: wrap;
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ }
+ .toc a {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 11px;
+ color: var(--text-muted);
+ text-decoration: none;
+ padding: 5px 12px;
+ border: 1px solid var(--border);
+ border-radius: 4px;
+ transition: all .2s;
+ white-space: nowrap;
+ }
+ .toc a:hover {
+ color: var(--accent);
+ border-color: var(--accent);
+ background: rgba(255,107,157,0.06);
+ }
+
+ /* ---- LAYOUT ---- */
+ .container {
+ max-width: 1100px;
+ margin: 0 auto;
+ padding: 48px 40px;
+ display: flex;
+ flex-direction: column;
+ gap: 56px;
+ }
+
+ /* ---- SECTION ---- */
+ .section-header {
+ display: flex;
+ align-items: center;
+ gap: 16px;
+ margin-bottom: 28px;
+ }
+ .section-num {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 10px;
+ color: var(--text-dim);
+ letter-spacing: 2px;
+ }
+ .section-title {
+ font-family: 'DM Serif Display', serif;
+ font-size: 1.6rem;
+ font-weight: 400;
+ color: var(--text);
+ }
+ .section-title em { font-style: italic; color: var(--accent); }
+ .section-line {
+ flex: 1;
+ height: 1px;
+ background: var(--border);
+ }
+
+ /* ---- CARDS GRID ---- */
+ .cards {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ gap: 16px;
+ }
+
+ .card {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ border-radius: 8px;
+ padding: 22px 24px;
+ position: relative;
+ transition: border-color .2s, transform .2s;
+ }
+ .card:hover {
+ transform: translateY(-2px);
+ border-color: rgba(255,107,157,0.4);
+ }
+ .card-accent {
+ position: absolute;
+ top: 0; left: 0;
+ width: 3px; height: 100%;
+ border-radius: 8px 0 0 8px;
+ }
+ .c-yellow .card-accent { background: var(--accent); }
+ .c-blue .card-accent { background: var(--accent2); }
+ .c-green .card-accent { background: var(--accent3); }
+ .c-red .card-accent { background: var(--accent4); }
+ .c-purple .card-accent { background: var(--accent5); }
+
+ .card h3 {
+ font-family: 'DM Sans', sans-serif;
+ font-size: 13px;
+ font-weight: 600;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ margin-bottom: 12px;
+ color: var(--text-muted);
+ }
+ .c-yellow .card h3 { color: var(--accent); }
+ .c-blue .card h3 { color: var(--accent2); }
+ .c-green .card h3 { color: var(--accent3); }
+ .c-red .card h3 { color: var(--accent4); }
+ .c-purple .card h3 { color: var(--accent5); }
+
+ .card p, .card li {
+ font-size: 14px;
+ color: var(--text-muted);
+ line-height: 1.65;
+ }
+ .card ul { list-style: none; padding: 0; }
+ .card ul li { padding: 4px 0; padding-left: 16px; position: relative; }
+ .card ul li::before {
+ content: '→';
+ position: absolute;
+ left: 0;
+ color: var(--text-dim);
+ font-size: 12px;
+ }
+ .card strong { color: var(--text); font-weight: 500; }
+
+ /* ---- HIGHLIGHT BOX ---- */
+ .highlight {
+ background: linear-gradient(135deg, rgba(255,107,157,0.08), rgba(255,107,157,0.03));
+ border: 1px solid rgba(255,107,157,0.25);
+ border-radius: 8px;
+ padding: 20px 24px;
+ font-size: 14px;
+ color: var(--text-muted);
+ line-height: 1.7;
+ margin-bottom: 20px;
+ }
+ .highlight strong { color: var(--accent); }
+
+ /* ---- TABLE ---- */
+ .table-wrap { overflow-x: auto; border-radius: 8px; border: 1px solid var(--border); }
+ table { width: 100%; border-collapse: collapse; }
+ thead th {
+ background: var(--surface2);
+ padding: 12px 16px;
+ text-align: left;
+ font-size: 11px;
+ font-weight: 600;
+ text-transform: uppercase;
+ letter-spacing: 1.5px;
+ color: var(--text-muted);
+ border-bottom: 1px solid var(--border);
+ }
+ tbody td {
+ padding: 11px 16px;
+ font-size: 13.5px;
+ color: var(--text-muted);
+ border-bottom: 1px solid var(--border);
+ vertical-align: top;
+ }
+ tbody tr:last-child td { border-bottom: none; }
+ tbody tr:hover td { background: rgba(255,255,255,0.015); }
+ tbody td:first-child {
+ color: var(--text);
+ font-weight: 500;
+ white-space: nowrap;
+ }
+
+ /* ---- TIMELINE ---- */
+ .timeline { display: flex; flex-direction: column; gap: 0; }
+ .tl-item { display: flex; gap: 20px; }
+ .tl-line {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ flex-shrink: 0;
+ }
+ .tl-dot {
+ width: 12px; height: 12px;
+ border-radius: 50%;
+ background: var(--accent);
+ border: 2px solid var(--bg);
+ outline: 1px solid var(--accent);
+ flex-shrink: 0;
+ margin-top: 4px;
+ }
+ .tl-connector {
+ width: 1px;
+ flex: 1;
+ background: var(--border);
+ margin: 4px 0;
+ min-height: 20px;
+ }
+ .tl-item:last-child .tl-connector { display: none; }
+ .tl-content {
+ padding-bottom: 22px;
+ flex: 1;
+ }
+ .tl-content h4 {
+ font-size: 14px;
+ font-weight: 600;
+ color: var(--text);
+ margin-bottom: 4px;
+ }
+ .tl-content p {
+ font-size: 13.5px;
+ color: var(--text-muted);
+ }
+
+ /* ---- FLOW DIAGRAM ---- */
+ .flow {
+ display: flex;
+ flex-direction: column;
+ gap: 6px;
+ align-items: flex-start;
+ }
+ .flow-step {
+ display: flex;
+ align-items: center;
+ gap: 0;
+ width: 100%;
+ }
+ .flow-box {
+ padding: 10px 18px;
+ border-radius: 6px;
+ font-size: 13px;
+ color: var(--text);
+ font-weight: 400;
+ border: 1px solid var(--border);
+ background: var(--surface2);
+ flex: 1;
+ max-width: 520px;
+ }
+ .flow-box strong { color: var(--accent); }
+ .flow-arrow {
+ font-size: 18px;
+ color: var(--text-dim);
+ margin: 0 4px;
+ padding: 0 6px;
+ }
+ .flow-indent { margin-left: 40px; }
+ .flow-arrow-down {
+ color: var(--text-dim);
+ font-size: 16px;
+ padding-left: 20px;
+ line-height: 1;
+ margin: -2px 0;
+ }
+
+ /* ---- PILL TAGS ---- */
+ .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+ .tag {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 11px;
+ padding: 4px 10px;
+ border-radius: 4px;
+ border: 1px solid;
+ }
+ .tag-y { color: var(--accent); border-color: rgba(255,107,157,0.3); background: rgba(255,107,157,0.06); }
+ .tag-b { color: var(--accent2); border-color: rgba(255,107,157,0.3); background: rgba(255,107,157,0.06); }
+ .tag-g { color: var(--accent3); border-color: rgba(255,107,157,0.3); background: rgba(255,107,157,0.06); }
+ .tag-r { color: var(--accent4); border-color: rgba(255,92,107,0.3); background: rgba(255,92,107,0.06); }
+ .tag-p { color: var(--accent5); border-color: rgba(255,107,157,0.3); background: rgba(255,107,157,0.06); }
+
+ /* ---- KEY POINT ---- */
+ .key-point {
+ display: flex;
+ gap: 14px;
+ background: rgba(255,107,157,0.06);
+ border: 1px solid rgba(255,107,157,0.2);
+ border-radius: 8px;
+ padding: 16px 20px;
+ margin-top: 16px;
+ align-items: flex-start;
+ }
+ .key-point .icon { font-size: 18px; flex-shrink: 0; margin-top: 1px; }
+ .key-point p { font-size: 13.5px; color: var(--text-muted); line-height: 1.6; }
+ .key-point strong { color: var(--accent3); }
+
+ /* ---- WARNING ---- */
+ .warning {
+ display: flex;
+ gap: 14px;
+ background: rgba(255,166,87,0.06);
+ border: 1px solid rgba(255,166,87,0.2);
+ border-radius: 8px;
+ padding: 16px 20px;
+ margin-top: 16px;
+ align-items: flex-start;
+ }
+ .warning .icon { font-size: 18px; flex-shrink: 0; }
+ .warning p { font-size: 13.5px; color: var(--text-muted); }
+ .warning strong { color: var(--accent4); }
+
+ /* ---- BIORYTHM VISUAL ---- */
+ .bio-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+ gap: 12px;
+ }
+ .bio-card {
+ background: var(--surface2);
+ border: 1px solid var(--border);
+ border-radius: 8px;
+ padding: 18px;
+ text-align: center;
+ transition: transform .2s;
+ }
+ .bio-card:hover { transform: translateY(-2px); }
+ .bio-card .emoji { font-size: 28px; margin-bottom: 10px; }
+ .bio-card h4 { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 6px; }
+ .bio-card p { font-size: 12px; color: var(--text-muted); line-height: 1.5; }
+
+ /* ---- CIRCADIAN CLOCK ---- */
+ .clock-list { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+ .clock-item {
+ display: flex;
+ align-items: flex-start;
+ gap: 10px;
+ background: var(--surface2);
+ border-radius: 6px;
+ padding: 10px 12px;
+ border: 1px solid var(--border);
+ }
+ .clock-time {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 11px;
+ color: var(--accent);
+ white-space: nowrap;
+ margin-top: 2px;
+ }
+ .clock-desc { font-size: 12.5px; color: var(--text-muted); line-height: 1.4; }
+ .clock-desc strong { color: var(--text); font-weight: 500; }
+
+ /* ---- STRESS NUMBERED ---- */
+ .numbered { display: flex; flex-direction: column; gap: 10px; }
+ .num-item {
+ display: flex;
+ gap: 16px;
+ background: var(--surface);
+ border: 1px solid var(--border);
+ border-radius: 8px;
+ padding: 14px 18px;
+ transition: border-color .2s;
+ }
+ .num-item:hover { border-color: rgba(255,107,157,0.3); }
+ .num-badge {
+ width: 28px; height: 28px;
+ border-radius: 6px;
+ background: rgba(255,107,157,0.12);
+ border: 1px solid rgba(255,107,157,0.3);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 12px;
+ color: var(--accent);
+ flex-shrink: 0;
+ margin-top: 2px;
+ }
+ .num-text { font-size: 13.5px; color: var(--text-muted); }
+ .num-text strong { color: var(--text); font-weight: 500; }
+
+ /* ---- FEAR GRID ---- */
+ .fear-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 12px;
+ }
+ .fear-card {
+ border-radius: 8px;
+ padding: 18px 20px;
+ border: 1px solid;
+ }
+ .fear-card h4 { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
+ .fear-card p { font-size: 13px; color: var(--text-muted); }
+ .fc-fight { border-color: rgba(255,92,107,0.3); background: rgba(255,92,107,0.06); }
+ .fc-fight h4 { color: var(--accent4); }
+ .fc-flight { border-color: rgba(255,107,157,0.3); background: rgba(255,107,157,0.06); }
+ .fc-flight h4 { color: var(--accent2); }
+ .fc-freeze { border-color: rgba(255,107,157,0.3); background: rgba(255,107,157,0.06); }
+ .fc-freeze h4 { color: var(--accent5); }
+ .fc-face { border-color: rgba(255,107,157,0.3); background: rgba(255,107,157,0.06); }
+ .fc-face h4 { color: var(--accent3); }
+
+ /* ---- FOOTER ---- */
+ footer {
+ border-top: 1px solid var(--border);
+ padding: 24px 40px;
+ text-align: center;
+ font-size: 12px;
+ color: var(--text-dim);
+ font-family: 'JetBrains Mono', monospace;
+ }
+
+ /* ---- RESPONSIVE ---- */
+ @media (max-width: 700px) {
+ .container, .hero, .toc { padding-left: 20px; padding-right: 20px; }
+ .clock-list { grid-template-columns: 1fr; }
+ .fear-grid { grid-template-columns: 1fr; }
+ .hero h1 { font-size: 1.7rem; }
+ }
+
+ /* ---- ANIMATIONS ---- */
+ @keyframes fadeIn { from { opacity:0; transform: translateY(16px); } to { opacity:1; transform: none; } }
+ section { animation: fadeIn .5s ease both; }
+ section:nth-child(2) { animation-delay: .05s; }
+ section:nth-child(3) { animation-delay: .1s; }
+ section:nth-child(4) { animation-delay: .15s; }
+ section:nth-child(5) { animation-delay: .2s; }
+ section:nth-child(6) { animation-delay: .25s; }
+</style>
+
+ <link rel="stylesheet" href="../../../../../assets/css/modules/fiche-theme.css">
+
+ <link rel="stylesheet" href="../../../../../assets/css/modules/fiche-layout.css">
+</head>
+<body>
+<a href="../accueil-physio.html" class="back-nav">← Physiologie II</a>
+<div class="page-toggle"><div class="pt-inner"><a href="../qcm/QCM_6_Physio_vie_quotidienne.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<!-- HERO -->
+<div class="hero">
+ <div class="hero-label">Physiologie II · Physiothérapie</div>
+ <h1>Physiologie appliquée à la <em>vie quotidienne</em></h1>
+ <div class="hero-sub">
+ <span>Cours 6</span>
+ <span>Intégration des systèmes</span>
+ <span>Biorythmes &amp; Stress</span>
+ <span>Vieillissement</span>
+ </div>
+</div>
+
+<!-- NAV -->
+<nav class="toc">
+ <a href="#systemes">01 Systèmes</a>
+ <a href="#organes">02 Organes</a>
+ <a href="#biorythmes">03 Biorythmes</a>
+ <a href="#circadien">04 Rythme circadien</a>
+ <a href="#hormones">05 Hormones</a>
+ <a href="#horloge">06 Horloge biologique</a>
+ <a href="#decalage">07 Décalage horaire</a>
+ <a href="#stress">08 Réponse au stress</a>
+ <a href="#peur">09 Réponse à la peur</a>
+ <a href="#vieillissement">10 Vieillissement</a>
+</nav>
+
+<div class="container">
+
+<!-- ========== SECTION 1 : INTÉGRATION ========== -->
+<section id="systemes">
+ <div class="section-header">
+ <span class="section-num">01</span>
+ <h2 class="section-title">Intégration des <em>systèmes</em></h2>
+ <div class="section-line"></div>
+ </div>
+
+ <div class="highlight">
+ <strong>Principe fondamental :</strong> Tous les systèmes organiques du corps travaillent ensemble pour maintenir des fonctions physiologiques adéquates. Chaque molécule fonctionne comme une partie intégrante de l'ensemble. <strong>La plupart des organes contribuent à plus d'un système.</strong>
+ </div>
+
+ <div class="cards">
+ <div class="card c-yellow">
+ <div class="card-accent"></div>
+ <h3>Système endocrinien</h3>
+ <ul>
+ <li>Coordonne via des <strong>hormones</strong> (signaux transcellulaires)</li>
+ <li>Régule les autres systèmes</li>
+ <li>Ex : insuline (glucose), mélatonine (sommeil)</li>
+ </ul>
+ </div>
+ <div class="card c-blue">
+ <div class="card-accent"></div>
+ <h3>Système circulatoire</h3>
+ <ul>
+ <li><strong>Transport rapide</strong> vers l'intérieur et l'extérieur des cellules</li>
+ <li>Distribue O₂, nutriments, eau, sels</li>
+ <li>Collecte CO₂ et déchets</li>
+ </ul>
+ </div>
+ <div class="card c-green">
+ <div class="card-accent"></div>
+ <h3>Système respiratoire</h3>
+ <ul>
+ <li>Entrée d'<strong>O₂</strong>, élimination de <strong>CO₂</strong></li>
+ <li>Régulation de la température</li>
+ <li>Trachée, poumons</li>
+ </ul>
+ </div>
+ <div class="card c-red">
+ <div class="card-accent"></div>
+ <h3>Système digestif</h3>
+ <ul>
+ <li>Apport en <strong>eau et aliments</strong></li>
+ <li>Fournit nutriments, eau, sels au sang</li>
+ <li>Élimination des déchets alimentaires</li>
+ </ul>
+ </div>
+ <div class="card c-purple">
+ <div class="card-accent"></div>
+ <h3>Système urinaire</h3>
+ <ul>
+ <li>Élimination de l'<strong>eau, sels, résidus</strong></li>
+ <li>Contrôle du pH</li>
+ <li>Reins et vessie</li>
+ </ul>
+ </div>
+ <div class="card c-blue">
+ <div class="card-accent"></div>
+ <h3>Système immunitaire</h3>
+ <ul>
+ <li>Défense contre les <strong>agents pathogènes</strong></li>
+ <li>Réponse spécifique</li>
+ <li>Thymus, amygdales, rate</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="key-point">
+ <span class="icon">💡</span>
+ <p><strong>Exemple clé — Diabète :</strong> Les troubles endocriniens (ex : diabète) modifient la glycémie et affectent simultanément le <strong>système immunitaire</strong> (cicatrisation réduite), le <strong>système urinaire</strong> (lésions rénales) et le <strong>système cardiovasculaire</strong> (lésions vasculaires pouvant provoquer la cécité). Dans l'organisme, tout est interconnecté.</p>
+ </div>
+</section>
+
+<!-- ========== SECTION 2 : ORGANES & SYSTÈMES ========== -->
+<section id="organes">
+ <div class="section-header">
+ <span class="section-num">02</span>
+ <h2 class="section-title">Organes & <em>Systèmes</em></h2>
+ <div class="section-line"></div>
+ </div>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th>Système organique</th>
+ <th>Organes clés</th>
+ <th>Fonction(s) principale(s)</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td>Nerveux</td><td>Cerveau, moelle épinière</td><td>Contrôle du comportement et des systèmes ; cognition</td></tr>
+ <tr><td>Endocrinien</td><td>Glandes (hypophyse, thyroïde, surrénales…)</td><td>Contrôle des systèmes et du développement via hormones</td></tr>
+ <tr><td>Cardiovasculaire</td><td>Cœur, vaisseaux sanguins</td><td>Transport des matériaux ; régulation de la température</td></tr>
+ <tr><td>Respiratoire</td><td>Trachée, poumons</td><td>Échanges gazeux (O₂/CO₂) ; régulation température</td></tr>
+ <tr><td>Immunitaire/lymphatique</td><td>Thymus, amygdales, rate</td><td>Défense contre les infections</td></tr>
+ <tr><td>Digestif/excréteur</td><td>Langue, œsophage, estomac, intestins, foie, rectum</td><td>Digestion des aliments ; élimination des déchets</td></tr>
+ <tr><td>Urinaire/rénal</td><td>Reins, vessie</td><td>Élimination eau/sels/déchets ; contrôle du pH</td></tr>
+ <tr><td>Musculaire</td><td>Muscles, tendons</td><td>Soutien ; mouvement</td></tr>
+ <tr><td>Squelettique</td><td>Os, cartilages</td><td>Soutien, protection, mouvement, production de cellules sanguines</td></tr>
+ <tr><td>Tégumentaire</td><td>Peau</td><td>Soutien, protection, régulation des liquides</td></tr>
+ <tr><td>Reproducteur</td><td>Gonades, organes génitaux</td><td>Reproduction</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <div class="warning">
+ <span class="icon">⚠️</span>
+ <p><strong>À retenir :</strong> Attribuer des organes à un seul système est imprécis. Ex : le cerveau appartient au système nerveux <em>et</em> endocrinien ; le sternum au système squelettique, immunitaire <em>et</em> cardiovasculaire.</p>
+ </div>
+</section>
+
+<!-- ========== SECTION 3 : BIORYTHMES ========== -->
+<section id="biorythmes">
+ <div class="section-header">
+ <span class="section-num">03</span>
+ <h2 class="section-title"><em>Biorythmes</em> & horloge biologique</h2>
+ <div class="section-line"></div>
+ </div>
+
+ <div class="highlight">
+ <strong>Définition :</strong> Les biorythmes sont des cycles biologiques à intervalles contrôlés en interne (horloge biologique). La plupart des processus biologiques sont « programmés » pour se produire à des intervalles spécifiques et sont synchronisés avec des facteurs externes (lumière/obscurité).
+ </div>
+
+ <div class="bio-grid">
+ <div class="bio-card">
+ <div class="emoji">⚡</div>
+ <h4>Impulsions</h4>
+ <p>Libération hormonale en jets, sur des minutes ou des heures (ex : <strong>insuline</strong>)</p>
+ </div>
+ <div class="bio-card">
+ <div class="emoji">🌙</div>
+ <h4>Rythme circadien</h4>
+ <p>Régulé sur <strong>24h</strong> — cycle veille/sommeil. Synchronisé avec le jour et la nuit</p>
+ </div>
+ <div class="bio-card">
+ <div class="emoji">📅</div>
+ <h4>Cycle mensuel</h4>
+ <p>Hormones contrôlant le <strong>cycle menstruel</strong> (≈ 28 jours)</p>
+ </div>
+ <div class="bio-card">
+ <div class="emoji">❄️</div>
+ <h4>Variations saisonnières</h4>
+ <p>Ex : T3, T4 avec valeurs basses en hiver ; <strong>mélatonine</strong> plus élevée en hiver</p>
+ </div>
+ </div>
+</section>
+
+<!-- ========== SECTION 4 : RYTHME CIRCADIEN ========== -->
+<section id="circadien">
+ <div class="section-header">
+ <span class="section-num">04</span>
+ <h2 class="section-title">Rythme <em>circadien</em></h2>
+ <div class="section-line"></div>
+ </div>
+
+ <p style="font-size:14px; color:var(--text-muted); margin-bottom:20px;">Événements physiologiques clés selon l'heure de la journée :</p>
+
+ <div class="clock-list">
+ <div class="clock-item">
+ <span class="clock-time">02:00</span>
+ <span class="clock-desc"><strong>Sommeil le plus profond</strong></span>
+ </div>
+ <div class="clock-item">
+ <span class="clock-time">04:00</span>
+ <span class="clock-desc"><strong>Température corporelle minimale</strong></span>
+ </div>
+ <div class="clock-item">
+ <span class="clock-time">06:45</span>
+ <span class="clock-desc"><strong>Montée rapide de la pression artérielle</strong> (risque cardiovasculaire)</span>
+ </div>
+ <div class="clock-item">
+ <span class="clock-time">07:30</span>
+ <span class="clock-desc"><strong>Arrêt de la sécrétion de mélatonine</strong></span>
+ </div>
+ <div class="clock-item">
+ <span class="clock-time">09:00</span>
+ <span class="clock-desc"><strong>Pic du cortisol</strong> (vigilance maximale)</span>
+ </div>
+ <div class="clock-item">
+ <span class="clock-time">10:00</span>
+ <span class="clock-desc"><strong>Vigilance maximale</strong></span>
+ </div>
+ <div class="clock-item">
+ <span class="clock-time">14:30</span>
+ <span class="clock-desc"><strong>Meilleure coordination</strong></span>
+ </div>
+ <div class="clock-item">
+ <span class="clock-time">15:30</span>
+ <span class="clock-desc"><strong>Temps de réaction le plus rapide</strong></span>
+ </div>
+ <div class="clock-item">
+ <span class="clock-time">17:00</span>
+ <span class="clock-desc"><strong>Efficacité cardiovasculaire max</strong> et force musculaire maximale</span>
+ </div>
+ <div class="clock-item">
+ <span class="clock-time">18:30</span>
+ <span class="clock-desc"><strong>Pression artérielle maximale</strong></span>
+ </div>
+ <div class="clock-item">
+ <span class="clock-time">19:00</span>
+ <span class="clock-desc"><strong>Température corporelle maximale</strong></span>
+ </div>
+ <div class="clock-item">
+ <span class="clock-time">21:00</span>
+ <span class="clock-desc"><strong>Début de la sécrétion de mélatonine</strong></span>
+ </div>
+ </div>
+</section>
+
+<!-- ========== SECTION 5 : HORMONES CIRCADIENNES ========== -->
+<section id="hormones">
+ <div class="section-header">
+ <span class="section-num">05</span>
+ <h2 class="section-title">Hormones & <em>Sommeil/Veille</em></h2>
+ <div class="section-line"></div>
+ </div>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th>Hormone</th>
+ <th>Pic / Minimum</th>
+ <th>Rôle circadien</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Cortisol</td>
+ <td>Pic : 9h · Minimum : milieu de nuit</td>
+ <td>Réveil, vigilance, métabolisme ; antagoniste de la mélatonine</td>
+ </tr>
+ <tr>
+ <td>Mélatonine</td>
+ <td>Pic : 2h · Début : 21h · Arrêt : 7h30</td>
+ <td>Induit le sommeil ; synthèse inhibée par la lumière</td>
+ </tr>
+ <tr>
+ <td>Hormone de croissance (GH)</td>
+ <td>Pic : pendant le sommeil profond</td>
+ <td>Réparation tissulaire, croissance ; chute au réveil</td>
+ </tr>
+ <tr>
+ <td>Leptine</td>
+ <td>Augmentation nocturne</td>
+ <td>Hormone de satiété ; diminue en début de journée</td>
+ </tr>
+ <tr>
+ <td>TSH</td>
+ <td>Pic : nuit</td>
+ <td>Stimule la thyroïde pour la journée à venir</td>
+ </tr>
+ <tr>
+ <td>Endorphines &amp; hormones sexuelles</td>
+ <td>Variable</td>
+ <td>Présentent également des variations circadiennes</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+
+ <div class="key-point">
+ <span class="icon">🌡️</span>
+ <p><strong>Température corporelle :</strong> valeur <strong>minimale</strong> au milieu de la nuit (≈ 4h) et <strong>pic</strong> en milieu d'après-midi (≈ 19h). La mélatonine augmente quand la température chute — les deux sont inversement corrélées.</p>
+ </div>
+</section>
+
+<!-- ========== SECTION 6 : HORLOGE BIOLOGIQUE ========== -->
+<section id="horloge">
+ <div class="section-header">
+ <span class="section-num">06</span>
+ <h2 class="section-title">Horloge <em>biologique</em></h2>
+ <div class="section-line"></div>
+ </div>
+
+ <div class="highlight">
+ L'horloge biologique est <strong>synchronisée avec le cycle jour/nuit</strong> via la relation hypothalamus–glande pinéale.
+ </div>
+
+ <p style="font-size:14px; color:var(--text-muted); margin-bottom: 20px;">Voie de la lumière → mélatonine :</p>
+
+ <div class="flow">
+ <div class="flow-step">
+ <div class="flow-box">☀️ <strong>Lumière</strong> captée par la rétine (cônes, bâtonnets, cellules ganglionnaires)</div>
+ </div>
+ <div class="flow-arrow-down">↓</div>
+ <div class="flow-step">
+ <div class="flow-box">Tract rétino-hypothalamique → <strong>Noyau suprachiasmatique (NSC)</strong> de l'hypothalamus<br><small style="color:var(--text-dim)">(amas nerveux qui mesure la quantité de lumière reçue)</small></div>
+ </div>
+ <div class="flow-arrow-down">↓</div>
+ <div class="flow-step">
+ <div class="flow-box"><strong>Lumière :</strong> inhibe la synthèse de mélatonine &nbsp;|&nbsp; <strong>Obscurité :</strong> stimule la sécrétion de mélatonine</div>
+ </div>
+ <div class="flow-arrow-down">↓</div>
+ <div class="flow-step">
+ <div class="flow-box"><strong>Glande pinéale</strong> → sécrétion de <strong>mélatonine</strong> (pic nocturne ≈ 2h)</div>
+ </div>
+ <div class="flow-arrow-down">↓</div>
+ <div class="flow-step">
+ <div class="flow-box">Rythmes circadiens (hormones, température centrale, sommeil, appétit) + Modulation (humeur, travail, activité)</div>
+ </div>
+ </div>
+
+ <div style="margin-top:20px;">
+ <div class="cards">
+ <div class="card c-yellow">
+ <div class="card-accent"></div>
+ <h3>Synthèse de la mélatonine</h3>
+ <ul>
+ <li>Tryptophane → 5-Hydroxytryptophane</li>
+ <li>→ Sérotonine</li>
+ <li>→ N-Acétylsérotonine (NAS)</li>
+ <li>→ <strong>Mélatonine</strong></li>
+ </ul>
+ </div>
+ <div class="card c-purple">
+ <div class="card-accent"></div>
+ <h3>Effets de la mélatonine</h3>
+ <ul>
+ <li>Favorise le <strong>sommeil</strong></li>
+ <li>Influence l'activité de nombreuses glandes</li>
+ <li>Liée au SAD (<em>Seasonal Affective Disorder</em>)</li>
+ </ul>
+ </div>
+ <div class="card c-red">
+ <div class="card-accent"></div>
+ <h3>Pathologies du NSC</h3>
+ <ul>
+ <li>Tumeurs / ablation des noyaux suprachiasmatiques</li>
+ <li>→ Modifications importantes du cycle du sommeil</li>
+ <li>Stimulation NSC → <strong>active</strong> l'horloge</li>
+ <li>Activité pinéale → <strong>désactive</strong> l'horloge</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- ========== SECTION 7 : DÉCALAGE HORAIRE ========== -->
+<section id="decalage">
+ <div class="section-header">
+ <span class="section-num">07</span>
+ <h2 class="section-title">Décalage <em>horaire</em> (Jet Lag)</h2>
+ <div class="section-line"></div>
+ </div>
+
+ <div class="highlight">
+ <strong>Définition :</strong> Modification de l'horloge biologique empêchant la synchronisation des rythmes circadiens avec le nouveau cycle jour/nuit, entraînant une désynchronisation entre l'horloge interne et l'environnement.
+ </div>
+
+ <div class="cards">
+ <div class="card c-red">
+ <div class="card-accent"></div>
+ <h3>Conséquences</h3>
+ <ul>
+ <li>Insomnie, fatigue</li>
+ <li>Vertiges, malaise général</li>
+ <li>Réduction de l'activité physique et mentale</li>
+ <li>Perturbation alimentation / hydratation</li>
+ </ul>
+ </div>
+ <div class="card c-blue">
+ <div class="card-accent"></div>
+ <h3>Est vs Ouest</h3>
+ <ul>
+ <li><strong>Vol vers l'est :</strong> effets plus graves (heures perdues)</li>
+ <li><strong>Vol vers l'ouest :</strong> plus facile à tolérer (journée plus longue)</li>
+ <li>Cycle naturel du corps ≈ <strong>25h</strong> → plus facile d'allonger la journée</li>
+ </ul>
+ </div>
+ <div class="card c-green">
+ <div class="card-accent"></div>
+ <h3>Situations similaires</h3>
+ <ul>
+ <li>Voyages longs courriers</li>
+ <li>Voyages dans l'espace / Arctique / Antarctique</li>
+ <li><strong>Travail posté</strong> (implications physiologiques majeures)</li>
+ <li>Cycles jour/nuit nettement différents</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="key-point">
+ <span class="icon">💡</span>
+ <p><strong>Cas particulier :</strong> Si une personne voyageait autour du globe en une journée et revenait à son fuseau d'origine, elle ne souffrirait pas du jet lag — elle n'aurait pas besoin de <strong>resynchroniser la production de mélatonine</strong>.</p>
+ </div>
+</section>
+
+<!-- ========== SECTION 8 : STRESS ========== -->
+<section id="stress">
+ <div class="section-header">
+ <span class="section-num">08</span>
+ <h2 class="section-title">Réponse au <em>stress</em></h2>
+ <div class="section-line"></div>
+ </div>
+
+ <div class="highlight">
+ La réponse physiologique au stress est un processus <strong>hautement conservé par l'évolution</strong> qui aide à faire face aux déviations de l'homéostasie. Elle est très efficace contre le <strong>stress aigu</strong> (épisodique) mais délétère en cas de <strong>stress chronique</strong>.
+ </div>
+
+ <div class="cards" style="margin-bottom:20px;">
+ <div class="card c-yellow">
+ <div class="card-accent"></div>
+ <h3>Hormones du stress</h3>
+ <ul>
+ <li><strong>Adrénaline</strong> (médullosurrénale)</li>
+ <li><strong>Noradrénaline</strong> (médullosurrénale)</li>
+ <li><strong>Cortisol</strong> (corticosurrénale via ACTH)</li>
+ </ul>
+ <div class="tags">
+ <span class="tag tag-y">Axe HPA</span>
+ <span class="tag tag-y">SNS</span>
+ <span class="tag tag-y">Amygdale</span>
+ </div>
+ </div>
+ <div class="card c-blue">
+ <div class="card-accent"></div>
+ <h3>Voie neuroendocrinienne</h3>
+ <ul>
+ <li>Menace → <strong>Activation de l'amygdale</strong></li>
+ <li>→ Hypothalamus (CRH)</li>
+ <li>→ Hypophyse (ACTH)</li>
+ <li>→ Cortex surrénalien → <strong>≈ 30 hormones</strong></li>
+ </ul>
+ </div>
+ </div>
+
+ <p style="font-size:14px; color:var(--text-muted); margin-bottom:16px; font-weight:500;">Manifestations physiologiques de la réponse au stress :</p>
+
+ <div class="numbered">
+ <div class="num-item">
+ <div class="num-badge">1</div>
+ <div class="num-text"><strong>Augmentation de la pression artérielle et de la fréquence cardiaque</strong> — prépare à un exercice intense</div>
+ </div>
+ <div class="num-item">
+ <div class="num-badge">2</div>
+ <div class="num-text"><strong>Dilatation des pupilles</strong> — maximise la perception des variations de lumière/ombre (détection de menaces)</div>
+ </div>
+ <div class="num-item">
+ <div class="num-badge">3</div>
+ <div class="num-text"><strong>Vasoconstriction cutanée</strong> — dévie le flux sanguin vers les muscles importants → pâleur et « frisson »</div>
+ </div>
+ <div class="num-item">
+ <div class="num-badge">4</div>
+ <div class="num-text"><strong>Modification de la sueur</strong> — transpiration froide (vasoconstriction + sueur) ; libération d'odeurs différentes (signal de fuite chez les animaux)</div>
+ </div>
+ <div class="num-item">
+ <div class="num-badge">5</div>
+ <div class="num-text"><strong>Tonification musculaire + érection des poils</strong> — donne l'apparence d'un organisme plus grand et plus menaçant</div>
+ </div>
+ <div class="num-item">
+ <div class="num-badge">6</div>
+ <div class="num-text"><strong>Cerveau en mode survie</strong> — fonctionnement accéléré, concentration uniquement sur la survie immédiate</div>
+ </div>
+ </div>
+
+ <div class="warning" style="margin-top:20px;">
+ <span class="icon">⚠️</span>
+ <p><strong>Stress chronique :</strong> Le mode de vie moderne génère un état d'anxiété permanent (trafic, travail, argent…). La réponse de fight-or-flight est alors chroniquement activée, entraînant des réponses disproportionnées à de petits stimuli et le développement de nombreuses pathologies.</p>
+ </div>
+
+ <div class="key-point" style="margin-top:12px;">
+ <span class="icon">🔬</span>
+ <p><strong>Stress + Hyperventilation → Hypocalcémie :</strong> Le stress provoque une hyperventilation → ↓CO₂ → ↑pH → ↑affinité du Ca²⁺ pour les protéines → ↓Ca²⁺ libre (hypocalcémie) → <strong>contractions involontaires des muscles</strong> (visage, membres supérieurs) — panique ! <br>
+ <strong>Remède :</strong> respiration lente et profonde → ↑CO₂ → normalisation du pH → disparition des symptômes.</p>
+ </div>
+</section>
+
+<!-- ========== SECTION 9 : PEUR ========== -->
+<section id="peur">
+ <div class="section-header">
+ <span class="section-num">09</span>
+ <h2 class="section-title">Réponse à la <em>peur</em></h2>
+ <div class="section-line"></div>
+ </div>
+
+ <div class="highlight">
+ Face à la peur, l'organisme peut adopter <strong>4 stratégies</strong> selon l'intensité de la menace perçue et la personnalité de l'individu.
+ </div>
+
+ <div class="fear-grid">
+ <div class="fear-card fc-fight">
+ <h4>⚔️ Fight (Lutte)</h4>
+ <p>Réagir <strong>agressivement</strong> pour éliminer activement le problème</p>
+ </div>
+ <div class="fear-card fc-face">
+ <h4>🔧 Face (Affronter)</h4>
+ <p><strong>Affronter le problème de front</strong>, résoudre activement la situation</p>
+ </div>
+ <div class="fear-card fc-flight">
+ <h4>🏃 Flight (Fuite)</h4>
+ <p>Ignorer le problème et se placer dans une <strong>situation sûre</strong></p>
+ </div>
+ <div class="fear-card fc-freeze">
+ <h4>❄️ Freeze (Paralysie)</h4>
+ <p>Ignorer le problème <strong>comme s'il n'existait pas</strong> — sidération</p>
+ </div>
+ </div>
+</section>
+
+<!-- ========== SECTION 10 : VIEILLISSEMENT ========== -->
+<section id="vieillissement">
+ <div class="section-header">
+ <span class="section-num">10</span>
+ <h2 class="section-title"><em>Vieillissement</em></h2>
+ <div class="section-line"></div>
+ </div>
+
+ <div class="highlight">
+ <strong>Définition :</strong> Dégénérescence progressive de l'organisme au fil du temps. Les processus biologiques deviennent moins efficaces jusqu'à ce qu'ils ne puissent plus remplir leur fonction.
+ </div>
+
+ <div class="timeline">
+ <div class="tl-item">
+ <div class="tl-line"><div class="tl-dot"></div><div class="tl-connector"></div></div>
+ <div class="tl-content">
+ <h4>Niveau cellulaire</h4>
+ <p>Raccourcissement des télomères, accumulation de dommages à l'ADN, réduction de la capacité de réparation cellulaire</p>
+ </div>
+ </div>
+ <div class="tl-item">
+ <div class="tl-line"><div class="tl-dot"></div><div class="tl-connector"></div></div>
+ <div class="tl-content">
+ <h4>Systèmes organiques</h4>
+ <p>Diminution de l'efficacité de chaque système (cardiovasculaire, immunitaire, musculo-squelettique, nerveux…)</p>
+ </div>
+ </div>
+ <div class="tl-item">
+ <div class="tl-line"><div class="tl-dot"></div><div class="tl-connector"></div></div>
+ <div class="tl-content">
+ <h4>Biorythmes altérés</h4>
+ <p>Modifications du rythme circadien, perturbations du sommeil, altération des niveaux hormonaux</p>
+ </div>
+ </div>
+ <div class="tl-item">
+ <div class="tl-line"><div class="tl-dot"></div></div>
+ <div class="tl-content">
+ <h4>Défaillance finale</h4>
+ <p>Les processus biologiques ne peuvent plus remplir leur fonction → mort</p>
+ </div>
+ </div>
+ </div>
+
+ <div class="key-point" style="margin-top: 20px;">
+ <span class="icon">✨</span>
+ <p><strong>Perspective :</strong> Le vieillissement n'est pas une finalité malheureuse — il peut contenir de nombreux moments heureux. <em>"It is only a short trip, enjoy it."</em></p>
+ </div>
+</section>
+
+</div><!-- /container -->
+
+<footer>
+ 2025/2026 &nbsp;·&nbsp; Physiologie II — Physiothérapie &nbsp;·&nbsp; Cours 6 — Enseignante J &nbsp;·&nbsp; Fiche de révision
+</footer>
+
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../qcm/QCM_6_Physio_vie_quotidienne.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+</body>
+</html>

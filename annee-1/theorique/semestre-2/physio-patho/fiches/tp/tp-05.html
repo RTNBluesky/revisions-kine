@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Le Système Squelettique & le Tissu Osseux — Fiche de révision complète — Structure, histologie, formation, réparation et pathologies osseuses">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../../assets/css/acces.css">
+<script src="../../../../../../assets/js/acces.js"></script>
+<title>Fiche de Révision – Le Tissu Osseux</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../../../assets/css/chrome.css">
+<style>
+ :root {
+ --bg: #161922;
+ --card: #1a1d2a;
+ --bone: #ff8fa3;
+ --bone-light: #ff8fa3;
+ --bone-dark: #ff8fa3;
+ --accent: #f472b6;
+ --accent-light: #ff8fa3;
+ --accent-dark: #ff5c6b;
+ --green: #ff6b9d;
+ --green-light: #ff8fa3;
+ --red: #ff5c6b;
+ --red-light: #ff8fa3;
+ --amber: #ff8fa3;
+ --amber-light: #ff8fa3;
+ --teal: #ff6b9d;
+ --teal-light: #ff6b9d;
+ --purple: #f472b6;
+ --purple-light: #ff8fa3;
+ --text: #161922;
+ --muted: #6a7388;
+ --border: rgba(0,0,0,0.12);
+ --shadow: 0 2px 16px rgba(0,0,0,0.08);
+ }
+
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+
+ body {
+ background: var(--bg);
+ font-family: 'Source Sans 3', sans-serif;
+ color: var(--text);
+ font-size: 15px;
+ line-height: 1.6;
+ }
+
+ .page-wrapper { max-width: 1100px; margin: 0 auto; padding: 40px 24px 80px; }
+
+ /* HEADER */
+ .header {
+ background: linear-gradient(135deg, var(--accent-dark) 0%, var(--accent) 60%, #f472b6 100%);
+ color: white;
+ border-radius: 20px;
+ padding: 48px 48px 40px;
+ margin-bottom: 40px;
+ position: relative;
+ overflow: hidden;
+ }
+ .header::before {
+ content: '';
+ position: absolute;
+ top: -60px; right: -60px;
+ width: 250px; height: 250px;
+ border-radius: 50%;
+ background: rgba(255,255,255,0.05);
+ }
+ .header::after {
+ content: '';
+ position: absolute;
+ bottom: -40px; left: 40%;
+ width: 180px; height: 180px;
+ border-radius: 50%;
+ background: rgba(255,255,255,0.04);
+ }
+ .header-tag {
+ font-size: 11px;
+ font-weight: 600;
+ letter-spacing: 2px;
+ text-transform: uppercase;
+ color: rgba(255,255,255,0.65);
+ margin-bottom: 12px;
+ }
+ .header h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: 42px;
+ font-weight: 900;
+ line-height: 1.15;
+ margin-bottom: 14px;
+ color: white;
+ }
+ .header-subtitle {
+ font-size: 16px;
+ color: rgba(255,255,255,0.78);
+ max-width: 560px;
+ }
+ .header-pills {
+ margin-top: 24px;
+ display: flex; gap: 10px; flex-wrap: wrap;
+ }
+ .pill {
+ background: rgba(255,255,255,0.15);
+ border: 1px solid rgba(255,255,255,0.25);
+ color: white;
+ font-size: 12px;
+ font-weight: 500;
+ padding: 5px 14px;
+ border-radius: 20px;
+ }
+
+ /* SECTIONS */
+ .section-title {
+ font-family: 'Playfair Display', serif;
+ font-size: 26px;
+ font-weight: 700;
+ color: var(--accent-dark);
+ margin: 48px 0 20px;
+ padding-bottom: 10px;
+ border-bottom: 2px solid var(--bone);
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ }
+ .section-title .num {
+ background: var(--bone);
+ color: var(--bone-dark);
+ width: 34px; height: 34px;
+ border-radius: 50%;
+ display: flex; align-items: center; justify-content: center;
+ font-size: 15px;
+ font-family: 'Source Sans 3', sans-serif;
+ font-weight: 600;
+ flex-shrink: 0;
+ }
+
+ /* GRID */
+ .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+ .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+ .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+
+ /* CARDS */
+ .card {
+ background: var(--card);
+ border-radius: 14px;
+ border: 1px solid var(--border);
+ padding: 20px 22px;
+ box-shadow: var(--shadow);
+ }
+ .card-title {
+ font-size: 13px;
+ font-weight: 600;
+ letter-spacing: 1.2px;
+ text-transform: uppercase;
+ color: var(--muted);
+ margin-bottom: 10px;
+ }
+ .card h3 {
+ font-family: 'Playfair Display', serif;
+ font-size: 18px;
+ font-weight: 700;
+ color: var(--accent-dark);
+ margin-bottom: 10px;
+ line-height: 1.3;
+ }
+
+ /* COLORED CARD VARIANTS */
+ .card-blue { background: var(--accent-light); border-color: #ff8fa3; }
+ .card-blue .card-title { color: var(--accent); }
+ .card-blue h3 { color: var(--accent-dark); }
+
+ .card-bone { background: var(--bone-light); border-color: #ffa657; }
+ .card-bone .card-title { color: var(--bone-dark); }
+
+ .card-green { background: var(--green-light); border-color: #ff8fa3; }
+ .card-green .card-title { color: var(--green); }
+ .card-green h3 { color: #ff6b9d; }
+
+ .card-red { background: var(--red-light); border-color: #ff8fa3; }
+ .card-red .card-title { color: var(--red); }
+ .card-red h3 { color: #ff5c6b; }
+
+ .card-amber { background: var(--amber-light); border-color: #ff8fa3; }
+ .card-amber .card-title { color: var(--amber); }
+ .card-amber h3 { color: #ff8fa3; }
+
+ .card-teal { background: var(--teal-light); border-color: #ff6b9d; }
+ .card-teal .card-title { color: var(--teal); }
+ .card-teal h3 { color: #ff6b9d; }
+
+ .card-purple { background: var(--purple-light); border-color: #f472b6; }
+ .card-purple .card-title { color: var(--purple); }
+ .card-purple h3 { color: #ff5c6b; }
+
+ /* LISTS */
+ ul.list { list-style: none; padding: 0; }
+ ul.list li {
+ padding: 6px 0 6px 18px;
+ position: relative;
+ font-size: 14px;
+ color: var(--text);
+ border-bottom: 1px solid rgba(0,0,0,0.06);
+ line-height: 1.5;
+ }
+ ul.list li:last-child { border-bottom: none; }
+ ul.list li::before {
+ content: '';
+ position: absolute;
+ left: 0; top: 13px;
+ width: 7px; height: 7px;
+ border-radius: 50%;
+ background: var(--bone);
+ }
+ ul.list li strong { color: var(--accent-dark); font-weight: 600; }
+
+ /* DEFINITION TABLE */
+ .def-table { width: 100%; border-collapse: collapse; font-size: 14px; }
+ .def-table th {
+ background: var(--accent-dark);
+ color: white;
+ padding: 10px 14px;
+ text-align: left;
+ font-weight: 600;
+ font-size: 12px;
+ letter-spacing: 0.5px;
+ }
+ .def-table th:first-child { border-radius: 8px 0 0 0; }
+ .def-table th:last-child { border-radius: 0 8px 0 0; }
+ .def-table td {
+ padding: 9px 14px;
+ border-bottom: 1px solid var(--border);
+ vertical-align: top;
+ }
+ .def-table tr:nth-child(even) td { background: rgba(0,0,0,0.025); }
+ .def-table tr:last-child td { border-bottom: none; }
+ .def-table td:first-child { font-weight: 600; color: var(--accent-dark); white-space: nowrap; }
+
+ /* CELLS TYPES - visual cells */
+ .cell-grid {
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ gap: 14px;
+ }
+ .cell-card {
+ border-radius: 14px;
+ padding: 18px 16px;
+ text-align: center;
+ border: 1px solid;
+ }
+ .cell-icon {
+ font-size: 28px;
+ margin-bottom: 8px;
+ display: block;
+ line-height: 1;
+ }
+ .cell-name {
+ font-weight: 700;
+ font-size: 14px;
+ margin-bottom: 6px;
+ font-family: 'Playfair Display', serif;
+ }
+ .cell-desc { font-size: 12px; line-height: 1.45; }
+
+ /* STEP FLOW */
+ .flow {
+ display: flex;
+ gap: 0;
+ align-items: stretch;
+ overflow-x: auto;
+ padding-bottom: 4px;
+ }
+ .flow-step {
+ flex: 1;
+ min-width: 130px;
+ background: var(--card);
+ border: 1px solid var(--border);
+ border-radius: 0;
+ padding: 16px 14px;
+ position: relative;
+ text-align: center;
+ }
+ .flow-step:first-child { border-radius: 12px 0 0 12px; }
+ .flow-step:last-child { border-radius: 0 12px 12px 0; }
+ .flow-step:not(:last-child)::after {
+ content: '→';
+ position: absolute;
+ right: -12px;
+ top: 50%;
+ transform: translateY(-50%);
+ font-size: 18px;
+ color: var(--bone-dark);
+ z-index: 1;
+ background: var(--bg);
+ padding: 0 2px;
+ }
+ .flow-step .step-num {
+ width: 26px; height: 26px;
+ background: var(--bone);
+ color: var(--bone-dark);
+ border-radius: 50%;
+ display: flex; align-items: center; justify-content: center;
+ font-size: 12px;
+ font-weight: 700;
+ margin: 0 auto 8px;
+ }
+ .flow-step .step-title {
+ font-weight: 600;
+ font-size: 12px;
+ color: var(--accent-dark);
+ margin-bottom: 6px;
+ }
+ .flow-step p { font-size: 11.5px; color: var(--muted); line-height: 1.4; }
+
+ /* HIGHLIGHT BOX */
+ .highlight {
+ border-left: 4px solid var(--bone);
+ background: var(--bone-light);
+ border-radius: 0 10px 10px 0;
+ padding: 14px 18px;
+ margin: 14px 0;
+ font-size: 14px;
+ }
+ .highlight strong { color: var(--bone-dark); }
+
+ .highlight-blue {
+ border-left-color: var(--accent);
+ background: var(--accent-light);
+ }
+ .highlight-blue strong { color: var(--accent-dark); }
+
+ .highlight-red {
+ border-left-color: var(--red);
+ background: var(--red-light);
+ }
+ .highlight-red strong { color: var(--red); }
+
+ .highlight-green {
+ border-left-color: var(--green);
+ background: var(--green-light);
+ }
+ .highlight-green strong { color: var(--green); }
+
+ .highlight-teal {
+ border-left-color: var(--teal);
+ background: var(--teal-light);
+ }
+ .highlight-teal strong { color: var(--teal); }
+
+ /* BADGE */
+ .badge {
+ display: inline-block;
+ font-size: 11px;
+ font-weight: 600;
+ padding: 3px 10px;
+ border-radius: 20px;
+ margin-right: 4px;
+ }
+ .badge-blue { background: var(--accent-light); color: var(--accent-dark); }
+ .badge-amber { background: var(--amber-light); color: var(--amber); }
+ .badge-red { background: var(--red-light); color: var(--red); }
+ .badge-green { background: var(--green-light); color: var(--green); }
+ .badge-teal { background: var(--teal-light); color: var(--teal); }
+ .badge-purple { background: var(--purple-light); color: var(--purple); }
+
+ /* FULL CARD SPANNING */
+ .span-2 { grid-column: span 2; }
+ .span-3 { grid-column: span 3; }
+
+ /* OSMOSE SCHEMA */
+ .osteon-visual {
+ background: var(--card);
+ border: 1px solid var(--border);
+ border-radius: 14px;
+ padding: 20px;
+ text-align: center;
+ }
+
+ /* TWO-COL DEFINITION */
+ .two-col-def { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+ .def-item {
+ padding: 10px 14px;
+ background: var(--bg);
+ border-radius: 10px;
+ border: 1px solid var(--border);
+ }
+ .def-item .term {
+ font-weight: 700;
+ font-size: 13px;
+ color: var(--accent-dark);
+ margin-bottom: 3px;
+ }
+ .def-item .def { font-size: 13px; color: var(--muted); }
+
+ /* RECAP BOX */
+ .recap {
+ background: var(--accent-dark);
+ color: white;
+ border-radius: 14px;
+ padding: 24px 28px;
+ margin-top: 48px;
+ }
+ .recap h3 {
+ font-family: 'Playfair Display', serif;
+ font-size: 20px;
+ margin-bottom: 14px;
+ color: white;
+ }
+ .recap ul { list-style: none; padding: 0; }
+ .recap ul li {
+ padding: 5px 0 5px 20px;
+ position: relative;
+ font-size: 14px;
+ color: rgba(255,255,255,0.85);
+ }
+ .recap ul li::before {
+ content: '✓';
+ position: absolute;
+ left: 0;
+ color: var(--bone);
+ font-weight: 700;
+ }
+
+ /* COMPARAISON TABLE */
+ .compare-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+ .compare-table th {
+ padding: 10px 14px;
+ text-align: left;
+ font-weight: 600;
+ font-size: 12px;
+ letter-spacing: 0.5px;
+ text-transform: uppercase;
+ }
+ .compare-table th.th-compact { background: var(--accent-dark); color: white; }
+ .compare-table th.th-spongieux { background: var(--teal); color: white; }
+ .compare-table td { padding: 9px 14px; border-bottom: 1px solid var(--border); vertical-align: top; }
+ .compare-table tr:nth-child(even) td { background: rgba(0,0,0,0.025); }
+ .compare-table .row-label { font-weight: 600; color: var(--muted); font-size: 12px; }
+
+ /* HORMONE TABLE */
+ .h-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+ .h-table th { background: var(--purple); color: white; padding: 9px 14px; text-align: left; font-size: 12px; font-weight: 600; }
+ .h-table th:first-child { border-radius: 8px 0 0 0; }
+ .h-table th:last-child { border-radius: 0 8px 0 0; }
+ .h-table td { padding: 8px 14px; border-bottom: 1px solid var(--border); vertical-align: top; font-size: 13px; }
+ .h-table tr:nth-child(even) td { background: rgba(0,0,0,0.025); }
+ .h-table td:first-child { font-weight: 600; color: var(--purple); }
+
+ /* FRACTURE CARDS */
+ .fracture-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+ .fracture-card {
+ background: var(--card);
+ border-radius: 12px;
+ border: 1px solid var(--border);
+ padding: 14px 16px;
+ }
+ .fracture-card .f-name { font-weight: 700; font-size: 14px; color: var(--red); margin-bottom: 5px; }
+ .fracture-card .f-desc { font-size: 12.5px; color: var(--muted); line-height: 1.45; }
+
+ @media (max-width: 768px) {
+ .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
+ .cell-grid { grid-template-columns: 1fr 1fr; }
+ .fracture-grid { grid-template-columns: 1fr 1fr; }
+ .header { padding: 32px 24px 28px; }
+ .header h1 { font-size: 30px; }
+ .flow { flex-direction: column; }
+ .flow-step { border-radius: 10px !important; margin-bottom: 4px; }
+ .flow-step::after { display: none; }
+ .span-2, .span-3 { grid-column: span 1; }
+ .two-col-def { grid-template-columns: 1fr; }
+ }
+</style>
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/physio-patho.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-theme.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
+</head>
+<body>
+<a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
+<div class="page-toggle"><div class="pt-inner"><a href="../../qcm/tp/tp-05.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<div class="page-wrapper">
+
+ <!-- HEADER -->
+ <div class="header">
+ <div class="header-tag">Physiothérapie · 1ère année · 2e semestre</div>
+ <h1>Le Système Squelettique<br>& le Tissu Osseux</h1>
+ <p class="header-subtitle">Fiche de révision complète — Structure, histologie, formation, réparation et pathologies osseuses</p>
+ <div class="header-pills">
+ <span class="pill">Ostéologie</span>
+ <span class="pill">Histologie</span>
+ <span class="pill">Ossification</span>
+ <span class="pill">Remodelage osseux</span>
+ <span class="pill">Homéostasie calcique</span>
+ <span class="pill">Pathologies</span>
+ </div>
+ </div>
+
+ <!-- ============================================================ -->
+ <!-- 1. FONCTIONS DU SYSTÈME SQUELETTIQUE -->
+ <!-- ============================================================ -->
+ <div class="section-title">
+ <span class="num">1</span>
+ Fonctions du système squelettique
+ </div>
+
+ <div class="grid-3">
+ <div class="card card-blue">
+ <div class="card-title">Fonction mécanique</div>
+ <h3>Soutien & Mouvement</h3>
+ <ul class="list">
+ <li><strong>Charpente structurelle</strong> du corps, soutien des tissus mous</li>
+ <li><strong>Point d'attache</strong> pour les tendons des muscles squelettiques</li>
+ <li>Participation <strong>passive au mouvement</strong> (levier osseux)</li>
+ <li><strong>Protection</strong> des organes vitaux (crâne → cerveau, vertèbres → moelle épinière, cage thoracique → cœur/poumons)</li>
+ </ul>
+ </div>
+
+ <div class="card card-teal">
+ <div class="card-title">Fonction métabolique</div>
+ <h3>Homéostasie minérale</h3>
+ <ul class="list">
+ <li>Stockage de <strong>99% du calcium</strong> de l'organisme</li>
+ <li>Stockage du <strong>phosphore</strong></li>
+ <li>Libération des minéraux dans le sang selon les besoins</li>
+ <li>Maintien de l'équilibre minéral (homéostasie)</li>
+ </ul>
+ </div>
+
+ <div class="card card-amber">
+ <div class="card-title">Fonction hématologique</div>
+ <h3>Production sanguine & Stockage</h3>
+ <ul class="list">
+ <li><strong>Hématopoïèse</strong> : production de globules rouges, blancs et plaquettes par la <strong>moelle osseuse rouge</strong></li>
+ <li>Moelle osseuse rouge chez l'adulte : hanches, côtes, sternum, vertèbres, crâne, extrémités humérus/fémur</li>
+ <li>Moelle osseuse jaune : <strong>stockage des triglycérides</strong> (réserve énergétique)</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="highlight highlight-blue" style="margin-top:16px;">
+ <strong>Rappel :</strong> Chaque os est un <strong>organe</strong> car il est composé de plusieurs tissus : tissu osseux, cartilage, tissu conjonctif dense, épithélium, tissu adipeux et tissu nerveux. Le tissu osseux représente environ <strong>18% du poids corporel</strong>.
+ </div>
+
+ <!-- ============================================================ -->
+ <!-- 2. STRUCTURE MACROSCOPIQUE DE L'OS -->
+ <!-- ============================================================ -->
+ <div class="section-title">
+ <span class="num">2</span>
+ Structure macroscopique d'un os long
+ </div>
+
+ <table class="def-table" style="width:100%; box-shadow: var(--shadow); border-radius: 12px; overflow: hidden;">
+ <thead>
+ <tr>
+ <th>Structure</th>
+ <th>Localisation</th>
+ <th>Composition / Fonction</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Diaphyse</td>
+ <td>Corps central (tige cylindrique)</td>
+ <td>Majeure partie de l'os compact — résistance maximale. Contient la cavité médullaire.</td>
+ </tr>
+ <tr>
+ <td>Épiphyse (proximale & distale)</td>
+ <td>Extrémités de l'os</td>
+ <td>Os spongieux + moelle osseuse rouge. Recouvertes de cartilage articulaire aux surfaces articulaires.</td>
+ </tr>
+ <tr>
+ <td>Métaphyse</td>
+ <td>Zone entre diaphyse et épiphyse</td>
+ <td>Contient la <strong>plaque épiphysaire</strong> (cartilage de croissance) chez l'enfant → <strong>ligne épiphysaire</strong> chez l'adulte.</td>
+ </tr>
+ <tr>
+ <td>Cartilage articulaire</td>
+ <td>Surface des épiphyses aux articulations</td>
+ <td>Cartilage hyalin — réduit la friction, absorbe les chocs. Avasculaire → réparation limitée.</td>
+ </tr>
+ <tr>
+ <td>Périoste</td>
+ <td>Surface externe de l'os (sauf zones articulaires)</td>
+ <td><em>Couche fibreuse externe</em> + <em>couche ostéogénique interne</em>. Fixé par les <strong>fibres de Sharpey</strong>. Protection, réparation, nutrition, point d'attache tendons/ligaments.</td>
+ </tr>
+ <tr>
+ <td>Cavité médullaire</td>
+ <td>Espace creux dans la diaphyse</td>
+ <td>Contient moelle osseuse jaune chez l'adulte. Minimise le poids. Structure tubulaire = résistance maximale/poids minimal.</td>
+ </tr>
+ <tr>
+ <td>Endoste</td>
+ <td>Revêtement intérieur de la cavité médullaire</td>
+ <td>Fine membrane avec cellules ostéogènes — contribue à la croissance et au remodelage osseux.</td>
+ </tr>
+ </tbody>
+ </table>
+
+ <!-- ============================================================ -->
+ <!-- 3. HISTOLOGIE DU TISSU OSSEUX -->
+ <!-- ============================================================ -->
+ <div class="section-title">
+ <span class="num">3</span>
+ Histologie du tissu osseux
+ </div>
+
+ <div class="card card-bone" style="margin-bottom:20px;">
+ <div class="card-title">Composition de la matrice extracellulaire</div>
+ <div class="grid-3">
+ <div>
+ <p style="font-weight:700; font-size:13px; color:var(--bone-dark); margin-bottom:6px;">15% — Eau</p>
+ <p style="font-size:13px; color:var(--muted);">Milieu de diffusion des nutriments</p>
+ </div>
+ <div>
+ <p style="font-weight:700; font-size:13px; color:var(--bone-dark); margin-bottom:6px;">30% — Fibres de collagène</p>
+ <p style="font-size:13px; color:var(--muted);">Résistance à la traction, à l'étirement et à la déchirure → souplesse de l'os</p>
+ </div>
+ <div>
+ <p style="font-weight:700; font-size:13px; color:var(--bone-dark); margin-bottom:6px;">55% — Sels minéraux cristallisés</p>
+ <p style="font-size:13px; color:var(--muted);">Hydroxyapatite Ca₁₀(PO₄)₆(OH)₂ → dureté de l'os. + carbonate de Ca, ions Mg, F, K, SO₄</p>
+ </div>
+ </div>
+ </div>
+
+ <!-- CELLULES OSSEUSES -->
+ <div class="cell-grid" style="margin-bottom:20px;">
+ <div class="cell-card" style="background:var(--bone-light); border-color:#dfc99a;">
+ <span class="cell-icon">🔷</span>
+ <div class="cell-name" style="color:var(--bone-dark);">Cellules ostéogéniques</div>
+ <div class="cell-desc" style="color:var(--muted);">Cellules souches du mésenchyme. <strong>Seules à se diviser.</strong> → deviennent des ostéoblastes. Présentes dans périoste, endoste, canaux vasculaires.</div>
+ </div>
+ <div class="cell-card" style="background:var(--accent-light); border-color:#b5d4f4;">
+ <span class="cell-icon">🔵</span>
+ <div class="cell-name" style="color:var(--accent-dark);">Ostéoblastes</div>
+ <div class="cell-desc" style="color:var(--muted);"><strong>Construisent l'os.</strong> Synthétisent les fibres de collagène + composants organiques. Initient la calcification. Deviennent ostéocytes quand piégés dans la matrice.</div>
+ </div>
+ <div class="cell-card" style="background:var(--teal-light); border-color:#9fe1cb;">
+ <span class="cell-icon">🟢</span>
+ <div class="cell-name" style="color:#085041;">Ostéocytes</div>
+ <div class="cell-desc" style="color:var(--muted);"><strong>Principales cellules osseuses.</strong> Cellules matures dans les lacunes. Assurent le métabolisme quotidien (échanges nutriments/déchets). Communication via canalicules + jonctions communicantes.</div>
+ </div>
+ <div class="cell-card" style="background:var(--red-light); border-color:#f7c1c1;">
+ <span class="cell-icon">🔴</span>
+ <div class="cell-name" style="color:#791f1f;">Ostéoclastes</div>
+ <div class="cell-desc" style="color:var(--muted);"><strong>Détruisent l'os.</strong> Fusion de ~50 monocytes. Bordure ondulée. Libèrent enzymes lysosomales + acides → résorption osseuse. Présents dans l'endoste. Cibles des traitements anti-ostéoporose.</div>
+ </div>
+ </div>
+
+ <div class="highlight highlight-red">
+ <strong>Moyen mnémotechnique :</strong> Ostéo<strong>blaste</strong> = <strong>B</strong>âtit l'os · Ostéo<strong>claste</strong> = <strong>C</strong>asse l'os
+ </div>
+
+ <!-- OS COMPACT VS SPONGIEUX -->
+ <div class="grid-2" style="margin-top:20px;">
+ <div class="card card-blue">
+ <div class="card-title">Os compact (cortical) — 80% du squelette</div>
+ <h3>Tissu osseux compact</h3>
+ <ul class="list">
+ <li>Peu d'espaces — forme la plus résistante</li>
+ <li>Composé d'<strong>ostéons (systèmes de Havers)</strong> : lamelles concentriques autour d'un canal central (haversien)</li>
+ <li><strong>Lacunes</strong> → contiennent les ostéocytes</li>
+ <li><strong>Canalicules</strong> → relient les lacunes et les canaux centraux</li>
+ <li>Canaux perforants (de Volkmann) : connexion transversale</li>
+ <li>Localisation : sous le périoste, diaphyse des os longs</li>
+ </ul>
+ </div>
+ <div class="card card-teal">
+ <div class="card-title">Os spongieux (trabéculaire) — 20% du squelette</div>
+ <h3>Tissu osseux spongieux</h3>
+ <ul class="list">
+ <li>Pas d'ostéons — lamelles irrégulières formant des <strong>trabécules</strong></li>
+ <li>Espaces entre trabécules remplis de <strong>moelle osseuse rouge ou jaune</strong></li>
+ <li><strong>Léger</strong> → facilite les mouvements</li>
+ <li>Orienté selon les lignes de contrainte</li>
+ <li>Localisation : intérieur des épiphyses, os courts, plats, irréguliers</li>
+ <li>Taux de renouvellement ~<strong>20%/an</strong> (vs 4%/an pour l'os compact)</li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- COMPARAISON TABLE -->
+ <div class="card" style="margin-top:16px; padding:0; overflow:hidden;">
+ <table class="compare-table">
+ <thead>
+ <tr>
+ <th style="background:#f8f6f0; color:var(--muted);" class="row-label">Critère</th>
+ <th class="th-compact">Os compact</th>
+ <th class="th-spongieux">Os spongieux</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td class="row-label">Structure</td><td>Ostéons (systèmes haversiens)</td><td>Trabécules + espaces</td></tr>
+ <tr><td class="row-label">Espaces</td><td>Peu d'espaces</td><td>Nombreux espaces macroscopiques</td></tr>
+ <tr><td class="row-label">Moelle osseuse</td><td>Non (cavité médullaire à part)</td><td>Oui, dans les espaces inter-trabéculaires</td></tr>
+ <tr><td class="row-label">Poids</td><td>Plus lourd</td><td>Léger</td></tr>
+ <tr><td class="row-label">Localisation</td><td>Périphérie, diaphyse</td><td>Intérieur, épiphyses</td></tr>
+ <tr><td class="row-label">Remodelage annuel</td><td>~4%</td><td>~20%</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <!-- ============================================================ -->
+ <!-- 4. FORMATION OSSEUSE (OSSIFICATION) -->
+ <!-- ============================================================ -->
+ <div class="section-title">
+ <span class="num">4</span>
+ Formation osseuse (Ossification / Ostéogenèse)
+ </div>
+
+ <div class="grid-2" style="margin-bottom:20px;">
+ <div class="card card-amber">
+ <div class="card-title">Type 1</div>
+ <h3>Ossification intramembraneuse</h3>
+ <ul class="list">
+ <li>Os plats du crâne, os faciaux, mandibule, partie médiale de la clavicule</li>
+ <li>Formation <strong>directement dans le mésenchyme</strong> (disposé en membranes)</li>
+ <li>Pas de modèle cartilagineux préalable</li>
+ </ul>
+ <div style="margin-top:12px;">
+ <p style="font-size:12px; font-weight:600; color:var(--amber); margin-bottom:8px;">4 étapes :</p>
+ <div style="font-size:12.5px; line-height:1.6;">
+ <p><span style="font-weight:700; color:var(--bone-dark);">1.</span> Développement du centre d'ossification (cellules mésenchymateuses → ostéoblastes)</p>
+ <p><span style="font-weight:700; color:var(--bone-dark);">2.</span> Calcification (dépôt de sels minéraux, les ostéoblastes → ostéocytes dans des lacunes)</p>
+ <p><span style="font-weight:700; color:var(--bone-dark);">3.</span> Formation des trabécules (os spongieux)</p>
+ <p><span style="font-weight:700; color:var(--bone-dark);">4.</span> Développement du périoste + remplacement de l'os spongieux superficiel par de l'os compact</p>
+ </div>
+ </div>
+ </div>
+
+ <div class="card card-purple">
+ <div class="card-title">Type 2</div>
+ <h3>Ossification endochondrale</h3>
+ <ul class="list">
+ <li>La plupart des os du corps (os longs++)</li>
+ <li>Formation dans un <strong>modèle de cartilage hyalin</strong> préexistant</li>
+ </ul>
+ <div style="margin-top:12px;">
+ <p style="font-size:12px; font-weight:600; color:var(--purple); margin-bottom:8px;">6 étapes :</p>
+ <div style="font-size:12.5px; line-height:1.6;">
+ <p><span style="font-weight:700; color:var(--bone-dark);">1.</span> Développement du modèle cartilagineux (cellules mésenchymateuses → chondroblastes)</p>
+ <p><span style="font-weight:700; color:var(--bone-dark);">2.</span> Croissance du modèle (croissance interstitielle + appositionnelle)</p>
+ <p><span style="font-weight:700; color:var(--bone-dark);">3.</span> Centre d'ossification primaire (diaphyse)</p>
+ <p><span style="font-weight:700; color:var(--bone-dark);">4.</span> Formation de la cavité médullaire (ostéoclastes)</p>
+ <p><span style="font-weight:700; color:var(--bone-dark);">5.</span> Centres d'ossification secondaires (épiphyses, après la naissance)</p>
+ <p><span style="font-weight:700; color:var(--bone-dark);">6.</span> Formation du cartilage articulaire + plaque épiphysaire</p>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <!-- CROISSANCE EN LONGUEUR -->
+ <div class="card" style="margin-bottom:20px;">
+ <div class="card-title">Croissance en longueur — La plaque épiphysaire (cartilage de croissance)</div>
+ <div class="grid-2">
+ <div>
+ <p style="font-size:14px; margin-bottom:12px; color:var(--muted);">La plaque épiphysaire est composée de <strong>4 zones</strong> (de l'épiphyse vers la diaphyse) :</p>
+ <div class="two-col-def">
+ <div class="def-item">
+ <div class="term">1. Zone de repos</div>
+ <div class="def">Petits chondrocytes inactifs. Ancrage de la plaque épiphysaire.</div>
+ </div>
+ <div class="def-item">
+ <div class="term">2. Zone de prolifération</div>
+ <div class="def">Chondrocytes en division active (piles de pièces). Croissance interstitielle.</div>
+ </div>
+ <div class="def-item">
+ <div class="term">3. Zone hypertrophique</div>
+ <div class="def">Grands chondrocytes en maturation. Augmentation de taille.</div>
+ </div>
+ <div class="def-item">
+ <div class="term">4. Zone calcifiée</div>
+ <div class="def">Chondrocytes morts. Calcification. Ostéoclastes puis ostéoblastes → ossification endochondrale.</div>
+ </div>
+ </div>
+ </div>
+ <div>
+ <div class="highlight highlight-teal">
+ <strong>Fermeture de la plaque épiphysaire :</strong> vers 18 ans (femmes) et 21 ans (hommes). Les œstrogènes accélèrent la fermeture → croissance s'arrête plus tôt chez les femmes.
+ </div>
+ <div class="highlight highlight-red" style="margin-top:10px;">
+ <strong>Attention :</strong> Fracture touchant la plaque épiphysaire → risque de croissance anormale (os plus court). Le cartilage est avasculaire → fermeture prématurée.
+ </div>
+ <div class="highlight" style="margin-top:10px;">
+ <strong>Puberté précoce :</strong> Augmentation précoce des hormones sexuelles → fermeture prématurée des cartilages de croissance → <strong>petite taille (nanisme)</strong>.
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <!-- CROISSANCE EN ÉPAISSEUR -->
+ <div class="card card-green" style="margin-bottom:20px;">
+ <div class="card-title">Croissance en épaisseur (diamètre) — Croissance appositionnelle</div>
+ <div class="flow">
+ <div class="flow-step">
+ <div class="step-num">1</div>
+ <div class="step-title">Différenciation</div>
+ <p>Cellules périostées → ostéoblastes. Formation de crêtes osseuses de chaque côté d'un vaisseau sanguin périosté.</p>
+ </div>
+ <div class="flow-step">
+ <div class="step-num">2</div>
+ <div class="step-title">Formation du tunnel</div>
+ <p>Les crêtes fusionnent, formant un tunnel tapissé d'endoste qui renferme le vaisseau sanguin.</p>
+ </div>
+ <div class="flow-step">
+ <div class="step-num">3</div>
+ <div class="step-title">Nouvel ostéon</div>
+ <p>Les ostéoblastes de l'endoste déposent des lamelles concentriques vers l'intérieur → nouvel ostéon créé.</p>
+ </div>
+ <div class="flow-step">
+ <div class="step-num">4</div>
+ <div class="step-title">Nouvelles lamelles</div>
+ <p>Les ostéoblastes périostés déposent de nouvelles lamelles circonférentielles externes. La cavité médullaire s'agrandit (ostéoclastes endostaux).</p>
+ </div>
+ </div>
+ </div>
+
+ <!-- ============================================================ -->
+ <!-- 5. REMODELAGE OSSEUX -->
+ <!-- ============================================================ -->
+ <div class="section-title">
+ <span class="num">5</span>
+ Remodelage osseux
+ </div>
+
+ <div class="highlight highlight-blue" style="margin-bottom:16px;">
+ <strong>Définition :</strong> Remplacement continu du vieux tissu osseux par du nouveau. ~5% de la masse osseuse totale est en cours de remodelage à tout moment. La partie distale du fémur est entièrement remplacée en ~4 mois.
+ </div>
+
+ <div class="grid-2" style="margin-bottom:16px;">
+ <div class="card card-red">
+ <div class="card-title">Phase 1</div>
+ <h3>Résorption osseuse (ostéoclastes)</h3>
+ <ul class="list">
+ <li>L'ostéoclaste se fixe à la surface osseuse → joint étanche (bordure ondulée)</li>
+ <li>Libération d'<strong>enzymes lysosomales</strong> + <strong>acides</strong></li>
+ <li>Digestion des fibres de collagène et dissolution des sels minéraux</li>
+ <li>Creusement d'un tunnel dans l'os ancien</li>
+ <li>Calcium et phosphore → exocytose → sang</li>
+ </ul>
+ </div>
+ <div class="card card-green">
+ <div class="card-title">Phase 2</div>
+ <h3>Dépôt osseux (ostéoblastes)</h3>
+ <ul class="list">
+ <li>Après résorption, les ostéoblastes reconstruisent l'os</li>
+ <li>Dépôt de fibres de collagène + minéraux</li>
+ <li>Formation de nouvelles lamelles concentriques</li>
+ <li>Avantages du remodelage : os plus solides, adaptation aux contraintes, os neufs résistants aux fractures</li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- FACTEURS INFLUENÇANT LA CROISSANCE -->
+ <div class="card" style="margin-bottom:0;">
+ <div class="card-title">Facteurs influençant la croissance et le remodelage osseux</div>
+ <table class="h-table">
+ <thead>
+ <tr>
+ <th>Facteur</th>
+ <th>Rôle dans la croissance/remodelage osseux</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td>Calcium & Phosphore</td><td>Rendent la matrice extracellulaire osseuse dure (indispensables)</td></tr>
+ <tr><td>Vitamine A</td><td>Nécessaire à l'activité des ostéoblastes</td></tr>
+ <tr><td>Vitamine C</td><td>Synthèse du collagène. Carence → ralentissement de la croissance et réparation des fractures</td></tr>
+ <tr><td>Vitamine D (calcitriol)</td><td>Augmente l'absorption intestinale du calcium. Carence → calcification défectueuse (rachitisme/ostéomalacie)</td></tr>
+ <tr><td>hGH + IGF</td><td>Stimulent les ostéoblastes, favorisent la division cellulaire à la plaque épiphysaire</td></tr>
+ <tr><td>Hormones thyroïdiennes (T3/T4)</td><td>Stimulent les ostéoblastes → croissance normale</td></tr>
+ <tr><td>Insuline</td><td>Favorise la synthèse des protéines osseuses</td></tr>
+ <tr><td>Hormones sexuelles (œstrogènes/testostérone)</td><td>Stimulent les ostéoblastes (poussée de croissance pubertaire). Fermeture des plaques épiphysaires. À l'âge adulte : ralentissent la résorption.</td></tr>
+ <tr><td>PTH (hormone parathyroïdienne)</td><td>↑ résorption osseuse (ostéoclastes), ↑ calcium sanguin</td></tr>
+ <tr><td>Calcitonine (CT)</td><td>↓ résorption osseuse (ostéoclastes), ↓ calcium sanguin</td></tr>
+ <tr><td>Exercice physique</td><td>Stress mécanique → dépôt osseux ↑, prévention de la perte osseuse. Course/saut > marche pour le dépôt osseux.</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <!-- ============================================================ -->
+ <!-- 6. HOMÉOSTASIE CALCIQUE -->
+ <!-- ============================================================ -->
+ <div class="section-title">
+ <span class="num">6</span>
+ Homéostasie calcique
+ </div>
+
+ <div class="grid-2">
+ <div class="card card-bone">
+ <div class="card-title">Régulation du calcium sanguin</div>
+ <h3>Rétroaction négative</h3>
+ <p style="font-size:13.5px; color:var(--muted); margin-bottom:14px;">Le taux de Ca²⁺ sanguin est maintenu entre <strong>9 et 11 mg/100 ml</strong>.</p>
+ <div class="highlight" style="margin-bottom:12px;">
+ <strong>Quand [Ca²⁺] baisse ↓</strong><br>
+ Glandes parathyroïdes → ↑ PTH → ostéoclastes actifs → résorption osseuse → Ca²⁺ libéré dans le sang. PTH agit aussi sur les reins (↓ perte urinaire de Ca²⁺) et stimule la production de calcitriol (↑ absorption intestinale du Ca²⁺).
+ </div>
+ <div class="highlight highlight-teal">
+ <strong>Quand [Ca²⁺] monte ↑</strong><br>
+ Thyroïde → Calcitonine (CT) → inhibe les ostéoclastes → dépôt osseux ↑ → Ca²⁺ sanguin ↓.
+ </div>
+ </div>
+
+ <div class="card card-blue">
+ <div class="card-title">Fonctions du calcium dans l'organisme</div>
+ <h3>Rôles vitaux du Ca²⁺</h3>
+ <ul class="list">
+ <li><strong>Cellules nerveuses et musculaires</strong> : fonctionnement correct</li>
+ <li><strong>Coagulation sanguine</strong> : cofacteur indispensable</li>
+ <li><strong>Enzymes</strong> : cofacteur pour de nombreuses réactions enzymatiques</li>
+ <li><strong>Contraction musculaire</strong> : mécanisme actine-myosine</li>
+ <li>Arrêt cardiaque si [Ca²⁺] trop élevé</li>
+ <li>Arrêt respiratoire si [Ca²⁺] trop bas</li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- ============================================================ -->
+ <!-- 7. FRACTURES ET RÉPARATION -->
+ <!-- ============================================================ -->
+ <div class="section-title">
+ <span class="num">7</span>
+ Fractures et réparation osseuse
+ </div>
+
+ <!-- TYPES DE FRACTURES -->
+ <div class="fracture-grid" style="margin-bottom:20px;">
+ <div class="fracture-card">
+ <div class="f-name">Fracture ouverte (compound)</div>
+ <div class="f-desc">Les extrémités fracturées percent la peau. Risque infectieux élevé.</div>
+ </div>
+ <div class="fracture-card">
+ <div class="f-name">Fracture fermée (simple)</div>
+ <div class="f-desc">La peau reste intacte. Extrémités ne sortent pas.</div>
+ </div>
+ <div class="fracture-card">
+ <div class="f-name">Fracture comminutive</div>
+ <div class="f-desc">Os brisé en plusieurs fragments au point d'impact.</div>
+ </div>
+ <div class="fracture-card">
+ <div class="f-name">Fracture en bois vert</div>
+ <div class="f-desc">Un côté cassé, l'autre courbé. <em>Enfants uniquement</em> (os riches en matière organique).</div>
+ </div>
+ <div class="fracture-card">
+ <div class="f-name">Fracture enfoncée</div>
+ <div class="f-desc">Une extrémité fracturée est poussée à l'intérieur de l'autre.</div>
+ </div>
+ <div class="fracture-card">
+ <div class="f-name">Fracture de stress</div>
+ <div class="f-desc">Fissures microscopiques dues à activités répétitives intenses. 25% touchent le tibia.</div>
+ </div>
+ <div class="fracture-card">
+ <div class="f-name">Fracture de Pott</div>
+ <div class="f-desc">Extrémité distale du péroné + lésion de l'articulation tibiale distale.</div>
+ </div>
+ <div class="fracture-card">
+ <div class="f-name">Fracture de Colles</div>
+ <div class="f-desc">Extrémité distale du radius, fragment distal déplacé vers l'arrière.</div>
+ </div>
+ <div class="fracture-card" style="border: 2px solid var(--accent);">
+ <div class="f-name" style="color:var(--accent-dark);">Réduction des fractures</div>
+ <div class="f-desc"><strong>Fermée</strong> : manipulation manuelle (peau intacte). <strong>Ouverte</strong> : chirurgie avec vis, plaques, broches.</div>
+ </div>
+ </div>
+
+ <!-- 4 ÉTAPES DE RÉPARATION -->
+ <div class="card">
+ <div class="card-title">4 étapes de réparation d'une fracture osseuse</div>
+ <div class="flow">
+ <div class="flow-step">
+ <div class="step-num">1</div>
+ <div class="step-title">Hématome de fracture</div>
+ <p>6 à 8h après la blessure. Sang coagulé autour du site. Mort cellulaire, inflammation, phagocytes + ostéoclastes éliminent les débris. Dure plusieurs semaines.</p>
+ </div>
+ <div class="flow-step">
+ <div class="step-num">2</div>
+ <div class="step-title">Cal fibrocartilagineux</div>
+ <p>Fibroblastes du périoste → fibres de collagène. Chondroblastes → fibrocartilage. Cal souple reliant les extrémités. ~3 semaines.</p>
+ </div>
+ <div class="flow-step">
+ <div class="step-num">3</div>
+ <div class="step-title">Cal osseux</div>
+ <p>Cellules ostéogéniques → ostéoblastes → trabécules osseuses. Le fibrocartilage devient os spongieux (cal dur). ~3-4 mois.</p>
+ </div>
+ <div class="flow-step">
+ <div class="step-num">4</div>
+ <div class="step-title">Remodelage osseux</div>
+ <p>Résorption des parties mortes par ostéoclastes. Os compact remplace l'os spongieux périphérique. La ligne de fracture peut devenir indétectable.</p>
+ </div>
+ </div>
+ <div class="highlight" style="margin-top:14px;">
+ <strong>Pourquoi la guérison est lente ?</strong> Le Ca²⁺ et le phosphore se déposent progressivement, les cellules osseuses se reproduisent lentement, et la perturbation de l'irrigation sanguine freine la guérison.
+ </div>
+ </div>
+
+ <!-- ============================================================ -->
+ <!-- 8. EXERCICE, VIEILLISSEMENT, PATHOLOGIES -->
+ <!-- ============================================================ -->
+ <div class="section-title">
+ <span class="num">8</span>
+ Exercice, vieillissement et pathologies osseuses
+ </div>
+
+ <div class="grid-3" style="margin-bottom:20px;">
+ <div class="card card-green">
+ <div class="card-title">Exercice physique</div>
+ <h3>Effets sur le tissu osseux</h3>
+ <ul class="list">
+ <li>Stress mécanique → dépôt de sels minéraux ↑ + production de collagène ↑</li>
+ <li>Course/saut > marche (contraintes intermittentes à fort impact)</li>
+ <li>Sédentarité / microgravité → perte osseuse jusqu'à <strong>1%/semaine</strong></li>
+ <li>Mise en charge recommandée à <strong>tout âge</strong></li>
+ <li>Adolescents et jeunes adultes : développer la masse osseuse <em>avant</em> la fermeture des plaques épiphysaires</li>
+ </ul>
+ </div>
+
+ <div class="card card-amber">
+ <div class="card-title">Vieillissement osseux</div>
+ <h3>Deux effets principaux</h3>
+ <ul class="list">
+ <li><strong>Déminéralisation</strong> : perte de Ca²⁺ et minéraux → début après 30 ans chez la femme, 60 ans chez l'homme</li>
+ <li>Femmes : ~8% de masse osseuse perdue/10 ans ; Hommes : ~3%/10 ans</li>
+ <li><strong>Fragilité</strong> : ↓ synthèse de fibres de collagène → ↑ risque de fractures</li>
+ <li>Conséquences : déformations, douleurs, perte de taille, perte des dents</li>
+ <li>Après ménopause : résorption > dépôt (↓ œstrogènes)</li>
+ </ul>
+ </div>
+
+ <div class="card card-red">
+ <div class="card-title">Pathologies</div>
+ <h3>Principales maladies osseuses</h3>
+ <ul class="list">
+ <li><strong>Ostéoporose</strong> : résorption > formation. 80% des cas = femmes. Fractures spontanées (hanche, poignet, vertèbres). Traitements : bisphosphonates, calcitonine, TSO, PTH.</li>
+ <li><strong>Rachitisme</strong> (enfant) / <strong>Ostéomalacie</strong> (adulte) : calcification insuffisante par carence en vitamine D. Traitement : vitamine D + soleil.</li>
+ <li><strong>Maladie de Paget</strong> : excès d'ostéoclastes → os plus gros, dur, fragile.</li>
+ <li><strong>Ostéomyélite</strong> : infection osseuse bactérienne (staphylocoques).</li>
+ <li><strong>Arthrose</strong> : dégénérescence du cartilage articulaire.</li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- OSTÉOPOROSE DÉTAIL -->
+ <div class="card card-red" style="margin-bottom:20px;">
+ <div class="card-title">Focus — Ostéoporose</div>
+ <div class="grid-2">
+ <div>
+ <p style="font-size:14px; margin-bottom:10px;"><strong>Pourquoi les femmes sont-elles plus touchées ?</strong></p>
+ <ul class="list">
+ <li>Os des femmes <strong>moins massifs</strong> que ceux des hommes</li>
+ <li>Chute brutale des <strong>œstrogènes à la ménopause</strong> → ↑ résorption par ostéoclastes</li>
+ <li>Chez l'homme : ↓ testostérone progressive et légère → risque moindre</li>
+ </ul>
+ <p style="font-size:14px; margin-top:12px;"><strong>Facteurs de risque :</strong></p>
+ <ul class="list">
+ <li>Femme, ménopause, petit gabarit</li>
+ <li>Antécédents familiaux, ascendance européenne/asiatique</li>
+ <li>Sédentarité, tabac, alcool &gt;2 verres/j</li>
+ <li>Alimentation pauvre en calcium/vitamine D</li>
+ </ul>
+ </div>
+ <div>
+ <p style="font-size:14px; margin-bottom:10px;"><strong>Traitements :</strong></p>
+ <div class="two-col-def">
+ <div class="def-item">
+ <div class="term">Antirésorptifs</div>
+ <div class="def">Bisphosphonates (Fosamax, Actonel, Boniva), calcitonine, SERMs (Raloxifène), TSO/THS</div>
+ </div>
+ <div class="def-item">
+ <div class="term">Ostéoconstructeurs</div>
+ <div class="def">PTH (Forteo) → stimule les ostéoblastes pour former du nouvel os</div>
+ </div>
+ <div class="def-item">
+ <div class="term">Nutrition</div>
+ <div class="def">Calcium + vitamine D. Alimentation riche en ces éléments.</div>
+ </div>
+ <div class="def-item">
+ <div class="term">Exercice</div>
+ <div class="def">Mise en charge : marche, jogging, montée d'escaliers, danse, tennis, haltérophilie</div>
+ </div>
+ </div>
+ <div class="highlight highlight-red" style="margin-top:12px;">
+ <strong>Diagnostic :</strong> Test de densité minérale osseuse (DMO) — comme une radiographie. Scintigraphie osseuse : traceur radioactif, détecte les anomalies 3-6 mois avant la radio standard.
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <!-- ============================================================ -->
+ <!-- 9. VASCULARISATION ET INNERVATION -->
+ <!-- ============================================================ -->
+ <div class="section-title">
+ <span class="num">9</span>
+ Vascularisation et innervation des os
+ </div>
+
+ <div class="grid-2">
+ <div class="card card-blue">
+ <div class="card-title">Irrigation sanguine d'un os long</div>
+ <ul class="list">
+ <li><strong>Artères périostées</strong> : pénètrent par les canaux perforants (Volkmann) → périoste + partie externe os compact</li>
+ <li><strong>Artère nutritive</strong> : traverse le foramen nutritif (milieu de la diaphyse) → se divise en branches proximale et distale → tissu osseux compact interne + os spongieux + moelle rouge jusqu'aux plaques épiphysaires</li>
+ <li><strong>Artères métaphysaires</strong> : pénètrent les métaphyses → moelle rouge + tissu osseux des métaphyses</li>
+ <li><strong>Artères épiphysaires</strong> : pénètrent les épiphyses → moelle rouge + tissu osseux des épiphyses</li>
+ <li>Les <strong>veines</strong> accompagnent leurs artères respectives</li>
+ </ul>
+ </div>
+ <div class="card card-amber">
+ <div class="card-title">Innervation</div>
+ <ul class="list">
+ <li>Les nerfs accompagnent les vaisseaux sanguins</li>
+ <li>Le <strong>périoste</strong> est riche en nerfs sensoriels (douleur)</li>
+ <li>Très sensibles aux <strong>déchirures et tensions</strong> → douleur intense lors d'une fracture ou d'une tumeur osseuse</li>
+ <li><strong>Biopsie de moelle osseuse</strong> : douloureuse lors de la pénétration du périoste, faible une fois à l'intérieur</li>
+ <li>Pathologies diagnostiquées par biopsie : leucémies, lymphomes, maladie de Hodgkin, anémie aplasique, néoplasmes métastatiques</li>
+ </ul>
+ <div class="highlight highlight-blue" style="margin-top:12px;">
+ <strong>Canaux de Havers :</strong> canaux longitudinaux dans l'os compact contenant vaisseaux sanguins + nerfs.<br>
+ <strong>Canaux de Volkmann :</strong> canaux transversaux reliant le système haversien au périoste et à l'endoste.
+ </div>
+ </div>
+ </div>
+
+ <!-- ============================================================ -->
+ <!-- RÉCAPITULATIF FINAL -->
+ <!-- ============================================================ -->
+ <div class="recap" style="margin-top:48px;">
+ <h3>Points clés à retenir absolument</h3>
+ <div class="grid-2">
+ <ul>
+ <li>L'os est un tissu vivant en <strong>remodelage permanent</strong></li>
+ <li>4 types cellulaires : ostéogéniques, ostéoblastes, ostéocytes, ostéoclastes</li>
+ <li>Dureté = sels minéraux (hydroxyapatite) ; Souplesse = fibres de collagène</li>
+ <li>80% os compact / 20% os spongieux</li>
+ <li>Os compact = ostéons (systèmes de Havers)</li>
+ <li>Ossification intramembraneuse = os plats du crâne</li>
+ <li>Ossification endochondrale = os longs (modèle cartilagineux)</li>
+ <li>Croissance en longueur = plaque épiphysaire (cartilage de croissance)</li>
+ </ul>
+ <ul>
+ <li>Fermeture des plaques : 18 ans femmes / 21 ans hommes</li>
+ <li>PTH ↑ calcium sanguin ; Calcitonine ↓ calcium sanguin</li>
+ <li>99% du Ca²⁺ de l'organisme est stocké dans les os</li>
+ <li>Hématopoïèse = moelle osseuse rouge (os plats + extrémités os longs)</li>
+ <li>4 étapes réparation fracture : hématome → cal fibrocartilagineux → cal osseux → remodelage</li>
+ <li>Ostéoporose : 80% femmes, ↓ œstrogènes post-ménopause</li>
+ <li>Exercice = meilleure prévention de la perte osseuse</li>
+ <li>Scintigraphie osseuse détecte les anomalies 3-6 mois avant la radiographie</li>
+ </ul>
+ </div>
+ </div>
+
+</div>
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-05.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+</body>
+</html>

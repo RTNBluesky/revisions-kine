@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Changements posturaux — Du système musculo‑squelettique aux scolioses idiopathiques — fiche de révision intégrale.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../../assets/css/acces.css">
+<script src="../../../../../../assets/js/acces.js"></script>
+<title>Fiche de révision — Changements posturaux</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;0,9..144,800;1,9..144,400;1,9..144,600&family=Manrope:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../../../assets/css/chrome.css">
+<style>
+ :root{
+ --paper: #ff8fa3;
+ --paper-deep: #ff8fa3;
+ --paper-line: #3a4060;
+ --ink:#0f1117;
+ --ink-soft:#2a3050;
+ --ink-mute:#6a7388;
+ --burgundy:#ff5c6b;
+ --burgundy-deep:#ff5c6b;
+ --burgundy-soft:#ff5c6b;
+ --forest: #ff6b9d;
+ --forest-soft:#6a7388;
+ --ochre: #ff8fa3;
+ --rule:#161922;
+ --warning:#ff5c6b;
+ }
+ *{box-sizing:border-box;margin:0;padding:0}
+ html{scroll-behavior:smooth}
+ body{
+ font-family:'Manrope', sans-serif;
+ background:var(--paper);
+ color:var(--ink);
+ line-height:1.65;
+ font-size:16px;
+ background-image:
+ radial-gradient(circle at 20% 10%, rgba(255,92,107,0.04) 0%, transparent 50%),
+ radial-gradient(circle at 80% 80%, rgba(255,107,157,0.04) 0%, transparent 50%),
+ url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.08 0 0 0 0 0.06 0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+ }
+
+ /* ========== LAYOUT ========== */
+ .wrap{
+ max-width:1100px;
+ margin:0 auto;
+ padding:60px 48px 120px;
+ position:relative;
+ }
+ @media (max-width:720px){
+ .wrap{padding:40px 22px 80px}
+ }
+
+ /* ========== HEADER ========== */
+ header.cover{
+ border-top:3px solid var(--ink);
+ border-bottom:1px solid var(--ink);
+ padding:28px 0 36px;
+ margin-bottom:64px;
+ position:relative;
+ }
+ header.cover::before{
+ content:"";
+ position:absolute;
+ top:8px;left:0;right:0;
+ border-top:1px solid var(--ink);
+ }
+ .meta-row{
+ display:flex;
+ justify-content:space-between;
+ align-items:baseline;
+ font-family:'JetBrains Mono', monospace;
+ font-size:11px;
+ letter-spacing:0.18em;
+ text-transform:uppercase;
+ color:var(--ink-mute);
+ margin-bottom:32px;
+ flex-wrap:wrap;
+ gap:12px;
+ }
+ .meta-row span{display:inline-block}
+ h1.title{
+ font-family:'Fraunces', serif;
+ font-weight:500;
+ font-size:clamp(46px, 7vw, 92px);
+ line-height:0.95;
+ letter-spacing:-0.03em;
+ color:var(--ink);
+ margin-bottom:18px;
+ font-variation-settings:"opsz" 144, "SOFT" 30;
+ }
+ h1.title em{
+ font-style:italic;
+ font-weight:400;
+ color:var(--burgundy);
+ font-variation-settings:"opsz" 144, "SOFT" 100;
+ }
+ .subtitle{
+ font-family:'Fraunces', serif;
+ font-style:italic;
+ font-weight:300;
+ font-size:clamp(18px, 2.2vw, 24px);
+ color:var(--ink-soft);
+ max-width:720px;
+ margin-bottom:8px;
+ }
+ .author{
+ font-family:'JetBrains Mono', monospace;
+ font-size:11px;
+ letter-spacing:0.15em;
+ text-transform:uppercase;
+ color:var(--ink-mute);
+ margin-top:24px;
+ padding-top:16px;
+ border-top:1px dotted var(--paper-line);
+ }
+
+ /* ========== TOC ========== */
+ nav.toc{
+ margin:60px 0 80px;
+ padding:32px 36px;
+ background:var(--paper-deep);
+ border-left:3px solid var(--burgundy);
+ position:relative;
+ }
+ nav.toc::before{
+ content:"§";
+ position:absolute;
+ top:14px;
+ right:22px;
+ font-family:'Fraunces', serif;
+ font-size:38px;
+ color:var(--burgundy);
+ opacity:0.4;
+ font-style:italic;
+ }
+ nav.toc h2{
+ font-family:'JetBrains Mono', monospace;
+ font-size:11px;
+ letter-spacing:0.22em;
+ text-transform:uppercase;
+ color:var(--burgundy);
+ margin-bottom:20px;
+ font-weight:500;
+ }
+ nav.toc ol{
+ list-style:none;
+ counter-reset:toc;
+ columns:2;
+ column-gap:48px;
+ }
+ @media (max-width:680px){nav.toc ol{columns:1}}
+ nav.toc li{
+ counter-increment:toc;
+ padding:10px 0;
+ border-bottom:1px dotted var(--paper-line);
+ break-inside:avoid;
+ }
+ nav.toc li:last-child{border-bottom:none}
+ nav.toc a{
+ color:var(--ink);
+ text-decoration:none;
+ font-family:'Fraunces', serif;
+ font-size:17px;
+ display:flex;
+ justify-content:space-between;
+ align-items:baseline;
+ gap:12px;
+ transition:color 0.2s;
+ }
+ nav.toc a:hover{color:var(--burgundy)}
+ nav.toc a::before{
+ content:counter(toc, decimal-leading-zero);
+ font-family:'JetBrains Mono', monospace;
+ font-size:11px;
+ color:var(--ink-mute);
+ flex-shrink:0;
+ }
+ nav.toc a span{flex:1}
+
+ /* ========== SECTIONS ========== */
+ section.chapter{
+ margin-bottom:88px;
+ position:relative;
+ }
+ .chapter-num{
+ font-family:'JetBrains Mono', monospace;
+ font-size:11px;
+ letter-spacing:0.22em;
+ text-transform:uppercase;
+ color:var(--burgundy);
+ margin-bottom:8px;
+ display:flex;
+ align-items:center;
+ gap:14px;
+ }
+ .chapter-num::after{
+ content:"";
+ flex:1;
+ height:1px;
+ background:var(--paper-line);
+ }
+ h2.chapter-title{
+ font-family:'Fraunces', serif;
+ font-weight:400;
+ font-size:clamp(34px, 4.5vw, 52px);
+ line-height:1.05;
+ letter-spacing:-0.02em;
+ color:var(--ink);
+ margin-bottom:32px;
+ font-variation-settings:"opsz" 100, "SOFT" 60;
+ }
+ h2.chapter-title em{
+ font-style:italic;
+ color:var(--burgundy);
+ }
+
+ h3.sub{
+ font-family:'Fraunces', serif;
+ font-weight:600;
+ font-size:24px;
+ line-height:1.2;
+ color:var(--ink);
+ margin:36px 0 14px;
+ letter-spacing:-0.01em;
+ }
+ h4.minor{
+ font-family:'Manrope', sans-serif;
+ font-size:11px;
+ font-weight:700;
+ letter-spacing:0.2em;
+ text-transform:uppercase;
+ color:var(--burgundy);
+ margin:24px 0 10px;
+ }
+
+ p{margin-bottom:14px; color:var(--ink-soft)}
+ p strong{color:var(--ink); font-weight:600}
+
+ /* drop cap on first paragraph of chapter */
+ section.chapter > p:first-of-type::first-letter{
+ font-family:'Fraunces', serif;
+ font-style:italic;
+ font-size:64px;
+ line-height:0.85;
+ float:left;
+ padding:8px 12px 0 0;
+ color:var(--burgundy);
+ font-weight:400;
+ }
+
+ /* lists */
+ ul.refined{
+ list-style:none;
+ margin:14px 0 18px;
+ }
+ ul.refined li{
+ padding:6px 0 6px 28px;
+ position:relative;
+ color:var(--ink-soft);
+ }
+ ul.refined li::before{
+ content:"";
+ position:absolute;
+ left:6px;
+ top:18px;
+ width:10px;
+ height:1px;
+ background:var(--burgundy);
+ }
+ ul.dashed li::before{
+ width:14px;
+ background:var(--ink-mute);
+ left:0;
+ }
+
+ /* ========== DEFINITION BOX ========== */
+ .definition{
+ margin:28px 0;
+ padding:28px 32px;
+ background:linear-gradient(180deg, var(--paper-deep), rgba(255,107,157,0.5));
+ border:1px solid var(--paper-line);
+ position:relative;
+ }
+ .definition::before{
+ content:"DÉFINITION";
+ position:absolute;
+ top:-9px;
+ left:24px;
+ background:var(--paper);
+ padding:0 12px;
+ font-family:'JetBrains Mono', monospace;
+ font-size:10px;
+ letter-spacing:0.22em;
+ color:var(--burgundy);
+ font-weight:500;
+ }
+ .definition p{
+ font-family:'Fraunces', serif;
+ font-style:italic;
+ font-size:19px;
+ line-height:1.5;
+ color:var(--ink);
+ margin:0;
+ }
+ .definition .term{
+ font-style:normal;
+ font-weight:600;
+ color:var(--burgundy);
+ display:block;
+ font-size:14px;
+ text-transform:uppercase;
+ letter-spacing:0.1em;
+ margin-bottom:6px;
+ font-family:'Manrope', sans-serif;
+ }
+
+ /* ========== KEY FIGURES ========== */
+ .keystats{
+ display:grid;
+ grid-template-columns:repeat(auto-fit, minmax(180px, 1fr));
+ gap:1px;
+ background:var(--paper-line);
+ border:1px solid var(--paper-line);
+ margin:32px 0;
+ }
+ .keystats > div{
+ background:var(--paper);
+ padding:24px 22px;
+ }
+ .keystats .num{
+ font-family:'Fraunces', serif;
+ font-size:42px;
+ line-height:1;
+ color:var(--burgundy);
+ font-weight:400;
+ font-style:italic;
+ margin-bottom:6px;
+ font-variation-settings:"opsz" 144, "SOFT" 100;
+ }
+ .keystats .lbl{
+ font-family:'JetBrains Mono', monospace;
+ font-size:10px;
+ letter-spacing:0.15em;
+ text-transform:uppercase;
+ color:var(--ink-mute);
+ }
+
+ /* ========== CALLOUT ========== */
+ .callout{
+ margin:30px 0;
+ padding:22px 28px 22px 50px;
+ background:rgba(255,92,107,0.06);
+ border-left:3px solid var(--burgundy);
+ position:relative;
+ }
+ .callout::before{
+ content:"!";
+ position:absolute;
+ left:18px;
+ top:22px;
+ width:22px;
+ height:22px;
+ background:var(--burgundy);
+ color:var(--paper);
+ border-radius:50%;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ font-family:'Fraunces', serif;
+ font-weight:700;
+ font-style:italic;
+ font-size:14px;
+ }
+ .callout p{margin:0; color:var(--ink)}
+ .callout strong{color:var(--burgundy-deep)}
+
+ .callout.tip{
+ background:rgba(255,107,157,0.06);
+ border-left-color:var(--forest);
+ }
+ .callout.tip::before{
+ content:"✦";
+ background:var(--forest);
+ font-style:normal;
+ }
+ .callout.tip strong{color:var(--forest)}
+
+ /* ========== TWO-COL GRID ========== */
+ .duo{
+ display:grid;
+ grid-template-columns:1fr 1fr;
+ gap:1px;
+ background:var(--paper-line);
+ border:1px solid var(--paper-line);
+ margin:24px 0;
+ }
+ @media (max-width:640px){.duo{grid-template-columns:1fr}}
+ .duo > div{
+ background:var(--paper);
+ padding:24px 26px;
+ }
+ .duo h5{
+ font-family:'JetBrains Mono', monospace;
+ font-size:10px;
+ letter-spacing:0.2em;
+ text-transform:uppercase;
+ color:var(--burgundy);
+ margin-bottom:14px;
+ font-weight:500;
+ }
+ .duo.split-tip h5:first-of-type{color:var(--forest)}
+
+ /* ========== TIMELINE ========== */
+ .timeline{
+ margin:32px 0;
+ border-top:1px solid var(--ink);
+ border-bottom:1px solid var(--ink);
+ padding:8px 0;
+ }
+ .timeline-row{
+ display:grid;
+ grid-template-columns:120px 1fr;
+ gap:24px;
+ padding:18px 0;
+ border-bottom:1px dotted var(--paper-line);
+ align-items:baseline;
+ }
+ .timeline-row:last-child{border-bottom:none}
+ .timeline-age{
+ font-family:'Fraunces', serif;
+ font-style:italic;
+ font-size:22px;
+ color:var(--burgundy);
+ font-weight:500;
+ }
+ .timeline-desc strong{
+ display:block;
+ font-family:'Manrope', sans-serif;
+ font-size:11px;
+ letter-spacing:0.18em;
+ text-transform:uppercase;
+ color:var(--ink-mute);
+ margin-bottom:4px;
+ font-weight:600;
+ }
+
+ /* ========== CLASSIFICATION TREE ========== */
+ .classif{
+ margin:36px 0;
+ padding:32px;
+ background:var(--paper-deep);
+ border:1px solid var(--paper-line);
+ }
+ .classif-title{
+ font-family:'JetBrains Mono', monospace;
+ font-size:10px;
+ letter-spacing:0.22em;
+ text-transform:uppercase;
+ color:var(--burgundy);
+ margin-bottom:24px;
+ font-weight:500;
+ text-align:center;
+ }
+ .branch{
+ margin:14px 0;
+ }
+ .branch-head{
+ font-family:'Fraunces', serif;
+ font-weight:600;
+ font-size:18px;
+ color:var(--ink);
+ padding:10px 16px;
+ background:var(--paper);
+ border-left:3px solid var(--burgundy);
+ margin-bottom:8px;
+ }
+ .branch-children{
+ padding-left:24px;
+ margin-left:14px;
+ border-left:1px dotted var(--ink-mute);
+ }
+ .branch-child{
+ padding:8px 14px;
+ margin:6px 0;
+ background:var(--paper);
+ border:1px solid var(--paper-line);
+ font-size:14px;
+ position:relative;
+ }
+ .branch-child::before{
+ content:"";
+ position:absolute;
+ left:-25px;
+ top:50%;
+ width:24px;
+ height:1px;
+ background:var(--ink-mute);
+ }
+ .branch-child em{
+ color:var(--ink-mute);
+ font-style:italic;
+ font-family:'Fraunces', serif;
+ font-size:13px;
+ margin-left:6px;
+ }
+
+ /* ========== TABLE ========== */
+ .tbl-wrap{margin:28px 0; overflow-x:auto}
+ table{
+ width:100%;
+ border-collapse:collapse;
+ font-size:14px;
+ }
+ table th{
+ font-family:'JetBrains Mono', monospace;
+ font-size:10px;
+ letter-spacing:0.15em;
+ text-transform:uppercase;
+ text-align:left;
+ padding:14px 16px;
+ background:var(--ink);
+ color:var(--paper);
+ font-weight:500;
+ border:1px solid var(--ink);
+ }
+ table td{
+ padding:14px 16px;
+ border:1px solid var(--paper-line);
+ background:var(--paper);
+ color:var(--ink-soft);
+ vertical-align:top;
+ }
+ table tr:nth-child(even) td{background:var(--paper-deep)}
+ table strong{color:var(--ink)}
+
+ /* ========== MEMO BOX ========== */
+ .memo{
+ margin:40px 0;
+ padding:36px 40px;
+ background:var(--ink);
+ color:var(--paper);
+ position:relative;
+ overflow:hidden;
+ }
+ .memo::before{
+ content:"À retenir";
+ position:absolute;
+ top:14px;
+ right:22px;
+ font-family:'Fraunces', serif;
+ font-style:italic;
+ font-weight:300;
+ font-size:80px;
+ color:var(--burgundy);
+ opacity:0.35;
+ line-height:1;
+ pointer-events:none;
+ }
+ .memo h4{
+ font-family:'JetBrains Mono', monospace;
+ font-size:10px;
+ letter-spacing:0.25em;
+ text-transform:uppercase;
+ color:var(--ochre);
+ margin-bottom:18px;
+ font-weight:500;
+ position:relative;
+ z-index:1;
+ }
+ .memo ul{list-style:none; position:relative; z-index:1}
+ .memo ul li{
+ padding:10px 0 10px 26px;
+ position:relative;
+ border-bottom:1px solid rgba(243,237,225,0.1);
+ font-size:15px;
+ }
+ .memo ul li:last-child{border-bottom:none}
+ .memo ul li::before{
+ content:"→";
+ position:absolute;
+ left:0;
+ color:var(--ochre);
+ font-family:'Fraunces', serif;
+ }
+ .memo strong{color:var(--paper); font-weight:600}
+
+ /* ========== SCOLIOSE GRADES ========== */
+ .grades{
+ display:grid;
+ grid-template-columns:repeat(auto-fit, minmax(240px, 1fr));
+ gap:16px;
+ margin:32px 0;
+ }
+ .grade{
+ padding:24px 22px;
+ background:var(--paper);
+ border:1px solid var(--paper-line);
+ border-top:3px solid var(--forest);
+ position:relative;
+ }
+ .grade.mid{border-top-color:var(--ochre)}
+ .grade.high{border-top-color:var(--burgundy)}
+ .grade .deg{
+ font-family:'Fraunces', serif;
+ font-style:italic;
+ font-size:32px;
+ font-weight:500;
+ line-height:1;
+ color:var(--ink);
+ margin-bottom:8px;
+ }
+ .grade.mid .deg{color:var(--ochre)}
+ .grade.high .deg{color:var(--burgundy)}
+ .grade .label{
+ font-family:'JetBrains Mono', monospace;
+ font-size:10px;
+ letter-spacing:0.18em;
+ text-transform:uppercase;
+ color:var(--ink-mute);
+ margin-bottom:14px;
+ }
+ .grade p{font-size:14px; margin:0}
+
+ /* ========== INDEX MARGINAL ========== */
+ .marginalia{
+ position:relative;
+ padding-left:0;
+ }
+ .lateral-note{
+ float:right;
+ width:200px;
+ margin:6px -220px 12px 28px;
+ padding:14px 16px;
+ background:var(--paper-deep);
+ border-left:2px solid var(--ochre);
+ font-family:'Fraunces', serif;
+ font-style:italic;
+ font-size:13px;
+ line-height:1.5;
+ color:var(--ink-soft);
+ }
+ @media (max-width:1280px){
+ .lateral-note{
+ float:none;
+ width:auto;
+ margin:14px 0;
+ }
+ }
+
+ /* ========== INLINE TERMS ========== */
+ .term-inline{
+ background:linear-gradient(transparent 60%, rgba(255,107,157,0.3) 60%);
+ padding:0 2px;
+ color:var(--ink);
+ font-weight:500;
+ }
+ .latin{
+ font-family:'Fraunces', serif;
+ font-style:italic;
+ color:var(--burgundy);
+ }
+
+ /* ========== FOOTER ========== */
+ footer{
+ margin-top:100px;
+ padding-top:32px;
+ border-top:3px double var(--ink);
+ font-family:'JetBrains Mono', monospace;
+ font-size:11px;
+ letter-spacing:0.15em;
+ text-transform:uppercase;
+ color:var(--ink-mute);
+ display:flex;
+ justify-content:space-between;
+ flex-wrap:wrap;
+ gap:14px;
+ }
+ footer span{display:inline-block}
+
+ /* ========== ANATOMICAL FIGURE ========== */
+ .anatomy-fig{
+ margin:36px auto;
+ display:flex;
+ justify-content:center;
+ padding:24px;
+ background:var(--paper-deep);
+ border:1px solid var(--paper-line);
+ }
+ .anatomy-fig svg{max-width:100%; height:auto}
+
+ /* print */
+ @media print{
+ body{background:white; color:black}
+ .wrap{padding:20px; max-width:none}
+ nav.toc, footer{break-inside:avoid}
+ section.chapter{break-inside:avoid; page-break-inside:avoid}
+ .memo{background:#1a1d2a !important; -webkit-print-color-adjust:exact; print-color-adjust:exact}
+ }
+
+ /* selection */
+ ::selection{background:var(--burgundy); color:var(--paper)}
+</style>
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/physio-patho.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-theme.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
+</head>
+<body>
+<a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
+<div class="page-toggle"><div class="pt-inner"><a href="../../qcm/tp/tp-07.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<div class="wrap">
+
+ <!-- ========== COVER ========== -->
+ <header class="cover">
+ <div class="meta-row">
+ 
+ <span>Licence Physiothérapie · 1ʳᵉ année · S2</span>
+ <span>TP n°7</span>
+ </div>
+ <h1 class="title">Changements <em>posturaux</em></h1>
+ <p class="subtitle">Du système musculo‑squelettique aux scolioses idiopathiques — fiche de révision intégrale.</p>
+ <div class="author">Cours de la Pʳᵉ Ana Laura Ricci‑Vitor &nbsp;·&nbsp; Fiche synthèse</div>
+ </header>
+
+ <!-- ========== TABLE OF CONTENTS ========== -->
+ <nav class="toc">
+ <h2>Sommaire</h2>
+ <ol>
+ <li><a href="#ch1"><span>Le système musculo‑squelettique</span></a></li>
+ <li><a href="#ch2"><span>Malformations congénitales &amp; héréditaires</span></a></li>
+ <li><a href="#ch3"><span>La posture — définition</span></a></li>
+ <li><a href="#ch4"><span>Développement des courbures rachidiennes</span></a></li>
+ <li><a href="#ch5"><span>Repères anatomiques &amp; ligne de gravité</span></a></li>
+ <li><a href="#ch6"><span>Facteurs affectant la posture</span></a></li>
+ <li><a href="#ch7"><span>Modifications posturales</span></a></li>
+ <li><a href="#ch8"><span>La scoliose</span></a></li>
+ <li><a href="#ch9"><span>Synthèse &amp; points‑clés d'examen</span></a></li>
+ </ol>
+ </nav>
+
+ <!-- ========== CHAPITRE 1 ========== -->
+ <section class="chapter" id="ch1">
+ <div class="chapter-num">Chapitre I</div>
+ <h2 class="chapter-title">Le système <em>musculo‑squelettique</em></h2>
+
+ <p>Le système musculo‑squelettique constitue le cadre porteur du corps humain. Il associe les <strong>os</strong>, les <strong>articulations</strong> et les <strong>muscles</strong>, eux‑mêmes reliés et stabilisés par les <strong>ligaments</strong> (os↔os) et les <strong>tendons</strong> (muscle↔os). C'est l'organe central du mouvement et de la posture.</p>
+
+ <div class="keystats">
+ <div><div class="num">≈ 300</div><div class="lbl">os à la naissance</div></div>
+ <div><div class="num">206</div><div class="lbl">os chez l'adulte</div></div>
+ <div><div class="num">−94</div><div class="lbl">par fusion osseuse</div></div>
+ </div>
+
+ <p>Au cours de la croissance, de nombreux os fusionnent : c'est ce qui explique que le squelette néonatal compte près de 300 pièces, contre 206 chez l'adulte.</p>
+
+ <h3 class="sub">Pathologies pouvant affecter le système</h3>
+ <p>Le système musculo‑squelettique peut être atteint à tout âge, provoquant douleurs et dysfonctionnements. Les grandes catégories étiologiques sont&nbsp;:</p>
+ <ul class="refined">
+ <li><strong>Traumatismes</strong> — atteintes osseuses et des tissus mous</li>
+ <li><strong>Infections</strong> — ostéomyélite, ostéonécrose…</li>
+ <li><strong>Maladies métaboliques</strong></li>
+ <li><strong>Altérations de la croissance et du développement</strong> — congénitales, héréditaires, scoliose…</li>
+ <li><strong>Maladies dégénératives</strong></li>
+ <li><strong>Ischémie</strong></li>
+ <li><strong>Néoplasmes</strong></li>
+ </ul>
+ </section>
+
+ <!-- ========== CHAPITRE 2 ========== -->
+ <section class="chapter" id="ch2">
+ <div class="chapter-num">Chapitre II</div>
+ <h2 class="chapter-title">Malformations <em>congénitales</em> &amp; héréditaires</h2>
+
+ <p>Chez l'enfant et l'adolescent, les ligaments sont plus souples qu'à l'âge adulte ; ils se renforcent progressivement pour pouvoir assumer les positions de décharge du poids. Cette laxité explique pourquoi de nombreuses anomalies du jeune sont liées à <strong>l'application de forces de torsion (rotation)</strong>, soit par des positions intra‑utérines, soit par tendance familiale.</p>
+
+ <div class="callout tip">
+ <p><strong>Mécanisme à retenir :</strong> ligaments souples + forces de torsion = malformations de l'appareil locomoteur du jeune enfant.</p>
+ </div>
+
+ <h3 class="sub">Anomalies axiales du membre inférieur</h3>
+ <ul class="refined">
+ <li><strong>Torsion fémorale</strong></li>
+ <li><strong>Torsion tibiale</strong></li>
+ <li><strong>Pieds plats</strong> ou altération des voûtes plantaires</li>
+ <li><strong>Genu valgum</strong> (genoux en X) / <strong>genu varum</strong> (genoux en O)</li>
+ <li><strong>Tibia vara</strong></li>
+ </ul>
+
+ <h3 class="sub">Anomalies des doigts &amp; orteils</h3>
+ <div class="duo">
+ <div>
+ <h5>Polydactylie</h5>
+ <p>Présence d'un ou plusieurs doigts/orteils <strong>surnuméraires</strong>.</p>
+ </div>
+ <div>
+ <h5>Macrodactylie</h5>
+ <p>Hypertrophie d'un ou plusieurs doigts ou orteils <strong>(taille excessive)</strong>.</p>
+ </div>
+ </div>
+ <div class="duo">
+ <div>
+ <h5>Syndactylie</h5>
+ <p>Fusion partielle ou complète de deux doigts/orteils adjacents.</p>
+ </div>
+ <div>
+ <h5>Luxation congénitale de la hanche</h5>
+ <p>Défaut de positionnement de la tête fémorale dans l'acétabulum présent dès la naissance.</p>
+ </div>
+ </div>
+
+ <h3 class="sub">Maladies de la matrice osseuse</h3>
+ <div class="definition">
+ <span class="term">Ostéogenèse imparfaite</span>
+ <p>Aussi nommée <span class="latin">maladie d'Ekman‑Lobstein</span> ou « maladie des os de verre ». Maladie héréditaire affectant le <strong>collagène</strong>, conférant aux os une fragilité majeure.</p>
+ </div>
+
+ <h3 class="sub">Ostéochondroses congénitales</h3>
+ <p>Maladies caractérisées par une <strong>dégénérescence, une nécrose ou une inactivité</strong> du tissu ostéo‑chondral en croissance. Deux entités à connaître&nbsp;:</p>
+
+ <div class="duo">
+ <div>
+ <h5>Maladie de Legg‑Calvé‑Perthes</h5>
+ <p><strong>Localisation :</strong> hanche.<br>
+ <strong>Mécanisme :</strong> nécrose de la tête fémorale.</p>
+ </div>
+ <div>
+ <h5>Maladie d'Osgood‑Schlatter</h5>
+ <p><strong>Localisation :</strong> genou (tubérosité tibiale).<br>
+ <strong>Mécanisme :</strong> utilisation excessive du tendon rotulien.</p>
+ </div>
+ </div>
+ </section>
+
+ <!-- ========== CHAPITRE 3 ========== -->
+ <section class="chapter" id="ch3">
+ <div class="chapter-num">Chapitre III</div>
+ <h2 class="chapter-title">La <em>posture</em> — définition</h2>
+
+ <p>La notion de posture est le pivot de l'évaluation kinésithérapique. Il convient d'en distinguer la définition générale et celle de la posture dite <em>correcte</em>.</p>
+
+ <div class="definition">
+ <span class="term">Posture</span>
+ <p>Disposition relative du corps, composée des positions des différentes articulations corporelles à un moment donné.</p>
+ </div>
+
+ <div class="definition">
+ <span class="term">Posture correcte</span>
+ <p>Position qui exerce <strong>le moins de pression possible</strong> sur chaque articulation, avec un <strong>minimum d'activité musculaire</strong> pour la maintenir.</p>
+ </div>
+
+ <h3 class="sub">Quand la posture devient pathogène</h3>
+ <p>Lorsque les articulations sont <strong>raides, hyper‑ ou hypomobiles</strong>, ou que les muscles sont <strong>faibles, étirés ou raccourcis</strong>, la posture exige davantage de stress pour être maintenue. Le résultat cumulatif&nbsp;:</p>
+
+ <ul class="refined">
+ <li>Stress <strong>répété de manière constante sur une longue période</strong>, ou</li>
+ <li>Stress <strong>constants sur une courte période</strong>,</li>
+ </ul>
+
+ <p>… peut entraîner l'apparition de pathologies musculo‑squelettiques.</p>
+
+ <div class="callout">
+ <p><strong>À retenir :</strong> une posture correcte n'est pas une posture <em>esthétique</em> mais une posture <em>économe</em>, qui minimise simultanément la charge articulaire et le coût musculaire.</p>
+ </div>
+ </section>
+
+ <!-- ========== CHAPITRE 4 ========== -->
+ <section class="chapter" id="ch4">
+ <div class="chapter-num">Chapitre IV</div>
+ <h2 class="chapter-title">Développement des <em>courbures rachidiennes</em></h2>
+
+ <p>La colonne vertébrale humaine ne possède pas dès la naissance ses quatre courbures sagittales. Celles‑ci se construisent par étapes, en réponse aux contraintes de la verticalisation.</p>
+
+ <h3 class="sub">Courbures primaires</h3>
+ <p>Présentes dès la naissance. Elles sont <strong>concaves vers l'avant</strong>, c'est‑à‑dire en flexion. Elles correspondent aux segments&nbsp;:</p>
+ <ul class="refined">
+ <li><strong>Thoracique</strong> (cyphose primaire)</li>
+ <li><strong>Sacré</strong> (concavité sacro‑coccygienne)</li>
+ </ul>
+
+ <h3 class="sub">Courbures secondaires</h3>
+ <p>Elles se développent <strong>après la naissance</strong>, en réponse aux étapes du développement moteur (tenue de tête, station debout). Elles sont <strong>convexes vers l'avant</strong> (lordoses).</p>
+
+ <div class="timeline">
+ <div class="timeline-row">
+ <div class="timeline-age">3 mois</div>
+ <div class="timeline-desc">
+ <strong>Apparition de la lordose cervicale</strong>
+ Lorsque le nourrisson commence à soutenir la tête en position ventrale.
+ </div>
+ </div>
+ <div class="timeline-row">
+ <div class="timeline-age">6 – 8 mois</div>
+ <div class="timeline-desc">
+ <strong>Apparition de la lordose lombaire</strong>
+ Lorsque l'enfant prépare la station assise puis debout.
+ </div>
+ </div>
+ </div>
+
+ <div class="callout tip">
+ <p><strong>Mnémotechnique :</strong> <em>« Primaire = en flexion / Secondaire = en lordose »</em>. Les courbures secondaires apparaissent dans le <strong>sens céphalo‑caudal</strong> (cervicale puis lombaire).</p>
+ </div>
+ </section>
+
+ <!-- ========== CHAPITRE 5 ========== -->
+ <section class="chapter" id="ch5">
+ <div class="chapter-num">Chapitre V</div>
+ <h2 class="chapter-title">Repères anatomiques &amp; <em>ligne de gravité</em></h2>
+
+ <p>L'analyse posturale repose sur l'identification de repères osseux ou cutanés, alignés idéalement par rapport à une <strong>ligne de gravité</strong> verticale.</p>
+
+ <h3 class="sub">Vue latérale — ligne de gravité idéale</h3>
+ <p>La ligne de gravité idéale, vue de profil, doit traverser les repères suivants <em>de haut en bas</em>&nbsp;:</p>
+
+ <ol class="refined" style="counter-reset:lat; list-style:none">
+ <li>Postérieur à la <strong>suture coronale</strong></li>
+ <li><strong>Conduit auditif externe</strong></li>
+ <li><strong>Processus odontoïde</strong> (C2)</li>
+ <li>Corps des <strong>vertèbres cervicales</strong></li>
+ <li><strong>Tête de l'humérus</strong></li>
+ <li><strong>Milieu du thorax</strong></li>
+ <li>Corps des <strong>vertèbres lombaires</strong></li>
+ <li>Point culminant de la <strong>crête iliaque</strong></li>
+ <li>Angle <strong>EIAS – EIPS</strong> (ASIS – PSIS)</li>
+ <li><strong>Grand trochanter</strong> du fémur</li>
+ <li><strong>Pli fessier</strong></li>
+ <li>Légèrement <strong>antérieur à l'axe du genou</strong> (base de rotule, tête du péroné)</li>
+ <li><strong>Antérieur à la malléole latérale</strong></li>
+ </ol>
+
+ <h3 class="sub">Vue frontale (antérieure &amp; postérieure)</h3>
+ <div class="callout">
+ <p><strong>Règle fondamentale :</strong> dans le <strong>plan frontal</strong>, il n'existe normalement <em>aucune courbure</em> rachidienne. La présence d'une déviation latérale est <strong>pathologique</strong> par définition.</p>
+ </div>
+
+ <p>La ligne de gravité doit, dans ce plan, passer par une succession de repères <strong>symétriques</strong>&nbsp;:</p>
+
+ <div class="duo">
+ <div>
+ <h5>Vue postérieure</h5>
+ <ul class="dashed refined">
+ <li>Symétrie bilatérale de la tête</li>
+ <li>Processus épineux cervicaux</li>
+ <li>Niveaux des épaules / acromions</li>
+ <li>Position normale des scapulas</li>
+ <li>Angle inférieur des scapulas</li>
+ <li>Symétrie du tronc</li>
+ <li>Crêtes pelviennes / EIPS</li>
+ <li>Niveaux des grands trochanters</li>
+ <li>Pli interfessier</li>
+ <li>Plis poplités, têtes des péronés</li>
+ <li>Niveaux des malléoles</li>
+ </ul>
+ </div>
+ <div>
+ <h5>Vue antérieure</h5>
+ <ul class="dashed refined">
+ <li>Symétrie de la tête et du visage</li>
+ <li>Lobes des oreilles</li>
+ <li>Bissection des corps cervicaux</li>
+ <li>Niveaux des épaules &amp; mamelons</li>
+ <li>Bissection du sternum &amp; ombilic</li>
+ <li>Distance bras‑thorax</li>
+ <li>Niveaux des EIAS</li>
+ <li>Bissection de la symphyse pubienne</li>
+ <li>Lignes articulaires des genoux</li>
+ <li>Niveaux des malléoles</li>
+ </ul>
+ </div>
+ </div>
+ </section>
+
+ <!-- ========== CHAPITRE 6 ========== -->
+ <section class="chapter" id="ch6">
+ <div class="chapter-num">Chapitre VI</div>
+ <h2 class="chapter-title">Facteurs <em>affectant</em> la posture</h2>
+
+ <p>Les altérations posturales résultent de l'interaction de trois grands groupes de facteurs&nbsp;: <strong>posturaux</strong> (comportementaux), <strong>structurels</strong> (lésionnels) et <strong>anatomiques</strong> (constitutionnels).</p>
+
+ <div class="tbl-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th>Facteurs posturaux</th>
+ <th>Facteurs structurels</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Rester assis ou debout pendant <strong>de longues périodes</strong></td>
+ <td><strong>Anomalies congénitales</strong></td>
+ </tr>
+ <tr>
+ <td><strong>Habitudes</strong> (gestuelles, professionnelles)</td>
+ <td><strong>Problèmes de développement</strong></td>
+ </tr>
+ <tr>
+ <td><strong>Déséquilibres musculaires</strong></td>
+ <td><strong>Traumatismes</strong></td>
+ </tr>
+ <tr>
+ <td><strong>Douleur</strong></td>
+ <td><strong>Maladies</strong></td>
+ </tr>
+ <tr>
+ <td><strong>Problèmes respiratoires</strong></td>
+ <td></td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+
+ <h3 class="sub">Facteurs anatomiques</h3>
+ <p>S'ajoutent un ensemble de paramètres anatomiques qui modulent l'expression de la posture chez chaque individu&nbsp;:</p>
+
+ <ul class="refined">
+ <li><strong>Contours osseux</strong></li>
+ <li><strong>Laxité</strong> des structures ligamentaires</li>
+ <li><strong>Tonus</strong> des fascias et des unités muscle‑tendon</li>
+ <li><strong>Angle pelvien</strong></li>
+ <li><strong>Position et mobilité articulaire</strong></li>
+ <li><strong>Input</strong> ou <strong>output neurogène</strong> (commande et perception)</li>
+ </ul>
+ </section>
+
+ <!-- ========== CHAPITRE 7 ========== -->
+ <section class="chapter" id="ch7">
+ <div class="chapter-num">Chapitre VII</div>
+ <h2 class="chapter-title">Les <em>modifications</em> posturales</h2>
+
+ <p>Les modifications posturales sont des écarts par rapport à la disposition idéale du corps. Elles peuvent être <strong>asymptomatiques pendant des années</strong>, mais finir par devenir cliniquement parlantes.</p>
+
+ <div class="callout">
+ <p>Les modifications posturales <strong>ne provoquent pas toujours des symptômes</strong>, mais elles peuvent en causer <strong>à long terme</strong>. Un <strong>stress aigu ou chronique</strong> peut amener le patient à rechercher un traitement.</p>
+ </div>
+
+ <p>Sur le plan clinique, on distingue souvent des hypertonicités musculaires unilatérales caractéristiques (rhomboïdes, trapèze, érecteurs du rachis ± deltoïde postérieur, érecteurs ± carré des lombes) qui se traduisent par des asymétries du tronc visibles à l'observation.</p>
+ </section>
+
+ <!-- ========== CHAPITRE 8 ========== -->
+ <section class="chapter" id="ch8">
+ <div class="chapter-num">Chapitre VIII — Le grand chapitre</div>
+ <h2 class="chapter-title">La <em>scoliose</em></h2>
+
+ <div class="definition">
+ <span class="term">Scoliose</span>
+ <p>Déviation latérale de la colonne vertébrale qui se produit dans le <strong>plan frontal</strong> et qui peut, ou non, inclure une <strong>rotation</strong> ou une <strong>déformation vertébrale</strong>.</p>
+ </div>
+
+ <h3 class="sub">Classification générale</h3>
+ <p>La scoliose se classe selon sa <strong>nature</strong> (réductible ou non), son <strong>type</strong>, sa <strong>forme</strong> et sa <strong>cause</strong>.</p>
+
+ <div class="classif">
+ <div class="classif-title">— Arborescence étiologique</div>
+
+ <div class="branch">
+ <div class="branch-head">A · Scoliose structurelle</div>
+ <div class="branch-children">
+ <div class="branch-child"><strong>Idiopathique</strong> <em>— sans cause identifiée, la plus fréquente</em></div>
+ <div style="padding-left:24px; margin-left:14px; border-left:1px dotted var(--ink-mute)">
+ <div class="branch-child" style="background:var(--paper-deep)">Infantile <em>— jusqu'à 3 ans</em></div>
+ <div class="branch-child" style="background:var(--paper-deep)">Juvénile <em>— 4 à 9 ans</em></div>
+ <div class="branch-child" style="background:var(--paper-deep)">Adolescente <em>— ≥ 10 ans</em></div>
+ </div>
+ <div class="branch-child"><strong>Congénitale</strong> <em>— forme ostéopathique</em></div>
+ <div class="branch-child"><strong>Paralysante</strong> <em>— neuropathique ou myopathique</em></div>
+ </div>
+ </div>
+
+ <div class="branch">
+ <div class="branch-head">B · Scoliose posturale</div>
+ <div class="branch-children">
+ <div class="branch-child"><strong>Inégalité de longueur</strong> des membres inférieurs</div>
+ <div class="branch-child"><strong>Spasmes musculaires</strong></div>
+ </div>
+ </div>
+ </div>
+
+ <h3 class="sub">Scoliose idiopathique juvénile et adolescente</h3>
+ <p>Forme la plus fréquente des scolioses structurelles ; elle constitue le cœur de la pratique clinique courante.</p>
+
+ <h4 class="minor">Incidence &amp; profil</h4>
+ <div class="keystats">
+ <div><div class="num">1 – 5%</div><div class="lbl">de la population touchée</div></div>
+ <div><div class="num">♀</div><div class="lbl">prédominance féminine</div></div>
+ <div><div class="num">T</div><div class="lbl">vertèbres thoraciques</div></div>
+ </div>
+
+ <ul class="refined">
+ <li><strong>Touche 1 à 5 %</strong> de la population générale</li>
+ <li>Se développe <strong>pendant la période de croissance</strong></li>
+ <li>Plus fréquente <strong>chez les femmes</strong></li>
+ <li>Localisée préférentiellement au <strong>niveau des vertèbres thoraciques</strong></li>
+ <li>C'est la <strong>forme la plus fréquente de scoliose structurelle</strong></li>
+ </ul>
+
+ <h4 class="minor">Critères de gravité</h4>
+ <p>Trois éléments aggravent le pronostic&nbsp;:</p>
+ <ul class="refined">
+ <li><strong>Plus le niveau est élevé</strong> (rachis haut), plus la scoliose est grave</li>
+ <li><strong>Plus elle apparaît tôt</strong>, plus elle est grave</li>
+ <li>La courbe ne fait <strong>qu'augmenter tant qu'il y a de la croissance</strong>, puis se stabilise</li>
+ </ul>
+
+ <div class="callout">
+ <p><strong>Seuil critique respiratoire :</strong> entre <strong>100° et 140°</strong>, la scoliose perturbe la <strong>capacité respiratoire</strong> par déformation de la cage thoracique.</p>
+ </div>
+
+ <h4 class="minor">Diagnostic</h4>
+ <ul class="refined">
+ <li>Objectif principal&nbsp;: <strong>détecter la courbe avant qu'elle n'atteigne des valeurs élevées</strong></li>
+ <li><strong>Radiographie AP</strong> debout ; en <strong>décubitus</strong> pour différencier les scolioses dues à des dysmétries, secondaires ou posturales (réductibles)</li>
+ <li><strong>Suivi de l'évolution :</strong> mesure de l'angle de la courbe sur les séries de radiographies</li>
+ <li><strong>Fréquence du suivi : tous les 6 mois</strong></li>
+ </ul>
+
+ <h4 class="minor">Examen clinique — Test de Schober (« bending test »)</h4>
+ <p>Examen de dépistage de référence en pédiatrie&nbsp;:</p>
+ <div class="duo split-tip">
+ <div>
+ <h5>Avantages</h5>
+ <ul class="dashed refined">
+ <li><strong>Aucun effet indésirable</strong></li>
+ <li><strong>Interprétation immédiate</strong></li>
+ <li><strong>Rapide</strong></li>
+ <li>Peut être <strong>appliqué à tous les enfants</strong></li>
+ </ul>
+ </div>
+ <div>
+ <h5>Principe</h5>
+ <p>L'enfant se penche en avant tronc fléchi ; on observe l'asymétrie des reliefs paravertébraux (gibbosité), témoignant de la rotation vertébrale associée à la déviation latérale.</p>
+ </div>
+ </div>
+
+ <h4 class="minor">Traitement — selon l'angle de la courbe</h4>
+ <div class="grades">
+ <div class="grade">
+ <div class="deg">≈ 20°</div>
+ <div class="label">Stade léger</div>
+ <p>Si la courbure est <strong>maintenue proche de 20°</strong>, le traitement est <strong>conservateur</strong>&nbsp;: kinésithérapie, surveillance.</p>
+ </div>
+ <div class="grade mid">
+ <div class="deg">> 20°</div>
+ <div class="label">Stade modéré</div>
+ <p>Au‑delà de 20°, le port d'un <strong>corset orthopédique</strong> est recommandé pour limiter la progression.</p>
+ </div>
+ <div class="grade high">
+ <div class="deg">Sévère</div>
+ <div class="label">Stade chirurgical</div>
+ <p>La <strong>chirurgie</strong> corrige la déformation et empêche toute aggravation future&nbsp;: <strong>fusion osseuse</strong> du segment affecté (arthrodèse).</p>
+ </div>
+ </div>
+ </section>
+
+ <!-- ========== CHAPITRE 9 — RECAP ========== -->
+ <section class="chapter" id="ch9">
+ <div class="chapter-num">Chapitre IX — Synthèse</div>
+ <h2 class="chapter-title">Points‑clés <em>d'examen</em></h2>
+
+ <div class="memo">
+ <h4>★ Mémo final ★</h4>
+ <ul>
+ <li><strong>300 → 206 os</strong> par fusion entre la naissance et l'âge adulte.</li>
+ <li>Posture correcte&nbsp;= <strong>pression articulaire minimale + activité musculaire minimale</strong>.</li>
+ <li><strong>Courbures primaires</strong> (en flexion) = thoracique &amp; sacrée, présentes à la naissance.</li>
+ <li><strong>Lordose cervicale</strong> apparaît à <strong>3 mois</strong> ; <strong>lordose lombaire</strong> à <strong>6–8 mois</strong>.</li>
+ <li>Plan frontal&nbsp;: <strong>aucune courbure normale</strong> ; toute courbure y est <strong>pathologique</strong>.</li>
+ <li>3 catégories de facteurs posturaux&nbsp;: <strong>posturaux / structurels / anatomiques</strong>.</li>
+ <li>Scoliose = <strong>déviation latérale dans le plan frontal</strong>, ± rotation vertébrale.</li>
+ <li><strong>Idiopathique adolescente</strong> = forme la plus fréquente, ♀ > ♂, vertèbres thoraciques.</li>
+ <li>Gravité&nbsp;: plus <strong>haute</strong> + plus <strong>précoce</strong> = pronostic plus sévère.</li>
+ <li><strong>100°–140°</strong> = atteinte de la <strong>capacité respiratoire</strong>.</li>
+ <li>Suivi radiographique&nbsp;: <strong>tous les 6 mois</strong> pendant la croissance.</li>
+ <li>Traitement&nbsp;: <strong>≈ 20° conservateur</strong> | <strong>> 20° corset</strong> | <strong>sévère → chirurgie (arthrodèse)</strong>.</li>
+ <li>Test de dépistage clinique&nbsp;: <strong>Schober / bending test</strong>, applicable à tout enfant.</li>
+ <li>Ostéogenèse imparfaite&nbsp;= maladie <strong>du collagène</strong> (Ekman‑Lobstein).</li>
+ <li><strong>Legg‑Calvé‑Perthes</strong> = nécrose de hanche ; <strong>Osgood‑Schlatter</strong> = surcharge du tendon rotulien.</li>
+ </ul>
+ </div>
+
+ <h3 class="sub">Flashcards rapides</h3>
+ <div class="duo">
+ <div>
+ <h5>Q&nbsp;— Définition de la posture</h5>
+ <p>R&nbsp;— Disposition relative du corps composée des positions des différentes articulations à un moment donné.</p>
+ </div>
+ <div>
+ <h5>Q&nbsp;— Posture correcte ?</h5>
+ <p>R&nbsp;— Pression minimale sur les articulations + activité musculaire minimale pour la maintenir.</p>
+ </div>
+ </div>
+ <div class="duo">
+ <div>
+ <h5>Q&nbsp;— Quand apparaît la lordose lombaire ?</h5>
+ <p>R&nbsp;— Vers <strong>6 à 8 mois</strong>, lors de l'acquisition de la verticalisation.</p>
+ </div>
+ <div>
+ <h5>Q&nbsp;— Plan frontal&nbsp;: courbure normale ?</h5>
+ <p>R&nbsp;— Non. Toute courbure dans le plan frontal est <strong>pathologique</strong>.</p>
+ </div>
+ </div>
+ <div class="duo">
+ <div>
+ <h5>Q&nbsp;— Forme la + fréquente de scoliose structurelle ?</h5>
+ <p>R&nbsp;— La <strong>scoliose idiopathique adolescente</strong>.</p>
+ </div>
+ <div>
+ <h5>Q&nbsp;— À partir de quel angle&nbsp;: corset ?</h5>
+ <p>R&nbsp;— <strong>Au‑delà de 20°</strong>.</p>
+ </div>
+ </div>
+ <div class="duo">
+ <div>
+ <h5>Q&nbsp;— Quel angle perturbe la respiration ?</h5>
+ <p>R&nbsp;— Entre <strong>100° et 140°</strong>.</p>
+ </div>
+ <div>
+ <h5>Q&nbsp;— Test clinique de dépistage scoliose ?</h5>
+ <p>R&nbsp;— <strong>Test de Schober</strong> (bending test) — rapide, sans risque, applicable à tous les enfants.</p>
+ </div>
+ </div>
+ </section>
+
+ <footer>
+ <span>Fiche de révision · Changements posturaux</span>
+ <span>Licence Physiothérapie</span>
+ <span>1ʳᵉ année — 2ᵉ semestre</span>
+ </footer>
+
+</div>
+
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-07.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+</body>
+</html>

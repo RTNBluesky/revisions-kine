@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Fiche 6 — Physiologie du système cardiovasculaire — Cœur · Circulation · Potentiel d'action cardiaque · Cycle cardiaque · ECG · Pression artérielle">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../assets/css/acces.css">
+<script src="../../../../../assets/js/acces.js"></script>
+<title>Fiche 6 — Système cardiovasculaire</title>
+<link rel="stylesheet" href="../../../../../assets/css/chrome.css">
+<style>
+ :root { --bg: #0f1117; --bg-elev: #1a1d2a; --bg-card: #1a1d2a; --border: #3a4060; --text: #9aa3b8; --text-dim: #9aa3b8; --accent: #ff6b9d; --accent-2: #f472b6; --accent-3: #ff8fa3; --accent-4: #ff5c6b; --accent-5: #ff6b9d; }
+ * { box-sizing: border-box; }
+ body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: var(--bg); color: var(--text); line-height: 1.65; }
+ .container { max-width: 980px; margin: 0 auto; padding: 32px 24px 80px; }
+ header.hero { background: linear-gradient(135deg, #1e3a8a22, #5eead422); border: 1px solid var(--border); border-radius: 16px; padding: 32px; margin-bottom: 32px; }
+ header.hero h1 { margin: 0 0 8px; font-size: 2rem; color: var(--accent); }
+ header.hero p { margin: 0; color: var(--text-dim); }
+ .toc { background: var(--bg-elev); border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; margin-bottom: 32px; }
+ .toc h2 { margin: 0 0 12px; font-size: 1.1rem; color: var(--accent-2); }
+ .toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 24px; }
+ .toc ol li { margin-bottom: 6px; }
+ .toc a { color: var(--text-dim); text-decoration: none; }
+ .toc a:hover { color: var(--accent); }
+ section { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 24px 28px; margin-bottom: 24px; }
+ h2 { color: var(--accent); border-bottom: 2px solid var(--border); padding-bottom: 8px; margin-top: 0; font-size: 1.5rem; }
+ h3 { color: var(--accent-2); margin-top: 24px; font-size: 1.2rem; }
+ h4 { color: var(--accent-3); margin-top: 18px; margin-bottom: 8px; font-size: 1.05rem; }
+ ul, ol { padding-left: 22px; }
+ li { margin-bottom: 4px; }
+ strong { color: var(--accent-5); font-weight: 600; }
+ em { color: var(--accent-3); font-style: normal; font-weight: 500; }
+ .key { background: linear-gradient(135deg, #5eead420, #818cf820); border-left: 4px solid var(--accent); padding: 12px 16px; margin: 14px 0; border-radius: 0 8px 8px 0; }
+ .warn { background: #f8717115; border-left: 4px solid var(--accent-4); padding: 12px 16px; margin: 14px 0; border-radius: 0 8px 8px 0; }
+ .info { background: #fbbf2415; border-left: 4px solid var(--accent-3); padding: 12px 16px; margin: 14px 0; border-radius: 0 8px 8px 0; }
+ table { width: 100%; border-collapse: collapse; margin: 16px 0; background: var(--bg-elev); border-radius: 8px; overflow: hidden; }
+ th, td { border: 1px solid var(--border); padding: 10px 14px; text-align: left; vertical-align: top; }
+ th { background: #2d374480; color: var(--accent); font-weight: 600; }
+ tr:hover td { background: #2d374440; }
+ .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 14px; margin: 16px 0; }
+ .card { background: var(--bg-elev); border: 1px solid var(--border); border-radius: 8px; padding: 14px 18px; }
+ .card h4 { margin-top: 0; }
+ .badge { display: inline-block; background: var(--accent-2); color: var(--bg); padding: 2px 10px; border-radius: 12px; font-size: 0.8em; font-weight: 600; margin-right: 6px; }
+ footer { text-align: center; color: var(--text-dim); padding: 24px; font-size: 0.9em; }
+ .formula { background: #818cf820; border: 1px solid var(--accent-2); border-radius: 8px; padding: 12px 18px; font-size: 1.1em; text-align: center; font-weight: 600; color: var(--accent); margin: 14px 0; }
+ @media (max-width: 640px) { .toc ol { columns: 1; } section { padding: 18px 16px; } }
+</style>
+ <link rel="stylesheet" href="../../../../../assets/css/modules/physiologie-1-theme.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<a href="../accueil-physiologie.html" class="back-nav">← Physiologie I</a>
+
+<div class="page-toggle"><div class="pt-inner"><a href="../qcm/QCM_6_Systeme_cardiovasculaire.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+
+<div class="container">
+
+<header class="hero">
+ <h1>Fiche 6 — Physiologie du système cardiovasculaire</h1>
+ <p>Cœur · Circulation · Potentiel d'action cardiaque · Cycle cardiaque · ECG · Pression artérielle</p>
+</header>
+
+<nav class="toc">
+ <h2>Sommaire</h2>
+ <ol>
+ <li><a href="#s1">Fonctions du cœur</a></li>
+ <li><a href="#s2">Circulations pulmonaire & systémique</a></li>
+ <li><a href="#s3">Propriétés électriques du cœur</a></li>
+ <li><a href="#s4">Potentiel d'action cardiaque</a></li>
+ <li><a href="#s5">Nœud sinusal & automatisme</a></li>
+ <li><a href="#s6">Électrocardiogramme (ECG)</a></li>
+ <li><a href="#s7">Cycle cardiaque</a></li>
+ <li><a href="#s8">Bruits cardiaques</a></li>
+ <li><a href="#s9">Débit cardiaque & réserve</a></li>
+ <li><a href="#s10">Pression artérielle moyenne</a></li>
+ <li><a href="#s11">Contrôle du cœur</a></li>
+ <li><a href="#s12">Fonctions du sang</a></li>
+ </ol>
+</nav>
+
+<section id="s1">
+ <h2>1. Fonctions du cœur</h2>
+ <ol>
+ <li><strong>Générer la pression artérielle</strong> par contractions → circulation</li>
+ <li><strong>Diriger la circulation</strong> : sépare circulation pulmonaire et systémique</li>
+ <li><strong>Flux unidirectionnel</strong> grâce aux valves cardiaques</li>
+ <li><strong>Réguler l'apport sanguin</strong> en adaptant FC et force de contraction selon besoins métaboliques</li>
+ </ol>
+</section>
+
+<section id="s2">
+ <h2>2. Circulations pulmonaire & systémique</h2>
+ <table>
+ <tr><th>Circulation</th><th>Trajet</th></tr>
+ <tr><td><strong>Pulmonaire</strong> (petite)</td><td>Ventricule droit → artère pulmonaire → poumons (hématose) → veines pulmonaires → oreillette gauche</td></tr>
+ <tr><td><strong>Systémique</strong> (grande)</td><td>Ventricule gauche → aorte → tissus → veines caves → oreillette droite</td></tr>
+ </table>
+ <div class="key">
+ Sang <strong>désoxygéné</strong> dans les cavités droites + artère pulmonaire ; sang <strong>oxygéné</strong> dans les cavités gauches + aorte.
+ </div>
+
+ <h3>Flux à travers le cœur</h3>
+ <ol>
+ <li>Veines caves → Oreillette droite</li>
+ <li>Valve tricuspide → Ventricule droit</li>
+ <li>Valve sigmoïde pulmonaire → Artère pulmonaire → poumons</li>
+ <li>Veines pulmonaires → Oreillette gauche</li>
+ <li>Valve mitrale → Ventricule gauche</li>
+ <li>Valve sigmoïde aortique → Aorte → corps</li>
+ </ol>
+</section>
+
+<section id="s3">
+ <h2>3. Propriétés électriques du cœur</h2>
+ <ul>
+ <li><strong>Automatisme</strong> : le cœur génère ses propres potentiels d'action</li>
+ <li><strong>Rythmicité</strong> : génération régulière</li>
+ <li><strong>Conductivité</strong> : propagation organisée des PA</li>
+ <li><strong>Excitabilité</strong> : réponse aux stimuli</li>
+ </ul>
+
+ <h3>Système de conduction</h3>
+ <ol>
+ <li><strong>Nœud sinusal (SA)</strong> — pacemaker physiologique (oreillette droite)</li>
+ <li><strong>Nœud auriculo-ventriculaire (AV)</strong> — relais avec délai</li>
+ <li><strong>Faisceau de His</strong> + branches gauche/droite</li>
+ <li><strong>Fibres de Purkinje</strong> — dépolarisation rapide des ventricules</li>
+ </ol>
+</section>
+
+<section id="s4">
+ <h2>4. Potentiel d'action des cellules cardiaques (myocytes ventriculaires)</h2>
+ <p>Quatre phases caractéristiques :</p>
+ <table>
+ <tr><th>Phase</th><th>Événement</th><th>Canaux</th></tr>
+ <tr>
+ <td><strong>1. Dépolarisation rapide</strong></td>
+ <td>Montée rapide du potentiel</td>
+ <td>Ouverture des canaux <strong>Na⁺</strong>, fermeture des K⁺, ouverture débutante des Ca²⁺</td>
+ </tr>
+ <tr>
+ <td><strong>2. Repolarisation initiale rapide</strong></td>
+ <td>Petite décroissance</td>
+ <td>Fermeture des Na⁺, ouverture transitoire de certains K⁺</td>
+ </tr>
+ <tr>
+ <td><strong>3. Plateau (~ 0,25 s)</strong></td>
+ <td>Repolarisation lente</td>
+ <td>Canaux <strong>Ca²⁺</strong> ouverts → maintien du plateau</td>
+ </tr>
+ <tr>
+ <td><strong>4. Repolarisation finale</strong></td>
+ <td>Retour au repos</td>
+ <td>Fermeture des Ca²⁺, ouverture massive des <strong>K⁺</strong></td>
+ </tr>
+ </table>
+ <div class="info">
+ Le plateau dû au Ca²⁺ est <strong>spécifique au myocyte cardiaque</strong> : il rend la période réfractaire longue → pas de tétanisation possible.
+ </div>
+</section>
+
+<section id="s5">
+ <h2>5. Nœud sinusal & automatisme</h2>
+ <p>Potentiel d'action sinusal (3 phases) :</p>
+ <ol>
+ <li><strong>Pré-potentiel</strong> (dépolarisation spontanée lente) → entrée lente de Na⁺ et Ca²⁺</li>
+ <li><strong>Dépolarisation</strong> (ouverture des canaux Ca²⁺)</li>
+ <li><strong>Repolarisation</strong> (ouverture des canaux K⁺)</li>
+ </ol>
+ <div class="key">
+ Le nœud SA est le <strong>pacemaker dominant</strong> car son rythme spontané (~ 70-80/min) est plus rapide que celui des autres foyers (AV ~ 50, ventricules ~ 30).
+ </div>
+</section>
+
+<section id="s6">
+ <h2>6. Électrocardiogramme (ECG)</h2>
+ <p>Enregistrement de la somme des potentiels d'action du cœur. Chaque tracé électrique précède un événement mécanique.</p>
+
+ <h3>Ondes et complexes</h3>
+ <table>
+ <tr><th>Onde / Complexe</th><th>Signification</th></tr>
+ <tr><td><strong>Onde P</strong></td><td>Dépolarisation auriculaire (SA → oreillettes)</td></tr>
+ <tr><td><strong>Complexe QRS</strong></td><td>Dépolarisation ventriculaire rapide</td></tr>
+ <tr><td><strong>Onde T</strong></td><td>Repolarisation ventriculaire (avant relâchement)</td></tr>
+ <tr><td><strong>Onde U</strong></td><td>Partie finale de la repolarisation ventriculaire</td></tr>
+ </table>
+
+ <h3>Intervalles et segments</h3>
+ <table>
+ <tr><th>Élément</th><th>Définition</th></tr>
+ <tr><td><strong>Intervalle P-R (P-Q)</strong></td><td>Début P → début QRS (dépolarisation auriculaire → début dépolarisation ventriculaire)</td></tr>
+ <tr><td><strong>Segment S-T</strong></td><td>Fin S → début T (correspond au plateau du PA ventriculaire)</td></tr>
+ <tr><td><strong>Intervalle Q-T</strong></td><td>Début QRS → fin T (dépolarisation + repolarisation ventriculaire)</td></tr>
+ </table>
+ <div class="warn">
+ La repolarisation auriculaire est <strong>masquée</strong> par le complexe QRS sur l'ECG.
+ </div>
+</section>
+
+<section id="s7">
+ <h2>7. Cycle cardiaque</h2>
+ <div class="key">
+ Cycle cardiaque = processus de pompage répétitif qui débute avec la contraction et se termine avec la suivante.<br>
+ Durée : <strong>0,7–0,8 s</strong> (normal) · 0,25–0,3 s (nouveau-né) · &gt; 1 s (athlète entraîné).
+ </div>
+
+ <h3>Systole ventriculaire</h3>
+ <table>
+ <tr><th>Phase</th><th>Description</th></tr>
+ <tr>
+ <td><strong>Contraction isovolumétrique</strong></td>
+ <td>Pression ventriculaire ↑ → fermeture des valves AV. Toutes les valves fermées, aucun sang ne sort. <strong>1er bruit cardiaque</strong>.</td>
+ </tr>
+ <tr>
+ <td><strong>Éjection</strong></td>
+ <td>Pression ventriculaire &gt; pression artères → ouverture des valves sigmoïdes (semi-lunaires) → éjection. Volume tombe à 50-60 mL (<strong>volume télésystolique</strong>).</td>
+ </tr>
+ </table>
+
+ <h3>Diastole ventriculaire</h3>
+ <table>
+ <tr><th>Phase</th><th>Description</th></tr>
+ <tr>
+ <td><strong>Relaxation isovolumétrique</strong></td>
+ <td>Pression ventriculaire ↓ → fermeture des valves sigmoïdes. <strong>2ᵉ bruit cardiaque</strong>.</td>
+ </tr>
+ <tr>
+ <td><strong>Remplissage passif</strong></td>
+ <td>Le sang s'écoule des oreillettes (gradient passif). À la fin : ventricules à 70 % de leur capacité. Parfois 3ᵉ bruit cardiaque (flux turbulent).</td>
+ </tr>
+ <tr>
+ <td><strong>Remplissage actif</strong></td>
+ <td><strong>Systole auriculaire</strong> (onde P) → contraction auriculaire → complète le remplissage. Volume final = <strong>volume télédiastolique</strong> (~ 120-130 mL).</td>
+ </tr>
+ </table>
+</section>
+
+<section id="s8">
+ <h2>8. Bruits cardiaques</h2>
+ <table>
+ <tr><th>Bruit</th><th>Origine</th><th>Moment</th></tr>
+ <tr><td><strong>B1 (1er bruit)</strong></td><td>Fermeture des valves AV (mitrale + tricuspide)</td><td>Début systole ventriculaire</td></tr>
+ <tr><td><strong>B2 (2ᵉ bruit)</strong></td><td>Fermeture des valves sigmoïdes (aortique + pulmonaire)</td><td>Début diastole ventriculaire</td></tr>
+ <tr><td>B3 (parfois audible)</td><td>Flux turbulent dans les ventricules</td><td>Remplissage rapide</td></tr>
+ </table>
+</section>
+
+<section id="s9">
+ <h2>9. Débit cardiaque & réserve</h2>
+ <div class="formula">DC = FC × VE</div>
+ <p>DC = débit cardiaque · FC = fréquence cardiaque · VE = volume d'éjection</p>
+
+ <h3>Exemples</h3>
+ <table>
+ <tr><th>État</th><th>FC</th><th>VE</th><th>DC</th></tr>
+ <tr><td>Repos</td><td>72 /min</td><td>70 mL</td><td>≈ 5 L/min</td></tr>
+ <tr><td>Effort</td><td>190 /min</td><td>115 mL</td><td>≈ 22 L/min</td></tr>
+ </table>
+ <div class="key">
+ <strong>Réserve cardiaque</strong> = différence entre DC max (effort) et DC de repos.
+ </div>
+</section>
+
+<section id="s10">
+ <h2>10. Pression artérielle moyenne (PAM)</h2>
+ <div class="formula">PAM = DC × RP</div>
+ <p>DC = débit cardiaque · RP = résistance périphérique</p>
+
+ <h3>Méthode de Korotkoff</h3>
+ <ul>
+ <li>Tensiomètre + stéthoscope (méthode mise au point par Nikolai Korotkoff, médecin russe)</li>
+ <li><strong>1er son entendu</strong> = pression <strong>systolique</strong></li>
+ <li><strong>Disparition des sons</strong> = pression <strong>diastolique</strong></li>
+ </ul>
+</section>
+
+<section id="s11">
+ <h2>11. Contrôle du cœur</h2>
+ <div class="grid">
+ <div class="card">
+ <h4>Régulation intrinsèque</h4>
+ Caractéristiques fonctionnelles propres au cœur (sans contrôle externe).
+ </div>
+ <div class="card">
+ <h4>Régulation extrinsèque</h4>
+ <strong>Nerveuse</strong> : sympathique (↑) et parasympathique (↓).<br>
+ <strong>Hormonale</strong> : épinéphrine et norépinéphrine (médullosurrénale).
+ </div>
+ </div>
+</section>
+
+<section id="s12">
+ <h2>12. Fonctions du sang</h2>
+ <ol>
+ <li><strong>Transport des gaz, nutriments et déchets</strong></li>
+ <li>Transport des <strong>molécules transformées</strong></li>
+ <li>Transport des <strong>molécules régulatrices</strong> (hormones)</li>
+ <li><strong>Régulation du pH et de l'osmose</strong></li>
+ <li><strong>Maintien de la température corporelle</strong></li>
+ <li><strong>Protection</strong> contre les agents étrangers (immunité)</li>
+ <li><strong>Formation de caillots</strong> (hémostase)</li>
+ </ol>
+</section>
+
+<footer>
+ <span class="badge">Physiologie I</span>
+</footer>
+
+</div>
+</body>
+</html>

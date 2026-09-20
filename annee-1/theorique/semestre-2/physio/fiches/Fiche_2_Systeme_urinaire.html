@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Physiologie du Système Urinaire — Fiche de révision complète · Cours 2 · Enseignante J">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../assets/css/acces.css">
+<script src="../../../../../assets/js/acces.js"></script>
+<title>Fiche de Révision – Physiologie du Système Urinaire</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../../assets/css/chrome.css">
+<style>
+ :root {
+ --navy: #161922;
+ --deep: #ff5c6b;
+ --teal: #f472b6;
+ --teal-light: #f472b6;
+ --gold: #ff8fa3;
+ --gold-light: #ff8fa3;
+ --cream: #ff8fa3;
+ --white: #ffffff;
+ --gray: #9aa3b8;
+ --red-accent: #ff5c6b;
+ --green-accent: #ff6b9d;
+ }
+
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+
+ body {
+ background: var(--navy);
+ color: var(--cream);
+ font-family: 'Source Sans 3', sans-serif;
+ font-weight: 300;
+ line-height: 1.65;
+ }
+
+ /* Header */
+ .hero {
+ background: linear-gradient(135deg, var(--deep) 0%, #161922 60%, #1a1d2a 100%);
+ border-bottom: 3px solid var(--gold);
+ padding: 3rem 2rem 2.5rem;
+ text-align: center;
+ position: relative;
+ overflow: hidden;
+ }
+ .hero::before {
+ content: '';
+ position: absolute;
+ top: -80px; right: -80px;
+ width: 300px; height: 300px;
+ border-radius: 50%;
+ background: radial-gradient(circle, rgba(255,107,157,0.18) 0%, transparent 70%);
+ }
+ .hero::after {
+ content: '';
+ position: absolute;
+ bottom: -60px; left: -60px;
+ width: 250px; height: 250px;
+ border-radius: 50%;
+ background: radial-gradient(circle, rgba(255,107,157,0.12) 0%, transparent 70%);
+ }
+ .hero-badge {
+ display: inline-block;
+ background: var(--teal);
+ color: var(--white);
+ font-size: 0.7rem;
+ font-weight: 600;
+ letter-spacing: 0.15em;
+ text-transform: uppercase;
+ padding: 0.3rem 1rem;
+ border-radius: 2px;
+ margin-bottom: 1rem;
+ }
+ .hero h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(1.8rem, 4vw, 3rem);
+ font-weight: 900;
+ color: var(--white);
+ line-height: 1.15;
+ margin-bottom: 0.5rem;
+ }
+ .hero h1 span { color: var(--gold); }
+ .hero-sub {
+ color: var(--gray);
+ font-size: 0.9rem;
+ letter-spacing: 0.05em;
+ }
+
+ /* Layout */
+ .container {
+ max-width: 1100px;
+ margin: 0 auto;
+ padding: 2.5rem 1.5rem;
+ }
+
+ /* Section titles */
+ .section-title {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.4rem;
+ font-weight: 700;
+ color: var(--gold);
+ border-left: 4px solid var(--teal);
+ padding-left: 0.8rem;
+ margin-bottom: 1.2rem;
+ margin-top: 2.5rem;
+ }
+ .section-title:first-child { margin-top: 0; }
+
+ .subsection-title {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.05rem;
+ font-weight: 700;
+ color: var(--teal-light);
+ margin: 1.2rem 0 0.6rem;
+ text-transform: uppercase;
+ letter-spacing: 0.06em;
+ font-size: 0.85rem;
+ }
+
+ /* Cards grid */
+ .grid-2 {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+ gap: 1rem;
+ margin-bottom: 1rem;
+ }
+ .grid-3 {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+ gap: 1rem;
+ margin-bottom: 1rem;
+ }
+
+ .card {
+ background: var(--deep);
+ border: 1px solid rgba(255,107,157,0.15);
+ border-radius: 6px;
+ padding: 1.2rem 1.3rem;
+ transition: border-color 0.2s, transform 0.2s;
+ }
+ .card:hover {
+ border-color: rgba(255,107,157,0.5);
+ transform: translateY(-2px);
+ }
+ .card-title {
+ font-weight: 600;
+ color: var(--gold-light);
+ font-size: 0.9rem;
+ text-transform: uppercase;
+ letter-spacing: 0.07em;
+ margin-bottom: 0.5rem;
+ display: flex;
+ align-items: center;
+ gap: 0.4rem;
+ }
+ .card-title .icon {
+ font-size: 1rem;
+ }
+ .card p, .card li {
+ font-size: 0.88rem;
+ color: #ff8fa3;
+ line-height: 1.6;
+ }
+ .card ul { list-style: none; padding: 0; }
+ .card ul li::before { content: '→ '; color: var(--teal-light); font-weight: 600; }
+
+ /* Highlight boxes */
+ .highlight {
+ background: linear-gradient(135deg, rgba(255,107,157,0.2), rgba(255,107,157,0.05));
+ border: 1px solid rgba(255,107,157,0.4);
+ border-radius: 6px;
+ padding: 1rem 1.2rem;
+ margin: 0.8rem 0;
+ font-size: 0.88rem;
+ color: #ff8fa3;
+ }
+ .highlight strong { color: var(--teal-light); }
+
+ .formula-box {
+ background: rgba(255,107,157,0.08);
+ border: 1px solid rgba(255,107,157,0.4);
+ border-radius: 6px;
+ padding: 1rem 1.4rem;
+ text-align: center;
+ margin: 0.8rem 0;
+ font-family: 'Playfair Display', serif;
+ font-size: 1.1rem;
+ color: var(--gold-light);
+ letter-spacing: 0.05em;
+ }
+
+ .alert {
+ background: rgba(255,92,107,0.12);
+ border-left: 3px solid var(--red-accent);
+ padding: 0.7rem 1rem;
+ margin: 0.7rem 0;
+ font-size: 0.86rem;
+ border-radius: 0 4px 4px 0;
+ color: #ff8fa3;
+ }
+ .alert strong { color: #ff6b9d; }
+
+ .success {
+ background: rgba(61,214,140,0.12);
+ border-left: 3px solid var(--green-accent);
+ padding: 0.7rem 1rem;
+ margin: 0.7rem 0;
+ font-size: 0.86rem;
+ border-radius: 0 4px 4px 0;
+ color: #3dd68c;
+ }
+ .success strong { color: #3dd68c; }
+
+ /* Table */
+ table {
+ width: 100%;
+ border-collapse: collapse;
+ font-size: 0.85rem;
+ margin: 0.8rem 0;
+ }
+ th {
+ background: var(--teal);
+ color: var(--white);
+ font-weight: 600;
+ text-transform: uppercase;
+ letter-spacing: 0.06em;
+ padding: 0.6rem 0.9rem;
+ text-align: left;
+ font-size: 0.75rem;
+ }
+ td {
+ padding: 0.55rem 0.9rem;
+ border-bottom: 1px solid rgba(255,255,255,0.06);
+ color: #ff8fa3;
+ vertical-align: top;
+ }
+ tr:hover td { background: rgba(255,107,157,0.07); }
+ td strong { color: var(--gold-light); }
+
+ /* Flow/Process steps */
+ .flow {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.4rem;
+ align-items: center;
+ margin: 0.8rem 0;
+ }
+ .flow-step {
+ background: var(--deep);
+ border: 1px solid rgba(255,107,157,0.4);
+ border-radius: 4px;
+ padding: 0.4rem 0.8rem;
+ font-size: 0.82rem;
+ color: var(--teal-light);
+ font-weight: 600;
+ }
+ .flow-arrow { color: var(--gold); font-size: 1.1rem; font-weight: 900; }
+
+ /* Number badge */
+ .badge {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ width: 22px; height: 22px;
+ border-radius: 50%;
+ background: var(--teal);
+ color: var(--white);
+ font-size: 0.7rem;
+ font-weight: 700;
+ margin-right: 0.4rem;
+ flex-shrink: 0;
+ }
+
+ .badge-gold {
+ background: var(--gold);
+ color: var(--navy);
+ }
+
+ /* Separator */
+ .sep {
+ border: none;
+ border-top: 1px solid rgba(255,107,157,0.2);
+ margin: 2.5rem 0;
+ }
+
+ /* Inline list */
+ .inline-list {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.5rem;
+ margin: 0.5rem 0;
+ }
+ .tag {
+ background: rgba(255,107,157,0.2);
+ border: 1px solid rgba(255,107,157,0.4);
+ border-radius: 20px;
+ padding: 0.2rem 0.8rem;
+ font-size: 0.78rem;
+ color: var(--teal-light);
+ font-weight: 600;
+ }
+ .tag-gold {
+ background: rgba(255,107,157,0.15);
+ border-color: rgba(255,107,157,0.4);
+ color: var(--gold-light);
+ }
+
+ /* Footer */
+ footer {
+ background: #0f1117;
+ border-top: 2px solid var(--gold);
+ text-align: center;
+ padding: 1.5rem;
+ color: var(--gray);
+ font-size: 0.78rem;
+ letter-spacing: 0.05em;
+ }
+
+ @media (max-width: 600px) {
+ .flow { flex-direction: column; align-items: flex-start; }
+ .flow-arrow { transform: rotate(90deg); }
+ }
+</style>
+
+ <link rel="stylesheet" href="../../../../../assets/css/modules/fiche-theme.css">
+
+ <link rel="stylesheet" href="../../../../../assets/css/modules/fiche-layout.css">
+</head>
+<body>
+<a href="../accueil-physio.html" class="back-nav">← Physiologie II</a>
+<div class="page-toggle"><div class="pt-inner"><a href="../qcm/QCM_2_Systeme_urinaire.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<div class="hero">
+ <div class="hero-badge">Physiologie II – Physiothérapie</div>
+ <h1>Physiologie du<br><span>Système Urinaire</span></h1>
+ <p class="hero-sub">Fiche de révision complète · Cours 2</p>
+</div>
+
+<div class="container">
+
+ <!-- 1. FONCTIONS DES REINS -->
+ <div class="section-title">1. Fonctions du Système Urinaire</div>
+
+ <div class="grid-3">
+ <div class="card">
+ <div class="card-title"><span class="icon">🔴</span> Filtration du sang</div>
+ <p>Protéines et cellules sanguines retenues dans le sang. Production d'un grand volume de filtrat dont seule une petite fraction devient <strong>urine</strong>.</p>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="icon">💧</span> Régulation du volume sanguin</div>
+ <p>Contrôle du volume de liquide extracellulaire. Production tantôt d'urine diluée (excès d'eau), tantôt d'urine concentrée (manque d'eau).</p>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="icon">⚗️</span> Régulation des solutés</div>
+ <p>Régulation de la concentration des ions principaux : <span class="tag">H⁺</span> <span class="tag">Na⁺</span> <span class="tag">Cl⁻</span> <span class="tag">K⁺</span> <span class="tag">Ca²⁺</span> <span class="tag">HPO₄²⁻</span></p>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="icon">🧪</span> Régulation du pH</div>
+ <p>Sécrétion de quantités variables de <strong>H⁺</strong> pour réguler le pH du liquide extracellulaire.</p>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="icon">🩸</span> Synthèse GR</div>
+ <p>Sécrétion d'<strong>érythropoïétine</strong> : hormone qui régule la synthèse des globules rouges dans la moelle osseuse.</p>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="icon">☀️</span> Vitamine D</div>
+ <p>Régulation de la synthèse de la <strong>vitamine D</strong> → contrôle des taux de Ca²⁺ dans le sang.</p>
+ </div>
+ </div>
+
+ <div class="highlight">
+ <strong>À retenir :</strong> Chaque jour, les reins traitent ~180 L d'eau et 1,5 kg de sel, pour un poids de seulement 140 g chacun !
+ </div>
+
+ <hr class="sep">
+
+ <!-- 2. ANATOMIE -->
+ <div class="section-title">2. Anatomie du Rein & du Néphron</div>
+
+ <div class="subsection-title">Structure du rein</div>
+ <div class="grid-2">
+ <div class="card">
+ <div class="card-title">Zones du rein</div>
+ <ul>
+ <li><strong>Cortex</strong> : zone externe, contient glomérules et tubules</li>
+ <li><strong>Médulla</strong> : zone interne, pyramides de Malpighi</li>
+ <li><strong>Bassinet (pelvis rénal)</strong> : collecte l'urine</li>
+ <li><strong>Calices</strong> (mineurs & majeurs) : drainent l'urine vers le bassinet</li>
+ <li><strong>Hile rénal</strong> : entrée artère/veine rénale + uretère</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title">Vascularisation</div>
+ <ul>
+ <li>Artère rénale → artères segmentaires</li>
+ <li>→ artères interlobaires → artères arquées</li>
+ <li>→ artères interlobulaires</li>
+ <li>→ artérioles afférentes → <strong>glomérule</strong></li>
+ <li>→ artérioles efférentes → capillaires péritubulaires</li>
+ <li>Vasa recta (néphrons juxtamédullaires)</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="subsection-title">Le Néphron – unité fonctionnelle du rein</div>
+ <div class="flow">
+ <div class="flow-step">Corpuscule rénal<br><small>(Bowman + glomérule)</small></div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-step">Tubule contourné<br>proximal (TCP)</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-step">Anse de Henle<br><small>(branche ↓ + ↑)</small></div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-step">Tubule contourné<br>distal (TCD)</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-step">Canal collecteur</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-step">Bassinet → Uretère</div>
+ </div>
+
+ <div class="grid-2">
+ <div class="card">
+ <div class="card-title">🔵 Néphrons corticaux (~80%)</div>
+ <p>Anses de Henle courtes, ne pénètrent pas profondément dans la médulla.</p>
+ </div>
+ <div class="card">
+ <div class="card-title">🟡 Néphrons juxtamédullaires (~20%)</div>
+ <p>Anses de Henle très longues, pénètrent profondément dans la médulla. Rôle clé dans la <strong>concentration de l'urine</strong>.</p>
+ </div>
+ </div>
+
+ <div class="subsection-title">Voies excrétrices</div>
+ <div class="grid-3">
+ <div class="card">
+ <div class="card-title">Uretères</div>
+ <p>Tubes transportant l'urine des reins vers la vessie.</p>
+ </div>
+ <div class="card">
+ <div class="card-title">Vessie</div>
+ <p>Réservoir musculaire (détrusor) situé dans la cavité pelvienne. Sphincters interne (lisse) et externe (strié).</p>
+ </div>
+ <div class="card">
+ <div class="card-title">Urètre</div>
+ <p>Transporte l'urine hors du corps.</p>
+ </div>
+ </div>
+
+ <hr class="sep">
+
+ <!-- 3. PRODUCTION D'URINE -->
+ <div class="section-title">3. Production d'Urine : les 3 Étapes</div>
+
+ <div class="grid-3">
+ <div class="card">
+ <div class="card-title"><span class="badge">a</span> Filtration glomérulaire</div>
+ <p>Mouvement des liquides à travers la membrane de filtration (différence de pression) vers la capsule de Bowman → <strong>filtrat</strong>.</p>
+ <br>
+ <p><strong>TFG :</strong> ~125 ml/min = ~180 L/jour</p>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="badge">b</span> Réabsorption tubulaire</div>
+ <p>Retour dans le sang des substances utiles du filtrat. La majeure partie de l'eau et des solutés utiles est récupérée.</p>
+ <br>
+ <div class="inline-list">
+ <span class="tag">AA</span><span class="tag">Glucose</span><span class="tag">Na⁺</span><span class="tag">K⁺</span><span class="tag">HCO₃⁻</span><span class="tag">Cl⁻</span>
+ </div>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="badge">c</span> Sécrétion tubulaire</div>
+ <p>Transport <strong>actif</strong> de substances du sang vers le filtrat. Élimine les déchets métaboliques toxiques.</p>
+ <br>
+ <div class="inline-list">
+ <span class="tag">H⁺</span><span class="tag">K⁺</span><span class="tag">NH₄⁺</span><span class="tag">Urée</span><span class="tag">Créatinine</span><span class="tag">Médicaments</span>
+ </div>
+ </div>
+ </div>
+
+ <div class="formula-box">
+ Quantité excrétée (E) = Filtré (F) − Réabsorbé (R) + Sécrété (S)
+ </div>
+
+ <div class="subsection-title">Barrière de filtration glomérulaire</div>
+ <div class="highlight">
+ <strong>Passe à travers :</strong> eau, solutés de petite taille (ions, glucose, urée, créatinine, acides aminés)<br>
+ <strong>Ne passe PAS :</strong> cellules sanguines, protéines plasmatiques (albumine etc.)
+ </div>
+
+ <div class="subsection-title">Pression de filtration nette</div>
+ <div class="formula-box">
+ Pression de filtration = PCG − PHC − POC<br>
+ <small style="font-size:0.7rem; color: var(--gray); font-family:'Source Sans 3',sans-serif;">= 55 mmHg − 15 mmHg − 30 mmHg = <strong style="color:var(--gold-light)">10 mmHg</strong></small>
+ </div>
+ <div class="grid-3">
+ <div class="card">
+ <div class="card-title">PCG</div>
+ <p><strong>Pression capillaire glomérulaire</strong><br>~55 mmHg – force la filtration</p>
+ </div>
+ <div class="card">
+ <div class="card-title">PHC</div>
+ <p><strong>Pression hydrostatique capsule</strong><br>~15 mmHg – s'oppose à la filtration</p>
+ </div>
+ <div class="card">
+ <div class="card-title">POC</div>
+ <p><strong>Pression oncotique</strong><br>~30 mmHg – due aux protéines, s'oppose à la filtration</p>
+ </div>
+ </div>
+
+ <div class="subsection-title">Réabsorption par segment</div>
+ <table>
+ <thead>
+ <tr>
+ <th>Segment</th>
+ <th>Ce qui est réabsorbé</th>
+ <th>Particularités</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td><strong>TCP</strong></td>
+ <td>~65% du filtrat ; ~50% Na⁺ et eau ; glucose (totalité), AA, HCO₃⁻</td>
+ <td>Perméable à l'eau (isosmotique). Bordure en brosse (microvilli)</td>
+ </tr>
+ <tr>
+ <td><strong>Anse de Henle – branche ↓</strong></td>
+ <td>Eau (pas de solutés)</td>
+ <td>Très perméable à l'eau, peu aux solutés → filtrat se concentre</td>
+ </tr>
+ <tr>
+ <td><strong>Anse de Henle – branche ↑</strong></td>
+ <td>NaCl (pas d'eau) → ~15% du filtrat</td>
+ <td>Imperméable à l'eau → filtrat se dilue. Segment large : pompe Na⁺/K⁺/2Cl⁻</td>
+ </tr>
+ <tr>
+ <td><strong>TCD + Canal collecteur</strong></td>
+ <td>Variable (Na⁺, eau selon ADH et aldostérone)</td>
+ <td>Régulation fine. ADH contrôle la perméabilité à l'eau</td>
+ </tr>
+ </tbody>
+ </table>
+
+ <div class="success">
+ <strong>Résultat final :</strong> &gt;99% du filtrat retourne dans le sang. Seulement ~1% (1,5 L/jour) est excrété comme urine.
+ </div>
+
+ <hr class="sep">
+
+ <!-- 4. CONCENTRATION DE L'URINE -->
+ <div class="section-title">4. Mécanisme de Concentration de l'Urine</div>
+
+ <div class="grid-2">
+ <div class="card">
+ <div class="card-title">🧊 Urine CONCENTRÉE (ADH élevée)</div>
+ <p>L'<strong>ADH (vasopressine)</strong> augmente la perméabilité du TCD et du canal collecteur à l'eau en insérant des <strong>aquaporines</strong> dans les membranes.</p>
+ <br>
+ <p>L'eau quitte le filtrat par osmose → urine concentrée, volume réduit.</p>
+ <br>
+ <p>Produite quand : <em>déshydratation, osmolalité plasmatique ↑</em></p>
+ </div>
+ <div class="card">
+ <div class="card-title">💦 Urine DILUÉE (ADH absente/faible)</div>
+ <p>Sans ADH, les aquaporines ne sont pas insérées → TCD et canal collecteur <strong>imperméables à l'eau</strong>.</p>
+ <br>
+ <p>L'eau reste dans le filtrat → urine diluée, volume important.</p>
+ <br>
+ <p>Produite quand : <em>hyperhydratation, osmolalité plasmatique ↓</em></p>
+ </div>
+ </div>
+
+ <div class="highlight">
+ <strong>Mécanisme à contre-courant :</strong> Les anses de Henle (descendante ↓ et ascendante ↑) et les vasa recta fonctionnent en sens opposés → multiplicateur à contre-courant → gradient osmotique croissant dans la médulla (300 → 1200 mOsm/kg) permettant la concentration maximale de l'urine.
+ </div>
+
+ <div class="subsection-title">Régulation de l'ADH (vasopressine)</div>
+ <div class="flow">
+ <div class="flow-step">Osmolalité plasmatique ↑<br>ou Volémie ↓</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-step">Osmorécepteurs<br>hypothalamus</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-step">Libération ADH<br>(neurohypophyse)</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-step">↑ Aquaporines<br>canal collecteur</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-step">↑ Réabsorption H₂O<br>Urine concentrée</div>
+ </div>
+
+ <hr class="sep">
+
+ <!-- 5. SRAA -->
+ <div class="section-title">5. Système Rénine-Angiotensine-Aldostérone (SRAA)</div>
+
+ <div class="highlight">
+ <strong>Fonction générale :</strong> Système neuroendocrinien régulant la <strong>pression artérielle</strong> et l'<strong>équilibre hydroélectrolytique</strong>. Agit pour <em>inverser l'hypotension artérielle</em>.
+ </div>
+
+ <div class="subsection-title">Cascade du SRAA</div>
+ <div class="flow">
+ <div class="flow-step">Basse PA / ↓ Na⁺<br>(appareil juxtaglomérul.)</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-step">Libération <strong>Rénine</strong><br>(rein)</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-step">Angiotensinogène<br>(foie) → Angiotensine I</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-step">ECA (poumons)<br>→ Angiotensine II</div>
+ </div>
+
+ <div class="subsection-title">Actions de l'Angiotensine II</div>
+ <div class="grid-2">
+ <div class="card">
+ <div class="card-title">Actions directes</div>
+ <ul>
+ <li>Vasoconstriction artériolaire systémique → ↑ PA</li>
+ <li>Stimule réabsorption Na⁺/H⁺ dans le TCP</li>
+ <li>Augmente la soif</li>
+ <li>↓ Taux de filtration glomérulaire → rétention d'eau</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title">Actions indirectes (via hormones)</div>
+ <ul>
+ <li><strong>Aldostérone</strong> (cortex surrénal) → ↑ réabsorption Na⁺ et eau, ↑ sécrétion K⁺/H⁺</li>
+ <li><strong>ADH</strong> (neurohypophyse) → ↑ aquaporines → rétention d'eau</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="subsection-title">Déclencheurs de la libération de Rénine</div>
+ <div class="grid-3">
+ <div class="card">
+ <div class="card-title"><span class="badge badge-gold">1</span> Barorécepteurs</div>
+ <p>Pression artérielle basse détectée par les récepteurs des artérioles afférentes.</p>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="badge badge-gold">2</span> Macula densa</div>
+ <p>Baisse de la concentration en NaCl au début du TCD.</p>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="badge badge-gold">3</span> Système nerveux</div>
+ <p>Stimulation sympathique des nerfs rénaux (β₁ adrénergique).</p>
+ </div>
+ </div>
+
+ <div class="alert">
+ <strong>Attention :</strong> L'activation chronique/dérégulation du SRAA induit une <strong>hypertension artérielle</strong> et une cascade pro-inflammatoire → lésions cardiaques, cérébrales, rénales et endothéliales.
+ </div>
+
+ <div class="subsection-title">Peptide natriurétique atrial (ANP) – antagoniste du SRAA</div>
+ <div class="highlight">
+ Produit par les cellules auriculaires en réponse à une distension. <strong>Antagoniste</strong> de l'angiotensine :<br>
+ → ↑ TFG · ↓ réabsorption Na⁺ · Inhibe libération rénine, aldostérone et ADH · ↓ PA et volémie
+ </div>
+
+ <hr class="sep">
+
+ <!-- 6. COMPOSITION DE L'URINE -->
+ <div class="section-title">6. Composition & Analyse de l'Urine</div>
+
+ <div class="grid-2">
+ <div class="card">
+ <div class="card-title">Urine normale</div>
+ <ul>
+ <li>Couleur : jaune clair à pâle</li>
+ <li>Odeur : légère (ammoniaque)</li>
+ <li>pH : légèrement acide</li>
+ <li>Composants : urée, Na⁺, Cl⁻, K⁺, créatinine, NH₄⁺, eau</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title">Indicateur d'hydratation</div>
+ <p>Urine très claire = bien hydraté<br>Urine jaune foncé / ambre = déshydratation</p>
+ <br>
+ <p><strong>Anurie</strong> = absence d'urine (&lt;50 ml/j) → urgence médicale</p>
+ </div>
+ </div>
+
+ <div class="subsection-title">Anomalies urinaires et leurs significations</div>
+ <table>
+ <thead>
+ <tr>
+ <th>Anomalie</th>
+ <th>Description</th>
+ <th>Signification clinique</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td><strong>Hématurie</strong></td>
+ <td>Sang dans l'urine (couleur rougeâtre/brunâtre)</td>
+ <td>Lésion rénale, infection, lithiase</td>
+ </tr>
+ <tr>
+ <td><strong>Glycosurie</strong></td>
+ <td>Glucose dans l'urine</td>
+ <td>Diabète non contrôlé (glycémie &gt; seuil rénal ~1,8 g/L)</td>
+ </tr>
+ <tr>
+ <td><strong>Cétonurie</strong></td>
+ <td>Cétones dans l'urine</td>
+ <td>Diabète, jeûne prolongé, alcoolisme</td>
+ </tr>
+ <tr>
+ <td><strong>Protéinurie</strong></td>
+ <td>Protéines dans l'urine</td>
+ <td>Dysfonction de filtration rénale (néphropathie). Possible après effort intense</td>
+ </tr>
+ <tr>
+ <td><strong>Nitriturie</strong></td>
+ <td>Nitrites élevés</td>
+ <td>Infection urinaire bactérienne (métabolisme anaérobie)</td>
+ </tr>
+ <tr>
+ <td><strong>Leucocyturie</strong></td>
+ <td>Stérase leucocytaire dans l'urine</td>
+ <td>Inflammation/infection voies urinaires</td>
+ </tr>
+ </tbody>
+ </table>
+
+ <hr class="sep">
+
+ <!-- 7. SYNTHÈSE -->
+ <div class="section-title">7. Schéma de Synthèse – Régulation de la Volémie</div>
+
+ <div class="highlight">
+ <strong>Quand l'eau manque (déshydratation) :</strong><br>
+ ↑ Osmolalité plasmatique → Osmorécepteurs hypothalamus activés → <strong>(1)</strong> Soif ↑ → ingestion eau<strong>(2)</strong> Libération ADH → ↑ aquaporines → ↑ réabsorption H₂O → Urine concentrée<strong>(3)</strong> Si volémie ↓ → SRAA activé → angiotensine II → aldostérone → ↑ Na⁺/H₂O → ↑ PA
+ </div>
+
+ <div class="highlight">
+ <strong>Quand l'eau est en excès (hyperhydratation) :</strong><br>
+ ↓ Osmolalité plasmatique → ↓ ADH → ↓ aquaporines → ↓ réabsorption H₂O → Urine diluée, volume ↑ · ANP libéré si distension auriculaire → ↑ TFG → ↑ excrétion Na⁺ et eau
+ </div>
+
+ <div class="subsection-title">Les grands chiffres à retenir</div>
+ <div class="grid-3">
+ <div class="card">
+ <div class="card-title">TFG</div>
+ <p><strong>125 ml/min</strong><br>= 180 L filtrat/jour</p>
+ </div>
+ <div class="card">
+ <div class="card-title">Réabsorption</div>
+ <p><strong>&gt;99%</strong> du filtrat retourne dans le sang</p>
+ </div>
+ <div class="card">
+ <div class="card-title">Urine produite</div>
+ <p><strong>~1,5 L/jour</strong> (<1% du filtrat)</p>
+ </div>
+ <div class="card">
+ <div class="card-title">TCP</div>
+ <p>Réabsorbe <strong>~65%</strong> du filtrat initial</p>
+ </div>
+ <div class="card">
+ <div class="card-title">Anse de Henle</div>
+ <p>Réabsorbe encore <strong>~15%</strong> supplémentaires</p>
+ </div>
+ <div class="card">
+ <div class="card-title">Gradient médullaire</div>
+ <p>300 mOsm/kg (cortex) → <strong>1200 mOsm/kg</strong> (médulla profonde)</p>
+ </div>
+ </div>
+
+</div>
+
+<footer>
+ Physiologie II – Physiothérapie · Fiche de révision réalisée à partir du Cours 2
+</footer>
+
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../qcm/QCM_2_Systeme_urinaire.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+</body>
+</html>

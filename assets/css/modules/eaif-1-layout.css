@@ -1,0 +1,90 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  background: #0f1117; color: #e8eaf0; line-height: 1.7;
+  padding: 24px 16px 80px; max-width: 1100px; margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+}
+header {
+  background: linear-gradient(135deg, #ff5c6b, #161922);
+  padding: 28px 32px; border-radius: 14px; margin-bottom: 28px;
+  border: 1px solid #2a3050; box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+}
+header h1 { color: #f472b6; font-size: 1.8rem; margin-bottom: 8px; }
+header .subtitle { color: #9aa3b8; font-size: 0.95rem; }
+nav { display: flex; gap: 8px; margin-bottom: 24px; flex-wrap: wrap; }
+nav button {
+  background: #161922; color: #e8eaf0; border: 1px solid #2a3050;
+  padding: 10px 20px; border-radius: 8px; cursor: pointer; font-weight: 600;
+  transition: all 0.2s;
+}
+nav button.active, nav button:hover { background: #f472b6; color: white; border-color: #f472b6; }
+section { display: none; }
+section.active { display: block; }
+h2 {
+  color: #f472b6; margin: 28px 0 14px; font-size: 1.5rem;
+  border-bottom: 2px solid #2a3050; padding-bottom: 8px;
+}
+h3 { color: #f472b6; margin: 20px 0 10px; font-size: 1.2rem; }
+h4 { color: #f472b6; margin: 14px 0 8px; font-size: 1.05rem; }
+p, li { color: #e8eaf0; margin-bottom: 8px; }
+ul, ol { margin-left: 24px; margin-bottom: 14px; }
+li { margin-bottom: 6px; }
+strong { color: #ff8fa3; }
+em { color: #f472b6; font-style: normal; font-weight: 500; }
+.box {
+  background: #161922; border: 1px solid #2a3050; border-radius: 10px;
+  padding: 16px 20px; margin: 14px 0;
+}
+.box.warning { border-left: 4px solid #ff5c6b; background: #161922; }
+.box.info { border-left: 4px solid #f472b6; background: #ff5c6b; }
+.box.tip { border-left: 4px solid #ff6b9d; background: #161922; }
+.box.key { border-left: 4px solid #ff8fa3; background: #161922; }
+table {
+  width: 100%; border-collapse: collapse; margin: 14px 0;
+  background: #161922; border-radius: 8px; overflow: hidden;
+}
+th { background: #f472b6; color: white; padding: 10px; text-align: left; font-weight: 700; }
+td { padding: 10px; border-top: 1px solid #2a3050; }
+tr:nth-child(even) td { background: #0f1117; }
+.qcm-question {
+  background: #161922; border: 1px solid #2a3050; border-radius: 10px;
+  padding: 18px 22px; margin-bottom: 16px;
+}
+.qcm-question .q-num { color: #ff8fa3; font-weight: 700; }
+.qcm-question .q-text { color: #ff8fa3; font-weight: 600; margin: 8px 0 14px; }
+.qcm-option {
+  display: block; background: #0f1117; border: 1px solid #2a3050;
+  padding: 10px 14px; margin: 6px 0; border-radius: 8px; cursor: pointer;
+  transition: all 0.15s;
+}
+.qcm-option:hover { border-color: #f472b6; }
+.qcm-option.selected { background: #ff5c6b; border-color: #f472b6; }
+.qcm-option.correct { background: #161922; border-color: #3dd68c; color: #3dd68c; }
+.qcm-option.incorrect { background: #161922; border-color: #ff5c6b; color: #ff5c6b; }
+.qcm-feedback {
+  margin-top: 12px; padding: 10px 14px; border-radius: 8px;
+  font-size: 0.92rem; display: none;
+}
+.qcm-feedback.show { display: block; }
+.qcm-feedback.correct { background: #161922; color: #3dd68c; border-left: 3px solid #3dd68c; }
+.qcm-feedback.incorrect { background: #161922; color: #ff8fa3; border-left: 3px solid #ff5c6b; }
+.qcm-actions { display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap; }
+.qcm-actions button {
+  padding: 10px 18px; border-radius: 8px; cursor: pointer; font-weight: 600;
+  border: 1px solid #2a3050; background: #f472b6; color: white;
+}
+.qcm-actions button.secondary { background: #161922; color: #e8eaf0; }
+.score-display {
+  background: linear-gradient(135deg, #f472b6, #f472b6); color: white;
+  padding: 18px; border-radius: 10px; text-align: center;
+  font-size: 1.2rem; font-weight: 700; margin-top: 18px; display: none;
+}
+.score-display.show { display: block; }
+.toc {
+  background: #161922; border-left: 4px solid #f472b6;
+  padding: 14px 20px; border-radius: 8px; margin-bottom: 24px;
+}
+.toc a { color: #f472b6; text-decoration: none; }
+.toc a:hover { text-decoration: underline; }
+.toc ul { margin-left: 18px; }

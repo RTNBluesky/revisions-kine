@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Ostéopénie, Ostéoporose & Fractures — Fiche de révision complète">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../../assets/css/acces.css">
+<script src="../../../../../../assets/js/acces.js"></script>
+<title>Fiche de Révision — Ostéopénie, Ostéoporose & Fractures</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../../../assets/css/chrome.css">
+<style>
+ :root {
+ --bg: #0f1117;
+ --surface: #161922;
+ --surface2: #1a1d2a;
+ --border: #3a4060;
+ --accent: #ff8fa3;
+ --accent2: #f472b6;
+ --accent3: #ff5c6b;
+ --accent4: #ff6b9d;
+ --text: #e8eaf0;
+ --text-muted: #9aa3b8;
+ --text-dim: #6a7388;
+ }
+
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+
+ body {
+ background: var(--bg);
+ color: var(--text);
+ font-family: 'Source Sans 3', sans-serif;
+ font-weight: 300;
+ line-height: 1.7;
+ min-height: 100vh;
+ }
+
+ /* HERO */
+ .hero {
+ background: linear-gradient(135deg, #0f1117 0%, #161922 50%, #0f1117 100%);
+ border-bottom: 1px solid var(--border);
+ padding: 3.5rem 2rem 3rem;
+ text-align: center;
+ position: relative;
+ overflow: hidden;
+ }
+ .hero::before {
+ content: '';
+ position: absolute; inset: 0;
+ background: radial-gradient(ellipse at 30% 50%, rgba(255,107,157,0.07) 0%, transparent 60%),
+ radial-gradient(ellipse at 70% 30%, rgba(255,107,157,0.07) 0%, transparent 60%);
+ pointer-events: none;
+ }
+ .hero-tag {
+ display: inline-block;
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 0.72rem;
+ letter-spacing: 0.2em;
+ color: var(--accent);
+ text-transform: uppercase;
+ border: 1px solid rgba(255,107,157,0.3);
+ padding: 0.3rem 0.9rem;
+ border-radius: 2px;
+ margin-bottom: 1.2rem;
+ animation: fadeUp 0.6s ease both;
+ }
+ .hero h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(2rem, 5vw, 3.8rem);
+ font-weight: 900;
+ line-height: 1.1;
+ margin-bottom: 0.8rem;
+ animation: fadeUp 0.7s ease 0.1s both;
+ }
+ .hero h1 span { color: var(--accent); }
+ .hero p {
+ color: var(--text-muted);
+ font-size: 0.95rem;
+ animation: fadeUp 0.7s ease 0.2s both;
+ }
+
+ /* NAV */
+ .nav {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ gap: 0.5rem;
+ padding: 1.5rem 2rem;
+ background: var(--surface);
+ border-bottom: 1px solid var(--border);
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ }
+ .nav a {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 0.72rem;
+ letter-spacing: 0.1em;
+ text-transform: uppercase;
+ color: var(--text-muted);
+ text-decoration: none;
+ padding: 0.35rem 0.8rem;
+ border: 1px solid var(--border);
+ border-radius: 2px;
+ transition: all 0.2s;
+ }
+ .nav a:hover { color: var(--accent); border-color: var(--accent); }
+
+ /* LAYOUT */
+ .container {
+ max-width: 1100px;
+ margin: 0 auto;
+ padding: 0 1.5rem 4rem;
+ }
+
+ /* SECTION TITLES */
+ .section {
+ margin-top: 3.5rem;
+ }
+ .section-title {
+ display: flex;
+ align-items: center;
+ gap: 1rem;
+ margin-bottom: 1.5rem;
+ padding-bottom: 0.8rem;
+ border-bottom: 1px solid var(--border);
+ }
+ .section-num {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 0.72rem;
+ color: var(--accent);
+ opacity: 0.7;
+ min-width: 2.5rem;
+ }
+ .section-title h2 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.6rem;
+ font-weight: 700;
+ color: var(--text);
+ }
+ .section-title .dot {
+ width: 8px; height: 8px;
+ border-radius: 50%;
+ flex-shrink: 0;
+ }
+
+ /* CARDS */
+ .card {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ border-radius: 4px;
+ padding: 1.4rem 1.6rem;
+ margin-bottom: 1rem;
+ }
+ .card-title {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 0.75rem;
+ letter-spacing: 0.15em;
+ text-transform: uppercase;
+ margin-bottom: 0.8rem;
+ }
+
+ /* GRID */
+ .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+ .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+ @media(max-width: 700px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+
+ /* KEY-VALUE */
+ .kv { display: flex; gap: 0.7rem; align-items: flex-start; margin-bottom: 0.6rem; }
+ .kv-key {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 0.72rem;
+ color: var(--accent);
+ min-width: 6.5rem;
+ padding-top: 0.2rem;
+ flex-shrink: 0;
+ }
+ .kv-val { font-size: 0.9rem; color: var(--text); }
+
+ /* ACCENT BOXES */
+ .box-warn {
+ background: rgba(255,166,87,0.07);
+ border: 1px solid rgba(255,166,87,0.25);
+ border-left: 3px solid var(--accent);
+ border-radius: 2px;
+ padding: 1rem 1.2rem;
+ margin-bottom: 1rem;
+ }
+ .box-info {
+ background: rgba(255,107,157,0.07);
+ border: 1px solid rgba(255,107,157,0.2);
+ border-left: 3px solid var(--accent2);
+ border-radius: 2px;
+ padding: 1rem 1.2rem;
+ margin-bottom: 1rem;
+ }
+ .box-danger {
+ background: rgba(255,166,87,0.07);
+ border: 1px solid rgba(255,166,87,0.2);
+ border-left: 3px solid var(--accent3);
+ border-radius: 2px;
+ padding: 1rem 1.2rem;
+ margin-bottom: 1rem;
+ }
+ .box-success {
+ background: rgba(61,214,140,0.07);
+ border: 1px solid rgba(61,214,140,0.2);
+ border-left: 3px solid var(--accent4);
+ border-radius: 2px;
+ padding: 1rem 1.2rem;
+ margin-bottom: 1rem;
+ }
+ .box-label {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 0.68rem;
+ letter-spacing: 0.15em;
+ text-transform: uppercase;
+ opacity: 0.7;
+ margin-bottom: 0.4rem;
+ display: block;
+ }
+
+ /* TAG CHIPS */
+ .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem; }
+ .tag {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 0.68rem;
+ padding: 0.2rem 0.55rem;
+ border-radius: 2px;
+ border: 1px solid;
+ }
+ .tag-orange { color: var(--accent); border-color: rgba(255,107,157,0.35); background: rgba(255,107,157,0.07); }
+ .tag-blue { color: var(--accent2); border-color: rgba(255,107,157,0.35); background: rgba(255,107,157,0.07); }
+ .tag-red { color: var(--accent3); border-color: rgba(255,92,107,0.35); background: rgba(255,92,107,0.07); }
+ .tag-green { color: var(--accent4); border-color: rgba(255,107,157,0.35); background: rgba(255,107,157,0.07); }
+
+ /* TIMELINE */
+ .timeline { border-left: 2px solid var(--border); padding-left: 1.5rem; }
+ .tl-item { position: relative; margin-bottom: 1.5rem; }
+ .tl-item::before {
+ content: '';
+ position: absolute;
+ left: -1.85rem; top: 0.45rem;
+ width: 10px; height: 10px;
+ border-radius: 50%;
+ border: 2px solid var(--accent);
+ background: var(--bg);
+ }
+ .tl-title {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 0.78rem;
+ color: var(--accent);
+ letter-spacing: 0.1em;
+ text-transform: uppercase;
+ margin-bottom: 0.3rem;
+ }
+ .tl-date {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 0.68rem;
+ color: var(--accent2);
+ margin-bottom: 0.4rem;
+ display: block;
+ opacity: 0.8;
+ }
+ .tl-body { font-size: 0.88rem; color: var(--text); }
+
+ /* TABLE */
+ table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+ th {
+ background: var(--surface2);
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 0.68rem;
+ letter-spacing: 0.1em;
+ text-transform: uppercase;
+ padding: 0.7rem 1rem;
+ text-align: left;
+ border-bottom: 1px solid var(--border);
+ color: var(--text-muted);
+ }
+ td {
+ padding: 0.65rem 1rem;
+ border-bottom: 1px solid rgba(255,107,157,0.5);
+ vertical-align: top;
+ color: var(--text);
+ }
+ tr:hover td { background: rgba(255,255,255,0.02); }
+ .td-accent { color: var(--accent); font-family: 'JetBrains Mono', monospace; font-size: 0.82rem; }
+
+ /* SCORE TABLE special */
+ .score-normal { color: var(--accent4); }
+ .score-osteopenie { color: var(--accent); }
+ .score-osteoporose { color: var(--accent3); }
+
+ /* INLINE HIGHLIGHT */
+ em { color: var(--accent); font-style: normal; font-weight: 600; }
+ strong { color: var(--text); font-weight: 600; }
+
+ /* DIVIDER */
+ .divider {
+ height: 1px;
+ background: linear-gradient(90deg, transparent, var(--border), transparent);
+ margin: 2.5rem 0;
+ }
+
+ /* LISTS */
+ ul { padding-left: 1.2rem; }
+ ul li { font-size: 0.9rem; margin-bottom: 0.35rem; line-height: 1.6; }
+ ul li::marker { color: var(--accent); }
+
+ /* MNEMONIC */
+ .mnemonic {
+ background: var(--surface2);
+ border: 1px solid var(--border);
+ border-radius: 4px;
+ padding: 1.2rem 1.5rem;
+ margin: 1rem 0;
+ }
+ .mnemonic-title {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 0.68rem;
+ letter-spacing: 0.15em;
+ text-transform: uppercase;
+ color: var(--accent2);
+ margin-bottom: 0.6rem;
+ display: block;
+ }
+ .mnemonic-letters {
+ display: flex; flex-wrap: wrap; gap: 0.6rem;
+ }
+ .ml-item { display: flex; align-items: center; gap: 0.4rem; }
+ .ml-letter {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.3rem;
+ font-weight: 700;
+ color: var(--accent);
+ min-width: 1.4rem;
+ }
+ .ml-word { font-size: 0.85rem; color: var(--text-muted); }
+
+ /* FOOTER */
+ .footer {
+ text-align: center;
+ padding: 2.5rem 1rem;
+ color: var(--text-dim);
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 0.7rem;
+ letter-spacing: 0.1em;
+ border-top: 1px solid var(--border);
+ margin-top: 4rem;
+ }
+
+ /* ANIMATIONS */
+ @keyframes fadeUp {
+ from { opacity: 0; transform: translateY(16px); }
+ to { opacity: 1; transform: translateY(0); }
+ }
+</style>
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/physio-patho.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-theme.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
+</head>
+<body>
+<a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
+<div class="page-toggle"><div class="pt-inner"><a href="../../qcm/tp/tp-06.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<!-- HERO -->
+<div class="hero">
+ <div class="hero-tag">Physiopathologie 1 · Licence en Physiothérapie</div>
+ <h1>Ostéopénie, <span>Ostéoporose</span><br>& Fractures</h1>
+ <p>Fiche de révision complète</p>
+</div>
+
+<!-- NAV -->
+<nav class="nav">
+ <a href="#def">Définitions</a>
+ <a href="#epidemio">Épidémiologie</a>
+ <a href="#risques">Facteurs de risque</a>
+ <a href="#physio">Physiopathologie</a>
+ <a href="#diagnostic">Diagnostic</a>
+ <a href="#traitement">Traitement</a>
+ <a href="#fractures">Fractures</a>
+ <a href="#reparation">Réparation</a>
+ <a href="#tissus">Tissus mous</a>
+</nav>
+
+<div class="container">
+
+ <!-- ===== 1. DÉFINITIONS ===== -->
+ <div class="section" id="def">
+ <div class="section-title">
+ <span class="section-num">01</span>
+ <div class="dot" style="background:var(--accent)"></div>
+ <h2>Définitions essentielles</h2>
+ </div>
+
+ <div class="grid-2">
+ <div class="card">
+ <div class="card-title" style="color:var(--accent)">🦴 Ostéoporose</div>
+ <p style="font-size:0.92rem">Maladie progressive affectant le <em>métabolisme osseux</em>, entraînant une <strong>augmentation de la porosité du squelette</strong> et une susceptibilité accrue aux fractures.</p>
+ <div class="tags" style="margin-top:0.8rem">
+ <span class="tag tag-orange">Progressive</span>
+ <span class="tag tag-red">Asymptomatique</span>
+ <span class="tag tag-orange">Métabolique</span>
+ </div>
+ </div>
+ <div class="card">
+ <div class="card-title" style="color:var(--accent2)">🔬 Ostéopénie</div>
+ <p style="font-size:0.92rem">État intermédiaire entre la densité osseuse normale et l'ostéoporose. Correspond à un <em>T-Score entre −1,1 et −2,5</em>. Stade précurseur à surveiller.</p>
+ <div class="tags" style="margin-top:0.8rem">
+ <span class="tag tag-blue">T-Score −1,1 à −2,5</span>
+ <span class="tag tag-blue">Précurseur</span>
+ </div>
+ </div>
+ </div>
+
+ <div class="box-warn">
+ <span class="box-label">Point clé — Silencieux</span>
+ <p style="font-size:0.9rem">L'ostéoporose <em>évolue sans signes ni symptômes</em> jusqu'à la première fracture. Les fractures entraînent morbidité, invalidité et augmentent la mortalité.</p>
+ </div>
+ </div>
+
+ <!-- ===== 2. ÉPIDÉMIOLOGIE ===== -->
+ <div class="section" id="epidemio">
+ <div class="section-title">
+ <span class="section-num">02</span>
+ <div class="dot" style="background:var(--accent2)"></div>
+ <h2>Épidémiologie</h2>
+ </div>
+
+ <div class="grid-3">
+ <div class="card" style="border-color:rgba(232,169,92,0.3); text-align:center">
+ <div style="font-family:'Playfair Display',serif; font-size:2.5rem; font-weight:900; color:var(--accent)">19,7%</div>
+ <div style="font-size:0.82rem; color:var(--text-muted); margin-top:0.3rem">Prévalence mondiale<br><strong style="color:var(--text)">Ostéoporose</strong></div>
+ </div>
+ <div class="card" style="border-color:rgba(92,158,232,0.3); text-align:center">
+ <div style="font-family:'Playfair Display',serif; font-size:2.5rem; font-weight:900; color:var(--accent2)">40,4%</div>
+ <div style="font-size:0.82rem; color:var(--text-muted); margin-top:0.3rem">Prévalence mondiale<br><strong style="color:var(--text)">Ostéopénie</strong></div>
+ </div>
+ <div class="card" style="border-color:rgba(232,92,122,0.3); text-align:center">
+ <div style="font-family:'Playfair Display',serif; font-size:2.5rem; font-weight:900; color:var(--accent3)">3/5</div>
+ <div style="font-size:0.82rem; color:var(--text-muted); margin-top:0.3rem">Femmes touchées<br><strong style="color:var(--text)">après 50 ans</strong></div>
+ </div>
+ </div>
+
+ <div class="card" style="margin-top:1rem">
+ <div class="card-title" style="color:var(--accent2)">Portugal (2019)</div>
+ <div class="grid-2">
+ <div>
+ <div class="kv"><div class="kv-key">Cas totaux</div><div class="kv-val"><em>681 000</em> individus</div></div>
+ <div class="kv"><div class="kv-key">Femmes</div><div class="kv-val"><em>80,4%</em> des cas</div></div>
+ <div class="kv"><div class="kv-key">Hommes</div><div class="kv-val"><em>19,6%</em> des cas</div></div>
+ <div class="kv"><div class="kv-key">Prévalence pop.</div><div class="kv-val">5,6% (moyenne EU27+2)</div></div>
+ </div>
+ <div>
+ <div class="kv"><div class="kv-key">Fractures /an</div><div class="kv-val">70 700 (2019)</div></div>
+ <div class="kv"><div class="kv-key">Projection 2034</div><div class="kv-val"><em>91 200</em> (+28,9%)</div></div>
+ <div class="kv"><div class="kv-key">Coût total direct</div><div class="kv-val"><em>1,0 milliard €</em></div></div>
+ <div class="kv"><div class="kv-key">Risque fracture hanche (F &gt;50)</div><div class="kv-val"><em>14,4%</em></div></div>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <!-- ===== 3. FACTEURS DE RISQUE ===== -->
+ <div class="section" id="risques">
+ <div class="section-title">
+ <span class="section-num">03</span>
+ <div class="dot" style="background:var(--accent3)"></div>
+ <h2>Facteurs de risque</h2>
+ </div>
+
+ <div class="grid-2">
+ <div>
+ <div class="box-danger">
+ <span class="box-label">Non modifiables</span>
+ <div class="kv"><div class="kv-key">Sexe féminin</div><div class="kv-val">↓ Œstrogènes → ↑ résorption osseuse + cytokines inflammatoires</div></div>
+ <div class="kv"><div class="kv-key">Âge &gt; 50 ans</div><div class="kv-val">↓ capacité proliférative, ↓ réponse aux facteurs de croissance</div></div>
+ <div class="kv"><div class="kv-key">Ethnie</div><div class="kv-val">Caucasienne ou asiatique → DMO plus faible génétiquement</div></div>
+ <div class="kv"><div class="kv-key">Antécédents fam.</div><div class="kv-val">Fractures maternelles → altération régulation des ostéoclastes</div></div>
+ <div class="kv"><div class="kv-key">Ménopause précoce</div><div class="kv-val">Chute précoce des œstrogènes</div></div>
+ </div>
+ </div>
+ <div>
+ <div class="box-info">
+ <span class="box-label">Modifiables</span>
+ <div class="kv"><div class="kv-key">Alcool</div><div class="kv-val">Inhibe les ostéoblastes + ↓ absorption du calcium</div></div>
+ <div class="kv"><div class="kv-key">Tabac</div><div class="kv-val">↓ apport sanguin osseux, ↑ radicaux libres, altère l'ostéogenèse</div></div>
+ <div class="kv"><div class="kv-key">Café</div><div class="kv-val">Interfère avec absorption et métabolisme du Ca²⁺</div></div>
+ <div class="kv"><div class="kv-key">Sédentarité</div><div class="kv-val">↓ exposition aux forces mécaniques → ↓ stimulation ostéoblastique</div></div>
+ <div class="kv"><div class="kv-key">Chirurgie gastrique</div><div class="kv-val">↓ Ca²⁺, ↓ Vit. D, ↑ PTH</div></div>
+ <div class="kv"><div class="kv-key">Maladies chroniques</div><div class="kv-val">Perte de poids, malnutrition, immobilisation</div></div>
+ </div>
+ </div>
+ </div>
+
+ <div class="card">
+ <div class="card-title" style="color:var(--accent)">Classification des causes secondaires</div>
+ <div class="grid-3" style="gap:0.8rem">
+ <div>
+ <div style="font-family:'JetBrains Mono',monospace; font-size:0.7rem; color:var(--accent2); margin-bottom:0.5rem">ENDOCRINIEN</div>
+ <ul>
+ <li>Diabète type 1</li>
+ <li>Hyperparathyroïdie</li>
+ <li>Hyperthyroïdie / Hypothyroïdie</li>
+ <li>Maladie d'Addison</li>
+ <li>Tumeurs hypophysaires</li>
+ <li>Myélome multiple</li>
+ </ul>
+ </div>
+ <div>
+ <div style="font-family:'JetBrains Mono',monospace; font-size:0.7rem; color:var(--accent3); margin-bottom:0.5rem">MÉDICAMENTS</div>
+ <ul>
+ <li><em>Corticostéroïdes ★</em></li>
+ <li>Anticoagulants</li>
+ <li>Anticonvulsants</li>
+ <li>Chimiothérapie</li>
+ <li>Aluminium</li>
+ <li>Tamoxifène (pré-ménopause)</li>
+ </ul>
+ </div>
+ <div>
+ <div style="font-family:'JetBrains Mono',monospace; font-size:0.7rem; color:var(--accent4); margin-bottom:0.5rem">GASTRO-INTESTINAL / AUTRES</div>
+ <ul>
+ <li>Insuffisance hépatique</li>
+ <li>Malabsorption</li>
+ <li>Malnutrition</li>
+ <li>Déficits Vit. C et D</li>
+ <li>Immobilisation</li>
+ <li>Ostéogenèse imparfaite</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <!-- ===== 4. PHYSIOPATHOLOGIE ===== -->
+ <div class="section" id="physio">
+ <div class="section-title">
+ <span class="section-num">04</span>
+ <div class="dot" style="background:var(--accent4)"></div>
+ <h2>Physiopathologie</h2>
+ </div>
+
+ <div class="card">
+ <div class="card-title" style="color:var(--accent4)">Facteurs influençant la croissance osseuse</div>
+ <table>
+ <thead><tr><th>Facteur</th><th>Rôle dans la croissance osseuse</th></tr></thead>
+ <tbody>
+ <tr><td class="td-accent">Calcium + Phosphore</td><td>Durcissent la matrice extracellulaire osseuse</td></tr>
+ <tr><td class="td-accent">Vitamine D (calcitriol)</td><td>↑ absorption intestinale du Ca²⁺ → formation osseuse. Déficit = calcification défectueuse</td></tr>
+ <tr><td class="td-accent">Vitamine C</td><td>Indispensable à la synthèse du collagène. Déficit = ↓ production collagène, fractures mal réparées</td></tr>
+ <tr><td class="td-accent">Vitamines K & B₁₂</td><td>Synthèse des protéines osseuses. Déficit = ↓ densité osseuse</td></tr>
+ <tr><td class="td-accent">Œstrogènes</td><td>↓ résorption par ostéoclastes, ↑ dépôt par ostéoblastes. Chute à la ménopause = ostéoporose</td></tr>
+ <tr><td class="td-accent">PTH (parathormone)</td><td>↑ résorption osseuse + récupération Ca²⁺ urinaire + activation Vit. D</td></tr>
+ <tr><td class="td-accent">Calcitonine (CT)</td><td>Inhibe la résorption osseuse par les ostéoclastes</td></tr>
+ <tr><td class="td-accent">Exercice physique (charge)</td><td>Stimule les ostéoblastes → os plus épais, ↓ perte de masse osseuse</td></tr>
+ <tr><td class="td-accent">Vieillissement</td><td>↓ hormones sexuelles → résorption &gt; formation → ↓ masse osseuse</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <div class="grid-2" style="margin-top:1rem">
+ <div class="card">
+ <div class="card-title" style="color:var(--accent3)">Ostéoporose post-ménopausique</div>
+ <ul>
+ <li>↓ Œstrogènes sériques</li>
+ <li>↑ IL-1, IL-6, TNF</li>
+ <li>↑ Expression RANK / RANKL</li>
+ <li>↑ Activité des ostéoclastes</li>
+ <li>→ Résorption &gt; Formation</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title" style="color:var(--accent2)">Ostéoporose sénile</div>
+ <ul>
+ <li>↓ Activité réplicative des cellules ostéoprogénitrices</li>
+ <li>↓ Activité synthétique des ostéoblastes</li>
+ <li>↓ Activité biologique des facteurs de croissance</li>
+ <li>↓ Activité physique</li>
+ <li>→ Déficit de formation osseuse</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="box-danger" style="margin-top:1rem">
+ <span class="box-label">Glucocorticoïdes (ostéoporose induite)</span>
+ <p style="font-size:0.88rem">Les GC agissent comme hormone exogène → rétroaction négative sur axe HPA → <em>↓ hormones sexuelles</em><em>inhibition des ostéoblastes</em><em>↓ synthèse Vit. D</em><em>↑ ostéoclastes</em> → ↓ DMO → Ostéoporose + risque de nécrose avasculaire.</p>
+ </div>
+ </div>
+
+ <!-- ===== 5. DIAGNOSTIC ===== -->
+ <div class="section" id="diagnostic">
+ <div class="section-title">
+ <span class="section-num">05</span>
+ <div class="dot" style="background:var(--accent)"></div>
+ <h2>Diagnostic</h2>
+ </div>
+
+ <div class="grid-2">
+ <div class="card">
+ <div class="card-title" style="color:var(--accent)">DEXA / DXA</div>
+ <p style="font-size:0.88rem; margin-bottom:0.8rem">Ostéodensitométrie par <em>absorptiométrie biphotonique à rayons X</em>. Mesure la densité minérale osseuse (DMO / BMD). <strong>Recommandée chez toutes les femmes &gt; 65 ans et les hommes &gt; 70 ans</strong>.</p>
+ <div class="mnemonic">
+ <span class="mnemonic-title">T-Score — Critères OMS</span>
+ <table>
+ <thead><tr><th>T-Score</th><th>Diagnostic</th></tr></thead>
+ <tbody>
+ <tr><td class="score-normal">≥ −1,0</td><td>Normal</td></tr>
+ <tr><td class="score-osteopenie">−1,1 à −2,5</td><td>Ostéopénie</td></tr>
+ <tr><td class="score-osteoporose">≤ −2,5</td><td>Ostéoporose</td></tr>
+ <tr><td class="score-osteoporose">&lt; −2,5 + fracture</td><td>Ostéoporose établie</td></tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+ <div class="card">
+ <div class="card-title" style="color:var(--accent2)">Outil FRAX®</div>
+ <p style="font-size:0.88rem; margin-bottom:0.7rem">Calcule la <em>probabilité sur 10 ans</em> de fracture de la hanche et de fracture ostéoporotique majeure (vertèbre, avant-bras, hanche, épaule), avec ou sans DMO.</p>
+ <div class="box-warn" style="padding:0.8rem">
+ <span class="box-label">Limites du FRAX</span>
+ <ul style="font-size:0.83rem">
+ <li>Ne considère pas le nb de fractures antérieures ni l'âge</li>
+ <li>Ne distingue pas fracture radiographique vs clinique</li>
+ <li>Ne considère pas <strong>les chutes</strong> → ×1,5 si historique de chutes</li>
+ <li>Non validé sous traitement anti-ostéoporotique</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+
+ <div class="card" style="margin-top:1rem">
+ <div class="card-title" style="color:var(--accent4)">Bilan biologique complémentaire</div>
+ <div class="tags">
+ <span class="tag tag-green">Hémogramme</span>
+ <span class="tag tag-green">VS</span>
+ <span class="tag tag-green">Bilan phosphocalcique</span>
+ <span class="tag tag-green">Phosphatase alcaline</span>
+ <span class="tag tag-green">Créatinine</span>
+ <span class="tag tag-green">TSH</span>
+ <span class="tag tag-green">Protéinogramme</span>
+ </div>
+ </div>
+ </div>
+
+ <!-- ===== 6. TRAITEMENT ===== -->
+ <div class="section" id="traitement">
+ <div class="section-title">
+ <span class="section-num">06</span>
+ <div class="dot" style="background:var(--accent3)"></div>
+ <h2>Traitement & Prévention</h2>
+ </div>
+
+ <div class="box-success">
+ <span class="box-label">Recommandations générales pour TOUS</span>
+ <ul style="font-size:0.9rem">
+ <li>Apport adéquat en calcium et vitamine D (400–800 UI/jour si risque de déficit)</li>
+ <li>Exercice physique <em>de mise en charge</em> + renforcement musculaire adapté à l'âge</li>
+ <li>Éviter tabac et limiter alcool</li>
+ <li>Maintien des œstrogènes chez la femme (dont THS post-ménopause)</li>
+ <li>Corriger toujours les facteurs de risque modifiables</li>
+ </ul>
+ </div>
+
+ <div class="grid-2">
+ <div class="card">
+ <div class="card-title" style="color:var(--accent)">Calcium</div>
+ <div class="kv"><div class="kv-key">Sources</div><div class="kv-val">250–300 mg / portion de laitages</div></div>
+ <div class="kv"><div class="kv-key">Besoins adulte</div><div class="kv-val"><em>1000–1200 mg/jour</em> (3–4 portions)</div></div>
+ <div class="kv"><div class="kv-key">Effets 2nd</div><div class="kv-val">Lithiase rénale, troubles GI, risque CV (si sans Vit. D)</div></div>
+ </div>
+ <div class="card">
+ <div class="card-title" style="color:var(--accent2)">Vitamine D</div>
+ <div class="kv"><div class="kv-key">Dose de charge</div><div class="kv-val">50 000 UI/sem. × 6–8 semaines</div></div>
+ <div class="kv"><div class="kv-key">Maintenance A</div><div class="kv-val">800–1000 UI/j (ou 25 000 UI/mois)</div></div>
+ <div class="kv"><div class="kv-key">Maintenance B</div><div class="kv-val">1500–2000 UI/j (ou 25 000 UI × 2/mois)</div></div>
+ <div class="kv"><div class="kv-key">Toxicité</div><div class="kv-val">Doses &lt; 5000 UI/j non toxiques</div></div>
+ <div style="font-size:0.8rem; color:var(--text-muted); margin-top:0.5rem">⚠️ Aucun médicament n'est efficace sans correction du déficit en Vit. D</div>
+ </div>
+ </div>
+
+ <div class="card" style="margin-top:1rem">
+ <div class="card-title" style="color:var(--accent3)">Traitements pharmacologiques</div>
+ <table>
+ <thead><tr><th>Médicament</th><th>Modalité</th><th>Notes</th></tr></thead>
+ <tbody>
+ <tr>
+ <td class="td-accent">Alendronate (Biphosphonate)</td>
+ <td>70 mg oral/sem., à jeun<em>1ère ligne</em></td>
+ <td>Coût-efficace</td>
+ </tr>
+ <tr>
+ <td class="td-accent">Zolédronate (Biphosphonate IV)</td>
+ <td>5 mg IV / an<em>2ème ligne</em></td>
+ <td>Si intolérance orale</td>
+ </tr>
+ <tr>
+ <td class="td-accent">Dénosumab</td>
+ <td>60 mg SC / 6 mois</td>
+ <td>Préférable si insuffisance rénale</td>
+ </tr>
+ <tr>
+ <td class="td-accent">Raloxifène (SERM)</td>
+ <td>Modulateur sélectif récepteurs œstrogènes</td>
+ <td>Alternative</td>
+ </tr>
+ <tr>
+ <td class="td-accent">Tériparatide (PTH 1-34)</td>
+ <td>0,25 mg/mL SC quotidien</td>
+ <td>Risque très élevé de fractures</td>
+ </tr>
+ <tr>
+ <td class="td-accent">Calcitonine</td>
+ <td>Inhibe ostéoclastes</td>
+ <td>Aussi antalgique</td>
+ </tr>
+ </tbody>
+ </table>
+ <p style="font-size:0.78rem; color:var(--text-muted); margin-top:0.6rem">★ Ostéonécrose de la mandibule et fractures atypiques du fémur avec biphosphonates oraux + Dénosumab sont très rares.</p>
+ </div>
+
+ <div class="card" style="margin-top:1rem">
+ <div class="card-title" style="color:var(--accent)">Douleur fracturaire</div>
+ <div class="kv"><div class="kv-key">Type</div><div class="kv-val">Douleur mécanique, grande intensité, jusqu'à 4–6 semaines</div></div>
+ <div class="kv"><div class="kv-key">Non pharmaco</div><div class="kv-val">Repos, chaleur</div></div>
+ <div class="kv"><div class="kv-key">1ère ligne</div><div class="kv-val">Paracétamol / + codéine / + tramadol ± myorelaxant</div></div>
+ <div class="kv"><div class="kv-key">2ème ligne</div><div class="kv-val">Fentanyl / Buprénorphine (TD)</div></div>
+ <div style="font-size:0.82rem; color:var(--accent3); margin-top:0.6rem">⚠️ Ne pas utiliser AINS · Maintenir/initier le traitement anti-ostéoporotique</div>
+ </div>
+ </div>
+
+ <!-- ===== 7. FRACTURES ===== -->
+ <div class="section" id="fractures">
+ <div class="section-title">
+ <span class="section-num">07</span>
+ <div class="dot" style="background:var(--accent2)"></div>
+ <h2>Fractures — Classification & Clinique</h2>
+ </div>
+
+ <div class="box-info">
+ <span class="box-label">Définition</span>
+ <p style="font-size:0.92rem">Une fracture est une <em>rupture complète ou incomplète de la structure osseuse</em>. Un os normal supporte des forces de compression et de cisaillement. La fracture survient si la charge dépasse cette capacité.</p>
+ </div>
+
+ <div class="card">
+ <div class="card-title" style="color:var(--accent2)">Types étiologiques</div>
+ <div class="grid-3">
+ <div style="text-align:center; padding:0.5rem">
+ <div style="font-size:1.8rem">💥</div>
+ <div style="font-family:'JetBrains Mono',monospace; font-size:0.75rem; color:var(--accent); margin:0.4rem 0">TRAUMATIQUE</div>
+ <p style="font-size:0.82rem; color:var(--text-muted)">Chute soudaine, traumatisme direct</p>
+ </div>
+ <div style="text-align:center; padding:0.5rem">
+ <div style="font-size:1.8rem">🔄</div>
+ <div style="font-family:'JetBrains Mono',monospace; font-size:0.75rem; color:var(--accent2); margin:0.4rem 0">FATIGUE / STRESS</div>
+ <p style="font-size:0.82rem; color:var(--text-muted)">Usure répétitive sur os sain</p>
+ </div>
+ <div style="text-align:center; padding:0.5rem">
+ <div style="font-size:1.8rem">🦠</div>
+ <div style="font-family:'JetBrains Mono',monospace; font-size:0.75rem; color:var(--accent3); margin:0.4rem 0">PATHOLOGIQUE</div>
+ <p style="font-size:0.82rem; color:var(--text-muted)">Os fragilisé par maladie ou tumeur</p>
+ </div>
+ </div>
+ </div>
+
+ <div class="card" style="margin-top:1rem">
+ <div class="card-title" style="color:var(--accent4)">Classification des fractures</div>
+ <table>
+ <thead><tr><th>Critère</th><th>Sous-types</th></tr></thead>
+ <tbody>
+ <tr><td class="td-accent">Localisation</td><td>Proximale · Diaphysaire (midshaft) · Distale</td></tr>
+ <tr><td class="td-accent">Type</td><td>Ouverte (communication avec l'extérieur) · Fermée</td></tr>
+ <tr><td class="td-accent">Degré</td><td>Partielle · Complète</td></tr>
+ <tr><td class="td-accent">Direction</td><td>Transverse · Oblique · Spirale · Comminutive · Segmentaire · Butterfly · Impactée</td></tr>
+ </tbody>
+ </table>
+ </div>
+
+ <div class="card" style="margin-top:1rem">
+ <div class="card-title" style="color:var(--accent)">Signes & symptômes + traitement</div>
+ <div class="grid-2">
+ <div>
+ <div style="font-family:'JetBrains Mono',monospace; font-size:0.7rem; color:var(--accent2); margin-bottom:0.5rem">CLINIQUE</div>
+ <ul>
+ <li>Douleur intense</li>
+ <li>Raideur</li>
+ <li>Perte de fonction</li>
+ <li>Œdème</li>
+ <li>Déformation (angulaire, raccourcissement, rotation)</li>
+ </ul>
+ </div>
+ <div>
+ <div style="font-family:'JetBrains Mono',monospace; font-size:0.7rem; color:var(--accent3); margin-bottom:0.5rem">TRAITEMENT</div>
+ <ul>
+ <li><em>Réduction</em> : repositionner l'os en position anatomique</li>
+ <li><em>Fixation interne</em> : plaques, clous, vis</li>
+ <li><em>Fixation externe</em> : fixateur externe</li>
+ <li>Rééducation fonctionnelle</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <!-- ===== 8. RÉPARATION OSSEUSE ===== -->
+ <div class="section" id="reparation">
+ <div class="section-title">
+ <span class="section-num">08</span>
+ <div class="dot" style="background:var(--accent4)"></div>
+ <h2>Physiopathologie de la réparation osseuse</h2>
+ </div>
+
+ <div class="timeline">
+ <div class="tl-item">
+ <div class="tl-title">Phase 1 — Formation de l'hématome</div>
+ <span class="tl-date">J1 – J2 après fracture</span>
+ <div class="tl-body">
+ Rupture des vaisseaux (périoste, muscles adjacents, tissus mous). Interruption de l'apport sanguin → mort cellulaire au site de fracture. L'hémorragie forme un <em>gros caillot sanguin</em> + réseau de fibrine servant de matrice.
+ </div>
+ </div>
+
+ <div class="tl-item">
+ <div class="tl-title">Phase 2 — Phase inflammatoire</div>
+ <span class="tl-date">J2 – J5 · Fin à 1 semaine</span>
+ <div class="tl-body">
+ <em>Néovascularisation</em> à la périphérie du caillot. Fibroblastes du périoste → fibres de collagène → ponts de fibrocartilage. Formation d'un réseau de fibrine (matrice pour fibroblastes et capillaires). Début du <em>callus osseux</em> : spicules d'os immature + ostéoblastes activés → tissu de granulation.
+ </div>
+ </div>
+
+ <div class="tl-item">
+ <div class="tl-title">Phase 3 — Phase réparatrice</div>
+ <span class="tl-date">Semaines 2–6</span>
+ <div class="tl-body">
+ Formation continue du <em>callus fibrocartilagineux</em> puis <em>callus osseux</em> (cartilage + os entrelacé). Les ostéoblastes prolifèrent et remplacent progressivement le cartilage par de l'os spongieux.
+ </div>
+ </div>
+
+ <div class="tl-item">
+ <div class="tl-title">Phase 4 — Remodelage</div>
+ <span class="tl-date">Mois suivants</span>
+ <div class="tl-body">
+ Rétablissement du <em>cortex osseux</em>. Couplage accéléré ostéoclastes (résorption) / ostéoblastes (formation) → reconstruction de l'os compact. Le site de fracture cicatrise complètement et l'os reprend sa résistance mécanique.
+ </div>
+ </div>
+ </div>
+
+ <div class="mnemonic" style="margin-top:1.5rem">
+ <span class="mnemonic-title">Mémo — Les 4 phases de consolidation</span>
+ <div class="mnemonic-letters">
+ <div class="ml-item"><span class="ml-letter">H</span><span class="ml-word">Hématome (J1–J2)</span></div>
+ <div class="ml-item"><span style="color:var(--text-dim); padding:0 0.3rem">→</span></div>
+ <div class="ml-item"><span class="ml-letter">I</span><span class="ml-word">Inflammation + Néovascularisation (J2–J5)</span></div>
+ <div class="ml-item"><span style="color:var(--text-dim); padding:0 0.3rem">→</span></div>
+ <div class="ml-item"><span class="ml-letter">R</span><span class="ml-word">Réparation / Callus (sem. 2–6)</span></div>
+ <div class="ml-item"><span style="color:var(--text-dim); padding:0 0.3rem">→</span></div>
+ <div class="ml-item"><span class="ml-letter">R</span><span class="ml-word">Remodelage osseux (mois)</span></div>
+ </div>
+ </div>
+ </div>
+
+ <!-- ===== 9. TISSUS MOUS ===== -->
+ <div class="section" id="tissus">
+ <div class="section-title">
+ <span class="section-num">09</span>
+ <div class="dot" style="background:var(--accent3)"></div>
+ <h2>Lésions des tissus mous</h2>
+ </div>
+
+ <div class="grid-2">
+ <div class="card">
+ <div class="card-title" style="color:var(--accent)">Lésions cutanées & vasculaires</div>
+ <div class="kv"><div class="kv-key">Contusion</div><div class="kv-val">Traumatisme direct, peau intacte. Ecchymose (noir-bleu → brun-jaune) par réabsorption du sang</div></div>
+ <div class="kv"><div class="kv-key">Hématome</div><div class="kv-val">Accumulation de sang dans les tissus</div></div>
+ <div class="kv"><div class="kv-key">Lacération</div><div class="kv-val">Interruption de la continuité cutanée → risque infectieux</div></div>
+ </div>
+ <div class="card">
+ <div class="card-title" style="color:var(--accent2)">Lésions musculo-tendineuses & ligamentaires</div>
+ <div class="kv"><div class="kv-key">Distension musculaire</div><div class="kv-val">Surcharge mécanique ou étirement excessif → douleur, raideur, œdème</div></div>
+ <div class="kv"><div class="kv-key">Entorse</div><div class="kv-val">Lésion ligamentaire (structures entourant l'articulation) par mouvement excessif ou anormal</div></div>
+ <div class="kv"><div class="kv-key">Tendon</div><div class="kv-val">Relie muscle au périoste</div></div>
+ <div class="kv"><div class="kv-key">Ligament</div><div class="kv-val">Faisceaux de collagène reliant extrémités articulaires des os</div></div>
+ </div>
+ </div>
+
+ <div class="card" style="margin-top:1rem">
+ <div class="card-title" style="color:var(--accent4)">Grades d'entorse (exemple genou médial)</div>
+ <table>
+ <thead><tr><th>Grade</th><th>Description</th></tr></thead>
+ <tbody>
+ <tr><td class="td-accent">Grade 1</td><td>Entorse légère du ligament collatéral médial — étirement sans rupture</td></tr>
+ <tr><td class="td-accent">Grade 2</td><td>Entorse modérée avec formation d'hématome — déchirure partielle</td></tr>
+ <tr><td class="td-accent">Grade 3</td><td>Entorse sévère avec rupture totale du ligament</td></tr>
+ <tr><td class="td-accent">Grade 4</td><td>Entorse sévère avec avulsion du condyle fémoral médial à l'insertion</td></tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+
+ <!-- DIVIDER FINAL -->
+ <div class="divider" style="margin-top:3rem"></div>
+
+ <!-- RÉCAP RAPIDE -->
+ <div class="card" style="border-color:rgba(232,169,92,0.3)">
+ <div class="card-title" style="color:var(--accent)">⚡ À retenir absolument</div>
+ <div class="grid-2">
+ <ul>
+ <li>Ostéoporose = silencieuse jusqu'à la 1ère fracture</li>
+ <li>T-Score &lt; −2,5 = ostéoporose confirmée (OMS)</li>
+ <li>FRAX = probabilité de fracture sur 10 ans</li>
+ <li>Ménopause → ↑ RANKL → ↑ ostéoclastes → ↓ DMO</li>
+ <li>Vitamines D et C + Calcium = piliers de la prévention</li>
+ </ul>
+ <ul>
+ <li>Biphosphonates = 1ère ligne (alendronate oral)</li>
+ <li>4 phases de réparation : Hématome → Inflammation → Réparation → Remodelage</li>
+ <li>Exercice en charge = ostéoprotecteur à tout âge</li>
+ <li>AINS contre-indiqués dans la douleur fracturaire</li>
+ <li>Glucocorticoïdes = cause secondaire majeure d'ostéoporose</li>
+ </ul>
+ </div>
+ </div>
+
+</div>
+
+<div class="footer">
+ Fiche de révision · Physiopathologie 1<br>
+ Licence en Physiothérapie — 1ère année, 2e semestre
+</div>
+
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-06.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+</body>
+</html>

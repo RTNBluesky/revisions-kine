@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Chapitre 4 — La méthodologie — :root{--bg:#0f1117;--panel:#1a1d2a;--panel2: #1a1d2a;--text: #9aa3b8;--muted:#9aa3b8;--accent:#f472b6;--accent2: #ff6b9d;--acce">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../assets/css/acces.css">
+<script src="../../../../../assets/js/acces.js"></script>
+<title>Ch.4 - Méthodologie</title>
+<link rel="stylesheet" href="../../../../../assets/css/chrome.css">
+<style>
+:root{--bg:#0f1117;--panel:#1a1d2a;--panel2: #1a1d2a;--text: #9aa3b8;--muted:#9aa3b8;--accent:#f472b6;--accent2: #ff6b9d;--accent3: #ff8fa3;--danger:#ff5c6b;--border:#2a3050;}
+*{box-sizing:border-box;}body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;}
+.container{max-width:1100px;margin:0 auto;padding:32px 24px 64px;}
+header{border-bottom:2px solid var(--accent);padding-bottom:18px;margin-bottom:28px;}
+h1{color:var(--accent);font-size:2em;margin:0 0 6px;}
+header .sub{color:var(--muted);font-size:0.95em;}
+h2{color:var(--accent2);border-left:4px solid var(--accent2);padding-left:12px;margin-top:38px;font-size:1.45em;}
+h3{color:var(--accent3);font-size:1.15em;margin-top:24px;}
+h4{color:#f472b6;margin-top:18px;}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:18px 22px;margin:14px 0;}
+.callout{background:var(--panel2);border-left:4px solid var(--accent);padding:14px 18px;border-radius:6px;margin:14px 0;}
+.warn{border-left-color:var(--danger);}.good{border-left-color:var(--accent2);}.tip{border-left-color:var(--accent3);}
+ul,ol{padding-left:22px;}li{margin:5px 0;}
+table{width:100%;border-collapse:collapse;margin:14px 0;background:var(--panel);}
+th,td{border:1px solid var(--border);padding:9px 12px;text-align:left;vertical-align:top;}
+th{background:var(--panel2);color:var(--accent);}
+.key{color:var(--accent2);font-weight:600;}
+.danger{color:var(--danger);font-weight:600;}
+.flash{background:linear-gradient(135deg,#ff5c6b 0%,#ff5c6b 100%);border:1px solid var(--accent);border-radius:10px;padding:14px 18px;margin:16px 0;}
+.def{background:var(--panel2);border-radius:6px;padding:10px 14px;margin:8px 0;border-left:3px solid var(--accent3);}
+hr{border:none;border-top:1px solid var(--border);margin:30px 0;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;}
+</style>
+ <link rel="stylesheet" href="../../../../../assets/css/modules/mtr-theme.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<a href="../accueil-methodes-et-techniques-de-recherche.html" class="back-nav">← MTR I</a>
+
+<div class="page-toggle"><div class="pt-inner"><a href="../qcm/chapitre_4_methodologie.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<div class="container">
+<header>
+<h1>Chapitre 4 — La méthodologie</h1>
+<div class="sub">La force motrice du projet · La « colonne vertébrale » de l'étude</div>
+</header>
+
+<h2>1. Qu'est-ce que la méthodologie ?</h2>
+<div class="def">
+Si la question = <strong>Pourquoi ?</strong>, la méthodologie = <strong>Comment ?</strong><br>
+« Comment allons-nous mener l'étude pour répondre à la question ? »
+</div>
+
+<h3>Elle doit être :</h3>
+<div class="grid">
+<div class="card"><h4>Claire</h4>Le lecteur comprend étape par étape</div>
+<div class="card"><h4>Justifiée</h4>Chaque choix cohérent avec les objectifs</div>
+<div class="card"><h4>Reproductible</h4>Un autre chercheur peut refaire l'étude</div>
+</div>
+
+<h3>Elle conditionne :</h3>
+<ul>
+<li><span class="key">Validité</span> des résultats (mesure-t-on ce qu'on croit mesurer ?)</li>
+<li><span class="key">Fiabilité</span> des conclusions (résultats reproductibles ?)</li>
+<li>Crédibilité auprès des pairs et jurys</li>
+</ul>
+
+<h2>2. Position dans le processus</h2>
+<div class="callout">
+Question → Revue litt → <strong>Méthodologie (3ᵉ étape)</strong> → Collecte/analyse → Diffusion → Application<br>
+<em>Rôle de « pont » entre ce qu'on veut savoir et ce qu'on fait sur le terrain.</em>
+</div>
+
+<h2>3. Validité vs Fiabilité</h2>
+<table>
+<tr><th>Validité</th><th>Fiabilité</th></tr>
+<tr><td>Mesure-t-on bien ce qu'on prétend mesurer ?</td><td>En refaisant la mesure, obtient-on le même résultat ?</td></tr>
+<tr><td>Ex. EVA pour la douleur, goniomètre pour amplitude, SF-36 pour QdV</td><td>Ex. test-retest, accord inter-évaluateurs</td></tr>
+</table>
+
+<h2>4. La « roadmap » méthodologique (10 éléments)</h2>
+<ol>
+<li>Paradigme (quantitatif / qualitatif / mixte)</li>
+<li>Type d'étude</li>
+<li>Design</li>
+<li>Population et échantillon</li>
+<li>Outcomes (variables)</li>
+<li>Instruments de mesure</li>
+<li>Procédures (protocole)</li>
+<li>Traitement des données (type d'analyse)</li>
+<li>Planning (calendrier, Gantt)</li>
+<li>Budget</li>
+</ol>
+
+<h2>5. Paradigmes : Quantitatif vs Qualitatif</h2>
+<table>
+<tr><th></th><th>Quantitatif</th><th>Qualitatif</th></tr>
+<tr><td>Étudie</td><td>La réalité objective (chiffres)</td><td>La réalité subjective (vécu, perceptions)</td></tr>
+<tr><td>Méthodes</td><td>RCT, cohortes, questionnaires standardisés, EMG, dynamomètre…</td><td>Entretiens semi-dirigés, focus groups, observation participante</td></tr>
+<tr><td>Permet de</td><td>Mesurer, comparer, généraliser</td><td>Comprendre en profondeur, identifier des thèmes</td></tr>
+<tr><td>Question</td><td>« De combien diminue l'EVA après 8 semaines ? »</td><td>« Comment vit-on la douleur au quotidien ? »</td></tr>
+</table>
+<div class="callout tip">En kiné : <strong>complémentarité</strong> → quantitatif pour l'efficacité, qualitatif pour l'expérience.</div>
+
+<h2>6. Types d'études</h2>
+<div class="grid">
+<div class="card">
+<h4>Expérimentales</h4>
+<p>Le chercheur <span class="key">manipule</span> une variable.<br>
+Objectif : tester des relations <strong>de cause à effet</strong>.<br>
+Souvent : groupe expérimental vs contrôle, randomisé.<br>
+<span class="key">Force probante élevée.</span></p>
+</div>
+<div class="card">
+<h4>Observationnelles</h4>
+<p>Le chercheur <span class="key">observe</span> sans modifier.<br>
+Objectif : décrire, comparer, prédire, explorer.<br>
+Plus rapides, moins coûteuses, plus proches de la « vraie vie ».<br>
+<span class="danger">Difficile de conclure sur la causalité.</span></p>
+</div>
+</div>
+
+<h3>Designs observationnels</h3>
+<table>
+<tr><th>Design</th><th>Caractéristiques</th><th>Utile pour</th></tr>
+<tr><td><strong>Transversale</strong></td><td>À un instant T</td><td>Prévalence, moyenne, association simple</td></tr>
+<tr><td><strong>Cas-témoins</strong></td><td>Cas (avec maladie) vs témoins (sans), <em>rétrospectif</em></td><td>Facteurs de risque (Odds Ratio)</td></tr>
+<tr><td><strong>Cohorte</strong></td><td>Suivi dans le temps (prospectif/rétrospectif)</td><td>Risque, pronostic, évolution</td></tr>
+</table>
+
+<h2>7. Concepts expérimentaux clés</h2>
+<div class="grid">
+<div class="card"><h4>Manipulation</h4>Application d'une intervention (massage, exercice, éducation)</div>
+<div class="card"><h4>Contrôle</h4>Neutraliser les facteurs externes (même thérapeute, même durée, mêmes consignes, même environnement)</div>
+<div class="card"><h4>Aléatoire (randomisation)</h4>Répartition au hasard → groupes <strong>comparables au départ</strong></div>
+</div>
+
+<div class="flash">
+<strong>RCT = Essai Clinique Randomisé</strong> = randomisation + groupe expérimental + groupe contrôle<br>
+→ <span class="key">Gold standard</span> de la recherche clinique
+</div>
+
+<h3>Quasi-expérimental</h3>
+<div class="callout">
+Même logique qu'expérimentale, mais <span class="danger">sans randomisation</span>.<br>
+Ex. : un service applique un protocole à tous → comparaison avant/après.<br>
+Plus simple, mais plus de biais (sélection, etc.).
+</div>
+
+<h2>8. Variables</h2>
+<table>
+<tr><th>Type</th><th>Définition</th><th>Exemple (ultrason ↔ douleur)</th></tr>
+<tr><td><strong>VI</strong> (indépendante)</td><td>Ce qu'on manipule / compare</td><td>Application d'ultrason (oui/non, dose, durée)</td></tr>
+<tr><td><strong>VD</strong> (dépendante)</td><td>Ce qu'on mesure comme effet</td><td>Niveau de douleur (EVA)</td></tr>
+<tr><td><strong>Parasite/confondante</strong></td><td>Facteur externe à contrôler car influence la VD</td><td>Âge, sexe, AP, médicaments, pathologies associées</td></tr>
+</table>
+
+<h2>9. Hypothèses</h2>
+<div class="card">
+<p>Une <strong>hypothèse</strong> = proposition <em>testable</em> qui relie VI et VD.</p>
+<ul>
+<li><strong>H1</strong> (hypothèse alternative) : « L'ultrason diminue la douleur musculaire »</li>
+<li><strong>H2</strong> (hypothèse alternative opposée) : « L'ultrason augmente la douleur »</li>
+<li><strong>H0</strong> (hypothèse nulle) : « Il n'existe AUCUNE relation entre l'ultrason et la douleur »</li>
+</ul>
+<p>En stats : <span class="key">on teste H0</span>. Si les résultats sont improbables sous H0 → on la rejette → poids donné à H1.</p>
+</div>
+
+<h2>10. Population et échantillon</h2>
+<table>
+<tr><th>Population</th><th>Échantillon</th></tr>
+<tr><td>Tous les individus concernés par la question</td><td>Sous-ensemble réellement étudié</td></tr>
+<tr><td><em>Ex.</em> : tous les patients lombalgiques d'un hôpital</td><td><em>Ex.</em> : les 60 patients recrutés pour l'étude</td></tr>
+</table>
+
+<h3>Un bon échantillon est :</h3>
+<ul>
+<li>Représentatif de la population cible</li>
+<li>Suffisant en nombre (puissance statistique)</li>
+<li>Sélectionné selon une méthode claire</li>
+</ul>
+
+<h3>Techniques d'échantillonnage</h3>
+<div class="grid">
+<div class="card">
+<h4>Aléatoire</h4>Chaque individu a la même probabilité d'être inclus. <span class="key">Meilleure représentativité</span> mais plus difficile.
+</div>
+<div class="card">
+<h4>Non aléatoire (de commodité)</h4>On prend les patients disponibles, plus simple mais <span class="danger">moins représentatif</span>. À mentionner en limite.
+</div>
+</div>
+
+<h2>11. Outcomes & instruments de mesure</h2>
+<div class="card">
+<p><strong>Outcomes</strong> = ce qu'on mesure. Doivent être observables, mesurables, alignés sur les objectifs.</p>
+<p><strong>Exemples + instruments :</strong></p>
+<ul>
+<li>Douleur → <span class="key">EVA, NRS, McGill</span></li>
+<li>Mobilité → <span class="key">goniomètre, inclinomètre</span></li>
+<li>Force → <span class="key">dynamomètre</span></li>
+<li>Équilibre → <span class="key">BERG, TUG, miniBEST</span></li>
+<li>Fonction → <span class="key">ODI, Roland-Morris, WOMAC</span></li>
+<li>Qualité de vie → <span class="key">SF-36, EQ-5D</span></li>
+</ul>
+</div>
+
+<h3>Un bon instrument est…</h3>
+<ul>
+<li><span class="key">Validé scientifiquement</span></li>
+<li><span class="key">Fiable</span> (reproductible)</li>
+<li>Adapté à la population (âge, langue, culture)</li>
+</ul>
+
+<h2>12. Procédures</h2>
+<div class="callout">
+Décrire pas à pas : approche/recrutement → consentement → évaluations (moments) → intervention (durée, fréquence, environnement, thérapeute) → ordre chronologique → règles éthiques → durée de suivi.<br>
+<strong>Assez détaillé pour qu'un autre puisse reproduire sans vous.</strong>
+</div>
+
+<h2>13. Traitement des données</h2>
+<ul>
+<li>Saisie : tableur, SPSS, R…</li>
+<li>Stats descriptives : moyenne, médiane, écart-type</li>
+<li>Stats inférentielles : t-test, ANOVA, chi², corrélation</li>
+<li>Qualitatif : codage et analyse thématique des verbatims</li>
+</ul>
+
+<h2>14. Calendrier et budget</h2>
+<div class="grid">
+<div class="card"><h4>Calendrier</h4>Diagramme de Gantt · étapes : revue litt, recrutement, collecte, analyse, rédaction.</div>
+<div class="card"><h4>Budget</h4>Matériel, déplacements, compensation participants, logiciels, licences.</div>
+</div>
+
+<hr>
+<h2>🎯 À retenir absolument</h2>
+<div class="card">
+<ul>
+<li>Méthodo = colonne vertébrale, 3ᵉ étape du processus</li>
+<li><strong>Validité</strong> ≠ <strong>Fiabilité</strong></li>
+<li>Quantitatif (mesurer) vs Qualitatif (comprendre)</li>
+<li>RCT = gold standard ; quasi-expérimental = sans randomisation</li>
+<li>3 designs observationnels : transversale, cas-témoins, cohorte</li>
+<li>VI / VD / variable confondante</li>
+<li>H0 = ce qu'on teste en statistiques</li>
+<li>Échantillon : représentatif, suffisant, méthode claire</li>
+<li>Outils validés : EVA, ODI, SF-36, dynamomètre, goniomètre, BERG/TUG</li>
+</ul>
+</div>
+
+</div>
+</body>
+</html>

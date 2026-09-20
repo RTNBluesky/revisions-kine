@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Maladies Infectieuses — Fiche de révision complète">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../../assets/css/acces.css">
+<script src="../../../../../../assets/js/acces.js"></script>
+<title>Fiche de Révision – Maladies Infectieuses</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../../../assets/css/chrome.css">
+<style>
+ :root {
+ --bg: #0f1117;
+ --surface: #161922;
+ --surface2: #1a1d2a;
+ --border: #3a4060;
+ --accent: #ff5c6b;
+ --accent2: #ff8fa3;
+ --accent3: #f472b6;
+ --accent4: #ff6b9d;
+ --accent5: #f472b6;
+ --text: #9aa3b8;
+ --text-muted: #9aa3b8;
+ --text-dim: #6a7388;
+ }
+
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+
+ body {
+ background: var(--bg);
+ color: var(--text);
+ font-family: 'Source Sans 3', sans-serif;
+ font-weight: 300;
+ line-height: 1.7;
+ min-height: 100vh;
+ }
+
+ /* HEADER */
+ header {
+ background: linear-gradient(135deg, #0f1117 0%, #0f1117 50%, #0f1117 100%);
+ border-bottom: 2px solid var(--accent);
+ padding: 3rem 2rem 2.5rem;
+ text-align: center;
+ position: relative;
+ overflow: hidden;
+ }
+ header::before {
+ content: '';
+ position: absolute;
+ inset: 0;
+ background: radial-gradient(ellipse at 50% 0%, rgba(255,92,107,0.15) 0%, transparent 70%);
+ pointer-events: none;
+ }
+ .header-tag {
+ display: inline-block;
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 0.72rem;
+ letter-spacing: 0.2em;
+ color: var(--accent);
+ text-transform: uppercase;
+ border: 1px solid var(--accent);
+ padding: 0.3rem 0.9rem;
+ margin-bottom: 1.2rem;
+ opacity: 0.85;
+ }
+ header h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(2rem, 5vw, 3.8rem);
+ font-weight: 900;
+ color: #ffffff;
+ letter-spacing: -0.02em;
+ line-height: 1.1;
+ margin-bottom: 0.6rem;
+ }
+ header h1 span { color: var(--accent); }
+ header p {
+ font-size: 0.95rem;
+ color: var(--text-muted);
+ letter-spacing: 0.05em;
+ }
+
+ /* LAYOUT */
+ main {
+ max-width: 1100px;
+ margin: 0 auto;
+ padding: 2.5rem 1.5rem 4rem;
+ }
+
+ /* NAV PILLS */
+ .nav-pills {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0.5rem;
+ margin-bottom: 2.5rem;
+ padding-bottom: 1.5rem;
+ border-bottom: 1px solid var(--border);
+ }
+ .nav-pills a {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 0.72rem;
+ letter-spacing: 0.1em;
+ text-transform: uppercase;
+ color: var(--text-muted);
+ text-decoration: none;
+ border: 1px solid var(--border);
+ padding: 0.35rem 0.8rem;
+ border-radius: 2px;
+ transition: all 0.2s;
+ }
+ .nav-pills a:hover { border-color: var(--accent); color: var(--accent); }
+
+ /* SECTION */
+ section {
+ margin-bottom: 3rem;
+ animation: fadeUp 0.5s ease both;
+ }
+ @keyframes fadeUp {
+ from { opacity: 0; transform: translateY(18px); }
+ to { opacity: 1; transform: translateY(0); }
+ }
+
+ .section-header {
+ display: flex;
+ align-items: center;
+ gap: 1rem;
+ margin-bottom: 1.5rem;
+ padding-bottom: 0.8rem;
+ border-bottom: 1px solid var(--border);
+ }
+ .section-num {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 0.7rem;
+ color: var(--accent);
+ border: 1px solid var(--accent);
+ padding: 0.2rem 0.5rem;
+ flex-shrink: 0;
+ }
+ .section-header h2 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.55rem;
+ font-weight: 700;
+ color: #ffffff;
+ letter-spacing: -0.01em;
+ }
+
+ /* CARDS GRID */
+ .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+ .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+ @media (max-width: 720px) {
+ .grid-2, .grid-3 { grid-template-columns: 1fr; }
+ }
+
+ .card {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ border-left: 3px solid var(--accent);
+ padding: 1.2rem 1.3rem;
+ border-radius: 0 4px 4px 0;
+ transition: border-color 0.2s, transform 0.2s;
+ }
+ .card:hover { border-left-color: var(--accent2); transform: translateX(3px); }
+ .card.blue { border-left-color: var(--accent3); }
+ .card.green { border-left-color: var(--accent4); }
+ .card.purple { border-left-color: var(--accent5); }
+ .card.yellow { border-left-color: var(--accent2); }
+
+ .card h3 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.05rem;
+ font-weight: 700;
+ color: #ffffff;
+ margin-bottom: 0.7rem;
+ }
+ .card p, .card li {
+ font-size: 0.9rem;
+ color: var(--text-muted);
+ line-height: 1.65;
+ }
+ .card ul { padding-left: 1.1rem; }
+ .card ul li { margin-bottom: 0.25rem; }
+
+ /* HIGHLIGHT BOX */
+ .highlight {
+ background: linear-gradient(135deg, rgba(255,92,107,0.08) 0%, rgba(255,92,107,0.03) 100%);
+ border: 1px solid rgba(255,92,107,0.3);
+ padding: 1.2rem 1.5rem;
+ border-radius: 4px;
+ margin-bottom: 1.2rem;
+ }
+ .highlight.blue { background: linear-gradient(135deg, rgba(255,107,157,0.08) 0%, transparent 100%); border-color: rgba(255,107,157,0.3); }
+ .highlight.green { background: linear-gradient(135deg, rgba(255,107,157,0.08) 0%, transparent 100%); border-color: rgba(255,107,157,0.3); }
+ .highlight.yellow { background: linear-gradient(135deg, rgba(255,107,157,0.08) 0%, transparent 100%); border-color: rgba(255,107,157,0.3); }
+
+ .highlight h4 {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 0.72rem;
+ letter-spacing: 0.15em;
+ text-transform: uppercase;
+ color: var(--accent);
+ margin-bottom: 0.6rem;
+ }
+ .highlight.blue h4 { color: var(--accent3); }
+ .highlight.green h4 { color: var(--accent4); }
+ .highlight.yellow h4 { color: var(--accent2); }
+ .highlight p, .highlight li { font-size: 0.92rem; color: var(--text); }
+ .highlight ul { padding-left: 1.2rem; margin-top: 0.4rem; }
+ .highlight ul li { margin-bottom: 0.3rem; }
+
+ /* CHAIN / TIMELINE */
+ .chain {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 0;
+ margin: 1rem 0;
+ align-items: stretch;
+ }
+ .chain-step {
+ flex: 1;
+ min-width: 120px;
+ background: var(--surface2);
+ border: 1px solid var(--border);
+ padding: 0.9rem 0.8rem;
+ text-align: center;
+ position: relative;
+ }
+ .chain-step::after {
+ content: '→';
+ position: absolute;
+ right: -12px;
+ top: 50%;
+ transform: translateY(-50%);
+ color: var(--accent);
+ font-size: 1.1rem;
+ z-index: 1;
+ }
+ .chain-step:last-child::after { display: none; }
+ .chain-step .num {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 1.2rem;
+ font-weight: 600;
+ color: var(--accent);
+ display: block;
+ margin-bottom: 0.3rem;
+ }
+ .chain-step .label {
+ font-size: 0.78rem;
+ color: var(--text-muted);
+ font-weight: 600;
+ text-transform: uppercase;
+ letter-spacing: 0.05em;
+ display: block;
+ margin-bottom: 0.2rem;
+ }
+ .chain-step .desc {
+ font-size: 0.75rem;
+ color: var(--text-dim);
+ line-height: 1.4;
+ }
+
+ /* TIMELINE DISEASE */
+ .timeline {
+ position: relative;
+ padding-left: 2rem;
+ margin: 1rem 0;
+ }
+ .timeline::before {
+ content: '';
+ position: absolute;
+ left: 0.65rem;
+ top: 0; bottom: 0;
+ width: 2px;
+ background: linear-gradient(to bottom, var(--accent), var(--accent3), var(--accent4));
+ }
+ .tl-item {
+ position: relative;
+ margin-bottom: 1.2rem;
+ padding-left: 1rem;
+ }
+ .tl-item::before {
+ content: '';
+ position: absolute;
+ left: -1.4rem;
+ top: 0.45rem;
+ width: 10px; height: 10px;
+ border-radius: 50%;
+ background: var(--accent);
+ border: 2px solid var(--bg);
+ }
+ .tl-item:nth-child(2)::before { background: var(--accent2); }
+ .tl-item:nth-child(3)::before { background: var(--accent3); }
+ .tl-item:nth-child(4)::before { background: var(--accent4); }
+ .tl-item:nth-child(5)::before { background: var(--accent5); }
+ .tl-item h4 {
+ font-size: 0.95rem;
+ font-weight: 600;
+ color: #ffffff;
+ margin-bottom: 0.2rem;
+ }
+ .tl-item p { font-size: 0.86rem; color: var(--text-muted); }
+
+ /* TABLE */
+ .table-wrap { overflow-x: auto; margin: 0.8rem 0; }
+ table {
+ width: 100%;
+ border-collapse: collapse;
+ font-size: 0.86rem;
+ }
+ thead tr { background: var(--surface2); }
+ thead th {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 0.7rem;
+ letter-spacing: 0.1em;
+ text-transform: uppercase;
+ color: var(--accent);
+ padding: 0.7rem 0.9rem;
+ text-align: left;
+ border-bottom: 2px solid var(--accent);
+ }
+ tbody tr { border-bottom: 1px solid var(--border); transition: background 0.15s; }
+ tbody tr:hover { background: var(--surface2); }
+ tbody td { padding: 0.6rem 0.9rem; color: var(--text-muted); }
+ tbody td:first-child { color: #ffffff; font-weight: 600; }
+
+ /* BADGE */
+ .badge {
+ display: inline-block;
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 0.65rem;
+ letter-spacing: 0.08em;
+ padding: 0.15rem 0.5rem;
+ border-radius: 2px;
+ margin-right: 0.3rem;
+ }
+ .badge-red { background: rgba(255,92,107,0.15); color: var(--accent); }
+ .badge-blue { background: rgba(255,107,157,0.15); color: var(--accent3); }
+ .badge-green { background: rgba(255,107,157,0.15); color: var(--accent4); }
+ .badge-yellow { background: rgba(255,107,157,0.15); color: var(--accent2); }
+ .badge-purple { background: rgba(255,107,157,0.15); color: var(--accent5); }
+
+ /* KEY TERM */
+ .key { color: var(--accent2); font-weight: 600; }
+ .key-blue { color: var(--accent3); font-weight: 600; }
+ .key-green { color: var(--accent4); font-weight: 600; }
+
+ /* RETENIR BOX */
+ .retenir {
+ background: var(--surface2);
+ border-top: 3px solid var(--accent2);
+ padding: 1rem 1.3rem;
+ margin-top: 1rem;
+ border-radius: 0 0 4px 4px;
+ font-size: 0.88rem;
+ }
+ .retenir strong {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 0.68rem;
+ letter-spacing: 0.12em;
+ text-transform: uppercase;
+ color: var(--accent2);
+ display: block;
+ margin-bottom: 0.4rem;
+ }
+ .retenir p, .retenir li { color: var(--text); }
+ .retenir ul { padding-left: 1.2rem; }
+
+ /* DIVIDER */
+ hr {
+ border: none;
+ border-top: 1px solid var(--border);
+ margin: 2rem 0;
+ }
+
+ /* FOOTER */
+ footer {
+ text-align: center;
+ padding: 2rem;
+ border-top: 1px solid var(--border);
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 0.7rem;
+ color: var(--text-dim);
+ letter-spacing: 0.1em;
+ }
+
+ /* SCROLL REVEAL */
+ section { animation-delay: calc(var(--i, 0) * 0.06s); }
+</style>
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/physio-patho.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-theme.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
+</head>
+<body>
+<a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
+<div class="page-toggle"><div class="pt-inner"><a href="../../qcm/tp/tp-03.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<header>
+ <div class="header-tag">Physiopathologie 1 · Licence Physiothérapie · 1ère Année</div>
+ <h1>Maladies <span>Infectieuses</span></h1>
+ <p>Fiche de révision complète</p>
+</header>
+
+<main>
+
+ <!-- NAV -->
+ <nav class="nav-pills">
+ <a href="#def">Définitions</a>
+ <a href="#transmission">Transmission</a>
+ <a href="#chaine">Chaîne épidémio.</a>
+ <a href="#agents">Agents infectieux</a>
+ <a href="#reservoir">Réservoir & Sortie</a>
+ <a href="#modes">Modes de transmission</a>
+ <a href="#susceptibilite">Susceptibilité</a>
+ <a href="#histoire">Histoire naturelle</a>
+ <a href="#evolution">Évolution</a>
+ <a href="#epidemio">Épidémiologie</a>
+ <a href="#diagnostic">Diagnostic</a>
+ <a href="#traitement">Traitement</a>
+ </nav>
+
+ <!-- 1. DÉFINITIONS -->
+ <section id="def" style="--i:1">
+ <div class="section-header">
+ <div class="section-num">01</div>
+ <h2>Définitions fondamentales</h2>
+ </div>
+
+ <div class="highlight">
+ <h4>Définition OMS — Maladie infectieuse</h4>
+ <p>Maladie causée par des <span class="key">micro-organismes pathogènes</span> (bactéries, virus, champignons, parasites) qui peuvent être transmis <strong>directement ou indirectement</strong> d'une personne à une autre.</p>
+ </div>
+
+ <div class="grid-2">
+ <div class="card blue">
+ <h3>Infection</h3>
+ <ul>
+ <li>Développement ou multiplication d'un agent infectieux dans l'organisme</li>
+ <li><span class="key-blue">Localisation interne</span> et parasitaire</li>
+ <li>Provoque des lésions chez l'hôte</li>
+ </ul>
+ </div>
+ <div class="card yellow">
+ <h3>Colonisation</h3>
+ <ul>
+ <li>Établissement d'une présence microbienne</li>
+ <li>Étape nécessaire au processus d'infection</li>
+ <li><strong>Sans lésion</strong> chez l'hôte (≠ infection)</li>
+ </ul>
+ </div>
+ <div class="card green">
+ <h3>Infestation</h3>
+ <ul>
+ <li>Développement d'un agent infectieux</li>
+ <li><span class="key-green">Localisation externe</span> et parasitaire</li>
+ <li>Ex : poux, gale, aoûtats</li>
+ </ul>
+ </div>
+ <div class="card purple">
+ <h3>Hôte</h3>
+ <ul>
+ <li>Tout organisme capable de subvenir aux besoins nutritionnels d'un autre</li>
+ <li>Le terme désigne le plus souvent <strong>l'être humain</strong></li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="retenir">
+ <strong>⚡ À retenir</strong>
+ <ul>
+ <li>Toutes les maladies <strong>contagieuses</strong> sont infectieuses, mais toutes les maladies infectieuses <strong>ne sont pas</strong> contagieuses.</li>
+ <li>Maladie contagieuse = transmissible par contact direct entre humains <strong>sans vecteur</strong>. Ex : Rougeole (contagieuse) / Paludisme (infectieuse, non contagieuse).</li>
+ </ul>
+ </div>
+ </section>
+
+ <!-- 2. TRANSMISSION -->
+ <section id="transmission" style="--i:2">
+ <div class="section-header">
+ <div class="section-num">02</div>
+ <h2>Maladies transmissibles vs non transmissibles</h2>
+ </div>
+
+ <div class="grid-2">
+ <div class="card">
+ <h3>🔴 Transmissibles</h3>
+ <ul>
+ <li>Se transmettent d'une personne à une autre <strong>ou d'un animal à une personne</strong></li>
+ <li>Par divers moyens (contact, air, vecteur, véhicule)</li>
+ <li>Ex : grippe, tuberculose, paludisme</li>
+ </ul>
+ </div>
+ <div class="card blue">
+ <h3>🔵 Non transmissibles</h3>
+ <ul>
+ <li>Ne peuvent <strong>pas être transmises</strong> entre personnes</li>
+ <li>Causes génétiques, environnementales ou comportementales</li>
+ <li>Ex : diabète, cancers, maladies cardio-vasculaires</li>
+ </ul>
+ </div>
+ </div>
+
+ <br>
+ <div class="grid-2">
+ <div class="card green">
+ <h3>Transmission Directe</h3>
+ <ul>
+ <li>Contact direct avec le micro-organisme</li>
+ <li>Baiser → échange de salive (virus)</li>
+ <li>Poignée de main → virus sur la peau</li>
+ <li>Accolade → gouttelettes sur les muqueuses</li>
+ </ul>
+ </div>
+ <div class="card yellow">
+ <h3>Transmission Indirecte</h3>
+ <ul>
+ <li>Particules <strong>aériennes</strong> (aérosols, gouttelettes)</li>
+ <li><span class="key">Vecteur</span> : organisme transportant un agent infectieux (ex : moustique)</li>
+ <li><span class="key">Véhicule</span> : nourriture, eau contaminée, surfaces (fomites)</li>
+ </ul>
+ </div>
+ </div>
+ </section>
+
+ <!-- 3. CHAÎNE ÉPIDÉMIOLOGIQUE -->
+ <section id="chaine" style="--i:3">
+ <div class="section-header">
+ <div class="section-num">03</div>
+ <h2>Chaîne épidémiologique de transmission</h2>
+ </div>
+
+ <div class="highlight blue">
+ <h4>Principe</h4>
+ <p>Le développement d'une maladie infectieuse nécessite une <strong>chaîne épidémiologique</strong> comprenant 6 maillons. Briser un seul maillon suffit à stopper la transmission.</p>
+ </div>
+
+ <div class="chain">
+ <div class="chain-step">
+ <span class="num">1</span>
+ <span class="label">Agent causal</span>
+ <span class="desc">Micro-organisme pathogène</span>
+ </div>
+ <div class="chain-step">
+ <span class="num">2</span>
+ <span class="label">Réservoir</span>
+ <span class="desc">Environnement de vie/multiplication</span>
+ </div>
+ <div class="chain-step">
+ <span class="num">3</span>
+ <span class="label">Porte de sortie</span>
+ <span class="desc">Voie de quitter l'hôte</span>
+ </div>
+ <div class="chain-step">
+ <span class="num">4</span>
+ <span class="label">Mode de transmission</span>
+ <span class="desc">Direct / Indirect</span>
+ </div>
+ <div class="chain-step">
+ <span class="num">5</span>
+ <span class="label">Porte d'entrée</span>
+ <span class="desc">Voie d'accès au nouvel hôte</span>
+ </div>
+ <div class="chain-step">
+ <span class="num">6</span>
+ <span class="label">Susceptibilité</span>
+ <span class="desc">Sensibilité de l'hôte</span>
+ </div>
+ </div>
+ </section>
+
+ <!-- 4. AGENTS INFECTIEUX -->
+ <section id="agents" style="--i:4">
+ <div class="section-header">
+ <div class="section-num">04</div>
+ <h2>Agents infectieux</h2>
+ </div>
+
+ <div class="highlight yellow">
+ <h4>Virulence</h4>
+ <p>La <span class="key">virulence</span> = potentiel de production de la maladie. Certains micro-organismes sont si virulents qu'ils provoquent <strong>presque toujours</strong> une maladie. La majorité sont des <span class="key">saprophytes</span> (peu nuisibles, se nourrissant de matières organiques mortes).</p>
+ </div>
+
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr>
+ <th>Agent pathogène</th>
+ <th>Structure</th>
+ <th>Caractéristiques</th>
+ <th>Traitement</th>
+ <th>Exemples de maladies</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td><span class="badge badge-red">Prions</span></td>
+ <td>Protéines seules (sans acide nucléique)</td>
+ <td>Extracellulaires, non mobiles</td>
+ <td>Aucun traitement efficace</td>
+ <td>Creutzfeldt-Jakob, Kuru, ESB (vache folle)</td>
+ </tr>
+ <tr>
+ <td><span class="badge badge-blue">Virus</span></td>
+ <td>ADN/ARN + capside protéique</td>
+ <td>Intracellulaires obligatoires, ne se reproduisent pas hors des cellules</td>
+ <td>Antiviraux (ralentissent la réplication)</td>
+ <td>Grippe, rhume, rougeole, VIH/SIDA, hépatites</td>
+ </tr>
+ <tr>
+ <td><span class="badge badge-green">Bactéries</span></td>
+ <td>Cellule microscopique sans noyau (procaryote)</td>
+ <td>Communes sur les surfaces, se reproduisent de façon autonome</td>
+ <td>Antibiotiques</td>
+ <td>Angine streptococcique, tuberculose, gonorrhée</td>
+ </tr>
+ <tr>
+ <td><span class="badge badge-yellow">Champignons</span></td>
+ <td>Unicellulaire (levures) ou multicellulaire (moisissures)</td>
+ <td>Infectent surtout les surfaces et orifices</td>
+ <td>Antifongiques</td>
+ <td>Pied d'athlète, candidose, histoplasmose</td>
+ </tr>
+ <tr>
+ <td><span class="badge badge-purple">Protozoaires</span></td>
+ <td>Eucaryote unicellulaire</td>
+ <td>Courants dans l'eau des pays en développement</td>
+ <td>Médicaments antiprotozoaires</td>
+ <td>Paludisme, dysenterie amibienne, maladie du sommeil</td>
+ </tr>
+ <tr>
+ <td><span class="badge badge-red">Helminthes</span></td>
+ <td>Multicellulaire (vers)</td>
+ <td>Préfèrent vivre dans les espaces corporels</td>
+ <td>Antihelminthiques</td>
+ <td>Vers ronds, vers plats, trichinose</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+
+ <br>
+ <h3 style="font-family:'Playfair Display',serif; margin-bottom:0.8rem; color:#fff;">Sources de l'agent infectieux</h3>
+ <div class="grid-3">
+ <div class="card">
+ <h3>Endogène</h3>
+ <p>Acquis à partir de la <strong>flore propre</strong> de l'hôte (infections opportunistes)</p>
+ </div>
+ <div class="card blue">
+ <h3>Exogène</h3>
+ <p>Sources externes : eau, sol, air, nourriture, autre être humain, animal, piqûre, objets (fomites)</p>
+ </div>
+ <div class="card green">
+ <h3>Nosocomiale</h3>
+ <p>Infection contractée dans un <strong>environnement hospitalier</strong></p>
+ </div>
+ </div>
+
+ <br>
+ <h3 style="font-family:'Playfair Display',serif; margin-bottom:0.8rem; color:#fff;">Interactions hôte-pathogène</h3>
+ <div class="grid-3">
+ <div class="card">
+ <h3>Commensalisme</h3>
+ <p>L'un profite, l'autre n'est pas affecté. Ex : streptocoques en bouche, staphylocoques sur la peau</p>
+ </div>
+ <div class="card blue">
+ <h3>Mutualisme</h3>
+ <p>Les <strong>deux</strong> tirent profit. Ex : bactéries intestinales produisant la vitamine K</p>
+ </div>
+ <div class="card">
+ <h3>Parasitisme</h3>
+ <p>L'hôte est <strong>lésé</strong>. Si des lésions pathologiques résultent → <span class="key">maladie infectieuse</span></p>
+ </div>
+ </div>
+ </section>
+
+ <!-- 5. RÉSERVOIR & PORTE DE SORTIE -->
+ <section id="reservoir" style="--i:5">
+ <div class="section-header">
+ <div class="section-num">05</div>
+ <h2>Réservoir & Porte de sortie</h2>
+ </div>
+
+ <div class="grid-2">
+ <div>
+ <div class="highlight">
+ <h4>Réservoir</h4>
+ <p>Environnement dans lequel vit, se multiplie ou se développe un agent infectieux. Peut être :</p>
+ <ul>
+ <li><span class="key">L'Homme</span> (malade ou porteur sain)</li>
+ <li><span class="key">L'Animal</span> → zoonoses</li>
+ <li><span class="key">L'Environnement</span> (eau, sol, air)</li>
+ </ul>
+ </div>
+ </div>
+ <div>
+ <div class="highlight blue">
+ <h4>Porte / Voie de sortie</h4>
+ <p>Voie par laquelle l'agent quitte l'hôte :</p>
+ <ul>
+ <li>Salive → Rage (Rhabdovirus)</li>
+ <li>Sang → Hépatite B</li>
+ <li>Selles → Amibiase</li>
+ <li>Sperme → VIH/SIDA</li>
+ <li>Sécrétions vaginales → Gonorrhée</li>
+ <li>Sécrétions respiratoires → Tuberculose</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- 6. MODES DE TRANSMISSION -->
+ <section id="modes" style="--i:6">
+ <div class="section-header">
+ <div class="section-num">06</div>
+ <h2>Modes de transmission & Portes d'entrée</h2>
+ </div>
+
+ <div class="grid-2">
+ <div class="card">
+ <h3>Pénétration</h3>
+ <ul>
+ <li>Rupture de l'intégrité de la peau/muqueuses</li>
+ <li>Abrasion, brûlure, blessure, chirurgie, CATE</li>
+ <li>Inoculation intraveineuse (drogue, morsure)</li>
+ </ul>
+ </div>
+ <div class="card blue">
+ <h3>Contact direct</h3>
+ <ul>
+ <li>IST : gonorrhée, syphilis, chlamydia, herpès génital</li>
+ <li>Transmission verticale mère → enfant (placenta, accouchement)</li>
+ <li>Allaitement</li>
+ </ul>
+ </div>
+ <div class="card green">
+ <h3>Ingestion</h3>
+ <ul>
+ <li>Micro-organismes par cavité buccale / tractus GI</li>
+ <li>Dysenterie, intoxication alimentaire, hépatite A</li>
+ <li>Eau ou aliments contaminés</li>
+ </ul>
+ </div>
+ <div class="card yellow">
+ <h3>Inhalation</h3>
+ <ul>
+ <li>Défenses : mucus, cils vibratiles, toux, anticorps, phagocytes</li>
+ <li>Agents : tuberculose, pneumonie, méningite, grippe, rougeole</li>
+ <li>Risque accru si BPCO, mucoviscidose, tabagisme</li>
+ </ul>
+ </div>
+ </div>
+
+ <br>
+ <div class="highlight green">
+ <h4>Portes d'entrée</h4>
+ <ul>
+ <li><strong>Cutanée</strong> — peau lésée</li>
+ <li><strong>Respiratoire</strong> — voies aériennes</li>
+ <li><strong>Intraveineuse</strong> — sang direct</li>
+ <li><strong>Digestive</strong> — bouche / tractus GI</li>
+ <li><strong>Sexuelle</strong> — muqueuses génitales</li>
+ </ul>
+ </div>
+ </section>
+
+ <!-- 7. SUSCEPTIBILITÉ -->
+ <section id="susceptibilite" style="--i:7">
+ <div class="section-header">
+ <div class="section-num">07</div>
+ <h2>Susceptibilité de l'hôte</h2>
+ </div>
+
+ <div class="highlight yellow">
+ <h4>Principe clé</h4>
+ <p>La présence de l'agent infectieux <strong>n'est pas toujours suffisante</strong> pour provoquer la maladie. Les facteurs liés à l'hôte, à l'environnement et au vecteur jouent un rôle déterminant.</p>
+ </div>
+
+ <div class="grid-2">
+ <div>
+ <h3 style="color:#fff; font-family:'Playfair Display',serif; margin-bottom:0.8rem;">Facteurs augmentant la susceptibilité</h3>
+ <div class="card">
+ <ul>
+ <li><strong>Âge</strong> : prématurés, personnes âgées</li>
+ <li>Blessures / brûlures</li>
+ <li>Immunodépression</li>
+ <li>Corps étrangers (sondes, cathéters)</li>
+ <li>Environnements fermés</li>
+ <li>Période postopératoire</li>
+ <li>Malnutrition</li>
+ <li>Médicaments immunosuppresseurs</li>
+ </ul>
+ </div>
+ </div>
+ <div>
+ <h3 style="color:#fff; font-family:'Playfair Display',serif; margin-bottom:0.8rem;">Système de défense de l'hôte</h3>
+ <div class="card blue">
+ <ul>
+ <li><strong>Peau</strong> : barrière kératinique, pH, acides gras</li>
+ <li><strong>Respiratoire</strong> : macrophages alvéolaires, IgA, cils</li>
+ <li><strong>Gastro-intestinal</strong> : pH acide, mucus, enzymes, microbiote</li>
+ <li><strong>Urogénital</strong> : miction répétée, environnement acide</li>
+ <li><strong>Résistance</strong> : ensemble des mécanismes corporels de défense</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- 8. HISTOIRE NATURELLE -->
+ <section id="histoire" style="--i:8">
+ <div class="section-header">
+ <div class="section-num">08</div>
+ <h2>Histoire naturelle de la maladie</h2>
+ </div>
+
+ <div class="timeline">
+ <div class="tl-item">
+ <h4>Exposition / Susceptible</h4>
+ <p>Individu sensible exposé à l'agent infectieux. Début de la chaîne épidémiologique.</p>
+ </div>
+ <div class="tl-item">
+ <h4>Période de latence</h4>
+ <p>Intervalle entre le moment de l'infection et le moment où la personne devient <strong>contagieuse</strong>. Pas encore transmissible.</p>
+ </div>
+ <div class="tl-item">
+ <h4>Période d'incubation / Maladie subclinique</h4>
+ <p>Phase asymptomatique. L'agent pathogène déclenche des processus mais sans signes cliniques visibles. Peut inclure des <strong>changements pathologiques</strong> internes.</p>
+ </div>
+ <div class="tl-item">
+ <h4>Période infectieuse (transmissibilité)</h4>
+ <p>Début de la possibilité de transmettre l'agent. Marque la <strong>fin de la période de latence</strong>. L'agent peut être transmis directement ou indirectement.</p>
+ </div>
+ <div class="tl-item">
+ <h4>Période symptomatique / Maladie clinique</h4>
+ <p>Signes et symptômes apparaissent. Diagnostic habituel possible. Peut évoluer vers récupération, séquelles, état chronique ou décès.</p>
+ </div>
+ </div>
+
+ <div class="retenir">
+ <strong>⚡ Distinction importante : Latence vs Incubation</strong>
+ <ul>
+ <li><span class="key">Période de latence</span> = de l'infection jusqu'à la <strong>transmissibilité</strong> (angle infectiologique)</li>
+ <li><span class="key">Période d'incubation</span> = de l'infection jusqu'à l'<strong>apparition des symptômes</strong> (angle clinique)</li>
+ <li>Ces deux périodes peuvent se chevaucher ou ne pas coïncider.</li>
+ </ul>
+ </div>
+ </section>
+
+ <!-- 9. ÉVOLUTION DE LA MALADIE -->
+ <section id="evolution" style="--i:9">
+ <div class="section-header">
+ <div class="section-num">09</div>
+ <h2>Évolution de la maladie</h2>
+ </div>
+
+ <div class="grid-3">
+ <div class="card">
+ <h3>🔴 Aiguë</h3>
+ <p>Impact maximal. Prolifération rapide et dissémination intense de l'agent pathogène. Symptômes prononcés et spécifiques.</p>
+ </div>
+ <div class="card yellow">
+ <h3>🟡 Subaiguë</h3>
+ <p>Entre le stade aigu et chronique. Dure des semaines/mois. Peut évoluer vers la guérison, l'aggravation ou la chronicité.</p>
+ </div>
+ <div class="card blue">
+ <h3>🔵 Chronique</h3>
+ <p>Longue durée ou évolution lente. Symptômes persistants ou intermittents. Peut causer des dommages à long terme.</p>
+ </div>
+ </div>
+
+ <br>
+ <div class="grid-2">
+ <div class="card green">
+ <h3>Phase prodromique</h3>
+ <p>Stade initial : vague malaise, légère fièvre, myalgies, maux de tête, fatigue. Peu spécifique.</p>
+ </div>
+ <div class="card">
+ <h3>Formes particulières</h3>
+ <ul>
+ <li><strong>Insidieuse</strong> : phase prodromique prolongée</li>
+ <li><strong>Fulminante</strong> : symptômes intenses d'apparition soudaine, prodrome court ou absent</li>
+ <li><strong>Fatale</strong> : variante des formes atypiques</li>
+ </ul>
+ </div>
+ </div>
+
+ <br>
+ <div class="grid-2">
+ <div class="card blue">
+ <h3>Convalescence</h3>
+ <p>Contention de l'infection. Élimination progressive de l'agent pathogène. Réparation des lésions tissulaires. Résolution des symptômes.</p>
+ </div>
+ <div class="card green">
+ <h3>Résolution</h3>
+ <p>Élimination <strong>totale</strong> de l'agent pathogène. Aucun signe résiduel ni symptôme.</p>
+ </div>
+ </div>
+
+ <br>
+ <h3 style="font-family:'Playfair Display',serif; margin-bottom:0.8rem; color:#fff;">Niveaux de prévention</h3>
+ <div class="grid-3">
+ <div class="card">
+ <h3>Prévention Primaire</h3>
+ <p>Avant la maladie : promotion de la santé, protection spécifique (<strong>vaccination</strong>, hygiène)</p>
+ </div>
+ <div class="card blue">
+ <h3>Prévention Secondaire</h3>
+ <p>Pendant la maladie : diagnostic précoce, traitement immédiat, limitation des dommages</p>
+ </div>
+ <div class="card green">
+ <h3>Prévention Tertiaire</h3>
+ <p>Après la maladie : <strong>réhabilitation</strong>, limitation des séquelles</p>
+ </div>
+ </div>
+ </section>
+
+ <!-- 10. ÉPIDÉMIOLOGIE -->
+ <section id="epidemio" style="--i:10">
+ <div class="section-header">
+ <div class="section-num">10</div>
+ <h2>Épidémiologie & Prévention</h2>
+ </div>
+
+ <div class="highlight">
+ <h4>Rôle de l'épidémiologie</h4>
+ <p>Identifie les <strong>populations à haut risque</strong>, modifie les risques, prévoit les expositions. Objectif ultime : interrompre ou éliminer la propagation des maladies infectieuses.</p>
+ </div>
+
+ <div class="grid-2">
+ <div class="card">
+ <h3>Incidence</h3>
+ <p>Nombre de <strong>nouveaux cas</strong> d'une maladie au sein d'une population définie, sur une période donnée.</p>
+ </div>
+ <div class="card blue">
+ <h3>Prévalence</h3>
+ <p>Nombre de <strong>cas actifs</strong> à un moment donné (nouveaux + anciens).</p>
+ </div>
+ </div>
+
+ <br>
+ <h3 style="font-family:'Playfair Display',serif; margin-bottom:0.8rem; color:#fff;">Fréquence de la maladie</h3>
+ <div class="grid-2">
+ <div class="card">
+ <h3>Sporadique</h3>
+ <p>Survient <strong>occasionnellement</strong> dans la population, sans régularité.</p>
+ </div>
+ <div class="card yellow">
+ <h3>Endémique</h3>
+ <p>Toujours présente dans une population, à des fréquences <strong>relativement stables</strong> et prévisibles.</p>
+ </div>
+ <div class="card">
+ <h3>Épidémique</h3>
+ <p>Augmentation soudaine et inattendue au-delà des taux endémiques, touchant un grand nombre de personnes <strong>en peu de temps</strong>.</p>
+ </div>
+ <div class="card blue">
+ <h3>Pandémique</h3>
+ <p>Épidémie touchant une <strong>vaste zone géographique</strong>, parfois à l'échelle mondiale (ex : COVID-19, grippe 1918).</p>
+ </div>
+ </div>
+
+ <br>
+ <h3 style="font-family:'Playfair Display',serif; margin-bottom:0.8rem; color:#fff;">Facteurs contributifs aux maladies transmissibles</h3>
+ <div class="table-wrap">
+ <table>
+ <thead>
+ <tr><th>Catégorie</th><th>Exemples spécifiques</th></tr>
+ </thead>
+ <tbody>
+ <tr><td>Facteurs sociaux</td><td>Pauvreté, conflits, croissance démographique, urbanisation</td></tr>
+ <tr><td>Soins de santé</td><td>Dispositifs médicaux, transplants, immunosuppresseurs, antibiotiques massifs</td></tr>
+ <tr><td>Production alimentaire</td><td>Mondialisation des aliments, changements de préparation/emballage</td></tr>
+ <tr><td>Comportements humains</td><td>Comportement sexuel, drogues, voyages, crèches</td></tr>
+ <tr><td>Changements environnementaux</td><td>Déforestation, inondations, réchauffement climatique</td></tr>
+ <tr><td>Infrastructures de santé publique</td><td>Réduction des programmes préventifs, manque d'épidémiologistes</td></tr>
+ <tr><td>Adaptation microbienne</td><td>Résistance aux antibiotiques, virulence accrue</td></tr>
+ </tbody>
+ </table>
+ </div>
+ </section>
+
+ <!-- 11. DIAGNOSTIC -->
+ <section id="diagnostic" style="--i:11">
+ <div class="section-header">
+ <div class="section-num">11</div>
+ <h2>Diagnostic des maladies infectieuses</h2>
+ </div>
+
+ <div class="grid-3">
+ <div class="card">
+ <h3>Culture</h3>
+ <p>Propagation du micro-organisme <strong>hors du corps</strong> sur milieu artificiel (gélose, bouillon). Permet identification par morphologie, coloration de Gram, réactions biochimiques.</p>
+ </div>
+ <div class="card blue">
+ <h3>Sérologie</h3>
+ <p>Mesure <strong>indirecte</strong> via les anticorps sériques. IgM (phase aiguë) et IgG (phase tardive, mémoire). Utile pour agents ne pouvant pas être cultivés (ex : hépatite B).</p>
+ </div>
+ <div class="card green">
+ <h3>Séquençage ADN/ARN (PCR)</h3>
+ <p>Détection de séquences génomiques spécifiques. Très sensible et rapide. PCR en temps réel révolutionne les diagnostics (ex : C. difficile, VIH).</p>
+ </div>
+ </div>
+
+ <div class="retenir">
+ <strong>⚡ Facteurs de virulence — 4 catégories</strong>
+ <ul>
+ <li><strong>Toxines</strong> : Exotoxines (protéines libérées par la bactérie) / Endotoxines (lipopolysaccharides des bactéries Gram -)</li>
+ <li><strong>Facteurs d'adhésion</strong> : permettent la fixation à l'hôte (ex : pili, hémagglutinines)</li>
+ <li><strong>Facteurs d'évasion</strong> : échappent au système immunitaire (ex : capsules, leucocidines)</li>
+ <li><strong>Facteurs d'invasion</strong> : facilitent la pénétration des tissus (ex : collagénases, phospholipases)</li>
+ </ul>
+ </div>
+ </section>
+
+ <!-- 12. TRAITEMENT -->
+ <section id="traitement" style="--i:12">
+ <div class="section-header">
+ <div class="section-num">12</div>
+ <h2>Traitement des maladies infectieuses</h2>
+ </div>
+
+ <div class="grid-3">
+ <div class="card">
+ <h3>💊 Agents antimicrobiens</h3>
+ <ul>
+ <li><strong>Antibiotiques</strong> : antibactériens (pénicillines, céphalosporines, tétracyclines…)</li>
+ <li><strong>Antiviraux</strong> : analogues nucléosidiques, inhibiteurs de protéase (VIH)</li>
+ <li><strong>Antifongiques</strong> : polyéniques (amphotéricine B), imidazoles (fluconazole)</li>
+ <li><strong>Antiparasitaires</strong> : chloroquine, anthelminthiques</li>
+ </ul>
+ </div>
+ <div class="card blue">
+ <h3>🛡 Immunothérapie</h3>
+ <ul>
+ <li>Immunoglobulines intraveineuses (IVIG)</li>
+ <li>Cytokines (interférons, interleukines)</li>
+ <li><strong>Vaccination</strong> — moyen le plus efficace de prévention</li>
+ <li>Anticorps monoclonaux</li>
+ </ul>
+ </div>
+ <div class="card green">
+ <h3>🔧 Intervention chirurgicale</h3>
+ <ul>
+ <li>Drainage d'abcès</li>
+ <li>Débridement (nettoyage)</li>
+ <li>Ablation des tissus infectés</li>
+ <li>Remplacement de valve cardiaque (endocardite)</li>
+ <li>Retrait de dispositifs infectés (cathéters, prothèses)</li>
+ </ul>
+ </div>
+ </div>
+
+ <br>
+ <div class="highlight blue">
+ <h4>Résistance aux antibiotiques — mécanismes</h4>
+ <ul>
+ <li>Production d'enzymes inactivant les antibiotiques (ex : β-lactamases)</li>
+ <li>Mutations génétiques modifiant les sites de liaison</li>
+ <li>Voies métaboliques alternatives contournant l'activité des antibiotiques</li>
+ <li>Modifications de la paroi cellulaire empêchant l'accès au site cible</li>
+ </ul>
+ </div>
+ </section>
+
+ <!-- RÉCAPITULATIF FINAL -->
+ <section style="--i:13">
+ <div class="section-header">
+ <div class="section-num">★</div>
+ <h2>Récapitulatif — Points essentiels à retenir</h2>
+ </div>
+
+ <div class="grid-2">
+ <div class="highlight">
+ <h4>Définitions clés</h4>
+ <ul>
+ <li>Maladie infectieuse ≠ maladie contagieuse</li>
+ <li>Infection (interne) ≠ infestation (externe)</li>
+ <li>Saprophyte = peu nuisible mais peut devenir opportuniste</li>
+ <li>Virulence = potentiel pathogène du micro-organisme</li>
+ </ul>
+ </div>
+ <div class="highlight blue">
+ <h4>Chaîne épidémiologique (6 maillons)</h4>
+ <ul>
+ <li>Agent causal → Réservoir → Porte de sortie</li>
+ <li>Mode de transmission → Porte d'entrée → Susceptibilité</li>
+ <li>Briser un maillon = stopper la transmission</li>
+ </ul>
+ </div>
+ <div class="highlight green">
+ <h4>Histoire naturelle</h4>
+ <ul>
+ <li>Latence → Incubation → Prodrome → Phase aiguë → Convalescence → Résolution</li>
+ <li>Latence = jusqu'à transmissibilité / Incubation = jusqu'aux symptômes</li>
+ </ul>
+ </div>
+ <div class="highlight yellow">
+ <h4>Épidémiologie</h4>
+ <ul>
+ <li>Sporadique → Endémique → Épidémique → Pandémique</li>
+ <li>Incidence = nouveaux cas / Prévalence = cas actifs</li>
+ <li>Objectif : identifier, modifier les risques, prévenir</li>
+ </ul>
+ </div>
+ </div>
+ </section>
+
+</main>
+
+<footer>
+ PHYSIOPATHOLOGIE 1 · LICENCE EN PHYSIOTHÉRAPIE · 1ER ANNÉE · 2E SEMESTRE</footer>
+
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-03.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+</body>
+</html>

@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Ostéologie & Arthrologie — Crâne et Face — :root{--bg:#0f1117;--bg2:#1a1d2a;--bg3: #161922;--txt:#e8eaf0;--accent:#f472b6;--accent2: #ff6b9d;--warn:#ff8fa3">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../assets/css/acces.css">
+<script src="../../../../../assets/js/acces.js"></script>
+<title>Ostéologie 1 - Crâne et Face</title>
+<link rel="stylesheet" href="../../../../../assets/css/chrome.css">
+<style>
+:root{--bg:#0f1117;--bg2:#1a1d2a;--bg3: #161922;--txt:#e8eaf0;--accent:#f472b6;--accent2: #ff6b9d;--warn:#ff8fa3;--err:#ff5c6b;--border: #3a4060}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',Tahoma,sans-serif;background:var(--bg);color:var(--txt);line-height:1.6;padding:20px;max-width:1100px;margin:auto}
+h1{color:var(--accent);border-bottom:3px solid var(--accent);padding-bottom:10px;margin-bottom:20px}
+h2{color:var(--accent2);margin-top:25px;margin-bottom:12px;padding-left:10px;border-left:4px solid var(--accent2)}
+h3{color:var(--warn);margin-top:18px;margin-bottom:8px}
+h4{color:var(--accent);margin-top:12px}
+p,li{margin-bottom:8px}
+ul,ol{margin-left:25px;margin-bottom:12px}
+.tabs{display:flex;gap:8px;margin-bottom:20px;border-bottom:2px solid var(--border)}
+.tab{padding:12px 24px;cursor:pointer;background:var(--bg2);border:none;color:var(--txt);font-size:16px;border-radius:8px 8px 0 0;transition:all .3s}
+.tab.active{background:var(--accent);color:#0f1117;font-weight:bold}
+.tab:hover:not(.active){background:var(--bg3)}
+.content{display:none}
+.content.active{display:block}
+.card{background:var(--bg2);padding:18px;border-radius:8px;margin-bottom:15px;border-left:4px solid var(--accent)}
+.box{background:var(--bg3);padding:12px;border-radius:6px;margin:10px 0}
+table{width:100%;border-collapse:collapse;margin:12px 0;background:var(--bg2)}
+th,td{border:1px solid var(--border);padding:10px;text-align:left}
+th{background:var(--bg3);color:var(--accent)}
+.qcm{background:var(--bg2);padding:18px;border-radius:8px;margin-bottom:15px;border-left:4px solid var(--warn)}
+.qcm-q{font-weight:bold;margin-bottom:12px;color:var(--accent)}
+.qcm-opt{display:block;padding:8px 12px;margin:6px 0;background:var(--bg3);border-radius:6px;cursor:pointer;transition:all .2s;border:2px solid transparent}
+.qcm-opt:hover{background:var(--border)}
+.qcm-opt.correct{background:#3dd68c;border-color:var(--accent2);color:var(--accent2)}
+.qcm-opt.wrong{background:#ff5c6b;border-color:var(--err);color:var(--err)}
+.qcm-opt input{margin-right:10px}
+.qcm-explain{margin-top:10px;padding:10px;background:var(--bg3);border-radius:6px;display:none;border-left:3px solid var(--accent2)}
+.qcm-explain.show{display:block}
+.btn{background:var(--accent);color:#0f1117;border:none;padding:10px 20px;border-radius:6px;cursor:pointer;font-weight:bold;margin:10px 5px 10px 0}
+.btn:hover{background:var(--accent2)}
+.score{position:sticky;top:10px;background:var(--bg3);padding:12px;border-radius:8px;text-align:center;margin-bottom:15px;font-size:18px;border:2px solid var(--accent)}
+.highlight{color:var(--warn);font-weight:bold}
+.note{background:#ff5c6b;padding:10px;border-radius:6px;border-left:3px solid var(--warn);margin:10px 0}
+</style>
+ <link rel="stylesheet" href="../../../../../assets/css/modules/anatomie-1-theme.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<a href="../accueil-anatomie.html" class="back-nav">← Anatomie I</a>
+
+<div class="page-toggle"><div class="pt-inner"><a href="../qcm/osteo_01_crane_face.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<h1>Ostéologie & Arthrologie — Crâne et Face</h1>
+
+<div class="card">
+<h2>1. Composition du Crâne</h2>
+<p>Le crâne se divise en deux parties principales : <span class="highlight">le neurocrâne</span> (qui protège l'encéphale) et <span class="highlight">le viscérocrâne</span> (la face).</p>
+
+<h3>Neurocrâne (8 os)</h3>
+<ul>
+<li><b>Pariétal</b> (×2) — paroi latérale du crâne</li>
+<li><b>Temporal</b> (×2) — contient l'oreille moyenne et interne</li>
+<li><b>Frontal</b> (×1) — front et toit de l'orbite</li>
+<li><b>Ethmoïde</b> (×1) — médian, à la base du crâne</li>
+<li><b>Sphénoïde</b> (×1) — base centrale du crâne</li>
+<li><b>Occipital</b> (×1) — partie postérieure et base du crâne</li>
+</ul>
+
+<h3>Viscérocrâne / Face (14 os)</h3>
+<ul>
+<li><b>Maxillaire supérieur</b> (×2)</li>
+<li><b>Mandibule</b> (×1) — seul os mobile</li>
+<li><b>Os zygomatique / malaire</b> (×2)</li>
+<li><b>Os lacrymal / unguis</b> (×2)</li>
+<li><b>Os nasal</b> (×2)</li>
+<li><b>Cornet nasal inférieur</b> (×2)</li>
+<li><b>Palatin</b> (×2)</li>
+<li><b>Vomer</b> (×1)</li>
+</ul>
+
+<h3>Os de l'oreille (×3 chacun)</h3>
+<ul><li>Marteau, Enclume, Étrier</li></ul>
+</div>
+
+<div class="card">
+<h2>2. Os Frontal</h2>
+<p>Forme le <span class="highlight">toit de l'orbite</span> et le front. Orientation : surface convexe vers l'avant.</p>
+
+<h3>Articulations</h3>
+<p>Pariétaux, sphénoïde, ethmoïde, maxillaire supérieur, malaire, nasal et lacrymal.</p>
+
+<h3>Face antérieure</h3>
+<ul>
+<li><b>Glabelle</b> — front + sinus frontaux</li>
+<li><b>Arcade supra-orbitaire</b> — bord antéro-supérieur de l'orbite</li>
+<li><b>Processus zygomatique</b> — s'articule avec la pommette</li>
+<li><b>Foramen supra-orbitaire</b> — artère et nerf supra-orbitaires</li>
+<li><b>Épine nasale</b> — partie supérieure de la cloison nasale</li>
+</ul>
+
+<h3>Face postérieure</h3>
+<ul>
+<li>Fosse frontale</li>
+<li>Bosse orbitaire</li>
+<li><b>Foramen borgne</b> — traverse veine du foramen borgne ou prolongement de la dure-mère</li>
+<li>Gouttière du sinus longitudinal supérieur</li>
+</ul>
+
+<h3>Face inférieure</h3>
+<ul>
+<li>Échancrure ethmoïdale</li>
+<li>Fosse lacrymale</li>
+<li>Fosse orbitaire (toit de l'orbite)</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>3. Os Pariétal</h2>
+<p>Os pair, quadrilatéral, à 2 faces, 4 arêtes, 4 angles. Forme la <b>paroi latérale du crâne</b>. Face convexe externe.</p>
+
+<h3>Connexions</h3>
+<p>Frontal, occipital, pariétal opposé, temporal, sphénoïde.</p>
+
+<h3>Face externe</h3>
+<ul>
+<li><b>Courbure temporale supérieure</b> — insertion aponévrose temporale</li>
+<li><b>Courbure temporale inférieure</b> — insertion muscle temporal</li>
+<li><b>Foramen pariétal</b> — veine émissaire de Santorin</li>
+</ul>
+
+<h3>Face interne</h3>
+<p>Fosse pariétale — gouttières ramifiées en « feuille de vigne » des branches de l'<span class="highlight">artère méningée moyenne</span>.</p>
+</div>
+
+<div class="card">
+<h2>4. Os Occipital</h2>
+<p>Os impair, médian. Forme la <b>base postérieure du crâne</b>. Surface concave antérieure.</p>
+
+<h3>Connexions</h3>
+<p>Sphénoïde, pariétal, temporal, atlas (C1).</p>
+
+<h3>Éléments clés</h3>
+<ul>
+<li><b>Foramen occipital (magnum)</b> — passage de la moelle allongée, artères vertébrales, nerfs spinaux</li>
+<li><b>Condyles occipitaux</b> — s'articulent avec l'atlas</li>
+<li><b>Protubérance occipitale externe</b> — insertion du ligament cervical commun</li>
+<li><b>Foramen condylien antérieur / canal hypoglosse</b> — passage du nerf XII (hypoglosse)</li>
+<li><b>Crête occipitale interne</b> — sépare les fosses cérébelleuses</li>
+<li><b>Sillon sinusal longitudinal supérieur</b> — sépare les fosses cérébrales</li>
+<li>4 fosses occipitales (2 cérébrales sup., 2 cérébelleuses inf.)</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>5. Os Temporal</h2>
+<p>Os pair, paroi latérale du crâne, contient l'<b>oreille moyenne et interne</b>. Surface convexe externe.</p>
+
+<h3>3 portions</h3>
+<ul>
+<li>Portion <b>squameuse</b></li>
+<li>Portion <b>mastoïdienne</b> (pétreuse)</li>
+<li>Portion <b>pétrotympanique</b> (roche)</li>
+</ul>
+
+<h3>Connexions</h3>
+<p>Pariétal, occipital, malaire, mandibule.</p>
+
+<h3>Face externe</h3>
+<ul>
+<li>Sillon vasculaire (artère temporale profonde postérieure)</li>
+<li>Processus zygomatique</li>
+<li><b>Fosse mandibulaire / cavité glénoïde</b> — articulation avec la mandibule</li>
+<li><b>Processus styloïde</b> — insertion muscles langue, pharynx, os hyoïde</li>
+<li>Foramen mastoïdien — veine émissaire + artère mastoïdienne</li>
+<li>Conduit auditif externe</li>
+</ul>
+
+<h3>Face interne</h3>
+<ul>
+<li>Sillons de l'artère méningée moyenne</li>
+<li><b>Conduit auditif interne</b> — nerfs VII (facial) et VIII (vestibulocochléaire)</li>
+</ul>
+
+<h3>Vue inférieure</h3>
+<ul>
+<li><b>Foramen stylomastoïdien</b> — artère stylomastoïdienne + nerf facial (VII)</li>
+<li>Foramen lacérum postérieur / fosse jugulaire — veine jugulaire interne</li>
+<li><b>Canal carotidien</b> — artère carotide interne</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>6. Os Ethmoïde</h2>
+<p>Os médian, impair, symétrique. Forme la <b>base du crâne, orbite et fosses nasales</b>.</p>
+
+<h3>3 parties</h3>
+<ul>
+<li><b>Lame verticale</b></li>
+<li><b>Lame horizontale (crible / tamis)</b></li>
+<li><b>Masses latérales</b></li>
+</ul>
+
+<h3>Face supérieure (lame horizontale)</h3>
+<ul>
+<li><b>Crête de coq (crista galli)</b> — insertion des méninges</li>
+<li><b>Sillons olfactifs</b> — percés du foramen olfactif</li>
+<li><b>Foramen olfactif</b> — passage du nerf I (olfactif)</li>
+</ul>
+
+<h3>Face antérieure (lame verticale)</h3>
+<ul>
+<li><b>Apophyse crista galli</b> — bord antérieur s'articule avec le frontal</li>
+<li><b>Lame perpendiculaire</b> — forme une partie de la cloison nasale</li>
+</ul>
+
+<h3>Surface externe (masses latérales)</h3>
+<ul>
+<li><b>Lame papyracée / lame orbitaire</b> — paroi interne de l'orbite</li>
+<li><b>Sinus ethmoïdaux</b> — allègent le poids de la tête</li>
+</ul>
+
+<h3>Surface interne</h3>
+<ul>
+<li><b>Cornet supérieur</b> — augmente surface, réchauffe et humidifie l'air</li>
+<li><b>Cornet moyen</b></li>
+</ul>
+
+<h3>Connexions</h3>
+<p>Frontal, sphénoïde, palatin, nasal, lacrymal, maxillaire, vomer.</p>
+</div>
+
+<div class="card">
+<h2>7. Os Sphénoïde</h2>
+<p>Os impair, médian, symétrique. Occupe la partie antérieure et médiane de la <b>base du crâne</b>. S'articule avec <b>tous les os du neurocrâne</b> + pommettes, palatin et vomer.</p>
+
+<h3>4 parties</h3>
+<ul>
+<li>Corps</li>
+<li>Petites ailes</li>
+<li>Grandes ailes</li>
+<li>Processus ptérygoïdes</li>
+</ul>
+
+<h3>Face supérieure</h3>
+<ul>
+<li><b>Jugum sphénoïdal</b> + gouttières olfactives</li>
+<li><b>Foramen optique / canal optique</b> — nerf optique (II) + artère ophtalmique</li>
+<li>Tubercule hypophysaire</li>
+<li><b>Selle turcique (fosse pituitaire)</b> — contient l'hypophyse</li>
+<li><b>Foramen ovale</b> — nerf mandibulaire (V3, branche du trijumeau)</li>
+<li><b>Grand foramen rond</b> — nerf maxillaire supérieur (V2)</li>
+<li><b>Petit foramen rond</b> — artère méningée moyenne</li>
+</ul>
+
+<h3>Face antérieure</h3>
+<ul>
+<li>Crête sphénoïdale antérieure</li>
+<li>Ouverture des sinus sphénoïdaux</li>
+<li>Processus ptérygoïdien (aile interne + aile externe)</li>
+<li>Aile ptérygoïdienne externe — insertion muscles masticateurs</li>
+<li>Grande aile — plancher de la fosse crânienne moyenne</li>
+<li>Petite aile — bord supérieur de la fente sphénoïdale</li>
+</ul>
+
+<h3>Face postérieure</h3>
+<ul>
+<li>Lame quadrilatérale — s'articule avec l'occipital</li>
+<li>Fosse ptérygoïdienne — insertion ptérygoïdien interne</li>
+<li><b>Scissure / fente sphénoïdale</b> — nerfs moteurs de l'œil, veines ophtalmiques, branches du nerf ophtalmique (V1)</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>8. Os de la Face</h2>
+
+<h3>Os zygomatique / malaire</h3>
+<ul>
+<li>Articulé avec frontal, maxillaire supérieur, temporal, grande aile sphénoïde</li>
+<li>Forme la saillie de la pommette + paroi antérolatérale de l'orbite</li>
+<li>Processus frontal, processus temporal (forme arcade zygomatique), rebord infraorbitaire</li>
+<li>Foramen zygomatico-facial</li>
+</ul>
+
+<h3>Maxillaire supérieur (mâchoire)</h3>
+<ul>
+<li>Os pair quadrilatéral, contient les dents supérieures</li>
+<li>Crête alvéolaire inférieure</li>
+<li><b>Processus frontal</b> — côtés de l'arête du nez</li>
+<li><b>Processus palatin</b> — 2/3 antérieurs du palais dur</li>
+<li><b>Processus zygomatique</b> — bord inférieur de l'orbite</li>
+<li>Canal incisif (nerf)</li>
+<li>Cavités alvéolaires (dents)</li>
+<li>Foramen infra-orbitaire (vaisseaux + nerfs)</li>
+<li><b>Sinus maxillaire</b></li>
+</ul>
+
+<h3>Palatin</h3>
+<ul>
+<li>Forme une partie du palais dur + paroi orbitaire</li>
+<li>Lame horizontale = tiers postérieur du palais dur</li>
+<li>Lame verticale = paroi externe fosse nasale</li>
+</ul>
+
+<h3>Os lacrymal (unguis)</h3>
+<ul>
+<li>Partie antérieure de la paroi orbitaire</li>
+<li><b>Canal lacrymo-nasal</b> — drainage des larmes vers méat inférieur</li>
+</ul>
+
+<h3>Os nasal</h3>
+<ul>
+<li>Quadrilatéral pair — bord du nez</li>
+<li>Articulé avec frontal, maxillaire et l'autre nasal</li>
+<li>Foramen nasal (vasculaire)</li>
+</ul>
+
+<h3>Vomer</h3>
+<ul>
+<li>Impair, médian — partie postérieure de la cloison nasale</li>
+<li>Articulé avec sphénoïde, ethmoïde, palatin, maxillaire</li>
+</ul>
+
+<h3>Cornet inférieur (conque nasale inférieure)</h3>
+<ul>
+<li>Os pair, paroi latérale de la fosse nasale</li>
+<li>3 processus : lacrymal, ethmoïdal, maxillaire</li>
+</ul>
+
+<h3>Mandibule</h3>
+<ul>
+<li>Os médian impair — <span class="highlight">seul os mobile</span> du crâne</li>
+<li>Forme l'articulation temporo-mandibulaire (ATM)</li>
+<li>Corps (horizontal) + 2 branches (verticales) + angle</li>
+<li><b>Processus alvéolaire</b> (dents)</li>
+<li><b>Processus articulaire</b> (condyle mandibulaire)</li>
+<li><b>Processus coronoïde</b> — insertion muscle temporal</li>
+<li><b>Foramen mentonnier</b> — nerfs/vaisseaux vers menton</li>
+<li><b>Échancrure sigmoïde/mandibulaire</b> — entre condyle et coronoïde</li>
+<li><b>Foramen mandibulaire</b> — entrée nerfs/vaisseaux des dents inférieures</li>
+</ul>
+
+<h3>Os hyoïde</h3>
+<ul>
+<li>Ne s'articule avec aucun autre os ! Relié au crâne par muscles + ligaments</li>
+<li>Grande et petite cornes — insertions musculaires</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>9. Orbite (composition)</h2>
+<ol>
+<li>Frontal</li>
+<li>Foramen optique</li>
+<li>Foramen ethmoïdal antérieur et postérieur</li>
+<li>Os ethmoïde</li>
+<li>Orifice naso-lacrymal</li>
+<li>Os lacrymal</li>
+<li>Os palatin</li>
+<li>Maxillaire supérieur</li>
+<li>Fente sphéno-maxillaire</li>
+<li>Os zygomatique</li>
+<li>Grande aile du sphénoïde</li>
+<li>Fente sphénoïdale</li>
+<li>Petite aile du sphénoïde</li>
+</ol>
+</div>
+
+<div class="card">
+<h2>10. Fosses nasales (composition)</h2>
+<ul>
+<li>Maxillaire, os lacrymal, cornet supérieur et moyen (ethmoïde), palatin</li>
+<li>Processus ptérygoïde du sphénoïde, cornet inférieur</li>
+<li>Cartilages nasaux, os nasal</li>
+</ul>
+</div>
+
+<div class="note">
+<b>À retenir !</b> Le sphénoïde s'articule avec TOUS les os du neurocrâne. La mandibule est le SEUL os mobile du crâne. L'os hyoïde ne s'articule avec AUCUN autre os.
+</div>
+
+</body>
+</html>

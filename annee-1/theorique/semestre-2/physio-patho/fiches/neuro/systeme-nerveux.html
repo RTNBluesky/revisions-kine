@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Système Nerveux — :root { --orange: #ff8fa3; --orange-light: #ff8fa3; --orange-pale: #ff8fa3; --dark: #0f1117; --mid: #ff5c6b; --text: #161922; --muted: #6a73">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../../assets/css/acces.css">
+<script src="../../../../../../assets/js/acces.js"></script>
+<title>Fiche de Révision – Système Nerveux</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../../../assets/css/chrome.css">
+<style>
+ :root {
+ --orange: #ff8fa3;
+ --orange-light: #ff8fa3;
+ --orange-pale: #ff8fa3;
+ --dark: #0f1117;
+ --mid: #ff5c6b;
+ --text: #161922;
+ --muted: #6a7388;
+ --white: #ff8fa3;
+ --teal: #ff6b9d;
+ --teal-light: #ff6b9d;
+ --gold: #ff8fa3;
+ --red: #ff5c6b;
+ --border: #3a4060;
+ }
+
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+
+ body {
+ font-family: 'Source Sans 3', sans-serif;
+ background: var(--white);
+ color: var(--text);
+ font-size: 15px;
+ line-height: 1.6;
+ }
+
+ /* HEADER */
+ .hero {
+ background: var(--dark);
+ padding: 56px 48px 40px;
+ position: relative;
+ overflow: hidden;
+ }
+ .hero::before {
+ content: '';
+ position: absolute;
+ top: -60px; right: -60px;
+ width: 320px; height: 320px;
+ border-radius: 50%;
+ background: radial-gradient(circle, rgba(255,107,157,0.25) 0%, transparent 70%);
+ }
+ .hero::after {
+ content: '';
+ position: absolute;
+ bottom: -40px; left: 120px;
+ width: 200px; height: 200px;
+ border-radius: 50%;
+ background: radial-gradient(circle, rgba(255,107,157,0.2) 0%, transparent 70%);
+ }
+ .hero-tag {
+ font-size: 11px;
+ font-weight: 600;
+ letter-spacing: 3px;
+ text-transform: uppercase;
+ color: var(--orange);
+ margin-bottom: 12px;
+ }
+ .hero h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: 52px;
+ font-weight: 900;
+ color: var(--white);
+ line-height: 1.1;
+ margin-bottom: 16px;
+ }
+ .hero h1 span { color: var(--orange); }
+ .hero-sub {
+ color: rgba(255,255,255,0.55);
+ font-size: 14px;
+ font-weight: 300;
+ }
+
+ /* LAYOUT */
+ .container {
+ max-width: 1100px;
+ margin: 0 auto;
+ padding: 0 32px 64px;
+ }
+
+ /* SECTION TITLES */
+ .section-block {
+ margin-top: 48px;
+ }
+ .section-header {
+ display: flex;
+ align-items: center;
+ gap: 14px;
+ margin-bottom: 24px;
+ padding-bottom: 12px;
+ border-bottom: 2px solid var(--border);
+ }
+ .section-num {
+ width: 40px; height: 40px;
+ background: var(--orange);
+ color: white;
+ border-radius: 50%;
+ display: flex; align-items: center; justify-content: center;
+ font-family: 'Playfair Display', serif;
+ font-size: 17px;
+ font-weight: 700;
+ flex-shrink: 0;
+ }
+ .section-title {
+ font-family: 'Playfair Display', serif;
+ font-size: 24px;
+ font-weight: 700;
+ color: var(--dark);
+ }
+
+ /* CARDS GRID */
+ .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+ .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+
+ .card {
+ background: var(--white);
+ border: 1.5px solid var(--border);
+ border-radius: 10px;
+ padding: 20px 22px;
+ transition: box-shadow 0.2s;
+ }
+ .card:hover { box-shadow: 0 4px 18px rgba(0,0,0,0.08); }
+
+ .card-title {
+ font-size: 12px;
+ font-weight: 600;
+ letter-spacing: 2px;
+ text-transform: uppercase;
+ color: var(--orange);
+ margin-bottom: 10px;
+ }
+ .card h3 {
+ font-family: 'Playfair Display', serif;
+ font-size: 17px;
+ color: var(--dark);
+ margin-bottom: 10px;
+ }
+
+ /* ORANGE ACCENT CARD */
+ .card-orange {
+ background: var(--orange);
+ border-color: var(--orange);
+ color: white;
+ }
+ .card-orange .card-title { color: rgba(255,255,255,0.7); }
+ .card-orange h3, .card-orange p, .card-orange li { color: white; }
+
+ .card-dark {
+ background: var(--dark);
+ border-color: var(--dark);
+ }
+ .card-dark .card-title { color: var(--orange-light); }
+ .card-dark h3, .card-dark p, .card-dark li { color: rgba(255,255,255,0.88); }
+ .card-dark ul li::before { color: var(--orange-light); }
+
+ .card-teal {
+ background: var(--teal-light);
+ border-color: var(--teal);
+ }
+ .card-teal .card-title { color: var(--teal); }
+
+ /* LISTS */
+ ul.clean { list-style: none; }
+ ul.clean li {
+ padding: 4px 0;
+ padding-left: 16px;
+ position: relative;
+ font-size: 14px;
+ color: var(--text);
+ }
+ ul.clean li::before {
+ content: '▸';
+ position: absolute; left: 0;
+ color: var(--orange);
+ font-size: 11px;
+ top: 6px;
+ }
+
+ /* TABLE */
+ table {
+ width: 100%;
+ border-collapse: collapse;
+ font-size: 13.5px;
+ margin-top: 8px;
+ }
+ th {
+ background: var(--dark);
+ color: white;
+ padding: 9px 12px;
+ text-align: left;
+ font-weight: 600;
+ font-size: 12px;
+ letter-spacing: 0.5px;
+ }
+ th:first-child { border-radius: 6px 0 0 0; }
+ th:last-child { border-radius: 0 6px 0 0; }
+ td {
+ padding: 8px 12px;
+ border-bottom: 1px solid var(--border);
+ vertical-align: top;
+ color: var(--text);
+ }
+ tr:nth-child(even) td { background: var(--orange-pale); }
+ tr:last-child td { border-bottom: none; }
+
+ /* BADGE */
+ .badge {
+ display: inline-block;
+ padding: 2px 9px;
+ border-radius: 20px;
+ font-size: 11px;
+ font-weight: 600;
+ letter-spacing: 0.5px;
+ }
+ .badge-orange { background: var(--orange-pale); color: var(--orange); border: 1px solid var(--orange-light); }
+ .badge-teal { background: var(--teal-light); color: var(--teal); border: 1px solid var(--teal); }
+ .badge-dark { background: var(--dark); color: white; }
+ .badge-red { background: #ff8fa3; color: var(--red); border: 1px solid #ff8fa3; }
+ .badge-gold { background: #ff8fa3; color: var(--gold); border: 1px solid #ff8fa3; }
+
+ /* HIGHLIGHT BOX */
+ .highlight-box {
+ border-left: 4px solid var(--orange);
+ background: var(--orange-pale);
+ border-radius: 0 8px 8px 0;
+ padding: 14px 18px;
+ margin: 10px 0;
+ font-size: 14px;
+ }
+ .highlight-box strong { color: var(--orange); }
+
+ .highlight-teal {
+ border-left-color: var(--teal);
+ background: var(--teal-light);
+ }
+ .highlight-teal strong { color: var(--teal); }
+
+ /* FULL WIDTH CARD */
+ .card-full {
+ background: var(--white);
+ border: 1.5px solid var(--border);
+ border-radius: 10px;
+ padding: 22px 26px;
+ margin-bottom: 16px;
+ }
+
+ /* NERVE TABLE SPECIAL */
+ .nerve-num {
+ font-family: 'Playfair Display', serif;
+ font-weight: 700;
+ color: var(--orange);
+ font-size: 15px;
+ }
+
+ /* GLASGOW */
+ .glasgow-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+ .glasgow-col { border-radius: 8px; overflow: hidden; }
+ .glasgow-head {
+ background: var(--dark);
+ color: white;
+ padding: 10px 14px;
+ font-weight: 600;
+ font-size: 13px;
+ text-align: center;
+ }
+ .glasgow-item {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 7px 12px;
+ border-bottom: 1px solid var(--border);
+ font-size: 13px;
+ }
+ .glasgow-item:last-child { border-bottom: none; }
+ .glasgow-score {
+ background: var(--orange);
+ color: white;
+ width: 24px; height: 24px;
+ border-radius: 50%;
+ display: flex; align-items: center; justify-content: center;
+ font-size: 12px;
+ font-weight: 700;
+ flex-shrink: 0;
+ }
+
+ /* LESION TYPES */
+ .lesion-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+ .lesion-card {
+ border-radius: 10px;
+ padding: 18px 16px;
+ text-align: center;
+ }
+ .lesion-icon { font-size: 28px; margin-bottom: 8px; }
+ .lesion-card h4 {
+ font-family: 'Playfair Display', serif;
+ font-size: 15px;
+ margin-bottom: 6px;
+ }
+ .lesion-card p { font-size: 12.5px; }
+ .lesion-card small {
+ display: block;
+ margin-top: 6px;
+ font-size: 11.5px;
+ font-weight: 600;
+ font-style: italic;
+ }
+
+ /* DIVIDER */
+ .divider {
+ height: 1px;
+ background: linear-gradient(to right, var(--orange), transparent);
+ margin: 48px 0;
+ opacity: 0.4;
+ }
+
+ /* FOOTNOTE */
+ .footnote {
+ text-align: center;
+ padding: 24px;
+ color: var(--muted);
+ font-size: 12.5px;
+ border-top: 1px solid var(--border);
+ margin-top: 32px;
+ }
+
+ p { font-size: 14px; color: var(--text); }
+
+ @media(max-width: 768px) {
+ .grid-2, .grid-3, .glasgow-grid, .lesion-grid { grid-template-columns: 1fr; }
+ .hero h1 { font-size: 34px; }
+ .container { padding: 0 16px 48px; }
+ .hero { padding: 36px 20px 28px; }
+ }
+</style>
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/physio-patho.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-theme.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
+</head>
+<body>
+<a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
+<div class="page-toggle"><div class="pt-inner"><a href="../../qcm/neuro/systeme-nerveux.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<!-- HERO -->
+<div class="hero">
+ <div class="hero-tag">Physiopathologie I</div>
+ <h1>Système <span>Nerveux</span></h1>
+ <div class="hero-sub">Fiche de révision complète · Cláudia Costa · 09/03/2025</div>
+</div>
+
+<div class="container">
+
+ <!-- ===== 1. STRUCTURE ===== -->
+ <div class="section-block">
+ <div class="section-header">
+ <div class="section-num">1</div>
+ <div class="section-title">Division structurelle du Système Nerveux</div>
+ </div>
+
+ <div class="grid-2">
+ <div class="card card-dark">
+ <div class="card-title">Système Nerveux Central (SNC)</div>
+ <h3>Encéphale + Moelle épinière</h3>
+ <ul class="clean">
+ <li><strong style="color:var(--orange-light)">Cerveau</strong> — fonctions supérieures (cognition, motricité volontaire)</li>
+ <li><strong style="color:var(--orange-light)">Cervelet</strong> — coordination, équilibre</li>
+ <li><strong style="color:var(--orange-light)">Tronc cérébral</strong> — mésencéphale, pont, bulbe (fonctions vitales)</li>
+ <li><strong style="color:var(--orange-light)">Moelle épinière</strong> — relais sensitif/moteur</li>
+ </ul>
+ </div>
+ <div class="card card-orange">
+ <div class="card-title">Système Nerveux Périphérique (SNP)</div>
+ <h3>Nerfs + Ganglions + Terminaisons</h3>
+ <ul class="clean">
+ <li><strong>12 paires crâniennes</strong> — voie corticobulbaire</li>
+ <li><strong>31 paires rachidiennes</strong> — voie cortico-spinale</li>
+ <li>Ganglions nerveux</li>
+ <li>Terminaisons nerveuses libres et corpusculaires</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+
+ <!-- ===== 2. FONCTIONS ===== -->
+ <div class="section-block">
+ <div class="section-header">
+ <div class="section-num">2</div>
+ <div class="section-title">Division fonctionnelle du Système Nerveux</div>
+ </div>
+
+ <div class="grid-2">
+ <div class="card">
+ <div class="card-title">SN Somatique</div>
+ <ul class="clean">
+ <li><span class="badge badge-orange">Afférent</span> Sensitif — extérocepteurs (peau, sens)</li>
+ <li><span class="badge badge-dark">Efférent</span> Moteur — muscles squelettiques (volontaire)</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title">SN Viscéral (= SN Autonome)</div>
+ <ul class="clean">
+ <li><span class="badge badge-orange">Afférent</span> Sensitif — viscérocepteurs (organes internes)</li>
+ <li><span class="badge badge-dark">Efférent</span> Moteur — muscles lisses, cœur, glandes</li>
+ </ul>
+ <div style="margin-top:12px; display:flex; gap:8px; flex-wrap:wrap;">
+ <span class="badge badge-teal">Parasympathique — Repos / digestion</span>
+ <span class="badge badge-red">Sympathique — Combat ou fuite</span>
+ </div>
+ </div>
+ </div>
+
+ <div class="card-full" style="margin-top:16px;">
+ <div class="card-title">Rappel — SN Autonome</div>
+ <div class="grid-2" style="margin-top:6px;">
+ <div>
+ <strong style="color:var(--teal)">Parasympathique (repos)</strong>
+ <ul class="clean" style="margin-top:6px;">
+ <li>Contraction pupille</li>
+ <li>Stimule flux salivaire et lacrymal</li>
+ <li>Ralentit rythme cardiaque</li>
+ <li>Stimule péristaltisme et sécrétion</li>
+ <li>Retard bronches</li>
+ </ul>
+ </div>
+ <div>
+ <strong style="color:var(--red)">Sympathique (combat/fuite)</strong>
+ <ul class="clean" style="margin-top:6px;">
+ <li>Dilatation pupille</li>
+ <li>Inhibe flux salivaire</li>
+ <li>Accélère battements cardiaques</li>
+ <li>Dilate bronches</li>
+ <li>Stimule sécrétion adrénaline/noradrénaline</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <!-- ===== 3. NERFS CRANIENS ===== -->
+ <div class="section-block">
+ <div class="section-header">
+ <div class="section-num">3</div>
+ <div class="section-title">Les 12 Paires Crâniennes</div>
+ </div>
+
+ <div class="card-full">
+ <table>
+ <thead>
+ <tr>
+ <th>N°</th>
+ <th>Nom</th>
+ <th>Type</th>
+ <th>Fonction principale</th>
+ <th>Test clinique</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td><span class="nerve-num">I</span></td>
+ <td>Olfactif</td>
+ <td><span class="badge badge-orange">Sensitif</span></td>
+ <td>Odorat</td>
+ <td>Identifier odeurs yeux fermés</td>
+ </tr>
+ <tr>
+ <td><span class="nerve-num">II</span></td>
+ <td>Optique</td>
+ <td><span class="badge badge-orange">Sensitif</span></td>
+ <td>Vision, champs visuels</td>
+ <td>Acuité visuelle, champ visuel, fond d'œil</td>
+ </tr>
+ <tr>
+ <td><span class="nerve-num">III</span></td>
+ <td>Oculomoteur</td>
+ <td><span class="badge badge-dark">Moteur</span></td>
+ <td>Mouvements oculaires, pupille</td>
+ <td>Suivi du doigt, réflexe pupillaire</td>
+ </tr>
+ <tr>
+ <td><span class="nerve-num">IV</span></td>
+ <td>Trochléaire</td>
+ <td><span class="badge badge-dark">Moteur</span></td>
+ <td>Mouvement oculaire vers le bas/intérieur</td>
+ <td>Mouvements compensatoires de la tête</td>
+ </tr>
+ <tr>
+ <td><span class="nerve-num">V</span></td>
+ <td>Trijumeau</td>
+ <td><span class="badge badge-gold">Mixte</span></td>
+ <td>Sensibilité face, mastication</td>
+ <td>Toucher zones faciales, morsure</td>
+ </tr>
+ <tr>
+ <td><span class="nerve-num">VI</span></td>
+ <td>Abducens</td>
+ <td><span class="badge badge-dark">Moteur</span></td>
+ <td>Abduction du globe oculaire</td>
+ <td>Regard latéral</td>
+ </tr>
+ <tr>
+ <td><span class="nerve-num">VII</span></td>
+ <td>Facial</td>
+ <td><span class="badge badge-gold">Mixte</span></td>
+ <td>Muscles faciaux, goût (⅔ ant. langue)</td>
+ <td>Sourire, froncer les sourcils, fermer yeux</td>
+ </tr>
+ <tr>
+ <td><span class="nerve-num">VIII</span></td>
+ <td>Vestibulocochléaire</td>
+ <td><span class="badge badge-orange">Sensitif</span></td>
+ <td>Audition, équilibre, proprioception</td>
+ <td>Tests de Weber/Rinne, Romberg</td>
+ </tr>
+ <tr>
+ <td><span class="nerve-num">IX</span></td>
+ <td>Glossopharyngien</td>
+ <td><span class="badge badge-gold">Mixte</span></td>
+ <td>Goût (⅓ post. langue), réflexe vomitif</td>
+ <td>Réflexe nauséeux</td>
+ </tr>
+ <tr>
+ <td><span class="nerve-num">X</span></td>
+ <td>Vague (pneumogastrique)</td>
+ <td><span class="badge badge-gold">Mixte</span></td>
+ <td>Cœur, bronches, tube digestif</td>
+ <td>Dysphonie, aphonie, dysphagie</td>
+ </tr>
+ <tr>
+ <td><span class="nerve-num">XI</span></td>
+ <td>Spinal / Accessoire</td>
+ <td><span class="badge badge-dark">Moteur</span></td>
+ <td>Trapèze, sternocléidomastoïdien</td>
+ <td>Rotation tête, haussement d'épaule contre résistance</td>
+ </tr>
+ <tr>
+ <td><span class="nerve-num">XII</span></td>
+ <td>Hypoglosse</td>
+ <td><span class="badge badge-dark">Moteur</span></td>
+ <td>Muscles de la langue</td>
+ <td>Tirer la langue (déviation = lésion)</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+
+ <!-- ===== 4. EXAMEN NEUROLOGIQUE ===== -->
+ <div class="section-block">
+ <div class="section-header">
+ <div class="section-num">4</div>
+ <div class="section-title">Examen Neurologique — Conscience & Cognition</div>
+ </div>
+
+ <div class="grid-3">
+ <div class="card">
+ <div class="card-title">Niveaux de Conscience</div>
+ <ul class="clean">
+ <li><strong>Confusion</strong> — réponses inappropriées, ↓ attention</li>
+ <li><strong>Léthargie</strong> — somnolence marquée</li>
+ <li><strong>Délire</strong> — confusion + agitation motrice</li>
+ <li><strong>Stupeur</strong> — réveil bref aux stimuli</li>
+ <li><strong>Coma</strong> — impossible à réveiller</li>
+ </ul>
+ </div>
+ <div class="card card-teal">
+ <div class="card-title">Évaluation Cognitive</div>
+ <ul class="clean">
+ <li>Orientation temps/espace</li>
+ <li>Analogies / pensée abstraite</li>
+ <li>Calculs arithmétiques</li>
+ <li>Praxie (capacité motrice)</li>
+ <li>Gnosie (reconnaissance d'objets)</li>
+ <li>Mémoire, attention, esprit critique</li>
+ <li>Aphasie / discours / langage</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title">Outils Standardisés</div>
+ <div class="highlight-box" style="margin-bottom:8px;">
+ <strong>MoCA</strong> — Évaluation cognitive globale (attention, mémoire, langage, visuospatial)
+ </div>
+ <div class="highlight-box highlight-teal">
+ <strong>État Mini-Mental (MMSE)</strong> — Dépistage des démences, score /30
+ </div>
+ </div>
+ </div>
+
+ <!-- GLASGOW -->
+ <div style="margin-top:20px;">
+ <div class="card-title" style="margin-bottom:12px; font-size:13px;">Échelle de Glasgow (score 3–15)</div>
+ <div class="glasgow-grid">
+ <div class="glasgow-col" style="border: 1.5px solid var(--border); border-radius:8px; overflow:hidden;">
+ <div class="glasgow-head">👁 Réponse Oculaire</div>
+ <div class="glasgow-item"><span>Spontanée</span><div class="glasgow-score">4</div></div>
+ <div class="glasgow-item"><span>À la voix</span><div class="glasgow-score">3</div></div>
+ <div class="glasgow-item"><span>À la douleur</span><div class="glasgow-score">2</div></div>
+ <div class="glasgow-item"><span>Aucune</span><div class="glasgow-score" style="background:var(--red)">1</div></div>
+ </div>
+ <div class="glasgow-col" style="border: 1.5px solid var(--border); border-radius:8px; overflow:hidden;">
+ <div class="glasgow-head">💬 Réponse Verbale</div>
+ <div class="glasgow-item"><span>Orientée</span><div class="glasgow-score">5</div></div>
+ <div class="glasgow-item"><span>Confuse</span><div class="glasgow-score">4</div></div>
+ <div class="glasgow-item"><span>Mots inappropriés</span><div class="glasgow-score">3</div></div>
+ <div class="glasgow-item"><span>Sons incompréhensibles</span><div class="glasgow-score">2</div></div>
+ <div class="glasgow-item"><span>Aucune</span><div class="glasgow-score" style="background:var(--red)">1</div></div>
+ </div>
+ <div class="glasgow-col" style="border: 1.5px solid var(--border); border-radius:8px; overflow:hidden;">
+ <div class="glasgow-head">✋ Réponse Motrice</div>
+ <div class="glasgow-item"><span>Obéit aux ordres</span><div class="glasgow-score">6</div></div>
+ <div class="glasgow-item"><span>Localise la douleur</span><div class="glasgow-score">5</div></div>
+ <div class="glasgow-item"><span>Retrait à la douleur</span><div class="glasgow-score">4</div></div>
+ <div class="glasgow-item"><span>Flexion (décortication)</span><div class="glasgow-score">3</div></div>
+ <div class="glasgow-item"><span>Extension (décérébration)</span><div class="glasgow-score">2</div></div>
+ <div class="glasgow-item"><span>Aucune</span><div class="glasgow-score" style="background:var(--red)">1</div></div>
+ </div>
+ </div>
+ <div class="highlight-box" style="margin-top:12px;">
+ <strong>Interprétation :</strong> Score 13–15 = traumatisme léger · 9–12 = modéré · ≤8 = sévère (coma)
+ </div>
+ </div>
+ </div>
+
+ <!-- ===== 5. ÉVALUATION MUSCULAIRE & SENSITIF ===== -->
+ <div class="section-block">
+ <div class="section-header">
+ <div class="section-num">5</div>
+ <div class="section-title">Évaluation Musculaire & Sensitive</div>
+ </div>
+
+ <div class="grid-3">
+ <div class="card">
+ <div class="card-title">Masse musculaire</div>
+ <ul class="clean">
+ <li>Atrophie musculaire (→ lésion SNP)</li>
+ <li>Fasciculations (contractions involontaires)</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title">Force musculaire (cotation 0–5)</div>
+ <ul class="clean">
+ <li><strong>0</strong> — aucune contraction</li>
+ <li><strong>1</strong> — contraction visible</li>
+ <li><strong>2</strong> — mouvement sans gravité</li>
+ <li><strong>3</strong> — mouvement contre gravité</li>
+ <li><strong>4</strong> — mouvement contre résistance</li>
+ <li><strong>5</strong> — force normale</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title">Tonus musculaire</div>
+ <ul class="clean">
+ <li>Tension résiduelle au repos</li>
+ <li>Résistance au mouvement passif</li>
+ <li><strong>Spasticité</strong> → lésion voie pyramidale</li>
+ <li><strong>Hypotonie / flaccidité</strong> → lésion corne antérieure ou myopathie</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="card-full" style="margin-top:16px;">
+ <div class="card-title">Évaluation de la Sensibilité</div>
+ <div class="grid-3" style="margin-top:8px;">
+ <div>
+ <strong>Sensibilité de base</strong>
+ <ul class="clean" style="margin-top:4px;">
+ <li>Douloureuse (piqûre)</li>
+ <li>Vibratoire (diapason)</li>
+ <li>Proprioception (position articulaire)</li>
+ <li>Localisation tactile</li>
+ </ul>
+ </div>
+ <div>
+ <strong>Sensibilité discriminative</strong>
+ <ul class="clean" style="margin-top:4px;">
+ <li>Discrimination de deux points</li>
+ <li>Stéréognosie (reconnaître objet)</li>
+ <li>Graphesthésie (lettre écrite sur peau)</li>
+ <li>Localisation d'un point précis</li>
+ </ul>
+ </div>
+ <div>
+ <strong>Réflexes ostéo-tendineux</strong>
+ <ul class="clean" style="margin-top:4px;">
+ <li>Bicipital (C5-C6)</li>
+ <li>Tricipital (C7)</li>
+ <li>Brachio-radial (C6)</li>
+ <li>Rotulien (L4)</li>
+ <li>Achilléen (S1)</li>
+ </ul>
+ <div class="highlight-box" style="margin-top:8px; font-size:12px;">
+ ↑ Réflexes = pathologie voie pyramidale<br>↓ Réflexes = corne antérieure / myopathie
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <!-- ===== 6. FONCTIONS CÉRÉBELLEUSES & MARCHE ===== -->
+ <div class="section-block">
+ <div class="section-header">
+ <div class="section-num">6</div>
+ <div class="section-title">Fonction Cérébelleuse, Méninges & Marche</div>
+ </div>
+
+ <div class="grid-2">
+ <div class="card">
+ <div class="card-title">Tests cérébelleux</div>
+ <ul class="clean">
+ <li><strong>Épreuve doigt-nez</strong> — coordination MS</li>
+ <li><strong>Épreuve talon-genou</strong> — coordination MI</li>
+ <li><strong>Mouvements alternés rapides</strong> — dysdiadococinésie</li>
+ <li><strong>Test de Romberg</strong> — équilibre proprioceptif</li>
+ <li><strong>Marche</strong> — sur la pointe, sur les talons, pied devant pied</li>
+ </ul>
+ </div>
+ <div class="card card-teal">
+ <div class="card-title">Irritation méningée</div>
+ <ul class="clean">
+ <li><strong>Raideur de nuque</strong> — résistance à la flexion cervicale</li>
+ <li><strong>Signe de Brudzinski</strong> — flexion involontaire hanches/genoux lors de la flexion du cou</li>
+ <li><strong>Signe de Kernig</strong> — douleur lombaire + résistance à l'extension du genou, hanche fléchie à 90°</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="card-full" style="margin-top:16px;">
+ <div class="card-title">Types de Marche Pathologique</div>
+ <div class="grid-3" style="margin-top:8px; gap:10px;">
+ <div class="highlight-box"><strong>Hémiplégie</strong> — circumduction du membre inférieur, bras fléchi en écharpe</div>
+ <div class="highlight-box"><strong>Parkinson</strong> — petits pas, piétinement, festination, perte ballant des bras</div>
+ <div class="highlight-box"><strong>Ataxie cérébelleuse</strong> — démarche ébrieuse, élargissement du polygone de sustentation</div>
+ <div class="highlight-box highlight-teal"><strong>Steppage (footdrop)</strong> — relevé exagéré du pied, paralysie des releveurs</div>
+ <div class="highlight-box highlight-teal"><strong>Ataxie sensitive</strong> — marche talonnante, aggravée les yeux fermés (Romberg +)</div>
+ <div class="highlight-box"><strong>À retenir</strong> — tous les patients ne présenteront pas une altération linéaire !</div>
+ </div>
+ </div>
+ </div>
+
+ <!-- ===== 7. TOPODIAGNOSTIC ===== -->
+ <div class="section-block">
+ <div class="section-header">
+ <div class="section-num">7</div>
+ <div class="section-title">Topodiagnostic & Classification des Lésions</div>
+ </div>
+
+ <div class="highlight-box" style="margin-bottom:20px; font-size:14.5px;">
+ <strong>Topodiagnostic</strong> = diagnostic de la localisation anatomique d'une lésion, à partir de l'ensemble des signes et symptômes présentés.
+ </div>
+
+ <div class="lesion-grid">
+ <div class="lesion-card" style="background:#FDF0E3; border:1.5px solid var(--orange-light);">
+ <div class="lesion-icon">🎯</div>
+ <h4 style="color:var(--orange)">Focale</h4>
+ <p>Lésion d'une seule structure/zone cérébrale</p>
+ <small style="color:var(--orange)">Ex : AVC ischémique</small>
+ </div>
+ <div class="lesion-card" style="background:#FDF5DC; border:1.5px solid var(--gold);">
+ <div class="lesion-icon">🔵🔵</div>
+ <h4 style="color:var(--gold)">Multifocale</h4>
+ <p>Plusieurs lésions focales distinctes</p>
+ <small style="color:var(--gold)">Ex : Sclérose en Plaques (SEP)</small>
+ </div>
+ <div class="lesion-card" style="background:#D4EDEA; border:1.5px solid var(--teal);">
+ <div class="lesion-icon">🌊</div>
+ <h4 style="color:var(--teal)">Diffuse</h4>
+ <p>Atteinte de l'ensemble de la structure cérébrale</p>
+ <small style="color:var(--teal)">Ex : Encéphalite</small>
+ </div>
+ <div class="lesion-card" style="background:#FDECEA; border:1.5px solid #E8A09A;">
+ <div class="lesion-icon">📡</div>
+ <h4 style="color:var(--red)">Systématisée</h4>
+ <p>Atteinte d'un système fonctionnel particulier</p>
+ <small style="color:var(--red)">Ex : SLA — système moteur</small>
+ </div>
+ </div>
+
+ <div class="grid-3" style="margin-top:16px;">
+ <div class="card">
+ <div class="card-title">Lésions Périphériques</div>
+ <ul class="clean">
+ <li>Atteinte des nerfs périphériques</li>
+ <li>Hypotonie, aréflexie</li>
+ <li>Atrophie musculaire + fasciculations</li>
+ <li>Déficit sensitif en «gant» ou «chaussette»</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title">Lésions Médullaires</div>
+ <ul class="clean">
+ <li>Déficit moteur et sensitif en dessous du niveau lésionnel</li>
+ <li>Syndrome de Brown-Séquard (hémi-section)</li>
+ <li>Troubles sphinctériens</li>
+ <li>Spasticité (lésion voie pyramidale)</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title">Lésions Cérébrales</div>
+ <ul class="clean">
+ <li>Hémiplégie controlatérale</li>
+ <li>Aphasie (hémisphère dominant)</li>
+ <li>Négligence, apraxie, agnosie</li>
+ <li>Troubles cognitifs et comportementaux</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="card-full" style="margin-top:16px;">
+ <div class="card-title">Pathologies par type de lésion cérébrale (focale)</div>
+ <div class="grid-3" style="margin-top:8px;">
+ <div class="highlight-box"><strong>Vasculaire</strong> — AVC ischémique, hémorragique, malformations artério-veineuses</div>
+ <div class="highlight-box"><strong>Tumorale</strong> — gliomes, méningiomes, métastases → signes d'hypertension intracrânienne</div>
+ <div class="highlight-box"><strong>Traumatique</strong> — contusion cérébrale, hématome épidural/subdural, fracture</div>
+ <div class="highlight-box highlight-teal"><strong>Inflammatoire</strong> — méningite, encéphalite, abcès cérébral</div>
+ <div class="highlight-box highlight-teal"><strong>Démyélinisante</strong> — SEP, névrite optique, lésions de la substance blanche</div>
+ <div class="highlight-box highlight-teal"><strong>Toxique / Métabolique</strong> — encéphalopathies, intoxications, troubles électrolytiques</div>
+ </div>
+ </div>
+ </div>
+
+ <!-- ===== 8. RECAP ===== -->
+ <div class="section-block">
+ <div class="section-header">
+ <div class="section-num">8</div>
+ <div class="section-title">Points-Clés à Retenir</div>
+ </div>
+
+ <div class="grid-2">
+ <div class="card card-dark">
+ <div class="card-title">Mémo — Localisations lésionnelles</div>
+ <ul class="clean">
+ <li>Lésion <strong style="color:var(--orange-light)">SNP</strong> → hypotonie + aréflexie + atrophie</li>
+ <li>Lésion <strong style="color:var(--orange-light)">voie pyramidale</strong> → hypertonie + hyperréflexie</li>
+ <li>Lésion <strong style="color:var(--orange-light)">cervelet</strong> → ataxie, dysdiadococinésie</li>
+ <li>Lésion <strong style="color:var(--orange-light)">tronc cérébral</strong> → signes croisés (ipsi + contro)</li>
+ <li>Lésion <strong style="color:var(--orange-light)">moelle</strong> → niveau sensitif-moteur</li>
+ </ul>
+ </div>
+ <div class="card card-orange">
+ <div class="card-title">Moyen mnémotechnique — Paires crâniennes</div>
+ <div style="background:rgba(0,0,0,0.15); border-radius:6px; padding:12px; margin-top:4px;">
+ <p style="font-size:13px; font-style:italic; color:white; line-height:1.8;">
+ <strong>O</strong>n <strong>O</strong>uvre <strong>O</strong>u <strong>T</strong>ous <strong>T</strong>rois <strong>A</strong>ssez <strong>F</strong>acile
+ <strong>V</strong>oir <strong>G</strong>esticuler <strong>V</strong>ite <strong>A</strong>ssez <strong>H</strong>ardiment
+ </p>
+ <p style="font-size:11px; color:rgba(255,255,255,0.7); margin-top:6px;">I-Olfactif · II-Optique · III-Oculomoteur · IV-Trochléaire · V-Trijumeau · VI-Abducens · VII-Facial · VIII-Vestibulo · IX-Glossoph · X-Vague · XI-Accessoire · XII-Hypoglosse</p>
+ </div>
+ </div>
+ </div>
+
+ <div class="card-full" style="margin-top:16px; border-color: var(--orange); border-width:2px;">
+ <div class="card-title">Prochain cours — Pathologie neurologique</div>
+ <p>Lésion et régénération du SNP — bases cellulaires de la dégénérescence wallérienne, régénération axonale, neuropathies périphériques.</p>
+ </div>
+ </div>
+
+</div>
+
+<div class="footnote">
+ Fiche réalisée d'après le cours de Physiopathologie I · Cláudia Costa · 2025
+</div>
+
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/neuro/systeme-nerveux.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+</body>
+</html>

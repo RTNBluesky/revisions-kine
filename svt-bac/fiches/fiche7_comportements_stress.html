@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Comportements et stress : vers une vision intégrée de l'organisme — :root { --bg: #0f1117; --bg2: #0f1117; --bg3: #161922; --accent: #a5a0ff; --accent2: #a5a0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../assets/css/acces.css">
+<script src="../../assets/js/acces.js"></script>
+<title>Fiche 7 — Comportements et stress | SVT Terminale</title>
+<link rel="stylesheet" href="../assets/css/chrome.css">
+<style>
+ :root {
+ --bg: #0f1117; --bg2: #0f1117; --bg3: #161922;
+ --accent: #a5a0ff; --accent2: #a5a0ff; --accent3: #a5a0ff;
+ --accent4: #6366f1; --text: #a5a0ff; --muted: #9aa3b8;
+ --border: #2a3050; --tag-bg: #161922;
+ }
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; font-size: 15px; line-height: 1.7; }
+ header { background: linear-gradient(135deg, #0f1117 0%, #0f1117 100%); border-bottom: 2px solid var(--accent); padding: 2rem 2.5rem; display: flex; flex-direction: column; gap: 0.5rem; }
+ header .tag { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); font-weight: 700; }
+ header h1 { font-size: 2rem; font-weight: 800; color: #e8eaf0; }
+ header .meta { color: var(--muted); font-size: 0.88rem; display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 0.25rem; }
+ nav { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 0.75rem 2.5rem; display: flex; gap: 0.6rem; flex-wrap: wrap; }
+ nav a { color: var(--muted); text-decoration: none; font-size: 0.82rem; padding: 0.3rem 0.8rem; border-radius: 20px; background: var(--bg3); }
+ nav a:hover { color: var(--accent); }
+ main { max-width: 960px; margin: 0 auto; padding: 2rem 2.5rem; }
+ section { margin-bottom: 2.5rem; }
+ h2 { font-size: 1.25rem; font-weight: 700; color: var(--accent); border-left: 4px solid var(--accent); padding-left: 0.9rem; margin-bottom: 1.2rem; margin-top: 0.5rem; }
+ h3 { font-size: 1rem; font-weight: 700; color: var(--accent2); margin: 1.1rem 0 0.5rem; }
+ h4 { font-size: 0.93rem; font-weight: 600; color: var(--accent3); margin: 0.9rem 0 0.3rem; }
+ p { margin-bottom: 0.7rem; }
+ .card { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; }
+ .card.green { border-left: 4px solid var(--accent3); }
+ .card.blue { border-left: 4px solid var(--accent4); }
+ .card.yellow{ border-left: 4px solid var(--accent2); }
+ .card.red { border-left: 4px solid var(--accent); }
+ .def-box { background: #0f1117; border: 1px solid #2a3050; border-radius: 8px; padding: 0.9rem 1.2rem; margin: 0.5rem 0 1rem; }
+ .def-box .label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent2); font-weight: 700; margin-bottom: 0.3rem; }
+ .def-box strong { color: var(--accent3); }
+ ul { padding-left: 1.4rem; margin-bottom: 0.8rem; }
+ ul li { margin-bottom: 0.3rem; }
+ ul li::marker { color: var(--accent); }
+ ol { padding-left: 1.4rem; margin-bottom: 0.8rem; }
+ ol li { margin-bottom: 0.4rem; }
+ ol li::marker { color: var(--accent3); font-weight: 700; }
+ table { width: 100%; border-collapse: collapse; margin: 0.8rem 0 1.2rem; font-size: 0.88rem; }
+ th { background: var(--bg3); color: var(--accent); padding: 0.6rem 0.9rem; text-align: left; border-bottom: 2px solid var(--accent); }
+ td { padding: 0.55rem 0.9rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+ tr:nth-child(even) td { background: #0f1117; }
+ .keyword { display: inline-block; background: var(--tag-bg); color: var(--accent); border: 1px solid #2a3050; border-radius: 4px; padding: 0.1rem 0.5rem; font-size: 0.8rem; font-weight: 600; margin: 0.15rem; }
+ .important { background: #0f1117; border: 1px solid #2a3050; border-radius: 8px; padding: 0.8rem 1.1rem; margin: 0.8rem 0; color: var(--accent); }
+ .important::before { content: "⚠ À retenir — "; font-weight: 700; }
+ .schema-box { background: var(--bg3); border: 1px dashed var(--border); border-radius: 8px; padding: 1rem; margin: 0.8rem 0; font-family: monospace; font-size: 0.85rem; color: var(--accent3); line-height: 2; }
+ .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+ @media(max-width:640px){ .grid2 { grid-template-columns: 1fr; } }
+ footer { text-align: center; padding: 2rem; color: var(--muted); font-size: 0.8rem; border-top: 1px solid var(--border); margin-top: 2rem; }
+</style>
+</head>
+<body>
+
+<a href="../accueil-svt.html" class="back-nav">← SVT Bac 2026</a>
+
+<div class="page-toggle"><div class="pt-inner"><a href="../qcm/qcm7_comportements_stress.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+
+<header>
+ <div class="tag">Thème III — Corps humain et santé</div>
+ <h1>Comportements et stress : vers une vision intégrée de l'organisme</h1>
+ <div class="meta">
+ <span>📚 1 semaine</span>
+ <span>🎯 SVT Terminale Spécialité</span>
+ <span>🗂 Fiche 7 / 7</span>
+ </div>
+</header>
+
+<nav>
+ <a href="../accueil-svt.html" style="background:rgba(32,36,58,.1);color:#8b7cf8;border:1px solid rgba(58,64,96,.3);text-decoration:none;font-size:.78rem;padding:.25rem .75rem;border-radius:16px;margin-right:.25rem">← Index</a>
+ <a href="#stress-def">Le stress</a>
+ <a href="#axe">Axe HHC/HPA</a>
+ <a href="#phases">3 phases</a>
+ <a href="#cortisol">Le cortisol</a>
+ <a href="#adrenaline">Adrénaline</a>
+ <a href="#bzd">GABA &amp; BZD</a>
+ <a href="#chronique">Stress chronique</a>
+ <a href="#neuroplasticite">Neuroplasticité</a>
+ <a href="#pheo">Phéochromocytome</a>
+ <a href="#integration">Vision intégrée</a>
+ <a href="#mots-cles">Mots-clés</a>
+</nav>
+
+<main>
+
+ <section>
+ <div class="card red">
+ <h3 style="margin-top:0">⚡ Plan du chapitre</h3>
+ <ol>
+ <li>Définition et types de stress — système limbique</li>
+ <li>L'axe hypothalamo-hypophyso-corticosurrénalien (HHC/HPA) et les 3 phases</li>
+ <li>Le cortisol (glucocorticoïde)</li>
+ <li>La réponse rapide : adrénaline, cellules chromaffines, système sympathique</li>
+ <li>GABA, noyau paraventriculaire et benzodiazépines</li>
+ <li>Stress chronique : conséquences et neuroplasticité</li>
+ <li>Phéochromocytome, PNMT, CYP11A1</li>
+ <li>Variabilité interindividuelle et vision intégrée</li>
+ </ol>
+ </div>
+ </section>
+
+ <!-- 1. STRESS -->
+ <section id="stress-def">
+ <h2>1. Le stress — définition et perception</h2>
+
+ <div class="def-box">
+ <div class="label">Définition (Selye, 1936)</div>
+ <strong>Stress :</strong> réponse non spécifique de l'organisme à toute demande (agression) qui lui est faite. Le stresseur (agent stressant) peut être physique, chimique, biologique ou psychologique.
+ </div>
+
+ <h3>1.1 Types de stresseurs</h3>
+ <div class="grid2">
+ <div class="card yellow">
+ <h4 style="margin-top:0">Stresseurs physiques</h4>
+ <ul>
+ <li>Douleur, blessure</li>
+ <li>Froid / chaud extrême</li>
+ <li>Effort physique intense</li>
+ <li>Hypoglycémie, hypoxie</li>
+ </ul>
+ </div>
+ <div class="card blue">
+ <h4 style="margin-top:0">Stresseurs psychologiques</h4>
+ <ul>
+ <li>Peur, anxiété</li>
+ <li>Conflit, surcharge de travail</li>
+ <li>Deuil, rupture</li>
+ <li>Incertitude, prise de décision</li>
+ </ul>
+ </div>
+ </div>
+
+ <h3>1.2 Le système limbique : interface stress/comportement</h3>
+ <ul>
+ <li><strong>Amygdale :</strong> détecte le danger, déclenche la réponse de peur/stress → active l'hypothalamus</li>
+ <li><strong>Hippocampe :</strong> contextualise la peur (mémoire), peut inhiber la réponse au stress</li>
+ <li><strong>Cortex préfrontal :</strong> évalue la situation, module (inhibe ou amplifie) la réponse au stress</li>
+ </ul>
+ </section>
+
+ <!-- 2. AXE HHC/HPA -->
+ <section id="axe">
+ <h2>2. L'axe hypothalamo-hypophyso-corticosurrénalien (HHC / HPA)</h2>
+
+ <p>C'est la voie <strong>neuro-endocrine</strong> principale de la réponse au stress. Le terme officiel du cours est <em>axe HHC</em> (ou HPA en anglais : Hypothalamic-Pituitary-Adrenal).</p>
+
+ <div class="schema-box">
+Stresseur → Système limbique (amygdale, hippocampe, cortex préfrontal)
+ ↓
+HYPOTHALAMUS (noyau paraventriculaire, NPV) → sécrète CRH dans le sang
+ ↓
+HYPOPHYSE ANTÉRIEURE (cellules adrénocorticotropes) → sécrète ACTH
+ ↓
+CORTEX SURRÉNALIEN (zone fasciculée) → sécrète CORTISOL (glucocorticoïde)
+ ↓
+Effets : ↑ glycémie, anti-inflammatoire, mobilisation des lipides
+ ↕
+Rétrocontrôle négatif : le cortisol inhibe l'hypothalamus (↓ CRH) et l'hypophyse (↓ ACTH) → résilience
+ </div>
+ </section>
+
+ <!-- 2.5 PHASES -->
+ <section id="phases">
+ <h2>2.5 Les 3 phases de la réponse au stress (Selye)</h2>
+
+ <table>
+ <tr><th>Phase</th><th>Délai</th><th>Médiateur principal</th><th>Durée</th><th>Description</th></tr>
+ <tr><td><strong>1. Alarme</strong></td><td>Secondes</td><td>Adrénaline (médullo-surrénale)</td><td>Minutes</td><td>Réponse rapide : système sympathique → cellules chromaffines → adrénaline → ↑ FC, ↑ glycémie, ↑ fréquence ventilatoire</td></tr>
+ <tr><td><strong>2. Résistance</strong></td><td>Minutes</td><td>Cortisol (cortex surrénalien)</td><td>Heures</td><td>Axe HHC activé : CRH → ACTH → cortisol. Mobilisation des réserves énergétiques, immunosuppression adaptative</td></tr>
+ <tr><td><strong>3. Résilience</strong></td><td>Heures</td><td>Rétrocontrôle négatif du cortisol</td><td>Variable</td><td>Retour à l'homéostasie grâce au rétrocontrôle négatif. Si stress prolongé → dérèglement → stress chronique</td></tr>
+ </table>
+
+ <div class="def-box">
+ <div class="label">Résilience (biologique)</div>
+ <strong>Résilience :</strong> capacité de l'organisme à retrouver un fonctionnement normal après le stress grâce au rétrocontrôle négatif du cortisol sur l'hypothalamus et l'hypophyse. Si le stress est chronique, cette boucle est dépassée.
+ </div>
+ </section>
+
+ <!-- 3. CORTISOL -->
+ <section id="cortisol">
+ <h2>3. Le cortisol</h2>
+
+ <div class="def-box">
+ <div class="label">Nature chimique</div>
+ <strong>Cortisol :</strong> hormone stéroïdienne (dérivée du cholestérol), liposoluble → traverse les membranes → récepteur intracellulaire → modification de l'expression génique.
+ </div>
+
+ <h3>3.1 Effets du cortisol</h3>
+ <div class="grid2">
+ <div class="card green">
+ <h4 style="margin-top:0">Effets métaboliques (adaptatifs)</h4>
+ <ul>
+ <li>↑ Glycémie (néoglucogenèse hépatique)</li>
+ <li>↑ Catabolisme des protéines musculaires (acides aminés → glucose)</li>
+ <li>↑ Lipolyse (mobilisation des acides gras)</li>
+ <li>Mobilisation des réserves pour fournir l'énergie nécessaire</li>
+ </ul>
+ </div>
+ <div class="card red">
+ <h4 style="margin-top:0">Effets immunologiques</h4>
+ <ul>
+ <li>↓ Réponse inflammatoire (anti-inflammatoire)</li>
+ <li>↓ Production de cytokines</li>
+ <li>↓ Activité des lymphocytes</li>
+ <li>→ Immunosuppression (adaptative à court terme, délétère si chronique)</li>
+ </ul>
+ </div>
+ </div>
+
+ <h3>3.2 Rythme circadien du cortisol</h3>
+ <p>Le cortisol suit un rythme circadien : pic le matin (~8h), nadir la nuit. Ce rythme est régulé par l'horloge biologique (noyau suprachiasmatique de l'hypothalamus) et peut être perturbé par le stress chronique.</p>
+
+ <div class="important">
+ Le cortisol est utilisé en médecine comme anti-inflammatoire (cortisone, corticoïdes de synthèse). Abus ou production excessive (syndrome de Cushing) → obésité abdominale, hypertension, immunodépression, ostéoporose.
+ </div>
+ </section>
+
+ <!-- 4. ADRÉNALINE -->
+ <section id="adrenaline">
+ <h2>4. La réponse rapide : adrénaline et système sympathique</h2>
+
+ <div class="def-box">
+ <div class="label">Définition</div>
+ <strong>Adrénaline (épinéphrine) :</strong> catécholamine sécrétée par les <strong>cellules chromaffines</strong> de la <strong>médullo-surrénale</strong> en réponse à un stress aigu. Synthétisée à partir de la noradrénaline par l'enzyme codée par le gène <strong>PNMT</strong>. Agit sur des récepteurs membranaires (α et β-adrénergiques) → effets rapides.
+ </div>
+
+ <div class="def-box">
+ <div class="label">Cellules chromaffines</div>
+ <strong>Cellules chromaffines :</strong> cellules neuroendocrines de la <strong>médullosurrénale</strong> (tissu central de la glande surrénale). Elles sont innervées par les neurones sympathiques préganglionnaires (via l'hypothalamus). Leur activation déclenche l'<strong>exocytose d'adrénaline</strong> (et noradrénaline) dans le sang.
+ </div>
+
+ <h3>4.1 Effets de l'adrénaline : réponse « fight or flight »</h3>
+ <table>
+ <tr><th>Organe cible</th><th>Effet</th><th>Avantage adaptatif</th></tr>
+ <tr><td>Cœur</td><td>↑ FC et force de contraction</td><td>↑ Débit cardiaque → O₂ aux muscles</td></tr>
+ <tr><td>Poumons</td><td>Bronchodilatation</td><td>↑ Apport en O₂</td></tr>
+ <tr><td>Foie</td><td>Glycogénolyse → ↑ Glycémie</td><td>Énergie immédiate disponible</td></tr>
+ <tr><td>Vaisseaux musculaires</td><td>Vasodilatation</td><td>↑ Apport sanguin aux muscles</td></tr>
+ <tr><td>Peau, intestin</td><td>Vasoconstriction</td><td>Déviation du sang vers muscles</td></tr>
+ <tr><td>Pupilles</td><td>Dilatation (mydriase)</td><td>↑ Champ visuel</td></tr>
+ </table>
+
+ <h3>4.2 Noradrénaline</h3>
+ <p>Agit principalement comme <strong>neurotransmetteur</strong> du système nerveux sympathique (terminaisons nerveuses) mais aussi comme hormone (médullosurrénale). Effets similaires à l'adrénaline, avec plus de vasoconstriction.</p>
+ </section>
+
+ <!-- 4.5 GABA + BZD -->
+ <section id="bzd">
+ <h2>4.5 GABA, noyau paraventriculaire et benzodiazépines</h2>
+
+ <h3>4.5.1 Le circuit GABA inhibiteur de l'axe HHC</h3>
+ <p>À l'hypothalamus, le <strong>noyau préoptique (NPO)</strong> contient des neurones <strong>GABA-ergiques</strong> qui exercent une inhibition sur le <strong>noyau paraventriculaire (NPV)</strong> (celui qui sécrète le CRH).</p>
+ <div class="schema-box">
+NPO (noyau préoptique)
+ → neurones GABA-ergiques
+ → synapse inhibitrice sur NPV
+ → ↓ CRH → ↓ ACTH → ↓ cortisol
+ </div>
+
+ <p>Le <strong>GABA</strong> (acide γ-aminobutyrique) est le principal neurotransmetteur <strong>inhibiteur</strong> du système nerveux central. En situation de <strong>stress chronique</strong>, l'expression des récepteurs au GABA diminue au niveau de l'hypothalamus → signal inhibiteur réduit → sécrétion accrue de CRH → dérèglement de l'axe HHC.</p>
+
+ <h3>4.5.2 Les benzodiazépines (BZD)</h3>
+ <div class="def-box">
+ <div class="label">Mécanisme</div>
+ <strong>Benzodiazépines (BZD) :</strong> médicaments anxiolytiques, somnifères, antiépileptiques et myorelaxants. Ils potentialisent l'action du GABA sur les récepteurs <strong>GABA-A</strong> → renforcement de l'inhibition → réduction de l'axe HHC → effet anxiolytique.
+ </div>
+
+ <div class="grid2">
+ <div class="card green">
+ <h4 style="margin-top:0">Effets thérapeutiques</h4>
+ <ul>
+ <li>Anxiolytique (↓ anxiété)</li>
+ <li>Somnifère (favorise le sommeil)</li>
+ <li>Antiépileptique</li>
+ <li>Myorelaxant</li>
+ </ul>
+ </div>
+ <div class="card red">
+ <h4 style="margin-top:0">Risque de dépendance</h4>
+ <ul>
+ <li>Agissent aussi sur la désinhibition des neurones à dopamine</li>
+ <li>Action dans l'<strong>ATV</strong> (aire tegmentale ventrale) via récepteurs GABA-A de type α1</li>
+ <li>→ activation du circuit de récompense → dépendance possible</li>
+ <li>Même mécanisme que l'héroïne ou le cannabis</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="important">
+ Les BZD ne traitent que les <em>symptômes</em> du stress chronique (anxiété, tremblements, insomnie). Des pratiques non médicamenteuses — méditation, yoga, activité physique — permettent également de favoriser la résilience sans risque de dépendance.
+ </div>
+ </section>
+
+ <!-- 5. STRESS CHRONIQUE -->
+ <section id="chronique">
+ <h2>5. Stress chronique et pathologies</h2>
+
+ <p>Lorsque la réponse au stress est activée en permanence (stress chronique), les mécanismes adaptatifs deviennent délétères :</p>
+
+ <div class="grid2">
+ <div class="card red">
+ <h4 style="margin-top:0">Conséquences cardiovasculaires</h4>
+ <ul>
+ <li>Hypertension artérielle chronique</li>
+ <li>Athérosclérose accélérée</li>
+ <li>Risque accru d'infarctus</li>
+ </ul>
+ </div>
+ <div class="card yellow">
+ <h4 style="margin-top:0">Conséquences métaboliques</h4>
+ <ul>
+ <li>Hyperglycémie chronique → diabète type 2</li>
+ <li>Obésité viscérale (cortisol ↑ adipogenèse centrale)</li>
+ <li>Perte de masse musculaire</li>
+ </ul>
+ </div>
+ <div class="card blue">
+ <h4 style="margin-top:0">Conséquences immunitaires</h4>
+ <ul>
+ <li>Immunosuppression → infections récurrentes</li>
+ <li>Paradoxalement : inflammation chronique de bas grade</li>
+ <li>Risque accru de maladies auto-immunes</li>
+ </ul>
+ </div>
+ <div class="card green">
+ <h4 style="margin-top:0">Conséquences psychologiques</h4>
+ <ul>
+ <li>Anxiété généralisée, dépression</li>
+ <li>Burn-out (épuisement professionnel)</li>
+ <li>Troubles du sommeil</li>
+ <li>Altération de la mémoire (hippocampe)</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="important">
+ Le <strong>burn-out</strong> est caractérisé par un épuisement des glandes surrénales après une activation prolongée de l'axe HPA → effondrement du cortisol. Il est reconnu comme syndrome professionnel par l'OMS depuis 2019.
+ </div>
+ </section>
+
+ <!-- 5.5 NEUROPLASTICITÉ -->
+ <section id="neuroplasticite">
+ <h2>5.5 Neuroplasticité et stress chronique</h2>
+
+ <p>Le stress chronique provoque des modifications structurales et fonctionnelles du <strong>système limbique</strong> et du <strong>cortex préfrontal</strong>, illustrant la <strong>plasticité cérébrale</strong> (ici délétère).</p>
+
+ <div class="grid2">
+ <div class="card red">
+ <h4 style="margin-top:0">Hippocampe</h4>
+ <ul>
+ <li>↓ Neurogenèse (formation de nouveaux neurones)</li>
+ <li>Régression des arborisations dendritiques</li>
+ <li>Perte de connexions interneuronales</li>
+ <li>→ Troubles de la mémoire, dépression</li>
+ </ul>
+ </div>
+ <div class="card yellow">
+ <h4 style="margin-top:0">Amygdale</h4>
+ <ul>
+ <li>Hyperactivité</li>
+ <li>→ Agitation anxieuse, irritabilité</li>
+ <li>Hypervigilance, réactions de sidération</li>
+ </ul>
+ </div>
+ <div class="card blue">
+ <h4 style="margin-top:0">Cortex préfrontal</h4>
+ <ul>
+ <li>Modifications dendritiques comparables à l'hippocampe</li>
+ <li>↓ Capacité à moduler la réponse au stress</li>
+ <li>Altération du contrôle exécutif</li>
+ </ul>
+ </div>
+ <div class="card green">
+ <h4 style="margin-top:0">Synapses</h4>
+ <ul>
+ <li>Modifications du fonctionnement synaptique</li>
+ <li>Altération de la transmission du message nerveux</li>
+ <li>Rôle des GR (récepteurs aux glucocorticoïdes)</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="important">
+ Ces modifications structurales sont <strong>réversibles</strong> si le stress cesse. Elles illustrent la plasticité cérébrale : le cerveau se remodèle sous l'effet de l'environnement, y compris les situations de stress prolongé.
+ </div>
+
+ <h3>5.5.1 Variabilité interindividuelle face au stress</h3>
+ <p>Tous les individus ne réagissent pas de la même façon face à un même stresseur. Cette variabilité dépend de facteurs génétiques, développementaux et psychosociaux. Les <strong>expériences de Weiss</strong> (1972, rats) ont montré :</p>
+ <table>
+ <tr><th>Facteur étudié</th><th>Résultat</th></tr>
+ <tr><td>Contrôle de la situation</td><td>↓ Stress si le rat peut contrôler les chocs (moins de lésions gastriques)</td></tr>
+ <tr><td>Prédictibilité</td><td>Un signal d'alerte préalable ↓ l'impact du stresseur</td></tr>
+ <tr><td>Rétroaction pertinente</td><td>Connaître le résultat de ses actions ↓ le stress</td></tr>
+ <tr><td>Rétroaction négative</td><td>Règles du jeu qui changent → stress amplifié</td></tr>
+ </table>
+
+ <div class="def-box">
+ <div class="label">Remèdes de Bach — étude contrôlée (Walach et al., 2001)</div>
+ <strong>Walach et al. (2001)</strong> — essai randomisé en double aveugle : les remèdes de Bach (médecine alternative) sont <strong>aussi efficaces qu'un placebo</strong> pour l'anxiété de test. Pas d'effet spécifique prouvé. Cela illustre la part de la <strong>variabilité interindividuelle</strong> et de la réponse placebo dans la gestion du stress.
+ </div>
+ </section>
+
+ <!-- 5.8 PHÉOCHROMOCYTOME -->
+ <section id="pheo">
+ <h2>5.8 Phéochromocytome, PNMT et CYP11A1</h2>
+
+ <h3>5.8.1 La glande surrénale : deux tissus distincts</h3>
+ <div class="grid2">
+ <div class="card yellow">
+ <h4 style="margin-top:0">Médullo-surrénale (tissu médullaire central)</h4>
+ <ul>
+ <li>Cellules chromaffines</li>
+ <li>Sécrète <strong>adrénaline</strong> et noradrénaline</li>
+ <li>Gène : <strong>PNMT</strong> (phényléthanolamine N-méthyltransférase)</li>
+ <li>Enzyme qui convertit noradrénaline → adrénaline</li>
+ </ul>
+ </div>
+ <div class="card blue">
+ <h4 style="margin-top:0">Corticosurrénale (tissu cortical périphérique)</h4>
+ <ul>
+ <li>Zone fasciculée</li>
+ <li>Sécrète <strong>cortisol</strong> (glucocorticoïde)</li>
+ <li>Gène : <strong>CYP11A1</strong> (cytochrome P450)</li>
+ <li>Protéine exprimée uniquement dans le cortex surrénalien</li>
+ </ul>
+ </div>
+ </div>
+
+ <h3>5.8.2 Le phéochromocytome</h3>
+ <div class="def-box">
+ <div class="label">Définition</div>
+ <strong>Phéochromocytome :</strong> tumeur bénigne (le plus souvent) de la <strong>médullo-surrénale</strong>. Provoque une hypersécrétion d'<strong>adrénaline</strong> → troubles du rythme cardiaque (tachycardie), hypertension paroxystique, sueurs, céphalées.
+ </div>
+
+ <p>L'<strong>immunomarquage</strong> (technique utilisant des anticorps de synthèse) permet de localiser l'expression des gènes PNMT et CYP11A1 dans les tissus surrénaliens. Cela confirme quelle hormone (adrénaline ou cortisol) est responsable des symptômes. La base de données <em>Human Protein Atlas</em> (proteinatlas.org) répertorie les profils d'expression des protéines dans 44 types de tissus humains.</p>
+
+ <table>
+ <tr><th>Gène</th><th>Protéine codée</th><th>Tissu d'expression</th><th>Hormone produite</th></tr>
+ <tr><td>PNMT</td><td>Phényléthanolamine N-méthyltransférase</td><td>Médullo-surrénale (cellules chromaffines)</td><td>Adrénaline</td></tr>
+ <tr><td>CYP11A1</td><td>Cytochrome P450 cholesterol side-chain cleavage</td><td>Corticosurrénale (zone fasciculée)</td><td>Cortisol</td></tr>
+ </table>
+
+ <div class="important">
+ Dans le phéochromocytome, le gène PNMT est surexprimé dans le tissu tumoral médullaire → hypersécrétion d'adrénaline → troubles du rythme cardiaque. Le cortisol (gène CYP11A1) n'est pas en cause dans ce cas.
+ </div>
+ </section>
+
+ <!-- 6. VISION INTÉGRÉE -->
+ <section id="integration">
+ <h2>6. Vision intégrée de l'organisme</h2>
+
+ <h3>6.1 Interactions neuro-endocrino-immunitaires</h3>
+ <p>Le cerveau, le système endocrinien et le système immunitaire sont en communication permanente :</p>
+ <div class="schema-box">
+Cerveau (SNC)
+ ↕ neuropeptides, neurotransmetteurs
+Système endocrinien (hormones)
+ ↕ cytokines, récepteurs hormonaux sur lymphocytes
+Système immunitaire
+ ↕ signaux immuns vers le cerveau (inflammation → fièvre, comportement maladie)
+ </div>
+
+ <ul>
+ <li>Le stress module l'immunité (cortisol immunosuppresseur)</li>
+ <li>L'inflammation chronique active l'axe HPA</li>
+ <li>Le microbiome intestinal communique avec le cerveau (axe intestin-cerveau) et module la réponse au stress</li>
+ </ul>
+
+ <h3>6.2 Résilience et gestion du stress</h3>
+ <p>Des stratégies permettent de moduler la réponse au stress et de limiter ses effets délétères :</p>
+ <ul>
+ <li><strong>Exercice physique régulier :</strong> réduit le cortisol basal, ↑ endorphines</li>
+ <li><strong>Méditation / pleine conscience (mindfulness) :</strong> réduit l'activité de l'amygdale, ↑ cortex préfrontal</li>
+ <li><strong>Sommeil suffisant :</strong> restaure le rythme HPA et consolide la mémoire</li>
+ <li><strong>Soutien social :</strong> libération d'ocytocine → effet anxiolytique</li>
+ </ul>
+
+ <div class="important">
+ Ce chapitre illustre la vision <strong>systémique</strong> de l'organisme : comportements, système nerveux, hormones et immunité forment un tout intégré, pas des systèmes séparés. Un déséquilibre dans l'un affecte les autres.
+ </div>
+ </section>
+
+ <!-- MOTS CLÉS -->
+ <section id="mots-cles">
+ <h2>8. Mots-clés à maîtriser</h2>
+ <div class="card">
+ <span class="keyword">Stress aigu</span>
+ <span class="keyword">Stress chronique</span>
+ <span class="keyword">Stresseur</span>
+ <span class="keyword">Système limbique</span>
+ <span class="keyword">Amygdale</span>
+ <span class="keyword">Hippocampe</span>
+ <span class="keyword">Cortex préfrontal</span>
+ <span class="keyword">Hypothalamus</span>
+ <span class="keyword">NPV (noyau paraventriculaire)</span>
+ <span class="keyword">NPO (noyau préoptique)</span>
+ <span class="keyword">Axe HHC / HPA</span>
+ <span class="keyword">CRH</span>
+ <span class="keyword">ACTH</span>
+ <span class="keyword">Cortisol</span>
+ <span class="keyword">Glucocorticoïde</span>
+ <span class="keyword">Zone fasciculée</span>
+ <span class="keyword">Rétrocontrôle négatif</span>
+ <span class="keyword">Résilience</span>
+ <span class="keyword">Phase d'alarme</span>
+ <span class="keyword">Phase de résistance</span>
+ <span class="keyword">Adrénaline</span>
+ <span class="keyword">Noradrénaline</span>
+ <span class="keyword">Médullosurrénale</span>
+ <span class="keyword">Corticosurrénale</span>
+ <span class="keyword">Cellules chromaffines</span>
+ <span class="keyword">Système sympathique</span>
+ <span class="keyword">Fight or flight</span>
+ <span class="keyword">GABA</span>
+ <span class="keyword">Benzodiazépines (BZD)</span>
+ <span class="keyword">ATV (aire tegmentale ventrale)</span>
+ <span class="keyword">Burn-out</span>
+ <span class="keyword">Immunosuppression</span>
+ <span class="keyword">Rythme circadien</span>
+ <span class="keyword">Néoglucogenèse</span>
+ <span class="keyword">Neuroplasticité</span>
+ <span class="keyword">Neurogenèse</span>
+ <span class="keyword">Arborisations dendritiques</span>
+ <span class="keyword">Hyperactivité de l'amygdale</span>
+ <span class="keyword">Variabilité interindividuelle</span>
+ <span class="keyword">Phéochromocytome</span>
+ <span class="keyword">PNMT</span>
+ <span class="keyword">CYP11A1</span>
+ <span class="keyword">Immunomarquage</span>
+ <span class="keyword">Human Protein Atlas</span>
+ <span class="keyword">Vision intégrée</span>
+ </div>
+ </section>
+
+
+<a href="../qcm/qcm7_comportements_stress.html" style="display:block;background:linear-gradient(135deg,rgba(32,36,58,.14),rgba(32,36,58,.14));border:1px solid rgba(58,64,96,.35);border-radius:12px;padding:1.2rem;text-align:center;text-decoration:none;color:#e8eaf0;margin-top:2rem;font-weight:700;transition:all .2s">🎯 Tester mes connaissances — QCM Fiche 7</a>
+
+</main>
+<footer>SVT Terminale Spécialité · Bac 2026 — Fiche 7 / 10 · Comportements et stress<a href="../accueil-svt.html" style="color:#6366f1">Retour à l'index</a></footer>
+</body>
+</html>

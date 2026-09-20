@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Régulation de la glycémie & diabètes — :root { --bg:#0f1117;--bg2:#0f1117;--bg3:#0f1117;--bg4:#161922; --orange:#a5a0ff;--blue:#6366f1;--green:#6366f1;--yello">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../assets/css/acces.css">
+<script src="../../assets/js/acces.js"></script>
+<title>Fiche 10 — Glycémie et diabètes | SVT Terminale</title>
+<link rel="stylesheet" href="../assets/css/chrome.css">
+<style>
+:root {
+ --bg:#0f1117;--bg2:#0f1117;--bg3:#0f1117;--bg4:#161922;
+ --orange:#a5a0ff;--blue:#6366f1;--green:#6366f1;--yellow:#a5a0ff;--purple:#8b7cf8;--red:#8b7cf8;
+ --text:#a5a0ff;--muted:#6a7388;--border:#2a3050;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;font-size:15px;line-height:1.75}
+
+header{background:linear-gradient(135deg,#0f1117 0%,#0f1117 100%);border-bottom:3px solid var(--orange);padding:2rem 2.5rem 1.6rem}
+header .breadcrumb{font-size:.72rem;text-transform:uppercase;letter-spacing:2.5px;color:var(--orange);font-weight:700;margin-bottom:.4rem}
+header h1{font-size:1.7rem;font-weight:800;color:#e8eaf0;line-height:1.3}
+header .pills{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.8rem}
+header .pill{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:.2rem .8rem;font-size:.78rem;color:var(--muted)}
+
+nav{background:var(--bg2);border-bottom:1px solid var(--border);padding:.65rem 2.5rem;display:flex;gap:.45rem;flex-wrap:wrap;position:sticky;top:0;z-index:100}
+nav a{color:var(--muted);text-decoration:none;font-size:.78rem;padding:.25rem .75rem;border-radius:16px;background:var(--bg3);border:1px solid transparent;transition:all .15s}
+nav a:hover{color:var(--orange);border-color:var(--orange);background:rgba(32,36,58,.08)}
+nav .back{background:rgba(32,36,58,.1);color:var(--purple);border-color:rgba(58,64,96,.3)}
+
+main{max-width:980px;margin:0 auto;padding:2rem 2.5rem}
+.section-header{display:flex;align-items:center;gap:.9rem;margin-bottom:1.4rem;margin-top:.3rem}
+.section-num{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.85rem;flex-shrink:0}
+.section-num.orange{background:rgba(32,36,58,.2);color:var(--orange);border:2px solid var(--orange)}
+.section-num.blue{background:rgba(32,36,58,.2);color:var(--blue);border:2px solid var(--blue)}
+.section-num.green{background:rgba(32,36,58,.2);color:var(--green);border:2px solid var(--green)}
+.section-num.yellow{background:rgba(32,36,58,.2);color:var(--yellow);border:2px solid var(--yellow)}
+.section-num.red{background:rgba(32,36,58,.2);color:var(--red);border:2px solid var(--red)}
+h2{font-size:1.2rem;font-weight:700;color:#e8eaf0}
+h3{font-size:.96rem;font-weight:700;color:var(--yellow);margin:1.3rem 0 .5rem;padding-left:.5rem;border-left:3px solid var(--yellow)}
+h4{font-size:.88rem;font-weight:600;color:var(--green);margin:.8rem 0 .3rem}
+section{margin-bottom:3rem}
+p{margin-bottom:.6rem}
+ul,ol{margin:.4rem 0 .8rem 1.4rem}
+li{margin-bottom:.25rem}
+
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.1rem 1.3rem;margin-bottom:.8rem}
+.card.o{border-left:4px solid var(--orange)}
+.card.b{border-left:4px solid var(--blue)}
+.card.g{border-left:4px solid var(--green)}
+.card.y{border-left:4px solid var(--yellow)}
+.card.p{border-left:4px solid var(--purple)}
+.card.r{border-left:4px solid var(--red)}
+
+.def{background:#0f1117;border:1px solid #2a3050;border-radius:8px;padding:.85rem 1.1rem;margin:.5rem 0 .9rem}
+.def .lbl{font-size:.68rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--blue);font-weight:700;margin-bottom:.25rem}
+.def strong{color:var(--green)}
+
+.warn{background:#0f1117;border:1px solid rgba(58,64,96,.4);border-radius:8px;padding:.8rem 1rem .8rem 1.2rem;margin:.8rem 0;color:#a5a0ff;font-size:.88rem;position:relative;padding-left:2.4rem}
+.warn::before{content:"⚠";position:absolute;left:.7rem;top:.8rem;font-size:1rem}
+
+.schema{background:var(--bg3);border:1px dashed var(--border);border-radius:8px;padding:1rem 1.2rem;margin:.6rem 0 .9rem;font-family:'Cascadia Code','Courier New',monospace;font-size:.83rem;color:var(--green);line-height:1.9;overflow-x:auto;white-space:pre}
+
+.diagram{background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:1.2rem;margin:.6rem 0 1rem}
+.diagram svg{display:block;margin:0 auto;max-width:100%}
+
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:.9rem;margin-bottom:.8rem}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.9rem;margin-bottom:.8rem}
+@media(max-width:720px){.g2,.g3{grid-template-columns:1fr}}
+
+table{width:100%;border-collapse:collapse;margin:.6rem 0 1rem;background:var(--bg2);border-radius:8px;overflow:hidden;font-size:.88rem}
+th{background:var(--bg3);text-align:left;padding:.55rem .8rem;color:var(--orange);font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:1px}
+td{padding:.55rem .8rem;border-top:1px solid var(--border);vertical-align:top}
+
+.keywords{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.5rem}
+.kw{background:var(--bg3);border:1px solid var(--border);border-radius:14px;padding:.18rem .65rem;font-size:.75rem;color:var(--text)}
+.kw.g{color:var(--green);border-color:rgba(58,64,96,.4)}
+.kw.b{color:var(--blue);border-color:rgba(58,64,96,.4)}
+.kw.o{color:var(--orange);border-color:rgba(58,64,96,.4)}
+.kw.r{color:var(--red);border-color:rgba(58,64,96,.4)}
+
+.qcm-link{display:block;background:linear-gradient(135deg,rgba(32,36,58,.12),rgba(32,36,58,.12));border:1px solid rgba(58,64,96,.3);border-radius:12px;padding:1.2rem;text-align:center;text-decoration:none;color:#e8eaf0;margin-top:2rem;font-weight:700;transition:all .2s}
+.qcm-link:hover{background:linear-gradient(135deg,rgba(32,36,58,.2),rgba(32,36,58,.2));transform:translateY(-2px)}
+
+footer{text-align:center;padding:2rem;color:var(--muted);font-size:.78rem;border-top:1px solid var(--border);margin-top:2rem}
+</style>
+</head>
+<body>
+
+<a href="../accueil-svt.html" class="back-nav">← SVT Bac 2026</a>
+
+<div class="page-toggle"><div class="pt-inner"><a href="../qcm/qcm10_glycemie_diabetes.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+
+<header>
+ <div class="breadcrumb">Thème III — Corps humain et santé</div>
+ <h1>Régulation de la glycémie<br><span style="color:var(--orange)">&amp; diabètes</span></h1>
+ <div class="pills">
+ <span class="pill">🩸 Homéostasie</span>
+ <span class="pill">🎯 SVT Terminale Spécialité</span>
+ <span class="pill">🗂 Fiche 10 / 10</span>
+ </div>
+</header>
+
+<nav>
+ <a href="../accueil-svt.html" class="back">← Index</a>
+ <a href="#glycemie">🩸 Glycémie</a>
+ <a href="#hormones">⚗️ Hormones</a>
+ <a href="#reg">🔄 Boucle de régulation</a>
+ <a href="#diabetes">🔴 Diabètes</a>
+ <a href="#traitement">💊 Traitement</a>
+ <a href="#keys">🏷 Mots-clés</a>
+</nav>
+
+<main>
+
+<!-- 1. GLYCÉMIE -->
+<section id="glycemie">
+ <div class="section-header">
+ <div class="section-num blue">1</div>
+ <h2>La glycémie : un paramètre régulé</h2>
+ </div>
+
+ <div class="def">
+ <div class="lbl">Définition</div>
+ La <strong>glycémie</strong> est la concentration en glucose dans le plasma sanguin. Sa valeur de référence à jeun est <strong>~ 0,9 g/L</strong> (entre 0,7 et 1,1 g/L). C'est un paramètre <strong>régulé</strong> (= constante du milieu intérieur).
+ </div>
+
+ <h3>Pourquoi réguler ?</h3>
+ <div class="g2">
+ <div class="card r">
+ <h4>Hyperglycémie (&gt; 1,26 g/L à jeun)</h4>
+ <ul><li>Risque vasculaire</li><li>Atteintes nerveuses</li><li>Cataracte</li><li>À long terme : complications du diabète</li></ul>
+ </div>
+ <div class="card b">
+ <h4>Hypoglycémie (&lt; 0,6 g/L)</h4>
+ <ul><li>Le cerveau dépend du glucose</li><li>Malaise, sueurs, confusion</li><li>Coma, voire mortel</li></ul>
+ </div>
+ </div>
+
+ <h3>Variations physiologiques</h3>
+ <p>Après un repas : pic post-prandial (jusqu'à ~1,4 g/L) → retour à la valeur de consigne en 2-3 h. À l'inverse, lors d'un jeûne ou d'un effort, la glycémie tend à baisser et doit être maintenue.</p>
+</section>
+
+<!-- 2. HORMONES -->
+<section id="hormones">
+ <div class="section-header">
+ <div class="section-num green">2</div>
+ <h2>Le pancréas, organe clé</h2>
+ </div>
+
+ <p>Le <strong>pancréas endocrine</strong> est constitué des <strong>îlots de Langerhans</strong> (~ 1 million chez l'adulte) qui contiennent deux types de cellules sécrétrices :</p>
+
+ <div class="g2">
+ <div class="card b">
+ <h4>🔵 Cellules β (centre des îlots)</h4>
+ <p>Sécrètent l'<strong>insuline</strong> en réponse à une <strong>hausse</strong> de la glycémie.<br><em>Hormone hypoglycémiante.</em></p>
+ </div>
+ <div class="card o">
+ <h4>🟠 Cellules α (périphérie)</h4>
+ <p>Sécrètent le <strong>glucagon</strong> en réponse à une <strong>baisse</strong> de la glycémie.<br><em>Hormone hyperglycémiante.</em></p>
+ </div>
+ </div>
+
+ <h3>Actions de l'insuline (hypoglycémiante)</h3>
+ <div class="card b">
+ <ul>
+ <li><strong>Foie</strong> : stockage du glucose en glycogène (<em>glycogénogenèse</em>)</li>
+ <li><strong>Muscles</strong> : entrée du glucose via <strong>GLUT4</strong> (transporteur recruté à la membrane par l'insuline) → glycogène musculaire</li>
+ <li><strong>Tissu adipeux</strong> : entrée du glucose via GLUT4, conversion en triglycérides (lipogenèse)</li>
+ <li>Globalement : <strong>baisse de la glycémie</strong></li>
+ </ul>
+ <p>L'insuline est la <strong>seule hormone hypoglycémiante</strong> de l'organisme. Elle agit en se fixant sur des <strong>récepteurs membranaires à activité tyrosine-kinase</strong> sur les cellules cibles.</p>
+ </div>
+
+ <div class="warn" style="margin-top:.6rem">
+ <strong>Insulinorésistance (DT2) :</strong> les récepteurs à l'insuline et la voie de signalisation des cellules cibles répondent mal → moins de translocation de GLUT4 → moins d'entrée de glucose → hyperglycémie chronique malgré une insulinémie élevée. Le pancréas finit par s'épuiser.
+ </div>
+
+ <h3>Actions du glucagon (hyperglycémiante)</h3>
+ <div class="card o">
+ <ul>
+ <li><strong>Foie</strong> : libération de glucose à partir du glycogène (<em>glycogénolyse</em>)</li>
+ <li><strong>Foie</strong> : production de glucose à partir d'autres molécules (<em>néoglucogenèse</em> à partir des acides aminés, lactate, glycérol)</li>
+ <li>Globalement : <strong>hausse de la glycémie</strong></li>
+ </ul>
+ <p>D'autres hormones hyperglycémiantes existent : <strong>adrénaline</strong>, <strong>cortisol</strong>, <strong>GH</strong>.</p>
+ </div>
+</section>
+
+<!-- 3. BOUCLE DE RÉGULATION -->
+<section id="reg">
+ <div class="section-header">
+ <div class="section-num yellow">3</div>
+ <h2>Boucle de régulation</h2>
+ </div>
+
+ <div class="diagram">
+ <svg viewBox="0 0 720 380" xmlns="http://www.w3.org/2000/svg" width="720" height="380">
+ <rect width="720" height="380" fill="#1c2030" rx="8"/>
+
+ <!-- Consigne -->
+ <rect x="280" y="20" width="160" height="40" fill="#0d1220" stroke="#f3c56b" stroke-width="2" rx="6"/>
+ <text x="360" y="38" text-anchor="middle" fill="#f3c56b" font-size="12" font-weight="700">Consigne ≈ 0,9 g/L</text>
+ <text x="360" y="54" text-anchor="middle" fill="#dde1ef" font-size="10">(glycémie cible)</text>
+
+ <!-- Capteur -->
+ <ellipse cx="360" cy="120" rx="120" ry="30" fill="rgba(91,141,238,.15)" stroke="#5b8dee" stroke-width="2"/>
+ <text x="360" y="118" text-anchor="middle" fill="#5b8dee" font-size="12" font-weight="700">Cellules α et β du pancréas</text>
+ <text x="360" y="134" text-anchor="middle" fill="#dde1ef" font-size="10">(capteurs + intégrateur)</text>
+
+ <!-- Sortie - Insuline -->
+ <rect x="80" y="190" width="200" height="60" fill="rgba(91,141,238,.18)" stroke="#5b8dee" stroke-width="2" rx="6"/>
+ <text x="180" y="210" text-anchor="middle" fill="#5b8dee" font-size="13" font-weight="700">Cellules β → INSULINE</text>
+ <text x="180" y="226" text-anchor="middle" fill="#dde1ef" font-size="10">si glycémie ↑</text>
+ <text x="180" y="240" text-anchor="middle" fill="#5b8dee" font-size="10">⇒ stockage (foie, muscle, gras)</text>
+
+ <!-- Sortie - Glucagon -->
+ <rect x="440" y="190" width="200" height="60" fill="rgba(240,120,64,.18)" stroke="#f07840" stroke-width="2" rx="6"/>
+ <text x="540" y="210" text-anchor="middle" fill="#f07840" font-size="13" font-weight="700">Cellules α → GLUCAGON</text>
+ <text x="540" y="226" text-anchor="middle" fill="#dde1ef" font-size="10">si glycémie ↓</text>
+ <text x="540" y="240" text-anchor="middle" fill="#f07840" font-size="10">⇒ libération (foie)</text>
+
+ <!-- Effet -->
+ <ellipse cx="360" cy="320" rx="200" ry="30" fill="rgba(78,203,141,.15)" stroke="#4ecb8d" stroke-width="2"/>
+ <text x="360" y="320" text-anchor="middle" fill="#4ecb8d" font-size="13" font-weight="700">Retour à la glycémie de consigne</text>
+ <text x="360" y="336" text-anchor="middle" fill="#dde1ef" font-size="10">(rétroaction négative)</text>
+
+ <!-- Arrows -->
+ <line x1="360" y1="60" x2="360" y2="88" stroke="#dde1ef" stroke-width="1.5" marker-end="url(#a)"/>
+ <line x1="290" y1="148" x2="200" y2="190" stroke="#5b8dee" stroke-width="1.5" marker-end="url(#b)"/>
+ <line x1="430" y1="148" x2="520" y2="190" stroke="#f07840" stroke-width="1.5" marker-end="url(#o)"/>
+ <line x1="200" y1="250" x2="290" y2="295" stroke="#4ecb8d" stroke-width="1.5" marker-end="url(#g)"/>
+ <line x1="520" y1="250" x2="430" y2="295" stroke="#4ecb8d" stroke-width="1.5" marker-end="url(#g)"/>
+
+ <defs>
+ <marker id="a" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><polygon points="0 0,6 4,0 8" fill="#dde1ef"/></marker>
+ <marker id="b" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><polygon points="0 0,6 4,0 8" fill="#5b8dee"/></marker>
+ <marker id="o" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><polygon points="0 0,6 4,0 8" fill="#f07840"/></marker>
+ <marker id="g" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto"><polygon points="0 0,6 4,0 8" fill="#4ecb8d"/></marker>
+ </defs>
+ </svg>
+ </div>
+
+ <div class="card y">
+ <h4>Schéma type d'un système régulé</h4>
+ <p><strong>Capteurs</strong> (cellules α et β) → <strong>intégrateur</strong> (pancréas) → <strong>messagers</strong> (insuline / glucagon) → <strong>effecteurs</strong> (foie, muscle, tissu adipeux) → <strong>retour à la consigne</strong> = <em>rétroaction négative</em>.</p>
+ </div>
+</section>
+
+<!-- 4. DIABÈTES -->
+<section id="diabetes">
+ <div class="section-header">
+ <div class="section-num red">4</div>
+ <h2>Les diabètes : ruptures de régulation</h2>
+ </div>
+
+ <div class="def">
+ <div class="lbl">Définition</div>
+ <strong>Diabète</strong> = hyperglycémie chronique (≥ <strong>1,26 g/L à jeun</strong> à deux reprises). C'est une maladie multifactorielle aux conséquences graves à long terme.
+ </div>
+
+ <h3>Diagnostic biologique</h3>
+ <ul>
+ <li>Glycémie à jeun</li>
+ <li><strong>HGPO</strong> (hyperglycémie provoquée par voie orale) : suit la cinétique sur 2 h après ingestion de glucose</li>
+ <li><strong>HbA1c</strong> (hémoglobine glyquée) : reflète la glycémie moyenne des 2-3 derniers mois. Cible &lt; 7 %</li>
+ </ul>
+
+ <h3>Type 1 vs Type 2</h3>
+ <table>
+ <tr><th></th><th>Diabète de type 1</th><th>Diabète de type 2</th></tr>
+ <tr><td><strong>Fréquence</strong></td><td>~ 10 %</td><td>~ 90 %</td></tr>
+ <tr><td><strong>Âge typique</strong></td><td>Enfant, jeune adulte</td><td>Adulte &gt; 40 ans (mais s'abaisse)</td></tr>
+ <tr><td><strong>Cause</strong></td><td><strong>Auto-immune</strong> : destruction des cellules β par les lymphocytes T</td><td><strong>Insulinorésistance</strong> des cellules cibles, puis épuisement des cellules β</td></tr>
+ <tr><td><strong>Insuline produite</strong></td><td>Quasi nulle</td><td>Normale ou élevée au début, puis diminue</td></tr>
+ <tr><td><strong>Facteurs</strong></td><td>Génétique + déclencheur viral suspecté</td><td>Génétique + <strong>obésité, sédentarité, alimentation</strong></td></tr>
+ <tr><td><strong>Traitement</strong></td><td><strong>Insuline</strong> (injection ou pompe) à vie</td><td>Hygiène de vie, antidiabétiques oraux, puis insuline si nécessaire</td></tr>
+ </table>
+
+ <h3>Complications à long terme</h3>
+ <div class="g3">
+ <div class="card r">
+ <h4>Microvasculaires</h4>
+ <ul><li>Rétinopathie (cécité)</li><li>Néphropathie (insuffisance rénale)</li><li>Neuropathie (pieds)</li></ul>
+ </div>
+ <div class="card o">
+ <h4>Macrovasculaires</h4>
+ <ul><li>Infarctus du myocarde</li><li>AVC</li><li>Artérite des membres inférieurs</li></ul>
+ </div>
+ <div class="card y">
+ <h4>Autres</h4>
+ <ul><li>Plaies qui cicatrisent mal</li><li>Infections</li><li>Coma acidocétosique (T1) ou hyperosmolaire (T2)</li></ul>
+ </div>
+ </div>
+
+ <div class="warn">Le diabète de type 2 progresse fortement (épidémie mondiale) : ~ <strong>500 millions</strong> de personnes touchées en 2025, dont une majorité l'ignore. Lié à l'urbanisation, à l'obésité et à la sédentarité.</div>
+</section>
+
+<!-- 5. TRAITEMENT -->
+<section id="traitement">
+ <div class="section-header">
+ <div class="section-num orange">5</div>
+ <h2>Traitement &amp; prévention</h2>
+ </div>
+
+ <div class="g2">
+ <div class="card b">
+ <h4>Diabète de type 1</h4>
+ <ul>
+ <li><strong>Insulinothérapie</strong> (multi-injections ou pompe)</li>
+ <li>Capteur de glycémie en continu (CGM)</li>
+ <li>Pancréas artificiel (boucle fermée)</li>
+ <li>Recherche : greffe d'îlots, thérapie cellulaire</li>
+ </ul>
+ </div>
+ <div class="card g">
+ <h4>Diabète de type 2</h4>
+ <ul>
+ <li><strong>Hygiène de vie</strong> : activité physique, régime, perte de poids</li>
+ <li>Metformine (première intention)</li>
+ <li>Analogues GLP-1, gliptines, gliflozines, sulfamides...</li>
+ <li>Insuline si échec</li>
+ </ul>
+ </div>
+ </div>
+
+ <h3>Prévention du type 2</h3>
+ <ul>
+ <li>Lutte contre le surpoids et la sédentarité</li>
+ <li>Alimentation équilibrée (limitation sucres rapides et graisses saturées)</li>
+ <li>Dépistage régulier des sujets à risque (antécédents familiaux, HTA, obésité)</li>
+ </ul>
+</section>
+
+<!-- MOTS-CLÉS -->
+<section id="keys">
+ <div class="section-header">
+ <div class="section-num blue">★</div>
+ <h2>Mots-clés à connaître</h2>
+ </div>
+ <div class="keywords">
+ <span class="kw b">Glycémie</span>
+ <span class="kw b">Homéostasie</span>
+ <span class="kw b">Milieu intérieur</span>
+ <span class="kw g">Îlots de Langerhans</span>
+ <span class="kw g">Cellules α / β</span>
+ <span class="kw o">Insuline</span>
+ <span class="kw o">Glucagon</span>
+ <span class="kw o">Glycogénogenèse</span>
+ <span class="kw o">Glycogénolyse</span>
+ <span class="kw o">Néoglucogenèse</span>
+ <span class="kw o">Lipogenèse</span>
+ <span class="kw">Rétroaction négative</span>
+ <span class="kw r">Hyperglycémie</span>
+ <span class="kw r">Hypoglycémie</span>
+ <span class="kw r">Diabète T1 (auto-immun)</span>
+ <span class="kw r">Diabète T2 (insulinorésistance)</span>
+ <span class="kw r">HbA1c</span>
+ <span class="kw r">HGPO</span>
+ <span class="kw r">Microvasculaire</span>
+ <span class="kw r">Rétinopathie · Néphropathie</span>
+ <span class="kw">Metformine</span>
+ <span class="kw">Insulinothérapie</span>
+ <span class="kw">GLUT4</span>
+ <span class="kw">Récepteur tyrosine-kinase</span>
+ </div>
+</section>
+
+<a href="../qcm/qcm10_glycemie_diabetes.html" class="qcm-link">🎯 Tester mes connaissances — QCM Fiche 10</a>
+
+</main>
+
+<footer>SVT Terminale Spécialité · Bac 2026 — Fiche 10 / 10<a href="../accueil-svt.html" style="color:var(--orange)">Retour à l'index</a></footer>
+
+</body>
+</html>

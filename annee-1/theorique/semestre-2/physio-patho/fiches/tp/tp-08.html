@@ -1,0 +1,926 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Maladies Musculo-Squelettiques Rhumatismales — Fiche de révision complète — Enseignante D">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../../assets/css/acces.css">
+<script src="../../../../../../assets/js/acces.js"></script>
+<title>Fiche de Révision — Maladies Musculo-Squelettiques Rhumatismales</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../../../assets/css/chrome.css">
+<style>
+ :root {
+ --bone: #ff8fa3;
+ --cream: #ff8fa3;
+ --charcoal: #1a1d2a;
+ --slate: #ff5c6b;
+ --teal: #f472b6;
+ --teal-light: #ff8fa3;
+ --amber: #ff5c6b;
+ --amber-light: #ff8fa3;
+ --gold: #ff8fa3;
+ --gold-light: #ff8fa3;
+ --green: #ff6b9d;
+ --green-light: #ff6b9d;
+ --red: #ff5c6b;
+ --red-light: #ff8fa3;
+ --purple: #f472b6;
+ --purple-light: #ff8fa3;
+ --text: #2a3050;
+ --muted: #6a7388;
+ --border: #3a4060;
+ }
+
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+
+ body {
+ font-family: 'DM Sans', sans-serif;
+ background: var(--cream);
+ color: var(--text);
+ line-height: 1.7;
+ font-size: 15px;
+ }
+
+ /* HERO */
+ .hero {
+ background: var(--charcoal);
+ background-image: radial-gradient(ellipse at 20% 50%, rgba(255,107,157,0.25) 0%, transparent 60%),
+ radial-gradient(ellipse at 80% 20%, rgba(255,107,157,0.15) 0%, transparent 50%);
+ color: white;
+ padding: 56px 48px 52px;
+ position: relative;
+ overflow: hidden;
+ }
+ .hero::before {
+ content: '';
+ position: absolute;
+ right: -60px; top: -60px;
+ width: 300px; height: 300px;
+ border-radius: 50%;
+ border: 1px solid rgba(255,255,255,0.06);
+ }
+ .hero::after {
+ content: '';
+ position: absolute;
+ right: 40px; bottom: -80px;
+ width: 200px; height: 200px;
+ border-radius: 50%;
+ border: 1px solid rgba(255,255,255,0.04);
+ }
+ .hero-tag {
+ display: inline-block;
+ background: rgba(255,107,157,0.4);
+ border: 1px solid rgba(255,107,157,0.6);
+ color: #ff8fa3;
+ font-size: 11px;
+ font-weight: 600;
+ letter-spacing: 2px;
+ text-transform: uppercase;
+ padding: 5px 14px;
+ border-radius: 20px;
+ margin-bottom: 20px;
+ }
+ .hero h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: 2.6rem;
+ font-weight: 900;
+ line-height: 1.15;
+ margin-bottom: 14px;
+ max-width: 650px;
+ }
+ .hero h1 span { color: #ff8fa3; }
+ .hero p {
+ color: rgba(255,255,255,0.6);
+ font-size: 14px;
+ font-weight: 300;
+ }
+ .hero-meta {
+ display: flex;
+ gap: 24px;
+ margin-top: 28px;
+ flex-wrap: wrap;
+ }
+ .hero-pill {
+ display: flex;
+ align-items: center;
+ gap: 7px;
+ background: rgba(255,255,255,0.07);
+ border: 1px solid rgba(255,255,255,0.1);
+ padding: 7px 16px;
+ border-radius: 30px;
+ font-size: 12px;
+ font-weight: 500;
+ color: rgba(255,255,255,0.8);
+ }
+ .hero-pill .dot {
+ width: 6px; height: 6px;
+ border-radius: 50%;
+ background: #ff8fa3;
+ }
+
+ /* LAYOUT */
+ .container {
+ max-width: 960px;
+ margin: 0 auto;
+ padding: 0 28px 60px;
+ }
+
+ /* SECTION TITLES */
+ .section-header {
+ display: flex;
+ align-items: center;
+ gap: 14px;
+ margin: 48px 0 24px;
+ }
+ .section-num {
+ width: 36px; height: 36px;
+ background: var(--charcoal);
+ color: white;
+ border-radius: 10px;
+ display: flex; align-items: center; justify-content: center;
+ font-size: 13px;
+ font-weight: 700;
+ flex-shrink: 0;
+ }
+ .section-header h2 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.55rem;
+ font-weight: 700;
+ color: var(--charcoal);
+ }
+ .section-line {
+ flex: 1;
+ height: 1px;
+ background: var(--border);
+ }
+
+ /* CARDS */
+ .card {
+ background: white;
+ border-radius: 16px;
+ padding: 28px 32px;
+ margin-bottom: 18px;
+ border: 1px solid var(--border);
+ box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+ }
+ .card-title {
+ font-weight: 700;
+ font-size: 14px;
+ text-transform: uppercase;
+ letter-spacing: 0.8px;
+ margin-bottom: 14px;
+ display: flex;
+ align-items: center;
+ gap: 9px;
+ }
+ .card-title .icon {
+ font-size: 16px;
+ }
+
+ /* DEFINITION BOX */
+ .def-box {
+ background: var(--teal);
+ background-image: linear-gradient(135deg, var(--teal) 0%, #ff5c6b 100%);
+ color: white;
+ border-radius: 16px;
+ padding: 28px 32px;
+ margin-bottom: 18px;
+ border-left: 5px solid var(--gold);
+ }
+ .def-box .def-label {
+ font-size: 11px;
+ font-weight: 700;
+ letter-spacing: 2px;
+ text-transform: uppercase;
+ color: rgba(255,255,255,0.6);
+ margin-bottom: 10px;
+ }
+ .def-box p {
+ font-size: 15.5px;
+ line-height: 1.75;
+ color: rgba(255,255,255,0.92);
+ font-weight: 300;
+ }
+ .def-box strong { color: #ff8fa3; font-weight: 600; }
+
+ /* GRID */
+ .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+ .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+
+ /* COLORED CARDS */
+ .card-teal { border-top: 3px solid var(--teal); }
+ .card-amber { border-top: 3px solid var(--amber); }
+ .card-gold { border-top: 3px solid var(--gold); }
+ .card-green { border-top: 3px solid var(--green); }
+ .card-red { border-top: 3px solid var(--red); }
+ .card-purple { border-top: 3px solid var(--purple); }
+
+ /* STAT CARDS */
+ .stat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; margin-bottom: 18px; }
+ .stat-card {
+ background: var(--charcoal);
+ background-image: linear-gradient(135deg, #1a1d2a 0%, #ff5c6b 100%);
+ border-radius: 14px;
+ padding: 22px 18px;
+ text-align: center;
+ color: white;
+ }
+ .stat-num {
+ font-family: 'Playfair Display', serif;
+ font-size: 2.2rem;
+ font-weight: 900;
+ color: #ff8fa3;
+ line-height: 1.1;
+ display: block;
+ }
+ .stat-unit { font-size: 13px; color: var(--gold); font-weight: 600; }
+ .stat-label { font-size: 12px; color: rgba(255,255,255,0.55); margin-top: 6px; line-height: 1.4; }
+
+ /* LIST ITEMS */
+ ul.check-list { list-style: none; }
+ ul.check-list li {
+ padding: 6px 0 6px 26px;
+ position: relative;
+ font-size: 14.5px;
+ border-bottom: 1px solid #ff8fa3;
+ }
+ ul.check-list li:last-child { border-bottom: none; }
+ ul.check-list li::before {
+ content: '→';
+ position: absolute;
+ left: 0;
+ color: var(--teal);
+ font-weight: 700;
+ }
+
+ ul.dot-list { list-style: none; }
+ ul.dot-list li {
+ padding: 5px 0 5px 20px;
+ position: relative;
+ font-size: 14.5px;
+ }
+ ul.dot-list li::before {
+ content: '•';
+ position: absolute;
+ left: 0;
+ color: var(--amber);
+ font-weight: 900;
+ font-size: 16px;
+ }
+
+ /* BADGE */
+ .badge {
+ display: inline-block;
+ padding: 3px 10px;
+ border-radius: 20px;
+ font-size: 11px;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: 0.5px;
+ margin-right: 6px;
+ margin-bottom: 4px;
+ }
+ .badge-teal { background: var(--teal-light); color: var(--teal); }
+ .badge-amber { background: var(--amber-light); color: #ff5c6b; }
+ .badge-gold { background: var(--gold-light); color: #ff8fa3; }
+ .badge-green { background: var(--green-light); color: var(--green); }
+ .badge-red { background: var(--red-light); color: var(--red); }
+ .badge-purple { background: var(--purple-light); color: var(--purple); }
+ .badge-dark { background: rgba(255,107,157,0.08); color: var(--charcoal); }
+
+ /* MYTH FACT */
+ .myth-fact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0; border-radius: 16px; overflow: hidden; border: 1px solid var(--border); margin-bottom: 18px; }
+ .myth-side {
+ padding: 22px 24px;
+ background: var(--red-light);
+ }
+ .fact-side {
+ padding: 22px 24px;
+ background: var(--green-light);
+ border-left: 1px solid var(--border);
+ }
+ .myth-label {
+ font-size: 11px; font-weight: 800; letter-spacing: 2px;
+ text-transform: uppercase; color: var(--red);
+ margin-bottom: 8px;
+ }
+ .fact-label {
+ font-size: 11px; font-weight: 800; letter-spacing: 2px;
+ text-transform: uppercase; color: var(--green);
+ margin-bottom: 8px;
+ }
+ .myth-side p { font-size: 14px; font-weight: 600; color: var(--red); line-height: 1.5; }
+ .fact-side p { font-size: 14px; color: #ff6b9d; line-height: 1.6; }
+
+ /* DIAGNOSIS BOX */
+ .diag-box {
+ background: var(--gold-light);
+ border: 1px solid #ff8fa3;
+ border-radius: 14px;
+ padding: 24px 28px;
+ margin-bottom: 16px;
+ }
+ .diag-box h4 { font-weight: 700; color: #ff8fa3; margin-bottom: 12px; font-size: 14px; text-transform: uppercase; letter-spacing: 0.7px; }
+ .diag-box ul { list-style: none; }
+ .diag-box ul li {
+ padding: 6px 0 6px 22px;
+ position: relative;
+ font-size: 14.5px;
+ color: #ff8fa3;
+ border-bottom: 1px solid rgba(255,107,157,0.2);
+ }
+ .diag-box ul li:last-child { border-bottom: none; }
+ .diag-box ul li::before {
+ content: '✓';
+ position: absolute; left: 0;
+ color: var(--gold);
+ font-weight: 900;
+ }
+
+ /* PHYSIO BOX */
+ .physio-box {
+ background: linear-gradient(135deg, var(--teal) 0%, #ff5c6b 100%);
+ border-radius: 16px;
+ padding: 30px 32px;
+ color: white;
+ margin-bottom: 18px;
+ }
+ .physio-box h4 { font-family: 'Playfair Display', serif; font-size: 1.3rem; margin-bottom: 16px; color: white; }
+ .physio-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 16px; }
+ .physio-item {
+ background: rgba(255,255,255,0.1);
+ border: 1px solid rgba(255,255,255,0.15);
+ border-radius: 10px;
+ padding: 14px 16px;
+ }
+ .physio-item strong { color: #ff8fa3; display: block; margin-bottom: 4px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; }
+ .physio-item span { font-size: 13.5px; color: rgba(255,255,255,0.82); }
+
+ /* HIGHLIGHT */
+ .highlight {
+ background: var(--amber-light);
+ border-left: 4px solid var(--amber);
+ border-radius: 0 12px 12px 0;
+ padding: 18px 22px;
+ margin: 14px 0;
+ font-size: 14.5px;
+ }
+ .highlight strong { color: var(--amber); }
+
+ /* PATHOPHYSIO */
+ .path-step {
+ display: flex;
+ gap: 16px;
+ align-items: flex-start;
+ padding: 14px 0;
+ border-bottom: 1px solid var(--border);
+ }
+ .path-step:last-child { border-bottom: none; }
+ .path-num {
+ width: 30px; height: 30px;
+ background: var(--slate);
+ color: white;
+ border-radius: 50%;
+ display: flex; align-items: center; justify-content: center;
+ font-size: 13px; font-weight: 700;
+ flex-shrink: 0;
+ margin-top: 2px;
+ }
+ .path-step p { font-size: 14.5px; line-height: 1.65; }
+ .path-step strong { color: var(--slate); }
+
+ /* FOOTER */
+ .footer {
+ background: var(--charcoal);
+ color: rgba(255,255,255,0.45);
+ text-align: center;
+ padding: 24px;
+ font-size: 12px;
+ letter-spacing: 0.5px;
+ }
+ .footer span { color: rgba(255,255,255,0.25); }
+
+ /* DISEASE LIST */
+ .disease-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+ .disease-item {
+ background: white;
+ border: 1px solid var(--border);
+ border-radius: 12px;
+ padding: 16px 18px;
+ display: flex;
+ align-items: center;
+ gap: 12px;
+ font-size: 14px;
+ font-weight: 500;
+ }
+ .disease-item .d-icon {
+ width: 32px; height: 32px;
+ border-radius: 8px;
+ display: flex; align-items: center; justify-content: center;
+ font-size: 16px;
+ flex-shrink: 0;
+ }
+ .d1 { background: var(--teal-light); }
+ .d2 { background: var(--amber-light); }
+ .d3 { background: var(--purple-light); }
+ .d4 { background: var(--gold-light); }
+ .d5 { background: var(--red-light); }
+ .d6 { background: var(--green-light); }
+
+ /* RADIO FINDINGS */
+ .radio-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+ .radio-item {
+ background: white;
+ border: 1px solid var(--border);
+ border-radius: 12px;
+ padding: 18px;
+ text-align: center;
+ }
+ .radio-item .r-icon { font-size: 24px; display: block; margin-bottom: 8px; }
+ .radio-item strong { display: block; font-size: 13px; font-weight: 700; color: var(--charcoal); margin-bottom: 4px; }
+ .radio-item span { font-size: 12.5px; color: var(--muted); }
+
+ /* CARTILAGE BOX */
+ .cartilage-box {
+ background: var(--purple-light);
+ border: 1px solid #f472b6;
+ border-radius: 14px;
+ padding: 24px 28px;
+ }
+ .cartilage-box h4 { color: var(--purple); font-size: 14px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.8px; margin-bottom: 14px; }
+
+ @media (max-width: 720px) {
+ .hero { padding: 36px 24px; }
+ .hero h1 { font-size: 1.8rem; }
+ .grid-2, .grid-3, .stat-grid, .physio-grid, .disease-grid, .radio-grid { grid-template-columns: 1fr; }
+ .myth-fact-grid { grid-template-columns: 1fr; }
+ .fact-side { border-left: none; border-top: 1px solid var(--border); }
+ .container { padding: 0 16px 40px; }
+ }
+</style>
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/physio-patho.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-theme.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
+</head>
+<body>
+<a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
+<div class="page-toggle"><div class="pt-inner"><a href="../../qcm/tp/tp-08.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<!-- HERO -->
+<div class="hero">
+ <div class="hero-tag">Physiothérapie · 1ère année · 2e semestre</div>
+ <h1>Maladies Musculo-Squelettiques <span>Rhumatismales</span></h1>
+ <p>Fiche de révision complète — Enseignante D</p>
+ <div class="hero-meta">
+ <div class="hero-pill"><span class="dot"></span>Système musculo-squelettique</div>
+ <div class="hero-pill"><span class="dot"></span>Arthrose (OA)</div>
+ <div class="hero-pill"><span class="dot"></span>Physiothérapie & exercice</div>
+ <div class="hero-pill"><span class="dot"></span>Mythes et faits</div>
+ </div>
+</div>
+
+<div class="container">
+
+ <!-- 1. SYSTÈME MUSCULO-SQUELETTIQUE -->
+ <div class="section-header">
+ <div class="section-num">01</div>
+ <h2>Le Système Musculo-Squelettique</h2>
+ <div class="section-line"></div>
+ </div>
+
+ <div class="def-box">
+ <div class="def-label">Définition</div>
+ <p>Le système musculo-squelettique comprend les <strong>os</strong>, les <strong>articulations</strong> et les <strong>muscles</strong>, associés aux <strong>ligaments</strong> et aux <strong>tendons</strong>. Il peut être affecté à différents âges par de nombreuses maladies, provoquant douleurs et dysfonctionnements.</p>
+ </div>
+
+ <div class="grid-2">
+ <div class="card card-teal">
+ <div class="card-title"><span class="icon">🦴</span>Les Os</div>
+ <ul class="check-list">
+ <li>Naissance : environ <strong>300 os</strong></li>
+ <li>Adulte : <strong>206 os</strong> (fusion progressive)</li>
+ <li>Forment la charpente du corps</li>
+ </ul>
+ </div>
+ <div class="card card-amber">
+ <div class="card-title"><span class="icon">⚠️</span>Principales pathologies</div>
+ <ul class="dot-list">
+ <li>Traumatismes (os et tissus mous)</li>
+ <li>Infections (ostéomyélites, ostéonécroses)</li>
+ <li>Maladies métaboliques</li>
+ <li>Troubles de croissance / développement</li>
+ <li>Maladies dégénératives, ischémie, néoplasmes</li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- 2. RHUMATISME -->
+ <div class="section-header">
+ <div class="section-num">02</div>
+ <h2>Le Rhumatisme — Généralités</h2>
+ <div class="section-line"></div>
+ </div>
+
+ <div class="def-box">
+ <div class="def-label">Définition — À retenir</div>
+ <p>Le rhumatisme est le <strong>terme générique</strong> désignant un groupe de maladies qui affectent les <strong>articulations</strong>, les <strong>muscles</strong> et le <strong>squelette</strong>, caractérisées par des <strong>douleurs</strong> et une <strong>limitation des mouvements</strong>.</p>
+ </div>
+
+ <div class="card">
+ <div class="card-title"><span class="icon">📋</span>Les 6 maladies rhumatismales les plus courantes</div>
+ <div class="disease-grid">
+ <div class="disease-item"><div class="d-icon d1">🦵</div>Arthrose (OA)</div>
+ <div class="disease-item"><div class="d-icon d2">🔴</div>Polyarthrite rhumatoïde</div>
+ <div class="disease-item"><div class="d-icon d3">🦋</div>Lupus</div>
+ <div class="disease-item"><div class="d-icon d4">😰</div>Fibromyalgie</div>
+ <div class="disease-item"><div class="d-icon d5">💧</div>Goutte</div>
+ <div class="disease-item"><div class="d-icon d6">🔗</div>Spondylarthrite</div>
+ </div>
+ <div class="highlight">
+ <strong>⚡ Chiffre clé :</strong> Le rhumatisme comprend plus de <strong>200 maladies</strong> différentes. L'arthrose est la plus fréquente.
+ </div>
+ </div>
+
+ <!-- 3. ARTHROSE -->
+ <div class="section-header">
+ <div class="section-num">03</div>
+ <h2>L'Arthrose (Ostéoarthrose — OA)</h2>
+ <div class="section-line"></div>
+ </div>
+
+ <div class="def-box">
+ <div class="def-label">Définition</div>
+ <p>L'arthrose est la <strong>maladie rhumatismale la plus commune</strong>. Elle est plus fréquente aux <strong>genoux, hanches et mains</strong>, mais peut toucher toute articulation. C'est une maladie pouvant débuter par une petite ou large lésion articulaire. Au fil du temps, le corps perd sa capacité de régénération, entraînant des <strong>altérations des tissus articulaires</strong>.</p>
+ </div>
+
+ <!-- PRÉVALENCE -->
+ <div class="stat-grid">
+ <div class="stat-card">
+ <span class="stat-num">520</span>
+ <span class="stat-unit">Millions</span>
+ <div class="stat-label">de personnes touchées dans le monde</div>
+ </div>
+ <div class="stat-card">
+ <span class="stat-num">60%</span>
+ <span class="stat-unit">des cas</span>
+ <div class="stat-label">sont des arthrose du genou</div>
+ </div>
+ <div class="stat-card">
+ <span class="stat-num">11e</span>
+ <span class="stat-unit">cause</span>
+ <div class="stat-label">d'incapacité mondiale (étude 291 conditions)</div>
+ </div>
+ <div class="stat-card">
+ <span class="stat-num">+48%</span>
+ <span class="stat-unit">augmentation</span>
+ <div class="stat-label">du nombre de cas entre 1990 et 2019</div>
+ </div>
+ </div>
+
+ <div class="card">
+ <div class="card-title"><span class="icon">🌍</span>Impact global</div>
+ <p style="font-size:14.5px;">En 2017, l'arthrose a été responsable de <strong>9,6 millions d'années vécues avec un handicap</strong> dans le monde. C'est l'une des principales causes d'incapacité.</p>
+ </div>
+
+ <!-- 4. ÉTIOLOGIE -->
+ <div class="section-header">
+ <div class="section-num">04</div>
+ <h2>Étiologie & Facteurs de Risque</h2>
+ <div class="section-line"></div>
+ </div>
+
+ <div class="card card-amber">
+ <div class="card-title"><span class="icon">❓</span>Cause exacte</div>
+ <p style="font-size:14.5px; margin-bottom:14px;">La <strong>cause exacte</strong> de l'arthrose est encore <strong>inconnue</strong>. Plusieurs facteurs de risque ont néanmoins été identifiés :</p>
+ <div class="grid-3">
+ <div style="background:var(--amber-light); border-radius:12px; padding:16px; text-align:center;">
+ <div style="font-size:28px; margin-bottom:8px;">⚖️</div>
+ <strong style="display:block; color:var(--amber); font-size:13px; margin-bottom:4px;">SURPOIDS / OBÉSITÉ</strong>
+ <span style="font-size:13px; color:#7a5a3a;">Charge excessive sur les articulations</span>
+ </div>
+ <div style="background:var(--amber-light); border-radius:12px; padding:16px; text-align:center;">
+ <div style="font-size:28px; margin-bottom:8px;">🏥</div>
+ <strong style="display:block; color:var(--amber); font-size:13px; margin-bottom:4px;">ANTÉCÉDENTS</strong>
+ <span style="font-size:13px; color:#7a5a3a;">Lésion articulaire, chirurgie, surcharge articulaire</span>
+ </div>
+ <div style="background:var(--amber-light); border-radius:12px; padding:16px; text-align:center;">
+ <div style="font-size:28px; margin-bottom:8px;">🧬</div>
+ <strong style="display:block; color:var(--amber); font-size:13px; margin-bottom:4px;">GÉNÉTIQUE</strong>
+ <span style="font-size:13px; color:#7a5a3a;">Histoire familiale d'arthrose</span>
+ </div>
+ </div>
+ </div>
+
+ <!-- 5. CARTILAGE HYALIN -->
+ <div class="section-header">
+ <div class="section-num">05</div>
+ <h2>Physiopathologie — Cartilage Hyalin</h2>
+ <div class="section-line"></div>
+ </div>
+
+ <div class="grid-2">
+ <div class="cartilage-box">
+ <h4>🔬 Structure du cartilage hyalin</h4>
+ <ul class="check-list">
+ <li>Oriente les mouvements articulaires</li>
+ <li>Résiste aux forces de tension et compression</li>
+ <li>Tissu <strong>non vascularisé</strong> et sans innervation</li>
+ <li>Formé de <strong>chondrocytes</strong> + matrice extracellulaire</li>
+ <li>Fibres de collagène (95% type II)</li>
+ <li>Polysaccharides (glycosaminoglycanes) et protéines</li>
+ <li>L'eau est l'un des composants principaux</li>
+ </ul>
+ </div>
+ <div class="card card-purple">
+ <div class="card-title"><span class="icon">⚙️</span>Mécanismes lésionnels</div>
+ <div class="path-step">
+ <div class="path-num">1</div>
+ <p><strong>Lésion mécanique</strong> avec surcharge cartilagineuse, microfractures et remodelage trabéculaire de l'os sous-chondral</p>
+ </div>
+ <div class="path-step">
+ <div class="path-num">2</div>
+ <p>Coexistence de <strong>facteurs biochimiques et génétiques</strong> → altérations métaboliques et mort cellulaire des chondrocytes</p>
+ </div>
+ <div class="path-step">
+ <div class="path-num">3</div>
+ <p>Intervention des <strong>facteurs de croissance</strong> et médiateurs inflammatoires</p>
+ </div>
+ <div class="path-step">
+ <div class="path-num">4</div>
+ <p><strong>Dérégulation enzymatique</strong> → destruction des fibres de collagène → altérations progressives de la matrice</p>
+ </div>
+ </div>
+ </div>
+
+ <!-- 6. TABLEAU CLINIQUE -->
+ <div class="section-header">
+ <div class="section-num">06</div>
+ <h2>Tableau Clinique</h2>
+ <div class="section-line"></div>
+ </div>
+
+ <div class="grid-3">
+ <div class="card" style="text-align:center; border-top: 3px solid var(--red);">
+ <div style="font-size:32px; margin-bottom:10px;">😣</div>
+ <strong style="display:block; color:var(--red); font-size:14px; text-transform:uppercase; letter-spacing:0.5px;">Douleur</strong>
+ <p style="font-size:13px; color:var(--muted); margin-top:6px;">Douleur liée à l'activité physique</p>
+ </div>
+ <div class="card" style="text-align:center; border-top: 3px solid var(--amber);">
+ <div style="font-size:32px; margin-bottom:10px;">🚶</div>
+ <strong style="display:block; color:var(--amber); font-size:14px; text-transform:uppercase; letter-spacing:0.5px;">Limitation fonctionnelle</strong>
+ <p style="font-size:13px; color:var(--muted); margin-top:6px;">Réduction des amplitudes de mouvement</p>
+ </div>
+ <div class="card" style="text-align:center; border-top: 3px solid var(--gold);">
+ <div style="font-size:32px; margin-bottom:10px;">💪</div>
+ <strong style="display:block; color:var(--gold); font-size:14px; text-transform:uppercase; letter-spacing:0.5px;">Faiblesse musculaire</strong>
+ <p style="font-size:13px; color:var(--muted); margin-top:6px;">Atrophie par déconditionnement</p>
+ </div>
+ <div class="card" style="text-align:center; border-top: 3px solid var(--teal);">
+ <div style="font-size:32px; margin-bottom:10px;">🔒</div>
+ <strong style="display:block; color:var(--teal); font-size:14px; text-transform:uppercase; letter-spacing:0.5px;">Raideur articulaire</strong>
+ <p style="font-size:13px; color:var(--muted); margin-top:6px;">Surtout au réveil ou après repos</p>
+ </div>
+ <div class="card" style="text-align:center; border-top: 3px solid var(--purple);">
+ <div style="font-size:32px; margin-bottom:10px;">📉</div>
+ <strong style="display:block; color:var(--purple); font-size:14px; text-transform:uppercase; letter-spacing:0.5px;">Qualité de vie ↓</strong>
+ <p style="font-size:13px; color:var(--muted); margin-top:6px;">Impact sur la vie quotidienne et sociale</p>
+ </div>
+ <div class="card" style="text-align:center; border-top: 3px solid var(--green);">
+ <div style="font-size:32px; margin-bottom:10px;">ℹ️</div>
+ <strong style="display:block; color:var(--green); font-size:14px; text-transform:uppercase; letter-spacing:0.5px;">Possible asymptomatique</strong>
+ <p style="font-size:13px; color:var(--muted); margin-top:6px;">Malgré les altérations structurales</p>
+ </div>
+ </div>
+
+ <!-- 7. DIAGNOSTIC -->
+ <div class="section-header">
+ <div class="section-num">07</div>
+ <h2>Diagnostic</h2>
+ <div class="section-line"></div>
+ </div>
+
+ <div class="diag-box">
+ <h4>✅ Critères de diagnostic clinique (sans examens complémentaires)</h4>
+ <ul>
+ <li>Âge ≥ 45 ans *</li>
+ <li>Douleur articulaire liée à l'activité</li>
+ <li>Absence de raideur matinale <strong>OU</strong> raideur matinale &lt; 30 minutes</li>
+ </ul>
+ <p style="font-size:13px; color:#7a5a0a; margin-top:12px;">* L'arthrose peut aussi être diagnostiquée chez les moins de 45 ans, généralement après une lésion articulaire traumatique.</p>
+ </div>
+
+ <div class="grid-2">
+ <div class="card card-gold">
+ <div class="card-title"><span class="icon">🩻</span>Signes radiographiques</div>
+ <div class="radio-grid" style="grid-template-columns: 1fr 1fr;">
+ <div class="radio-item">
+ <span class="r-icon">📐</span>
+ <strong>Pincement articulaire</strong>
+ <span>Réduction de l'espace inter-articulaire</span>
+ </div>
+ <div class="radio-item">
+ <span class="r-icon">🦴</span>
+ <strong>Ostéophytes</strong>
+ <span>Proliférations osseuses aux marges</span>
+ </div>
+ <div class="radio-item">
+ <span class="r-icon">⚪</span>
+ <strong>Sclérose</strong>
+ <span>Condensation de l'os sous-chondral</span>
+ </div>
+ <div class="radio-item">
+ <span class="r-icon">🫧</span>
+ <strong>Kystes sous-chondraux</strong>
+ <span>Géodes osseuses</span>
+ </div>
+ </div>
+ </div>
+ <div class="card card-teal">
+ <div class="card-title"><span class="icon">⚠️</span>Important à retenir</div>
+ <div class="highlight">
+ <strong>Il n'existe pas de forte corrélation</strong> entre les symptômes (douleur) et les altérations structurales vues en imagerie. Des personnes peuvent avoir beaucoup d'altérations structurales et très peu de douleur !
+ </div>
+ <p style="font-size:14px; margin-top:12px;">Les radiographies, IRM et analyses sanguines ne sont nécessaires que pour <strong>exclure d'autres causes</strong> de douleur articulaire.</p>
+ </div>
+ </div>
+
+ <!-- 8. PHYSIOTHÉRAPIE -->
+ <div class="section-header">
+ <div class="section-num">08</div>
+ <h2>L'Arthrose & la Physiothérapie</h2>
+ <div class="section-line"></div>
+ </div>
+
+ <div class="physio-box">
+ <h4>💊 L'exercice : traitement de première ligne</h4>
+ <p style="font-size:14.5px; color:rgba(255,255,255,0.85); margin-bottom:6px;">L'exercice est approprié pour <strong style="color:#b2e8e9;">TOUTES les personnes</strong> souffrant d'arthrose, indépendamment de l'âge, de la sévérité des symptômes ou du niveau d'incapacité.</p>
+ <div class="physio-grid">
+ <div class="physio-item">
+ <strong>Rôle du physiothérapeute</strong>
+ <span>Sélection des meilleurs exercices, conseil, éducation, gestion de la douleur, amélioration de la marche</span>
+ </div>
+ <div class="physio-item">
+ <strong>Si prothèse articulaire</strong>
+ <span>Accompagnement avant et après la chirurgie pour maximiser les bénéfices et faciliter la récupération</span>
+ </div>
+ <div class="physio-item">
+ <strong>Exercice vs médicament</strong>
+ <span>L'exercice réduit davantage la douleur que le paracétamol dans les arthrose du genou et de la hanche</span>
+ </div>
+ <div class="physio-item">
+ <strong>Gestion de l'activité</strong>
+ <span>Réaliser les exercices lentement, à un rythme acceptable pour atteindre les niveaux recommandés</span>
+ </div>
+ </div>
+ </div>
+
+ <div class="card card-green">
+ <div class="card-title"><span class="icon">🏃</span>Programme d'exercices recommandé</div>
+ <div class="grid-2">
+ <ul class="check-list">
+ <li><strong>Renforcement musculaire local</strong> — protège et soutient les articulations</li>
+ <li><strong>Mobilité articulaire</strong> — réduit la raideur</li>
+ <li><strong>Amplitudes de mouvement normales</strong> — maintien de la fonction</li>
+ </ul>
+ <ul class="check-list">
+ <li><strong>Activité physique générale aérobie</strong> — cardio-vasculaire</li>
+ <li><strong>Mobilisation & étirements</strong> — notamment pour la hanche</li>
+ <li><strong>Équilibre</strong> — réduction du risque de chute</li>
+ </ul>
+ </div>
+ <div class="highlight" style="margin-top: 16px;">
+ <strong>🎯 Bénéfices de l'exercice :</strong> ↓ douleur · ↑ force musculaire · ↓ raideur · ↑ équilibre · ↑ humeur · ↑ énergie · maintien du poids · ↑ capacité cardiovasculaire · amélioration du sommeil
+ </div>
+ </div>
+
+ <!-- 9. MYTHES & FAITS -->
+ <div class="section-header">
+ <div class="section-num">09</div>
+ <h2>Mythes & Faits — À ne pas confondre</h2>
+ <div class="section-line"></div>
+ </div>
+
+ <div class="myth-fact-grid">
+ <div class="myth-side">
+ <div class="myth-label">❌ Mythe</div>
+ <p>L'arthrose n'affecte que les personnes âgées</p>
+ </div>
+ <div class="fact-side">
+ <div class="fact-label">✅ Fait</div>
+ <p>L'arthrose est plus fréquente avec l'âge, mais peut toucher des personnes de 20-30 ans. Environ 50% des jeunes adultes développeront une arthrose 10-15 ans après une lésion articulaire.</p>
+ </div>
+ </div>
+
+ <div class="myth-fact-grid">
+ <div class="myth-side">
+ <div class="myth-label">❌ Mythe</div>
+ <p>Il faut une radiographie ou IRM pour diagnostiquer l'arthrose</p>
+ </div>
+ <div class="fact-side">
+ <div class="fact-label">✅ Fait</div>
+ <p>L'arthrose peut être diagnostiquée cliniquement sans examens complémentaires. Il n'existe pas de forte corrélation entre les signes radiologiques et la douleur ressentie.</p>
+ </div>
+ </div>
+
+ <div class="myth-fact-grid">
+ <div class="myth-side">
+ <div class="myth-label">❌ Mythe</div>
+ <p>Quoi que je fasse, mon arthrose ne fera qu'empirer</p>
+ </div>
+ <div class="fact-side">
+ <div class="fact-label">✅ Fait</div>
+ <p>Seulement un tiers des personnes s'aggravent avec le temps. La majorité passe par des périodes alternées. Des stratégies actives (marche, renforcement, équilibre) peuvent améliorer la douleur et la capacité.</p>
+ </div>
+ </div>
+
+ <div class="myth-fact-grid">
+ <div class="myth-side">
+ <div class="myth-label">❌ Mythe</div>
+ <p>Plus de douleur = plus de lésion structurelle</p>
+ </div>
+ <div class="fact-side">
+ <div class="fact-label">✅ Fait</div>
+ <p>La douleur est une expérience complexe influencée par les émotions, l'humeur, le stress, le sommeil, la fatigue et l'inflammation. Elle n'est PAS directement liée aux altérations structurales.</p>
+ </div>
+ </div>
+
+ <div class="myth-fact-grid">
+ <div class="myth-side">
+ <div class="myth-label">❌ Mythe</div>
+ <p>L'exercice va endommager davantage mon articulation</p>
+ </div>
+ <div class="fact-side">
+ <div class="fact-label">✅ Fait</div>
+ <p>C'est le contraire ! L'exercice et le mouvement sont SÛRS et constituent la meilleure arme contre l'arthrose. Ils agissent comme un lubrifiant articulaire. L'immobilité entraîne raideur et faiblesse musculaire.</p>
+ </div>
+ </div>
+
+ <div class="myth-fact-grid">
+ <div class="myth-side">
+ <div class="myth-label">❌ Mythe</div>
+ <p>L'arthrose est causée par l'usure articulaire et les os frottent l'un contre l'autre</p>
+ </div>
+ <div class="fact-side">
+ <div class="fact-label">✅ Fait</div>
+ <p>L'arthrose N'EST PAS causée par l'usure due à l'usage. C'est une maladie qui interfère avec le processus de réparation du cartilage lui-même. L'arthrose n'est pas inévitable — tout le monde ne la développera pas en vieillissant.</p>
+ </div>
+ </div>
+
+ <!-- 10. SYNTHÈSE -->
+ <div class="section-header">
+ <div class="section-num">10</div>
+ <h2>Synthèse — Points Clés à Retenir</h2>
+ <div class="section-line"></div>
+ </div>
+
+ <div class="card" style="border: 2px solid var(--teal); background: linear-gradient(135deg, #f0fafa 0%, white 100%);">
+ <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px;">
+ <div>
+ <p style="font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:var(--teal); margin-bottom:10px;">Définitions essentielles</p>
+ <ul class="dot-list">
+ <li>Rhumatisme = groupe de + de 200 maladies</li>
+ <li>Arthrose = maladie rhumatismale la plus fréquente</li>
+ <li>OA = maladie du cartilage + os sous-chondral</li>
+ <li>Cause exacte inconnue</li>
+ </ul>
+ </div>
+ <div>
+ <p style="font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:var(--amber); margin-bottom:10px;">Diagnostic</p>
+ <ul class="dot-list">
+ <li>≥ 45 ans + douleur à l'activité + raideur &lt; 30 min</li>
+ <li>Diagnostic clinique possible sans imagerie</li>
+ <li>Signes radio : ostéophytes, pincement, sclérose</li>
+ </ul>
+ </div>
+ <div>
+ <p style="font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:var(--green); margin-bottom:10px;">Traitement physiothérapique</p>
+ <ul class="dot-list">
+ <li>Exercice = 1ère ligne de traitement</li>
+ <li>Renforcement + mobilité + aérobie</li>
+ <li>Plus efficace que le paracétamol</li>
+ <li>Accompagnement pré et post-chirurgical</li>
+ </ul>
+ </div>
+ <div>
+ <p style="font-size:12px; font-weight:700; text-transform:uppercase; letter-spacing:1px; color:var(--purple); margin-bottom:10px;">Physiopathologie</p>
+ <ul class="dot-list">
+ <li>Cartilage hyalin : non vascularisé, non innervé</li>
+ <li>Mort des chondrocytes + dérégulation enzymatique</li>
+ <li>Destruction des fibres de collagène de type II</li>
+ <li>Facteurs mécaniques + biochimiques + génétiques</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+
+</div>
+
+<div class="footer">
+ Fiche de révision réalisée à partir du cours de la <span>Enseignante D</span> · Licence en Physiothérapie 1ère année · 2e semestre
+</div>
+
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-08.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+</body>
+</html>

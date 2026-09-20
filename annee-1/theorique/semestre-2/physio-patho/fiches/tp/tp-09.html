@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Réparation Tissulaire — Fiche de révision complète — Régénération, Cicatrisation, Types d'intention, Chéloïdes">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../../assets/css/acces.css">
+<script src="../../../../../../assets/js/acces.js"></script>
+<title>Réparation Tissulaire – Fiche de Révision</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../../../assets/css/chrome.css">
+<style>
+ :root {
+ --bg: #0f1117;
+ --surface: #161922;
+ --surface2: #1a1d2a;
+ --border: #2a3050;
+ --text: #9aa3b8;
+ --text-muted: #9aa3b8;
+ --accent1: #f472b6;
+ --accent2: #ff6b9d;
+ --accent3: #ff5c6b;
+ --accent4: #f472b6;
+ --accent5: #ff8fa3;
+ --accent6: #f472b6;
+ --gold: #ff8fa3;
+ }
+
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+
+ body {
+ background: var(--bg);
+ color: var(--text);
+ font-family: 'Source Sans 3', sans-serif;
+ font-weight: 300;
+ line-height: 1.7;
+ padding: 2rem 1rem;
+ }
+
+ /* HEADER */
+ .header {
+ text-align: center;
+ margin-bottom: 3.5rem;
+ position: relative;
+ padding: 3rem 2rem;
+ border: 1px solid var(--border);
+ border-radius: 12px;
+ background: linear-gradient(135deg, #161922 0%, #1a1d2a 50%, #161922 100%);
+ overflow: hidden;
+ }
+ .header::before {
+ content: '';
+ position: absolute;
+ inset: 0;
+ background: radial-gradient(ellipse at 50% 0%, rgba(255,107,157,0.12) 0%, transparent 70%);
+ pointer-events: none;
+ }
+ .header-tag {
+ display: inline-block;
+ background: rgba(255,107,157,0.15);
+ border: 1px solid rgba(255,107,157,0.35);
+ color: var(--accent1);
+ font-size: 0.7rem;
+ letter-spacing: 0.2em;
+ text-transform: uppercase;
+ padding: 0.3rem 1rem;
+ border-radius: 50px;
+ margin-bottom: 1.2rem;
+ }
+ .header h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(2rem, 5vw, 3.2rem);
+ font-weight: 900;
+ color: var(--text);
+ line-height: 1.15;
+ margin-bottom: 0.8rem;
+ }
+ .header h1 span { color: var(--accent1); }
+ .header p {
+ color: var(--text-muted);
+ font-size: 0.95rem;
+ max-width: 550px;
+ margin: 0 auto;
+ }
+
+ /* LAYOUT */
+ .container { max-width: 960px; margin: 0 auto; }
+
+ /* SECTION TITLES */
+ .section-title {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.55rem;
+ font-weight: 700;
+ color: var(--text);
+ margin-bottom: 1.2rem;
+ padding-bottom: 0.5rem;
+ border-bottom: 2px solid var(--border);
+ display: flex;
+ align-items: center;
+ gap: 0.7rem;
+ }
+ .section-title .num {
+ display: inline-flex;
+ align-items: center;
+ justify-content: center;
+ width: 32px;
+ height: 32px;
+ border-radius: 50%;
+ font-family: 'Source Sans 3', sans-serif;
+ font-size: 0.85rem;
+ font-weight: 600;
+ flex-shrink: 0;
+ }
+
+ /* CARDS GRID */
+ .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-bottom: 1.2rem; }
+ .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.2rem; margin-bottom: 1.2rem; }
+ @media (max-width: 640px) {
+ .grid-2, .grid-3 { grid-template-columns: 1fr; }
+ }
+
+ /* CARD */
+ .card {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ border-radius: 10px;
+ padding: 1.4rem;
+ position: relative;
+ overflow: hidden;
+ transition: border-color 0.2s, transform 0.2s;
+ }
+ .card:hover { border-color: rgba(255,107,157,0.4); transform: translateY(-2px); }
+ .card-accent-top {
+ position: absolute;
+ top: 0; left: 0; right: 0;
+ height: 3px;
+ border-radius: 10px 10px 0 0;
+ }
+ .card h3 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.05rem;
+ font-weight: 700;
+ margin-bottom: 0.75rem;
+ margin-top: 0.2rem;
+ }
+ .card ul { list-style: none; padding: 0; }
+ .card ul li {
+ padding: 0.25rem 0 0.25rem 1.2rem;
+ position: relative;
+ font-size: 0.9rem;
+ color: var(--text);
+ }
+ .card ul li::before {
+ content: '›';
+ position: absolute;
+ left: 0;
+ color: var(--text-muted);
+ font-weight: 600;
+ }
+ .card p { font-size: 0.9rem; color: var(--text); }
+
+ /* DEFINITION BOX */
+ .def-box {
+ background: var(--surface2);
+ border: 1px solid var(--border);
+ border-left: 4px solid var(--accent1);
+ border-radius: 0 10px 10px 0;
+ padding: 1.2rem 1.5rem;
+ margin-bottom: 1.2rem;
+ font-size: 0.95rem;
+ }
+ .def-box.green { border-left-color: var(--accent2); }
+ .def-box.orange { border-left-color: var(--accent3); }
+ .def-box.purple { border-left-color: var(--accent4); }
+ .def-box.gold { border-left-color: var(--gold); }
+
+ .def-box strong { color: var(--accent1); }
+ .def-box.green strong { color: var(--accent2); }
+ .def-box.orange strong { color: var(--accent3); }
+ .def-box.purple strong { color: var(--accent4); }
+ .def-box.gold strong { color: var(--gold); }
+
+ /* PHASE TIMELINE */
+ .timeline {
+ display: flex;
+ flex-direction: column;
+ gap: 0;
+ margin-bottom: 1.2rem;
+ }
+ .phase-item {
+ display: grid;
+ grid-template-columns: 160px 1fr;
+ gap: 1.2rem;
+ position: relative;
+ padding-bottom: 1.2rem;
+ }
+ .phase-item:last-child { padding-bottom: 0; }
+ .phase-label {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-end;
+ padding-right: 1.2rem;
+ border-right: 2px solid var(--border);
+ position: relative;
+ }
+ .phase-label::after {
+ content: '';
+ position: absolute;
+ right: -7px;
+ top: 6px;
+ width: 12px;
+ height: 12px;
+ border-radius: 50%;
+ background: var(--surface);
+ border: 2px solid var(--accent1);
+ }
+ .phase-name {
+ font-family: 'Playfair Display', serif;
+ font-size: 0.9rem;
+ font-weight: 700;
+ text-align: right;
+ line-height: 1.3;
+ }
+ .phase-time {
+ font-size: 0.72rem;
+ color: var(--text-muted);
+ text-align: right;
+ margin-top: 0.1rem;
+ }
+ .phase-content {
+ padding-top: 0.1rem;
+ padding-bottom: 0.5rem;
+ }
+ .phase-content ul { list-style: none; padding: 0; }
+ .phase-content ul li {
+ padding: 0.2rem 0 0.2rem 1.2rem;
+ position: relative;
+ font-size: 0.88rem;
+ }
+ .phase-content ul li::before {
+ content: '•';
+ position: absolute;
+ left: 0;
+ color: var(--accent1);
+ }
+ @media (max-width: 540px) {
+ .phase-item { grid-template-columns: 1fr; }
+ .phase-label { align-items: flex-start; border-right: none; border-left: 2px solid var(--border); padding-right: 0; padding-left: 1rem; }
+ .phase-label::after { left: -7px; right: auto; }
+ }
+
+ /* BADGE TAGS */
+ .tag {
+ display: inline-block;
+ padding: 0.15rem 0.6rem;
+ border-radius: 50px;
+ font-size: 0.72rem;
+ font-weight: 600;
+ letter-spacing: 0.04em;
+ margin-right: 0.3rem;
+ margin-bottom: 0.3rem;
+ }
+ .tag-blue { background: rgba(255,107,157,0.15); color: var(--accent1); border: 1px solid rgba(255,107,157,0.3); }
+ .tag-green { background: rgba(255,107,157,0.15); color: var(--accent2); border: 1px solid rgba(255,107,157,0.3); }
+ .tag-orange { background: rgba(255,92,107,0.15); color: var(--accent3); border: 1px solid rgba(255,92,107,0.3); }
+ .tag-purple { background: rgba(255,107,157,0.15); color: var(--accent4); border: 1px solid rgba(255,107,157,0.3); }
+ .tag-gold { background: rgba(255,107,157,0.15); color: var(--gold); border: 1px solid rgba(255,107,157,0.3); }
+
+ /* COMPARISON TABLE */
+ .compare-table {
+ width: 100%;
+ border-collapse: collapse;
+ margin-bottom: 1.2rem;
+ font-size: 0.88rem;
+ }
+ .compare-table th {
+ background: var(--surface2);
+ padding: 0.75rem 1rem;
+ text-align: left;
+ font-family: 'Playfair Display', serif;
+ font-size: 0.9rem;
+ border-bottom: 2px solid var(--border);
+ color: var(--text);
+ }
+ .compare-table td {
+ padding: 0.65rem 1rem;
+ border-bottom: 1px solid var(--border);
+ vertical-align: top;
+ }
+ .compare-table tr:last-child td { border-bottom: none; }
+ .compare-table tr:hover td { background: rgba(255,255,255,0.02); }
+
+ /* MEMO BOX */
+ .memo {
+ background: rgba(255,107,157,0.07);
+ border: 1px solid rgba(255,107,157,0.3);
+ border-radius: 10px;
+ padding: 1.2rem 1.5rem;
+ margin-bottom: 1.2rem;
+ }
+ .memo-title {
+ font-family: 'Playfair Display', serif;
+ color: var(--gold);
+ font-size: 0.85rem;
+ font-weight: 700;
+ letter-spacing: 0.12em;
+ text-transform: uppercase;
+ margin-bottom: 0.6rem;
+ }
+ .memo p, .memo ul { font-size: 0.88rem; }
+ .memo ul { list-style: none; padding: 0; }
+ .memo ul li { padding: 0.2rem 0 0.2rem 1.2rem; position: relative; }
+ .memo ul li::before { content: '✦'; position: absolute; left: 0; color: var(--gold); font-size: 0.65rem; top: 0.35rem; }
+
+ /* SECTION SPACING */
+ .section { margin-bottom: 3rem; }
+
+ /* HORIZONTAL RULE */
+ hr { border: none; border-top: 1px solid var(--border); margin: 2.5rem 0; }
+
+ /* FACTOR COLS */
+ .factor-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 1.2rem;
+ margin-bottom: 1.2rem;
+ }
+ @media (max-width: 640px) { .factor-grid { grid-template-columns: 1fr; } }
+
+ .factor-col {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ border-radius: 10px;
+ padding: 1.2rem;
+ }
+ .factor-col h3 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1rem;
+ font-weight: 700;
+ margin-bottom: 0.8rem;
+ padding-bottom: 0.4rem;
+ border-bottom: 1px solid var(--border);
+ }
+ .factor-col ul { list-style: none; padding: 0; }
+ .factor-col ul li {
+ font-size: 0.88rem;
+ padding: 0.3rem 0 0.3rem 1.2rem;
+ position: relative;
+ border-bottom: 1px solid rgba(255,255,255,0.04);
+ }
+ .factor-col ul li:last-child { border-bottom: none; }
+ .factor-col ul li::before { content: '—'; position: absolute; left: 0; color: var(--text-muted); }
+ .factor-col ul li span { color: var(--text-muted); font-size: 0.82rem; display: block; }
+
+ /* GROWTH FACTORS TABLE */
+ .gf-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+ gap: 0.9rem;
+ margin-bottom: 1.2rem;
+ }
+ .gf-card {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ border-radius: 8px;
+ padding: 1rem;
+ }
+ .gf-card:hover { border-color: rgba(255,107,157,0.35); }
+ .gf-name {
+ font-weight: 600;
+ font-size: 0.88rem;
+ color: var(--accent1);
+ margin-bottom: 0.2rem;
+ }
+ .gf-full { font-size: 0.8rem; color: var(--text-muted); margin-bottom: 0.4rem; }
+ .gf-role { font-size: 0.85rem; }
+
+ /* KELOID SPECIAL BOX */
+ .keloid-box {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 1.2rem;
+ background: var(--surface);
+ border: 1px solid rgba(255,92,107,0.35);
+ border-radius: 10px;
+ padding: 1.4rem;
+ margin-bottom: 1.2rem;
+ }
+ @media (max-width: 540px) { .keloid-box { grid-template-columns: 1fr; } }
+ .keloid-box h3 { font-family: 'Playfair Display', serif; color: var(--accent3); margin-bottom: 0.6rem; font-size: 1rem; }
+
+ /* QCM SECTION */
+ .qcm-list { list-style: none; padding: 0; }
+ .qcm-list li {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ border-radius: 8px;
+ padding: 1rem 1.2rem;
+ margin-bottom: 0.8rem;
+ font-size: 0.9rem;
+ cursor: pointer;
+ transition: border-color 0.2s;
+ }
+ .qcm-list li:hover { border-color: rgba(255,107,157,0.4); }
+ .qcm-q { font-weight: 600; color: var(--accent1); margin-bottom: 0.3rem; }
+ .qcm-a { color: var(--text-muted); font-size: 0.85rem; display: none; padding-top: 0.4rem; border-top: 1px solid var(--border); margin-top: 0.4rem; }
+ .qcm-list li.open .qcm-a { display: block; }
+ .qcm-hint { font-size: 0.75rem; color: var(--text-muted); margin-bottom: 0.5rem; }
+
+ /* FOOTER */
+ .footer {
+ text-align: center;
+ padding: 2rem;
+ color: var(--text-muted);
+ font-size: 0.8rem;
+ border-top: 1px solid var(--border);
+ margin-top: 3rem;
+ }
+
+ /* ANIMATE ON LOAD */
+ @keyframes fadeUp {
+ from { opacity: 0; transform: translateY(16px); }
+ to { opacity: 1; transform: translateY(0); }
+ }
+ .section {
+ animation: fadeUp 0.5s ease both;
+ }
+ .section:nth-child(1) { animation-delay: 0.05s; }
+ .section:nth-child(2) { animation-delay: 0.1s; }
+ .section:nth-child(3) { animation-delay: 0.15s; }
+ .section:nth-child(4) { animation-delay: 0.2s; }
+ .section:nth-child(5) { animation-delay: 0.25s; }
+ .section:nth-child(6) { animation-delay: 0.3s; }
+ .section:nth-child(7) { animation-delay: 0.35s; }
+ .section:nth-child(8) { animation-delay: 0.4s; }
+</style>
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/physio-patho.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-theme.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
+</head>
+<body>
+<a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
+<div class="page-toggle"><div class="pt-inner"><a href="../../qcm/tp/tp-09.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<div class="container">
+
+ <!-- HEADER -->
+ <div class="header">
+ <div class="header-tag">Physiopathologie 1 · L1 Physiothérapie · 2e semestre</div>
+ <h1>Réparation <span>Tissulaire</span></h1>
+ <p>Fiche de révision complète — Régénération, Cicatrisation, Types d'intention, Chéloïdes</p>
+ </div>
+
+ <!-- 1. DÉFINITION GÉNÉRALE -->
+ <div class="section">
+ <div class="section-title">
+ <span class="num" style="background:rgba(88,166,255,0.15);color:var(--accent1);">1</span>
+ Définition & Vue d'ensemble
+ </div>
+ <div class="def-box">
+ <strong>Réparation tissulaire</strong> : réponse à une lésion qui se superpose au processus inflammatoire, visant à <strong>restaurer l'intégrité anatomique et fonctionnelle</strong> du tissu lésé.
+ </div>
+ <div class="grid-2">
+ <div class="card">
+ <div class="card-accent-top" style="background:var(--accent2);"></div>
+ <h3 style="color:var(--accent2);">🔄 Régénération</h3>
+ <p>Remplacement des cellules mortes par des cellules <strong>du même type</strong>. Peu ou pas de trace de la lésion antérieure. Se produit pour les lésions légères ou superficielles.</p>
+ </div>
+ <div class="card">
+ <div class="card-accent-top" style="background:var(--accent3);"></div>
+ <h3 style="color:var(--accent3);">🩹 Cicatrisation</h3>
+ <p>Remplacement du tissu perdu par du <strong>tissu conjonctif dense</strong>. Se produit après une lésion persistante ou grave entraînant des dommages parenchymateux et matriciels.</p>
+ </div>
+ </div>
+ <div class="memo">
+ <div class="memo-title">⚠ À retenir</div>
+ <ul>
+ <li>Régénération OU cicatrisation dépend : du <strong>type d'organe/tissu</strong>, du <strong>type de cellule</strong>, et de <strong>l'étendue de la lésion</strong>.</li>
+ <li>Les deux mécanismes peuvent se produire <strong>simultanément</strong> dans un même tissu.</li>
+ <li>La communication entre cellules parenchymateuses et matrice extracellulaire est <strong>essentielle</strong>.</li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- 2. TYPES DE CELLULES -->
+ <div class="section">
+ <div class="section-title">
+ <span class="num" style="background:rgba(63,185,80,0.15);color:var(--accent2);">2</span>
+ Classification des cellules corporelles
+ </div>
+ <div class="grid-3">
+ <div class="card">
+ <div class="card-accent-top" style="background:var(--accent2);"></div>
+ <h3 style="color:var(--accent2);">Cellules Labiles</h3>
+ <span class="tag tag-green">Régénération facile</span>
+ <ul>
+ <li>Se divisent <strong>continuellement</strong> toute la vie</li>
+ <li>Remplacent en permanence les cellules détruites</li>
+ <li>Épithélium de surface (peau, cavité buccale, vagin, col utérus)</li>
+ <li>Épithélium GI colonnaire</li>
+ <li>Épithélium de transition urinaire</li>
+ <li>Cellules de la moelle osseuse</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-accent-top" style="background:var(--accent1);"></div>
+ <h3 style="color:var(--accent1);">Cellules Stables</h3>
+ <span class="tag tag-blue">Régénération conditionnelle</span>
+ <ul>
+ <li>En phase <strong>G0</strong> (quiescentes) normalement</li>
+ <li>Capables de proliférer si stimulus approprié</li>
+ <li>Peuvent reconstituer le tissu d'origine</li>
+ <li>Foie (hépatocytes), reins</li>
+ <li>Cellules musculaires lisses</li>
+ <li>Endothélium vasculaire</li>
+ <li>Fibroblastes</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-accent-top" style="background:var(--accent3);"></div>
+ <h3 style="color:var(--accent3);">Cellules Permanentes</h3>
+ <span class="tag tag-orange">Cicatrisation uniquement</span>
+ <ul>
+ <li><strong>Ne peuvent pas</strong> subir de division mitotique</li>
+ <li>Si détruites → remplacées par du tissu cicatriciel</li>
+ <li>Perte des caractéristiques tissulaires</li>
+ <li>Neurones</li>
+ <li>Cellules musculaires squelettiques</li>
+ <li>Cardiomyocytes</li>
+ </ul>
+ </div>
+ </div>
+ <div class="memo">
+ <div class="memo-title">📌 Règle mnémotechnique</div>
+ <p><strong>L</strong>abiles = <strong>L</strong>ife-long (toute la vie) | <strong>S</strong>tables = <strong>S</strong>ommeil (dormantes, réveillables) | <strong>P</strong>ermanentes = <strong>P</strong>ertes définitives</p>
+ </div>
+ </div>
+
+ <!-- 3. RÉGÉNÉRATION -->
+ <div class="section">
+ <div class="section-title">
+ <span class="num" style="background:rgba(63,185,80,0.15);color:var(--accent2);">3</span>
+ Physiopathologie de la Régénération
+ </div>
+ <div class="def-box green">
+ Après la mort cellulaire, les cellules labiles/stables voisines sont stimulées par des <strong>médiateurs chimiques</strong> et des <strong>facteurs de croissance</strong> pour proliférer et remplacer les cellules mortes.
+ </div>
+ <div class="grid-2">
+ <div class="card">
+ <div class="card-accent-top" style="background:var(--accent2);"></div>
+ <h3>Conditions nécessaires</h3>
+ <ul>
+ <li>Intégrité de la <strong>matrice extracellulaire</strong></li>
+ <li>Signaux des facteurs de croissance interagissant avec la matrice</li>
+ <li>Développement de cellules matures à partir de cellules indifférenciées</li>
+ <li>Prolifération contrôlée par le <strong>cycle cellulaire</strong></li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-accent-top" style="background:var(--accent2);"></div>
+ <h3>Contrôle de la prolifération</h3>
+ <ul>
+ <li><strong>Stimuli positifs</strong> : facteurs de croissance (pro-prolifération)</li>
+ <li><strong>Stimuli négatifs</strong> : inhibition par contact</li>
+ <li>Quand les cellules se touchent → signal d'arrêt → remodelage</li>
+ <li>But : éviter la formation de <strong>néoplasmes</strong></li>
+ </ul>
+ </div>
+ </div>
+ <div style="margin-bottom:1rem;">
+ <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;">Voies de libération des facteurs de croissance</p>
+ <div class="grid-3">
+ <div class="card" style="text-align:center;">
+ <div style="font-size:1.8rem;margin-bottom:0.4rem;">🔁</div>
+ <h3 style="color:var(--accent4);">Autocrine</h3>
+ <p style="font-size:0.85rem;">La cellule produit son propre facteur de croissance</p>
+ </div>
+ <div class="card" style="text-align:center;">
+ <div style="font-size:1.8rem;margin-bottom:0.4rem;">↔️</div>
+ <h3 style="color:var(--accent1);">Paracrine</h3>
+ <p style="font-size:0.85rem;">Cellules inflammatoires libèrent des FC vers les cellules voisines</p>
+ </div>
+ <div class="card" style="text-align:center;">
+ <div style="font-size:1.8rem;margin-bottom:0.4rem;">🩸</div>
+ <h3 style="color:var(--accent2);">Endocrine</h3>
+ <p style="font-size:0.85rem;">FC transportés par la circulation sanguine jusqu'au site</p>
+ </div>
+ </div>
+ </div>
+
+ <!-- Facteurs de croissance -->
+ <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:0.7rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;">Principaux facteurs de croissance</p>
+ <div class="gf-grid">
+ <div class="gf-card">
+ <div class="gf-name">Interleukines (IL)</div>
+ <div class="gf-full">Cellules inflammatoires</div>
+ <div class="gf-role">Induisent prolifération et chimiotaxie des fibroblastes</div>
+ </div>
+ <div class="gf-card">
+ <div class="gf-name">EGF</div>
+ <div class="gf-full">Facteur de Croissance Épidermique</div>
+ <div class="gf-role">Angiogenèse, prolifération cellulaire, synthèse de collagène</div>
+ </div>
+ <div class="gf-card">
+ <div class="gf-name">PDGF</div>
+ <div class="gf-full">Facteur de Croissance Plaquettaire</div>
+ <div class="gf-role">Chimiotaxie des macrophages, prolifération des cellules épithéliales, muscles lisses et fibroblastes</div>
+ </div>
+ <div class="gf-card">
+ <div class="gf-name">FGF (bFGF)</div>
+ <div class="gf-full">Facteur de Croissance des Fibroblastes</div>
+ <div class="gf-role">Stimule angiogenèse, prolifération cellulaire, synthèse de collagène (via macrophages)</div>
+ </div>
+ <div class="gf-card">
+ <div class="gf-name">VEGF</div>
+ <div class="gf-full">Facteur de Croissance Endothélial Vasculaire</div>
+ <div class="gf-role">⭐ Stimulateur le plus important de l'<strong>angiogenèse</strong> (cellules endothéliales)</div>
+ </div>
+ <div class="gf-card">
+ <div class="gf-name">TGF-α / TGF-β</div>
+ <div class="gf-full">Facteurs de Croissance Transformants</div>
+ <div class="gf-role">TGF-β : inhibe cellules épithéliales, stimule fibroblastes/chimiotaxie, rôle dans la <strong>fibrinogenèse</strong></div>
+ </div>
+ </div>
+ </div>
+
+ <!-- 4. CICATRISATION -->
+ <div class="section">
+ <div class="section-title">
+ <span class="num" style="background:rgba(247,129,102,0.15);color:var(--accent3);">4</span>
+ Physiopathologie de la Cicatrisation
+ </div>
+ <div class="def-box orange">
+ Processus survenant après une <strong>lésion persistante ou grave</strong> avec dommages aux cellules parenchymateuses ET à la matrice extracellulaire → réparation <strong>impossible par régénération seule</strong> → remplacement par du tissu conjonctif (cicatrice).
+ </div>
+
+ <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1rem;font-weight:600;text-transform:uppercase;letter-spacing:0.08em;">Les 3 phases de la cicatrisation</p>
+ <div class="timeline">
+ <div class="phase-item">
+ <div class="phase-label">
+ <div class="phase-name" style="color:var(--accent3);">Phase<br>Inflammatoire</div>
+ <div class="phase-time">J0 → ~J4</div>
+ </div>
+ <div class="phase-content">
+ <ul>
+ <li>Commence immédiatement après la lésion</li>
+ <li><strong>Formation du caillot sanguin</strong> (hémostase)</li>
+ <li>Migration des <strong>neutrophiles</strong> (1ère vague) → nettoyage</li>
+ <li>Migration des <strong>macrophages</strong> (2ème vague) → production de facteurs de croissance essentiels</li>
+ <li>Pic de fibronectine et collagène III précoce</li>
+ </ul>
+ </div>
+ </div>
+ <div class="phase-item">
+ <div class="phase-label">
+ <div class="phase-name" style="color:var(--accent1);">Phase<br>Proliférative</div>
+ <div class="phase-time">J4 → ~3 semaines</div>
+ </div>
+ <div class="phase-content">
+ <ul>
+ <li>Migration des <strong>fibroblastes</strong> → synthèse collagène, protéoglycanes, glycoprotéines</li>
+ <li>Les fibroblastes induisent l'<strong>angiogenèse</strong> via facteurs de croissance</li>
+ <li>Formation du <strong>tissu de granulation</strong> (rouge vif) : capillaires + fibroblastes + cellules inflammatoires résiduelles</li>
+ <li>Prolifération des cellules épithéliales en surface (dernière étape)</li>
+ <li>Augmentation progressive du <strong>collagène I</strong></li>
+ </ul>
+ </div>
+ </div>
+ <div class="phase-item">
+ <div class="phase-label">
+ <div class="phase-name" style="color:var(--accent2);">Phase de<br>Remodelage</div>
+ <div class="phase-time">~3 sem → 6 mois+</div>
+ </div>
+ <div class="phase-content">
+ <ul>
+ <li>Développement d'une <strong>cicatrice fibreuse</strong></li>
+ <li>↑ collagène (surtout type I, remplace le III)</li>
+ <li>↓ vascularisation, ↓ cellules inflammatoires</li>
+ <li>Synthèse/destruction collagène par les fibroblastes via <strong>collagénase</strong></li>
+ <li>Différenciation des fibroblastes en <strong>myofibroblastes</strong></li>
+ <li>Contraction cicatricielle (jusqu'à 90% du volume en 2ème intention)</li>
+ <li>↑ force de tension → cicatrice rétrécit et devient moins visible</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <!-- 5. TYPES DE CICATRISATION -->
+ <div class="section">
+ <div class="section-title">
+ <span class="num" style="background:rgba(210,168,255,0.15);color:var(--accent4);">5</span>
+ Types de cicatrisation selon l'intention
+ </div>
+ <table class="compare-table">
+ <thead>
+ <tr>
+ <th>Type</th>
+ <th>Contexte</th>
+ <th>Mécanisme</th>
+ <th>Résultat</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td><span class="tag tag-green">1ère intention</span></td>
+ <td>Perte tissulaire minimale, bords juxtaposés (plaie chirurgicale suturée)</td>
+ <td>Cicatrisation simple et rapide avec asepsie et suture des bords</td>
+ <td>Cicatrice fine (<em>hairline scar</em>), peu visible</td>
+ </tr>
+ <tr>
+ <td><span class="tag tag-orange">2ème intention</span></td>
+ <td>Perte tissulaire importante, bords éloignés</td>
+ <td>Cicatrisation plus lente, formation de tissu de granulation abondant, contraction cicatricielle importante</td>
+ <td>Cicatrice plus large, peut contracter jusqu'à 90% du volume initial</td>
+ </tr>
+ <tr>
+ <td><span class="tag tag-purple">3ème intention</span></td>
+ <td>Plaie laissée ouverte puis suturée chirurgicalement après formation de tissu de granulation</td>
+ <td>Correction chirurgicale différée (suture tardive) pour optimiser résultats</td>
+ <td>Meilleurs résultats fonctionnels et esthétiques qu'une 2ème intention laissée seule</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+
+ <!-- 6. REMODELAGE PHYSIOPATHOLOGIQUE -->
+ <div class="section">
+ <div class="section-title">
+ <span class="num" style="background:rgba(255,166,87,0.15);color:var(--accent5);">6</span>
+ Mécanisme physiopathologique du remodelage
+ </div>
+ <div class="grid-2">
+ <div class="card">
+ <div class="card-accent-top" style="background:var(--accent5);"></div>
+ <h3 style="color:var(--accent5);">Processus de remodelage</h3>
+ <ul>
+ <li>↑ quantité de collagène</li>
+ <li>Remplacement collagène <strong>type I</strong> → <strong>type III</strong> (plus épais)</li>
+ <li>↓ capillarisation (involution vasculaire)</li>
+ <li>↓ cellules inflammatoires</li>
+ <li>Différenciation fibroblastes → <strong>myofibroblastes</strong></li>
+ <li>Contraction de la cicatrice</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-accent-top" style="background:var(--accent5);"></div>
+ <h3 style="color:var(--accent5);">Collagène dans le temps</h3>
+ <ul>
+ <li><strong>J0–J4</strong> : Fibronectine et collagène III dominent</li>
+ <li><strong>J6–J12</strong> : Montée progressive du collagène I</li>
+ <li><strong>&gt;J12</strong> : Collagène I dominant, ↑ résistance de la plaie</li>
+ <li>Equilibre synthèse / dégradation par la <strong>collagénase</strong></li>
+ <li>Force de tension maximale ≈ 70–80% de la normale</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+
+ <!-- 7. FACTEURS AFFECTANT -->
+ <div class="section">
+ <div class="section-title">
+ <span class="num" style="background:rgba(121,192,255,0.15);color:var(--accent6);">7</span>
+ Facteurs affectant la cicatrisation
+ </div>
+ <div class="factor-grid">
+ <div class="factor-col" style="border-color:rgba(121,192,255,0.3);">
+ <h3 style="color:var(--accent6);">Facteurs Extrinsèques</h3>
+ <ul>
+ <li>Mauvaise alimentation <span>↓ nutriments pour synthèse collagène</span></li>
+ <li>Ischémie tissulaire <span>↓ inflammation et FC</span></li>
+ <li>Infection persistante <span>Bloque la phase inflammatoire initiale</span></li>
+ <li>Corps étrangers <span>Entretient la phase inflammatoire</span></li>
+ <li>Stéroïdes systémiques <span>Inhibent la phase inflammatoire</span></li>
+ <li>Diabète <span>Inhibe la phase inflammatoire</span></li>
+ <li>Dénervation <span>Déficit de médiation</span></li>
+ </ul>
+ </div>
+ <div class="factor-col" style="border-color:rgba(210,168,255,0.3);">
+ <h3 style="color:var(--accent4);">Facteurs Intrinsèques</h3>
+ <ul>
+ <li>Type de tissu lésé <span>Labile, stable ou permanent</span></li>
+ <li>Localisation de la lésion <span>Cavité pleurale, péritonéale, synoviale</span></li>
+ <li>Anomalie croissance cellulaire / MEC <span>→ cicatrice hypertrophique, chéloïdes, granulomes</span></li>
+ <li>Réactions immunitaires/auto-immunes <span>→ stimulation persistante fibrogénèse : PR, cirrhose, fibrose pulmonaire</span></li>
+ </ul>
+ </div>
+ </div>
+ </div>
+
+ <!-- 8. CHÉLOÏDES -->
+ <div class="section">
+ <div class="section-title">
+ <span class="num" style="background:rgba(247,129,102,0.15);color:var(--accent3);">8</span>
+ Chéloïdes
+ </div>
+ <div class="keloid-box">
+ <div>
+ <h3>Qu'est-ce qu'une chéloïde ?</h3>
+ <p style="font-size:0.9rem;margin-bottom:0.8rem;">Forme <strong>exagérée de cicatrisation</strong> : la cicatrice dépasse les limites de la plaie initiale et continue de croître, formant un tissu bien trop volumineux pour la fonction qu'elle remplit.</p>
+ <ul style="list-style:none;padding:0;font-size:0.88rem;">
+ <li style="padding:0.25rem 0 0.25rem 1.2rem;position:relative;">
+ <span style="position:absolute;left:0;color:var(--accent3);">›</span>
+ Ressemble à une tuméfaction, <strong>sans inflammation</strong>
+ </li>
+ <li style="padding:0.25rem 0 0.25rem 1.2rem;position:relative;">
+ <span style="position:absolute;left:0;color:var(--accent3);">›</span>
+ Facteurs génétiques prédisposants (plus fréquent chez personnes à peau foncée)
+ </li>
+ <li style="padding:0.25rem 0 0.25rem 1.2rem;position:relative;">
+ <span style="position:absolute;left:0;color:var(--accent3);">›</span>
+ Dépasse les bords de la plaie originelle (≠ cicatrice hypertrophique qui reste dans les bords)
+ </li>
+ </ul>
+ </div>
+ <div>
+ <h3>Mécanisme physiopathologique</h3>
+ <p style="font-size:0.88rem;margin-bottom:0.6rem;">Défaillance des mécanismes normaux d'inhibition :</p>
+ <ul style="list-style:none;padding:0;font-size:0.88rem;">
+ <li style="padding:0.25rem 0 0.25rem 1.2rem;position:relative;">
+ <span style="position:absolute;left:0;color:var(--accent3);">›</span>
+ Absence d'<strong>inhibition par contact</strong>
+ </li>
+ <li style="padding:0.25rem 0 0.25rem 1.2rem;position:relative;">
+ <span style="position:absolute;left:0;color:var(--accent3);">›</span>
+ Dépôt continu et excessif de <strong>collagène</strong>
+ </li>
+ <li style="padding:0.25rem 0 0.25rem 1.2rem;position:relative;">
+ <span style="position:absolute;left:0;color:var(--accent3);">›</span>
+ Activité des fibroblastes non régulée
+ </li>
+ <li style="padding:0.25rem 0 0.25rem 1.2rem;position:relative;">
+ <span style="position:absolute;left:0;color:var(--accent3);">›</span>
+ Déséquilibre synthèse/dégradation de collagène
+ </li>
+ </ul>
+ </div>
+ </div>
+ </div>
+
+ <!-- 9. TABLEAU COMPARATIF RÉGÉNÉRATION / CICATRISATION -->
+ <div class="section">
+ <div class="section-title">
+ <span class="num" style="background:rgba(227,179,65,0.15);color:var(--gold);">9</span>
+ Comparaison Régénération vs Cicatrisation
+ </div>
+ <table class="compare-table">
+ <thead>
+ <tr>
+ <th>Critère</th>
+ <th style="color:var(--accent2);">Régénération</th>
+ <th style="color:var(--accent3);">Cicatrisation</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td><strong>Tissu résultant</strong></td>
+ <td>Même tissu qu'avant</td>
+ <td>Tissu conjonctif dense (cicatrice)</td>
+ </tr>
+ <tr>
+ <td><strong>Type de lésion</strong></td>
+ <td>Légère, superficielle</td>
+ <td>Grave, persistante</td>
+ </tr>
+ <tr>
+ <td><strong>Cellules impliquées</strong></td>
+ <td>Labiles ou stables</td>
+ <td>Permanentes / toutes si lésion grave</td>
+ </tr>
+ <tr>
+ <td><strong>MEC</strong></td>
+ <td>Intacte (nécessaire)</td>
+ <td>Endommagée</td>
+ </tr>
+ <tr>
+ <td><strong>Fonction restituée</strong></td>
+ <td>Oui, complète</td>
+ <td>Partielle (cicatrice fonctionnelle limitée)</td>
+ </tr>
+ <tr>
+ <td><strong>Collagène</strong></td>
+ <td>Peu impliqué</td>
+ <td>Dépôt majeur (surtout type I)</td>
+ </tr>
+ <tr>
+ <td><strong>Tissu de granulation</strong></td>
+ <td>Non</td>
+ <td>Oui (phase proliférative)</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+
+ <!-- 10. AUTO-ÉVALUATION -->
+ <div class="section">
+ <div class="section-title">
+ <span class="num" style="background:rgba(63,185,80,0.15);color:var(--accent2);">10</span>
+ Auto-évaluation – Questions du cours
+ </div>
+ <p class="qcm-hint">Cliquer sur chaque question pour révéler la réponse.</p>
+ <ul class="qcm-list" id="qcm">
+ <li>
+ <div class="qcm-q">1. Quels sont les résultats pouvant survenir dans une cellule après une inflammation ?</div>
+ <div class="qcm-a">Deux issues possibles : <strong>Régénération</strong> (si cellules labiles/stables et lésion minime → retour au tissu normal) ou <strong>Cicatrisation</strong> (si cellules permanentes ou lésion grave → tissu conjonctif). La réaction inflammatoire précède toujours la réparation tissulaire.</div>
+ </li>
+ <li>
+ <div class="qcm-q">2. Expliquez les différences entre la réparation par régénération et par cicatrisation.</div>
+ <div class="qcm-a"><strong>Régénération</strong> : remplacement par le même type cellulaire, MEC intacte nécessaire, restauration fonctionnelle complète, cellules labiles/stables.<br><strong>Cicatrisation</strong> : remplacement par tissu conjonctif dense, survient si MEC endommagée ou cellules permanentes, résultat fonctionnel limité, formation d'une cicatrice fibreuse.</div>
+ </li>
+ <li>
+ <div class="qcm-q">3. Expliquez la physiopathologie de la régénération.</div>
+ <div class="qcm-a">Mort cellulaire → cellules voisines labiles/stables stimulées par médiateurs chimiques et facteurs de croissance (EGF, VEGF, FGF, PDGF, TGF, IL) libérés par voie autocrine/paracrine/endocrine → entrée dans le cycle cellulaire → prolifération contrôlée par l'inhibition de contact → cellules indifférenciées se différencient en cellules matures → tissu reconstitué → remodelage.</div>
+ </li>
+ <li>
+ <div class="qcm-q">4. Expliquez la physiopathologie de la cicatrisation.</div>
+ <div class="qcm-a"><strong>Phase 1 – Inflammatoire</strong> : caillot sanguin, neutrophiles puis macrophages (essentiels pour FC). <strong>Phase 2 – Proliférative</strong> : migration fibroblastes → collagène + MEC + angiogenèse (VEGF) → tissu de granulation → réépithélisation. <strong>Phase 3 – Remodelage</strong> : ↑ collagène I, ↓ vascularisation, différenciation myofibroblastes, contraction cicatricielle, augmentation force de tension.</div>
+ </li>
+ <li>
+ <div class="qcm-q">5. Expliquez les différences entre cicatrisation de 1ère, 2ème et 3ème intention.</div>
+ <div class="qcm-a"><strong>1ère intention</strong> : bords rapprochés (suturés), perte tissulaire minimale, cicatrisation rapide, cicatrice fine. <strong>2ème intention</strong> : bords éloignés, perte tissulaire importante, cicatrisation lente, tissu de granulation abondant, contraction jusqu'à 90%. <strong>3ème intention</strong> : correction chirurgicale différée après formation de granulation, meilleurs résultats fonctionnels/esthétiques.</div>
+ </li>
+ <li>
+ <div class="qcm-q">6. Qu'est-ce qu'un chéloïde et pourquoi apparaît-il ?</div>
+ <div class="qcm-a">Un chéloïde est une forme exagérée de cicatrisation où la cicatrice continue de croître au-delà des bords de la plaie. Il apparaît en raison d'une défaillance des mécanismes d'inhibition normale : absence d'inhibition par contact, dépôt excessif et continu de collagène par les fibroblastes, déséquilibre synthèse/dégradation. Des facteurs génétiques prédisposants jouent un rôle majeur.</div>
+ </li>
+ </ul>
+ </div>
+
+ <div class="footer">
+ Fiche de révision — Physiopathologie 1 · Réparation tissulaire · Enseignante D
+ </div>
+
+</div>
+
+<script>
+ document.querySelectorAll('#qcm li').forEach(li => {
+ li.addEventListener('click', () => li.classList.toggle('open'));
+ });
+</script>
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-09.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+</body>
+</html>

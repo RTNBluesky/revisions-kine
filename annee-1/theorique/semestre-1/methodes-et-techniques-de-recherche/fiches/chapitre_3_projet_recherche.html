@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Chapitre 3 — Le projet de recherche — :root{--bg:#0f1117;--panel:#1a1d2a;--panel2: #1a1d2a;--text: #9aa3b8;--muted:#9aa3b8;--accent:#f472b6;--accent2: #ff6b9d">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../assets/css/acces.css">
+<script src="../../../../../assets/js/acces.js"></script>
+<title>Ch.3 - Projet de recherche</title>
+<link rel="stylesheet" href="../../../../../assets/css/chrome.css">
+<style>
+:root{--bg:#0f1117;--panel:#1a1d2a;--panel2: #1a1d2a;--text: #9aa3b8;--muted:#9aa3b8;--accent:#f472b6;--accent2: #ff6b9d;--accent3: #ff8fa3;--danger:#ff5c6b;--border:#2a3050;}
+*{box-sizing:border-box;}body{margin:0;font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;}
+.container{max-width:1100px;margin:0 auto;padding:32px 24px 64px;}
+header{border-bottom:2px solid var(--accent);padding-bottom:18px;margin-bottom:28px;}
+h1{color:var(--accent);font-size:2em;margin:0 0 6px;}
+header .sub{color:var(--muted);font-size:0.95em;}
+h2{color:var(--accent2);border-left:4px solid var(--accent2);padding-left:12px;margin-top:38px;font-size:1.45em;}
+h3{color:var(--accent3);font-size:1.15em;margin-top:24px;}
+h4{color:#f472b6;margin-top:18px;}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:18px 22px;margin:14px 0;}
+.callout{background:var(--panel2);border-left:4px solid var(--accent);padding:14px 18px;border-radius:6px;margin:14px 0;}
+.warn{border-left-color:var(--danger);}.good{border-left-color:var(--accent2);}.tip{border-left-color:var(--accent3);}
+ul,ol{padding-left:22px;}li{margin:5px 0;}
+table{width:100%;border-collapse:collapse;margin:14px 0;background:var(--panel);}
+th,td{border:1px solid var(--border);padding:9px 12px;text-align:left;vertical-align:top;}
+th{background:var(--panel2);color:var(--accent);}
+.key{color:var(--accent2);font-weight:600;}
+.danger{color:var(--danger);font-weight:600;}
+.flash{background:linear-gradient(135deg,#ff5c6b 0%,#ff5c6b 100%);border:1px solid var(--accent);border-radius:10px;padding:14px 18px;margin:16px 0;}
+.def{background:var(--panel2);border-radius:6px;padding:10px 14px;margin:8px 0;border-left:3px solid var(--accent3);}
+hr{border:none;border-top:1px solid var(--border);margin:30px 0;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;}
+.criteria{background:var(--panel);border:1px solid var(--border);border-radius:10px;padding:16px;}
+.letter{display:inline-block;background:var(--accent);color:#0f1117;font-weight:700;border-radius:50%;width:32px;height:32px;text-align:center;line-height:32px;margin-right:8px;}
+</style>
+ <link rel="stylesheet" href="../../../../../assets/css/modules/mtr-theme.css">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<a href="../accueil-methodes-et-techniques-de-recherche.html" class="back-nav">← MTR I</a>
+
+<div class="page-toggle"><div class="pt-inner"><a href="../qcm/chapitre_3_projet_recherche.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<div class="container">
+<header>
+<h1>Chapitre 3 — Le projet de recherche</h1>
+<div class="sub">Du problème clinique à la question scientifique structurée</div>
+</header>
+
+<h2>1. Qu'est-ce qu'un projet de recherche ?</h2>
+<div class="def">
+Un <strong>plan complet et structuré</strong> qui décrit :
+<ul>
+<li><strong>Quoi</strong> : ce que l'on veut étudier (thème, population, variables)</li>
+<li><strong>Pourquoi</strong> : intérêt clinique / scientifique / social</li>
+<li><strong>Comment</strong> : méthodologie, outils, plan d'analyse</li>
+<li><strong>Et après ?</strong> : interprétation, diffusion, implications</li>
+</ul>
+<p style="margin-top:10px"><em>Comparable à une carte routière.</em></p>
+</div>
+
+<h3>Rôle d'un bon projet</h3>
+<ul>
+<li>Crédibilité (jury, comité éthique, directeur de mémoire)</li>
+<li>Limite les erreurs : biais, perte de données, mauvaise méthode</li>
+<li>Étude <span class="key">reproductible</span></li>
+<li>Résultats <span class="key">utiles cliniquement</span></li>
+</ul>
+
+<h2>2. Les 6 étapes du processus de recherche</h2>
+<table>
+<tr><th>Étape</th><th>Action</th><th>Correspond à</th></tr>
+<tr><td>1</td><td>Formuler le problème / la question</td><td>Naissance du projet</td></tr>
+<tr><td>2</td><td>Revue de la littérature</td><td>Cadre théorique du mémoire</td></tr>
+<tr><td>3</td><td>Concevoir le plan d'étude (méthodologie)</td><td>« Matériels & Méthodes »</td></tr>
+<tr><td>4</td><td>Collecter et analyser les données</td><td>Section Résultats</td></tr>
+<tr><td>5</td><td>Partager les résultats</td><td>Communication / publication</td></tr>
+<tr><td>6</td><td>Appliquer les résultats</td><td>Pratique clinique</td></tr>
+</table>
+
+<h3>Variables : indépendante vs dépendante</h3>
+<div class="grid">
+<div class="card">
+<h4>Variable Indépendante (VI)</h4>
+<p>Ce que le chercheur <span class="key">manipule ou contrôle</span>La <strong>cause</strong> supposée</p>
+<p><em>Ex.</em> : temps d'étude (nb d'heures), type d'intervention</p>
+</div>
+<div class="card">
+<h4>Variable Dépendante (VD)</h4>
+<p>Ce que l'on <span class="key">mesure</span>L'<strong>effet</strong> observé</p>
+<p><em>Ex.</em> : note à l'examen, douleur (EVA)</p>
+</div>
+</div>
+
+<h2>3. Comment commencer un projet ?</h2>
+<div class="grid">
+<div class="card"><h4>📚 Lire</h4>Identifier ce qui est établi, repérer le flou ou les contradictions, les pistes possibles.</div>
+<div class="card"><h4>🔍 Rechercher</h4>PubMed, PEDro, Cochrane, Google Scholar · mots-clés (anglais ++) · filtres.</div>
+<div class="card"><h4>👁 Observer</h4>Patients qui ne progressent pas malgré un traitement standard, ou qui progressent étonnamment vite.</div>
+<div class="card"><h4>❓ Interroger</h4>« Pourquoi ce patient ne s'améliore-t-il pas ? » « Y a-t-il des preuves de ce que je fais ? »</div>
+<div class="card"><h4>🧠 Critiquer</h4>« Est-ce vraiment prouvé ? » « Risque de placebo ? » « Méthode plus efficace ou sûre ? »</div>
+</div>
+
+<h2>4. Pertinence (Why?) & Signification (What?)</h2>
+<table>
+<tr><th>Pertinence (Why?)</th><th>Signification (What?)</th></tr>
+<tr><td>Pourquoi ce problème est-il important ?<br>Fréquent ? Handicapant ? Coûteux ?</td><td>Que changera votre travail ?<br>Méthode plus efficace ? Lacune comblée ?</td></tr>
+<tr><td><em>Ex.</em> : la lombalgie touche 80 % de la population</td><td><em>Ex.</em> : « Cette étude vise à combler le manque de données sur… »</td></tr>
+</table>
+
+<h2>5. Formuler la question de recherche</h2>
+<div class="def">
+La question de recherche est le <span class="key">cœur du projet</span>. Elle oriente la revue de littérature, détermine la méthodologie, les variables, les outils, les analyses, et sert de fil rouge.
+</div>
+
+<h3>Une bonne question doit être :</h3>
+<ul>
+<li>✔ <strong>Éthique</strong> : respect des participants, validation par comité</li>
+<li>✔ <strong>Pertinente</strong> : intéresse la communauté</li>
+<li>✔ <strong>Quantifiable</strong> : mesurable (EVA, goniomètre, dynamomètre…)</li>
+<li>✔ <strong>Alignée</strong> avec les objectifs</li>
+</ul>
+
+<div class="grid">
+<div class="callout warn">
+<strong>❌ Incorrect</strong><br>« Les évaluations régulières sont-elles positives pour les étudiants ? »<br>→ Trop vague, non mesurable
+</div>
+<div class="callout good">
+<strong>✔ Correct</strong><br>« Les évaluations régulières augmentent-elles l'assiduité et améliorent-elles la note finale des étudiants de kiné ? »<br>→ Variables mesurables
+</div>
+</div>
+
+<h2>6. PICO / PICOT</h2>
+<table>
+<tr><th>P</th><td>Patient / Population</td></tr>
+<tr><th>I</th><td>Intervention</td></tr>
+<tr><th>C</th><td>Comparaison</td></tr>
+<tr><th>O</th><td>Outcome (résultat)</td></tr>
+<tr><th>T</th><td>Temps (durée, suivi)</td></tr>
+</table>
+
+<div class="flash">
+<strong>Exemple PICOT complet</strong><br>
+P : patients lombalgiques chroniques · I : aquathérapie · C : kiné conventionnelle · O : douleur + qualité de vie · T : 6 mois
+</div>
+
+<h2>7. Critères FINER (faut-il faire ce projet ?)</h2>
+<div class="criteria">
+<p><span class="letter">F</span><strong>Faisable</strong> — ressources, temps, accès aux patients ?</p>
+<p><span class="letter">I</span><strong>Intéressant</strong> — pour le chercheur ET d'autres ?</p>
+<p><span class="letter">N</span><strong>Nouveau</strong> — apporte quelque chose d'original ?</p>
+<p><span class="letter">E</span><strong>Éthique</strong> — respecte les principes éthiques ?</p>
+<p><span class="letter">R</span><strong>Relevant</strong> — importance réelle pour la pratique / science ?</p>
+</div>
+
+<h2>8. Critères SMART (pour les objectifs)</h2>
+<div class="criteria">
+<p><span class="letter">S</span><strong>Spécifique</strong> — clair, précis</p>
+<p><span class="letter">M</span><strong>Mesurable</strong> — on peut quantifier</p>
+<p><span class="letter">A</span><strong>Atteignable</strong> — réalisable</p>
+<p><span class="letter">R</span><strong>Relevant</strong> — lien direct avec la question</p>
+<p><span class="letter">T</span><strong>Temporel</strong> — durée ou échéance définie</p>
+</div>
+
+<h3>Exemple SMART</h3>
+<div class="callout">
+« Évaluer la diminution de la douleur lombaire après un programme d'aquathérapie de 6 mois. »<br>
+S = douleur lombaire · M = EVA · A = 6 mois faisable · R = lombalgie majeure · T = 6 mois
+</div>
+
+<h2>9. Objectifs : général vs spécifiques</h2>
+<table>
+<tr><th>Objectif général</th><th>Objectifs spécifiques</th></tr>
+<tr><td>Vision globale<br><em>« Démontrer l'effet du massage sur la douleur et qualité de vie des lombalgiques. »</em></td><td>Étapes/sous-questions<br>Corrélation entre ↓douleur et ↑qualité de vie<br>Identifier les domaines de QdV qui s'améliorent le plus<br>Comparaison sous-groupes (âge, sexe…)</td></tr>
+</table>
+
+<h2>10. Éthique en recherche</h2>
+<div class="callout warn">
+<strong>Principes essentiels :</strong>
+<ul>
+<li>Ne jamais nuire</li>
+<li>Ne pas minimiser les risques (physiques ET psychologiques)</li>
+<li><span class="key">Consentement éclairé</span></li>
+<li>Liberté de retrait à tout moment</li>
+<li>Confidentialité des données</li>
+<li>Respect des valeurs et de la culture</li>
+</ul>
+</div>
+
+<h2>11. Revue de la littérature</h2>
+<div class="card">
+<p>Elle permet :</p>
+<ul>
+<li>De situer votre travail dans un contexte scientifique</li>
+<li>De montrer l'état des connaissances</li>
+<li>D'éviter de refaire ce qui est résolu</li>
+<li>D'identifier des angles originaux ou lacunes</li>
+</ul>
+<p><span class="key">Ce n'est PAS un résumé d'articles</span> : c'est une <strong>analyse critique et structurée</strong>.</p>
+</div>
+
+<h3>Ce qu'elle fait</h3>
+<ul>
+<li>Synthétise les travaux existants</li>
+<li>Compare méthodologies et résultats</li>
+<li>Souligne les limites des études (biais, échantillons…)</li>
+<li>Met en évidence les controverses</li>
+<li>Identifie les lacunes</li>
+</ul>
+
+<hr>
+<h2>🎯 À retenir absolument</h2>
+<div class="card">
+<ul>
+<li>Projet = quoi / pourquoi / comment / et après ?</li>
+<li><strong>6 étapes</strong> : question → revue litt. → méthodo → collecte/analyse → diffusion → application</li>
+<li>VI = cause manipulée · VD = effet mesuré</li>
+<li><strong>PICOT</strong> structure la question</li>
+<li><strong>FINER</strong> = pertinence du projet<strong>SMART</strong> = qualité des objectifs</li>
+<li>Bonne question : éthique, pertinente, quantifiable, alignée</li>
+<li>Revue de littérature = analyse critique, pas un résumé</li>
+</ul>
+</div>
+
+</div>
+</body>
+</html>

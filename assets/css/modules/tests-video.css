@@ -1,0 +1,123 @@
+/* ------------------------------------------------------------------
+   tests-video.css — pastille vidéo à côté du nom d'un test clinique.
+   Utilisée dans les fiches « tests-* » du module musculo-squelettique
+   pratique et dans le récapitulatif des tests.
+   ------------------------------------------------------------------ */
+.video-test {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin-left: 7px;
+  border-radius: 6px;
+  background: rgba(255, 92, 107, 0.14);
+  border: 1px solid rgba(255, 92, 107, 0.32);
+  color: var(--accent-4);
+  font-size: 9px;
+  line-height: 1;
+  text-decoration: none;
+  vertical-align: middle;
+  transition: background 0.2s, border-color 0.2s, transform 0.2s;
+}
+.video-test:hover {
+  background: rgba(255, 92, 107, 0.28);
+  border-color: var(--accent-2);
+  color: #ffe3ea;
+  transform: scale(1.12);
+}
+.video-test:focus-visible {
+  outline: 2px solid var(--accent-4);
+  outline-offset: 2px;
+}
+
+/* légende rappelant à quoi sert la pastille */
+.video-legende {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin: 18px 0 8px;
+  padding: 11px 15px;
+  border-radius: 12px;
+  background: rgba(255, 92, 107, 0.07);
+  border: 1px solid rgba(255, 92, 107, 0.20);
+  font-size: 13.5px;
+  color: var(--muted);
+}
+.video-legende .video-test { pointer-events: none; }
+
+/* ---- récapitulatif des tests ---- */
+
+/* pastille non cliquable utilisée dans la légende « L'ESSENTIEL » */
+.video-test-inline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 19px;
+  height: 19px;
+  border-radius: 6px;
+  background: rgba(255, 92, 107, 0.14);
+  border: 1px solid rgba(255, 92, 107, 0.32);
+  color: var(--accent-4);
+  font-size: 9px;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+/* sommaire des articulations */
+.som-liste {
+  list-style: none;
+  padding: 0;
+  margin: 14px 0 4px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 8px;
+}
+.som-liste li { margin: 0; }
+.som-liste a {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 14px;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 600;
+  transition: border-color .18s, background .18s;
+}
+.som-liste a:hover {
+  border-color: var(--accent-2);
+  background: rgba(255, 92, 107, 0.06);
+}
+.som-n, .h2-n {
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: .4px;
+  text-transform: uppercase;
+  color: var(--dim);
+  white-space: nowrap;
+}
+.h2-n { margin-left: 10px; }
+
+/* colonnes du tableau récapitulatif */
+article.fiche td.col-test { white-space: normal; }
+article.fiche td.col-patho {
+  vertical-align: middle;
+  text-align: center;
+  background: rgba(255, 92, 107, 0.05);
+  border-left: 2px solid rgba(255, 92, 107, 0.28);
+  border-right: 2px solid rgba(255, 92, 107, 0.28);
+  font-size: .88rem;
+}
+article.fiche td.col-patho strong { color: var(--accent-4); }
+
+/* pas de vidéo de référence fiable pour ce test */
+.sans-video {
+  display: inline-block;
+  margin-left: 7px;
+  color: var(--dim);
+  font-size: 12px;
+  cursor: help;
+}

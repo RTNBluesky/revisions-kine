@@ -1,0 +1,218 @@
+/* === ROSE/RED DARK THEME — Override unifié === */
+:root {
+  /* Backgrounds */
+  --bg: #0f1117 !important;
+  --bg2: #161922 !important;
+  --bg-2: #161922 !important;
+  --card: #1a1d2a !important;
+  --card2: #20243a !important;
+  --card-2: #20243a !important;
+  --surface: #161922 !important;
+  --surface2: #1a1d2a !important;
+  --navy: #0f1117 !important;
+  --deep: #1a1d2a !important;
+  --border: #2a3050 !important;
+  --border-strong: #3a4060 !important;
+
+  /* Text */
+  --ink: #e8eaf0 !important;
+  --text: #e8eaf0 !important;
+  --cream: #e8eaf0 !important;
+  --white: #ffffff !important;
+  --muted: #9aa3b8 !important;
+  --text-muted: #9aa3b8 !important;
+  --text-dim: #6a7388 !important;
+  --dim: #6a7388 !important;
+  --gray: #9aa3b8 !important;
+
+  /* === ROSE / RED accents === */
+  --accent: #ff5c6b !important;
+  --accent2: #ff6b9d !important;
+  --accent3: #f472b6 !important;
+  --accent4: #ff8fa3 !important;
+  --accent5: #ff6b9d !important;
+  --accent6: #ff5c6b !important;
+
+  /* Named accent variants → all rose/red */
+  --accent-red: #ff5c6b !important;
+  --accent-rose: #ff6b9d !important;
+  --accent-pink: #6a7388 !important;
+  --accent-blue: #ff6b9d !important;
+  --accent-teal: #ff8fa3 !important;
+  --accent-green: #ff6b9d !important;
+  --accent-yellow: #ff8fa3 !important;
+  --accent-purple: #ff6b9d !important;
+  --accent-violet: #ff6b9d !important;
+  --accent-amber: #ff5c6b !important;
+  --accent-orange: #ff5c6b !important;
+
+  /* Specific palette names from various pages */
+  --teal: #ff6b9d !important;
+  --teal-light: #ff8fa3 !important;
+  --gold: #ff5c6b !important;
+  --gold-light: #ff8fa3 !important;
+  --red-accent: #ff5c6b !important;
+  --green-accent: #ff8fa3 !important;
+
+  /* DM-Sans / new-style page palette */
+  --bg-elevated: #1a1d2a !important;
+  --tag-bg: #0f1117 !important;
+
+  /* QCM correctness — keep readable */
+  --correct: #ff6b9d !important;
+  --wrong: #ff5c6b !important;
+}
+
+/* Force body dark */
+html, body {
+  background: #0f1117 !important;
+  color: #e8eaf0 !important;
+}
+
+/* Background gradients on body → unify to dark rose tint */
+body::before, body::after {
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255,107,157,0.10), transparent 40%),
+    radial-gradient(circle at 85% 10%, rgba(255,92,107,0.10), transparent 40%),
+    radial-gradient(circle at 50% 90%, rgba(255,107,157,0.08), transparent 40%) !important;
+}
+
+/* Class-based colored sections → rose family variants */
+.blue, .c-blue { --section-color: #ff6b9d !important; }
+.green, .c-green { --section-color: #ff6b9d !important; }
+.yellow, .c-yellow { --section-color: #ff8fa3 !important; }
+.purple, .c-purple { --section-color: #ff6b9d !important; }
+.orange, .c-orange { --section-color: #ff5c6b !important; }
+.red, .c-red { --section-color: #ff5c6b !important; }
+.teal { --section-color: #ff8fa3 !important; }
+.amber { --section-color: #ff8fa3 !important; }
+.violet { --section-color: #ff6b9d !important; }
+.rose { --section-color: #ff6b9d !important; }
+
+/* Force colored borders & icons inside themed sections */
+.blue .section-icon, .c-blue .card-accent { background: rgba(255,107,157,0.15) !important; color: #ff6b9d !important; }
+.green .section-icon, .c-green .card-accent { background: rgba(255,107,157,0.15) !important; color: #ff6b9d !important; }
+.yellow .section-icon, .c-yellow .card-accent { background: rgba(255,92,107,0.15) !important; color: #ff8fa3 !important; }
+.purple .section-icon, .c-purple .card-accent { background: rgba(255,107,157,0.15) !important; color: #ff6b9d !important; }
+.orange .section-icon { background: rgba(255,92,107,0.15) !important; color: #ff5c6b !important; }
+.red .section-icon, .c-red .card-accent { background: rgba(255,92,107,0.15) !important; color: #ff5c6b !important; }
+
+.blue .section-title, .c-blue .card h3 { color: #ff6b9d !important; }
+.green .section-title, .c-green .card h3 { color: #ff6b9d !important; }
+.yellow .section-title, .c-yellow .card h3 { color: #ff8fa3 !important; }
+.purple .section-title, .c-purple .card h3 { color: #ff6b9d !important; }
+.orange .section-title { color: #ff5c6b !important; }
+.red .section-title, .c-red .card h3 { color: #ff5c6b !important; }
+
+/* Card top borders (Cours 4 reproducteur uses .blue/.teal/.rose etc.) */
+.card.blue::before { background: linear-gradient(90deg, #ff6b9d, transparent) !important; }
+.card.teal::before { background: linear-gradient(90deg, #ff8fa3, transparent) !important; }
+.card.rose::before { background: linear-gradient(90deg, #ff6b9d, transparent) !important; }
+.card.amber::before { background: linear-gradient(90deg, #ff8fa3, transparent) !important; }
+.card.violet::before { background: linear-gradient(90deg, #ff6b9d, transparent) !important; }
+.card.blue h3 { color: #ff6b9d !important; }
+.card.teal h3 { color: #ff8fa3 !important; }
+.card.rose h3 { color: #ff6b9d !important; }
+.card.amber h3 { color: #ff8fa3 !important; }
+.card.violet h3 { color: #ff6b9d !important; }
+
+/* Pills */
+.pill-blue { background: rgba(255,107,157,0.20) !important; color: #ff6b9d !important; }
+.pill-teal { background: rgba(255,92,107,0.20) !important; color: #ff8fa3 !important; }
+.pill-rose { background: rgba(255,107,157,0.20) !important; color: #f472b6 !important; }
+.pill-amber { background: rgba(255,92,107,0.20) !important; color: #ff8fa3 !important; }
+.pill-violet { background: rgba(255,107,157,0.20) !important; color: #ff6b9d !important; }
+
+/* Badges (urinaire) */
+.badge-blue { background: rgba(255,107,157,0.15) !important; color: #ff6b9d !important; }
+.badge-red { background: rgba(255,92,107,0.15) !important; color: #ff5c6b !important; }
+.badge-green { background: rgba(255,107,157,0.15) !important; color: #ff6b9d !important; }
+.badge-yellow { background: rgba(255,92,107,0.15) !important; color: #ff8fa3 !important; }
+.badge-gold { background: #ff5c6b !important; color: #0f1117 !important; }
+
+/* Tags & flow elements (urinaire) */
+.tag { background: rgba(255,107,157,0.20) !important; border-color: rgba(255,107,157,0.40) !important; color: #ff8fa3 !important; }
+.tag-gold { background: rgba(255,92,107,0.15) !important; color: #ff5c6b !important; }
+.flow-step { background: #1a1d2a !important; border-color: rgba(255,107,157,0.40) !important; color: #ff8fa3 !important; }
+.flow-arrow { color: #ff5c6b !important; }
+
+/* Tables */
+th { background: #0f1117 !important; color: #e8eaf0 !important; border-bottom-color: #ff5c6b !important; }
+td { color: #e8eaf0 !important; }
+td strong { color: #ff8fa3 !important; }
+
+/* Highlight boxes */
+.highlight, .formula-box {
+  background: linear-gradient(135deg, rgba(255,107,157,0.10), rgba(255,92,107,0.05)) !important;
+  border-color: rgba(255,107,157,0.30) !important;
+  color: #e8eaf0 !important;
+}
+.highlight strong, .formula-box { color: #ff8fa3 !important; }
+.alert { background: rgba(255,92,107,0.12) !important; border-left-color: #ff5c6b !important; color: #ff8fa3 !important; }
+.alert strong { color: #ff8fa3 !important; }
+.success { background: rgba(255,107,157,0.12) !important; border-left-color: #ff6b9d !important; color: #ff8fa3 !important; }
+.success strong { color: #ff8fa3 !important; }
+
+/* Hero gradients & badges → rose */
+.hero, .hero-tag, .badge {
+  --hero-glow: rgba(255,107,157,0.15);
+}
+.hero h1 span, h1 span {
+  background: linear-gradient(135deg, #ff5c6b, #ff6b9d) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* Buttons & CTAs that used blue/purple gradient */
+.btn-primary, .btn-cta.primary {
+  background: linear-gradient(135deg, #ff5c6b, #ff6b9d) !important;
+  color: #ffffff !important;
+  box-shadow: 0 6px 20px rgba(255,107,157,0.35) !important;
+}
+.btn-cta.primary:hover { box-shadow: 0 10px 30px rgba(255,107,157,0.50) !important; }
+
+/* QCM mode buttons */
+.mode-btn.active {
+  background: linear-gradient(135deg, #ff5c6b, #ff6b9d) !important;
+}
+
+/* Index card themes (root index) */
+.archive-card.theme-patho, .archive-card.theme-physio {
+  --card-accent: #ff6b9d !important;
+  --card-accent-bg: rgba(255,107,157,0.12) !important;
+  --card-accent-border: rgba(255,107,157,0.28) !important;
+}
+.archive-card.theme-physio {
+  --card-accent: #ff5c6b !important;
+  --card-accent-bg: rgba(255,92,107,0.12) !important;
+  --card-accent-border: rgba(255,92,107,0.28) !important;
+}
+
+/* Index page card themes (theme-1..theme-6) */
+.card.theme-1 { --card-accent: #ff5c6b !important; --card-accent-bg: rgba(255,92,107,0.12) !important; --card-accent-border: rgba(255,92,107,0.25) !important; }
+.card.theme-2 { --card-accent: #ff6b9d !important; --card-accent-bg: rgba(255,107,157,0.12) !important; --card-accent-border: rgba(255,107,157,0.25) !important; }
+.card.theme-3 { --card-accent: #f472b6 !important; --card-accent-bg: rgba(255,107,157,0.12) !important; --card-accent-border: rgba(255,107,157,0.25) !important; }
+.card.theme-4 { --card-accent: #ff8fa3 !important; --card-accent-bg: rgba(255,92,107,0.12) !important; --card-accent-border: rgba(255,92,107,0.25) !important; }
+.card.theme-5 { --card-accent: #ff6b9d !important; --card-accent-bg: rgba(255,107,157,0.12) !important; --card-accent-border: rgba(255,107,157,0.25) !important; }
+.card.theme-6 { --card-accent: #ff5c6b !important; --card-accent-bg: rgba(255,92,107,0.12) !important; --card-accent-border: rgba(255,92,107,0.25) !important; }
+
+/* Physio patho index neuro/tp/neuroanat cards */
+.card.neuro, .card.neuroanat, .card.tp {
+  border-color: rgba(255,107,157,0.20) !important;
+}
+.card.neuro:hover, .card.neuroanat:hover, .card.tp:hover {
+  border-color: #ff6b9d !important;
+  box-shadow: 0 8px 24px rgba(255,107,157,0.20) !important;
+}
+
+/* Hero h1 colored gradients → rose */
+.hero h1, header h1 {
+  background: linear-gradient(135deg, #ffffff 0%, #ff6b9d 50%, #ff5c6b 100%) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* Section title colors uniformized */
+.section-title, .section-header h2 { color: #ff6b9d !important; }

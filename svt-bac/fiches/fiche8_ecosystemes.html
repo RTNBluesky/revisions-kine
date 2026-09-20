@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Écosystèmes & services écosystémiques — :root { --bg:#0f1117;--bg2:#0f1117;--bg3:#0f1117;--bg4:#161922; --green:#6366f1;--blue:#6366f1;--orange:#a5a0ff;--yell">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../assets/css/acces.css">
+<script src="../../assets/js/acces.js"></script>
+<title>Fiche 8 — Écosystèmes &amp; services écosystémiques | SVT Terminale</title>
+<link rel="stylesheet" href="../assets/css/chrome.css">
+<style>
+:root {
+ --bg:#0f1117;--bg2:#0f1117;--bg3:#0f1117;--bg4:#161922;
+ --green:#6366f1;--blue:#6366f1;--orange:#a5a0ff;--yellow:#a5a0ff;--purple:#8b7cf8;
+ --text:#a5a0ff;--muted:#6a7388;--border:#2a3050;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;font-size:15px;line-height:1.75}
+
+header{background:linear-gradient(135deg,#0f1117 0%,#0f1117 100%);border-bottom:3px solid var(--green);padding:2rem 2.5rem 1.6rem}
+header .breadcrumb{font-size:.72rem;text-transform:uppercase;letter-spacing:2.5px;color:var(--green);font-weight:700;margin-bottom:.4rem}
+header h1{font-size:1.7rem;font-weight:800;color:#e8eaf0;line-height:1.3}
+header .pills{display:flex;gap:.6rem;flex-wrap:wrap;margin-top:.8rem}
+header .pill{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:20px;padding:.2rem .8rem;font-size:.78rem;color:var(--muted)}
+header .pill.bonus{background:rgba(32,36,58,.15);border-color:rgba(58,64,96,.4);color:var(--purple)}
+
+nav{background:var(--bg2);border-bottom:1px solid var(--border);padding:.65rem 2.5rem;display:flex;gap:.45rem;flex-wrap:wrap;position:sticky;top:0;z-index:100}
+nav a{color:var(--muted);text-decoration:none;font-size:.78rem;padding:.25rem .75rem;border-radius:16px;background:var(--bg3);border:1px solid transparent;transition:all .15s}
+nav a:hover{color:var(--green);border-color:var(--green);background:rgba(32,36,58,.08)}
+nav .back{background:rgba(32,36,58,.1);color:var(--purple);border-color:rgba(58,64,96,.3)}
+
+main{max-width:980px;margin:0 auto;padding:2rem 2.5rem}
+.section-header{display:flex;align-items:center;gap:.9rem;margin-bottom:1.4rem;margin-top:.3rem}
+.section-num{width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.85rem;flex-shrink:0}
+.section-num.green{background:rgba(32,36,58,.2);color:var(--green);border:2px solid var(--green)}
+.section-num.blue{background:rgba(32,36,58,.2);color:var(--blue);border:2px solid var(--blue)}
+.section-num.orange{background:rgba(32,36,58,.2);color:var(--orange);border:2px solid var(--orange)}
+.section-num.yellow{background:rgba(32,36,58,.2);color:var(--yellow);border:2px solid var(--yellow)}
+h2{font-size:1.2rem;font-weight:700;color:#e8eaf0}
+h3{font-size:.96rem;font-weight:700;color:var(--yellow);margin:1.3rem 0 .5rem;padding-left:.5rem;border-left:3px solid var(--yellow)}
+h4{font-size:.88rem;font-weight:600;color:var(--green);margin:.8rem 0 .3rem}
+section{margin-bottom:3rem}
+p{margin-bottom:.6rem}
+ul,ol{margin:.4rem 0 .8rem 1.4rem}
+li{margin-bottom:.25rem}
+
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.1rem 1.3rem;margin-bottom:.8rem}
+.card.g{border-left:4px solid var(--green)}
+.card.b{border-left:4px solid var(--blue)}
+.card.o{border-left:4px solid var(--orange)}
+.card.y{border-left:4px solid var(--yellow)}
+.card.p{border-left:4px solid var(--purple)}
+
+.def{background:#0f1117;border:1px solid #2a3050;border-radius:8px;padding:.85rem 1.1rem;margin:.5rem 0 .9rem}
+.def .lbl{font-size:.68rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--blue);font-weight:700;margin-bottom:.25rem}
+.def strong{color:var(--green)}
+
+.bonus-banner{background:rgba(32,36,58,.08);border:1px solid rgba(58,64,96,.3);border-left:4px solid var(--purple);border-radius:8px;padding:.8rem 1.1rem;margin-bottom:1.5rem;color:#a5a0ff;font-size:.85rem}
+
+.schema{background:var(--bg3);border:1px dashed var(--border);border-radius:8px;padding:1rem 1.2rem;margin:.6rem 0 .9rem;font-family:'Cascadia Code','Courier New',monospace;font-size:.83rem;color:var(--green);line-height:1.9;overflow-x:auto;white-space:pre}
+
+.g2{display:grid;grid-template-columns:1fr 1fr;gap:.9rem;margin-bottom:.8rem}
+.g3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:.9rem;margin-bottom:.8rem}
+@media(max-width:720px){.g2,.g3{grid-template-columns:1fr}}
+
+table{width:100%;border-collapse:collapse;margin:.6rem 0 1rem;background:var(--bg2);border-radius:8px;overflow:hidden;font-size:.88rem}
+th{background:var(--bg3);text-align:left;padding:.55rem .8rem;color:var(--green);font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:1px}
+td{padding:.55rem .8rem;border-top:1px solid var(--border);vertical-align:top}
+
+.keywords{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.5rem}
+.kw{background:var(--bg3);border:1px solid var(--border);border-radius:14px;padding:.18rem .65rem;font-size:.75rem;color:var(--text)}
+.kw.g{color:var(--green);border-color:rgba(58,64,96,.4)}
+.kw.b{color:var(--blue);border-color:rgba(58,64,96,.4)}
+.kw.o{color:var(--orange);border-color:rgba(58,64,96,.4)}
+.kw.y{color:var(--yellow);border-color:rgba(58,64,96,.4)}
+
+.qcm-link{display:block;background:linear-gradient(135deg,rgba(32,36,58,.12),rgba(32,36,58,.12));border:1px solid rgba(58,64,96,.3);border-radius:12px;padding:1.2rem;text-align:center;text-decoration:none;color:#e8eaf0;margin-top:2rem;font-weight:700;transition:all .2s}
+.qcm-link:hover{background:linear-gradient(135deg,rgba(32,36,58,.2),rgba(32,36,58,.2));transform:translateY(-2px)}
+
+footer{text-align:center;padding:2rem;color:var(--muted);font-size:.78rem;border-top:1px solid var(--border);margin-top:2rem}
+</style>
+</head>
+<body>
+
+<a href="../accueil-svt.html" class="back-nav">← SVT Bac 2026</a>
+
+<div class="page-toggle"><div class="pt-inner"><a href="../qcm/qcm8_ecosystemes.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+
+<header>
+ <div class="breadcrumb">Thème II — Enjeux planétaires contemporains · Rappels Première</div>
+ <h1>Écosystèmes <span style="color:var(--green)">&amp; services écosystémiques</span></h1>
+ <div class="pills">
+ <span class="pill">🌱 Biosphère &amp; biodiversité</span>
+ <span class="pill">🎯 SVT Spécialité</span>
+ <span class="pill bonus">★ Rappel Première (utile pour le bac)</span>
+ <span class="pill">🗂 Fiche 8</span>
+ </div>
+</header>
+
+<nav>
+ <a href="../accueil-svt.html" class="back">← Index</a>
+ <a href="#def">🌿 Définitions</a>
+ <a href="#dynamique">🔄 Dynamique</a>
+ <a href="#services">🎁 Services</a>
+ <a href="#agro">🌾 Agrosystèmes</a>
+ <a href="#humain">🚜 Impact humain</a>
+ <a href="#keys">🏷 Mots-clés</a>
+</nav>
+
+<main>
+
+<div class="bonus-banner">
+ ★ <strong>Fiche bonus.</strong> Le chapitre <em>Écosystèmes &amp; services écosystémiques</em> appartient au programme de <strong>Première spécialité SVT</strong> (Thème II). Il n'est pas évalué en propre au bac de Terminale, mais ses notions reviennent fréquemment dans le chapitre <em>Climats de la Terre</em> et dans les sujets transversaux. À maîtriser pour ne pas être pris au dépourvu.
+</div>
+
+<!-- 1. DÉFINITIONS -->
+<section id="def">
+ <div class="section-header">
+ <div class="section-num green">1</div>
+ <h2>Qu'est-ce qu'un écosystème ?</h2>
+ </div>
+
+ <div class="def">
+ <div class="lbl">Définition</div>
+ Un <strong>écosystème</strong> = <strong>biocénose</strong> (ensemble des êtres vivants) + <strong>biotope</strong> (milieu physico-chimique) + <strong>interactions</strong> entre eux.
+ </div>
+
+ <div class="g2">
+ <div class="card g">
+ <h4>🐦 Biocénose</h4>
+ <p>Ensemble des populations d'espèces vivant dans le même biotope. Inclut producteurs (végétaux), consommateurs (animaux), décomposeurs (champignons, bactéries).</p>
+ </div>
+ <div class="card b">
+ <h4>🪨 Biotope</h4>
+ <p>Composantes abiotiques : sol, eau, lumière, T°, pH, nutriments minéraux. Détermine quelles espèces peuvent vivre là.</p>
+ </div>
+ </div>
+
+ <h3>Flux de matière et d'énergie</h3>
+ <div class="schema">Soleil ☀
+ ↓
+[Producteurs primaires] ← photosynthèse → matière organique
+ ↓ (consommation)
+[Consommateurs I, II, III]
+ ↓ (mort, déjections)
+[Décomposeurs] → recyclage des matières minérales → retour aux producteurs</div>
+
+ <p>L'<strong>énergie</strong> circule en sens unique (du soleil vers les niveaux supérieurs, avec dissipation à chaque étape). La <strong>matière</strong> est, elle, <strong>recyclée</strong> grâce aux décomposeurs.</p>
+</section>
+
+<!-- 2. DYNAMIQUE -->
+<section id="dynamique">
+ <div class="section-header">
+ <div class="section-num blue">2</div>
+ <h2>Dynamique &amp; résilience</h2>
+ </div>
+
+ <div class="card b">
+ <h4>Équilibre dynamique</h4>
+ <p>Un écosystème est en équilibre <strong>dynamique</strong> : les populations fluctuent mais l'ensemble reste stable sur le long terme tant que les perturbations ne dépassent pas un seuil.</p>
+ </div>
+
+ <div class="def">
+ <div class="lbl">Résilience</div>
+ Capacité d'un écosystème à <strong>retrouver son état initial</strong> après une perturbation (incendie, tempête, sécheresse...). Plus la biodiversité est élevée, plus la résilience est forte.
+ </div>
+
+ <h3>Succession écologique</h3>
+ <p>Reconstitution progressive après perturbation (ex : forêt après un incendie) :</p>
+ <div class="schema">Sol nu → mousses/lichens (pionniers) → herbacées → arbustes → forêt (climax)</div>
+</section>
+
+<!-- 3. SERVICES ÉCOSYSTÉMIQUES -->
+<section id="services">
+ <div class="section-header">
+ <div class="section-num orange">3</div>
+ <h2>Les services écosystémiques</h2>
+ </div>
+
+ <p>Ce sont les <strong>bénéfices que l'humanité tire des écosystèmes</strong>. On en distingue quatre catégories (classification MEA 2005) :</p>
+
+ <div class="g2">
+ <div class="card o">
+ <h4>🍎 Approvisionnement</h4>
+ <ul>
+ <li>Nourriture (cultures, pêche)</li>
+ <li>Bois, fibres</li>
+ <li>Eau potable</li>
+ <li>Molécules pharmacologiques</li>
+ </ul>
+ </div>
+ <div class="card g">
+ <h4>♻️ Régulation</h4>
+ <ul>
+ <li>Stockage du CO₂ (puits de carbone)</li>
+ <li>Épuration de l'eau et de l'air</li>
+ <li>Pollinisation</li>
+ <li>Contrôle des ravageurs &amp; maladies</li>
+ <li>Lutte contre l'érosion</li>
+ </ul>
+ </div>
+ <div class="card y">
+ <h4>🎭 Culturels</h4>
+ <ul>
+ <li>Loisirs, tourisme, esthétique</li>
+ <li>Patrimoine, identité</li>
+ <li>Spiritualité, éducation</li>
+ </ul>
+ </div>
+ <div class="card b">
+ <h4>🌱 Soutien (support)</h4>
+ <ul>
+ <li>Formation des sols</li>
+ <li>Cycles biogéochimiques (C, N, P)</li>
+ <li>Production primaire</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="card p" style="margin-top:.8rem">
+ <h4>💡 Évaluation économique</h4>
+ <p>Les services écosystémiques sont estimés à <strong>plusieurs dizaines de milliers de milliards $/an</strong> dans le monde (étude Costanza et al., réactualisée). Ex : la pollinisation par les insectes représente ~10 % de la valeur économique de l'agriculture mondiale.</p>
+ </div>
+</section>
+
+<!-- 4. AGROSYSTÈMES -->
+<section id="agro">
+ <div class="section-header">
+ <div class="section-num yellow">4</div>
+ <h2>Agrosystèmes — l'écosystème modifié</h2>
+ </div>
+
+ <div class="def">
+ <div class="lbl">Définition</div>
+ Un <strong>agrosystème</strong> = écosystème géré par l'humain pour la <strong>production agricole</strong> (champ, prairie, verger, élevage...).
+ </div>
+
+ <table>
+ <tr><th>Caractéristique</th><th>Écosystème naturel</th><th>Agrosystème</th></tr>
+ <tr><td>Biodiversité</td><td>Élevée</td><td>Faible (monoculture)</td></tr>
+ <tr><td>Recyclage de matière</td><td>Quasi-complet</td><td>Faible (récolte exportée)</td></tr>
+ <tr><td>Intrants externes</td><td>Aucun</td><td>Engrais, pesticides, eau, énergie</td></tr>
+ <tr><td>Résilience</td><td>Forte</td><td>Faible</td></tr>
+ <tr><td>Productivité humaine</td><td>Faible</td><td>Élevée</td></tr>
+ </table>
+
+ <h3>Conséquences environnementales</h3>
+ <div class="card o">
+ <ul>
+ <li><strong>Eutrophisation</strong> : excès d'engrais (N, P) → algues → anoxie → mort des poissons</li>
+ <li><strong>Perte de biodiversité</strong> : pesticides, déforestation, simplification du paysage</li>
+ <li><strong>Érosion des sols</strong>, salinisation</li>
+ <li>Émissions de <strong>GES</strong> (élevage = méthane CH₄, fertilisation = N₂O)</li>
+ </ul>
+ </div>
+
+ <h3>Pistes pour des agrosystèmes durables</h3>
+ <ul>
+ <li>Rotation des cultures, polyculture, agroforesterie</li>
+ <li>Lutte biologique (au lieu des pesticides)</li>
+ <li>Variétés rustiques, conservation du sol</li>
+ <li>Agriculture biologique, permaculture</li>
+ </ul>
+</section>
+
+<!-- 5. IMPACT HUMAIN -->
+<section id="humain">
+ <div class="section-header">
+ <div class="section-num green">5</div>
+ <h2>Impact humain &amp; gestion durable</h2>
+ </div>
+
+ <div class="g3">
+ <div class="card o">
+ <h4>🌡 Pressions</h4>
+ <ul>
+ <li>Changement climatique</li>
+ <li>Pollution</li>
+ <li>Espèces invasives</li>
+ <li>Destruction d'habitats</li>
+ <li>Surexploitation</li>
+ </ul>
+ </div>
+ <div class="card y">
+ <h4>📉 Conséquences</h4>
+ <ul>
+ <li>Effondrement biodiversité (6ᵉ extinction)</li>
+ <li>Dégradation des services</li>
+ <li>Coût économique</li>
+ </ul>
+ </div>
+ <div class="card g">
+ <h4>✅ Réponses</h4>
+ <ul>
+ <li>Aires protégées</li>
+ <li>Restauration écologique</li>
+ <li>Gestion intégrée</li>
+ <li>Accords (COP, CDB)</li>
+ </ul>
+ </div>
+ </div>
+</section>
+
+<!-- MOTS-CLÉS -->
+<section id="keys">
+ <div class="section-header">
+ <div class="section-num blue">★</div>
+ <h2>Mots-clés à connaître</h2>
+ </div>
+ <div class="keywords">
+ <span class="kw g">Biocénose</span>
+ <span class="kw g">Biotope</span>
+ <span class="kw g">Écosystème</span>
+ <span class="kw b">Producteur primaire</span>
+ <span class="kw b">Consommateur</span>
+ <span class="kw b">Décomposeur</span>
+ <span class="kw o">Service d'approvisionnement</span>
+ <span class="kw o">Service de régulation</span>
+ <span class="kw o">Service culturel</span>
+ <span class="kw o">Service de soutien</span>
+ <span class="kw y">Résilience</span>
+ <span class="kw y">Climax</span>
+ <span class="kw y">Succession écologique</span>
+ <span class="kw g">Agrosystème</span>
+ <span class="kw g">Eutrophisation</span>
+ <span class="kw">Pollinisation</span>
+ <span class="kw">Puits de carbone</span>
+ <span class="kw">Biodiversité</span>
+ <span class="kw">Lutte biologique</span>
+ </div>
+</section>
+
+<a href="../qcm/qcm8_ecosystemes.html" class="qcm-link">🎯 Tester mes connaissances — QCM Fiche 8</a>
+
+</main>
+
+<footer>SVT Terminale Spécialité · Bac 2026 — Fiche 8 / 10<a href="../accueil-svt.html" style="color:var(--green)">Retour à l'index</a></footer>
+
+</body>
+</html>

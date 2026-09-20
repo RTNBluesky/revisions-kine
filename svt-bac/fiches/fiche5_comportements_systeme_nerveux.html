@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Comportements, mouvement et système nerveux — :root { --bg: #0f1117; --bg2: #0f1117; --bg3: #161922; --accent: #a5a0ff; --accent2: #a5a0ff; --accent3: #a5a0ff">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../assets/css/acces.css">
+<script src="../../assets/js/acces.js"></script>
+<title>Fiche 5 — Comportements, mouvement et système nerveux | SVT Terminale</title>
+<link rel="stylesheet" href="../assets/css/chrome.css">
+<style>
+ :root {
+ --bg: #0f1117; --bg2: #0f1117; --bg3: #161922;
+ --accent: #a5a0ff; --accent2: #a5a0ff; --accent3: #a5a0ff;
+ --accent4: #a5a0ff; --text: #a5a0ff; --muted: #9aa3b8;
+ --border: #2a3050; --tag-bg: #161922;
+ }
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; font-size: 15px; line-height: 1.7; }
+ header { background: linear-gradient(135deg, #0f1117 0%, #0f1117 100%); border-bottom: 2px solid var(--accent); padding: 2rem 2.5rem; display: flex; flex-direction: column; gap: 0.5rem; }
+ header .tag { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); font-weight: 700; }
+ header h1 { font-size: 2rem; font-weight: 800; color: #e8eaf0; }
+ header .meta { color: var(--muted); font-size: 0.88rem; display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 0.25rem; }
+ nav { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 0.75rem 2.5rem; display: flex; gap: 0.6rem; flex-wrap: wrap; }
+ nav a { color: var(--muted); text-decoration: none; font-size: 0.82rem; padding: 0.3rem 0.8rem; border-radius: 20px; background: var(--bg3); }
+ nav a:hover { color: var(--accent); }
+ main { max-width: 960px; margin: 0 auto; padding: 2rem 2.5rem; }
+ section { margin-bottom: 2.5rem; }
+ h2 { font-size: 1.25rem; font-weight: 700; color: var(--accent); border-left: 4px solid var(--accent); padding-left: 0.9rem; margin-bottom: 1.2rem; margin-top: 0.5rem; }
+ h3 { font-size: 1rem; font-weight: 700; color: var(--accent3); margin: 1.1rem 0 0.5rem; }
+ h4 { font-size: 0.93rem; font-weight: 600; color: var(--accent2); margin: 0.9rem 0 0.3rem; }
+ p { margin-bottom: 0.7rem; }
+ .card { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; }
+ .card.green { border-left: 4px solid var(--accent2); }
+ .card.blue { border-left: 4px solid #20243a; }
+ .card.yellow{ border-left: 4px solid var(--accent3); }
+ .card.red { border-left: 4px solid var(--accent4); }
+ .card.purple{ border-left: 4px solid var(--accent); }
+ .def-box { background: #0f1117; border: 1px solid #2a3050; border-radius: 8px; padding: 0.9rem 1.2rem; margin: 0.5rem 0 1rem; }
+ .def-box .label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent3); font-weight: 700; margin-bottom: 0.3rem; }
+ .def-box strong { color: var(--accent2); }
+ ul { padding-left: 1.4rem; margin-bottom: 0.8rem; }
+ ul li { margin-bottom: 0.3rem; }
+ ul li::marker { color: var(--accent); }
+ ol { padding-left: 1.4rem; margin-bottom: 0.8rem; }
+ ol li { margin-bottom: 0.4rem; }
+ ol li::marker { color: var(--accent2); font-weight: 700; }
+ table { width: 100%; border-collapse: collapse; margin: 0.8rem 0 1.2rem; font-size: 0.88rem; }
+ th { background: var(--bg3); color: var(--accent); padding: 0.6rem 0.9rem; text-align: left; border-bottom: 2px solid var(--accent); }
+ td { padding: 0.55rem 0.9rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+ tr:nth-child(even) td { background: #0f1117; }
+ .keyword { display: inline-block; background: var(--tag-bg); color: var(--accent); border: 1px solid #2a3050; border-radius: 4px; padding: 0.1rem 0.5rem; font-size: 0.8rem; font-weight: 600; margin: 0.15rem; }
+ .important { background: #0f1117; border: 1px solid #2a3050; border-radius: 8px; padding: 0.8rem 1.1rem; margin: 0.8rem 0; color: var(--accent); }
+ .important::before { content: "⚠ À retenir — "; font-weight: 700; }
+ .schema-box { background: var(--bg3); border: 1px dashed var(--border); border-radius: 8px; padding: 1rem; margin: 0.8rem 0; font-family: monospace; font-size: 0.85rem; color: var(--accent2); line-height: 2; }
+ .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+ @media(max-width:640px){ .grid2 { grid-template-columns: 1fr; } }
+ footer { text-align: center; padding: 2rem; color: var(--muted); font-size: 0.8rem; border-top: 1px solid var(--border); margin-top: 2rem; }
+</style>
+</head>
+<body>
+
+<a href="../accueil-svt.html" class="back-nav">← SVT Bac 2026</a>
+
+<div class="page-toggle"><div class="pt-inner"><a href="../qcm/qcm5_comportements_systeme_nerveux.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+
+<header>
+ <div class="tag">Thème III — Corps humain et santé</div>
+ <h1>Comportements, mouvement et système nerveux</h1>
+ <div class="meta">
+ <span>📚 2 semaines</span>
+ <span>🎯 SVT Terminale Spécialité</span>
+ <span>🗂 Fiche 5 / 7</span>
+ </div>
+</header>
+
+<nav>
+ <a href="../accueil-svt.html" style="background:rgba(32,36,58,.1);color:#8b7cf8;border:1px solid rgba(58,64,96,.3);text-decoration:none;font-size:.78rem;padding:.25rem .75rem;border-radius:16px;margin-right:.25rem">← Index</a>
+ <a href="#neurone">Le neurone</a>
+ <a href="#pa">Potentiel d'action</a>
+ <a href="#synapse">La synapse</a>
+ <a href="#reflexe">Réflexe myotatique</a>
+ <a href="#commande">Commande volontaire</a>
+ <a href="#dysfonct">AVC & drogues</a>
+ <a href="#plasticite">Plasticité</a>
+ <a href="#mots-cles">Mots-clés</a>
+</nav>
+
+<main>
+
+ <section>
+ <div class="card purple">
+ <h3 style="margin-top:0">🧠 Plan du chapitre</h3>
+ <ol>
+ <li>Structure et fonctionnement du neurone</li>
+ <li>Le potentiel d'action et sa propagation</li>
+ <li>La transmission synaptique et les drogues</li>
+ <li>Le réflexe myotatique (fuseau, moelle, interneurone inhibiteur)</li>
+ <li>La commande volontaire du mouvement (IRMf, somatotopie, voies pyramidales)</li>
+ <li>AVC, circuit de récompense et capital nerveux</li>
+ <li>Plasticité cérébrale et apprentissage</li>
+ </ol>
+ </div>
+ </section>
+
+ <!-- 1. NEURONE -->
+ <section id="neurone">
+ <h2>1. Le neurone</h2>
+
+ <div class="def-box">
+ <div class="label">Définition</div>
+ <strong>Neurone :</strong> cellule nerveuse spécialisée dans la réception, l'intégration et la transmission de l'information sous forme de signaux électriques et chimiques. Unité fonctionnelle du système nerveux.
+ </div>
+
+ <h3>1.1 Structure d'un neurone</h3>
+ <div class="schema-box">
+Dendrites ──→ Corps cellulaire (soma) ──→ Axone ──→ Terminaisons synaptiques
+ (noyau, mitochondries) [entouré de myéline]
+ </div>
+
+ <ul>
+ <li><strong>Dendrites :</strong> courtes extensions qui reçoivent les signaux entrants</li>
+ <li><strong>Soma (corps cellulaire) :</strong> intègre les signaux ; contient le noyau</li>
+ <li><strong>Axone :</strong> prolongement unique qui conduit l'influx nerveux vers d'autres cellules</li>
+ <li><strong>Gaine de myéline :</strong> isolant lipidique produit par les cellules de Schwann (SNP) ou oligodendrocytes (SNC) → accélère la conduction (conduction saltatoire)</li>
+ <li><strong>Nœuds de Ranvier :</strong> intervalles non myélinisés où le PA se régénère</li>
+ </ul>
+
+ <h3>1.2 Types de neurones</h3>
+ <table>
+ <tr><th>Type</th><th>Direction</th><th>Rôle</th></tr>
+ <tr><td>Neurone afférent (sensitif)</td><td>Périphérie → SNC</td><td>Transmet les informations sensorielles</td></tr>
+ <tr><td>Interneurone</td><td>Dans le SNC</td><td>Intégration, association</td></tr>
+ <tr><td>Neurone efférent (moteur)</td><td>SNC → muscles/glandes</td><td>Commande de l'action</td></tr>
+ </table>
+
+ <h3>1.3 Potentiel de repos</h3>
+ <p>Au repos, la membrane est polarisée : <strong>-70 mV</strong> (intérieur négatif / extérieur positif). Cette asymétrie résulte de la répartition inégale des ions (K⁺ intracellulaire élevé ; Na⁺ extracellulaire élevé) maintenue par la <strong>pompe Na⁺/K⁺ ATPase</strong>.</p>
+ </section>
+
+ <!-- 2. POTENTIEL D'ACTION -->
+ <section id="pa">
+ <h2>2. Le potentiel d'action (PA)</h2>
+
+ <div class="def-box">
+ <div class="label">Définition</div>
+ <strong>Potentiel d'action :</strong> variation rapide et stéréotypée du potentiel de membrane (dépolarisation puis repolarisation) qui se propage le long de l'axone sans s'atténuer.
+ </div>
+
+ <h3>2.1 Phases du potentiel d'action</h3>
+ <div class="schema-box">
++40 mV ─────────╮ ← Pic (dépolarisation max)
+ │
+ 0 mV ──────╮ ╰──────────╮ ← Repolarisation
+ │ │
+-70 mV ──────╯ ╰────── Potentiel de repos
+ ←seuil→ ←dépola.→ ←repola.→ ←hyperpola.→
+ </div>
+
+ <ol>
+ <li><strong>Dépolarisation :</strong> ouverture des canaux Na⁺ voltage-dépendants → afflux de Na⁺ → potentiel monte jusqu'à +40 mV</li>
+ <li><strong>Repolarisation :</strong> fermeture des canaux Na⁺ + ouverture des canaux K⁺ → sortie de K⁺ → retour vers -70 mV</li>
+ <li><strong>Hyperpolarisation transitoire :</strong> légère dépolarisation en dessous de -70 mV → période réfractaire</li>
+ </ol>
+
+ <div class="important">
+ Le PA obéit à la loi du <strong>tout ou rien</strong> : en dessous du seuil (~-55 mV), aucun PA ; au-dessus, un PA de même amplitude. L'intensité du signal est codée par la <strong>fréquence</strong> des PA (et non leur amplitude).
+ </div>
+
+ <h3>2.2 Propagation du PA</h3>
+ <div class="grid2">
+ <div class="card blue">
+ <h4 style="margin-top:0">Sans myéline (continu)</h4>
+ <p>Le PA se propage de proche en proche le long de l'axone. Lente (~1 m/s).</p>
+ </div>
+ <div class="card purple">
+ <h4 style="margin-top:0">Avec myéline (saltatoire)</h4>
+ <p>Le PA "saute" de nœud de Ranvier en nœud de Ranvier. Rapide (70–120 m/s).</p>
+ </div>
+ </div>
+ </section>
+
+ <!-- 3. SYNAPSE -->
+ <section id="synapse">
+ <h2>3. La transmission synaptique</h2>
+
+ <div class="def-box">
+ <div class="label">Définition</div>
+ <strong>Synapse :</strong> zone de communication entre deux neurones (ou un neurone et une cellule effectrice). Comprend l'élément pré-synaptique, la fente synaptique (~20 nm) et l'élément post-synaptique.
+ </div>
+
+ <h3>3.1 Mécanisme de la transmission chimique</h3>
+ <ol>
+ <li>Arrivée du PA dans la terminaison pré-synaptique</li>
+ <li>Ouverture des canaux Ca²⁺ voltage-dépendants → entrée de Ca²⁺</li>
+ <li>Fusion des vésicules synaptiques avec la membrane → <strong>exocytose</strong> du neurotransmetteur</li>
+ <li>Diffusion du neurotransmetteur dans la fente synaptique</li>
+ <li>Fixation sur les récepteurs post-synaptiques → modification du potentiel post-synaptique</li>
+ <li>Élimination du neurotransmetteur : recapture, dégradation enzymatique</li>
+ </ol>
+
+ <h3>3.2 Principaux neurotransmetteurs</h3>
+ <table>
+ <tr><th>Neurotransmetteur</th><th>Type</th><th>Effets principaux</th><th>Localisation</th></tr>
+ <tr><td>Acétylcholine (ACh)</td><td>Excitateur / inhibiteur</td><td>Contraction musculaire, mémoire</td><td>Jonctions neuromusculaires, SNC</td></tr>
+ <tr><td>Dopamine</td><td>Variable</td><td>Motivation, plaisir, motricité</td><td>Striatum, cortex préfrontal</td></tr>
+ <tr><td>Sérotonine</td><td>Modulateur</td><td>Humeur, sommeil, appétit</td><td>Noyaux du raphé, intestin</td></tr>
+ <tr><td>GABA</td><td>Inhibiteur</td><td>Diminue l'excitabilité neuronale</td><td>SNC (très répandu)</td></tr>
+ <tr><td>Glutamate</td><td>Excitateur</td><td>Apprentissage, mémoire</td><td>SNC (très répandu)</td></tr>
+ <tr><td>Noradrénaline</td><td>Excitateur</td><td>Vigilance, stress</td><td>Tronc cérébral, SNS</td></tr>
+ </table>
+
+ <h3>3.3 PPSE et PPSI</h3>
+ <div class="grid2">
+ <div class="card green">
+ <h4 style="margin-top:0">PPSE (potentiel post-synaptique excitateur)</h4>
+ <p>Dépolarisation partielle du neurone post-synaptique → rapprochement du seuil. Résultat d'une entrée de Na⁺.</p>
+ </div>
+ <div class="card red">
+ <h4 style="margin-top:0">PPSI (potentiel post-synaptique inhibiteur)</h4>
+ <p>Hyperpolarisation → éloignement du seuil. Résultat d'une entrée de Cl⁻ ou d'une sortie de K⁺.</p>
+ </div>
+ </div>
+ <p>L'intégration synaptique = <strong>somme spatiale et temporelle</strong> des PPSE et PPSI. Si la sommation dépasse le seuil → PA.</p>
+
+ <h3>3.4 Effets des drogues sur les synapses</h3>
+ <table>
+ <tr><th>Substance</th><th>Mécanisme synaptique</th><th>Neurotransmetteur ciblé</th></tr>
+ <tr><td>Cocaïne</td><td>Bloque la recapture</td><td>Dopamine (↑ dans la fente)</td></tr>
+ <tr><td>Alcool</td><td>Potentialise GABA, inhibe glutamate</td><td>GABA / Glutamate</td></tr>
+ <tr><td>Curare</td><td>Bloque les récepteurs nicotiniques</td><td>ACh (antagoniste compétitif)</td></tr>
+ <tr><td>Nicotine</td><td>Mime l'ACh (agoniste)</td><td>ACh (récepteurs nicotiniques)</td></tr>
+ <tr><td>Morphine/opioïdes</td><td>Activation des récepteurs opioïdes</td><td>Endorphines (mimétisme)</td></tr>
+ </table>
+ </section>
+
+ <!-- 4. RÉFLEXE MYOTATIQUE -->
+ <section id="reflexe">
+ <h2>4. Le réflexe myotatique</h2>
+
+ <div class="def-box">
+ <div class="label">Définition</div>
+ <strong>Réflexe myotatique :</strong> contraction involontaire d'un muscle en réponse à son propre étirement. Réflexe rapide (~20 ms) dont le centre nerveux est la <strong>moelle épinière</strong> (pas le cerveau).
+ </div>
+
+ <h3>4.1 Circuit du réflexe achilléen</h3>
+ <div class="schema-box">
+Étirement tendon d'Achille
+ ↓
+Fuseau neuromusculaire (récepteur sensoriel dans le muscle)
+ ↓
+Neurone sensitif afférent → Ganglion rachidien → Racine dorsale
+ ↓
+Corne dorsale de la moelle épinière (centre nerveux)
+ ↓
+Neurone moteur efférent → Racine ventrale → Nerf moteur
+ ↓
+Plaque motrice (synapse neuromusculaire) → ACh → Contraction
+ </div>
+
+ <h4>Composants clés</h4>
+ <ul>
+ <li><strong>Fuseau neuromusculaire :</strong> récepteur sensoriel situé dans le muscle (3–8 fibres musculaires modifiées entourées de terminaisons sensitives). Détecte l'étirement du muscle et génère un message nerveux afférent.</li>
+ <li><strong>Ganglion rachidien :</strong> renflement sur la racine dorsale contenant les corps cellulaires des neurones sensitifs afférents.</li>
+ <li><strong>Racine dorsale :</strong> entrée des messages sensitifs dans la moelle ; <strong>racine ventrale</strong> : sortie des messages moteurs.</li>
+ <li><strong>Corne dorsale (substance grise) :</strong> lieu de l'intégration et du relais synaptique sensitif → moteur.</li>
+ <li><strong>Plaque motrice :</strong> synapse neuromusculaire ; l'ACh libérée provoque la dépolarisation de la cellule musculaire → contraction.</li>
+ </ul>
+
+ <div class="important">
+ Le temps de conduction est d'environ <strong>20 ms</strong> (pour ~3 m aller-retour), ce qui prouve que le message n'atteint pas le cerveau : le centre réflexe est la moelle épinière.
+ </div>
+
+ <h3>4.2 Interneurone inhibiteur et muscles antagonistes</h3>
+ <p>Lors du réflexe myotatique, pour qu'un mouvement soit coordonné, le muscle antagoniste doit se relâcher au moment où le muscle effecteur se contracte. Ce mécanisme est assuré par une <strong>boucle neuronale d'inhibition réciproque</strong> :</p>
+
+ <div class="schema-box">
+Voie activatrice (rouge foncé) :
+ Fuseau → Neurone sensitif → Motoneurone effecteur → Contraction du muscle
+
+Voie inhibitrice (rouge clair) :
+ Fuseau → Neurone sensitif → Interneurone INHIBITEUR → Motoneurone antagoniste → Relâchement
+ </div>
+ <ul>
+ <li>L'<strong>interneurone inhibiteur</strong> (libère du GABA) provoque l'hyperpolarisation du motoneurone du muscle antagoniste → inhibition de sa contraction.</li>
+ <li>L'EMG confirme que les signaux des deux muscles antagonistes s'excluent mutuellement.</li>
+ </ul>
+
+ <h3>4.3 Structure de la moelle épinière</h3>
+ <div class="grid2">
+ <div class="card yellow">
+ <h4 style="margin-top:0">Substance grise (en H)</h4>
+ <p>Corps cellulaires des neurones (motoneurones dans la corne ventrale, interneurones dans la corne dorsale). Centre d'intégration réflexe.</p>
+ </div>
+ <div class="card blue">
+ <h4 style="margin-top:0">Substance blanche (périphérie)</h4>
+ <p>Axones myélinisés (faisceaux). Contient les faisceaux pyramidaux (voies descendantes du cortex) et les voies sensitives ascendantes.</p>
+ </div>
+ </div>
+ </section>
+
+ <!-- 5. COMMANDE VOLONTAIRE -->
+ <section id="commande">
+ <h2>5. La commande volontaire du mouvement</h2>
+
+ <h3>5.1 Les aires corticales motrices (IRMf)</h3>
+ <p>L'<strong>imagerie par résonance magnétique fonctionnelle (IRMf)</strong> permet de localiser les aires cérébrales actives lors d'un mouvement.</p>
+ <ul>
+ <li><strong>Aire motrice primaire (M1)</strong> — gyrus précentral : commande directe de la contraction musculaire. Organisée selon la <strong>somatotopie</strong> : chaque partie du corps correspond à un territoire défini (homonculus moteur). Les parties à motricité fine (main, face) occupent une zone plus grande.</li>
+ <li><strong>Aires prémotrices :</strong> sélection de la séquence de mouvements (quel muscle contracter, dans quel ordre).</li>
+ <li><strong>Cortex pariétal :</strong> intention de mouvement (décision d'agir), intégration des stimuli externes et internes.</li>
+ </ul>
+
+ <div class="important">
+ La commande motrice est <strong>controlatérale</strong> : l'hémisphère droit contrôle la partie gauche du corps, et inversement.
+ </div>
+
+ <h3>5.2 Les voies pyramidales</h3>
+ <p>Les messages nerveux issus de M1 cheminent via les <strong>faisceaux pyramidaux</strong> dans la substance blanche de la moelle épinière, jusqu'aux corps cellulaires des motoneurones α (situés dans la substance grise = corne ventrale). Le motoneurone intègre tous les messages excitateurs et inhibiteurs reçus :</p>
+ <ul>
+ <li><strong>Synapse excitatrice</strong> (ACh, glutamate) → dépolarisation → PPSE → favorise le PA.</li>
+ <li><strong>Synapse inhibitrice</strong> (GABA) → hyperpolarisation → PPSI → inhibe le PA.</li>
+ <li>Si la <strong>sommation spatiale + temporelle</strong> dépasse le seuil → train de PA → contraction.</li>
+ </ul>
+
+ <h3>5.3 La jonction neuromusculaire (plaque motrice)</h3>
+ <p>Synapse entre le motoneurone α et la fibre musculaire. L'ACh libérée → dépolarisation membranaire → PA musculaire → ouverture des canaux Ca²⁺ du réticulum sarcoplasmique → contraction.</p>
+
+ <div class="important">
+ La myasthénie est une maladie auto-immune où des anticorps détruisent les récepteurs à l'ACh → faiblesse musculaire progressive. Traitement : inhibiteurs de l'acétylcholinestérase.
+ </div>
+
+ <h3>5.4 Cellules gliales</h3>
+ <table>
+ <tr><th>Cellule gliale</th><th>Rôle</th></tr>
+ <tr><td>Oligodendrocytes (SNC)</td><td>Forment la gaine de myéline → accélèrent la conduction. Atteints dans la sclérose en plaques.</td></tr>
+ <tr><td>Cellules de Schwann (SNP)</td><td>Forment la myéline dans le système nerveux périphérique</td></tr>
+ <tr><td>Astrocytes</td><td>Nutrition, protection et soutien des neurones</td></tr>
+ <tr><td>Microglie</td><td>Défense immunitaire du cerveau</td></tr>
+ </table>
+ </section>
+
+ <!-- 6. AVC ET DROGUES -->
+ <section id="dysfonct">
+ <h2>6. Dysfonctionnements et préservation du capital nerveux</h2>
+
+ <h3>6.1 L'AVC — Accident Vasculaire Cérébral</h3>
+ <div class="grid2">
+ <div class="card red">
+ <h4 style="margin-top:0">AVC ischémique (~85 %)</h4>
+ <p>Obstruction d'une artère cérébrale → privation d'oxygène → mort rapide des neurones dans la zone concernée.</p>
+ </div>
+ <div class="card red">
+ <h4 style="margin-top:0">AVC hémorragique (~15 %)</h4>
+ <p>Rupture d'une artère cérébrale → hématome compressif → mort neuronale.</p>
+ </div>
+ </div>
+
+ <p><strong>Conséquences :</strong> si la lésion touche l'aire motrice primaire → perte de motricité. Comme la commande est <strong>controlatérale</strong>, une lésion de l'hémisphère <em>droit</em> entraîne une <strong>hémiplégie gauche</strong> (paralysie du côté gauche du corps).</p>
+
+ <div class="def-box">
+ <div class="label">Facteurs de risque de l'AVC</div>
+ Obésité · Tabagisme · Sédentarité · Stress · Hypertension artérielle.
+ </div>
+
+ <p>La <strong>plasticité cérébrale</strong> permet la récupération partielle des fonctions perdues après un AVC → la rééducation est possible car les zones voisines du cortex peuvent prendre en charge les fonctions perdues.</p>
+
+ <div class="important">
+ Diagnostic par IRM (imagerie par résonance magnétique) : permet de localiser précisément la lésion et d'identifier le type d'AVC.
+ </div>
+
+ <h3>6.2 Le circuit de récompense et l'addiction</h3>
+ <div class="def-box">
+ <div class="label">Circuit de récompense</div>
+ Ensemble d'aires cérébrales (aire tegmentale ventrale, noyau accumbens, cortex préfrontal) fonctionnant à la <strong>dopamine</strong>. Déclenche la sensation de plaisir lors d'un comportement adaptatif (alimentation, reproduction…) et motive à le répéter.
+ </div>
+
+ <p>Les <strong>molécules psychoactives exogènes</strong> détournent ce circuit en augmentant massivement la libération de dopamine, déclenchant un comportement d'<strong>addiction</strong> :</p>
+
+ <table>
+ <tr><th>Substance</th><th>Mécanisme</th><th>Effet sur la dopamine</th></tr>
+ <tr><td>Nicotine (tabac)</td><td>Agoniste de l'ACh sur récepteurs nicotiniques → stimulation des neurones dopaminergiques</td><td>↑↑ libération de dopamine</td></tr>
+ <tr><td>THC (cannabis)</td><td>Se fixe sur les récepteurs endocannabinoïdes → perturbe les aires corticales (mémoire, concentration)</td><td>↑ dopamine + perturbation cognitive</td></tr>
+ <tr><td>Alcool (éthanol)</td><td>Potentialise GABA + inhibe glutamate → effet sédatif</td><td>↑ dopamine indirecte</td></tr>
+ <tr><td>Cocaïne</td><td>Bloque la recapture de la dopamine dans la fente synaptique</td><td>↑↑↑ dopamine (accumulation)</td></tr>
+ <tr><td>Morphine/héroïne</td><td>Se fixe sur récepteurs opioïdes → mimétisme des endorphines</td><td>↑↑ dopamine + analgésie</td></tr>
+ </table>
+
+ <p>La consommation répétée modifie durablement le circuit de récompense → <strong>tolérance</strong> (besoin de doses croissantes) et <strong>dépendance</strong> (craving, syndrome de sevrage).</p>
+
+ <h3>6.3 Préserver son capital nerveux</h3>
+ <div class="grid2">
+ <div class="card green">
+ <h4 style="margin-top:0">Facteurs bénéfiques</h4>
+ <ul style="margin:0">
+ <li>Activité physique régulière</li>
+ <li>Activité intellectuelle (apprentissage)</li>
+ <li>Bonne alimentation (flavonoïdes)</li>
+ </ul>
+ </div>
+ <div class="card red">
+ <h4 style="margin-top:0">Facteurs néfastes</h4>
+ <ul style="margin:0">
+ <li>Vieillissement naturel</li>
+ <li>Mauvaise alimentation</li>
+ <li>Substances psychoactives</li>
+ <li>Sédentarité</li>
+ </ul>
+ </div>
+ </div>
+ </section>
+
+ <!-- 7. PLASTICITÉ -->
+ <section id="plasticite">
+ <h2>7. Plasticité cérébrale</h2>
+
+ <div class="def-box">
+ <div class="label">Définition</div>
+ <strong>Plasticité synaptique :</strong> capacité du système nerveux à modifier ses connexions synaptiques en réponse à l'activité neuronale, à l'apprentissage ou à une lésion.
+ </div>
+
+ <ul>
+ <li><strong>LTP (Long-Term Potentiation) :</strong> renforcement durable de la transmission synaptique après une stimulation répétée → base cellulaire de la mémoire et de l'apprentissage</li>
+ <li><strong>Pruning synaptique :</strong> élimination des connexions peu utilisées (notamment à l'adolescence)</li>
+ <li><strong>Neurogenèse adulte :</strong> formation de nouveaux neurones dans l'hippocampe (apprentissage spatial, mémoire)</li>
+ <li><strong>Réorganisation corticale :</strong> après lésion ou amputation, les zones voisines prennent en charge la zone lésée (rééducation possible)</li>
+ </ul>
+ </section>
+
+ <!-- MOTS CLÉS -->
+ <section id="mots-cles">
+ <h2>8. Mots-clés à maîtriser</h2>
+ <div class="card">
+ <span class="keyword">Neurone</span>
+ <span class="keyword">Axone</span>
+ <span class="keyword">Myéline</span>
+ <span class="keyword">Nœud de Ranvier</span>
+ <span class="keyword">Oligodendrocyte</span>
+ <span class="keyword">Cellule gliale</span>
+ <span class="keyword">Potentiel de repos</span>
+ <span class="keyword">Potentiel d'action</span>
+ <span class="keyword">Tout ou rien</span>
+ <span class="keyword">Conduction saltatoire</span>
+ <span class="keyword">Synapse</span>
+ <span class="keyword">Neurotransmetteur</span>
+ <span class="keyword">Exocytose</span>
+ <span class="keyword">PPSE / PPSI</span>
+ <span class="keyword">Intégration synaptique</span>
+ <span class="keyword">Acétylcholine</span>
+ <span class="keyword">Dopamine</span>
+ <span class="keyword">GABA</span>
+ <span class="keyword">Réflexe myotatique</span>
+ <span class="keyword">Fuseau neuromusculaire</span>
+ <span class="keyword">Ganglion rachidien</span>
+ <span class="keyword">Racine dorsale / ventrale</span>
+ <span class="keyword">Substance grise / blanche</span>
+ <span class="keyword">Interneurone inhibiteur</span>
+ <span class="keyword">Muscles antagonistes</span>
+ <span class="keyword">Plaque motrice</span>
+ <span class="keyword">Aire motrice primaire (M1)</span>
+ <span class="keyword">IRMf</span>
+ <span class="keyword">Somatotopie</span>
+ <span class="keyword">Commande controlatérale</span>
+ <span class="keyword">Aire prémotrice</span>
+ <span class="keyword">Cortex pariétal</span>
+ <span class="keyword">Faisceau pyramidal</span>
+ <span class="keyword">Motoneurone α</span>
+ <span class="keyword">AVC ischémique / hémorragique</span>
+ <span class="keyword">Hémiplégie</span>
+ <span class="keyword">Circuit de récompense</span>
+ <span class="keyword">Addiction</span>
+ <span class="keyword">THC / cannabis</span>
+ <span class="keyword">Nicotine</span>
+ <span class="keyword">Capital nerveux</span>
+ <span class="keyword">LTP</span>
+ <span class="keyword">Plasticité cérébrale</span>
+ </div>
+ </section>
+
+
+<a href="../qcm/qcm5_comportements_systeme_nerveux.html" style="display:block;background:linear-gradient(135deg,rgba(32,36,58,.14),rgba(32,36,58,.14));border:1px solid rgba(58,64,96,.35);border-radius:12px;padding:1.2rem;text-align:center;text-decoration:none;color:#e8eaf0;margin-top:2rem;font-weight:700;transition:all .2s">🎯 Tester mes connaissances — QCM Fiche 5</a>
+
+</main>
+<footer>SVT Terminale Spécialité · Bac 2026 — Fiche 5 / 10 · Comportements & système nerveux<a href="../accueil-svt.html" style="color:#6366f1">Retour à l'index</a></footer>
+</body>
+</html>

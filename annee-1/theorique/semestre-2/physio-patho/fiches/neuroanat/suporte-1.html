@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Système nerveux & pathologies neuro — Anatomie SNC/SNP · 9 pathologies majeures · D'après &quot;Just the facts: Neurologic system&quot;">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../../assets/css/acces.css">
+<script src="../../../../../../assets/js/acces.js"></script>
+<title>Support Neurophysio 1 — Système nerveux & pathologies</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../../../assets/css/chrome.css">
+<style>
+ :root {
+ --orange: #ff5c6b;
+ --orange-light: #ff8fa3;
+ --orange-pale: #161922;
+ --bg: #0f1117;
+ --surface: #0f1117;
+ --surface-2: #161922;
+ --text: #9aa3b8;
+ --mid: #9aa3b8;
+ --muted: #6a7388;
+ --teal: #ff6b9d;
+ --teal-light: #20243a;
+ --gold: #ff8fa3;
+ --gold-light: #161922;
+ --red: #ff5c6b;
+ --red-light: #161922;
+ --green: #ff6b9d;
+ --green-light: #1a1d2a;
+ --blue: #f472b6;
+ --blue-light: #ff5c6b;
+ --purple: #f472b6;
+ --purple-light: #ff5c6b;
+ --border: #3a4060;
+ color-scheme: dark;
+ }
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+ body { font-family: 'Source Sans 3', sans-serif; background: var(--bg); color: var(--text); font-size: 15px; line-height: 1.6; }
+ .hero { background: linear-gradient(135deg, #0f1117 0%, #0f1117 100%); padding: 56px 40px 40px; position: relative; overflow: hidden; border-bottom: 1px solid var(--border); }
+ .hero::before { content: ''; position: absolute; top: -80px; right: -80px; width: 400px; height: 400px; border-radius: 50%; background: radial-gradient(circle, rgba(255,107,157,0.22) 0%, transparent 70%); }
+ .hero-tag { font-size: 11px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--orange); margin-bottom: 12px; position: relative; z-index: 1; }
+ .hero h1 { font-family: 'Playfair Display', serif; font-size: 50px; font-weight: 900; color: #ff8fa3; line-height: 1.1; position: relative; z-index: 1; }
+ .hero h1 em { font-style: normal; color: var(--orange); }
+ .hero-meta { color: rgba(255,255,255,0.55); font-size: 14px; margin-top: 12px; position: relative; z-index: 1; }
+ .container { max-width: 1100px; margin: 0 auto; padding: 40px 32px 80px; }
+ .toc { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 40px; padding: 18px 22px; background: var(--surface); border: 1px solid var(--border); border-radius: 12px; position: sticky; top: 0; z-index: 100; }
+ .toc a { color: var(--mid); font-size: 13px; text-decoration: none; padding: 6px 12px; border-radius: 6px; transition: all 0.15s; }
+ .toc a:hover { background: var(--orange-pale); color: var(--orange); }
+ .section { margin-bottom: 56px; scroll-margin-top: 80px; }
+ .section-header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; padding-bottom: 14px; border-bottom: 2px solid var(--border); }
+ .section-num { background: var(--orange); color: #0f1117; font-family: 'Playfair Display', serif; font-weight: 900; font-size: 22px; width: 48px; height: 48px; border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+ .section-title { font-family: 'Playfair Display', serif; font-size: 28px; font-weight: 700; color: #ff8fa3; }
+ .section-title em { font-style: normal; color: var(--orange); }
+ .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+ .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+ .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+ .card { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 20px 22px; }
+ .card.teal { border-color: rgba(255,107,157,0.3); background: linear-gradient(135deg, var(--surface) 0%, rgba(255,107,157,0.05) 100%); }
+ .card.orange { border-color: rgba(255,107,157,0.3); background: linear-gradient(135deg, var(--surface) 0%, rgba(255,107,157,0.05) 100%); }
+ .card.red { border-color: rgba(255,92,107,0.3); background: linear-gradient(135deg, var(--surface) 0%, rgba(255,92,107,0.05) 100%); }
+ .card.gold { border-color: rgba(255,107,157,0.3); background: linear-gradient(135deg, var(--surface) 0%, rgba(255,107,157,0.05) 100%); }
+ .card.purple { border-color: rgba(255,107,157,0.3); background: linear-gradient(135deg, var(--surface) 0%, rgba(255,107,157,0.05) 100%); }
+ .card.blue { border-color: rgba(255,107,157,0.3); background: linear-gradient(135deg, var(--surface) 0%, rgba(255,107,157,0.05) 100%); }
+ .card-title { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: #ff8fa3; margin-bottom: 12px; display: flex; align-items: center; gap: 10px; }
+ .card-title .icon { font-size: 20px; }
+ .clean { list-style: none; }
+ .clean li { padding: 4px 0 4px 18px; position: relative; color: var(--mid); }
+ .clean li::before { content: '▸'; position: absolute; left: 0; color: var(--orange); font-size: 12px; top: 7px; }
+ .clean li strong { color: #ff8fa3; }
+ .highlight { background: rgba(255,107,157,0.08); border-left: 4px solid var(--orange); padding: 14px 18px; border-radius: 6px; margin: 14px 0; font-size: 14px; color: var(--mid); }
+ .highlight.teal { background: rgba(255,107,157,0.08); border-left-color: var(--teal); }
+ .highlight.red { background: rgba(255,92,107,0.08); border-left-color: var(--red); }
+ .highlight.gold { background: rgba(255,107,157,0.08); border-left-color: var(--gold); }
+ .highlight strong { color: #ff8fa3; }
+ table { width: 100%; border-collapse: collapse; margin: 14px 0; background: var(--surface); border-radius: 10px; overflow: hidden; border: 1px solid var(--border); font-size: 13.5px; }
+ th { background: rgba(255,107,157,0.1); color: var(--orange); font-weight: 700; text-align: left; padding: 12px 14px; text-transform: uppercase; letter-spacing: 1px; font-size: 11px; border-bottom: 1px solid var(--border); }
+ td { padding: 11px 14px; color: var(--mid); border-bottom: 1px solid var(--border); }
+ td strong { color: #ff8fa3; }
+ tr:last-child td { border-bottom: none; }
+ tr:nth-child(even) { background: rgba(255,255,255,0.02); }
+ .tag { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 11px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; }
+ .tag-orange { background: var(--orange-pale); color: var(--orange-light); }
+ .tag-teal { background: var(--teal-light); color: var(--teal); }
+ .tag-red { background: var(--red-light); color: var(--red); }
+ .tag-green { background: var(--green-light); color: var(--green); }
+ .tag-purple { background: var(--purple-light); color: var(--purple); }
+ .tag-gold { background: var(--gold-light); color: var(--gold); }
+ .tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 8px; }
+ .nav-back { display: inline-flex; align-items: center; gap: 8px; color: var(--mid); text-decoration: none; font-size: 13px; padding: 10px 16px; border: 1px solid var(--border); border-radius: 8px; margin-bottom: 24px; transition: all 0.15s; }
+ .nav-back:hover { color: var(--orange); border-color: var(--orange); }
+ .qcm-link { display: inline-flex; align-items: center; gap: 8px; background: var(--orange); color: #0f1117; text-decoration: none; font-weight: 700; padding: 14px 22px; border-radius: 10px; font-size: 14px; letter-spacing: 0.5px; text-transform: uppercase; margin-top: 24px; transition: all 0.15s; }
+ .qcm-link:hover { background: var(--orange-light); transform: translateY(-1px); }
+ footer { background: #0f1117; color: var(--muted); text-align: center; padding: 28px; font-size: 13px; border-top: 1px solid var(--border); }
+ footer strong { color: var(--orange); }
+ @media (max-width: 700px) { .hero { padding: 40px 24px 32px; } .hero h1 { font-size: 36px; } .container { padding: 24px 16px 60px; } }
+</style>
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-theme.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
+</head>
+<body>
+<a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
+<div class="page-toggle"><div class="pt-inner"><a href="../../qcm/neuroanat/suporte-1.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<div class="hero">
+ <div class="hero-tag">Support Neurophysio · Partie 1 · Niveau K1</div>
+ <h1>Système <em>nerveux</em><br>& pathologies neuro</h1>
+ <p class="hero-meta">Anatomie SNC/SNP · 9 pathologies majeures · D'après "Just the facts: Neurologic system"</p>
+</div>
+
+<div class="container">
+ <nav class="toc">
+ <a href="#anatomie">1. Anatomie SN</a>
+ <a href="#snc-snp">2. SNC vs SNP</a>
+ <a href="#meninges">3. Méninges</a>
+ <a href="#cerveau">4. Cerveau</a>
+ <a href="#cervelet-tronc">5. Cervelet & tronc</a>
+ <a href="#moelle">6. Moelle</a>
+ <a href="#sna">7. SN autonome</a>
+ <a href="#alzheimer">8. Alzheimer</a>
+ <a href="#sla">9. SLA</a>
+ <a href="#epilepsie">10. Épilepsie</a>
+ <a href="#gbs">11. Guillain-Barré</a>
+ <a href="#meningite">12. Méningite</a>
+ <a href="#sep">13. SEP</a>
+ <a href="#myasthenie">14. Myasthénie</a>
+ <a href="#parkinson">15. Parkinson</a>
+ <a href="#avc">16. AVC</a>
+ </nav>
+
+ <!-- ========== ANATOMIE GÉNÉRALE ========== -->
+ <section class="section" id="anatomie">
+ <div class="section-header">
+ <div class="section-num">1</div>
+ <h2 class="section-title">Vue d'ensemble du <em>système nerveux</em></h2>
+ </div>
+ <div class="highlight">
+ Le système nerveux est le réseau de communication du corps : il <strong>coordonne et organise</strong> les fonctions de tous les autres systèmes. Réseau de récepteurs et transmetteurs avec le cerveau et la moelle épinière, formant un véritable « ordinateur vivant ».
+ </div>
+ <div class="card teal">
+ <div class="card-title"><span class="icon">⚡</span>Le NEURONE — unité fonctionnelle</div>
+ <ul class="clean">
+ <li><strong>Cellule conductrice spécialisée</strong> qui reçoit et transmet les influx électrochimiques</li>
+ <li><strong>Axone</strong> : transporte l'influx LOIN du corps cellulaire (efférence)</li>
+ <li><strong>Dendrites</strong> : transportent l'influx VERS le corps cellulaire (afférence) — multiples</li>
+ <li>Un neurone = <strong>plusieurs dendrites mais 1 seul axone</strong></li>
+ <li><strong>Cellules neurogliales</strong> (gliales) : plus nombreuses que les neurones, fonctions de support, nutrition et protection</li>
+ </ul>
+ </div>
+ </section>
+
+ <!-- ========== SNC vs SNP ========== -->
+ <section class="section" id="snc-snp">
+ <div class="section-header">
+ <div class="section-num">2</div>
+ <h2 class="section-title">Division : <em>SNC vs SNP</em></h2>
+ </div>
+ <div class="grid-2">
+ <div class="card teal">
+ <div class="card-title"><span class="icon">🧠</span>SNC — Système Nerveux Central</div>
+ <ul class="clean">
+ <li>Cerveau + moelle épinière</li>
+ <li>Centre de contrôle du corps</li>
+ <li>Protégé par : crâne, vertèbres, LCR, 3 méninges</li>
+ </ul>
+ </div>
+ <div class="card orange">
+ <div class="card-title"><span class="icon">🌐</span>SNP — Système Nerveux Périphérique</div>
+ <ul class="clean">
+ <li>Nerfs crâniens + nerfs spinaux</li>
+ <li>Communication entre SNC et organes/membres</li>
+ <li><strong>31 paires</strong> de nerfs spinaux : 8 cervicaux (C1-C8), 12 thoraciques (T1-T12), 5 lombaires (L1-L5), 5 sacrés (S1-S5), 1 coccygien</li>
+ </ul>
+ </div>
+ </div>
+ </section>
+
+ <!-- ========== MÉNINGES ========== -->
+ <section class="section" id="meninges">
+ <div class="section-header">
+ <div class="section-num">3</div>
+ <h2 class="section-title">Les <em>méninges</em></h2>
+ </div>
+ <div class="grid-3">
+ <div class="card red">
+ <div class="card-title">🛡 Dure-mère</div>
+ <ul class="clean">
+ <li>Couche EXTERNE</li>
+ <li>Tissu fibreux résistant</li>
+ <li>2 feuillets : endostéale + méningée</li>
+ <li>"Tough mother"</li>
+ </ul>
+ </div>
+ <div class="card teal">
+ <div class="card-title">🕸 Arachnoïde</div>
+ <ul class="clean">
+ <li>Couche MOYENNE</li>
+ <li>Membrane fine et délicate</li>
+ <li><strong>AVASCULAIRE</strong></li>
+ <li>"Spider mother"</li>
+ </ul>
+ </div>
+ <div class="card orange">
+ <div class="card-title">💞 Pie-mère</div>
+ <ul class="clean">
+ <li>Couche INTERNE</li>
+ <li>Adhère au tissu cérébral et médullaire</li>
+ <li><strong>VASCULAIRE</strong></li>
+ <li>"Tender mother"</li>
+ </ul>
+ </div>
+ </div>
+ <table>
+ <thead><tr><th>Espace</th><th>Localisation</th><th>Contenu</th></tr></thead>
+ <tbody>
+ <tr><td><strong>Épidural</strong></td><td>Entre crâne et dure-mère</td><td>Graisse, veines</td></tr>
+ <tr><td><strong>Sous-dural</strong></td><td>Entre dure-mère et arachnoïde</td><td>Virtuel</td></tr>
+ <tr><td><strong>Sous-arachnoïdien</strong></td><td>Entre arachnoïde et pie-mère</td><td><strong>LCR</strong> (eau, protéines, glucose, minéraux)</td></tr>
+ </tbody>
+ </table>
+ <div class="highlight teal">Le LCR remplit l'espace sous-arachnoïdien et les <strong>4 ventricules cérébraux</strong>. Il protège le cerveau et la moelle des chocs.</div>
+ </section>
+
+ <!-- ========== CERVEAU ========== -->
+ <section class="section" id="cerveau">
+ <div class="section-header">
+ <div class="section-num">4</div>
+ <h2 class="section-title">Le <em>cerveau</em></h2>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="icon">🧠</span>Structure générale</div>
+ <ul class="clean">
+ <li><strong>Cortex cérébral</strong> (couche externe) = corps neuronaux = <strong>substance grise</strong></li>
+ <li><strong>Couche interne</strong> = axones = <strong>substance blanche</strong> + <strong>noyaux gris centraux</strong> (basal ganglia)</li>
+ <li>Noyaux gris centraux : contrôle de la coordination motrice et de la stabilité</li>
+ <li><strong>Hémisphères droit et gauche</strong> : croisement bulbaire → l'hémisphère droit contrôle le côté gauche du corps et inversement</li>
+ </ul>
+ </div>
+
+ <h3 style="font-family:'Playfair Display',serif; font-size:20px; color:#FEFCFA; margin:24px 0 12px;">Lobes & scissures</h3>
+ <table>
+ <thead><tr><th>Scissure</th><th>Sépare</th></tr></thead>
+ <tbody>
+ <tr><td><strong>Sylvius (latéral)</strong></td><td>Lobe temporal des lobes frontal et pariétal</td></tr>
+ <tr><td><strong>Rolando (central)</strong></td><td>Lobe frontal du lobe pariétal</td></tr>
+ <tr><td><strong>Pariéto-occipitale</strong></td><td>Lobe occipital des lobes pariétaux</td></tr>
+ </tbody>
+ </table>
+
+ <div class="grid-4" style="margin-top:14px">
+ <div class="card orange">
+ <div class="card-title">Frontal</div>
+ <ul class="clean"><li>Mvts musculaires volontaires</li><li>Aire motrice de Broca (langage moteur)</li><li>Personnalité, jugement, mémoire</li><li>Réponses émotionnelles</li></ul>
+ </div>
+ <div class="card teal">
+ <div class="card-title">Temporal</div>
+ <ul class="clean"><li>Goût, audition, odorat</li><li>Compréhension du langage parlé (Wernicke)</li></ul>
+ </div>
+ <div class="card gold">
+ <div class="card-title">Pariétal</div>
+ <ul class="clean"><li>Coordination & interprétation des informations sensorielles</li><li>Du côté opposé du corps</li></ul>
+ </div>
+ <div class="card purple">
+ <div class="card-title">Occipital</div>
+ <ul class="clean"><li>Interprétation des stimuli visuels</li></ul>
+ </div>
+ </div>
+
+ <div class="grid-2" style="margin-top:18px">
+ <div class="card blue">
+ <div class="card-title"><span class="icon">📡</span>Thalamus</div>
+ <ul class="clean">
+ <li>Relais central : transmet les influx vers et depuis le cortex</li>
+ <li>Émotions primitives (peur)</li>
+ <li>Distinction stimuli plaisants/déplaisants</li>
+ </ul>
+ </div>
+ <div class="card red">
+ <div class="card-title"><span class="icon">🔥</span>Hypothalamus</div>
+ <ul class="clean">
+ <li>Sous le thalamus, centre AUTONOME</li>
+ <li>Régule : <strong>température, appétit, PA, respiration, sommeil</strong></li>
+ <li>Décharges nerveuses émotionnelles/comportementales</li>
+ <li>Contrôle partiel de l'hypophyse + réaction au stress</li>
+ </ul>
+ </div>
+ </div>
+ </section>
+
+ <!-- ========== CERVELET & TRONC ========== -->
+ <section class="section" id="cervelet-tronc">
+ <div class="section-header">
+ <div class="section-num">5</div>
+ <h2 class="section-title">Cervelet & <em>tronc cérébral</em></h2>
+ </div>
+ <div class="card teal">
+ <div class="card-title"><span class="icon">⚖️</span>Cervelet</div>
+ <ul class="clean">
+ <li>Sous le cerveau, à la base</li>
+ <li>Coordonne les mouvements musculaires</li>
+ <li>Contrôle la posture</li>
+ <li>Maintient l'équilibre</li>
+ </ul>
+ </div>
+ <h3 style="font-family:'Playfair Display',serif; font-size:18px; color:#FEFCFA; margin:18px 0 10px;">Tronc cérébral — 3 parties</h3>
+ <table>
+ <thead><tr><th>Partie</th><th>Fonctions</th></tr></thead>
+ <tbody>
+ <tr><td><strong>Mésencéphale</strong></td><td>Centre des réflexes des nerfs crâniens III & IV (réflexes pupillaires + mouvements oculaires)</td></tr>
+ <tr><td><strong>Pont (protubérance)</strong></td><td>Régulation de la respiration · centre des réflexes V à VIII (mastication, goût, salivation, audition, équilibre)</td></tr>
+ <tr><td><strong>Bulbe rachidien</strong></td><td>Fonctions cardiaque, respiratoire, vasomotrice · centres vomissement, toux, hoquet · nerfs IX, X, XII en émergent</td></tr>
+ </tbody>
+ </table>
+ <div class="highlight">
+ Le tronc cérébral + thalamus + hypothalamus forment la <strong>formation réticulée</strong> (réseau d'éveil/vigilance).
+ </div>
+ </section>
+
+ <!-- ========== MOELLE ========== -->
+ <section class="section" id="moelle">
+ <div class="section-header">
+ <div class="section-num">6</div>
+ <h2 class="section-title">La <em>moelle épinière</em></h2>
+ </div>
+ <div class="card">
+ <div class="card-title"><span class="icon">🦴</span>Structure</div>
+ <ul class="clean">
+ <li>Du tronc cérébral jusqu'à la <strong>2ᵉ vertèbre lombaire</strong></li>
+ <li>Voie de conduction bidirectionnelle (cerveau ↔ SNP)</li>
+ <li><strong>Substance grise centrale en H</strong> divisée en cornes</li>
+ <li>Substance blanche périphérique organisée en <strong>tractus verticaux</strong> (fibres myélinisées)</li>
+ </ul>
+ </div>
+ <div class="grid-2" style="margin-top:14px">
+ <div class="card orange">
+ <div class="card-title">Cornes postérieures (dorsales)</div>
+ <ul class="clean"><li>Relai d'<strong>information sensitive</strong></li></ul>
+ </div>
+ <div class="card teal">
+ <div class="card-title">Cornes antérieures (ventrales)</div>
+ <ul class="clean"><li>Activité <strong>motrice</strong> volontaire ou réflexe</li></ul>
+ </div>
+ </div>
+ <h3 style="font-family:'Playfair Display',serif; font-size:18px; color:#FEFCFA; margin:18px 0 10px;">Tractus médullaires</h3>
+ <div class="grid-2">
+ <div class="card teal">
+ <div class="card-title">⬆ Tractus ASCENDANTS (sensitifs)</div>
+ <ul class="clean">
+ <li>Conduisent les influx sensitifs vers le cerveau</li>
+ </ul>
+ </div>
+ <div class="card orange">
+ <div class="card-title">⬇ Tractus DESCENDANTS (moteurs)</div>
+ <ul class="clean">
+ <li><strong>Pyramidal</strong> (corticospinal) : mouvements fins et qualifiés</li>
+ <li><strong>Extra-pyramidal</strong> (extracorticospinal) : contrôle des mouvements grossiers</li>
+ </ul>
+ </div>
+ </div>
+ <div class="highlight gold">
+ <strong>Motoneurones supérieurs</strong> (cérébraux) : du cerveau à la moelle.<br>
+ <strong>Motoneurones inférieurs</strong> (spinaux) : transmettent aux muscles.
+ </div>
+ <h3 style="font-family:'Playfair Display',serif; font-size:18px; color:#FEFCFA; margin:18px 0 10px;">Racines nerveuses spinales</h3>
+ <ul class="clean">
+ <li><strong>Racine antérieure (ventrale)</strong> : fibres MOTRICES vers glandes/muscles</li>
+ <li><strong>Racine postérieure (dorsale)</strong> : fibres SENSITIVES vers la moelle</li>
+ <li><strong>Ganglion de la racine postérieure</strong> : contient les corps cellulaires des neurones sensitifs</li>
+ <li>Après sortie de la colonne, chaque nerf se divise en <strong>rameaux</strong> avec recouvrement (réduit la perte fonctionnelle si lésion isolée)</li>
+ </ul>
+ </section>
+
+ <!-- ========== SNA ========== -->
+ <section class="section" id="sna">
+ <div class="section-header">
+ <div class="section-num">7</div>
+ <h2 class="section-title">Système nerveux <em>autonome</em></h2>
+ </div>
+ <div class="highlight">
+ Le SNP se divise en : <strong>SN somatique</strong> (volontaire, contrôle muscles squelettiques via fibres ACh) et <strong>SN autonome</strong> (involontaire, viscères/cœur/glandes).
+ </div>
+ <div class="grid-2">
+ <div class="card red">
+ <div class="card-title"><span class="icon">⚡</span>Sympathique</div>
+ <ul class="clean">
+ <li>Dépense énergétique</li>
+ <li>Situations de stress (« combat ou fuite »)</li>
+ <li>Neurotransmetteur : <strong>noradrénaline</strong> (catécholamine adrénergique)</li>
+ </ul>
+ </div>
+ <div class="card teal">
+ <div class="card-title"><span class="icon">😌</span>Parasympathique</div>
+ <ul class="clean">
+ <li>Conservation énergétique</li>
+ <li>Repos, digestion</li>
+ <li>Neurotransmetteur : <strong>acétylcholine</strong> (cholinergique)</li>
+ </ul>
+ </div>
+ </div>
+ </section>
+
+ <!-- ========== ALZHEIMER ========== -->
+ <section class="section" id="alzheimer">
+ <div class="section-header">
+ <div class="section-num">8</div>
+ <h2 class="section-title">Maladie d'<em>Alzheimer</em></h2>
+ </div>
+ <div class="highlight red">
+ Trouble dégénératif progressif du <strong>cortex cérébral</strong>. Cause &gt; 50 % des cas de démence. Atrophie maximale aux <strong>lobes frontaux</strong> mais dans toutes les régions corticales. Pronostic sombre, décès en 2-20 ans (médiane 8 ans).
+ </div>
+ <div class="grid-2">
+ <div class="card">
+ <div class="card-title">Formes</div>
+ <ul class="clean">
+ <li><strong>Familiale</strong> (rare) : mutations PS1, PS2 ou APP, transmission ~50 %</li>
+ <li><strong>Sporadique</strong> (la +) : gène <strong>APOE-ε4</strong> = facteur de risque majeur</li>
+ <li>1/10 personnes &gt; 65 ans · ~1/2 des &gt; 85 ans</li>
+ </ul>
+ </div>
+ <div class="card orange">
+ <div class="card-title">Facteurs étiologiques</div>
+ <ul class="clean">
+ <li>Carences en neurotransmetteurs (<strong>ACh</strong>, somatostatine, substance P, NA)</li>
+ <li>Virus à action lente sur le SNC</li>
+ <li>Traumatismes</li>
+ <li>Facteurs génétiques</li>
+ </ul>
+ </div>
+ </div>
+ <div class="card red" style="margin-top:14px">
+ <div class="card-title">Lésions tissulaires caractéristiques</div>
+ <ul class="clean">
+ <li><strong>Enchevêtrements neurofibrillaires</strong> (protéines fibreuses dans les neurones)</li>
+ <li><strong>Plaques β-amyloïdes</strong> (dépôts protéiques) — leur abondance ↗ la sévérité</li>
+ <li>Dégénérescence granulovasculaire des neurones</li>
+ <li>Atrophie corticale + élargissement des ventricules</li>
+ <li>Cerveaux Alzheimer = jusqu'à <strong>10 %</strong> du taux normal d'ACh</li>
+ </ul>
+ </div>
+ <div class="card" style="margin-top:14px">
+ <div class="card-title">Clinique</div>
+ <ul class="clean">
+ <li>Début insidieux → oubli + perte de mémoire récente sans altération du comportement</li>
+ <li>Difficultés d'apprentissage, altération de l'hygiène personnelle</li>
+ <li>Détérioration progressive : pensée abstraite, communication, mémoire, langage, motricité</li>
+ <li>Errance, irritabilité, dépression, paranoïa, agressivité</li>
+ <li>Réflexe de protrusion des lèvres positif (snout reflex)</li>
+ <li>Stade final : incontinence, secousses musculaires, convulsions</li>
+ </ul>
+ </div>
+ <div class="card teal" style="margin-top:14px">
+ <div class="card-title">Diagnostic & traitement</div>
+ <ul class="clean">
+ <li>Diagnostic de certitude = <strong>autopsie</strong></li>
+ <li>PET, TDM, IRM, EEG, analyse LCR pour exclure d'autres pathologies</li>
+ <li>Tx : <strong>inhibiteurs de la cholinestérase</strong> (donépézil, rivastigmine, galantamine)</li>
+ <li><strong>Mémantine</strong> (antagoniste NMDA)</li>
+ <li>Vitamine E, vaccin anti-β-amyloïde en essai</li>
+ </ul>
+ </div>
+ </section>
+
+ <!-- ========== SLA ========== -->
+ <section class="section" id="sla">
+ <div class="section-header">
+ <div class="section-num">9</div>
+ <h2 class="section-title">Sclérose latérale <em>amyotrophique</em> (SLA)</h2>
+ </div>
+ <div class="highlight red">
+ Maladie de <strong>Lou Gehrig / Charcot</strong>. La plus fréquente des maladies du motoneurone causant une atrophie musculaire. Onset 40-70 ans, <strong>♂ > ♀ (3:1)</strong>. Évolution rapidement fatale. ~5-10 % génétique (mutation SOD1).
+ </div>
+ <div class="card">
+ <div class="card-title">Mécanisme</div>
+ <ul class="clean">
+ <li>Destruction des <strong>motoneurones</strong> (cornes antérieures de la moelle + noyaux moteurs du tronc)</li>
+ <li>Atteinte des motoneurones <strong>supérieurs ET inférieurs</strong></li>
+ <li>Atrophie musculaire des fibres innervées</li>
+ </ul>
+ </div>
+ <div class="card red" style="margin-top:14px">
+ <div class="card-title">Clinique (signe cardinal : faiblesse musculaire — 60 %)</div>
+ <ul class="clean">
+ <li><strong>Fasciculations</strong> + atrophie + faiblesse (avant-bras et mains ++)</li>
+ <li>Dysarthrie, dysphagie, mastication difficile</li>
+ <li>Dyspnée, étouffement</li>
+ <li>Hypersalivation, dépression</li>
+ <li>Rires/pleurs inappropriés</li>
+ <li>Sensibilité et cognition <strong>PRÉSERVÉES</strong></li>
+ </ul>
+ </div>
+ <div class="card teal" style="margin-top:14px">
+ <div class="card-title">Diagnostic & traitement</div>
+ <ul class="clean">
+ <li>EMG (atteinte nerveuse vs musculaire)</li>
+ <li>Biopsie musculaire pour exclure une myopathie</li>
+ <li>LCR : ↑ protéines (1/3 des patients)</li>
+ <li>Tx : <strong>Riluzole</strong> (neuroprotecteur), baclofène, dantrolène, diazépam (spasticité)</li>
+ <li>Tracheo + ventilation mécanique si hypoventilation</li>
+ <li>Cellules souches en recherche</li>
+ </ul>
+ </div>
+ </section>
+
+ <!-- ========== ÉPILEPSIE ========== -->
+ <section class="section" id="epilepsie">
+ <div class="section-header">
+ <div class="section-num">10</div>
+ <h2 class="section-title"><em>Épilepsie</em> & convulsions</h2>
+ </div>
+ <div class="highlight">
+ Maladie cérébrale caractérisée par des <strong>convulsions récurrentes</strong> = décharges électriques anormales et paroxystiques. ~50 % idiopathique. ~80 % de bon contrôle sous traitement adapté.
+ </div>
+ <div class="grid-2">
+ <div class="card orange">
+ <div class="card-title">Crises PARTIELLES (focales)</div>
+ <ul class="clean">
+ <li><strong>Simple partielle</strong> (jacksonienne, sensorielle) : conscience PRÉSERVÉE</li>
+ <li>Jacksonienne : raideur/secousses dans 1 extrémité, fourmillements</li>
+ <li>Sensorielle : hallucinations, lumières, vertiges, déjà-vu, odeur fétide</li>
+ <li><strong>Complexe partielle</strong> : conscience altérée, automatismes (mâchonnement, errance), aura possible</li>
+ <li><strong>Secondairement généralisée</strong> : aura → généralisation</li>
+ </ul>
+ </div>
+ <div class="card teal">
+ <div class="card-title">Crises GÉNÉRALISÉES</div>
+ <ul class="clean">
+ <li><strong>Absence (petit mal)</strong> : enfant ++, regard fixe 1-10 s, paupières clignent, pas de chute</li>
+ <li><strong>Myoclonique</strong> : secousses brèves involontaires + bref trouble de conscience</li>
+ <li><strong>Tonico-clonique généralisée</strong> (grand mal) : cri → chute → tonique → clonique → 2-5 min, morsure langue, incontinence, apnée</li>
+ <li><strong>Akinétique (drop attack)</strong> : enfant, perte tonus + chute</li>
+ </ul>
+ </div>
+ </div>
+ <div class="highlight red"><strong>État de mal épileptique</strong> = crise continue → urgence vitale (lorazépam, phénytoïne, phénobarbital ; G50 si hypoglycémie ; thiamine si alcoolisme)</div>
+ <div class="card" style="margin-top:14px">
+ <div class="card-title">Aura (avant les généralisées)</div>
+ <ul class="clean"><li>Odeur piquante</li><li>Nausée</li><li>Sensation montante/descendante dans l'estomac</li><li>Sensation rêveuse</li><li>Goût inhabituel</li><li>Lumières clignotantes</li></ul>
+ </div>
+ <div class="card teal" style="margin-top:14px">
+ <div class="card-title">Diagnostic & traitement</div>
+ <ul class="clean">
+ <li><strong>EEG</strong> = examen clé (anomalies paroxystiques)</li>
+ <li>TDM, IRM</li>
+ <li>Glycémie, calcémie, RX crâne, ponction lombaire</li>
+ <li>Tx généralisée TC + complexe partielle : <strong>phénytoïne</strong>, carbamazépine, phénobarbital, primidone</li>
+ <li>Tx absence : <strong>valproate</strong>, clonazépam, ethosuximide</li>
+ <li>Adjuvant : lamotrigine</li>
+ <li>Chirurgie si focal résistant</li>
+ </ul>
+ </div>
+ </section>
+
+ <!-- ========== GBS ========== -->
+ <section class="section" id="gbs">
+ <div class="section-header">
+ <div class="section-num">11</div>
+ <h2 class="section-title">Syndrome de <em>Guillain-Barré</em></h2>
+ </div>
+ <div class="highlight red">
+ Syndrome auto-immun aigu, rapidement progressif, potentiellement mortel. Démyélinisation segmentaire des nerfs périphériques. ~1/100 000 hab. Onset 30-50 ans. <strong>80-90 % de récupération</strong> avec bonne prise en charge.
+ </div>
+ <div class="card">
+ <div class="card-title">3 phases cliniques</div>
+ <ol class="clean" style="counter-reset:item">
+ <li><strong>Phase aiguë</strong> : 1 à 3 semaines, jusqu'à arrêt de la détérioration</li>
+ <li><strong>Phase plateau</strong> : quelques jours à 2 semaines</li>
+ <li><strong>Phase de récupération</strong> : remyélinisation + repousse axonale, 4 mois à 3 ans</li>
+ </ol>
+ </div>
+ <div class="card orange" style="margin-top:14px">
+ <div class="card-title">Mécanisme</div>
+ <ul class="clean">
+ <li>Attaque immune cellulaire des nerfs périphériques en réponse à un virus</li>
+ <li><strong>Démyélinisation segmentaire</strong> → blocage de la conduction</li>
+ <li>Élargissement des nœuds de Ranvier</li>
+ <li>Facteurs déclenchants : chirurgie, vaccination antirabique/antigrippe, virose, Hodgkin, lupus</li>
+ </ul>
+ </div>
+ <div class="card red" style="margin-top:14px">
+ <div class="card-title">Clinique</div>
+ <ul class="clean">
+ <li>Atteinte des racines DORSALES → fourmillements, paresthésies</li>
+ <li>Atteinte des racines VENTRALES → faiblesse, immobilité, paralysie</li>
+ <li><strong>Pattern ASCENDANT</strong> : jambes → bras → tronc → face</li>
+ <li>Areflexie, perte de la position</li>
+ <li>⚠ Atteinte des muscles RESPIRATOIRES → décès si non pris en charge</li>
+ <li>Paralysie du nerf vague → réflexe nauséeux diminué/absent</li>
+ </ul>
+ </div>
+ <div class="card teal" style="margin-top:14px">
+ <div class="card-title">Diagnostic & traitement</div>
+ <ul class="clean">
+ <li>LCR : protéines élevées (pic 4-6 sem), GB normaux (<strong>dissociation albumino-cytologique</strong>)</li>
+ <li>EMG : décharges répétées de la même unité motrice</li>
+ <li>Conduction nerveuse ralentie</li>
+ <li>Tx : intubation + ventilation mécanique si nécessaire, atropine si bradycardie</li>
+ <li><strong>Immunoglobulines IV à hautes doses</strong> ou <strong>plasmaphérèse</strong> (efficaces si &lt; 2 sem)</li>
+ <li>Kinésithérapie intensive dès récupération</li>
+ </ul>
+ </div>
+ </section>
+
+ <!-- ========== MÉNINGITE ========== -->
+ <section class="section" id="meningite">
+ <div class="section-header">
+ <div class="section-num">12</div>
+ <h2 class="section-title"><em>Méningite</em></h2>
+ </div>
+ <div class="highlight">
+ Inflammation des méninges (3 couches). ↓ flux sanguin cérébral, œdème, ↑ pression intracrânienne. Mortalité non traitée : <strong>70-100 %</strong>. Pronostic sombre chez nourrisson et personne âgée.
+ </div>
+ <div class="grid-3">
+ <div class="card red">
+ <div class="card-title">Bactérienne</div>
+ <ul class="clean">
+ <li><em>Neisseria meningitidis</em></li>
+ <li><em>Haemophilus influenzae</em></li>
+ <li><em>Streptococcus pneumoniae</em></li>
+ <li><em>Escherichia coli</em></li>
+ <li>Souvent secondaire à : pneumonie, otite, sinusite, fracture du crâne</li>
+ </ul>
+ </div>
+ <div class="card teal">
+ <div class="card-title">Virale (aseptique)</div>
+ <ul class="clean">
+ <li>Entérovirus (la +)</li>
+ <li>Arbovirus, herpès, oreillons</li>
+ <li>Bénigne, auto-limitante</li>
+ <li>Repos, hydratation, antalgique</li>
+ </ul>
+ </div>
+ <div class="card purple">
+ <div class="card-title">Autres</div>
+ <ul class="clean">
+ <li>Protozoaires</li>
+ <li>Fongique</li>
+ </ul>
+ </div>
+ </div>
+ <div class="card" style="margin-top:14px">
+ <div class="card-title">Clinique — Signes cardinaux</div>
+ <ul class="clean">
+ <li><strong>Céphalées</strong> + raideur nuque/dos</li>
+ <li>Photophobie, malaise, frissons, fièvre, vomissements</li>
+ <li>Convulsions, altération de conscience (confusion, délire)</li>
+ <li>Nourrisson : irritabilité, bombement fontanelle, refus de s'alimenter</li>
+ </ul>
+ </div>
+ <div class="grid-2" style="margin-top:14px">
+ <div class="card orange">
+ <div class="card-title">Signe de BRUDZINSKI</div>
+ <ul class="clean"><li>Patient en décubitus dorsal</li><li>Flexion passive du cou → flexion involontaire des hanches/genoux</li></ul>
+ </div>
+ <div class="card orange">
+ <div class="card-title">Signe de KERNIG</div>
+ <ul class="clean"><li>Patient en décubitus dorsal</li><li>Flexion hanche + genou puis extension du genou → douleur/résistance</li></ul>
+ </div>
+ </div>
+ <div class="card teal" style="margin-top:14px">
+ <div class="card-title">Diagnostic & traitement</div>
+ <ul class="clean">
+ <li><strong>Ponction lombaire</strong> : ↑ pression LCR, LCR trouble/lacté, ↑ protéines, Gram+culture, ↓ glucose</li>
+ <li>RX thorax (pneumonite/abcès), RX sinus/crâne</li>
+ <li>NFS : leucocytose</li>
+ <li>TDM (élimine hématome, hémorragie, tumeur)</li>
+ <li>Hémocultures</li>
+ <li>Tx : antibiotiques IV ≥ 2 semaines (<strong>pénicilline G, ampicilline, nafcilline</strong>)</li>
+ <li>Mannitol (œdème), anticonvulsivants, sédation, antalgique</li>
+ <li>Isolement si cultures nasales positives</li>
+ </ul>
+ </div>
+ </section>
+
+ <!-- ========== SEP ========== -->
+ <section class="section" id="sep">
+ <div class="section-header">
+ <div class="section-num">13</div>
+ <h2 class="section-title">Sclérose en <em>plaques</em> (SEP)</h2>
+ </div>
+ <div class="highlight">
+ Démyélinisation progressive de la <strong>substance blanche du SNC</strong> (cerveau + moelle) → dysfonctionnement neurologique étendu. Touche les nerfs optique, oculomoteur et tractus spinaux. <strong>Pas le SNP</strong>. Cause majeure de handicap chez 18-40 ans, ♀ ++.
+ </div>
+ <div class="card">
+ <div class="card-title">Mécanisme</div>
+ <ul class="clean">
+ <li>Étiologie inconnue : infection virale lente ? auto-immune ? allergique ? génétique ?</li>
+ <li>Lésions de démyélinisation disséminées avec <strong>plaques scléreuses jaunes</strong></li>
+ <li>Prolifération du tissu glial (gliose)</li>
+ <li>Altération de la conduction des potentiels d'action</li>
+ <li>Facteurs déclenchants : stress émotionnel, surmenage, fatigue, grossesse, infection respiratoire</li>
+ </ul>
+ </div>
+ <div class="card red" style="margin-top:14px">
+ <div class="card-title">Clinique (selon localisation)</div>
+ <ul class="clean">
+ <li>Premiers signes typiques : <strong>troubles visuels</strong> (névrite optique) + <strong>paresthésies</strong></li>
+ <li>Vision floue, diplopie, scotome, ophtalmoplégie</li>
+ <li>Labilité émotionnelle (lobe frontal)</li>
+ <li>Dysphagie, dysarthrie</li>
+ <li>Faiblesse musculaire, spasticité, hyperréflexie</li>
+ <li>Tremblement intentionnel, ataxie</li>
+ <li>Troubles urinaires, intestinaux, cognitifs</li>
+ <li>Fatigue +++</li>
+ <li>Évolution par <strong>poussées et rémissions</strong></li>
+ </ul>
+ </div>
+ <div class="card teal" style="margin-top:14px">
+ <div class="card-title">Diagnostic & traitement</div>
+ <ul class="clean">
+ <li><strong>IRM</strong> = examen le plus sensible (lésions chez &gt; 90 %)</li>
+ <li>LCR : ↑ IgG, protéines totales normales</li>
+ <li>Potentiels évoqués : conduction ralentie (80 %)</li>
+ <li>EEG anormal (1/3)</li>
+ <li>Crise aiguë : <strong>méthylprednisolone</strong> (cure courte) ± prednisone</li>
+ <li>Maintien : <strong>interféron β-1a/β-1b</strong>, acétate de glatiramère</li>
+ <li>Symptomatique : baclofène/dantrolène (spasticité), bethanéchol/oxybutynine (vessie)</li>
+ <li>Kinésithérapie, repos, prévention des escarres</li>
+ </ul>
+ </div>
+ </section>
+
+ <!-- ========== MYASTHÉNIE ========== -->
+ <section class="section" id="myasthenie">
+ <div class="section-header">
+ <div class="section-num">14</div>
+ <h2 class="section-title"><em>Myasthénie</em> grave</h2>
+ </div>
+ <div class="highlight red">
+ Faiblesse musculaire <strong>sporadique progressive</strong> + fatigue anormale des muscles squelettiques volontaires, aggravée par l'exercice. <strong>Myasthenia gravis = grave faiblesse musculaire</strong>. Touche surtout face/lèvres/langue/cou/gorge (innervation crânienne). 14/100 000.
+ </div>
+ <div class="card">
+ <div class="card-title">Mécanisme</div>
+ <ul class="clean">
+ <li>Cause inconnue, souvent <strong>auto-immun</strong>, ou troubles du thymus</li>
+ <li><strong>15 % des patients ont un thymome</strong></li>
+ <li>Anticorps anti-récepteurs à l'<strong>acétylcholine</strong> bloquent/détruisent les neurorécepteurs</li>
+ <li>Échec de la transmission à la jonction neuromusculaire</li>
+ </ul>
+ </div>
+ <div class="card red" style="margin-top:14px">
+ <div class="card-title">Clinique (faiblesse progressive ++)</div>
+ <ul class="clean">
+ <li>Faiblesse musculaire extrême, fatigue</li>
+ <li><strong>Ptosis</strong>, <strong>diplopie</strong></li>
+ <li>Mastication & déglutition difficiles</li>
+ <li>Expression masquée, somnolente</li>
+ <li>Mâchoire tombante, tête ballotante</li>
+ <li>Faiblesse mains/bras</li>
+ <li>Symptômes <strong>plus légers le matin, s'aggravent dans la journée</strong></li>
+ <li>↑ pendant menstruation, stress, soleil/froid, infection</li>
+ </ul>
+ </div>
+ <div class="card gold" style="margin-top:14px">
+ <div class="card-title">2 types de CRISES</div>
+ <ul class="clean">
+ <li><strong>Crise myasthénique</strong> : insuffisance d'anticholinestérasique → détresse respiratoire, hypoxie, tachycardie, ↓ réflexe nauséeux</li>
+ <li><strong>Crise cholinergique</strong> : excès d'anticholinestérasique → hypotension, bradycardie, diarrhée, crampes abdo, myosis, ↑ sécrétions respiratoires</li>
+ <li><strong>Test de Tensilon (édrophonium)</strong> : différencie les 2 crises (amélioration → myasthénique ; aggravation → cholinergique)</li>
+ </ul>
+ </div>
+ <div class="card teal" style="margin-top:14px">
+ <div class="card-title">Diagnostic & traitement</div>
+ <ul class="clean">
+ <li><strong>Test de Tensilon</strong> = diagnostic + différentiel des crises</li>
+ <li>EMG : amplitude diminue avec utilisation (fatigabilité)</li>
+ <li>RX/TDM thorax : recherche thymome</li>
+ <li>Tx principal : <strong>anticholinestérasiques</strong> (pyridostigmine = Mestinon) → restaure ~80 % de la fonction</li>
+ <li>Corticostéroïdes</li>
+ <li>Plasmaphérèse si médicaments inefficaces</li>
+ <li><strong>Thymectomie</strong> si thymome (rémission ~40 % si réalisée &lt; 2 ans après diagnostic)</li>
+ <li>Crise myasthénique : <strong>urgence</strong> → intubation + ventilation mécanique, arrêt anticholinestérasiques</li>
+ </ul>
+ </div>
+ </section>
+
+ <!-- ========== PARKINSON ========== -->
+ <section class="section" id="parkinson">
+ <div class="section-header">
+ <div class="section-num">15</div>
+ <h2 class="section-title">Maladie de <em>Parkinson</em></h2>
+ </div>
+ <div class="highlight red">
+ Rigidité musculaire progressive + <strong>akinésie</strong> + tremblements involontaires. Évolution &gt; 10 ans. Décès souvent par pneumopathie d'inhalation. <strong>♂ &gt; ♀</strong>, &gt; 60 ans (1/100). Atteinte du système EXTRA-PYRAMIDAL.
+ </div>
+ <div class="card">
+ <div class="card-title">Mécanisme</div>
+ <ul class="clean">
+ <li>Cause souvent inconnue ; parfois toxines (manganèse, CO)</li>
+ <li>Destruction des cellules de la <strong>substance noire</strong> (substantia nigra)</li>
+ <li><strong>Carence en dopamine</strong> dans les noyaux gris centraux (basal ganglia)</li>
+ <li>Voie dopaminergique substance noire → corps strié altérée</li>
+ <li>Déséquilibre : ↓ dopamine inhibitrice / ↑ acétylcholine excitatrice</li>
+ </ul>
+ </div>
+ <div class="card red" style="margin-top:14px">
+ <div class="card-title">Triade caractéristique</div>
+ <ul class="clean">
+ <li><strong>Rigidité musculaire</strong> : type tuyau de plomb (uniforme) ou roue dentée (saccadé)</li>
+ <li><strong>Akinésie</strong> : démarche en flexion antérieure, initiation difficile, perte d'équilibre, expression masquée, blépharospasme</li>
+ <li><strong>Tremblement « pill-rolling »</strong> unilatéral : début aux doigts, ↑ stress, ↓ mouvement et sommeil</li>
+ </ul>
+ </div>
+ <div class="card orange" style="margin-top:14px">
+ <div class="card-title">Autres signes</div>
+ <ul class="clean">
+ <li>Voix monotone aiguë, dysarthrie</li>
+ <li>Hypersalivation, dysphagie</li>
+ <li>Crampes (jambes, cou, tronc)</li>
+ <li>Peau grasse, hypersudation</li>
+ <li>Insomnie, troubles de l'humeur</li>
+ </ul>
+ </div>
+ <div class="card teal" style="margin-top:14px">
+ <div class="card-title">Diagnostic & traitement</div>
+ <ul class="clean">
+ <li>Diagnostic clinique (âge, histoire, signes)</li>
+ <li>Urines : ↓ dopamine</li>
+ <li>TDM/IRM (élimine autres pathologies)</li>
+ <li>Tx 1ère ligne : <strong>lévodopa</strong> + carbidopa (limite l'effet périphérique)</li>
+ <li>Bromocriptine (réduit la dose de lévodopa)</li>
+ <li>Anticholinergiques (trihéxyphénidyle, benztropine), antihistaminiques (diphenhydramine)</li>
+ <li>Amantadine (antiviral) : raideur, akinésie</li>
+ <li>Sélégiline : ralentit la progression</li>
+ <li>Stalevo (carbidopa + lévodopa + entacapone)</li>
+ <li><strong>Stimulation cérébrale profonde (DBS)</strong> : option chirurgicale moderne</li>
+ <li>Kinésithérapie : amplitudes, marche, massage</li>
+ </ul>
+ </div>
+ </section>
+
+ <!-- ========== AVC ========== -->
+ <section class="section" id="avc">
+ <div class="section-header">
+ <div class="section-num">16</div>
+ <h2 class="section-title">Accident vasculaire <em>cérébral</em> (AVC)</h2>
+ </div>
+ <div class="highlight red">
+ Anciennement « cerebrovascular accident ». Atteinte soudaine de la circulation cérébrale → ischémie/nécrose. <strong>3ème cause de mortalité aux USA</strong>, 1ère cause de handicap neurologique. ~700 000/an, 50 % de décès. ♂ noirs &gt; autres groupes.
+ </div>
+ <div class="card">
+ <div class="card-title">Classification selon évolution</div>
+ <table>
+ <thead><tr><th>Type</th><th>Caractéristiques</th></tr></thead>
+ <tbody>
+ <tr><td><strong>AIT</strong></td><td>Le moins sévère, interruption temporaire (carotide/vertébro-basilaire), résolution &lt; 24 h, pas de lésion à l'imagerie</td></tr>
+ <tr><td><strong>RIA</strong> (réversible)</td><td>&gt; 24 h jusqu'à 2 sem, puis récupération complète</td></tr>
+ <tr><td><strong>Progressif</strong></td><td>Stroke-in-evolution, déficit qui s'aggrave en 1-2 j</td></tr>
+ <tr><td><strong>Constitué</strong></td><td>Déficits maximaux d'emblée</td></tr>
+ </tbody>
+ </table>
+ </div>
+ <div class="grid-3" style="margin-top:14px">
+ <div class="card orange">
+ <div class="card-title">Thrombose (la +)</div>
+ <ul class="clean"><li>Adultes ↑ et personnes âgées</li><li>Obstruction extra-cérébrale ou intra-cérébrale</li><li>Risque ↑ : obésité, tabac, contraceptifs, chirurgie</li></ul>
+ </div>
+ <div class="card teal">
+ <div class="card-title">Embolie</div>
+ <ul class="clean"><li>2ème cause</li><li>Caillot, tumeur, graisse, bactérie, air</li><li>Tout âge — RAA, endocardite, FA, post-chirurgie cardiaque</li><li>Site fréquent : <strong>artère cérébrale moyenne G</strong></li><li>Apparition rapide (10-20 s)</li></ul>
+ </div>
+ <div class="card red">
+ <div class="card-title">Hémorragie</div>
+ <ul class="clean"><li>3ème cause, à tout âge</li><li>HTA chronique, anévrisme rompu</li><li>Cocaïne (HTA sévère)</li></ul>
+ </div>
+ </div>
+ <div class="card" style="margin-top:14px">
+ <div class="card-title">Facteurs de risque</div>
+ <ul class="clean">
+ <li>ATCD AIT, athérosclérose, HTA, arythmies (FA), cardiopathie rhumatismale</li>
+ <li>Diabète, goutte, hypotension orthostatique</li>
+ <li>Hypertriglycéridémie, sédentarité, contraceptifs hormonaux</li>
+ <li>Tabac, drogues, ATCD familiaux, drépanocytose</li>
+ </ul>
+ </div>
+ <div class="card red" style="margin-top:14px">
+ <div class="card-title">Clinique</div>
+ <ul class="clean">
+ <li>Perte de conscience, vertiges, convulsions</li>
+ <li>Perte du contrôle moteur volontaire, hémiparésie/hémiplégie controlatérale</li>
+ <li>Phase initiale : paralysie flasque, ↓ ROT puis retour avec hypertonie ± spasticité</li>
+ <li>Vision réduite/cécité du côté affecté</li>
+ <li>Troubles visuo-spatiaux (hémiplégie G ↔ lésion D)</li>
+ <li>Stroke gauche → droite ; Stroke droite → gauche</li>
+ <li>Atteinte des NC → signes du <strong>même côté</strong> que la lésion</li>
+ </ul>
+ </div>
+ <div class="card teal" style="margin-top:14px">
+ <div class="card-title">Diagnostic & traitement</div>
+ <ul class="clean">
+ <li>Angiographie cérébrale (référence pour visualiser l'occlusion/hémorragie)</li>
+ <li>TDM en urgence (élimine hémorragie, tumeur, hématome)</li>
+ <li>IRM/ARM (lésion + brain-stem/cervelet)</li>
+ <li>PET/SPECT, Doppler transcrânien</li>
+ <li>Tx ischémique : <strong>rTPA dans les 3 premières heures</strong></li>
+ <li>Anticonvulsivants, corticoïdes (œdème), anticoagulants, antalgiques</li>
+ <li>Chirurgie : craniotomie (hématome), endartériectomie, bypass</li>
+ <li>Shunt ventriculaire si hydrocéphalie</li>
+ <li>Rééducation : kinésithérapie, orthophonie</li>
+ </ul>
+ </div>
+ </section>
+
+ <a href="../../qcm/neuroanat/suporte-1.html" class="qcm-link">📝 Tester ses connaissances avec le QCM →</a>
+</div>
+
+<footer>
+ Fiche d'après <strong>Just the facts: Neurologic system</strong>Niveau Kiné K1 · Mode sombre</footer>
+
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/neuroanat/suporte-1.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+</body>
+</html>

@@ -1,0 +1,1008 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Maladies des Voies Respiratoires Supérieures — Physiopathologie · Licence en Physiothérapie · 1ère Année · 2e Semestre">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../../assets/css/acces.css">
+<script src="../../../../../../assets/js/acces.js"></script>
+<title>Fiche de Révision – Maladies des Voies Respiratoires Supérieures</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../../../assets/css/chrome.css">
+<style>
+ :root {
+ --bg: #161922;
+ --surface: #1a1d2a;
+ --ink: #0f1117;
+ --muted: #9aa3b8;
+ --accent: #ff5c6b;
+ --accent2: #f472b6;
+ --accent3: #ff6b9d;
+ --accent4: #f472b6;
+ --accent5: #ff5c6b;
+ --border: #3a4060;
+ --tag-bg: #161922;
+ }
+
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+
+ body {
+ font-family: 'Source Sans 3', sans-serif;
+ background: var(--bg);
+ color: var(--ink);
+ font-size: 15px;
+ line-height: 1.65;
+ }
+
+ /* HERO */
+ .hero {
+ background: var(--ink);
+ color: var(--bg);
+ padding: 3rem 2rem 2.5rem;
+ text-align: center;
+ position: relative;
+ overflow: hidden;
+ }
+ .hero::before {
+ content: '';
+ position: absolute;
+ inset: 0;
+ background: repeating-linear-gradient(45deg, transparent, transparent 12px, rgba(255,255,255,.03) 12px, rgba(255,255,255,.03) 13px);
+ }
+ .hero h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(1.8rem, 5vw, 3rem);
+ font-weight: 900;
+ letter-spacing: -0.5px;
+ line-height: 1.15;
+ position: relative;
+ }
+ .hero h1 span { color: #ff8fa3; }
+ .hero p {
+ margin-top: .75rem;
+ font-size: .9rem;
+ opacity: .65;
+ position: relative;
+ letter-spacing: .05em;
+ text-transform: uppercase;
+ }
+
+ /* NAV PILLS */
+ .nav-pills {
+ display: flex;
+ flex-wrap: wrap;
+ gap: .5rem;
+ padding: 1.25rem 1.5rem;
+ background: var(--surface);
+ border-bottom: 2px solid var(--border);
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ justify-content: center;
+ }
+ .nav-pills a {
+ text-decoration: none;
+ font-size: .78rem;
+ font-weight: 600;
+ letter-spacing: .04em;
+ text-transform: uppercase;
+ padding: .35rem .85rem;
+ border-radius: 20px;
+ border: 1.5px solid currentColor;
+ transition: all .2s;
+ }
+ .nav-pills a:hover { opacity: .7; }
+ .pill-1 { color: var(--accent); }
+ .pill-2 { color: var(--accent2); }
+ .pill-3 { color: var(--accent4); }
+ .pill-4 { color: var(--accent3); }
+ .pill-5 { color: var(--accent5); }
+ .pill-6 { color: #ff6b9d; }
+
+ /* LAYOUT */
+ .main { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+
+ /* SECTION */
+ .section {
+ margin-bottom: 3rem;
+ scroll-margin-top: 70px;
+ }
+ .section-header {
+ display: flex;
+ align-items: center;
+ gap: 1rem;
+ margin-bottom: 1.25rem;
+ padding-bottom: .75rem;
+ border-bottom: 3px solid currentColor;
+ }
+ .section-icon {
+ font-size: 1.6rem;
+ flex-shrink: 0;
+ }
+ .section-header h2 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.6rem;
+ font-weight: 700;
+ }
+ .badge {
+ margin-left: auto;
+ font-size: .72rem;
+ font-weight: 600;
+ letter-spacing: .06em;
+ text-transform: uppercase;
+ padding: .25rem .7rem;
+ border-radius: 4px;
+ background: currentColor;
+ color: white;
+ opacity: .85;
+ }
+
+ /* COLOR THEMES */
+ .theme-red { color: var(--accent); }
+ .theme-blue { color: var(--accent2); }
+ .theme-purple { color: var(--accent4); }
+ .theme-green { color: var(--accent3); }
+ .theme-orange { color: var(--accent5); }
+ .theme-teal { color: #ff6b9d; }
+
+ /* CARDS GRID */
+ .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+ .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+ @media (max-width: 700px) {
+ .grid-2, .grid-3 { grid-template-columns: 1fr; }
+ }
+
+ .card {
+ background: var(--surface);
+ border: 1.5px solid var(--border);
+ border-radius: 8px;
+ padding: 1.1rem 1.2rem;
+ transition: box-shadow .2s;
+ }
+ .card:hover { box-shadow: 0 4px 16px rgba(0,0,0,.08); }
+ .card h3 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.05rem;
+ margin-bottom: .65rem;
+ display: flex;
+ align-items: center;
+ gap: .4rem;
+ }
+
+ /* LISTS */
+ .card ul, .info-block ul { list-style: none; }
+ .card ul li, .info-block ul li {
+ padding: .22rem 0 .22rem 1.3rem;
+ position: relative;
+ font-size: .9rem;
+ border-bottom: 1px dashed var(--border);
+ }
+ .card ul li:last-child, .info-block ul li:last-child { border-bottom: none; }
+ .card ul li::before {
+ content: '›';
+ position: absolute;
+ left: 0;
+ font-weight: 700;
+ opacity: .5;
+ }
+
+ /* TAGS */
+ .tags { display: flex; flex-wrap: wrap; gap: .35rem; margin-top: .6rem; }
+ .tag {
+ font-size: .75rem;
+ padding: .2rem .6rem;
+ border-radius: 20px;
+ background: var(--tag-bg);
+ border: 1px solid var(--border);
+ font-weight: 600;
+ }
+ .tag.viral { background: #ff8fa3; border-color: #ff8fa3; color: #ff5c6b; }
+ .tag.bacterial { background: #ff8fa3; border-color: #ff8fa3; color: #f472b6; }
+ .tag.viral-main { background: #ff8fa3; border-color: #ff8fa3; color: #ff8fa3; }
+
+ /* TIMELINE */
+ .timeline { position: relative; padding-left: 1.5rem; }
+ .timeline::before {
+ content: '';
+ position: absolute;
+ left: .4rem;
+ top: 0; bottom: 0;
+ width: 2px;
+ background: var(--border);
+ }
+ .timeline-item {
+ position: relative;
+ margin-bottom: .9rem;
+ }
+ .timeline-item::before {
+ content: '';
+ position: absolute;
+ left: -1.17rem;
+ top: .45rem;
+ width: 10px; height: 10px;
+ border-radius: 50%;
+ background: currentColor;
+ }
+ .timeline-item .t-label {
+ font-size: .72rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: .05em;
+ opacity: .65;
+ }
+ .timeline-item .t-text {
+ font-size: .9rem;
+ margin-top: .1rem;
+ }
+
+ /* HIGHLIGHT BOX */
+ .highlight {
+ padding: .9rem 1.1rem;
+ border-radius: 8px;
+ margin: .75rem 0;
+ font-size: .9rem;
+ border-left: 4px solid currentColor;
+ }
+ .highlight.danger { background: #ff8fa3; color: #ff5c6b; }
+ .highlight.info { background: #ff8fa3; color: #f472b6; }
+ .highlight.warn { background: #ffa657; color: #ffa657; }
+ .highlight.success { background: #3dd68c; color: #3dd68c; }
+
+ /* TABLE */
+ table {
+ width: 100%;
+ border-collapse: collapse;
+ font-size: .88rem;
+ background: var(--surface);
+ border-radius: 8px;
+ overflow: hidden;
+ border: 1.5px solid var(--border);
+ }
+ th {
+ background: var(--ink);
+ color: #ff8fa3;
+ font-family: 'Playfair Display', serif;
+ font-size: .9rem;
+ padding: .65rem .9rem;
+ text-align: left;
+ }
+ td {
+ padding: .6rem .9rem;
+ border-bottom: 1px solid var(--border);
+ vertical-align: top;
+ }
+ tr:last-child td { border-bottom: none; }
+ tr:nth-child(even) td { background: #ff8fa3; }
+
+ /* COMPARE BOX */
+ .compare-row {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 1rem;
+ margin-bottom: 1rem;
+ }
+ @media (max-width: 600px) { .compare-row { grid-template-columns: 1fr; } }
+
+ .compare-card {
+ background: var(--surface);
+ border: 1.5px solid var(--border);
+ border-radius: 8px;
+ padding: 1rem;
+ }
+ .compare-card .cc-title {
+ font-weight: 700;
+ font-size: .85rem;
+ text-transform: uppercase;
+ letter-spacing: .05em;
+ margin-bottom: .5rem;
+ padding-bottom: .4rem;
+ border-bottom: 2px solid currentColor;
+ }
+
+ /* INFO BLOCK */
+ .info-block {
+ background: var(--surface);
+ border: 1.5px solid var(--border);
+ border-radius: 8px;
+ padding: 1.1rem 1.2rem;
+ margin-bottom: 1rem;
+ }
+ .info-block h4 {
+ font-weight: 700;
+ font-size: .85rem;
+ text-transform: uppercase;
+ letter-spacing: .04em;
+ margin-bottom: .6rem;
+ opacity: .7;
+ }
+
+ /* CONTEXT INTRO */
+ .intro-block {
+ background: var(--ink);
+ color: var(--bg);
+ border-radius: 10px;
+ padding: 1.4rem 1.6rem;
+ margin-bottom: 2rem;
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+ gap: 1.2rem;
+ }
+ .intro-stat { text-align: center; }
+ .intro-stat .num {
+ font-family: 'Playfair Display', serif;
+ font-size: 2rem;
+ font-weight: 900;
+ color: #ff8fa3;
+ }
+ .intro-stat .desc {
+ font-size: .8rem;
+ opacity: .7;
+ margin-top: .2rem;
+ }
+
+ /* SINUSITE CLASSIFICATION */
+ .classif-row {
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ gap: .75rem;
+ }
+ @media (max-width: 700px) { .classif-row { grid-template-columns: repeat(2, 1fr); } }
+ .classif-card {
+ background: var(--surface);
+ border: 1.5px solid var(--border);
+ border-radius: 8px;
+ padding: .85rem;
+ text-align: center;
+ }
+ .classif-card .c-label {
+ font-size: .75rem;
+ font-weight: 700;
+ text-transform: uppercase;
+ letter-spacing: .05em;
+ margin-bottom: .4rem;
+ }
+ .classif-card .c-dur {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.2rem;
+ font-weight: 700;
+ }
+
+ /* FOOTER */
+ footer {
+ text-align: center;
+ padding: 2rem;
+ font-size: .8rem;
+ color: var(--muted);
+ border-top: 1px solid var(--border);
+ }
+</style>
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/physio-patho.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-theme.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
+</head>
+<body>
+<a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
+<div class="page-toggle"><div class="pt-inner"><a href="../../qcm/tp/tp-11.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<div class="hero">
+ <h1>Maladies des <span>Voies Respiratoires</span><br>Supérieures</h1>
+ <p>Physiopathologie · Licence en Physiothérapie · 1ère Année · 2e Semestre</p>
+</div>
+
+<nav class="nav-pills">
+ <a href="#contexte" class="pill-1">Contexte</a>
+ <a href="#rhume" class="pill-2">Rhume</a>
+ <a href="#sinusite" class="pill-3">Sinusite</a>
+ <a href="#pharyngite" class="pill-4">Pharyngite</a>
+ <a href="#laryngite" class="pill-5">Laryngite</a>
+ <a href="#grippe" class="pill-6">Grippe</a>
+ <a href="#covid" class="pill-1">COVID-19</a>
+ <a href="#comparatif" class="pill-2">Tableau comparatif</a>
+</nav>
+
+<div class="main">
+
+ <!-- CONTEXTE -->
+ <section class="section" id="contexte">
+ <div class="section-header theme-red">
+ <span class="section-icon">🌍</span>
+ <h2>Contexte Général</h2>
+ </div>
+
+ <div class="intro-block">
+ <div class="intro-stat"><div class="num">13 Md</div><div class="desc">Personnes touchées en 2021 (hors COVID)</div></div>
+ <div class="intro-stat"><div class="num">6–8</div><div class="desc">Épisodes/an chez les enfants de 5–9 ans</div></div>
+ <div class="intro-stat"><div class="num">2–5</div><div class="desc">Épisodes/an chez l'adulte</div></div>
+ <div class="intro-stat"><div class="num">1/20 000</div><div class="desc">Mortalité liée au rhume</div></div>
+ </div>
+
+ <div class="grid-2">
+ <div class="card">
+ <h3>🦠 Voies respiratoires supérieures</h3>
+ <ul>
+ <li>Nez (nasopharynx)</li>
+ <li>Oropharynx</li>
+ <li>Larynx</li>
+ </ul>
+ </div>
+ <div class="card">
+ <h3>⚠️ Enjeux de santé publique</h3>
+ <ul>
+ <li>Forme légère à modérée, souvent spontanément résolutive</li>
+ <li>Peut évoluer vers des complications chroniques</li>
+ <li>Impact sur la qualité de vie</li>
+ <li>Absentéisme scolaire et professionnel</li>
+ <li>Prescription inutile d'antibiotiques</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="highlight info" style="margin-top:1rem;">
+ <strong>Principe clé :</strong> Les symptômes dépendent de la <strong>structure touchée</strong>, de la <strong>gravité du processus</strong> et de <strong>l'état de santé / l'âge</strong> de l'individu.
+ </div>
+ </section>
+
+ <!-- RHUME -->
+ <section class="section" id="rhume">
+ <div class="section-header theme-blue">
+ <span class="section-icon">🤧</span>
+ <h2>Rhume (Common Cold)</h2>
+ </div>
+
+ <div class="grid-3">
+ <div class="card">
+ <h3 class="theme-blue">🦠 Étiologie</h3>
+ <p style="font-size:.82rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;opacity:.6;margin-bottom:.5rem;">Causes virales (majorité)</p>
+ <ul>
+ <li><strong>Rhinovirus</strong> – 50 à 80 % (160 sous-types)</li>
+ <li>Coronavirus</li>
+ <li>Adénovirus</li>
+ <li>Parainfluenza virus</li>
+ <li>Virus de la grippe</li>
+ <li>Virus respiratoire syncytial</li>
+ <li>Méthapneumovirus humain</li>
+ <li>Bocavirus / Entérovirus</li>
+ </ul>
+ <div class="tags">
+ <span class="tag viral">Viral majoritaire</span>
+ </div>
+ </div>
+
+ <div class="card">
+ <h3 class="theme-blue">🧫 Étiologie bactérienne</h3>
+ <p style="font-size:.82rem;font-weight:700;text-transform:uppercase;letter-spacing:.04em;opacity:.6;margin-bottom:.5rem;">Infections secondaires</p>
+ <ul>
+ <li>Streptococcus pyogenes (gr. A)</li>
+ <li>Streptocoques gr. C et G</li>
+ <li>Mycoplasma pneumoniae</li>
+ <li>Moraxella catarrhalis</li>
+ <li>Haemophilus influenzae</li>
+ <li>Streptococcus pneumoniae</li>
+ </ul>
+ <div class="highlight warn" style="margin-top:.6rem;font-size:.82rem;">Les infections virales peuvent entraîner des surinfections bactériennes.</div>
+ </div>
+
+ <div class="card">
+ <h3 class="theme-blue">📅 Épidémiologie</h3>
+ <ul>
+ <li>Pic rhinovirus : <strong>automne & printemps</strong></li>
+ <li>Pic grippe & VRS : <strong>hiver</strong></li>
+ <li>Incubation : <strong>1–4 jours</strong></li>
+ <li>Réservoir : nasopharynx</li>
+ <li>Transmission : aérosols, surfaces, auto-inoculation nasale/conjonctivale</li>
+ </ul>
+ <div class="tags" style="margin-top:.6rem;">
+ <span class="tag">Stress ↑ risque</span>
+ <span class="tag">Tabac ↑ risque</span>
+ <span class="tag">Immunité ↓</span>
+ </div>
+ </div>
+ </div>
+
+ <div class="grid-2" style="margin-top:1rem;">
+ <div class="card">
+ <h3 class="theme-blue">🔬 Physiopathologie</h3>
+ <div class="timeline theme-blue" style="margin-top:.4rem;">
+ <div class="timeline-item theme-blue">
+ <div class="t-label">Infection</div>
+ <div class="t-text">Contact avec muqueuses nasales ou conjonctivales</div>
+ </div>
+ <div class="timeline-item theme-blue">
+ <div class="t-label">Mécanisme viral</div>
+ <div class="t-text">Rhinovirus → ↑ médiateurs inflammatoires & cytokines</div>
+ </div>
+ <div class="timeline-item theme-blue">
+ <div class="t-label">Bradykinine</div>
+ <div class="t-text">→ Mal de gorge, écoulement nasal, congestion</div>
+ </div>
+ <div class="timeline-item theme-blue">
+ <div class="t-label">Congestion</div>
+ <div class="t-text">Dilatation des veines nasales → ↑ flux sanguin → ↑ température</div>
+ </div>
+ <div class="timeline-item theme-blue">
+ <div class="t-label">Toux</div>
+ <div class="t-text">↑ Sensibilité terminaisons nerveuses; mucus irrite pharynx</div>
+ </div>
+ <div class="timeline-item theme-blue">
+ <div class="t-label">Systémique</div>
+ <div class="t-text">Cytokines & prostaglandines → effets généraux</div>
+ </div>
+ </div>
+ </div>
+
+ <div class="card">
+ <h3 class="theme-blue">🩺 Symptômes & Evolution</h3>
+ <div class="timeline theme-blue" style="margin-top:.4rem;">
+ <div class="timeline-item theme-blue">
+ <div class="t-label">Jour 1</div>
+ <div class="t-text"><strong>Mal de gorge</strong> – 1er symptôme</div>
+ </div>
+ <div class="timeline-item theme-blue">
+ <div class="t-label">Jour 2–3</div>
+ <div class="t-text">Écoulement nasal, éternuements</div>
+ </div>
+ <div class="timeline-item theme-blue">
+ <div class="t-label">Jours suivants</div>
+ <div class="t-text">Congestion nasale, pharyngite, toux</div>
+ </div>
+ <div class="timeline-item theme-blue">
+ <div class="t-label">Initial</div>
+ <div class="t-text">Malaise, fièvre légère, myalgies, céphalées</div>
+ </div>
+ <div class="timeline-item theme-blue">
+ <div class="t-label">Durée</div>
+ <div class="t-text"><strong>7–10 jours</strong>; toux peut persister plusieurs semaines</div>
+ </div>
+ </div>
+ <div class="grid-2" style="margin-top:.8rem;gap:.5rem;">
+ <div class="highlight info" style="font-size:.82rem;"><strong>Diagnostic :</strong> Clinique – pas de test nécessaire en général</div>
+ <div class="highlight success" style="font-size:.82rem;"><strong>Traitement :</strong> Symptomatique (analgésiques, spray nasal, aérosols)</div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- SINUSITE -->
+ <section class="section" id="sinusite">
+ <div class="section-header theme-purple">
+ <span class="section-icon">👃</span>
+ <h2>Sinusite (Rhinosinusite)</h2>
+ </div>
+
+ <div class="highlight info">Inflammation de la muqueuse des <strong>sinus paranasaux</strong>. Terme préféré : <strong>rhinosinusite</strong>, car la muqueuse nasale est généralement aussi touchée.</div>
+
+ <div class="grid-2" style="margin-top:1rem;">
+ <div class="card">
+ <h3 class="theme-purple">🦠 Étiologie</h3>
+ <ul>
+ <li><strong>Viral</strong> (majorité) : Rhinovirus, Adénovirus, Parainfluenza, Grippe</li>
+ <li><strong>Bactérien</strong> : 0,5 – 2 % des cas</li>
+ <li><strong>Fongique</strong></li>
+ <li><strong>Non infectieux</strong> : allergie, déviation de la cloison nasale, barotraumatisme, corps étrangers, tumeurs</li>
+ </ul>
+ </div>
+
+ <div class="card">
+ <h3 class="theme-purple">🔬 Physiopathologie</h3>
+ <ul>
+ <li>Sinus = filtres drainant vers la cavité nasale</li>
+ <li>Défaut de filtration → état inflammatoire</li>
+ <li>Obstruction de l'orifice de drainage (œdème, allergie)</li>
+ <li>Dysfonctionnement ciliaire</li>
+ <li>Épaississement des sécrétions</li>
+ <li>Œdème muqueux (infiltration lymphocytaire, métaplasie, fibroblastes)</li>
+ </ul>
+ </div>
+ </div>
+
+ <h3 style="margin:1.2rem 0 .7rem;font-family:'Playfair Display',serif;color:var(--accent4);">Classification temporelle</h3>
+ <div class="classif-row">
+ <div class="classif-card" style="border-color:#c0392b;"><div class="c-label" style="color:#c0392b;">Aiguë</div><div class="c-dur">&lt; 4 sem.</div></div>
+ <div class="classif-card" style="border-color:#2980b9;"><div class="c-label" style="color:#2980b9;">Subaiguë</div><div class="c-dur">4 – 12 sem.</div></div>
+ <div class="classif-card" style="border-color:#8e44ad;"><div class="c-label" style="color:#8e44ad;">Chronique</div><div class="c-dur">&gt; 12 sem.</div></div>
+ <div class="classif-card" style="border-color:#27ae60;"><div class="c-label" style="color:#27ae60;">Récurrente</div><div class="c-dur">≥ 4 épisodes / an</div></div>
+ </div>
+
+ <div class="grid-2" style="margin-top:1rem;">
+ <div class="card">
+ <h3 class="theme-purple">🩺 Diagnostic clinique</h3>
+ <p style="font-size:.82rem;font-weight:700;margin-bottom:.5rem;">2 critères majeurs OU 1 majeur + 1 mineur</p>
+ <div class="compare-row">
+ <div>
+ <p style="font-size:.8rem;font-weight:700;color:var(--accent);margin-bottom:.4rem;">MAJEURS</p>
+ <ul style="list-style:none;">
+ <li style="font-size:.85rem;padding:.15rem 0;">💛 Sécrétion nasale purulente</li>
+ <li style="font-size:.85rem;padding:.15rem 0;">💛 Congestion nasale</li>
+ <li style="font-size:.85rem;padding:.15rem 0;">💛 Congestion faciale</li>
+ <li style="font-size:.85rem;padding:.15rem 0;">💛 Douleur/pression faciale</li>
+ <li style="font-size:.85rem;padding:.15rem 0;">💛 Anosmie / hyposmie</li>
+ <li style="font-size:.85rem;padding:.15rem 0;">💛 Fièvre (forme aiguë)</li>
+ </ul>
+ </div>
+ <div>
+ <p style="font-size:.8rem;font-weight:700;color:var(--accent2);margin-bottom:.4rem;">MINEURS</p>
+ <ul style="list-style:none;">
+ <li style="font-size:.85rem;padding:.15rem 0;">🔵 Céphalées</li>
+ <li style="font-size:.85rem;padding:.15rem 0;">🔵 Douleur/pression oreille</li>
+ <li style="font-size:.85rem;padding:.15rem 0;">🔵 Toux</li>
+ <li style="font-size:.85rem;padding:.15rem 0;">🔵 Fatigue</li>
+ <li style="font-size:.85rem;padding:.15rem 0;">🔵 Douleur dentaire/mâchoire</li>
+ <li style="font-size:.85rem;padding:.15rem 0;">🔵 Halitose</li>
+ <li style="font-size:.85rem;padding:.15rem 0;">🔵 Fièvre (subaiguë/chronique)</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+
+ <div class="card">
+ <h3 class="theme-purple">⚡ Complications & Développement</h3>
+ <div class="highlight danger" style="font-size:.87rem;">Propagation possible vers l'<strong>orbite oculaire</strong> ou le <strong>cerveau</strong></div>
+ <ul style="margin-top:.7rem;">
+ <li style="font-size:.88rem;padding:.2rem 0;border-bottom:1px dashed var(--border);">Nourrissons (&lt;1 an) : sinus ethmoïdaux et maxillaires seulement</li>
+ <li style="font-size:.88rem;padding:.2rem 0;border-bottom:1px dashed var(--border);">Sinus frontal : apparaît entre 5–6 ans, mature à la puberté</li>
+ <li style="font-size:.88rem;padding:.2rem 0;border-bottom:1px dashed var(--border);">Complications intracrâniennes → sinus frontal (ados/adultes)</li>
+ <li style="font-size:.88rem;padding:.2rem 0;">Sinus sphénoïdal : apparaît à 5 ans, mature entre 20–30 ans</li>
+ </ul>
+ <div class="highlight info" style="margin-top:.7rem;font-size:.83rem;"><strong>Gold standard :</strong> culture. Imagerie uniquement si complication suspectée.</div>
+ </div>
+ </div>
+ </section>
+
+ <!-- PHARYNGITE -->
+ <section class="section" id="pharyngite">
+ <div class="section-header theme-green">
+ <span class="section-icon">🗣️</span>
+ <h2>Pharyngite</h2>
+ </div>
+
+ <div class="highlight success">Inflammation de la muqueuse de l'<strong>oropharynx</strong> – communément appelée <strong>mal de gorge</strong>.</div>
+
+ <div class="grid-3" style="margin-top:1rem;">
+ <div class="card">
+ <h3 class="theme-green">🦠 Étiologie</h3>
+ <ul>
+ <li>80 % cas viraux</li>
+ <li>Rhinovirus, grippe, adénovirus</li>
+ <li>Coronavirus, parainfluenza</li>
+ <li>Herpès, EBV, VIH, Coxsackievirus</li>
+ <li>Bactériens : cas graves (post-viral)</li>
+ </ul>
+ <div class="tags"><span class="tag viral-main">80% viral</span></div>
+ </div>
+
+ <div class="card">
+ <h3 class="theme-green">🔬 Physiopathologie</h3>
+ <ul>
+ <li>Portail commun : voies respiratoires <em>et</em> digestives</li>
+ <li>Micro-organismes → envahissent muqueuse pharyngée</li>
+ <li>→ Excès de sécrétions + œdème</li>
+ <li>Auto-limitée : <strong>5–7 jours</strong></li>
+ </ul>
+ </div>
+
+ <div class="card">
+ <h3 class="theme-green">🩺 Symptômes</h3>
+ <ul>
+ <li>Fièvre</li>
+ <li>Exsudat amygdalien</li>
+ <li>Adénopathie cervicale</li>
+ <li>Érythème pharyngé</li>
+ <li>Douleur à l'oreille</li>
+ <li>Toux, rhinorrhée, conjonctivite, céphalée</li>
+ </ul>
+ <div class="highlight info" style="margin-top:.6rem;font-size:.83rem;"><strong>Diagnostic :</strong> clinique — <strong>Traitement :</strong> symptomatique</div>
+ </div>
+ </div>
+ </section>
+
+ <!-- LARYNGITE -->
+ <section class="section" id="laryngite">
+ <div class="section-header theme-orange">
+ <span class="section-icon">🎙️</span>
+ <h2>Laryngite</h2>
+ </div>
+
+ <div class="highlight warn">Inflammation du <strong>larynx</strong> – peut toucher la région supraglottique, glottique ou sous-glottique → œdème des cordes vocales.</div>
+
+ <div class="grid-2" style="margin-top:1rem;">
+ <div class="card">
+ <h3 class="theme-orange">🦠 Étiologie</h3>
+ <p style="font-size:.82rem;font-weight:700;color:var(--accent5);margin-bottom:.4rem;">Virales (80%)</p>
+ <ul>
+ <li>Rhinovirus, Parainfluenza, VRS</li>
+ <li>Coronavirus, Adénovirus, Grippe</li>
+ </ul>
+ <p style="font-size:.82rem;font-weight:700;color:var(--accent2);margin: .6rem 0 .4rem;">Non infectieuses</p>
+ <ul>
+ <li>Traumatisme vocal, mauvaise utilisation de la voix</li>
+ <li>Allergie, reflux gastro-œsophagien</li>
+ <li>Pollution, tabagisme, substances inhalées, asthme</li>
+ </ul>
+ </div>
+
+ <div class="card">
+ <h3 class="theme-orange">🩺 Diagnostic & Traitement</h3>
+ <p style="font-size:.83rem;font-weight:700;margin-bottom:.5rem;">Critères cliniques :</p>
+ <ul>
+ <li>Modification de la voix / aphonie</li>
+ <li>Gêne ou douleur à la gorge</li>
+ <li>Dysphagie (difficulté à avaler)</li>
+ <li>Odynophagie (douleur à la déglutition)</li>
+ <li>Malaise, fièvre, gorge sèche, fatigue vocale</li>
+ <li>Érythème / œdème</li>
+ </ul>
+ <p style="font-size:.83rem;font-weight:700;margin:.7rem 0 .4rem;">Traitement :</p>
+ <div class="tags">
+ <span class="tag">Repos vocal</span>
+ <span class="tag">Aérosolthérapie</span>
+ <span class="tag">Éviter alcool/tabac</span>
+ <span class="tag">Régime alimentaire adapté</span>
+ <span class="tag">Hydratation</span>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ <!-- GRIPPE -->
+ <section class="section" id="grippe">
+ <div class="section-header theme-teal">
+ <span class="section-icon">🌡️</span>
+ <h2>Grippe (Influenza)</h2>
+ </div>
+
+ <div class="grid-3">
+ <div class="card">
+ <h3 style="color:#16a085;">📋 Généralités</h3>
+ <ul>
+ <li><strong>3 types</strong> : A, B et C</li>
+ <li>Transmission par <strong>inhalation</strong></li>
+ <li>Incubation : <strong>1–5 jours</strong> (moy. 2 j)</li>
+ <li>Transmission possible <strong>3 semaines</strong></li>
+ <li>Type C ≈ rhume commun</li>
+ </ul>
+ </div>
+
+ <div class="card">
+ <h3 style="color:#16a085;">🔬 Pathogenèse</h3>
+ <ul>
+ <li>Rhinotrachéite → pneumonie</li>
+ <li>Tue cellules productrices de mucus et cellules épithéliales ciliées</li>
+ <li>Atteinte de la membrane basale</li>
+ <li>Œdème extracellulaire (écoulement nasal) – phase initiale</li>
+ <li>Peut affecter bronches et alvéoles</li>
+ <li>↓ Immunité → surinfections bactériennes</li>
+ </ul>
+ </div>
+
+ <div class="card">
+ <h3 style="color:#16a085;">🩺 Manifestations cliniques</h3>
+ <ul>
+ <li>Frissons, malaise</li>
+ <li>Douleurs musculaires (myalgies)</li>
+ <li>Céphalées</li>
+ <li>Toux sèche</li>
+ <li>Écoulement nasal aqueux</li>
+ <li>Mal de gorge</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="grid-2" style="margin-top:1rem;">
+ <div class="card">
+ <h3 style="color:#16a085;">⚠️ Complications graves</h3>
+ <div class="highlight danger" style="font-size:.87rem;margin-bottom:.7rem;">Pneumonie virale → personnes âgées, cardiopulmonaires, femmes enceintes, immunodéprimées</div>
+ <div class="timeline" style="color:#16a085;">
+ <div class="timeline-item" style="color:#16a085;"><div class="t-label">J+1</div><div class="t-text">Fièvre, tachypnée, tachycardie, hypotension</div></div>
+ <div class="timeline-item" style="color:#c0392b;"><div class="t-label">Évolution</div><div class="t-text">Hypoxémie, fibrose pulmonaire diffuse, décès</div></div>
+ </div>
+ <p style="font-size:.85rem;font-weight:700;margin:.7rem 0 .4rem;">Complications secondaires :</p>
+ <div class="tags"><span class="tag">Sinusite</span><span class="tag">Otite</span><span class="tag">Bronchite</span><span class="tag">Pneumonie bactérienne</span></div>
+ <p style="font-size:.8rem;margin-top:.5rem;opacity:.7;">Germes : <em>S. pneumoniae, S. aureus, H. influenzae, M. catarrhalis</em></p>
+ </div>
+
+ <div class="card">
+ <h3 style="color:#16a085;">💉 Traitement & Immunisation</h3>
+ <p style="font-size:.83rem;font-weight:700;margin-bottom:.4rem;">Traitement symptomatique :</p>
+ <ul>
+ <li>Repos (↓ besoins en O₂)</li>
+ <li>Rester au chaud (maintien température + épithélium respiratoire)</li>
+ <li>Hydratation (prévenir déshydratation des VA)</li>
+ <li>Gérer la fièvre, analgésiques</li>
+ <li>Antiviraux / antibiotiques si indiqués</li>
+ </ul>
+ <div class="highlight success" style="margin-top:.7rem;font-size:.85rem;"><strong>Vaccination :</strong> recommandée et gratuite au Portugal pour les >65 ans, personnes chroniques, professionnels de santé, femmes enceintes, institutionnalisés.</div>
+ </div>
+ </div>
+ </section>
+
+ <!-- COVID-19 -->
+ <section class="section" id="covid">
+ <div class="section-header theme-red">
+ <span class="section-icon">🧬</span>
+ <h2>COVID-19</h2>
+ </div>
+
+ <div class="grid-2">
+ <div class="card">
+ <h3 class="theme-red">📋 Généralités</h3>
+ <ul>
+ <li>Agent : <strong>SARS-CoV-2</strong> (variants α, β, γ, δ)</li>
+ <li>Apparition : 2019 → <strong>pandémie 2020</strong></li>
+ <li>Transmission : personne infectée → hôte sensible</li>
+ <li>Incubation : <strong>3–7 jours</strong> (max 14 j)</li>
+ <li>Siège initial : nez ou gorge</li>
+ </ul>
+ <div class="grid-3" style="margin-top:.7rem;gap:.5rem;">
+ <div style="background:#eafaf1;border:1px solid #a9dfbf;border-radius:6px;padding:.6rem;text-align:center;"><div style="font-weight:900;font-size:1.3rem;color:#1e8449;">80%</div><div style="font-size:.75rem;color:#1e8449;">Légers/modérés</div></div>
+ <div style="background:#fef9e7;border:1px solid #f9e79f;border-radius:6px;padding:.6rem;text-align:center;"><div style="font-weight:900;font-size:1.3rem;color:#b7770d;">15%</div><div style="font-size:.75rem;color:#b7770d;">Graves</div></div>
+ <div style="background:#fdf2f2;border:1px solid #f5b7b1;border-radius:6px;padding:.6rem;text-align:center;"><div style="font-weight:900;font-size:1.3rem;color:#922b21;">5%</div><div style="font-size:.75rem;color:#922b21;">Très graves</div></div>
+ </div>
+ </div>
+
+ <div class="card">
+ <h3 class="theme-red">🩺 Symptômes</h3>
+ <div class="grid-2" style="gap:.5rem;">
+ <div>
+ <p style="font-size:.8rem;font-weight:700;color:var(--muted);margin-bottom:.3rem;">Courants</p>
+ <ul>
+ <li>Fièvre, fatigue</li>
+ <li>Toux sèche ou productive</li>
+ <li>Myalgie, malaise</li>
+ <li>Diarrhée, vomissements</li>
+ </ul>
+ </div>
+ <div>
+ <p style="font-size:.8rem;font-weight:700;color:var(--accent);margin-bottom:.3rem;">Graves (15%)</p>
+ <ul>
+ <li>Dyspnée</li>
+ <li>Hypoxie (SatO₂ &lt; 90%)</li>
+ <li>Consolidation pulmonaire</li>
+ </ul>
+ <p style="font-size:.8rem;font-weight:700;color:#922b21;margin-top:.4rem;margin-bottom:.2rem;">Très graves (5%)</p>
+ <ul>
+ <li>SDRA</li>
+ <li>Choc septique</li>
+ <li>Défaillance multiviscérale</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <div class="grid-2" style="margin-top:1rem;">
+ <div class="card">
+ <h3 class="theme-red">🔬 Physiopathologie</h3>
+ <ul>
+ <li>Envahit les cellules épithéliales alvéolaires via <strong>récepteur ACE2</strong></li>
+ <li>Endocytose → réplication via ARN polymérase → exocytose</li>
+ <li>↑ Cytokines (TNF-α, IL-1, IL-6, IL-8)</li>
+ <li>↑ Perméabilité vasculaire → œdème interstitiel → œdème pulmonaire</li>
+ <li>Activation macrophages alvéolaires → réflexe toux</li>
+ <li>↓ Surfactant → dyspnée, hypoxie</li>
+ <li>Libération de sous-produits toxiques → lésions alvéolaires</li>
+ </ul>
+ </div>
+ <div class="card">
+ <h3 class="theme-red">🔭 Diagnostic & Traitement</h3>
+ <ul>
+ <li><strong>PCR</strong> – prélèvement nasopharyngé (référence)</li>
+ <li><strong>Analyse sanguine</strong></li>
+ <li>Traitement symptomatique</li>
+ <li>Mesures de santé publique : test, isolement, EPI</li>
+ <li>Immunisation (vaccination)</li>
+ </ul>
+ </div>
+ </div>
+ </section>
+
+ <!-- TABLEAU COMPARATIF -->
+ <section class="section" id="comparatif">
+ <div class="section-header theme-blue">
+ <span class="section-icon">📊</span>
+ <h2>Tableau Comparatif</h2>
+ </div>
+
+ <div style="overflow-x:auto;">
+ <table>
+ <thead>
+ <tr>
+ <th>Maladie</th>
+ <th>Étiologie principale</th>
+ <th>Localisation</th>
+ <th>Durée typique</th>
+ <th>Symptôme clé</th>
+ <th>Traitement</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td><strong>Rhume</strong></td>
+ <td>Rhinovirus (50–80%)</td>
+ <td>Nasopharynx</td>
+ <td>7–10 jours</td>
+ <td>Écoulement nasal, éternuements</td>
+ <td>Symptomatique</td>
+ </tr>
+ <tr>
+ <td><strong>Sinusite</strong></td>
+ <td>Viral (majorité), bactérien 0,5–2%</td>
+ <td>Sinus paranasaux</td>
+ <td>Variable (aiguë &lt;4 sem.)</td>
+ <td>Douleur/pression faciale, anosmie</td>
+ <td>Symptomatique (ATB si bactérien)</td>
+ </tr>
+ <tr>
+ <td><strong>Pharyngite</strong></td>
+ <td>Viral 80% (Rhinovirus, grippe…)</td>
+ <td>Oropharynx</td>
+ <td>5–7 jours</td>
+ <td>Mal de gorge, exsudat amygdalien</td>
+ <td>Symptomatique</td>
+ </tr>
+ <tr>
+ <td><strong>Laryngite</strong></td>
+ <td>Viral 80% (Rhinovirus, Parainfluenza…)</td>
+ <td>Larynx / cordes vocales</td>
+ <td>Variable</td>
+ <td>Aphonie, dysphonie, dysphagie</td>
+ <td>Repos vocal, aérosolthérapie</td>
+ </tr>
+ <tr>
+ <td><strong>Grippe</strong></td>
+ <td>Influenza A, B, C</td>
+ <td>VRS + inférieures</td>
+ <td>7–14 jours</td>
+ <td>Fièvre élevée, myalgies, toux sèche</td>
+ <td>Antiviraux + symptomatique</td>
+ </tr>
+ <tr>
+ <td><strong>COVID-19</strong></td>
+ <td>SARS-CoV-2</td>
+ <td>VRS + inférieures + alvéoles</td>
+ <td>Variable</td>
+ <td>Dyspnée, hypoxie, fatigue</td>
+ <td>Symptomatique + vaccination</td>
+ </tr>
+ </tbody>
+ </table>
+ </div>
+
+ <div class="highlight warn" style="margin-top:1.2rem;">
+ <strong>À retenir :</strong> La grande majorité des infections respiratoires supérieures sont d'origine <strong>virale</strong>. Les antibiotiques ne sont indiqués qu'en cas d'infection bactérienne avérée. La surprescription est un enjeu majeur de santé publique.
+ </div>
+
+ <div class="grid-2" style="margin-top:1rem;">
+ <div class="info-block">
+ <h4>🦠 Germes bactériens fréquents (surinfection)</h4>
+ <ul>
+ <li>Streptococcus pneumoniae</li>
+ <li>Haemophilus influenzae</li>
+ <li>Moraxella catarrhalis</li>
+ <li>Staphylococcus aureus</li>
+ <li>Streptococcus pyogenes (gr. A)</li>
+ </ul>
+ </div>
+ <div class="info-block">
+ <h4>🛡️ Facteurs de risque généraux</h4>
+ <ul>
+ <li>Âge extrême (nourrissons, personnes âgées)</li>
+ <li>Immunodépression</li>
+ <li>Tabagisme / pollution</li>
+ <li>Stress, dépression, mauvaise alimentation</li>
+ <li>Maladies chroniques cardiopulmonaires</li>
+ </ul>
+ </div>
+ </div>
+ </section>
+
+</div>
+
+<footer>
+ Fiche de révision — Physiopathologie — Maladies des voies respiratoires supérieures<br>
+ Licence Physiothérapie 1ère année
+</footer>
+
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-11.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+</body>
+</html>

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="À la recherche du passé géologique de notre planète — :root { --bg: #0f1117; --bg2: #0f1117; --bg3: #161922; --accent: #a5a0ff; --accent2: #a5a0ff; --accent3:">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../assets/css/acces.css">
+<script src="../../assets/js/acces.js"></script>
+<title>Fiche 2 — À la recherche du passé géologique | SVT Terminale</title>
+<link rel="stylesheet" href="../assets/css/chrome.css">
+<style>
+ :root {
+ --bg: #0f1117; --bg2: #0f1117; --bg3: #161922;
+ --accent: #a5a0ff; --accent2: #a5a0ff; --accent3: #a5a0ff;
+ --accent4: #6366f1; --text: #a5a0ff; --muted: #9aa3b8;
+ --border: #2a3050; --tag-bg: #161922;
+ }
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; font-size: 15px; line-height: 1.7; }
+ header { background: linear-gradient(135deg, #0f1117 0%, #0f1117 100%); border-bottom: 2px solid var(--accent); padding: 2rem 2.5rem; display: flex; flex-direction: column; gap: 0.5rem; }
+ header .tag { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); font-weight: 700; }
+ header h1 { font-size: 2rem; font-weight: 800; color: #e8eaf0; }
+ header .meta { color: var(--muted); font-size: 0.88rem; display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 0.25rem; }
+ nav { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 0.75rem 2.5rem; display: flex; gap: 0.6rem; flex-wrap: wrap; }
+ nav a { color: var(--muted); text-decoration: none; font-size: 0.82rem; padding: 0.3rem 0.8rem; border-radius: 20px; background: var(--bg3); transition: all 0.2s; }
+ nav a:hover { color: var(--accent); background: var(--tag-bg); }
+ main { max-width: 960px; margin: 0 auto; padding: 2rem 2.5rem; }
+ section { margin-bottom: 2.5rem; }
+ h2 { font-size: 1.25rem; font-weight: 700; color: var(--accent); border-left: 4px solid var(--accent); padding-left: 0.9rem; margin-bottom: 1.2rem; margin-top: 0.5rem; }
+ h3 { font-size: 1rem; font-weight: 700; color: var(--accent2); margin: 1.1rem 0 0.5rem; }
+ h4 { font-size: 0.93rem; font-weight: 600; color: var(--accent3); margin: 0.9rem 0 0.3rem; }
+ p { margin-bottom: 0.7rem; }
+ .card { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; }
+ .card.green { border-left: 4px solid var(--accent3); }
+ .card.blue { border-left: 4px solid var(--accent4); }
+ .card.yellow{ border-left: 4px solid var(--accent2); }
+ .card.red { border-left: 4px solid var(--accent); }
+ .def-box { background: #0f1117; border: 1px solid #2a3050; border-radius: 8px; padding: 0.9rem 1.2rem; margin: 0.5rem 0 1rem; }
+ .def-box .label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent2); font-weight: 700; margin-bottom: 0.3rem; }
+ .def-box strong { color: var(--accent3); }
+ ul { padding-left: 1.4rem; margin-bottom: 0.8rem; }
+ ul li { margin-bottom: 0.3rem; }
+ ul li::marker { color: var(--accent); }
+ ol { padding-left: 1.4rem; margin-bottom: 0.8rem; }
+ ol li { margin-bottom: 0.4rem; }
+ ol li::marker { color: var(--accent3); font-weight: 700; }
+ table { width: 100%; border-collapse: collapse; margin: 0.8rem 0 1.2rem; font-size: 0.88rem; }
+ th { background: var(--bg3); color: var(--accent); padding: 0.6rem 0.9rem; text-align: left; border-bottom: 2px solid var(--accent); }
+ td { padding: 0.55rem 0.9rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+ tr:nth-child(even) td { background: #0f1117; }
+ .keyword { display: inline-block; background: var(--tag-bg); color: var(--accent3); border: 1px solid #2a3050; border-radius: 4px; padding: 0.1rem 0.5rem; font-size: 0.8rem; font-weight: 600; margin: 0.15rem; }
+ .important { background: #0f1117; border: 1px solid #2a3050; border-radius: 8px; padding: 0.8rem 1.1rem; margin: 0.8rem 0; color: var(--accent); }
+ .important::before { content: "⚠ À retenir — "; font-weight: 700; }
+ .schema-box { background: var(--bg3); border: 1px dashed var(--border); border-radius: 8px; padding: 1rem; margin: 0.8rem 0; font-family: monospace; font-size: 0.85rem; color: var(--accent3); line-height: 2; }
+ .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+ @media(max-width:640px){ .grid2 { grid-template-columns: 1fr; } }
+ footer { text-align: center; padding: 2rem; color: var(--muted); font-size: 0.8rem; border-top: 1px solid var(--border); margin-top: 2rem; }
+</style>
+</head>
+<body>
+
+<a href="../accueil-svt.html" class="back-nav">← SVT Bac 2026</a>
+
+<div class="page-toggle"><div class="pt-inner"><a href="../qcm/qcm2_passe_geologique.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+
+<header>
+ <div class="tag">Thème I — La Terre, la vie et l'organisation du vivant</div>
+ <h1>À la recherche du passé géologique de notre planète</h1>
+ <div class="meta">
+ <span>📚 3 semaines</span>
+ <span>🎯 SVT Terminale Spécialité</span>
+ <span>🗂 Fiche 2 / 7</span>
+ </div>
+</header>
+
+<nav>
+ <a href="../accueil-svt.html" style="background:rgba(32,36,58,.1);color:#8b7cf8;border:1px solid rgba(58,64,96,.3);text-decoration:none;font-size:.78rem;padding:.25rem .75rem;border-radius:16px;margin-right:.25rem">← Index</a>
+ <a href="#datation">Datation</a>
+ <a href="#roches">Roches et temps</a>
+ <a href="#tectonique">Tectonique des plaques</a>
+ <a href="#histoire">Histoire géologique</a>
+ <a href="#mots-cles">Mots-clés</a>
+</nav>
+
+<main>
+
+ <section>
+ <div class="card blue">
+ <h3 style="margin-top:0">🪨 Plan du chapitre</h3>
+ <ol>
+ <li>Les méthodes de datation (relative et absolue)</li>
+ <li>Les roches comme archives du passé</li>
+ <li>La tectonique des plaques et son histoire</li>
+ <li>Reconstitution des paléoenvironnements</li>
+ </ol>
+ </div>
+ </section>
+
+ <!-- 1. DATATION -->
+ <section id="datation">
+ <h2>1. Les méthodes de datation</h2>
+
+ <h3>1.1 Datation relative</h3>
+ <p>Elle établit un ordre chronologique <strong>sans donner d'âge absolu</strong>. Elle repose sur 5 principes fondamentaux (énoncés par <strong>Nicolas Sténon</strong>, XVII<sup>e</sup> s.) :</p>
+ <ul>
+ <li><strong>Principe de superposition :</strong> dans une série sédimentaire non perturbée, les couches les plus profondes sont les plus anciennes.</li>
+ <li><strong>Principe d'horizontalité originelle :</strong> les couches sédimentaires se déposent à l'origine selon des plans horizontaux ; toute inclinaison observée résulte d'une déformation postérieure.</li>
+ <li><strong>Principe de continuité :</strong> dans une même strate, tous les points ont le même âge, quelle que soit leur position géographique.</li>
+ <li><strong>Principe de recoupement :</strong> toute structure géologique (faille, filon, intrusion plutonique) qui en recoupe une autre lui est <em>postérieure</em>.</li>
+ <li><strong>Principe d'inclusion :</strong> tout objet inclus dans une roche est <em>antérieur</em> à son contenant (ex. un galet dans un conglomérat, un xénolite dans un granite).</li>
+ </ul>
+
+ <div class="def-box">
+ <div class="label">Fossile stratigraphique + principe d'identité paléontologique</div>
+ <strong>Fossile stratigraphique :</strong> espèce à grande extension géographique, courte durée d'existence, abondante et facilement identifiable → permet de dater et de corréler des couches éloignées.<br>
+ <strong>Principe d'identité paléontologique :</strong> deux couches renfermant la même association de fossiles stratigraphiques ont le <em>même âge</em> (synchrones).
+ </div>
+
+ <h3>1.2 Datation absolue (radiométrie)</h3>
+ <p>La <strong>radiochronologie</strong> utilise la désintégration d'isotopes radioactifs pour dater des roches ou fossiles.</p>
+
+ <table>
+ <tr><th>Méthode</th><th>Isotope parent → fils</th><th>Demi-vie</th><th>Application</th></tr>
+ <tr><td>Carbone 14</td><td>¹⁴C → ¹⁴N</td><td>5 730 ans</td><td>Matière organique ≤ 50 000 ans</td></tr>
+ <tr><td>Potassium-Argon</td><td>⁴⁰K → ⁴⁰Ar</td><td>1,25 Ga</td><td>Roches volcaniques, très anciennes</td></tr>
+ <tr><td>Rubidium-Strontium</td><td>⁸⁷Rb → ⁸⁷Sr</td><td>48,8 Ga</td><td>Roches très anciennes</td></tr>
+ <tr><td>Uranium-Plomb</td><td>²³⁸U → ²⁰⁶Pb</td><td>4,47 Ga</td><td>Zircons, très anciennes</td></tr>
+ </table>
+
+ <div class="schema-box">
+Loi de désintégration : N(t) = N₀ × (1/2)^(t/T½)
+N₀ = quantité initiale de l'isotope père
+t = âge de la roche
+T½ = demi-vie de l'isotope
+ </div>
+
+ <h4>Méthode de la droite isochrone (Rb/Sr)</h4>
+ <p>Pour le radiochronomètre <strong>⁸⁷Rb/⁸⁷Sr</strong>, on effectue plusieurs mesures sur différents minéraux d'une même roche et on trace une droite de régression ("<strong>isochrone</strong>") dans le graphique ⁸⁷Sr/⁸⁶Sr = f(⁸⁷Rb/⁸⁶Sr).</p>
+ <ul>
+ <li>Le coefficient directeur <em>a</em> de la droite permet de calculer l'âge : <strong>t = ln(a + 1) / λ</strong></li>
+ <li>Nécessite que le système soit <strong>clos</strong> (pas d'échange avec l'extérieur) depuis la cristallisation</li>
+ <li>Le choix du radiochronomètre dépend de l'âge supposé de la roche (estimé d'abord par datation relative)</li>
+ </ul>
+
+ <div class="important">
+ Le ¹⁴C NE peut PAS dater les roches minérales (il ne s'incorpore que dans la matière organique). Pour dater des roches éruptives ou métamorphiques, on utilise K-Ar, Rb-Sr ou U-Pb.
+ </div>
+ </section>
+
+ <!-- 2. ROCHES ET TEMPS -->
+ <section id="roches">
+ <h2>2. Les roches, archives du passé</h2>
+
+ <h3>2.1 Les roches sédimentaires</h3>
+ <p>Elles enregistrent les conditions de dépôt (température, salinité, énergie du milieu…).</p>
+ <div class="grid2">
+ <div class="card green">
+ <h4 style="margin-top:0">Faciès sédimentaire</h4>
+ <p>Ensemble de caractères (lithologie + fossiles) d'une roche permettant de reconstituer l'environnement de dépôt (<strong>paléoenvironnement</strong>).</p>
+ </div>
+ <div class="card yellow">
+ <h4 style="margin-top:0">Paléoclimats via les sédiments</h4>
+ <p>Teneur en O¹⁸/O¹⁶ des foraminifères → T° de l'eau. Pollens fossilisés (palynologie) → végétation passée.</p>
+ </div>
+ </div>
+
+ <h3>2.2 Les roches magmatiques comme marqueurs tectoniques</h3>
+ <table>
+ <tr><th>Type de roche</th><th>Formation</th><th>Contexte géodynamique</th></tr>
+ <tr><td>Basalte (MORB)</td><td>Volcanisme effusif sous-marin</td><td>Dorsale océanique</td></tr>
+ <tr><td>Andésite</td><td>Volcanisme explosif</td><td>Zone de subduction</td></tr>
+ <tr><td>Granite</td><td>Magma refroidi lentement en profondeur</td><td>Collision / zones continentales</td></tr>
+ <tr><td>Gabbro</td><td>Solidification lente du magma basaltique</td><td>Plancher océanique (lithosphère)</td></tr>
+ </table>
+
+ <h3>2.3 Les roches métamorphiques</h3>
+ <p>Formées par transformation de roches préexistantes sous l'effet de la <strong>pression et/ou température</strong> sans fusion totale.</p>
+ <ul>
+ <li><strong>Blueschist (schiste bleu) :</strong> HP/BT → subduction</li>
+ <li><strong>Éclogite :</strong> très HP/HT → subduction profonde</li>
+ <li><strong>Amphibolite, gneiss :</strong> HT → collision continentale</li>
+ </ul>
+
+ <div class="important">
+ Le couple <strong>blueschist + éclogite</strong> est la signature minéralogique d'une ancienne zone de subduction. Les minéraux indicateurs (glaucophane, jadéite, grenat) sont des géothermobaromètres.
+ </div>
+ </section>
+
+ <!-- 3. TECTONIQUE -->
+ <section id="tectonique">
+ <h2>3. Les traces du passé mouvementé de la Terre</h2>
+
+ <h3>3.1 Le rifting continental — naissance d'un océan</h3>
+ <div class="def-box">
+ <div class="label">Rift continental</div>
+ <strong>Rift :</strong> fossé d'effondrement central dû à l'extension de la lithosphère continentale. La croûte continentale s'amincit, des volcans apparaissent (fusion partielle du manteau par décompression), l'eau envahit le fossé → naissance d'un océan.
+ </div>
+
+ <h4>Les marges passives — archives du rifting</h4>
+ <p>Les bordures d'océans (marges passives) conservent les cicatrices de l'ouverture océanique :</p>
+ <ul>
+ <li><strong>Failles listriques</strong> (failles normales courbes) → formation de <strong>blocs basculés</strong> en contexte d'extension</li>
+ <li>Ces blocs portent trois types de sédiments superposés :</li>
+ </ul>
+ <div class="card green">
+ <h4 style="margin-top:0">Sédiments pré-rift / syn-rift / post-rift</h4>
+ <ul>
+ <li><strong>Pré-rift :</strong> déposés avant la fracturation → horizontaux, non déformés</li>
+ <li><strong>Syn-rift :</strong> déposés pendant le basculement → en éventail (épaisseur variable selon la position sur le bloc)</li>
+ <li><strong>Post-rift :</strong> déposés après, dans le nouvel océan → horizontaux par-dessus</li>
+ </ul>
+ </div>
+
+ <h3>3.2 Cycle de Wilson</h3>
+ <div class="schema-box">
+1. Rifting continental → fracturation, failles listriques, blocs basculés
+2. Ouverture océanique → dorsale, accrétion (MORB, gabbros, péridotites)
+3. Subduction → lithosphère océanique plonge, fosse, volcanisme
+4. Obduction / Collision → continents se soudent → ophiolites, chaîne de montagne
+5. Érosion → pénéplanation → possible nouveau rifting (cycle)
+ </div>
+
+ <h3>3.3 Les ophiolites — témoins des océans disparus</h3>
+ <div class="def-box">
+ <div class="label">Ophiolite</div>
+ <strong>Ophiolite :</strong> fragment de lithosphère océanique ancienne obducté ou exhumé, retrouvé à l'intérieur d'une chaîne de montagne. Preuve d'un océan disparu.
+ </div>
+
+ <h4>Structure complète de la lithosphère océanique (de haut en bas)</h4>
+ <div class="schema-box"> Eau de mer
+ ↓ Sédiments
+ ↓ Basaltes en coussin (pillow-lavas)
+ ↓ Basaltes en filon (dykes)
+ ↓ Gabbros (refroidissement lent)
+ ↓ Péridotites (manteau lithosphérique)</div>
+ <p>Les péridotites métamorphisées par l'eau de mer deviennent des <strong>serpentinites</strong> (minéral vert serpentine, aspect peau de serpent).</p>
+
+ <div class="card yellow">
+ <h4 style="margin-top:0">L'obduction</h4>
+ <p>Quand la subduction prend fin (océan totalement subduit) → affrontement des deux lithosphères continentales. Les matériaux océaniques sont « suturés » entre les deux plaques → une ophiolite est produite et portée en altitude. Ex. : Alpes (Chenaillet), Oman.</p>
+ </div>
+
+ <h3>3.4 Le métamorphisme de subduction</h3>
+ <p>Au cours de la subduction, la lithosphère océanique (gabbros) subit des transformations minéralogiques à l'état solide sous l'effet de <strong>P, T et hydratation</strong> → le <strong>métamorphisme</strong>.</p>
+
+ <table>
+ <tr><th>Faciès</th><th>Conditions</th><th>Minéraux indicateurs</th><th>Contexte</th></tr>
+ <tr><td><strong>Schistes verts</strong></td><td>BP / BT + hydratation</td><td>Hornblende, actinote, chlorite</td><td>Éloignement de la dorsale</td></tr>
+ <tr><td><strong>Schistes bleus</strong></td><td>HP / BT</td><td><strong>Glaucophane</strong> (bleu), lawsonite</td><td>Début de subduction</td></tr>
+ <tr><td><strong>Éclogites</strong></td><td>HP / HT</td><td><strong>Grenat, jadéite, coésite</strong></td><td>Subduction profonde</td></tr>
+ </table>
+
+ <div class="important">
+ Le couple <strong>schistes bleus + éclogites</strong> est la signature d'une ancienne zone de subduction. La <strong>coésite</strong> (forme de quartz stable à très haute pression) témoigne d'une subduction continentale profonde (ex. massif de Dora Maira, Alpes italiennes).
+ </div>
+
+ <h3>3.5 Preuves de la dérive des continents</h3>
+ <ul>
+ <li><strong>Paléomagnétisme :</strong> anomalies magnétiques symétriques de part et d'autre des dorsales (inversions géomagnétiques enregistrées dans les basaltes)</li>
+ <li><strong>Âge des fonds océaniques :</strong> de plus en plus vieux en s'éloignant de la dorsale</li>
+ <li><strong>Concordance des côtes</strong> et des formations géologiques (Pangée de Wegener)</li>
+ <li><strong>Faunes et flores fossiles</strong> similaires sur des continents aujourd'hui séparés</li>
+ </ul>
+
+ <div class="important">
+ La Pangée a commencé à se fracturer au <strong>Trias</strong> (~250 Ma). L'Atlantique s'ouvre depuis ~200 Ma. La collision Inde-Asie (Himalaya) a débuté il y a ~50 Ma.
+ </div>
+ </section>
+
+ <!-- 4. HISTOIRE GÉOLOGIQUE -->
+ <section id="histoire">
+ <h2>4. Reconstitution des paléoenvironnements</h2>
+
+ <h3>4.1 Principaux marqueurs</h3>
+ <table>
+ <tr><th>Marqueur</th><th>Information fournie</th></tr>
+ <tr><td>Pollens fossiles</td><td>Végétation, climat passé (palynologie)</td></tr>
+ <tr><td>Rapport ¹⁸O/¹⁶O (foraminifères)</td><td>Température des océans, volume des glaces</td></tr>
+ <tr><td>Cernes de croissance (arbres)</td><td>Climat annuel (dendrochronologie)</td></tr>
+ <tr><td>Coraux fossiles</td><td>T° eau, salinité, acidité</td></tr>
+ <tr><td>Sédiments glaciaires (tillites)</td><td>Présence de glace dans le passé</td></tr>
+ <tr><td>Évaporites (gypse, sel)</td><td>Milieu marin peu profond et aride</td></tr>
+ </table>
+
+ <h3>4.2 Les grandes ères géologiques (à connaître)</h3>
+ <table>
+ <tr><th>Ère</th><th>Début</th><th>Événements majeurs</th></tr>
+ <tr><td>Hadéen</td><td>4 540 Ma</td><td>Formation Terre, bombardement météoritique</td></tr>
+ <tr><td>Archéen</td><td>4 000 Ma</td><td>Premières cellules procaryotes (~3,5 Ga)</td></tr>
+ <tr><td>Protérozoïque</td><td>2 500 Ma</td><td>O₂ atmosphérique, cellules eucaryotes</td></tr>
+ <tr><td>Paléozoïque</td><td>541 Ma</td><td>Explosion cambrienne, colonisation des terres</td></tr>
+ <tr><td>Mésozoïque</td><td>252 Ma</td><td>Dinosaures, Pangée, angiospermes</td></tr>
+ <tr><td>Cénozoïque</td><td>66 Ma</td><td>Mammifères, Himalaya, glaciations quaternaires</td></tr>
+ </table>
+
+ <div class="important">
+ Les 5 grandes extinctions de masse : Ordovicien-Silurien, Dévonien, Permien-Trias (la plus grande : ~96 % des espèces marines), Trias-Jurassique, Crétacé-Paléogène (−KPg : astéroïde, fin des dinosaures non-aviens).
+ </div>
+ </section>
+
+ <!-- MOTS CLÉS -->
+ <section id="mots-cles">
+ <h2>5. Mots-clés à maîtriser</h2>
+ <div class="card">
+ <span class="keyword">Stratigraphie</span>
+ <span class="keyword">Principe de superposition</span>
+ <span class="keyword">Principe de continuité</span>
+ <span class="keyword">Principe de recoupement</span>
+ <span class="keyword">Principe d'inclusion</span>
+ <span class="keyword">Fossile stratigraphique</span>
+ <span class="keyword">Principe d'identité paléontologique</span>
+ <span class="keyword">Radiochronologie</span>
+ <span class="keyword">Demi-vie / Isotope père-fils</span>
+ <span class="keyword">Droite isochrone (Rb/Sr)</span>
+ <span class="keyword">Système clos</span>
+ <span class="keyword">Rift continental</span>
+ <span class="keyword">Marge passive</span>
+ <span class="keyword">Faille listrique / Blocs basculés</span>
+ <span class="keyword">Sédiments syn-rift (en éventail)</span>
+ <span class="keyword">Cycle de Wilson</span>
+ <span class="keyword">Ophiolite</span>
+ <span class="keyword">Pillow-lavas</span>
+ <span class="keyword">Serpentinite</span>
+ <span class="keyword">Obduction</span>
+ <span class="keyword">Métamorphisme de subduction</span>
+ <span class="keyword">Schistes verts / bleus</span>
+ <span class="keyword">Glaucophane</span>
+ <span class="keyword">Éclogite</span>
+ <span class="keyword">Grenat / Jadéite / Coésite</span>
+ <span class="keyword">Paléomagnétisme</span>
+ <span class="keyword">Pangée</span>
+ <span class="keyword">Faciès / Paléoenvironnement</span>
+ <span class="keyword">δ¹⁸O (foraminifères)</span>
+ <span class="keyword">Extinction de masse</span>
+ </div>
+ </section>
+
+
+<a href="../qcm/qcm2_passe_geologique.html" style="display:block;background:linear-gradient(135deg,rgba(32,36,58,.14),rgba(32,36,58,.14));border:1px solid rgba(58,64,96,.35);border-radius:12px;padding:1.2rem;text-align:center;text-decoration:none;color:#e8eaf0;margin-top:2rem;font-weight:700;transition:all .2s">🎯 Tester mes connaissances — QCM Fiche 2</a>
+
+</main>
+<footer>SVT Terminale Spécialité · Bac 2026 — Fiche 2 / 10 · Passé géologique<a href="../accueil-svt.html" style="color:#6366f1">Retour à l'index</a></footer>
+</body>
+</html>

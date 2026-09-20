@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="📚 Annale 6 — Énergétique de la contraction musculaire — :root{--bg:#0f1117;--bg2:#0f1117;--bg3:#0f1117;--accent:#6366f1;--yellow:#a5a0ff;--green:#6366f1;--red">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../assets/css/acces.css">
+<script src="../../assets/js/acces.js"></script>
+<title>Annale 6 — Contraction musculaire et énergétique | Bac SVT 2026</title>
+<link rel="stylesheet" href="../assets/css/chrome.css">
+<style>
+:root{--bg:#0f1117;--bg2:#0f1117;--bg3:#0f1117;--accent:#6366f1;--yellow:#a5a0ff;--green:#6366f1;--red:#8b7cf8;--purple:#8b7cf8;--orange:#a5a0ff;--text:#a5a0ff;--muted:#6a7388;--border:#2a3050}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;font-size:15px;line-height:1.75}
+header{background:linear-gradient(135deg,#0f1117 0%,#0f1117 100%);border-bottom:3px solid var(--orange);padding:2rem 2.5rem 1.6rem}
+header .breadcrumb{font-size:.72rem;text-transform:uppercase;letter-spacing:2.5px;color:var(--orange);font-weight:700;margin-bottom:.4rem}
+header h1{font-size:1.8rem;font-weight:800;color:#e8eaf0;line-height:1.3}
+header .actions{margin-top:1rem;display:flex;gap:.6rem;flex-wrap:wrap}
+header .actions a{font-size:.78rem;text-decoration:none;padding:.35rem .9rem;border-radius:16px;background:var(--bg2);border:1px solid var(--border);color:var(--muted);transition:all .15s}
+header .actions a:hover{color:#e8eaf0;border-color:var(--orange)}
+nav{background:var(--bg2);border-bottom:1px solid var(--border);padding:.65rem 2.5rem;display:flex;gap:.45rem;flex-wrap:wrap;position:sticky;top:0;z-index:100}
+nav a{color:var(--muted);text-decoration:none;font-size:.78rem;padding:.25rem .75rem;border-radius:16px;background:var(--bg3);border:1px solid transparent;transition:all .15s}
+nav a:hover{color:var(--orange);border-color:var(--orange);background:rgba(32,36,58,.08)}
+main{max-width:960px;margin:0 auto;padding:2rem 2.5rem}
+.section-header{display:flex;align-items:center;gap:.9rem;margin-bottom:1.4rem}
+.section-num{width:36px;height:36px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;flex-shrink:0;background:rgba(32,36,58,.2);color:var(--orange);border:2px solid var(--orange)}
+h2{font-size:1.3rem;font-weight:700;color:#e8eaf0}
+h3{font-size:1rem;font-weight:700;color:var(--yellow);margin:1.3rem 0 .5rem;padding-left:.5rem;border-left:3px solid var(--yellow)}
+h4{font-size:.92rem;font-weight:600;color:var(--orange);margin:1rem 0 .4rem}
+section{margin-bottom:3rem}
+p{margin-bottom:.6rem}
+ul,ol{margin:.4rem 0 .8rem 1.4rem}
+li{margin-bottom:.3rem}
+.sujet-box{background:#0f1117;border:2px solid var(--yellow);border-radius:12px;padding:1.3rem 1.5rem;margin-bottom:1.5rem}
+.sujet-box .lbl{font-size:.72rem;text-transform:uppercase;letter-spacing:2px;color:var(--yellow);font-weight:700;margin-bottom:.6rem}
+.sujet-box h3{color:#e8eaf0;border:none;padding:0;margin:.5rem 0 .8rem}
+.corrige-box{background:var(--bg2);border:1px solid var(--border);border-left:4px solid var(--orange);border-radius:10px;padding:1.2rem 1.4rem;margin-bottom:1rem}
+.tip{background:rgba(32,36,58,.07);border:1px solid rgba(58,64,96,.3);border-left:4px solid var(--green);border-radius:8px;padding:.85rem 1.1rem;margin:.7rem 0;color:#a5a0ff;font-size:.9rem}
+.tip::before{content:"💡 ";font-weight:700}
+.warn{background:rgba(32,36,58,.06);border:1px solid rgba(58,64,96,.3);border-left:4px solid var(--red);border-radius:8px;padding:.85rem 1.1rem;margin:.7rem 0;color:#a5a0ff;font-size:.9rem}
+.warn::before{content:"⚠️ ";font-weight:700}
+.points{display:inline-block;background:rgba(32,36,58,.15);color:var(--orange);padding:.2rem .7rem;border-radius:14px;font-size:.78rem;font-weight:700;margin-left:.5rem}
+.table-data{width:100%;border-collapse:collapse;margin:.6rem 0;background:var(--bg2);border-radius:6px;overflow:hidden;font-size:.85rem}
+.table-data th{background:var(--bg3);text-align:left;padding:.5rem .8rem;color:var(--orange);font-weight:700;font-size:.74rem;text-transform:uppercase}
+.table-data td{padding:.5rem .8rem;border-top:1px solid var(--border)}
+.bareme{background:var(--bg3);border-radius:8px;padding:.9rem 1.2rem;margin:1rem 0;font-size:.88rem}
+.bareme strong{color:var(--green)}
+footer{text-align:center;padding:2rem;color:var(--muted);font-size:.78rem;border-top:1px solid var(--border);margin-top:2rem}
+footer a{color:var(--orange);text-decoration:none}
+</style>
+</head>
+<body>
+
+<a href="../accueil-svt.html" class="back-nav">← SVT Bac 2026</a>
+
+<header>
+ <div class="breadcrumb">Annale corrigée · Thème III — Contraction musculaire</div>
+ <h1>📚 Annale 6 — Énergétique de la contraction musculaire</h1>
+ <div class="actions">
+ <a href="../accueil-svt.html">← Index</a>
+ <a href="../fiches/fiche6_contraction_musculaire.html">📄 Revoir la fiche</a>
+ <a href="../qcm/qcm6_contraction_musculaire.html">🎯 Faire le QCM</a>
+ </div>
+</header>
+
+<nav>
+ <a href="#sujet">Sujet</a>
+ <a href="#analyse">Analyse</a>
+ <a href="#plan">Plan</a>
+ <a href="#corrige">Rédaction</a>
+ <a href="#bareme">Barème</a>
+</nav>
+
+<main>
+
+<section id="sujet">
+ <div class="section-header"><div class="section-num">📝</div><h2>Sujet — Synthèse rédigée</h2></div>
+ <div class="sujet-box">
+ <div class="lbl">Sujet de type bac · Thème III · ~ 2 h · 12 points</div>
+ <h3>Comment le muscle se contracte-t-il et d'où vient l'énergie nécessaire à cette contraction ?</h3>
+ <p style="font-size:.88rem;color:var(--muted);margin-top:.5rem"><em>Vous traiterez la question en intégrant les niveaux d'organisation du muscle, le mécanisme moléculaire et les voies de production d'ATP.</em></p>
+ </div>
+</section>
+
+<section id="analyse">
+ <div class="section-header"><div class="section-num">🔍</div><h2>Étape 1 — Analyse du sujet</h2></div>
+ <div class="corrige-box">
+ <h4 style="margin-top:0">Mots-clés</h4>
+ <ul>
+ <li><strong>« muscle se contracte »</strong> → niveau structural (sarcomère) + moléculaire (actine/myosine)</li>
+ <li><strong>« énergie nécessaire »</strong> → ATP, voies de régénération</li>
+ </ul>
+ <h4>Problématique</h4>
+ <p style="background:#0f1117;padding:.7rem 1rem;border-radius:6px;border-left:3px solid var(--yellow)"><em>« Comment l'organisation et le fonctionnement du muscle, couplés à son métabolisme énergétique, permettent-ils la contraction ? »</em></p>
+ <h4>Notions à mobiliser</h4>
+ <ul>
+ <li>Niveaux d'organisation : muscle → fibre → myofibrille → sarcomère → actine/myosine</li>
+ <li>Modèle du glissement des filaments (Huxley)</li>
+ <li>Ca²⁺ et acétylcholine (couplage excitation-contraction)</li>
+ <li>3 voies de l'ATP : créatine phosphate (anaérobie alactique), glycolyse (anaérobie lactique), respiration (aérobie)</li>
+ </ul>
+ </div>
+</section>
+
+<section id="plan">
+ <div class="section-header"><div class="section-num">📐</div><h2>Étape 2 — Plan détaillé</h2></div>
+ <div class="corrige-box">
+ <h3>I. Organisation et mécanisme de la contraction</h3>
+ <ul>
+ <li>1) Du muscle au sarcomère (4 niveaux)</li>
+ <li>2) Filaments d'actine et de myosine</li>
+ <li>3) Glissement des filaments, raccourcissement</li>
+ <li>4) Rôle du Ca²⁺ et de l'acétylcholine</li>
+ </ul>
+ <h3>II. L'ATP : carburant universel</h3>
+ <ul>
+ <li>1) Hydrolyse de l'ATP par la myosine</li>
+ <li>2) Réserve limitée → besoin de régénération</li>
+ </ul>
+ <h3>III. 3 voies de régénération de l'ATP</h3>
+ <ul>
+ <li>1) Voie de la <strong>phosphocréatine</strong> (anaérobie alactique, &lt; 10 s)</li>
+ <li>2) Voie de la <strong>glycolyse</strong> (anaérobie lactique, ~ 1-2 min)</li>
+ <li>3) Voie de la <strong>respiration cellulaire</strong> (aérobie, soutenue)</li>
+ </ul>
+ <div class="tip">Pour un sprint de 100 m, la phosphocréatine domine. Pour un marathon, c'est la respiration aérobie.</div>
+ </div>
+</section>
+
+<section id="corrige">
+ <div class="section-header"><div class="section-num">✍️</div><h2>Étape 3 — Rédaction modèle</h2></div>
+ <div class="corrige-box">
+ <h3 style="color:var(--orange);border-color:var(--orange)">INTRODUCTION <span class="points">~ 2/12</span></h3>
+ <p>La contraction musculaire est à la base de toute action motrice : marcher, soulever, respirer. Elle résulte d'un mécanisme moléculaire précis qui consomme de l'énergie sous forme d'<strong>ATP</strong>. Mais le muscle ne stocke qu'une faible quantité d'ATP : la régénération est constante.</p>
+ <p>Comment le muscle se contracte-t-il et d'où vient cette énergie ? Nous étudierons d'abord le <strong>mécanisme contractile</strong>, puis le rôle central de l'<strong>ATP</strong>, et enfin les <strong>3 voies de régénération</strong> de cette molécule.</p>
+
+ <h3 style="color:var(--orange);border-color:var(--orange)">I. Mécanisme de la contraction <span class="points">~ 4/12</span></h3>
+ <p>Le muscle est organisé en plusieurs niveaux : <em>muscle → fibre musculaire (cellule plurinucléée) → myofibrille → sarcomère</em>. Le sarcomère, unité contractile, est délimité par deux <strong>stries Z</strong>.</p>
+ <p>Il contient deux types de filaments protéiques : les <strong>filaments fins d'actine</strong> ancrés aux stries Z, et les <strong>filaments épais de myosine</strong> au centre.</p>
+ <p>Selon le <strong>modèle du glissement des filaments</strong> (Huxley), la contraction résulte du glissement des filaments d'actine entre les filaments de myosine. Les têtes de myosine se fixent à l'actine, basculent (« coup de rame »), se détachent, puis se refixent plus loin : le sarcomère se raccourcit (stries Z se rapprochent).</p>
+ <p>Le déclenchement est contrôlé par le <strong>Ca²⁺</strong>. Au repos, la tropomyosine masque les sites d'attache. Lorsque l'<em>acétylcholine</em> arrive à la plaque motrice, elle dépolarise la fibre, ce qui libère le Ca²⁺ du réticulum sarcoplasmique. Le Ca²⁺ se fixe sur la troponine → déplacement de la tropomyosine → exposition des sites → contraction.</p>
+
+ <div style="margin:1.5rem 0;background:#0f1117;border:1px solid rgba(58,64,96,0.25);border-radius:10px;padding:1rem">
+ <div style="font-size:.78rem;font-weight:700;color:#a5a0ff;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:.5rem;text-align:center">Schéma 1 — Niveaux d'organisation du muscle (zoom × 1000)</div>
+ <svg viewBox="0 0 700 240" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto" aria-label="Niveaux muscle">
+ <defs>
+ <marker id="ac1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#f3c56b"/></marker>
+ </defs>
+ <!-- Muscle entier -->
+ <ellipse cx="80" cy="120" rx="55" ry="80" fill="#e85a6e" opacity="0.5" stroke="#e85a6e" stroke-width="2"/>
+ <text x="80" y="220" fill="#e85a6e" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">MUSCLE</text>
+ <text x="80" y="235" fill="#a9b3cc" font-family="sans-serif" font-size="9" text-anchor="middle">faisceaux</text>
+ <line x1="135" y1="120" x2="165" y2="120" stroke="#f3c56b" stroke-width="2" marker-end="url(#ac1)"/>
+ <!-- Fibre -->
+ <rect x="175" y="90" width="100" height="60" rx="6" fill="#5b8dee" opacity="0.5" stroke="#5b8dee" stroke-width="2"/>
+ <circle cx="195" cy="120" r="3" fill="#fff"/>
+ <circle cx="215" cy="120" r="3" fill="#fff"/>
+ <circle cx="235" cy="120" r="3" fill="#fff"/>
+ <circle cx="255" cy="120" r="3" fill="#fff"/>
+ <text x="225" y="220" fill="#5b8dee" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">FIBRE</text>
+ <text x="225" y="235" fill="#a9b3cc" font-family="sans-serif" font-size="9" text-anchor="middle">plurinucléée</text>
+ <line x1="280" y1="120" x2="310" y2="120" stroke="#f3c56b" stroke-width="2" marker-end="url(#ac1)"/>
+ <!-- Myofibrille -->
+ <rect x="320" y="100" width="90" height="40" rx="4" fill="#4ecb8d" opacity="0.5" stroke="#4ecb8d" stroke-width="2"/>
+ <g stroke="#fff" stroke-width="1">
+ <line x1="335" y1="105" x2="335" y2="135"/>
+ <line x1="365" y1="105" x2="365" y2="135"/>
+ <line x1="395" y1="105" x2="395" y2="135"/>
+ </g>
+ <text x="365" y="220" fill="#4ecb8d" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">MYOFIBRILLE</text>
+ <text x="365" y="235" fill="#a9b3cc" font-family="sans-serif" font-size="9" text-anchor="middle">stries Z</text>
+ <line x1="415" y1="120" x2="445" y2="120" stroke="#f3c56b" stroke-width="2" marker-end="url(#ac1)"/>
+ <!-- Sarcomère -->
+ <g>
+ <rect x="455" y="100" width="200" height="40" rx="4" fill="#f3c56b" opacity="0.20" stroke="#f3c56b" stroke-width="2"/>
+ <line x1="455" y1="100" x2="455" y2="140" stroke="#fff" stroke-width="3"/>
+ <line x1="655" y1="100" x2="655" y2="140" stroke="#fff" stroke-width="3"/>
+ <!-- Actine (fins) -->
+ <line x1="460" y1="110" x2="540" y2="110" stroke="#4ecb8d" stroke-width="3"/>
+ <line x1="460" y1="130" x2="540" y2="130" stroke="#4ecb8d" stroke-width="3"/>
+ <line x1="570" y1="110" x2="650" y2="110" stroke="#4ecb8d" stroke-width="3"/>
+ <line x1="570" y1="130" x2="650" y2="130" stroke="#4ecb8d" stroke-width="3"/>
+ <!-- Myosine (épais) -->
+ <rect x="500" y="115" width="120" height="10" fill="#e85a6e"/>
+ <!-- Têtes de myosine -->
+ <g fill="#e85a6e">
+ <polygon points="510,115 505,108 515,108"/>
+ <polygon points="525,115 520,108 530,108"/>
+ <polygon points="540,115 535,108 545,108"/>
+ <polygon points="575,115 570,108 580,108"/>
+ <polygon points="590,115 585,108 595,108"/>
+ <polygon points="605,115 600,108 610,108"/>
+ </g>
+ <text x="455" y="95" fill="#fff" font-family="sans-serif" font-size="7" text-anchor="start">Z</text>
+ <text x="655" y="95" fill="#fff" font-family="sans-serif" font-size="7" text-anchor="end">Z</text>
+ </g>
+ <text x="555" y="220" fill="#f3c56b" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">SARCOMÈRE</text>
+ <text x="555" y="235" fill="#a9b3cc" font-family="sans-serif" font-size="9" text-anchor="middle">actine + myosine</text>
+ <!-- Légende sarcomère -->
+ <rect x="455" y="155" width="14" height="3" fill="#4ecb8d"/>
+ <text x="475" y="159" fill="#fff" font-family="sans-serif" font-size="8">Actine (fins)</text>
+ <rect x="555" y="155" width="14" height="3" fill="#e85a6e"/>
+ <text x="575" y="159" fill="#fff" font-family="sans-serif" font-size="8">Myosine (épais)</text>
+ </svg>
+ </div>
+
+ <h3 style="color:var(--orange);border-color:var(--orange)">II. L'ATP : le carburant <span class="points">~ 2/12</span></h3>
+ <p>À chaque cycle, la tête de myosine hydrolyse une molécule d'<strong>ATP</strong> en <strong>ADP + Pi</strong>. L'énergie libérée alimente le basculement.</p>
+ <p>Or les réserves d'ATP dans le muscle sont très limitées : environ 5 mmol/kg, suffisantes pour seulement 1-2 secondes d'effort. Sans régénération, le muscle s'épuise immédiatement. C'est ce qui explique l'existence de plusieurs voies métaboliques complémentaires.</p>
+
+ <div style="margin:1.5rem 0;background:#0f1117;border:1px solid rgba(58,64,96,0.25);border-radius:10px;padding:1rem">
+ <div style="font-size:.78rem;font-weight:700;color:#a5a0ff;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:.5rem;text-align:center">Schéma 2 — Glissement actine/myosine au cours de la contraction</div>
+ <svg viewBox="0 0 700 280" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto" aria-label="Glissement actine myosine">
+ <defs>
+ <marker id="ac2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#f3c56b"/></marker>
+ </defs>
+ <!-- Sarcomère RELÂCHÉ (haut) -->
+ <text x="350" y="22" fill="#fff" font-family="sans-serif" font-size="13" font-weight="800" text-anchor="middle">Mécanisme : glissement des filaments (modèle de Huxley)</text>
+ <text x="80" y="55" fill="#a9b3cc" font-family="sans-serif" font-size="11" font-weight="700">RELÂCHÉ</text>
+ <g>
+ <line x1="50" y1="65" x2="50" y2="115" stroke="#fff" stroke-width="3"/>
+ <line x1="450" y1="65" x2="450" y2="115" stroke="#fff" stroke-width="3"/>
+ <line x1="55" y1="80" x2="180" y2="80" stroke="#4ecb8d" stroke-width="3"/>
+ <line x1="55" y1="100" x2="180" y2="100" stroke="#4ecb8d" stroke-width="3"/>
+ <line x1="320" y1="80" x2="445" y2="80" stroke="#4ecb8d" stroke-width="3"/>
+ <line x1="320" y1="100" x2="445" y2="100" stroke="#4ecb8d" stroke-width="3"/>
+ <rect x="190" y="85" width="120" height="10" fill="#e85a6e"/>
+ <g fill="#e85a6e"><polygon points="200,85 195,75 205,75"/><polygon points="225,85 220,75 230,75"/><polygon points="250,85 245,75 255,75"/><polygon points="275,85 270,75 280,75"/><polygon points="300,85 295,75 305,75"/></g>
+ <text x="50" y="50" fill="#fff" font-family="sans-serif" font-size="9">Z</text>
+ <text x="450" y="50" fill="#fff" font-family="sans-serif" font-size="9">Z</text>
+ </g>
+ <text x="500" y="80" fill="#5b8dee" font-family="sans-serif" font-size="11" font-weight="700">Ca²⁺ → troponine</text>
+ <text x="500" y="98" fill="#5b8dee" font-family="sans-serif" font-size="11" font-weight="700">→ déplace tropomyosine</text>
+ <text x="500" y="116" fill="#5b8dee" font-family="sans-serif" font-size="11" font-weight="700">→ expose sites actine</text>
+ <!-- Flèche descendante -->
+ <line x1="350" y1="135" x2="350" y2="170" stroke="#f3c56b" stroke-width="3" marker-end="url(#ac2)"/>
+ <text x="380" y="155" fill="#f3c56b" font-family="sans-serif" font-size="11" font-weight="700">ATP → ADP + Pi</text>
+ <!-- Sarcomère CONTRACTÉ (bas) -->
+ <text x="80" y="195" fill="#f07840" font-family="sans-serif" font-size="11" font-weight="700">CONTRACTÉ</text>
+ <g>
+ <line x1="120" y1="205" x2="120" y2="255" stroke="#fff" stroke-width="3"/>
+ <line x1="380" y1="205" x2="380" y2="255" stroke="#fff" stroke-width="3"/>
+ <line x1="125" y1="220" x2="220" y2="220" stroke="#4ecb8d" stroke-width="3"/>
+ <line x1="125" y1="240" x2="220" y2="240" stroke="#4ecb8d" stroke-width="3"/>
+ <line x1="280" y1="220" x2="375" y2="220" stroke="#4ecb8d" stroke-width="3"/>
+ <line x1="280" y1="240" x2="375" y2="240" stroke="#4ecb8d" stroke-width="3"/>
+ <rect x="190" y="225" width="120" height="10" fill="#e85a6e"/>
+ <g fill="#e85a6e"><polygon points="200,225 195,215 205,215"/><polygon points="225,225 220,215 230,215"/><polygon points="250,225 245,215 255,215"/><polygon points="275,225 270,215 280,215"/><polygon points="300,225 295,215 305,215"/></g>
+ </g>
+ <text x="500" y="220" fill="#f07840" font-family="sans-serif" font-size="11" font-weight="700">Têtes basculent →</text>
+ <text x="500" y="238" fill="#f07840" font-family="sans-serif" font-size="11" font-weight="700">actine tirée vers centre</text>
+ <text x="500" y="256" fill="#f07840" font-family="sans-serif" font-size="11" font-weight="700">stries Z rapprochées</text>
+ <!-- Annotation -->
+ <text x="350" y="275" fill="#a9b3cc" font-family="sans-serif" font-size="9" font-style="italic" text-anchor="middle">filaments NE raccourcissent PAS — ils GLISSENT les uns sur les autres</text>
+ </svg>
+ </div>
+
+ <h3 style="color:var(--orange);border-color:var(--orange)">III. 3 voies de régénération de l'ATP <span class="points">~ 3/12</span></h3>
+ <p><strong>1) Voie de la phosphocréatine (anaérobie alactique).</strong> La phosphocréatine, stockée dans le muscle, cède son groupement phosphate à l'ADP : <em>PCr + ADP → Créatine + ATP</em>. Très rapide, pas de O₂, pas de déchet… mais épuisée en moins de 10 s. C'est la voie du sprinter.</p>
+ <p><strong>2) Voie de la glycolyse (anaérobie lactique).</strong> Le glucose est dégradé en <em>2 pyruvates → 2 lactates</em> en absence de O₂, avec un bilan de <strong>2 ATP</strong> par glucose. Peu rendement, accumulation de lactate (acidose), fatigue. Dure 1-2 min. Voie du 400 m.</p>
+ <p><strong>3) Voie de la respiration cellulaire (aérobie).</strong> Glucose + 6 O₂ → 6 CO₂ + 6 H₂O + ~ 32-38 ATP, dans la mitochondrie. Rendement maximal, déchets non toxiques. Effort soutenu et prolongé. Voie du marathonien.</p>
+
+ <div style="margin:1.5rem 0;background:#0f1117;border:2px solid #3a4060;border-radius:10px;padding:1rem">
+ <div style="font-size:.78rem;font-weight:700;color:#a5a0ff;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:.5rem;text-align:center">Schéma-bilan — 3 voies de régénération de l'ATP selon l'effort</div>
+ <svg viewBox="0 0 700 360" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto" aria-label="3 voies ATP">
+ <!-- Axe temps -->
+ <line x1="60" y1="280" x2="660" y2="280" stroke="#fff" stroke-width="2"/>
+ <text x="60" y="298" fill="#a9b3cc" font-family="sans-serif" font-size="9" text-anchor="middle">0 s</text>
+ <text x="200" y="298" fill="#a9b3cc" font-family="sans-serif" font-size="9" text-anchor="middle">10 s</text>
+ <text x="370" y="298" fill="#a9b3cc" font-family="sans-serif" font-size="9" text-anchor="middle">2 min</text>
+ <text x="540" y="298" fill="#a9b3cc" font-family="sans-serif" font-size="9" text-anchor="middle">heures</text>
+ <text x="360" y="320" fill="#fff" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">Durée de l'effort</text>
+ <!-- Voie 1 : Phosphocréatine -->
+ <rect x="60" y="50" width="140" height="220" fill="rgba(232,90,110,0.20)" stroke="#e85a6e" stroke-width="2"/>
+ <text x="130" y="75" fill="#e85a6e" font-family="sans-serif" font-size="12" font-weight="800" text-anchor="middle">1️⃣ PHOSPHOCRÉATINE</text>
+ <text x="130" y="92" fill="#fff" font-family="sans-serif" font-size="10" text-anchor="middle">anaérobie alactique</text>
+ <text x="130" y="115" fill="#fff" font-family="sans-serif" font-size="10" text-anchor="middle">PCr + ADP →</text>
+ <text x="130" y="128" fill="#f3c56b" font-family="sans-serif" font-size="10" font-weight="700" text-anchor="middle">ATP + Cr</text>
+ <text x="130" y="155" fill="#a9b3cc" font-family="sans-serif" font-size="9" text-anchor="middle">⚡ très rapide</text>
+ <text x="130" y="170" fill="#a9b3cc" font-family="sans-serif" font-size="9" text-anchor="middle">❌ stock limité</text>
+ <text x="130" y="200" fill="#fff" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">🏃 Sprint 100 m</text>
+ <text x="130" y="230" fill="#a9b3cc" font-family="sans-serif" font-size="9" text-anchor="middle">Pas de O₂</text>
+ <text x="130" y="245" fill="#a9b3cc" font-family="sans-serif" font-size="9" text-anchor="middle">Pas de déchet</text>
+ <!-- Voie 2 : Glycolyse -->
+ <rect x="220" y="50" width="180" height="220" fill="rgba(243,197,107,0.20)" stroke="#f3c56b" stroke-width="2"/>
+ <text x="310" y="75" fill="#f3c56b" font-family="sans-serif" font-size="12" font-weight="800" text-anchor="middle">2️⃣ GLYCOLYSE</text>
+ <text x="310" y="92" fill="#fff" font-family="sans-serif" font-size="10" text-anchor="middle">anaérobie lactique</text>
+ <text x="310" y="115" fill="#fff" font-family="sans-serif" font-size="10" text-anchor="middle">Glucose → 2 lactates</text>
+ <text x="310" y="128" fill="#f07840" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">+ 2 ATP</text>
+ <text x="310" y="155" fill="#a9b3cc" font-family="sans-serif" font-size="9" text-anchor="middle">⚡ rapide</text>
+ <text x="310" y="170" fill="#a9b3cc" font-family="sans-serif" font-size="9" text-anchor="middle">⚠️ acidose (lactate)</text>
+ <text x="310" y="200" fill="#fff" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">🏃 Course 400 m</text>
+ <text x="310" y="230" fill="#a9b3cc" font-family="sans-serif" font-size="9" text-anchor="middle">Pas de O₂</text>
+ <text x="310" y="245" fill="#a9b3cc" font-family="sans-serif" font-size="9" text-anchor="middle">Lactate → fatigue</text>
+ <!-- Voie 3 : Respiration -->
+ <rect x="420" y="50" width="240" height="220" fill="rgba(78,203,141,0.20)" stroke="#4ecb8d" stroke-width="2"/>
+ <text x="540" y="75" fill="#4ecb8d" font-family="sans-serif" font-size="12" font-weight="800" text-anchor="middle">3️⃣ RESPIRATION CELLULAIRE</text>
+ <text x="540" y="92" fill="#fff" font-family="sans-serif" font-size="10" text-anchor="middle">aérobie (mitochondrie)</text>
+ <text x="540" y="115" fill="#fff" font-family="sans-serif" font-size="10" text-anchor="middle">Glucose + 6 O₂ → 6 CO₂ + 6 H₂O</text>
+ <text x="540" y="128" fill="#4ecb8d" font-family="sans-serif" font-size="11" font-weight="800" text-anchor="middle">+ ~ 32 ATP</text>
+ <text x="540" y="155" fill="#a9b3cc" font-family="sans-serif" font-size="9" text-anchor="middle">⚡ rendement maximal</text>
+ <text x="540" y="170" fill="#a9b3cc" font-family="sans-serif" font-size="9" text-anchor="middle">✓ durable, déchets ✓</text>
+ <text x="540" y="200" fill="#fff" font-family="sans-serif" font-size="11" font-weight="700" text-anchor="middle">🏃 Marathon, vélo</text>
+ <text x="540" y="230" fill="#a9b3cc" font-family="sans-serif" font-size="9" text-anchor="middle">Besoin O₂ (essoufflement)</text>
+ <text x="540" y="245" fill="#a9b3cc" font-family="sans-serif" font-size="9" text-anchor="middle">CO₂ + H₂O (non toxiques)</text>
+ <!-- Sarcomère récap -->
+ <text x="350" y="30" fill="#fff" font-family="sans-serif" font-size="13" font-weight="800" text-anchor="middle">⛓️ Contraction = ATP indispensable · 3 voies complémentaires</text>
+ <!-- Note bas -->
+ <text x="360" y="350" fill="#f3c56b" font-family="sans-serif" font-size="10" font-style="italic" text-anchor="middle">L'entraînement augmente les capacités aérobies · le dopage EPO ↑ O₂ disponible</text>
+ </svg>
+ </div>
+
+ <h3 style="color:var(--orange);border-color:var(--orange)">CONCLUSION <span class="points">~ 1/12</span></h3>
+ <p>La contraction musculaire résulte du <strong>glissement coordonné</strong> des filaments d'actine et de myosine, déclenché par le Ca²⁺ et l'acétylcholine, et énergétiquement soutenu par l'<strong>ATP</strong>. Trois voies métaboliques régénèrent cette énergie : la phosphocréatine pour les efforts explosifs, la glycolyse pour les efforts intenses brefs, la respiration aérobie pour les efforts d'endurance.</p>
+ <p><em>Ouverture :</em> l'entraînement sportif et le dopage (EPO augmente l'O₂ disponible, donc la voie aérobie) modifient ces équilibres et soulèvent des questions médicales et éthiques.</p>
+ </div>
+</section>
+
+<section id="bareme">
+ <div class="section-header"><div class="section-num">💯</div><h2>Étape 4 — Barème détaillé</h2></div>
+ <div class="bareme">
+ <table class="table-data">
+ <tr><th>Critère</th><th>Points</th></tr>
+ <tr><td>Introduction</td><td><strong>2</strong></td></tr>
+ <tr><td>Partie I : organisation + glissement + Ca²⁺/ACh</td><td><strong>4</strong></td></tr>
+ <tr><td>Partie II : ATP + nécessité de régénération</td><td><strong>2</strong></td></tr>
+ <tr><td>Partie III : 3 voies métaboliques</td><td><strong>3</strong></td></tr>
+ <tr><td>Conclusion + ouverture</td><td><strong>1</strong></td></tr>
+ <tr><td>Schéma-bilan</td><td><strong>+2 bonus</strong></td></tr>
+ </table>
+ </div>
+ <div class="warn"><strong>Erreurs fréquentes :</strong>
+ <ul>
+ <li>Oublier la troponine/tropomyosine dans le rôle du Ca²⁺</li>
+ <li>Confondre glycolyse anaérobie (2 ATP) et respiration (32-38 ATP)</li>
+ <li>Ne pas relier les voies aux types d'effort</li>
+ </ul>
+ </div>
+</section>
+
+<div style="background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin-top:2rem;text-align:center">
+ <h3 style="margin:0 0 .8rem;padding:0;border:none">📚 Autres annales</h3>
+ <div style="display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;margin-top:.8rem">
+ <a href="annale3_glycemie.html" style="background:rgba(32,36,58,.15);color:var(--orange);padding:.7rem 1.2rem;border-radius:8px;text-decoration:none;font-weight:700;border:1px solid rgba(58,64,96,.3)">📚 Annale 10 — Glycémie</a>
+ <a href="annale6_systeme_nerveux.html" style="background:rgba(32,36,58,.15);color:var(--orange);padding:.7rem 1.2rem;border-radius:8px;text-decoration:none;font-weight:700;border:1px solid rgba(58,64,96,.3)">📚 Annale 5 — Système nerveux</a>
+ <a href="annale8_stress.html" style="background:rgba(32,36,58,.15);color:var(--orange);padding:.7rem 1.2rem;border-radius:8px;text-decoration:none;font-weight:700;border:1px solid rgba(58,64,96,.3)">📚 Annale 7 — Stress</a>
+ </div>
+</div>
+
+</main>
+
+<footer>SVT Terminale Spécialité · Bac 2026 — Annale 6<a href="../accueil-svt.html">Retour à l'index</a></footer>
+
+</body>
+</html>

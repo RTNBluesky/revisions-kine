@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="📐 Goniométrie — Cours 1 : Concepts de base — Mesure des amplitudes articulaires · F2 + P2 (15%)">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../assets/css/acces.css">
+<script src="../../../../../assets/js/acces.js"></script>
+<title>Goniométrie — Cours 1 · EAIF II</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../../assets/css/modules/eaif-2.css">
+
+<link rel="stylesheet" href="../../../../../assets/css/chrome.css">
+<style id="globalThemeOverride">
+:root {
+ --bg: #0f1117 !important;
+ --bg2: #161922 !important;
+ --card: #1a1d2a !important;
+ --surface: #1a1d2a !important;
+ --surface-2: #20243a !important;
+ --border: #2a3050 !important;
+ --text: #e8eaf0 !important;
+ --text-primary: #e8eaf0 !important;
+ --text-secondary: #6a7388 !important;
+ --muted: #9aa3b8 !important;
+ --orange: #ff5c6b !important;
+ --orange-light: #ff8fa3 !important;
+ --teal: #ff6b9d !important;
+ --purple: #f472b6 !important;
+}
+html, body { background: #0f1117 !important; color: #e8eaf0 !important; font-family: 'Source Sans 3', sans-serif !important; }
+.site-header, .sidebar, footer, .qcm-section { display: none !important; }
+.layout { display: block !important; }
+.main-content { max-width: 1100px !important; margin: 0 auto !important; padding: 80px 24px 40px !important; }
+.page-title {
+ font-family: 'Playfair Display', serif !important;
+ font-size: clamp(28px, 4.5vw, 44px) !important;
+ font-weight: 900 !important;
+ line-height: 1.15 !important;
+ margin: 0 0 14px 0 !important;
+ background: linear-gradient(135deg, #ffffff 0%, #ff6b9d 60%, #ff5c6b 100%) !important;
+ -webkit-background-clip: text !important; background-clip: text !important; -webkit-text-fill-color: transparent !important;
+ letter-spacing: -0.5px !important;
+}
+h2.section, h2 { font-family: 'Playfair Display', serif !important; font-size: clamp(20px, 2.5vw, 26px) !important; font-weight: 700 !important; color: #ff6b9d !important; margin: 28px 0 14px 0 !important; }
+h3.subsection, h3 { font-size: 16px !important; font-weight: 700 !important; color: #ff8fa3 !important; text-transform: uppercase !important; letter-spacing: 1.2px !important; margin: 18px 0 10px 0 !important; }
+h4 { font-size: 14.5px !important; color: #e8eaf0 !important; font-weight: 700 !important; margin: 12px 0 6px 0 !important; }
+p, li { color: #ff8fa3 !important; line-height: 1.7 !important; font-size: 14.5px !important; }
+strong { color: #ff8fa3 !important; }
+.card, .alert { background: #1a1d2a !important; border: 1px solid #2a3050 !important; border-radius: 12px !important; padding: 18px 22px !important; margin-bottom: 14px !important; color: #e8eaf0 !important; box-shadow: 0 2px 12px rgba(0,0,0,0.30) !important; }
+.alert { background: linear-gradient(135deg, rgba(255,107,157,0.10), rgba(255,92,107,0.05)) !important; border-left: 3px solid #ff6b9d !important; }
+.alert-success { background: rgba(255,107,157,0.08) !important; }
+.alert-warning { background: rgba(255,166,87,0.10) !important; border-left-color: #ff5c6b !important; color: #ff8fa3 !important; }
+table { width: 100% !important; border-collapse: collapse !important; background: #1a1d2a !important; border: 1px solid #2a3050 !important; border-radius: 10px !important; overflow: hidden !important; margin: 12px 0 !important; font-size: 13.5px !important; }
+th { background: #0f1117 !important; color: #ff8fa3 !important; padding: 10px 14px !important; text-align: left !important; font-size: 11px !important; text-transform: uppercase !important; letter-spacing: 1px !important; font-weight: 700 !important; border-bottom: 1px solid #2a3050 !important; }
+td { padding: 10px 14px !important; border-bottom: 1px solid #2a3050 !important; color: #e8eaf0 !important; }
+tr:hover td { background: rgba(255,107,157,0.04) !important; }
+em { font-style: italic; color: #ff8fa3 !important; }
+</style>
+</head>
+<body>
+<a href="../accueil-eaif-2.html" class="back-nav">← EAIF II</a>
+
+<div class="page-toggle"><div class="pt-inner"><a href="../qcm/qcm-goniometrie-cours-1.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+
+<main class="main-content">
+<h1 class="page-title">📐 Goniométrie — Cours 1 : Concepts de base</h1>
+<p style="color:#9aa3b8; font-size:14px; margin-bottom:24px;">Mesure des amplitudes articulaires · F2 + P2 (15%)</p>
+
+<h3 class="subsection" id="definition">1.1 Définition et objectifs</h3>
+
+<div class="card">
+<h4>Goniométrie : définition</h4>
+<p>Du grec <em>gonion</em> (angle) + <em>metron</em> (mesure). C'est la <strong>mesure des angles formés par les os qui composent les articulations humaines</strong>. L'évaluateur place un <strong>goniomètre</strong> sur l'axe et les segments proximaux/distaux de l'articulation.</p>
+</div>
+
+<div class="card">
+<h4>Quand utiliser la goniométrie ?</h4>
+<ul>
+ <li>Postopératoire (ex : suture méniscale, sternotomie médiane)</li>
+ <li>Douleur chronique (ex : douleur au coude due au travail)</li>
+ <li>Après un AVC</li>
+ <li>Après une hospitalisation prolongée avec alitement</li>
+</ul>
+<p>Elle est réalisée <strong>après l'examen subjectif</strong> et l'observation/palpation, pour <strong>déterminer les raisons de la limitation</strong>.</p>
+</div>
+
+<div class="card">
+<h4>Objectifs</h4>
+<ul>
+ <li>Déterminer la présence ou l'absence de lésions</li>
+ <li>Établir un diagnostic kinésithérapique</li>
+ <li>Élaborer pronostic, objectifs et plan de traitement</li>
+ <li>Évaluer les progrès en rééducation</li>
+ <li>Modifier le traitement</li>
+ <li>Motiver l'individu</li>
+ <li>Étudier l'efficacité des techniques</li>
+ <li>Fabriquer des orthèses/prothèses et adapter les équipements</li>
+</ul>
+</div>
+
+<h3 class="subsection" id="articulations">1.2 Types d'articulations</h3>
+
+<table>
+<tr><th>Catégorie</th><th>Sous-types</th></tr>
+<tr><td><strong>Fibreuses</strong></td><td>Suture plate, suture squameuse, suture dentelée, syndesmose</td></tr>
+<tr><td><strong>Cartilagineuses</strong></td><td>Synchondrose, symphyse</td></tr>
+<tr><td><strong>Synoviales</strong></td><td>Cartilage articulaire, cavité, capsule, liquide synovial, ligaments, possibles disques/ménisques/membranes interosseuses</td></tr>
+</table>
+
+<h3 class="subsection" id="cinematique">1.3 Cinématique et arthrocinématique</h3>
+
+<p>La cinématique <strong>décrit le mouvement</strong> sans considérer les forces. Trois types de mouvements possibles d'un segment osseux :</p>
+<ul>
+ <li><strong>Glissement</strong> (déplacement linéaire)</li>
+ <li><strong>Rotation</strong> (déplacement axial autour d'un axe fixe)</li>
+ <li><strong>Roulement</strong> (déplacement angulaire)</li>
+</ul>
+
+<div class="alert">Dans le corps, glissements, rotations et roulements se combinent. La combinaison glissement + roulement augmente l'amplitude articulaire.</div>
+
+<h3 class="subsection" id="rom">1.4 Amplitudes de mouvement (ROM)</h3>
+
+<p>L'<strong>amplitude de mouvement</strong> (ADM, ROM) = arc en degrés entre le début et la fin du mouvement dans un plan donné.</p>
+
+<table>
+<tr><th>Type</th><th>Description</th><th>Comparaison</th></tr>
+<tr><td><strong>AROM</strong> (active)</td><td>Produite volontairement sans assistance</td><td>Normalement &lt; PROM (dépend force + cognition)</td></tr>
+<tr><td><strong>PROM</strong> (passive)</td><td>Produite par l'évaluateur</td><td>Normalement &gt; AROM (indépendante de la force)</td></tr>
+<tr><td><strong>AAROM</strong> (active assistée)</td><td>Produite par le patient avec assistance</td><td>Pas mesurée habituellement</td></tr>
+</table>
+
+<div class="card">
+<h4>AROM vs PROM : quand les utiliser ?</h4>
+<ul>
+ <li>Si <strong>AROM sans difficulté ni douleur</strong> → goniométrie probablement non nécessaire.</li>
+ <li>Si <strong>douleur ou limitation</strong> → goniométrie obligatoire.</li>
+ <li>Douleur en AROM → contraction/étirement de tissus contractiles (muscles, tendons).</li>
+ <li>PROM évalue : surfaces articulaires, capsule, ligaments, fascias, peau.</li>
+ <li>Douleur en PROM → étirement/pincement de tissus non contractiles.</li>
+</ul>
+</div>
+
+<h3 class="subsection" id="plans">1.5 Plans et axes du mouvement</h3>
+
+<table>
+<tr><th>Plan</th><th>Orientation</th><th>Axe</th><th>Mouvements</th></tr>
+<tr><td><strong>Sagittal</strong> (médian)</td><td>Vertical, divise droite/gauche</td><td>Médial-latéral</td><td>Flexion, Extension</td></tr>
+<tr><td><strong>Frontal</strong> (coronal)</td><td>Vertical, divise antérieur/postérieur</td><td>Antéro-postérieur</td><td>Abduction, Adduction, Déviations radiale/cubitale</td></tr>
+<tr><td><strong>Transversal</strong> (axial)</td><td>Horizontal, divise supérieur/inférieur</td><td>Vertical (crânio-caudal)</td><td>Rotation médiale/latérale, ABD/ADD horizontale, Pronation/supination</td></tr>
+</table>
+
+<div class="alert">La position de départ de toute mesure ROM est la <strong>position anatomique</strong> (ou position neutre pour les rotations).</div>
+
+<h3 class="subsection" id="facteurs">1.6 Facteurs influençant l'amplitude articulaire</h3>
+
+<div class="card">
+<h4>Facteurs individuels &amp; contextuels</h4>
+<ul>
+ <li>Âge — Sexe — IMC</li>
+ <li>Mouvement actif ou passif</li>
+ <li>Activités professionnelles et récréatives</li>
+ <li>Position de test</li>
+ <li>Type d'instrument</li>
+ <li>Expérience de l'évaluateur</li>
+ <li>Heure de la journée</li>
+</ul>
+</div>
+
+<div class="card">
+<h4>Hypomobilité — diminution substantielle de l'ADM</h4>
+<p>Causes : douleur, raccourcissement musculaire/capsulaire, inflammation, conséquences d'immobilisation, maladies orthopédiques/métaboliques/neurologiques, perte de mouvement volontaire, déformations osseuses, hypertonicité.</p>
+</div>
+
+<div class="card">
+<h4>Hypermobilité — augmentation de l'ADM au-delà des valeurs de référence</h4>
+<p>Causes : laxité des tissus mous, anomalies des surfaces articulaires, traumatisme, maladies (Marfan), hypotonie, hyperlaxité ligamentaire/capsulaire.</p>
+</div>
+
+<h3 class="subsection" id="endfeel">1.7 End-feel (sensation de fin de course)</h3>
+
+<p>Le type de structure qui limite l'amplitude présente une caractéristique perçue par l'évaluateur. Cette barrière est l'<strong>end-feel</strong>. Auteurs : <strong>Cyriax, Kaltenborn, Paris</strong>.</p>
+
+<table>
+<tr><th>End-feel normal</th><th>Description</th><th>Exemple</th></tr>
+<tr><td>Souple</td><td>Approximation des tissus mous</td><td>Flexion du genou (mollet vs cuisse)</td></tr>
+<tr><td>Ferme (capsulaire/élastique)</td><td>Étirement des tissus non contractiles</td><td>Flexion hanche genou tendu (ischio-jambiers)</td></tr>
+<tr><td>Dur</td><td>Contact os contre os</td><td>Extension du coude</td></tr>
+</table>
+
+<table>
+<tr><th>End-feel anormal</th><th>Indique</th></tr>
+<tr><td>Souple anormal</td><td>Œdème, synovite</td></tr>
+<tr><td>Ferme anormal</td><td>Tonus ↑, raccourcissement capsulaire/musculaire/ligamentaire</td></tr>
+<tr><td>Dur anormal</td><td>Chondromalacie, arthrose, fragments osseux libres, fracture</td></tr>
+<tr><td>Vide</td><td>Inflammation aiguë, bursite, abcès, fracture, pathologie grave</td></tr>
+<tr><td>Spasme</td><td>Réaction protectrice à la douleur, processus inflammatoire</td></tr>
+<tr><td>Ressort (mola)</td><td>Corps libre intra-articulaire, lésion méniscale (mobilisation contre-indiquée)</td></tr>
+</table>
+
+<div class="alert alert-warning"><strong>Important :</strong> ne pas confondre l'end-feel avec une interruption due à l'inquiétude. C'est étudier, raisonner cliniquement et adopter le comportement approprié.</div>
+
+<div style="text-align:center; margin:30px auto; max-width:1100px;"><a href="../qcm/qcm-goniometrie-cours-1.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px;">🎯 Faire le QCM correspondant →</a></div>
+
+</main>
+</body>
+</html>

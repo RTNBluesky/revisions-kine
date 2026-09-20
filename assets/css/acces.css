@@ -1,0 +1,234 @@
+/* ------------------------------------------------------------------
+   acces.css — écran d'accès affiché avant toute navigation.
+
+   ⚠ Ce verrou est un garde-fou, PAS une sécurité : le site est statique,
+   tout son contenu reste lisible par qui sait ouvrir le code source.
+   Il empêche seulement d'arriver sur le site par hasard et de naviguer.
+
+   La règle de masquage est conditionnée par la classe « verrouille »,
+   posée par acces.js. Sans JavaScript, rien n'est masqué — le site reste
+   consultable plutôt que de rester noir indéfiniment.
+   ------------------------------------------------------------------ */
+
+html.verrouille body > *:not(#acces-ecran) { display: none !important; }
+html.verrouille { overflow: hidden; }
+
+#acces-ecran {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: #0f1117;
+  background-image:
+    radial-gradient(900px 500px at 20% -10%, rgba(255, 92, 107, 0.16), transparent 60%),
+    radial-gradient(800px 500px at 90% 110%, rgba(255, 107, 157, 0.13), transparent 60%);
+  font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  color: #e8eaf0;
+}
+
+#acces-ecran .acces-carte {
+  width: 100%;
+  max-width: 420px;
+  padding: 34px 32px 30px;
+  border-radius: 16px;
+  background: #1a1d2a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 18px 60px rgba(0, 0, 0, 0.55);
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+#acces-ecran .acces-carte::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0; height: 3px;
+  background: linear-gradient(90deg, #ff5c6b, #ff6b9d, transparent);
+}
+
+/* ---------------- le cadenas ---------------- */
+
+#acces-ecran .acces-cadenas {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto 14px;
+  animation: acces-respire 3.6s ease-in-out infinite;
+}
+#acces-ecran .acces-cadenas svg { display: block; overflow: visible; }
+
+#acces-ecran .acces-anse {
+  fill: none;
+  stroke: #ff8fa3;
+  stroke-width: 6;
+  stroke-linecap: round;
+  /* pivot : le pied droit de l'anse */
+  transform-origin: 44px 30px;
+  transition: transform 0.42s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+#acces-ecran .acces-corps {
+  fill: #ff5c6b;
+  transform-origin: 32px 42px;
+  transition: fill 0.4s ease;
+}
+#acces-ecran .acces-trou,
+#acces-ecran .acces-trou-fente { fill: #1a1d2a; }
+
+/* onde qui part du cadenas à l'ouverture */
+#acces-ecran .acces-onde {
+  position: absolute;
+  inset: 50% auto auto 50%;
+  width: 70px;
+  height: 70px;
+  margin: -35px 0 0 -35px;
+  border-radius: 50%;
+  border: 2px solid #ff8fa3;
+  opacity: 0;
+  pointer-events: none;
+}
+
+@keyframes acces-respire {
+  0%, 100% { transform: translateY(0); }
+  50%      { transform: translateY(-4px); }
+}
+
+/* --- erreur : le cadenas tressaute et l'anse cliquette --- */
+#acces-ecran .acces-carte.acces-secousse .acces-anse { animation: acces-cliquette 0.32s; }
+@keyframes acces-cliquette {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  30%      { transform: translateY(-2px) rotate(-4deg); }
+  65%      { transform: translateY(-1px) rotate(4deg); }
+}
+
+/* --- ouverture --- */
+#acces-ecran.acces-ouvert { animation: acces-disparait 0.42s ease 0.6s forwards; }
+#acces-ecran.acces-ouvert .acces-cadenas { animation: none; }
+#acces-ecran.acces-ouvert .acces-anse {
+  transform: translateY(-7px) rotate(-26deg);
+  stroke: #3dd68c;
+}
+#acces-ecran.acces-ouvert .acces-corps {
+  fill: #3dd68c;
+  animation: acces-toc 0.5s ease 0.18s;
+}
+#acces-ecran.acces-ouvert .acces-onde { animation: acces-onde 0.75s ease-out 0.24s; }
+#acces-ecran.acces-ouvert .acces-carte {
+  animation: acces-carte-part 0.42s cubic-bezier(0.4, 0, 1, 1) 0.52s forwards;
+}
+#acces-ecran.acces-ouvert form,
+#acces-ecran.acces-ouvert .acces-note { animation: acces-estompe 0.28s ease forwards; }
+
+@keyframes acces-toc {
+  0%       { transform: scale(1); }
+  35%      { transform: scale(1.14, 0.9); }
+  70%      { transform: scale(0.96, 1.05); }
+  100%     { transform: scale(1); }
+}
+@keyframes acces-onde {
+  0%   { opacity: 0.85; transform: scale(0.5); }
+  100% { opacity: 0;    transform: scale(2.6); }
+}
+@keyframes acces-estompe {
+  to { opacity: 0; transform: translateY(6px); }
+}
+@keyframes acces-carte-part {
+  to { opacity: 0; transform: translateY(-14px) scale(0.94); }
+}
+@keyframes acces-disparait {
+  to { opacity: 0; visibility: hidden; }
+}
+
+#acces-ecran h1 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.4px;
+  margin: 0 0 6px;
+  color: #fff;
+}
+#acces-ecran .acces-sous-titre {
+  margin: 0 0 22px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #9aa3b8;
+}
+
+#acces-ecran form { display: flex; flex-direction: column; gap: 10px; }
+
+#acces-ecran input[type="password"] {
+  width: 100%;
+  padding: 13px 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: #0f1117;
+  color: #e8eaf0;
+  font-family: inherit;
+  font-size: 1rem;
+  letter-spacing: 1.5px;
+  text-align: center;
+  transition: border-color 0.18s, box-shadow 0.18s;
+}
+#acces-ecran input[type="password"]::placeholder { color: #6a7388; letter-spacing: normal; }
+#acces-ecran input[type="password"]:focus {
+  outline: none;
+  border-color: #ff6b9d;
+  box-shadow: 0 0 0 3px rgba(255, 107, 157, 0.16);
+}
+
+#acces-ecran button {
+  padding: 13px 15px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ff5c6b, #ff6b9d);
+  color: #fff;
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+#acces-ecran button:hover { transform: translateY(-1px); box-shadow: 0 8px 22px rgba(255, 92, 107, 0.3); }
+#acces-ecran button:active { transform: none; }
+
+#acces-ecran .acces-erreur {
+  min-height: 18px;
+  margin: 2px 0 0;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #ff8fa3;
+}
+
+#acces-ecran .acces-note {
+  margin: 20px 0 0;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 0.74rem;
+  line-height: 1.5;
+  color: #6a7388;
+}
+
+#acces-ecran .acces-secousse { animation: acces-secousse 0.32s; }
+@keyframes acces-secousse {
+  0%, 100% { transform: translateX(0); }
+  25%      { transform: translateX(-7px); }
+  75%      { transform: translateX(7px); }
+}
+
+@media (max-width: 480px) {
+  #acces-ecran .acces-carte { padding: 28px 22px 24px; }
+  #acces-ecran h1 { font-size: 1.3rem; }
+}
+
+@media print { #acces-ecran { display: none !important; } }
+
+/* Mouvement réduit demandé par le système : plus aucune animation.
+   Le cadenas change simplement de couleur et l'écran disparaît. */
+@media (prefers-reduced-motion: reduce) {
+  #acces-ecran *,
+  #acces-ecran {
+    animation: none !important;
+    transition: none !important;
+  }
+  #acces-ecran .acces-onde { display: none; }
+}

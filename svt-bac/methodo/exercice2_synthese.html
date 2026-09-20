@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="✍️ Exercice 2 — La synthèse rédigée — :root{--bg:#0f1117;--bg2:#0f1117;--bg3:#0f1117;--accent:#8b7cf8;--yellow:#a5a0ff;--green:#6366f1;--red:#8b7cf8;--blue:#6">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../assets/css/acces.css">
+<script src="../../assets/js/acces.js"></script>
+<title>Méthodologie Exercice 2 — Synthèse rédigée | Bac SVT 2026</title>
+<link rel="stylesheet" href="../assets/css/chrome.css">
+<style>
+:root{--bg:#0f1117;--bg2:#0f1117;--bg3:#0f1117;--accent:#8b7cf8;--yellow:#a5a0ff;--green:#6366f1;--red:#8b7cf8;--blue:#6366f1;--orange:#a5a0ff;--text:#a5a0ff;--muted:#6a7388;--border:#2a3050}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;font-size:15px;line-height:1.75}
+header{background:linear-gradient(135deg,#0f1117 0%,#0f1117 100%);border-bottom:3px solid var(--accent);padding:2rem 2.5rem 1.6rem}
+header .breadcrumb{font-size:.72rem;text-transform:uppercase;letter-spacing:2.5px;color:var(--accent);font-weight:700;margin-bottom:.4rem}
+header h1{font-size:1.8rem;font-weight:800;color:#e8eaf0;line-height:1.3}
+header .actions{margin-top:1rem;display:flex;gap:.6rem;flex-wrap:wrap}
+header .actions a{font-size:.78rem;text-decoration:none;padding:.35rem .9rem;border-radius:16px;background:var(--bg2);border:1px solid var(--border);color:var(--muted);transition:all .15s}
+header .actions a:hover{color:#e8eaf0;border-color:var(--accent)}
+header .actions a.primary{background:rgba(32,36,58,.1);color:var(--accent);border-color:var(--accent)}
+nav{background:var(--bg2);border-bottom:1px solid var(--border);padding:.65rem 2.5rem;display:flex;gap:.45rem;flex-wrap:wrap;position:sticky;top:0;z-index:100}
+nav a{color:var(--muted);text-decoration:none;font-size:.78rem;padding:.25rem .75rem;border-radius:16px;background:var(--bg3);border:1px solid transparent;transition:all .15s}
+nav a:hover{color:var(--accent);border-color:var(--accent);background:rgba(32,36,58,.08)}
+main{max-width:960px;margin:0 auto;padding:2rem 2.5rem}
+.section-header{display:flex;align-items:center;gap:.9rem;margin-bottom:1.4rem;margin-top:.3rem}
+.section-num{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;flex-shrink:0;background:rgba(32,36,58,.2);color:var(--accent);border:2px solid var(--accent)}
+h2{font-size:1.3rem;font-weight:700;color:#e8eaf0}
+h3{font-size:1rem;font-weight:700;color:var(--yellow);margin:1.3rem 0 .5rem;padding-left:.5rem;border-left:3px solid var(--yellow)}
+h4{font-size:.92rem;font-weight:600;color:var(--green);margin:1rem 0 .4rem}
+section{margin-bottom:3rem}
+p{margin-bottom:.6rem}
+ul,ol{margin:.4rem 0 .8rem 1.4rem}
+li{margin-bottom:.3rem}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.1rem 1.3rem;margin-bottom:.8rem}
+.card.y{border-left:4px solid var(--yellow)}
+.card.b{border-left:4px solid var(--blue)}
+.card.g{border-left:4px solid var(--green)}
+.card.r{border-left:4px solid var(--red)}
+.card.p{border-left:4px solid var(--accent)}
+.card.o{border-left:4px solid var(--orange)}
+.step{background:var(--bg2);border:1px solid var(--border);border-left:5px solid var(--accent);border-radius:10px;padding:1.2rem 1.4rem 1.2rem 5rem;margin-bottom:1rem;position:relative}
+.step-num{position:absolute;left:1.2rem;top:1.2rem;width:38px;height:38px;border-radius:50%;background:var(--accent);color:#0f1117;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.1rem}
+.step h4{margin-top:0;color:#e8eaf0;font-size:1rem}
+.example{background:#0f1117;border:1px dashed #2a3050;border-radius:8px;padding:1rem 1.3rem;margin:.7rem 0;font-size:.9rem}
+.example .lbl{font-size:.7rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--yellow);font-weight:700;margin-bottom:.5rem}
+.tip{background:rgba(32,36,58,.07);border:1px solid rgba(58,64,96,.3);border-left:4px solid var(--green);border-radius:8px;padding:.85rem 1.1rem;margin:.7rem 0;color:#a5a0ff;font-size:.9rem}
+.tip::before{content:"💡 ";font-weight:700}
+.warn{background:rgba(32,36,58,.06);border:1px solid rgba(58,64,96,.3);border-left:4px solid var(--red);border-radius:8px;padding:.85rem 1.1rem;margin:.7rem 0;color:#a5a0ff;font-size:.9rem}
+.warn::before{content:"❌ ";font-weight:700}
+.good{background:rgba(61,214,140,.07);border:1px solid rgba(61,214,140,.3);border-left:4px solid var(--green);border-radius:8px;padding:.85rem 1.1rem;margin:.7rem 0;color:#3dd68c;font-size:.9rem}
+.good::before{content:"✅ ";font-weight:700}
+table{width:100%;border-collapse:collapse;margin:.8rem 0 1.2rem;background:var(--bg2);border-radius:8px;overflow:hidden;font-size:.88rem}
+th{background:var(--bg3);text-align:left;padding:.6rem .9rem;color:var(--accent);font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:1px}
+td{padding:.6rem .9rem;border-top:1px solid var(--border);vertical-align:top}
+.plan-box{background:var(--bg3);border-radius:10px;padding:1.2rem 1.5rem;margin:.8rem 0;border:1px solid var(--border)}
+.plan-box h4{color:var(--accent);margin-top:0}
+footer{text-align:center;padding:2rem;color:var(--muted);font-size:.78rem;border-top:1px solid var(--border);margin-top:2rem}
+footer a{color:var(--accent);text-decoration:none}
+</style>
+</head>
+<body>
+
+<a href="../accueil-svt.html" class="back-nav">← SVT Bac 2026</a>
+
+<header>
+ <div class="breadcrumb">Méthodologie · Exercice 2</div>
+ <h1>✍️ Exercice 2 — La synthèse rédigée</h1>
+ <div class="actions">
+ <a href="../accueil-svt.html">← Index</a>
+ <a href="methodologie.html">📋 Méthodo générale</a>
+ <a href="exercice1_documents.html">📑 Méthodo Exercice 1</a>
+ <a href="schemas_bilan.html" class="primary">🎨 Schémas-bilan</a>
+ </div>
+</header>
+
+<nav>
+ <a href="#objectif">Objectif</a>
+ <a href="#structure">Structure idéale</a>
+ <a href="#intro">L'introduction</a>
+ <a href="#plan">Le plan</a>
+ <a href="#schema">Le schéma-bilan</a>
+ <a href="#ccl">La conclusion</a>
+ <a href="#exemple">Exemple complet</a>
+</nav>
+
+<main>
+
+<section id="objectif">
+ <div class="section-header"><div class="section-num">🎯</div><h2>Objectif de la synthèse</h2></div>
+
+ <div class="card p">
+ <p>La synthèse, c'est ~<strong>12 points sur 20</strong> et ~<strong>2 heures</strong>. C'est LA partie qui fait la différence. Le sujet est <strong>large</strong> et le correcteur veut un <strong>texte structuré, illustré, problématisé</strong>, qui mobilise tes connaissances.</p>
+ </div>
+
+ <h3>⚖️ Le critère de réussite n°1</h3>
+ <div class="good">Une copie 10/12 et une copie 6/12 peuvent contenir <strong>le même nombre de connaissances</strong>. Ce qui fait la différence, c'est la <strong>structure</strong>, la <strong>problématisation</strong> et la <strong>présence d'un schéma-bilan</strong>.</div>
+</section>
+
+<section id="structure">
+ <div class="section-header"><div class="section-num">📐</div><h2>La structure idéale en 4 blocs</h2></div>
+
+ <div class="plan-box">
+ <h4>🏗️ Architecture d'une bonne synthèse (~ 3-4 pages)</h4>
+ <ol>
+ <li><strong style="color:var(--blue)">Introduction</strong> (~ ½ page) — amorce, problématique, plan annoncé</li>
+ <li><strong style="color:var(--green)">Développement</strong> (~ 2 pages) — 2 ou 3 parties, chacune avec arguments + exemples</li>
+ <li><strong style="color:var(--orange)">Schéma-bilan</strong> (~ ½ page) — schéma propre, titré, légendé</li>
+ <li><strong style="color:var(--accent)">Conclusion</strong> (~ ¼ page) — réponse à la problématique + ouverture</li>
+ </ol>
+ </div>
+
+ <h3>⏱️ Timing recommandé</h3>
+ <table>
+ <tr><th>Étape</th><th>Durée</th><th>Sur brouillon ?</th></tr>
+ <tr><td>1. Analyse du sujet + problématique</td><td>5 min</td><td>OUI</td></tr>
+ <tr><td>2. Brouillon du plan</td><td>10 min</td><td>OUI (bullet points)</td></tr>
+ <tr><td>3. Brouillon du schéma-bilan</td><td>10 min</td><td>OUI (au crayon)</td></tr>
+ <tr><td>4. Rédaction intro</td><td>10 min</td><td>NON, directement au propre</td></tr>
+ <tr><td>5. Rédaction des parties</td><td>60 min</td><td>NON</td></tr>
+ <tr><td>6. Recopie du schéma au propre</td><td>15 min</td><td>NON</td></tr>
+ <tr><td>7. Rédaction conclusion</td><td>5 min</td><td>NON</td></tr>
+ <tr><td>8. Relecture</td><td>5 min</td><td></td></tr>
+ <tr><td><strong>TOTAL</strong></td><td><strong>~ 2 h</strong></td><td></td></tr>
+ </table>
+</section>
+
+<section id="intro">
+ <div class="section-header"><div class="section-num">1</div><h2>L'INTRODUCTION — la plus stratégique</h2></div>
+
+ <p>L'intro fait <strong>~ ½ page</strong> et structure toute ta démonstration. Elle se compose de <strong>3 éléments obligatoires</strong> :</p>
+
+ <div class="step">
+ <div class="step-num">1</div>
+ <h4>L'amorce — ouverture sur le sujet</h4>
+ <p>2-3 phrases qui contextualisent le sujet, définissent les notions clés, et préparent la problématique. Évite les généralités vides (« depuis la nuit des temps… »).</p>
+ <div class="example">
+ <div class="lbl">Exemple — sujet sur le diabète</div>
+ « Le diabète est une pathologie chronique qui touche aujourd'hui plus de 500 millions de personnes dans le monde. Il se définit par une hyperglycémie chronique liée à une défaillance de la régulation glycémique, normalement assurée par les hormones pancréatiques. Comprendre les mécanismes de cette défaillance est devenu un enjeu de santé publique majeur. »
+ </div>
+ </div>
+
+ <div class="step">
+ <div class="step-num">2</div>
+ <h4>La problématique — la QUESTION centrale</h4>
+ <p>Une <strong>question</strong> (avec un point d'interrogation) qui guidera toute ta synthèse. Elle doit être <strong>précise</strong>, <strong>fermée</strong> (pas trop vague), et liée au sujet.</p>
+ <div class="example">
+ <div class="lbl">Exemple — problématique</div>
+ « Comment la régulation hormonale de la glycémie peut-elle être altérée dans le diabète, et quels sont les facteurs qui favorisent cette altération ? »
+ </div>
+ <div class="tip"><strong>Astuce :</strong> formule la problématique en transformant le sujet en question. Sujet « les climats de la Terre » → « Comment les climats de la Terre ont-ils varié au cours du temps, et qu'est-ce qui les fait varier ? »</div>
+ </div>
+
+ <div class="step">
+ <div class="step-num">3</div>
+ <h4>L'annonce du plan</h4>
+ <p>Annonce explicitement les 2 ou 3 parties que tu vas développer. Le correcteur saura où tu vas.</p>
+ <div class="example">
+ <div class="lbl">Exemple — annonce du plan</div>
+ « Nous verrons d'abord <strong>comment s'opère la régulation normale de la glycémie</strong> par le couple insuline-glucagon (I), puis <strong>quels sont les deux grands types de diabète et leurs mécanismes</strong> (II), enfin <strong>les facteurs de risque et les pistes de prévention</strong> du diabète de type 2 (III). »
+ </div>
+ </div>
+</section>
+
+<section id="plan">
+ <div class="section-header"><div class="section-num">2</div><h2>LE PLAN — 2 ou 3 parties claires</h2></div>
+
+ <h3>📋 Comment trouver un bon plan</h3>
+ <div class="card y">
+ <p>Pour la majorité des sujets, deux types de plans marchent :</p>
+ <ul>
+ <li><strong>Plan « analytique »</strong> : I. Description / II. Mécanisme / III. Conséquences (ou enjeux)</li>
+ <li><strong>Plan « problématique »</strong> : I. Constat / II. Hypothèses-explications / III. Validation par les preuves</li>
+ </ul>
+ </div>
+
+ <h3>🧱 Structure de chaque partie</h3>
+ <div class="card g">
+ <ol>
+ <li><strong>Phrase d'introduction</strong> de la partie (1 phrase)</li>
+ <li><strong>2 ou 3 sous-parties</strong> = 1 idée + arguments + exemples du cours</li>
+ <li><strong>Transition</strong> vers la partie suivante (1 phrase)</li>
+ </ol>
+ </div>
+
+ <div class="example">
+ <div class="lbl">Exemple — Plan détaillé sur les climats</div>
+ <p><strong>I. Les climats de la Terre varient à toutes les échelles de temps</strong><br>
+ 1. Variations longues (millions d'années) — Phanérozoïque, glaciations<br>
+ 2. Variations courtes (centaine de milliers d'années) — cycles glaciaires-interglaciaires<br>
+ 3. Variations récentes — réchauffement industriel</p>
+ <p><strong>II. Plusieurs facteurs naturels expliquent ces variations</strong><br>
+ 1. Paramètres orbitaux (Milankovitch)<br>
+ 2. Activité volcanique, activité solaire<br>
+ 3. Rétroactions (albédo, vapeur d'eau)</p>
+ <p><strong>III. Le réchauffement actuel a une cause anthropique majeure</strong><br>
+ 1. Hausse rapide des GES depuis 1850<br>
+ 2. Signature isotopique du carbone fossile<br>
+ 3. Scénarios GIEC et conséquences</p>
+ </div>
+
+ <div class="tip"><strong>Règle d'or :</strong> chaque partie doit répondre à une <strong>sous-question</strong> de la problématique. Si tu peux résumer ta partie en 1 phrase, tu es au point.</div>
+</section>
+
+<section id="schema">
+ <div class="section-header"><div class="section-num">3</div><h2>LE SCHÉMA-BILAN — 2 à 3 points faciles</h2></div>
+
+ <div class="warn"><strong>Un schéma-bilan absent = -2 à -3 points secs.</strong> C'est un gros enjeu. Beaucoup d'élèves l'oublient.</div>
+
+ <h3>🎨 Caractéristiques d'un bon schéma-bilan</h3>
+ <div class="card g">
+ <ul>
+ <li><strong>Un titre</strong> en haut, soulignée (« Schéma-bilan : régulation de la glycémie »)</li>
+ <li><strong>Au crayon à papier</strong> (modifiable), repassé au stylo seulement en fin</li>
+ <li><strong>Légendes</strong> sur le côté avec couleurs/symboles cohérents</li>
+ <li><strong>Flèches</strong> claires avec annotations (« insuline », « hypoglycémiante »)</li>
+ <li><strong>Lisible</strong> et <strong>aéré</strong> (occupe au moins ½ page A4)</li>
+ <li><strong>Cohérent</strong> avec la conclusion (le schéma RÉPOND à la problématique)</li>
+ </ul>
+ </div>
+
+ <div class="card y">
+ <h4 style="margin-top:0">📌 Place du schéma dans la copie</h4>
+ <p>Le mieux : <strong>à la fin de la dernière partie</strong>, juste avant la conclusion. Une phrase de transition : « L'ensemble de ces mécanismes peut se résumer par le schéma-bilan suivant ».</p>
+ </div>
+
+ <div class="tip">Consulte la page <a href="schemas_bilan.html" style="color:var(--green);font-weight:700">🎨 Schémas-bilan à savoir refaire</a> pour les 7 schémas-types à mémoriser.</div>
+</section>
+
+<section id="ccl">
+ <div class="section-header"><div class="section-num">4</div><h2>LA CONCLUSION</h2></div>
+
+ <p>Courte (~ 5-7 lignes), elle doit faire <strong>2 choses</strong> :</p>
+
+ <div class="step">
+ <div class="step-num">1</div>
+ <h4>RÉPONDRE explicitement à la problématique</h4>
+ <p>Reprends la question posée en intro et donne <strong>la réponse synthétique</strong>. Pas de nouvelles infos.</p>
+ <div class="example">
+ <div class="lbl">Exemple — Réponse</div>
+ « En conclusion, la régulation glycémique est assurée par un système hormonal antagoniste insuline-glucagon, et son altération conduit au diabète de type 1 (auto-immun) ou de type 2 (insulinorésistance + génétique + mode de vie). »
+ </div>
+ </div>
+
+ <div class="step">
+ <div class="step-num">2</div>
+ <h4>OUVRIR sur une question liée</h4>
+ <p>Une phrase qui élargit le sujet (sans changer de thème). Ça montre que tu as une vue d'ensemble.</p>
+ <div class="example">
+ <div class="lbl">Exemple — Ouverture</div>
+ « La prévention du diabète de type 2 par le mode de vie constitue donc un enjeu majeur de santé publique, qui rejoint celui de la lutte contre l'obésité, autre épidémie de notre époque. »
+ </div>
+ </div>
+
+ <div class="warn">Ne PAS faire en conclusion : <strong>recopier l'intro</strong>, <strong>introduire une nouvelle notion</strong> non abordée, <strong>conclure par une phrase floue</strong> (« il faut donc faire attention »).</div>
+</section>
+
+<section id="exemple">
+ <div class="section-header"><div class="section-num">📝</div><h2>Exemple complet — Synthèse rédigée modèle</h2></div>
+
+ <div class="card o">
+ <h4 style="margin-top:0">🎯 Sujet</h4>
+ <p><em>Montrez comment l'étude des roches permet de reconstituer l'histoire géologique d'une région.</em> (Thème I)</p>
+ </div>
+
+ <div class="card g">
+ <h4 style="margin-top:0">✅ Rédaction modèle</h4>
+
+ <p><u><strong>INTRODUCTION</strong></u><br>
+ La Terre, vieille de 4,57 milliards d'années, est marquée par une longue histoire géologique : ouvertures et fermetures d'océans, formation de chaînes de montagnes, variations climatiques. Pour reconstituer cette histoire, les géologues s'appuient sur l'étude des <strong>roches</strong>, véritables archives du passé. Comment les différents types de roches (sédimentaires, magmatiques, métamorphiques) permettent-ils de retracer les événements géologiques d'une région ? Nous verrons d'abord <strong>comment dater ces roches</strong> (I), puis <strong>comment elles enregistrent les paléoenvironnements et la tectonique</strong> (II), enfin <strong>comment elles permettent de reconstituer un cycle de Wilson</strong> (III).</p>
+
+ <p><u><strong>I. La datation des roches — base de la chronologie</strong></u><br>
+ Avant tout, il faut savoir <em>quand</em> chaque roche s'est formée.</p>
+ <p>1) La <strong>datation relative</strong> repose sur les principes de Sténon (superposition, horizontalité, continuité, recoupement, inclusion) et l'identité paléontologique. Elle permet d'ordonner les événements sans donner d'âge absolu.</p>
+ <p>2) La <strong>datation absolue</strong> (radiochronologie) utilise la désintégration radioactive d'isotopes (¹⁴C, K-Ar, U-Pb…). Chaque isotope a une demi-vie. Le ¹⁴C (5 730 ans) date les organismes récents ; le K-Ar (1,25 Ga) date les roches magmatiques anciennes ; le Rb-Sr et l'U-Pb dépassent le milliard d'années.</p>
+ <p>Une fois les roches datées, on peut interpréter leur signification.</p>
+
+ <p><u><strong>II. Les roches enregistrent paléoenvironnements et tectonique</strong></u></p>
+ <p>1) Les <strong>roches sédimentaires</strong> (calcaires, grès, argiles) se déposent dans des bassins sédimentaires. Leurs fossiles, leur granulométrie et leur composition renseignent sur le milieu de dépôt : marin profond (calcaires à foraminifères), littoral (grès à ripple-marks), continental (charbons).</p>
+ <p>2) Les <strong>roches magmatiques</strong> témoignent du contexte tectonique. Basaltes et gabbros des dorsales = ouverture océanique. Andésites et granites = subduction, volcanisme calco-alcalin.</p>
+ <p>3) Les <strong>roches métamorphiques</strong> portent la trace des conditions de pression/température qu'elles ont subies. Schistes bleus et éclogites (HP-BT) = subduction ; gneiss et migmatites (HT) = collision continentale.</p>
+
+ <p><u><strong>III. La reconstitution d'un cycle de Wilson</strong></u></p>
+ <p>L'ensemble de ces archives permet de retracer un cycle complet :</p>
+ <p>1) <strong>Ouverture d'un océan</strong> : roches du rift continental (basaltes en coussins, sédiments du graben).</p>
+ <p>2) <strong>Expansion océanique</strong> : croûte océanique = basaltes / gabbros sur péridotites = ophiolite.</p>
+ <p>3) <strong>Subduction</strong> : volcanisme andésitique, métamorphisme HP-BT.</p>
+ <p>4) <strong>Collision continentale</strong> : obduction d'ophiolites, chaîne de montagnes, métamorphisme HT.</p>
+ <p>Exemple emblématique : la chaîne alpine, où l'on retrouve des ophiolites du Chenaillet (océan disparu), des éclogites du Mont-Viso (subduction), et des sédiments plissés (collision).</p>
+
+ <p><em>L'ensemble de cette démarche peut se résumer par le schéma-bilan ci-après.</em></p>
+ <p style="text-align:center;font-style:italic;color:var(--muted)">[ Schéma-bilan : cycle de Wilson + types de roches associés ]</p>
+
+ <p><u><strong>CONCLUSION</strong></u><br>
+ L'étude des roches, datées par radiochronologie et interprétées selon leur nature, permet de reconstituer un cycle géologique complet : ouverture-expansion-subduction-collision. Les roches sont les <strong>archives du passé géologique</strong> d'une région. Ce raisonnement peut aussi s'appliquer à l'étude des paléoclimats, où sédiments et carottes glaciaires conservent la mémoire des climats anciens.</p>
+ </div>
+
+ <div class="tip">Cette synthèse rapporte facilement <strong>9-10 points sur 12</strong>. Elle est structurée, mobilise le cours, et présente une démonstration logique. Avec un bon schéma, elle atteint 11/12.</div>
+</section>
+
+<div style="background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin-top:2rem;text-align:center">
+ <h3 style="margin:0 0 .8rem;padding:0;border:none">🚀 Étape suivante</h3>
+ <div style="display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;margin-top:.8rem">
+ <a href="schemas_bilan.html" style="background:rgba(32,36,58,.15);color:var(--green);padding:.7rem 1.2rem;border-radius:8px;text-decoration:none;font-weight:700;border:1px solid rgba(58,64,96,.3)">🎨 Schémas-bilan à mémoriser</a>
+ <a href="../annales/annale1_evolution.html" style="background:rgba(32,36,58,.15);color:var(--blue);padding:.7rem 1.2rem;border-radius:8px;text-decoration:none;font-weight:700;border:1px solid rgba(58,64,96,.3)">📚 Annales corrigées</a>
+ </div>
+</div>
+
+</main>
+
+<footer>SVT Terminale Spécialité · Bac 2026 — Méthodo Exercice 2<a href="../accueil-svt.html">Retour à l'index</a></footer>
+
+</body>
+</html>

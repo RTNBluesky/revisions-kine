@@ -1,0 +1,1401 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Fiche de Révision Physiopathologie 1 — Grossman & Porth · Tortora & Derrickson">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../../assets/css/acces.css">
+<script src="../../../../../../assets/js/acces.js"></script>
+<title>Fiche de Révision – Physiopathologie 1</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../../../assets/css/chrome.css">
+<style>
+ :root {
+ --bg: #0f1117;
+ --surface: #161922;
+ --card: #1a1d2a;
+ --border: #3a4060;
+ --accent1: #f472b6;
+ --accent2: #ff5c6b;
+ --accent3: #ff6b9d;
+ --accent4: #ff8fa3;
+ --accent5: #f472b6;
+ --text: #9aa3b8;
+ --text-muted: #6a7388;
+ --text-light: #6a7388;
+ --heading: #ffffff;
+ }
+
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+
+ body {
+ background: var(--bg);
+ color: var(--text);
+ font-family: 'Source Serif 4', Georgia, serif;
+ font-size: 15px;
+ line-height: 1.7;
+ min-height: 100vh;
+ }
+
+ /* ---- HEADER ---- */
+ header {
+ background: linear-gradient(135deg, #0f1117 0%, #161922 50%, #0f1117 100%);
+ border-bottom: 1px solid var(--border);
+ padding: 56px 48px 40px;
+ position: relative;
+ overflow: hidden;
+ }
+ header::before {
+ content: '';
+ position: absolute;
+ top: -80px; right: -80px;
+ width: 400px; height: 400px;
+ background: radial-gradient(circle, rgba(255,107,157,0.12) 0%, transparent 70%);
+ border-radius: 50%;
+ }
+ header::after {
+ content: '';
+ position: absolute;
+ bottom: -60px; left: 30%;
+ width: 300px; height: 300px;
+ background: radial-gradient(circle, rgba(255,92,107,0.08) 0%, transparent 70%);
+ border-radius: 50%;
+ }
+ .header-tag {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 11px;
+ letter-spacing: 3px;
+ text-transform: uppercase;
+ color: var(--accent1);
+ margin-bottom: 12px;
+ opacity: 0.9;
+ }
+ header h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(2rem, 5vw, 3.2rem);
+ font-weight: 900;
+ color: var(--heading);
+ line-height: 1.1;
+ position: relative;
+ }
+ header h1 span { color: var(--accent1); }
+ .header-sub {
+ margin-top: 14px;
+ color: var(--text-muted);
+ font-size: 14px;
+ font-style: italic;
+ position: relative;
+ }
+ .header-pills {
+ display: flex;
+ gap: 10px;
+ flex-wrap: wrap;
+ margin-top: 24px;
+ position: relative;
+ }
+ .pill {
+ padding: 5px 14px;
+ border-radius: 20px;
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 11px;
+ letter-spacing: 1px;
+ text-transform: uppercase;
+ border: 1px solid;
+ }
+ .pill-blue { border-color: var(--accent1); color: var(--accent1); background: rgba(255,107,157,0.08); }
+ .pill-pink { border-color: var(--accent2); color: var(--accent2); background: rgba(255,92,107,0.08); }
+ .pill-green { border-color: var(--accent3); color: var(--accent3); background: rgba(255,107,157,0.08); }
+ .pill-gold { border-color: var(--accent4); color: var(--accent4); background: rgba(255,107,157,0.08); }
+ .pill-purple{ border-color: var(--accent5); color: var(--accent5); background: rgba(255,107,157,0.08); }
+
+ /* ---- NAV ---- */
+ nav {
+ background: var(--surface);
+ border-bottom: 1px solid var(--border);
+ padding: 0 48px;
+ display: flex;
+ gap: 0;
+ overflow-x: auto;
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ }
+ nav a {
+ display: block;
+ padding: 16px 20px;
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 11px;
+ letter-spacing: 1.5px;
+ text-transform: uppercase;
+ text-decoration: none;
+ color: var(--text-muted);
+ white-space: nowrap;
+ border-bottom: 2px solid transparent;
+ transition: all 0.2s;
+ }
+ nav a:hover { color: var(--accent1); border-bottom-color: var(--accent1); }
+
+ /* ---- MAIN LAYOUT ---- */
+ main {
+ max-width: 1100px;
+ margin: 0 auto;
+ padding: 48px 32px 80px;
+ }
+
+ /* ---- SECTIONS ---- */
+ section {
+ margin-bottom: 60px;
+ }
+ .section-header {
+ display: flex;
+ align-items: center;
+ gap: 16px;
+ margin-bottom: 28px;
+ padding-bottom: 16px;
+ border-bottom: 1px solid var(--border);
+ }
+ .section-num {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 11px;
+ letter-spacing: 2px;
+ color: var(--text-muted);
+ }
+ .section-title {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.6rem;
+ font-weight: 700;
+ color: var(--heading);
+ }
+ .section-accent-line {
+ flex: 1;
+ height: 1px;
+ background: var(--border);
+ }
+
+ /* ---- CARDS ---- */
+ .card {
+ background: var(--card);
+ border: 1px solid var(--border);
+ border-radius: 12px;
+ padding: 24px 28px;
+ margin-bottom: 16px;
+ position: relative;
+ overflow: hidden;
+ transition: border-color 0.2s, transform 0.2s;
+ }
+ .card:hover { border-color: #ff5c6b; transform: translateY(-1px); }
+ .card::before {
+ content: '';
+ position: absolute;
+ top: 0; left: 0;
+ width: 3px; height: 100%;
+ border-radius: 12px 0 0 12px;
+ }
+ .card-blue::before { background: var(--accent1); }
+ .card-pink::before { background: var(--accent2); }
+ .card-green::before { background: var(--accent3); }
+ .card-gold::before { background: var(--accent4); }
+ .card-purple::before{ background: var(--accent5); }
+
+ .card-title {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.1rem;
+ font-weight: 700;
+ color: var(--heading);
+ margin-bottom: 10px;
+ }
+ .card-title .icon { margin-right: 8px; }
+
+ /* ---- GRID LAYOUTS ---- */
+ .grid-2 {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 16px;
+ }
+ .grid-3 {
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+ gap: 16px;
+ }
+ @media (max-width: 768px) {
+ .grid-2, .grid-3 { grid-template-columns: 1fr; }
+ nav { padding: 0 16px; }
+ main { padding: 32px 16px; }
+ header { padding: 40px 24px 32px; }
+ }
+
+ /* ---- DEFINITION BOX ---- */
+ .def-box {
+ background: linear-gradient(135deg, rgba(255,107,157,0.07), rgba(255,107,157,0.02));
+ border: 1px solid rgba(255,107,157,0.25);
+ border-radius: 10px;
+ padding: 20px 24px;
+ margin-bottom: 16px;
+ }
+ .def-term {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 12px;
+ letter-spacing: 2px;
+ text-transform: uppercase;
+ color: var(--accent1);
+ margin-bottom: 6px;
+ }
+ .def-content {
+ color: var(--text-light);
+ font-size: 14.5px;
+ }
+
+ /* ---- KEY CONCEPT ---- */
+ .key-concept {
+ background: rgba(255,107,157,0.06);
+ border: 1px solid rgba(255,107,157,0.2);
+ border-radius: 8px;
+ padding: 14px 18px;
+ margin: 12px 0;
+ display: flex;
+ gap: 12px;
+ align-items: flex-start;
+ }
+ .key-concept .kc-icon {
+ font-size: 16px;
+ margin-top: 2px;
+ flex-shrink: 0;
+ }
+ .key-concept .kc-text {
+ font-size: 14px;
+ color: var(--text-light);
+ }
+ .key-concept strong { color: var(--accent4); }
+
+ /* ---- COMPARISON TABLE ---- */
+ .compare-table {
+ width: 100%;
+ border-collapse: collapse;
+ font-size: 14px;
+ margin-top: 8px;
+ }
+ .compare-table th {
+ background: rgba(255,255,255,0.04);
+ padding: 12px 16px;
+ text-align: left;
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 11px;
+ letter-spacing: 1.5px;
+ text-transform: uppercase;
+ color: var(--text-muted);
+ border-bottom: 1px solid var(--border);
+ }
+ .compare-table td {
+ padding: 12px 16px;
+ border-bottom: 1px solid rgba(255,107,157,0.6);
+ vertical-align: top;
+ color: var(--text-light);
+ }
+ .compare-table tr:last-child td { border-bottom: none; }
+ .compare-table tr:hover td { background: rgba(255,255,255,0.02); }
+ .td-blue { color: var(--accent1) !important; font-weight: 600; }
+ .td-pink { color: var(--accent2) !important; font-weight: 600; }
+ .td-green { color: var(--accent3) !important; font-weight: 600; }
+
+ /* ---- FLOW DIAGRAM ---- */
+ .flow {
+ display: flex;
+ align-items: center;
+ flex-wrap: wrap;
+ gap: 8px;
+ margin: 16px 0;
+ }
+ .flow-step {
+ background: var(--card);
+ border: 1px solid var(--border);
+ border-radius: 8px;
+ padding: 10px 16px;
+ font-size: 13px;
+ color: var(--text-light);
+ text-align: center;
+ min-width: 120px;
+ }
+ .flow-step.accent { border-color: var(--accent1); color: var(--accent1); }
+ .flow-arrow {
+ color: var(--text-muted);
+ font-size: 18px;
+ flex-shrink: 0;
+ }
+
+ /* ---- LISTS ---- */
+ ul.styled, ol.styled {
+ padding-left: 0;
+ list-style: none;
+ }
+ ul.styled li, ol.styled li {
+ padding: 6px 0 6px 22px;
+ position: relative;
+ font-size: 14.5px;
+ color: var(--text-light);
+ border-bottom: 1px solid rgba(255,107,157,0.4);
+ }
+ ul.styled li:last-child, ol.styled li:last-child { border-bottom: none; }
+ ul.styled li::before {
+ content: '›';
+ position: absolute;
+ left: 4px;
+ color: var(--accent1);
+ font-weight: bold;
+ }
+ ol.styled { counter-reset: my-counter; }
+ ol.styled li::before {
+ counter-increment: my-counter;
+ content: counter(my-counter);
+ position: absolute;
+ left: 0;
+ background: var(--accent1);
+ color: white;
+ width: 16px; height: 16px;
+ border-radius: 50%;
+ font-size: 10px;
+ font-family: 'JetBrains Mono', monospace;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ top: 9px;
+ }
+
+ /* ---- CALLOUT ---- */
+ .callout {
+ border-radius: 10px;
+ padding: 18px 22px;
+ margin: 20px 0;
+ display: flex;
+ gap: 14px;
+ align-items: flex-start;
+ }
+ .callout-info { background: rgba(255,107,157,0.08); border-left: 3px solid var(--accent1); }
+ .callout-warn { background: rgba(255,166,87,0.08); border-left: 3px solid var(--accent4); }
+ .callout-danger { background: rgba(255,166,87,0.08); border-left: 3px solid var(--accent2); }
+ .callout-success{ background: rgba(61,214,140,0.08); border-left: 3px solid var(--accent3); }
+ .callout-icon { font-size: 20px; flex-shrink: 0; }
+ .callout-body { font-size: 14px; color: var(--text-light); }
+ .callout-body strong { color: var(--heading); }
+
+ /* ---- BADGE ---- */
+ .badge {
+ display: inline-block;
+ padding: 2px 10px;
+ border-radius: 12px;
+ font-size: 11px;
+ font-family: 'JetBrains Mono', monospace;
+ letter-spacing: 0.5px;
+ font-weight: 600;
+ text-transform: uppercase;
+ }
+ .badge-blue { background: rgba(255,107,157,0.15); color: var(--accent1); }
+ .badge-pink { background: rgba(255,92,107,0.15); color: var(--accent2); }
+ .badge-green { background: rgba(255,107,157,0.15); color: var(--accent3); }
+ .badge-gold { background: rgba(255,107,157,0.15); color: var(--accent4); }
+ .badge-purple { background: rgba(255,107,157,0.15); color: var(--accent5); }
+
+ /* ---- FORMULA BOX ---- */
+ .formula {
+ background: #0f1117;
+ border: 1px solid var(--border);
+ border-radius: 8px;
+ padding: 16px 20px;
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 14px;
+ color: var(--accent3);
+ text-align: center;
+ margin: 12px 0;
+ }
+
+ /* ---- LEVELS PYRAMID ---- */
+ .levels-container {
+ display: flex;
+ flex-direction: column;
+ gap: 6px;
+ margin: 16px 0;
+ }
+ .level-row {
+ display: flex;
+ align-items: center;
+ gap: 12px;
+ }
+ .level-bar {
+ border-radius: 6px;
+ padding: 10px 16px;
+ font-size: 13px;
+ font-weight: 600;
+ color: white;
+ flex: 1;
+ transition: transform 0.2s;
+ }
+ .level-bar:hover { transform: translateX(4px); }
+ .level-desc {
+ font-size: 12.5px;
+ color: var(--text-muted);
+ min-width: 200px;
+ }
+
+ /* ---- SEPARATOR ---- */
+ .sep {
+ height: 1px;
+ background: linear-gradient(90deg, transparent, var(--border), transparent);
+ margin: 32px 0;
+ }
+
+ /* ---- TOOLTIP TERM ---- */
+ abbr {
+ text-decoration: underline dotted var(--accent1);
+ cursor: help;
+ color: var(--accent1);
+ }
+
+ /* ---- FEEDBACK DIAGRAM ---- */
+ .feedback-box {
+ border-radius: 10px;
+ padding: 20px;
+ margin: 12px 0;
+ }
+ .fb-neg { background: rgba(255,107,157,0.05); border: 1px solid rgba(255,107,157,0.2); }
+ .fb-pos { background: rgba(255,92,107,0.05); border: 1px solid rgba(255,92,107,0.2); }
+ .fb-title {
+ font-family: 'Playfair Display', serif;
+ font-size: 1rem;
+ font-weight: 700;
+ margin-bottom: 10px;
+ }
+ .fb-neg .fb-title { color: var(--accent3); }
+ .fb-pos .fb-title { color: var(--accent2); }
+
+ /* ---- MEMORY AID ---- */
+ .memory-card {
+ background: linear-gradient(135deg, rgba(255,107,157,0.07), rgba(255,107,157,0.02));
+ border: 1px solid rgba(255,107,157,0.2);
+ border-radius: 10px;
+ padding: 20px 24px;
+ margin-top: 20px;
+ }
+ .memory-card .mc-header {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 11px;
+ letter-spacing: 2px;
+ text-transform: uppercase;
+ color: var(--accent5);
+ margin-bottom: 10px;
+ display: flex;
+ align-items: center;
+ gap: 8px;
+ }
+ .memory-card .mc-content {
+ font-size: 14px;
+ color: var(--text-light);
+ }
+ .memory-card .mc-content em { color: var(--accent5); font-style: normal; font-weight: 600; }
+
+ /* ---- FOOTER ---- */
+ footer {
+ text-align: center;
+ padding: 32px;
+ border-top: 1px solid var(--border);
+ color: var(--text-muted);
+ font-size: 12px;
+ font-family: 'JetBrains Mono', monospace;
+ letter-spacing: 1px;
+ }
+
+ /* ---- ANIMATIONS ---- */
+ @keyframes fadeUp {
+ from { opacity: 0; transform: translateY(16px); }
+ to { opacity: 1; transform: translateY(0); }
+ }
+ section { animation: fadeUp 0.4s ease both; }
+ section:nth-child(2) { animation-delay: 0.05s; }
+ section:nth-child(3) { animation-delay: 0.10s; }
+ section:nth-child(4) { animation-delay: 0.15s; }
+ section:nth-child(5) { animation-delay: 0.20s; }
+ section:nth-child(6) { animation-delay: 0.25s; }
+ section:nth-child(7) { animation-delay: 0.30s; }
+</style>
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/physio-patho.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-theme.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
+</head>
+<body>
+<a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
+<div class="page-toggle"><div class="pt-inner"><a href="../../qcm/tp/tp-01.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<!-- HEADER -->
+<header>
+ <div class="header-tag">Licence en Physiothérapie · 1ère Année · 2e Semestre</div>
+ <h1>Fiche de Révision<br><span>Physiopathologie 1</span></h1>
+ <p class="header-sub">Grossman & Porth · Tortora & Derrickson</p>
+ <div class="header-pills">
+ <span class="pill pill-blue">Concepts Santé & Maladie</span>
+ <span class="pill pill-pink">Étiologie & Pathogenèse</span>
+ <span class="pill pill-green">Homéostasie</span>
+ <span class="pill pill-gold">Systèmes de rétroaction</span>
+ <span class="pill pill-purple">Épidémiologie</span>
+ </div>
+</header>
+
+<!-- NAV -->
+<nav>
+ <a href="#physiopatho">Physiopatho</a>
+ <a href="#sante-maladie">Santé & Maladie</a>
+ <a href="#organisation">Organisation</a>
+ <a href="#homeostasie">Homéostasie</a>
+ <a href="#retroaction">Rétroaction</a>
+ <a href="#diagnostic">Diagnostic</a>
+ <a href="#epidemio">Épidémiologie</a>
+</nav>
+
+<main>
+
+<!-- ===================== SECTION 1 ===================== -->
+<section id="physiopatho">
+ <div class="section-header">
+ <span class="section-num">01</span>
+ <h2 class="section-title">Qu'est-ce que la Physiopathologie ?</h2>
+ <div class="section-accent-line"></div>
+ </div>
+
+ <div class="def-box">
+ <div class="def-term">Étymologie grecque</div>
+ <div class="def-content">
+ <strong style="color:var(--accent1)">Physis</strong> (nature, croissance) + 
+ <strong style="color:var(--accent2)">Pathos</strong> (souffrance, expérience) + 
+ <strong style="color:var(--accent3)">Logia</strong> (science, étude)
+ </div>
+ </div>
+
+ <div class="card card-blue">
+ <div class="card-title"><span class="icon">🔬</span>Définition officielle</div>
+ <p style="font-size:15px; color:var(--text-light); font-style:italic; line-height:1.8;">
+ « Science qui étudie les causes des maladies, les mécanismes de leur développement qui entraînent des signes et des symptômes. »
+ </p>
+ <div style="margin-top:14px;">
+ <span class="badge badge-blue">Physiologie altérée</span>
+ &nbsp;= combinaison de <strong>pathologie</strong> (changements structurels & fonctionnels) + <strong>physiologie</strong> (fonctions corporelles normales)
+ </div>
+ </div>
+
+ <div class="grid-2">
+ <div class="card card-pink">
+ <div class="card-title">Pathologie</div>
+ <ul class="styled">
+ <li>Étude des changements <strong>structurels et fonctionnels</strong> des cellules, tissus, organes</li>
+ <li>Du grec <em style="color:var(--accent2)">pathos</em> = maladie</li>
+ <li>Lien entre causes et effets de la maladie</li>
+ </ul>
+ </div>
+ <div class="card card-green">
+ <div class="card-title">Physiologie</div>
+ <ul class="styled">
+ <li>Étude des <strong>fonctions</strong> du corps humain</li>
+ <li>Comment les organes fonctionnent en état normal</li>
+ <li>Base de référence pour identifier la maladie</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="callout callout-info">
+ <span class="callout-icon">💡</span>
+ <div class="callout-body">
+ <strong>En pratique :</strong> La physiopatho comprend comment un <em>organisme sain</em> se transforme en individu malade — des niveaux cellulaires jusqu'aux altérations des organes et systèmes.
+ </div>
+ </div>
+
+ <div class="card card-gold">
+ <div class="card-title"><span class="icon">🎯</span>Objectifs en physiothérapie</div>
+ <ul class="styled">
+ <li>Comprendre les mécanismes physiopathologiques pour expliquer la <strong>symptomatologie</strong></li>
+ <li>Orienter les <strong>procédures de diagnostic</strong> et interpréter les données cliniques</li>
+ <li>Guider les <strong>orientations thérapeutiques</strong> et évaluer le pronostic</li>
+ <li>Développer un <strong>esprit critique et analytique</strong> dans la prestation de soins</li>
+ </ul>
+ </div>
+</section>
+
+<!-- ===================== SECTION 2 ===================== -->
+<section id="sante-maladie">
+ <div class="section-header">
+ <span class="section-num">02</span>
+ <h2 class="section-title">Santé, Maladie & Processus Pathologique</h2>
+ <div class="section-accent-line"></div>
+ </div>
+
+ <div class="grid-2">
+ <div class="card card-green">
+ <div class="card-title"><span class="icon">🌿</span>Santé (OMS, 1948)</div>
+ <p style="font-size:14px; color:var(--text-light); font-style:italic; margin-bottom:12px;">
+ « Un état de complet bien-être physique, mental et social — pas seulement absence de maladie ou d'infirmité. »
+ </p>
+ <ul class="styled">
+ <li>Implique un <strong>sentiment subjectif</strong> de bien-être</li>
+ <li>ET la preuve <strong>objective</strong> d'absence de maladie</li>
+ <li>Facteurs : génétique, âge, sexe, culture, environnement, comportement, revenu</li>
+ <li>Modèle biomédical vs <strong>modèle biopsychosocial</strong></li>
+ </ul>
+ </div>
+ <div class="card card-pink">
+ <div class="card-title"><span class="icon">🦠</span>Maladie</div>
+ <p style="font-size:13px; color:var(--text-muted); margin-bottom:8px;">Du latin <em>dolentia</em> = douleur, souffrance</p>
+ <p style="font-size:14px; color:var(--text-light); margin-bottom:12px;">
+ Condition dans laquelle une <strong>altération de l'organisme</strong> provoque une perte de santé et d'homéostasie.
+ </p>
+ <ul class="styled">
+ <li>Affection aiguë <em>ou</em> chronique, acquise <em>ou</em> congénitale</li>
+ <li>Dysfonctionnement physiologique dans ≥ 1 système</li>
+ <li>Signes et symptômes spécifiques identifiables</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="sep"></div>
+
+ <!-- AGENTS ÉTIOLOGIQUES -->
+ <div class="card card-gold">
+ <div class="card-title"><span class="icon">⚡</span>Facteurs pouvant déclencher une maladie</div>
+ <div class="grid-3" style="margin-top:12px;">
+ <div style="text-align:center; padding:14px; background:rgba(79,156,249,0.05); border-radius:8px; border:1px solid rgba(79,156,249,0.15);">
+ <div style="font-size:24px; margin-bottom:6px;">🦠</div>
+ <div style="font-weight:600; color:var(--accent1); font-size:13px;">Agents biologiques</div>
+ <div style="font-size:12px; color:var(--text-muted); margin-top:4px;">Virus, bactéries, champignons</div>
+ </div>
+ <div style="text-align:center; padding:14px; background:rgba(224,95,128,0.05); border-radius:8px; border:1px solid rgba(224,95,128,0.15);">
+ <div style="font-size:24px; margin-bottom:6px;">⚙️</div>
+ <div style="font-weight:600; color:var(--accent2); font-size:13px;">Agents physiques</div>
+ <div style="font-size:12px; color:var(--text-muted); margin-top:4px;">Traumatismes, brûlures, radiations</div>
+ </div>
+ <div style="text-align:center; padding:14px; background:rgba(86,217,162,0.05); border-radius:8px; border:1px solid rgba(86,217,162,0.15);">
+ <div style="font-size:24px; margin-bottom:6px;">🧪</div>
+ <div style="font-weight:600; color:var(--accent3); font-size:13px;">Agents chimiques</div>
+ <div style="font-size:12px; color:var(--text-muted); margin-top:4px;">Poisons, alcool, médicaments</div>
+ </div>
+ <div style="text-align:center; padding:14px; background:rgba(182,123,253,0.05); border-radius:8px; border:1px solid rgba(182,123,253,0.15);">
+ <div style="font-size:24px; margin-bottom:6px;">🧬</div>
+ <div style="font-weight:600; color:var(--accent5); font-size:13px;">Susceptibilité génétique</div>
+ <div style="font-size:12px; color:var(--text-muted); margin-top:4px;">Hérédité, âge, sexe</div>
+ </div>
+ <div style="text-align:center; padding:14px; background:rgba(245,166,35,0.05); border-radius:8px; border:1px solid rgba(245,166,35,0.15);">
+ <div style="font-size:24px; margin-bottom:6px;">😓</div>
+ <div style="font-weight:600; color:var(--accent4); font-size:13px;">Mode de vie / Stress</div>
+ <div style="font-size:12px; color:var(--text-muted); margin-top:4px;">Comportement, alimentation</div>
+ </div>
+ <div style="text-align:center; padding:14px; background:rgba(255,255,255,0.02); border-radius:8px; border:1px solid var(--border);">
+ <div style="font-size:24px; margin-bottom:6px;">❓</div>
+ <div style="font-weight:600; color:var(--text-muted); font-size:13px;">Idiopathique</div>
+ <div style="font-size:12px; color:var(--text-muted); margin-top:4px;">Cause inconnue</div>
+ </div>
+ </div>
+ </div>
+
+ <div class="sep"></div>
+
+ <!-- PROCESSUS PATHOLOGIQUE -->
+ <h3 style="font-family:'Playfair Display', serif; font-size:1.15rem; color:var(--heading); margin-bottom:20px;">Les 6 aspects du Processus Pathologique</h3>
+
+ <div class="grid-2">
+ <div class="card card-blue">
+ <div class="card-title"><span class="icon">1️⃣</span>Étiologie</div>
+ <p style="font-size:14px; color:var(--text-light);">Origine & causes fondamentales de la maladie. <em>Répond à : <strong>POURQUOI</strong> ?</em></p>
+ <ul class="styled" style="margin-top:10px;">
+ <li><strong>Causes internes :</strong> hérédité, âge, sexe, modification des structures/systèmes</li>
+ <li><strong>Causes externes :</strong> provenant de l'environnement</li>
+ <li><strong>Multifactorielle :</strong> interaction gènes × environnement (cancer, diabète, maladies cardiaques)</li>
+ <li><strong>Congénitale :</strong> anomalies présentes à la naissance (génétiques ou environnementales)</li>
+ <li><strong>Acquise :</strong> causée par des événements post-nataux</li>
+ </ul>
+ </div>
+ <div class="card card-purple">
+ <div class="card-title"><span class="icon">2️⃣</span>Pathogenèse</div>
+ <p style="font-size:14px; color:var(--text-light);">Mécanisme par lequel se déroule le développement de la maladie. <em>Répond à : <strong>COMMENT</strong> ?</em></p>
+ <ul class="styled" style="margin-top:10px;">
+ <li>Séquence d'événements <strong>cellulaires et tissulaires</strong></li>
+ <li>Du contact initial avec l'agent étiologique jusqu'à l'expression finale</li>
+ <li>Prend en compte l'étiologie, le tableau clinique et le pronostic</li>
+ <li>Associée à un déséquilibre homéostatique produisant des altérations subjectives/objectives</li>
+ </ul>
+ <div class="callout callout-warn" style="margin-top:12px; padding:10px 14px;">
+ <span class="callout-icon">⚠️</span>
+ <div class="callout-body" style="font-size:13px;"><strong>À ne pas confondre :</strong> Étiologie = cause · Pathogenèse = mécanisme de développement</div>
+ </div>
+ </div>
+ <div class="card card-pink">
+ <div class="card-title"><span class="icon">3️⃣</span>Morphologie & Histologie</div>
+ <ul class="styled">
+ <li><strong>Morphologie :</strong> structure/forme des cellules ou tissus (macro + microscopique)</li>
+ <li><strong>Histologie :</strong> étude des cellules et de la matrice extracellulaire</li>
+ <li><strong>Lésion :</strong> discontinuité pathologique/traumatique d'un organe ou tissu</li>
+ <li>Coupes histologiques → diagnostic de nombreux cancers</li>
+ <li>Outils : radiographies, échographies, biopsies, IRM, immunologie moléculaire</li>
+ </ul>
+ </div>
+ <div class="card card-green">
+ <div class="card-title"><span class="icon">4️⃣</span>Manifestations cliniques</div>
+ <table class="compare-table" style="margin-top:0;">
+ <tr>
+ <th>Symptôme</th>
+ <th>Signe</th>
+ </tr>
+ <tr>
+ <td>Plainte <strong>subjective</strong> signalée par le patient</td>
+ <td>Manifestation <strong>objective</strong> observable par un clinicien</td>
+ </tr>
+ <tr>
+ <td>Douleur, vertiges, céphalées, hallucinations</td>
+ <td>Fièvre, tachycardie, désaturation, éruption, œdème</td>
+ </tr>
+ </table>
+ <div style="margin-top:12px; font-size:13px; color:var(--text-muted);">
+ <strong style="color:var(--accent3)">Syndrome</strong> = ensemble de signes + symptômes caractéristiques d'un état pathologique<br>
+ <strong style="color:var(--accent3)">Complications</strong> = extensions indésirables possibles d'une maladie<br>
+ <strong style="color:var(--accent3)">Séquelles</strong> = lésions/déficiences causées par la maladie
+ </div>
+ </div>
+ <div class="card card-gold">
+ <div class="card-title"><span class="icon">5️⃣</span>Diagnostic</div>
+ <ul class="styled">
+ <li>Identification et désignation d'une maladie spécifique</li>
+ <li><strong>Anamnèse :</strong> antécédents médicaux passés et actuels</li>
+ <li><strong>Examen objectif :</strong> inspection, palpation, auscultation, percussion</li>
+ <li><strong>Examens complémentaires :</strong> labo, imagerie (TDM, écho…)</li>
+ <li>Analyse et interprétation → raisonnement clinique</li>
+ </ul>
+ </div>
+ <div class="card card-blue">
+ <div class="card-title"><span class="icon">6️⃣</span>Évolution clinique (Pathochronie)</div>
+ <table class="compare-table" style="margin-top:0;">
+ <tr><th>Type</th><th>Caractéristiques</th></tr>
+ <tr>
+ <td class="td-blue">Aiguë</td>
+ <td>Courte durée, début brutal, développement rapide, causes facilement identifiables, spontanément résolutive</td>
+ </tr>
+ <tr>
+ <td class="td-gold" style="color:var(--accent4) !important; font-weight:600;">Subaiguë</td>
+ <td>Intermédiaire — moins grave que l'aiguë, moins longue que la chronique</td>
+ </tr>
+ <tr>
+ <td class="td-pink">Chronique</td>
+ <td>Longue durée (mois/années), apparition insidieuse ou soudaine avec peu de manifestations initiales. Peut présenter exacerbations et rémissions.</td>
+ </tr>
+ </table>
+ </div>
+ </div>
+
+ <div class="memory-card">
+ <div class="mc-header">💜 Moyen mnémotechnique</div>
+ <div class="mc-content">
+ <em>É</em>tiologie → <em>P</em>athogenèse → <em>M</em>orphologie → <em>M</em>anifestations → <em>D</em>iagnostic → <em>É</em>volution<br>
+ <strong style="color:var(--accent5)">« Énormément de Patients Méritent Maintenant Des Examens »</strong>
+ </div>
+ </div>
+</section>
+
+<!-- ===================== SECTION 3 ===================== -->
+<section id="organisation">
+ <div class="section-header">
+ <span class="section-num">03</span>
+ <h2 class="section-title">Organisation Structurelle du Corps Humain</h2>
+ <div class="section-accent-line"></div>
+ </div>
+
+ <div class="levels-container">
+ <div class="level-row">
+ <div class="level-bar" style="background: linear-gradient(90deg,#1a3a6b,#1e4a85); max-width:100%;">
+ 🧍 <strong>Niveau Organisme (6)</strong> — Corps humain entier · ensemble de systèmes
+ </div>
+ <div class="level-desc">Tous les systèmes fonctionnant ensemble</div>
+ </div>
+ <div class="level-row">
+ <div class="level-bar" style="background: linear-gradient(90deg,#1a4a3a,#1e6050); max-width:90%;">
+ 🫀 <strong>Niveau Systémique (5)</strong> — Organes apparentés remplissant une fonction commune
+ </div>
+ <div class="level-desc">Ex : système digestif, cardiovasculaire…</div>
+ </div>
+ <div class="level-row">
+ <div class="level-bar" style="background: linear-gradient(90deg,#3a2a60,#4a3080); max-width:80%;">
+ 🧠 <strong>Niveau Organique (4)</strong> — ≥ 2 types de tissus différents, fonctions spécifiques
+ </div>
+ <div class="level-desc">Ex : estomac, cœur, cerveau, foie</div>
+ </div>
+ <div class="level-row">
+ <div class="level-bar" style="background: linear-gradient(90deg,#4a3020,#6a4530); max-width:70%;">
+ 🧱 <strong>Niveau Tissulaire (3)</strong> — Groupe de cellules travaillant ensemble
+ </div>
+ <div class="level-desc">Épithélial · Conjonctif · Musculaire · Nerveux</div>
+ </div>
+ <div class="level-row">
+ <div class="level-bar" style="background: linear-gradient(90deg,#3a2020,#5a3030); max-width:60%;">
+ 🔵 <strong>Niveau Cellulaire (2)</strong> — Unité fonctionnelle et structurelle de base
+ </div>
+ <div class="level-desc">Plus petite unité vivante · Ensemble de molécules</div>
+ </div>
+ <div class="level-row">
+ <div class="level-bar" style="background: linear-gradient(90deg,#1a2a1a,#203020); max-width:50%;">
+ ⚛️ <strong>Niveau Chimique (1)</strong> — Atomes + Molécules
+ </div>
+ <div class="level-desc">C, H, O, N, P, Ca, S — ADN, glucose…</div>
+ </div>
+ </div>
+
+ <div class="sep"></div>
+
+ <h3 style="font-family:'Playfair Display', serif; font-size:1.1rem; color:var(--heading); margin-bottom:16px;">Les 4 types de tissus fondamentaux</h3>
+ <div class="grid-2">
+ <div class="card card-blue">
+ <div class="card-title">Tissu Épithélial</div>
+ <ul class="styled">
+ <li>Recouvre la surface du corps</li>
+ <li>Tapisse les organes creux et cavités</li>
+ <li>Forme les glandes</li>
+ </ul>
+ </div>
+ <div class="card card-green">
+ <div class="card-title">Tissu Conjonctif</div>
+ <ul class="styled">
+ <li>Relie, soutient et protège les organes</li>
+ <li>Distribue les vaisseaux sanguins vers les autres tissus</li>
+ <li>Ex : tissu lâche, cartilage, os, sang</li>
+ </ul>
+ </div>
+ <div class="card card-pink">
+ <div class="card-title">Tissu Musculaire</div>
+ <ul class="styled">
+ <li>Se contracte → mouvement des parties du corps</li>
+ <li>Génère de la chaleur</li>
+ <li>3 types : squelettique, lisse, cardiaque</li>
+ </ul>
+ </div>
+ <div class="card card-purple">
+ <div class="card-title">Tissu Nerveux</div>
+ <ul class="styled">
+ <li>Transmet les informations par impulsions nerveuses</li>
+ <li>Cellules : neurones + cellules gliales</li>
+ <li>Constitue le cerveau, moelle épinière, nerfs</li>
+ </ul>
+ </div>
+ </div>
+</section>
+
+<!-- ===================== SECTION 4 ===================== -->
+<section id="homeostasie">
+ <div class="section-header">
+ <span class="section-num">04</span>
+ <h2 class="section-title">Homéostasie</h2>
+ <div class="section-accent-line"></div>
+ </div>
+
+ <div class="def-box">
+ <div class="def-term">Définition</div>
+ <div class="def-content">
+ <strong style="color:var(--accent3)">Homéostasie</strong> (du grec <em>homeo</em> = identité + <em>stasis</em> = immobilité) = État d'équilibre dynamique de l'environnement interne produit par l'interaction incessante de tous les processus régulateurs du corps humain.
+ </div>
+ </div>
+
+ <div class="callout callout-success">
+ <span class="callout-icon">⚖️</span>
+ <div class="callout-body">
+ <strong>Point clé :</strong> L'homéostasie est un état <em>dynamique</em> — l'équilibre peut varier dans une fourchette étroite compatible avec le maintien de la vie. Ex : glycémie normale = 70–110 mg/100mL · FC normale varie selon l'âge, repos, exercice, émotions, médicaments.
+ </div>
+ </div>
+
+ <div class="grid-2">
+ <div class="card card-green">
+ <div class="card-title">Fluides corporels & Homéostasie</div>
+ <table class="compare-table">
+ <tr><th>Compartiment</th><th>Description</th></tr>
+ <tr><td class="td-green">ICF (Intracellulaire)</td><td>Liquide à l'intérieur des cellules</td></tr>
+ <tr><td class="td-blue">ECF (Extracellulaire)</td><td>Liquide à l'extérieur des cellules</td></tr>
+ <tr><td style="color:var(--accent4);font-weight:600;">Liquide interstitiel</td><td>ECF dans les espaces étroits entre cellules = <em>environnement interne</em></td></tr>
+ <tr><td>Plasma sanguin</td><td>ECF dans les vaisseaux sanguins</td></tr>
+ <tr><td>Lymphe</td><td>ECF dans les vaisseaux lymphatiques</td></tr>
+ <tr><td>LCR</td><td>Liquide céphalo-rachidien (cerveau + moelle)</td></tr>
+ </table>
+ </div>
+ <div class="card card-blue">
+ <div class="card-title">Perturbations de l'homéostasie</div>
+ <ul class="styled">
+ <li><strong>Environnement externe :</strong> chaleur intense, manque d'O₂, traumatismes</li>
+ <li><strong>Environnement interne :</strong> hypoglycémie (sauter un repas), infection…</li>
+ <li><strong>Stress psychologique :</strong> exigences travail/école</li>
+ </ul>
+ <div class="callout callout-warn" style="margin-top:12px; padding:10px 14px;">
+ <span class="callout-icon">⚠️</span>
+ <div class="callout-body" style="font-size:13px;">
+ Si le déséquilibre est <strong>modéré</strong> → trouble ou maladie<br>
+ Si le déséquilibre est <strong>grave</strong> → peut entraîner la mort
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <div class="card card-gold" style="margin-top:16px;">
+ <div class="card-title"><span class="icon">💊</span>Systèmes régulateurs principaux</div>
+ <div class="grid-2">
+ <div>
+ <div style="color:var(--accent1); font-weight:600; margin-bottom:6px;">⚡ Système Nerveux</div>
+ <ul class="styled">
+ <li>Envoie des signaux électriques (impulsions nerveuses / potentiels d'action)</li>
+ <li>Réponses <strong>rapides</strong></li>
+ <li>Contrôle via barorécepteurs, thermorécepteurs, etc.</li>
+ </ul>
+ </div>
+ <div>
+ <div style="color:var(--accent4); font-weight:600; margin-bottom:6px;">🧪 Système Endocrinien</div>
+ <ul class="styled">
+ <li>Sécrète des hormones dans le sang (messagers chimiques)</li>
+ <li>Réponses <strong>plus lentes</strong> mais durables</li>
+ <li>Ex : insuline/glucagon pour la glycémie, ocytocine pour l'accouchement</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+
+ <!-- STRESS & HOMÉOSTASIE -->
+ <div class="sep"></div>
+ <h3 style="font-family:'Playfair Display', serif; font-size:1.1rem; color:var(--heading); margin-bottom:16px;">Stress et Homéostasie — Syndrome Général d'Adaptation</h3>
+
+ <div class="flow">
+ <div class="flow-step accent">1️⃣ Phase d'alerte</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-step accent">2️⃣ Phase de résistance</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-step accent">3️⃣ Phase d'épuisement</div>
+ </div>
+ <div class="grid-3">
+ <div class="card card-blue">
+ <div class="card-title" style="font-size:0.9rem;">Phase d'alerte</div>
+ <p style="font-size:13px; color:var(--text-light);">Manifestations aiguës dues au contact avec l'agent stressant. Réactions immédiates.</p>
+ </div>
+ <div class="card card-gold">
+ <div class="card-title" style="font-size:0.9rem;">Phase de résistance</div>
+ <p style="font-size:13px; color:var(--text-light);">Le corps tente de retourner à l'homéostasie. Peut s'adapter ou éliminer le problème.</p>
+ </div>
+ <div class="card card-pink">
+ <div class="card-title" style="font-size:0.9rem;">Phase d'épuisement</div>
+ <p style="font-size:13px; color:var(--text-light);">Le stress continu épuise les défenses → troubles et maladies apparaissent.</p>
+ </div>
+ </div>
+
+ <!-- RÉPONSES CELLULAIRES -->
+ <div class="card card-purple" style="margin-top:16px;">
+ <div class="card-title"><span class="icon">🔬</span>Réponses cellulaires au stress & aux agents nocifs</div>
+ <div class="flow" style="flex-direction: column; align-items: flex-start; gap:6px;">
+ <div style="display:flex; align-items:center; gap:10px; width:100%;">
+ <div class="flow-step" style="min-width:180px; background:rgba(86,217,162,0.08); border-color:var(--accent3); color:var(--accent3);">Cellule normale (Homéostasie)</div>
+ <div class="flow-arrow">←→</div>
+ <div class="flow-step" style="min-width:180px; background:rgba(79,156,249,0.08); border-color:var(--accent1); color:var(--accent1);">Stimulus léger/transitoire</div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-step" style="min-width:180px; background:rgba(86,217,162,0.08); border-color:var(--accent3); color:var(--accent3);">Lésion RÉVERSIBLE</div>
+ </div>
+ <div style="display:flex; align-items:center; gap:10px; width:100%; margin-top:6px;">
+ <div class="flow-step" style="min-width:180px; background:rgba(245,166,35,0.08); border-color:var(--accent4); color:var(--accent4);">Adaptation cellulaire</div>
+ <div class="flow-arrow">→ incapacité →</div>
+ <div class="flow-step" style="min-width:180px; background:rgba(224,95,128,0.08); border-color:var(--accent2); color:var(--accent2);">Lésion cellulaire</div>
+ <div class="flow-arrow">→ intense/progressive →</div>
+ <div class="flow-step" style="min-width:180px; background:rgba(182,123,253,0.08); border-color:var(--accent5); color:var(--accent5);">Lésion IRRÉVERSIBLE → Nécrose / Apoptose</div>
+ </div>
+ </div>
+ </div>
+</section>
+
+<!-- ===================== SECTION 5 ===================== -->
+<section id="retroaction">
+ <div class="section-header">
+ <span class="section-num">05</span>
+ <h2 class="section-title">Systèmes de Rétroaction (Feedback)</h2>
+ <div class="section-accent-line"></div>
+ </div>
+
+ <div class="def-box">
+ <div class="def-term">Définition</div>
+ <div class="def-content">
+ Cycle d'événements dans lequel un état physiologique (condition contrôlée) est <strong>continuellement surveillé, évalué et modifié</strong> pour maintenir l'homéostasie.
+ </div>
+ </div>
+
+ <!-- COMPOSANTS -->
+ <h3 style="font-family:'Playfair Display',serif; font-size:1.1rem; color:var(--heading); margin:20px 0 14px;">Les 3 composants fondamentaux</h3>
+ <div class="grid-3">
+ <div class="card card-blue">
+ <div class="card-title"><span class="icon">👁️</span>Récepteur</div>
+ <p style="font-size:14px; color:var(--text-light); margin-bottom:10px;">Structure corporelle qui <strong>surveille</strong> les changements d'une condition contrôlée et envoie des informations au centre de contrôle.</p>
+ <p style="font-size:12px; color:var(--text-muted);">Voie <strong>afférente</strong> (af- = vers le centre)</p>
+ <p style="font-size:12px; color:var(--text-muted); margin-top:4px;">Ex : barorécepteurs, thermorécepteurs, cellules nerveuses sensibles à l'étirement</p>
+ </div>
+ <div class="card card-gold">
+ <div class="card-title"><span class="icon">🧠</span>Centre de contrôle</div>
+ <p style="font-size:14px; color:var(--text-light); margin-bottom:10px;">Fixe la plage de valeurs normales, <strong>évalue</strong> les informations reçues et génère une commande de réponse.</p>
+ <p style="font-size:12px; color:var(--text-muted);">Voie <strong>efférente</strong> (ef- = loin du centre)</p>
+ <p style="font-size:12px; color:var(--text-muted); margin-top:4px;">Principaux : <strong>système nerveux</strong> (rapide) et <strong>système endocrinien</strong> (lent)</p>
+ </div>
+ <div class="card card-green">
+ <div class="card-title"><span class="icon">💪</span>Effecteur</div>
+ <p style="font-size:14px; color:var(--text-light); margin-bottom:10px;">Reçoit les signaux et <strong>produit une réponse</strong> qui modifie la condition contrôlée.</p>
+ <p style="font-size:12px; color:var(--text-muted); margin-top:4px;">Ex : cœur, vaisseaux sanguins, muscles, foie, glandes sudoripares</p>
+ </div>
+ </div>
+
+ <!-- TYPES DE RÉTROACTION -->
+ <div class="sep"></div>
+
+ <div class="grid-2">
+ <div class="feedback-box fb-neg">
+ <div class="fb-title">🔽 Rétroaction Négative</div>
+ <p style="font-size:14px; color:var(--text-light); margin-bottom:12px;">
+ <strong>Inverse</strong> le changement provoqué par le stimulus initial → ramène la condition contrôlée à la normale.
+ </p>
+ <ul class="styled">
+ <li>Le plus fréquent dans l'organisme</li>
+ <li>Régule des conditions <strong>stables sur le long terme</strong></li>
+ <li>L'activité ralentit puis s'arrête quand la condition revient à la normale</li>
+ </ul>
+ <div style="background:rgba(86,217,162,0.06); border-radius:8px; padding:12px; margin-top:12px; font-size:13px; color:var(--text-light);">
+ <strong style="color:var(--accent3)">Exemple — Pression artérielle :</strong><br>
+ PA ↑ → Barorécepteurs détectent → Cerveau reçoit → Cœur ralentit + Vaisseaux se dilatent → PA ↓ → Homéostasie rétablie
+ </div>
+ <div style="background:rgba(86,217,162,0.06); border-radius:8px; padding:12px; margin-top:8px; font-size:13px; color:var(--text-light);">
+ <strong style="color:var(--accent3)">Exemple — Glycémie :</strong><br>
+ Glucose ↑ → Pancréas (cellules β) libère insuline → Cellules absorbent glucose → Foie stocke en glycogène → Glycémie ↓ → Homéostasie<br>
+ Glucose ↓ → Pancréas (cellules α) libère glucagon → Foie libère glucose → Glycémie ↑
+ </div>
+ <div style="background:rgba(86,217,162,0.06); border-radius:8px; padding:12px; margin-top:8px; font-size:13px; color:var(--text-light);">
+ <strong style="color:var(--accent3)">Exemple — Température corporelle :</strong><br>
+ Température ↑ → Thermorécepteurs cutanés/cerveau → Centre de régulation thermique (cerveau) → Glandes sudoripares → Transpiration → Température ↓
+ </div>
+ </div>
+ <div class="feedback-box fb-pos">
+ <div class="fb-title">🔼 Rétroaction Positive</div>
+ <p style="font-size:14px; color:var(--text-light); margin-bottom:12px;">
+ <strong>Intensifie, renforce</strong> le changement provoqué par le stimulus initial. Nécessite un mécanisme externe pour s'arrêter.
+ </p>
+ <ul class="styled">
+ <li>Moins fréquente, pour des événements <strong>peu fréquents</strong></li>
+ <li>Si non interrompue → peut devenir pathologique ("s'emballer")</li>
+ <li>Un événement extérieur doit la désactiver</li>
+ </ul>
+ <div style="background:rgba(224,95,128,0.06); border-radius:8px; padding:12px; margin-top:12px; font-size:13px; color:var(--text-light);">
+ <strong style="color:var(--accent2)">Exemple — Accouchement :</strong><br>
+ Contractions → Fœtus pousse col → Étirement du col → Récepteurs d'étirement → Cerveau → Libère ocytocine → Contractions plus fortes → Plus d'étirement → ... → Naissance du bébé (interruption du cycle)
+ </div>
+ <div style="background:rgba(224,95,128,0.06); border-radius:8px; padding:12px; margin-top:8px; font-size:13px; color:var(--text-light);">
+ <strong style="color:var(--accent2)">Exemple — Coagulation sanguine :</strong><br>
+ Blessure → Plaquettes s'accumulent → Libèrent des substances chimiques → Attirent plus de plaquettes → Caillot se forme (interruption = guérison)
+ </div>
+ <div class="callout callout-danger" style="margin-top:12px; padding:10px 14px;">
+ <span class="callout-icon">🚨</span>
+ <div class="callout-body" style="font-size:13px;"><strong>Rétroaction positive pathologique :</strong> Perte de sang importante → PA ↓ → Cœur faiblit → PA ↓ encore → ... → Choc et mort si sans intervention</div>
+ </div>
+ </div>
+ </div>
+
+ <!-- FORMULE GAIN -->
+ <div class="card card-purple" style="margin-top:16px;">
+ <div class="card-title"><span class="icon">📊</span>Degré d'efficacité des systèmes de rétroaction (Gain)</div>
+ <div class="formula">
+ Gain = Correction / Erreur
+ </div>
+ <div class="callout callout-info" style="margin-top:10px; padding:10px 14px;">
+ <span class="callout-icon">🔢</span>
+ <div class="callout-body" style="font-size:13px;">
+ <strong>Exemple PA :</strong> PA initiale = 100 mmHg → Transfusion → Sans barorécepteur : PA = 175 mmHg · Avec barorécepteur : PA = 125 mmHg<br>
+ Correction = -50 mmHg · Erreur = +25 mmHg<strong>Gain = -50/25 = -2</strong><br>
+ La température corporelle a un gain de <strong>-33</strong> (système très efficace)
+ </div>
+ </div>
+ </div>
+
+ <!-- TABLEAU COMPARATIF -->
+ <div class="card card-blue" style="margin-top:16px;">
+ <div class="card-title">Comparaison Rétroaction Négative vs Positive</div>
+ <table class="compare-table">
+ <tr>
+ <th>Critère</th>
+ <th class="td-green">Rétroaction Négative</th>
+ <th class="td-pink">Rétroaction Positive</th>
+ </tr>
+ <tr>
+ <td>Effet sur le stimulus</td>
+ <td>Inverse / annule</td>
+ <td>Renforce / amplifie</td>
+ </tr>
+ <tr>
+ <td>Fréquence</td>
+ <td>Très fréquente (conditions stables)</td>
+ <td>Peu fréquente (événements ponctuels)</td>
+ </tr>
+ <tr>
+ <td>Arrêt du mécanisme</td>
+ <td>S'arrête seul quand condition = normale</td>
+ <td>Nécessite un événement externe</td>
+ </tr>
+ <tr>
+ <td>Exemples</td>
+ <td>Régulation PA, glycémie, température</td>
+ <td>Accouchement, coagulation sanguine</td>
+ </tr>
+ <tr>
+ <td>Risque pathologique</td>
+ <td>Faible si mécanisme fonctionnel</td>
+ <td>Élevé si non interrompu (choc hémorragique)</td>
+ </tr>
+ </table>
+ </div>
+
+ <div class="memory-card">
+ <div class="mc-header">💜 Astuce de mémorisation</div>
+ <div class="mc-content">
+ <em>Rétroaction négative</em> = comme un thermostat → quand il fait trop chaud, il coupe le chauffage.<br>
+ <em>Rétroaction positive</em> = comme un microphone trop près d'un haut-parleur → sifflements qui s'amplifient jusqu'à ce qu'on le coupe.
+ </div>
+ </div>
+</section>
+
+<!-- ===================== SECTION 6 ===================== -->
+<section id="diagnostic">
+ <div class="section-header">
+ <span class="section-num">06</span>
+ <h2 class="section-title">Diagnostic & Tests Cliniques</h2>
+ <div class="section-accent-line"></div>
+ </div>
+
+ <div class="grid-2">
+ <div class="card card-blue">
+ <div class="card-title"><span class="icon">🔍</span>Processus diagnostique</div>
+ <div class="flow" style="flex-direction:column; gap:6px;">
+ <div class="flow-step">Signes & Symptômes</div>
+ <div class="flow-arrow" style="transform:rotate(90deg);">↓</div>
+ <div class="flow-step">Évaluation médicale (anamnèse)</div>
+ <div class="flow-arrow" style="transform:rotate(90deg);">↓</div>
+ <div class="flow-step">Hypothèses diagnostiques</div>
+ <div class="flow-arrow" style="transform:rotate(90deg);">↓</div>
+ <div class="flow-step">Examens complémentaires</div>
+ <div class="flow-arrow" style="transform:rotate(90deg);">↓</div>
+ <div class="flow-step accent">Diagnostic</div>
+ <div class="flow-arrow" style="transform:rotate(90deg);">↓</div>
+ <div class="flow-step">Pronostic → Thérapeutique</div>
+ </div>
+ </div>
+ <div>
+ <div class="card card-green">
+ <div class="card-title"><span class="icon">🏥</span>Techniques non invasives d'examen</div>
+ <ul class="styled">
+ <li><strong>Inspection :</strong> observation du corps</li>
+ <li><strong>Palpation :</strong> palper la surface avec les mains</li>
+ <li><strong>Auscultation :</strong> écouter les sons (stéthoscope)</li>
+ <li><strong>Percussion :</strong> taper la surface, écouter l'écho</li>
+ <li><strong>Signes vitaux :</strong> T°, pouls, FR, PA</li>
+ </ul>
+ </div>
+ <div class="card card-gold" style="margin-top:16px;">
+ <div class="card-title"><span class="icon">📈</span>Pronostic</div>
+ <ul class="styled">
+ <li>Prévoir l'évolution de la maladie</li>
+ <li>Tient compte des connaissances actuelles sur la maladie</li>
+ <li>ET de l'état clinique individuel du patient</li>
+ <li>Important pour <strong>établir des objectifs</strong> thérapeutiques</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+
+ <div class="sep"></div>
+
+ <!-- PARAMÈTRES DE TESTS -->
+ <h3 style="font-family:'Playfair Display',serif; font-size:1.1rem; color:var(--heading); margin-bottom:16px;">Paramètres d'interprétation des tests diagnostiques</h3>
+
+ <div class="grid-2">
+ <div class="card card-blue">
+ <div class="card-title">Fiabilité (Reliability)</div>
+ <p style="font-size:14px; color:var(--text-light);">Mesure dans laquelle une observation, si répétée, donne le <strong>même résultat</strong>. Liée à la calibration de l'appareil et la compétence de l'opérateur.</p>
+ </div>
+ <div class="card card-purple">
+ <div class="card-title">Validité (Validity)</div>
+ <p style="font-size:14px; color:var(--text-light);">Mesure dans laquelle un outil <strong>mesure réellement ce qu'il est censé mesurer</strong>. Ex : comparer tensiomètre vs cathéter artériel invasif.</p>
+ </div>
+ <div class="card card-green">
+ <div class="card-title">Sensibilité (Sensitivity)</div>
+ <p style="font-size:14px; color:var(--text-light);">Proportion de personnes <strong>malades</strong> correctement identifiées positives = <strong>Vrais Positifs</strong>.</p>
+ <div class="key-concept">
+ <span class="kc-icon">💡</span>
+ <div class="kc-text">Si test très sensible est <strong style="color:var(--accent4)">négatif</strong> → maladie exclue ("rule out")</div>
+ </div>
+ </div>
+ <div class="card card-pink">
+ <div class="card-title">Spécificité (Specificity)</div>
+ <p style="font-size:14px; color:var(--text-light);">Proportion de personnes <strong>non malades</strong> correctement identifiées négatives = <strong>Vrais Négatifs</strong>.</p>
+ <div class="key-concept">
+ <span class="kc-icon">💡</span>
+ <div class="kc-text">Spécificité 95% → 5% de <strong style="color:var(--accent4)">faux positifs</strong> → stress inutile pour le patient</div>
+ </div>
+ </div>
+ </div>
+
+ <!-- TABLEAU 2x2 -->
+ <div class="card card-gold" style="margin-top:16px;">
+ <div class="card-title"><span class="icon">📊</span>Tableau 2×2 Résultats de Tests</div>
+ <table class="compare-table">
+ <tr>
+ <th></th>
+ <th>Maladie PRÉSENTE</th>
+ <th>Maladie ABSENTE</th>
+ </tr>
+ <tr>
+ <td><strong>Test POSITIF</strong></td>
+ <td class="td-green">✅ Vrai Positif (a)</td>
+ <td class="td-pink">❌ Faux Positif (b)</td>
+ </tr>
+ <tr>
+ <td><strong>Test NÉGATIF</strong></td>
+ <td class="td-pink">❌ Faux Négatif (c)</td>
+ <td class="td-green">✅ Vrai Négatif (d)</td>
+ </tr>
+ </table>
+ <div class="formula" style="margin-top:12px; text-align:left; font-size:13px;">
+ Sensibilité = a / (a+c) &nbsp;·&nbsp; Spécificité = d / (b+d)<br>
+ Valeur Prédictive Positive = a / (a+b) &nbsp;·&nbsp; Valeur Prédictive Négative = d / (c+d)
+ </div>
+ </div>
+
+ <div class="callout callout-warn" style="margin-top:16px;">
+ <span class="callout-icon">⚠️</span>
+ <div class="callout-body">
+ <strong>Valeur prédictive :</strong> Dépend davantage de la <em>prévalence</em> de la maladie dans la population que de la sensibilité/spécificité. La valeur prédictive positive augmente avec la prévalence.
+ </div>
+ </div>
+</section>
+
+<!-- ===================== SECTION 7 ===================== -->
+<section id="epidemio">
+ <div class="section-header">
+ <span class="section-num">07</span>
+ <h2 class="section-title">Épidémiologie & Santé des Populations</h2>
+ <div class="section-accent-line"></div>
+ </div>
+
+ <div class="def-box">
+ <div class="def-term">Épidémiologie</div>
+ <div class="def-content">
+ Science qui étudie l'apparition des maladies dans les populations humaines — leur distribution, leurs facteurs de risque, et les moyens de les contrôler, prévenir et éliminer.
+ </div>
+ </div>
+
+ <div class="grid-2">
+ <div class="card card-blue">
+ <div class="card-title"><span class="icon">📉</span>Incidence vs Prévalence</div>
+ <table class="compare-table">
+ <tr>
+ <th></th>
+ <th class="td-blue">Incidence</th>
+ <th class="td-pink">Prévalence</th>
+ </tr>
+ <tr>
+ <td><strong>Définition</strong></td>
+ <td>Nombre de <strong>nouveaux</strong> cas dans une population à risque sur une période</td>
+ <td>Nombre de cas <strong>existants</strong> à un moment donné</td>
+ </tr>
+ <tr>
+ <td><strong>Mesure</strong></td>
+ <td>Risque de développer la maladie</td>
+ <td>Charge de la maladie dans la population</td>
+ </tr>
+ <tr>
+ <td><strong>Expression</strong></td>
+ <td>Taux (cas/1 000 ou 100 000/an)</td>
+ <td>Proportion (cas existants/pop. totale)</td>
+ </tr>
+ </table>
+ </div>
+ <div class="card card-green">
+ <div class="card-title"><span class="icon">🛡️</span>Niveaux de Prévention</div>
+ <ul class="styled">
+ <li><strong class="badge badge-green">Primaire</strong> — Prévenir l'apparition de la maladie (vaccination, alimentation saine, exercice)</li>
+ <li><strong class="badge badge-blue">Secondaire</strong> — Dépistage précoce, diagnostic et traitement rapide</li>
+ <li><strong class="badge badge-purple">Tertiaire</strong> — Réduire les séquelles, réhabilitation, améliorer qualité de vie</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="card card-purple" style="margin-top:16px;">
+ <div class="card-title"><span class="icon">📚</span>Facteurs de risque & Études épidémiologiques</div>
+ <div class="grid-2">
+ <div>
+ <div style="color:var(--accent5); font-weight:600; margin-bottom:8px;">Facteurs de risque</div>
+ <ul class="styled">
+ <li>Multiples facteurs qui <strong>prédisposent</strong> à une maladie</li>
+ <li>Âge, race, sexe, habitudes alimentaires, mode de vie, localisation géographique</li>
+ <li>Permettent d'identifier des populations à risque</li>
+ </ul>
+ </div>
+ <div>
+ <div style="color:var(--accent5); font-weight:600; margin-bottom:8px;">Types d'études</div>
+ <ul class="styled">
+ <li><strong>Études transversales :</strong> mesure à un instant T</li>
+ <li><strong>Études cas-témoins :</strong> comparaison malades vs sains</li>
+ <li><strong>Études de cohorte :</strong> suivi prospectif d'une population</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+
+ <div class="callout callout-info" style="margin-top:16px;">
+ <span class="callout-icon">🌍</span>
+ <div class="callout-body">
+ <strong>XXIe siècle :</strong> La mondialisation (traverser les continents en quelques heures) a transformé des maladies autrefois régionales en menaces pour l'ensemble des populations mondiales. La santé individuelle est étroitement liée à celle de la communauté.
+ </div>
+ </div>
+
+ <!-- PRATIQUE FONDÉE SUR DES PREUVES -->
+ <div class="card card-gold" style="margin-top:16px;">
+ <div class="card-title"><span class="icon">📋</span>Pratique Fondée sur des Preuves (Evidence-Based Practice)</div>
+ <ul class="styled">
+ <li>Les études épidémiologiques servent de base à la <strong>prise de décisions cliniques</strong></li>
+ <li>Guideline et lignes directrices pratiques basées sur les meilleures preuves disponibles</li>
+ <li>Allocation des fonds de soins de santé</li>
+ <li>Élaboration de politiques liées à la santé publique</li>
+ </ul>
+ </div>
+</section>
+
+<!-- FOOTER -->
+<div class="sep"></div>
+<div style="background:var(--card); border:1px solid var(--border); border-radius:12px; padding:24px 28px; margin-top:32px;">
+ <div style="font-family:'JetBrains Mono',monospace; font-size:11px; letter-spacing:2px; color:var(--accent5); text-transform:uppercase; margin-bottom:16px;">📌 Résumé Express — Les points essentiels</div>
+ <div class="grid-3">
+ <div class="key-concept">
+ <span class="kc-icon">🔬</span>
+ <div class="kc-text"><strong>Physiopatho</strong> = physiologie de la santé altérée. Causes → mécanismes → signes & symptômes.</div>
+ </div>
+ <div class="key-concept">
+ <span class="kc-icon">🌿</span>
+ <div class="kc-text"><strong>Santé OMS 1948</strong> = bien-être physique + mental + social. Pas seulement absence de maladie.</div>
+ </div>
+ <div class="key-concept">
+ <span class="kc-icon">⚖️</span>
+ <div class="kc-text"><strong>Homéostasie</strong> = équilibre dynamique. Perturbé → systèmes de rétroaction compensent.</div>
+ </div>
+ <div class="key-concept">
+ <span class="kc-icon">🔽</span>
+ <div class="kc-text"><strong>Rétroaction négative</strong> = inverse le stimulus. La plus commune. Ex : glycémie, PA, température.</div>
+ </div>
+ <div class="key-concept">
+ <span class="kc-icon">🔼</span>
+ <div class="kc-text"><strong>Rétroaction positive</strong> = amplifie le stimulus. Rare. Ex : accouchement, coagulation.</div>
+ </div>
+ <div class="key-concept">
+ <span class="kc-icon">🎯</span>
+ <div class="kc-text"><strong>6 aspects de la maladie :</strong> Étiologie · Pathogenèse · Morphologie · Manifestations · Diagnostic · Évolution.</div>
+ </div>
+ </div>
+</div>
+
+</main>
+
+<footer>
+ Fiche de Révision · Physiopathologie 1 · Licence en Physiothérapie &nbsp;|&nbsp; Sources : Grossman & Porth · Tortora & Derrickson
+</footer>
+
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-01.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+</body>
+</html>

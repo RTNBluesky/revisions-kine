@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Maladies des Voies Respiratoires Inférieures — Pneumonie & Tuberculose — Fiche de révision complète">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../../assets/css/acces.css">
+<script src="../../../../../../assets/js/acces.js"></script>
+<title>Fiche de Révision — Maladies des Voies Respiratoires Inférieures</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../../../assets/css/chrome.css">
+<style>
+ :root {
+ --bg: #161922;
+ --paper: #ff8fa3;
+ --ink: #0f1117;
+ --ink-light: #1a1d2a;
+ --accent: #ff5c6b;
+ --accent2: #f472b6;
+ --accent3: #ff6b9d;
+ --gold: #ff8fa3;
+ --muted: #6a7388;
+ --border: #3a4060;
+ --highlight: #ff8fa3;
+ --alert: #ff8fa3;
+ --info: #ff8fa3;
+ --success: #ff6b9d;
+ }
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+ body { font-family: 'Source Serif 4', Georgia, serif; background: var(--bg); color: var(--ink); font-size: 15px; line-height: 1.7; }
+ .masthead { background: var(--ink); color: var(--bg); padding: 3rem 2rem 2rem; text-align: center; position: relative; overflow: hidden; }
+ .masthead::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(45deg, transparent, transparent 40px, rgba(255,255,255,0.02) 40px, rgba(255,255,255,0.02) 41px); }
+ .masthead .label { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; letter-spacing: 0.3em; color: var(--gold); text-transform: uppercase; margin-bottom: 0.8rem; }
+ .masthead h1 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 900; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
+ .masthead h1 span { color: var(--gold); }
+ .masthead .subtitle { font-style: italic; color: #ff8fa3; font-size: 0.95rem; }
+ .masthead .meta { margin-top: 1.2rem; display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; }
+ .masthead .meta span { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; letter-spacing: 0.15em; color: #6a7388; text-transform: uppercase; }
+ .toc { background: var(--paper); border-bottom: 2px solid var(--border); padding: 1.5rem 2rem; display: flex; gap: 0.5rem 1.5rem; flex-wrap: wrap; justify-content: center; }
+ .toc a { font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; color: var(--accent2); text-decoration: none; letter-spacing: 0.05em; padding: 0.2rem 0.5rem; border: 1px solid transparent; border-radius: 2px; transition: all 0.2s; }
+ .toc a:hover { border-color: var(--accent2); background: var(--info); }
+ .content { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
+ .section { margin-bottom: 3rem; }
+ .section-header { display: flex; align-items: center; gap: 1rem; margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--ink); }
+ .section-num { font-family: 'Playfair Display', serif; font-size: 2.5rem; font-weight: 900; color: var(--border); line-height: 1; min-width: 2.5rem; }
+ .section-title { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 700; color: var(--accent); line-height: 1.2; }
+ .section-title small { display: block; font-family: 'Source Serif 4', serif; font-size: 0.8rem; font-weight: 400; font-style: italic; color: var(--muted); margin-top: 0.1rem; }
+ .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
+ .grid-2 { grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); }
+ .grid-3 { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+ .card { background: var(--paper); border: 1px solid var(--border); border-radius: 2px; padding: 1.2rem 1.4rem; position: relative; }
+ .card::before { content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%; border-radius: 2px 0 0 2px; }
+ .card.red::before { background: var(--accent); }
+ .card.blue::before { background: var(--accent2); }
+ .card.green::before { background: var(--accent3); }
+ .card.gold::before { background: var(--gold); }
+ .card.muted::before { background: var(--muted); }
+ .card h3 { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; margin-bottom: 0.7rem; color: var(--ink); }
+ .card h3.accent { color: var(--accent); }
+ .card h3.blue { color: var(--accent2); }
+ .card h3.green { color: var(--accent3); }
+ ul.list { list-style: none; padding: 0; }
+ ul.list li { padding: 0.25rem 0 0.25rem 1.2rem; position: relative; border-bottom: 1px dotted #e8eaf0; font-size: 0.9rem; }
+ ul.list li:last-child { border-bottom: none; }
+ ul.list li::before { content: '→'; position: absolute; left: 0; color: var(--gold); font-size: 0.8rem; }
+ .box { padding: 1rem 1.2rem; border-radius: 2px; margin-bottom: 1rem; font-size: 0.9rem; border-left: 4px solid; }
+ .box.warning { background: var(--alert); border-color: var(--accent); }
+ .box.info { background: var(--info); border-color: var(--accent2); }
+ .box.success { background: var(--success); border-color: var(--accent3); }
+ .box.highlight { background: var(--highlight); border-color: var(--gold); }
+ .box strong { display: block; margin-bottom: 0.3rem; font-family: 'Playfair Display', serif; font-size: 0.95rem; }
+ .table-wrap { overflow-x: auto; margin-bottom: 1rem; }
+ table { width: 100%; border-collapse: collapse; font-size: 0.87rem; }
+ thead tr { background: var(--ink); color: var(--bg); }
+ thead th { padding: 0.6rem 0.8rem; text-align: left; font-family: 'JetBrains Mono', monospace; font-size: 0.72rem; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; }
+ tbody tr { border-bottom: 1px solid var(--border); }
+ tbody tr:nth-child(even) { background: rgba(0,0,0,0.02); }
+ tbody td { padding: 0.55rem 0.8rem; vertical-align: top; }
+ tbody td:first-child { font-weight: 600; color: var(--accent); white-space: nowrap; }
+ .flow { display: flex; align-items: stretch; gap: 0; flex-wrap: wrap; margin: 1rem 0; }
+ .flow-step { background: var(--paper); border: 1px solid var(--border); padding: 0.7rem 1rem; font-size: 0.82rem; text-align: center; min-width: 110px; flex: 1; position: relative; }
+ .flow-step strong { display: block; font-family: 'Playfair Display', serif; font-size: 0.9rem; color: var(--accent); }
+ .flow-step:not(:last-child)::after { content: '▶'; position: absolute; right: -10px; top: 50%; transform: translateY(-50%); color: var(--gold); font-size: 0.7rem; z-index: 1; background: var(--bg); }
+ .keyfact { display: flex; align-items: flex-start; gap: 0.8rem; background: var(--paper); border: 1px solid var(--border); padding: 0.8rem 1rem; margin-bottom: 0.6rem; font-size: 0.88rem; }
+ .keyfact .icon { font-size: 1.2rem; min-width: 1.5rem; line-height: 1.4; }
+ .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem; }
+ .tag { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; padding: 0.2rem 0.5rem; border-radius: 2px; letter-spacing: 0.05em; text-transform: uppercase; }
+ .tag.red { background: var(--alert); color: var(--accent); border: 1px solid #ff8fa3; }
+ .tag.blue { background: var(--info); color: var(--accent2); border: 1px solid #f472b6; }
+ .tag.green { background: var(--success); color: var(--accent3); border: 1px solid #ff6b9d; }
+ .tag.gold { background: var(--highlight); color: #ff8fa3; border: 1px solid #ff8fa3; }
+ .divider { text-align: center; margin: 2rem 0 1.5rem; position: relative; }
+ .divider::before { content: ''; position: absolute; top: 50%; left: 0; right: 0; height: 1px; background: var(--border); }
+ .divider span { position: relative; background: var(--bg); padding: 0 1rem; font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--accent); font-style: italic; }
+ .remember { background: linear-gradient(135deg, #0f1117 0%, #1a1d2a 100%); color: #ff8fa3; padding: 1.5rem 1.8rem; border-radius: 2px; margin-top: 1rem; }
+ .remember h4 { font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--gold); margin-bottom: 0.8rem; letter-spacing: 0.05em; }
+ .remember ul { list-style: none; }
+ .remember ul li { padding: 0.3rem 0 0.3rem 1.4rem; position: relative; font-size: 0.88rem; border-bottom: 1px solid rgba(255,255,255,0.06); }
+ .remember ul li:last-child { border-bottom: none; }
+ .remember ul li::before { content: '✦'; position: absolute; left: 0; color: var(--gold); font-size: 0.6rem; top: 0.5rem; }
+ footer { text-align: center; padding: 2rem; border-top: 1px solid var(--border); font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--muted); letter-spacing: 0.1em; }
+ @media (max-width: 600px) {
+ .masthead { padding: 2rem 1rem 1.5rem; }
+ .content { padding: 1rem 1rem 3rem; }
+ .flow { flex-direction: column; }
+ .flow-step:not(:last-child)::after { content: '▼'; right: auto; left: 50%; transform: translateX(-50%); top: auto; bottom: -12px; }
+ }
+</style>
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/physio-patho.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-theme.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
+</head>
+<body>
+<a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
+<div class="page-toggle"><div class="pt-inner"><a href="../../qcm/tp/tp-12.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<div class="masthead">
+ <div class="label">Physiopathologie · Licence en Physiothérapie · 1ère Année</div>
+ <h1>Maladies des Voies<br><span>Respiratoires Inférieures</span></h1>
+ <p class="subtitle">Pneumonie &amp; Tuberculose — Fiche de révision complète</p>
+ <div class="meta">
+ 
+ 
+ <span>2e Semestre</span>
+ </div>
+</div>
+
+<nav class="toc">
+ <a href="#epidemio">01 · Épidémiologie</a>
+ <a href="#pneumonie">02 · Pneumonie</a>
+ <a href="#pathogenese">03 · Pathogenèse</a>
+ <a href="#classification">04 · Classification</a>
+ <a href="#clinique">05 · Clinique</a>
+ <a href="#diagnostic">06 · Diagnostic</a>
+ <a href="#traitement-pneu">07 · Traitement Pneumonie</a>
+ <a href="#tuberculose">08 · Tuberculose</a>
+ <a href="#tb-patho">09 · Physiopath. TB</a>
+ <a href="#tb-clinique">10 · Clinique TB</a>
+ <a href="#tb-diagnostic">11 · Diagnostic TB</a>
+ <a href="#tb-traitement">12 · Traitement TB</a>
+ <a href="#tb-extra">13 · TB Extrapulmonaire</a>
+</nav>
+
+<div class="content">
+
+ <!-- 01 EPIDEMIO -->
+ <div class="section" id="epidemio">
+ <div class="section-header">
+ <div class="section-num">01</div>
+ <div class="section-title">Épidémiologie mondiale<small>Fardeau global des maladies respiratoires</small></div>
+ </div>
+ <div class="grid grid-3">
+ <div class="card red">
+ <h3 class="accent">Top 10 mondial (2021)</h3>
+ <ul class="list">
+ <li><strong>4.</strong> BPCO (~3 millions décès)</li>
+ <li><strong>5.</strong> Infections respiratoires inférieures</li>
+ <li><strong>6.</strong> Cancers trachée/bronches/poumon</li>
+ <li><strong>10.</strong> Tuberculose</li>
+ </ul>
+ <div class="tags"><span class="tag red">4 causes sur 10 sont respiratoires</span></div>
+ </div>
+ <div class="card blue">
+ <h3 class="blue">Portugal 2021 — Femmes (/ 100 000)</h3>
+ <ul class="list">
+ <li>AVC : 127,9</li>
+ <li>Cardiopathie ischémique : 120,4</li>
+ <li>COVID-19 : 89,8</li>
+ <li>Infections resp. inf. : 55,9</li>
+ <li>BPCO : 33,5</li>
+ </ul>
+ </div>
+ <div class="card green">
+ <h3 class="green">Portugal 2021 — Hommes (/ 100 000)</h3>
+ <ul class="list">
+ <li>Cardiopathie ischémique : 124,1</li>
+ <li>COVID-19 : 112,9</li>
+ <li>Cancers trachée/bronches : 71</li>
+ <li>Infections resp. inf. : 58,7</li>
+ <li>BPCO : 47,5</li>
+ </ul>
+ </div>
+ </div>
+ <div class="box highlight" style="margin-top:1rem;">
+ <strong>🏥 Impact sanitaire</strong>
+ Première cause de consultations médicales, hospitalisations et absentéisme (tous âges). La <strong>pneumonie est la 1ère cause de mortalité infantile</strong> dans le monde. La tuberculose touche encore une grande partie de la population mondiale.
+ </div>
+ </div>
+
+ <!-- 02 PNEUMONIE -->
+ <div class="section" id="pneumonie">
+ <div class="section-header">
+ <div class="section-num">02</div>
+ <div class="section-title">Pneumonie — Définition &amp; Mécanismes<small>Infection du parenchyme pulmonaire</small></div>
+ </div>
+ <div class="box info">
+ <strong>📌 Définition</strong>
+ Infection du parenchyme pulmonaire survenant lorsque les <strong>mécanismes de défense locaux sont altérés</strong> ou lorsque l'immunité est faible.
+ </div>
+ <div class="grid">
+ <div class="card red">
+ <h3 class="accent">Mécanismes de défense locaux altérés</h3>
+ <ul class="list">
+ <li><strong>Réflexe de toux supprimé</strong> — douleur thoracique, chirurgie thoracique/abdominale, médicaments, anesthésie, AVC, sonde nasogastrique, troubles neuromusculaires</li>
+ <li><strong>Dysfonctionnement mucociliaire</strong> — tabagisme, problèmes génétiques, maladies virales, inhalation de fumée toxique</li>
+ <li><strong>Accumulation de sécrétions</strong> — fibrose kystique, obstruction bronchique</li>
+ <li><strong>Réduction capacité macrophages</strong> — alcool, tabagisme</li>
+ </ul>
+ </div>
+ <div class="card gold">
+ <h3>Faible immunité — Facteurs</h3>
+ <ul class="list">
+ <li>Immunodéficience congénitale ou acquise</li>
+ <li>Bactéries hyperrésistantes</li>
+ <li>Procédures invasives (injections, intubations)</li>
+ </ul>
+ <div class="box warning" style="margin-top:0.8rem; padding:0.7rem; font-size:0.85rem;">
+ <strong>⚠ Mécanismes de défense physiologiques</strong>
+ Modification du flux expiratoire · Transport mucociliaire · Barrière mécanique
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <!-- 03 PATHOGENESE -->
+ <div class="section" id="pathogenese">
+ <div class="section-header">
+ <div class="section-num">03</div>
+ <div class="section-title">Pathogenèse de la Pneumonie<small>Progression histologique en 4 étapes</small></div>
+ </div>
+ <div class="flow">
+ <div class="flow-step"><strong>Inhalation / Œdème</strong>Bactéries → espaces alvéolaires · Air remplacé par exsudat</div>
+ <div class="flow-step" style="border-color:var(--accent);"><strong>Hépatisation rouge</strong>Réponse inflammatoire · Capillaires congestifs · GR + PMN</div>
+ <div class="flow-step" style="border-color:var(--accent2);"><strong>Hépatisation grise</strong>Macrophages remplacent les leucocytes · Fibrine · Consolidation</div>
+ <div class="flow-step" style="border-color:var(--accent3);"><strong>Résolution</strong>Guérison complète ou complications</div>
+ </div>
+ <div class="grid">
+ <div class="card gold">
+ <h3>Structures alvéolaires impliquées</h3>
+ <ul class="list">
+ <li>Pneumocytes type I (paroi alvéolaire)</li>
+ <li>Pneumocytes type II (surfactant)</li>
+ <li>Capillaires (congestifs)</li>
+ <li>PMN — polynucléaires neutrophiles</li>
+ <li>Macrophages alvéolaires</li>
+ <li>Fibrine (phase grise)</li>
+ </ul>
+ </div>
+ <div class="card muted">
+ <h3>Neutrophiles vs Macrophages dans l'inflammation</h3>
+ <table style="font-size:0.82rem; width:100%;">
+ <thead><tr><th>Neutrophiles (PMN)</th><th>Macrophages</th></tr></thead>
+ <tbody>
+ <tr><td>Réponse rapide (phase aiguë)</td><td>Réponse tardive (nettoyage)</td></tr>
+ <tr><td>Hépatisation rouge</td><td>Hépatisation grise</td></tr>
+ <tr><td>Dégranulation + phagocytose immédiate</td><td>Phagocytose longue durée</td></tr>
+ <tr><td>Durée de vie courte</td><td>Durée de vie longue</td></tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+ </div>
+
+ <!-- 04 CLASSIFICATION -->
+ <div class="section" id="classification">
+ <div class="section-header">
+ <div class="section-num">04</div>
+ <div class="section-title">Classification des Pneumonies<small>Par agent et milieu d'acquisition</small></div>
+ </div>
+ <div class="table-wrap">
+ <table>
+ <thead><tr><th>Type</th><th>Définition</th><th>Principaux agents</th><th>Caractéristiques radio</th></tr></thead>
+ <tbody>
+ <tr><td>Communautaire (60–80 %)</td><td>Diagnostiquée dans les 48h après admission</td><td>S. pneumoniae, H. influenzae, Mycoplasma, Virus (RSV, influenza, adénovirus)</td><td>Variable selon agent</td></tr>
+ <tr><td>Nosocomiale</td><td>Diagnostic ≥ 48h après admission · Mortalité 20–50 %</td><td>S. aureus (MRSA), Pseudomonas, Enterobacteriaceae (Klebsiella, Serratia)</td><td>Souvent multifocale</td></tr>
+ <tr><td>Par aspiration</td><td>Inhalation contenu oro-pharyngé</td><td>Flore anaérobie buccale (Bacteroides, Prevotella, Fusobacterium)</td><td>Lobe inférieur droit surtout</td></tr>
+ <tr><td>Typique (bactérienne)</td><td>Début brutal, exsudat alvéolaire</td><td>S. pneumoniae, S. aureus, H. influenzae</td><td>Condensation lobaire homogène</td></tr>
+ <tr><td>Atypique (virale/mycoplasme)</td><td>Début insidieux, pas de consolidation</td><td>Mycoplasma, Chlamydia, Virus, Légionelle, Coxiella burnetii</td><td>Opacités interstitielles</td></tr>
+ </tbody>
+ </table>
+ </div>
+ <div class="grid grid-3">
+ <div class="card red">
+ <h3 class="accent">Pneumonie lobaire (alvéolaire)</h3>
+ <ul class="list">
+ <li>Distribution segmentaire ou lobaire</li>
+ <li>Implique les alvéoles, épargne l'arbre bronchique</li>
+ <li>Condensation homogène à la radio</li>
+ </ul>
+ <div class="tags"><span class="tag red">Typique</span><span class="tag gold">Bactérienne</span></div>
+ </div>
+ <div class="card blue">
+ <h3 class="blue">Bronchopneumonie</h3>
+ <ul class="list">
+ <li>Distribution segmentaire ou multifocale</li>
+ <li>Aspect hétérogène à la radio</li>
+ <li>Associée à BPCO, bronchectasie</li>
+ </ul>
+ <div class="tags"><span class="tag blue">Bactérienne</span><span class="tag blue">Multifocale</span></div>
+ </div>
+ <div class="card green">
+ <h3 class="green">Pneumonie interstitielle</h3>
+ <ul class="list">
+ <li>Opacités interstitielles (linéaire, nodulaire, réticulaire)</li>
+ <li>Pas de consolidation alvéolaire</li>
+ <li>Début progressif et insidieux</li>
+ <li>Examen physique peu perturbé</li>
+ </ul>
+ <div class="tags"><span class="tag green">Atypique</span><span class="tag green">Virale</span></div>
+ </div>
+ </div>
+ </div>
+
+ <!-- 05 CLINIQUE -->
+ <div class="section" id="clinique">
+ <div class="section-header">
+ <div class="section-num">05</div>
+ <div class="section-title">Manifestations Cliniques — Pneumonie<small>Symptômes et analyse des sécrétions</small></div>
+ </div>
+ <div class="grid">
+ <div class="card red">
+ <h3 class="accent">Pneumonie typique (bactérienne)</h3>
+ <ul class="list">
+ <li>Apparition <strong>soudaine</strong></li>
+ <li>Fièvre + tachycardie + frissons + sueurs</li>
+ <li>Toux productive (muqueuse, purulente ou rougeâtre)</li>
+ <li>Douleur pleurale (si plèvre atteinte)</li>
+ <li>Dyspnée lors des activités quotidiennes</li>
+ <li>Fatigue, céphalées, myalgie, arthralgie</li>
+ </ul>
+ </div>
+ <div class="card blue">
+ <h3 class="blue">Pneumonie atypique</h3>
+ <ul class="list">
+ <li>Début <strong>progressif et insidieux</strong></li>
+ <li>Production de sécrétions modérée</li>
+ <li>Pas d'exsudat alvéolaire</li>
+ <li>Action immunitaire modérée</li>
+ <li>Examen physique souvent <strong>sans anomalies</strong></li>
+ </ul>
+ </div>
+ <div class="card gold">
+ <h3>Examen physique</h3>
+ <ul class="list">
+ <li>↓ Expansibilité thoracique</li>
+ <li>Percussion : matité (zone condensée)</li>
+ <li>Auscultation : râles crépitants, souffle tubaire</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="divider"><span>Analyse du sputum (sécrétions)</span></div>
+
+ <div class="table-wrap">
+ <table>
+ <thead><tr><th>Type</th><th>Description</th><th>Causes associées</th></tr></thead>
+ <tbody>
+ <tr><td>Mucoïde</td><td>Opalescent ou blanc</td><td>Bronchite chronique sans infection, asthme</td></tr>
+ <tr><td>Mucopurulent</td><td>Légèrement décoloré</td><td>Bronchectasie, fibrose kystique, pneumonie</td></tr>
+ <tr><td>Purulent jaune</td><td>Épais, visqueux</td><td>Haemophilus influenzae</td></tr>
+ <tr><td>Purulent vert foncé/brun</td><td>Épais, verdâtre</td><td>Pseudomonas</td></tr>
+ <tr><td>Purulent rouillé</td><td>Couleur rouille</td><td>Pneumocoque, Mycoplasma</td></tr>
+ <tr><td>Gelée de groseille</td><td>Gélatineux rouge</td><td>Klebsiella</td></tr>
+ <tr><td>Mouseux rose/blanc</td><td>Bulleux, mousseux</td><td>Œdème pulmonaire</td></tr>
+ <tr><td>Hémoptysie</td><td>Sang franc ou brun ancien</td><td>TB, bronchectasie, infarctus, carcinome, vasculite</td></tr>
+ <tr><td>Noir</td><td>Taches noires dans sécrétions mucoïdes</td><td>Inhalation fumée, tabac, héroïne, poussières de charbon</td></tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+
+ <!-- 06 DIAGNOSTIC -->
+ <div class="section" id="diagnostic">
+ <div class="section-header">
+ <div class="section-num">06</div>
+ <div class="section-title">Diagnostic de la Pneumonie<small>Critères cliniques, biologiques et radiologiques</small></div>
+ </div>
+ <div class="grid grid-2">
+ <div>
+ <div class="keyfact"><div class="icon">🩺</div><div><strong>Antécédents + examen physique</strong> — Critères cliniques de base</div></div>
+ <div class="keyfact"><div class="icon">🔬</div><div><strong>Bilan biologique</strong> — NFS, CRP, <strong>procalcitonine</strong> (↑ si bactérien), marqueurs SDRA</div></div>
+ <div class="keyfact"><div class="icon">📷</div><div><strong>Radiographie thoracique</strong> — Localisation, étendue, complications (épanchement pleural, abcès)</div></div>
+ <div class="keyfact"><div class="icon">🧫</div><div><strong>Culture</strong> — Pour les patients hospitalisés (identification du germe et antibiogramme)</div></div>
+ </div>
+ <div class="card muted">
+ <h3>Procalcitonine — Lecture diagnostique</h3>
+ <ul class="list">
+ <li>↑↑ Élevée → infection <strong>bactérienne</strong></li>
+ <li>Basse → infection virale ou inflammation</li>
+ <li>Guide le choix antibiotique</li>
+ <li>Utile pour le suivi thérapeutique</li>
+ </ul>
+ <div class="box info" style="margin-top:0.8rem; padding:0.6rem; font-size:0.82rem;">
+ <strong>Radio — Modèles radiologiques</strong>
+ Alvéolaire (lobaire) → condensation homogène<br>
+ Bronchopneumonie → hétérogène, multifocal<br>
+ Interstitiel → opacités réticulaires/nodulaires
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <!-- 07 TRAITEMENT PNEUMONIE -->
+ <div class="section" id="traitement-pneu">
+ <div class="section-header">
+ <div class="section-num">07</div>
+ <div class="section-title">Traitement de la Pneumonie<small>Stratification du risque et antibiothérapie</small></div>
+ </div>
+ <div class="grid grid-3">
+ <div class="card green">
+ <h3 class="green">Groupe I — Bas risque</h3>
+ <p style="font-size:0.88rem; margin-bottom:0.5rem;">Score ≤ 70 · Traitement ambulatoire (voie orale)</p>
+ <ul class="list">
+ <li>Amoxicilline</li>
+ <li>Macrolides ou Doxycycline</li>
+ <li>Durée : 7–10 jours</li>
+ </ul>
+ </div>
+ <div class="card gold">
+ <h3>Groupe II–III — Risque modéré</h3>
+ <p style="font-size:0.88rem; margin-bottom:0.5rem;">Score 71–90 · Hospitalisation 24–48h</p>
+ <ul class="list">
+ <li>Fluoroquinolone respiratoire IV</li>
+ <li>Macrolide IV ou Ceftriaxone + Macrolide</li>
+ <li>Durée : 7–10 jours</li>
+ </ul>
+ </div>
+ <div class="card red">
+ <h3 class="accent">Groupe IV–V — Risque élevé / USI</h3>
+ <p style="font-size:0.88rem; margin-bottom:0.5rem;">Score &gt; 91 · Unité de soins intensifs</p>
+ <ul class="list">
+ <li>Céfalosporine 3e + Macrolide IV</li>
+ <li>Fluoroquinolone IV seule</li>
+ <li>Durée : 7–10 jours</li>
+ </ul>
+ </div>
+ </div>
+ <div class="box warning" style="margin-top:1rem;">
+ <strong>⚠ Paramètres de sévérité (score PSI / CURB-65)</strong>
+ Confusion mentale · FR ≥ 30/min · PAS &lt; 90 mmHg · Température &lt; 35° ou &gt; 40°C · FC &gt; 125 bpm · SpO₂ &lt; 90% · pH artériel &lt; 7,35 · Urée ≥ 64 · Na &lt; 130 · Glycémie &gt; 250 mg/dL · Hématocrite &lt; 30%
+ </div>
+ <div class="box info">
+ <strong>🏥 Rôle du kinésithérapeute respiratoire</strong>
+ Techniques de désencombrement bronchique · Drainage postural · Pression expiratoire positive (PEP) · Mobilisation précoce · Prévention déconditionnement · Réhabilitation respiratoire
+ </div>
+ </div>
+
+ <div class="divider"><span>Tuberculose</span></div>
+
+ <!-- 08 TUBERCULOSE -->
+ <div class="section" id="tuberculose">
+ <div class="section-header">
+ <div class="section-num">08</div>
+ <div class="section-title">Tuberculose — Introduction<small>Mycobacterium tuberculosis / Bacille de Koch</small></div>
+ </div>
+ <div class="grid grid-2">
+ <div>
+ <div class="box info">
+ <strong>📌 Définition</strong>
+ Maladie infectieuse transmissible causée par <em>Mycobacterium tuberculosis</em> (Bacille de Koch, découvert en <strong>1882</strong> par Robert Koch). Transmission principale : voie aérienne directe (toux, éternuements, parole). Les autres voies (cutanée, placentaire) sont rares et sans importance épidémiologique.
+ </div>
+ <div class="card blue">
+ <h3 class="blue">Facteurs de risque</h3>
+ <ul class="list">
+ <li>Immunodépression (VIH/SIDA, corticoïdes, chimiothérapie)</li>
+ <li>Pauvreté, surpopulation, mauvaises conditions de vie</li>
+ <li>Dénutrition</li>
+ <li>Diabète</li>
+ <li>Tabagisme, alcoolisme</li>
+ <li>Professionnels de santé exposés</li>
+ </ul>
+ </div>
+ </div>
+ <div class="card muted">
+ <h3>Repères historiques</h3>
+ <ul class="list">
+ <li>Présente depuis l'Antiquité (Égypte, Grèce antique)</li>
+ <li>Fin XIXe s. : 70–90 % population urbaine européenne touchée</li>
+ <li><strong>1882</strong> : Découverte du bacille de Koch</li>
+ <li><strong>1921</strong> : Vaccin BCG (après la 1ère Guerre mondiale)</li>
+ <li><strong>1928/30</strong> : Pénicilline (1er antibiotique)</li>
+ <li><strong>1965–2016</strong> : Plan national de vaccination au Portugal</li>
+ <li><strong>1990</strong> : Association TB / VIH-SIDA reconnue</li>
+ </ul>
+ <div class="tags" style="margin-top:0.5rem;">
+ <span class="tag gold">10e cause mondiale de décès (2021)</span>
+ <span class="tag red">Toujours endémique</span>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <!-- 09 PHYSIOPATHOLOGIE TB -->
+ <div class="section" id="tb-patho">
+ <div class="section-header">
+ <div class="section-num">09</div>
+ <div class="section-title">Physiopathologie de la Tuberculose<small>Du bacille inhalé au granulome</small></div>
+ </div>
+ <div class="flow">
+ <div class="flow-step"><strong>Inhalation</strong>Bacilles → alvéoles pulmonaires</div>
+ <div class="flow-step" style="border-color:var(--gold);"><strong>Phagocytose</strong>Macrophages alvéolaires (tentative de destruction)</div>
+ <div class="flow-step" style="border-color:var(--accent);"><strong>Survie bactérienne</strong>Manipulation du phagosome · prolifération des bacilles</div>
+ <div class="flow-step" style="border-color:var(--accent2);"><strong>Réponse immunitaire</strong>IL-12 → Lymphocytes T → IFN-γ → macrophages activés</div>
+ <div class="flow-step" style="border-color:var(--accent3);"><strong>Granulome</strong>Nécrose caséeuse centrale · Contention des bacilles (90 %) ou dissémination (10 %)</div>
+ </div>
+
+ <div class="grid">
+ <div class="card gold">
+ <h3>Phase précoce (avant immunité cellulaire)</h3>
+ <ul class="list">
+ <li>Le macrophage phagocyte mais ne détruit pas le bacille</li>
+ <li>Le bacille bloque la maturation du phagosome (pH, phagolysosme)</li>
+ <li>Prolifération incontrôlée → bactériémie avec ensemencement de multiples sites</li>
+ </ul>
+ </div>
+ <div class="card red">
+ <h3 class="accent">Phase tardive (immunité cellulaire active)</h3>
+ <ul class="list">
+ <li>Macrophages alvéolaires → IL-12 → activation des lymphocytes T</li>
+ <li>Th1 → IFN-γ → activation des macrophages</li>
+ <li>Macrophages activés : oxyde nitrique + espèces réactives de l'O₂ + autophagie</li>
+ <li>Formation du <strong>granulome tuberculeuse</strong></li>
+ <li>Nécrose caséeuse centrale (aspect fromage blanc)</li>
+ <li>Test tuberculinique (Mantoux) positif</li>
+ </ul>
+ </div>
+ <div class="card blue">
+ <h3 class="blue">Issues de l'infection (90 % / 10 %)</h3>
+ <ul class="list">
+ <li><strong>90 % → Fibrocalcification/guérison</strong> : bacilles contenus, fibrose</li>
+ <li><strong>10 % → Liquéfaction du caséum</strong> : cavités, dissémination</li>
+ <li><strong>TB latente</strong> : bacilles dormants, pas de symptômes, réactivation possible</li>
+ <li><strong>TB miliaire</strong> : dissémination hématogène massive</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="grid grid-2" style="margin-top:1rem;">
+ <div class="card green">
+ <h3 class="green">TB Primaire vs Secondaire</h3>
+ <table style="font-size:0.83rem; width:100%;">
+ <thead><tr><th>TB Primaire</th><th>TB Secondaire</th></tr></thead>
+ <tbody>
+ <tr><td>1ère exposition au bacille</td><td>Réinfection exogène (nouvelle exposition)</td></tr>
+ <tr><td>Jamais eu contact avec M. tuberculosis</td><td>ou Réactivation endogène (bacilles latents)</td></tr>
+ <tr><td>Complexe primaire (foyer de Ghon)</td><td>Lésions apicales, cavités</td></tr>
+ </tbody>
+ </table>
+ </div>
+ <div class="card red">
+ <h3 class="accent">TB Miliaire — Urgence vitale</h3>
+ <ul class="list">
+ <li>Dissémination hématogène massive (nombreuses bactéries dans le sang)</li>
+ <li>Micronodules taille grain de maïs dans les poumons</li>
+ <li>Peut toucher : poumons, foie, moelle osseuse, méninges, péricarde</li>
+ <li><strong>Population vulnérable</strong> : enfants &lt; 4 ans, immunodéprimés, personnes âgées</li>
+ </ul>
+ <div class="tags"><span class="tag red">Pronostic vital engagé</span></div>
+ </div>
+ </div>
+ </div>
+
+ <!-- 10 CLINIQUE TB -->
+ <div class="section" id="tb-clinique">
+ <div class="section-header">
+ <div class="section-num">10</div>
+ <div class="section-title">Manifestations Cliniques — TB Pulmonaire<small>Symptômes généraux et respiratoires</small></div>
+ </div>
+ <div class="grid grid-2">
+ <div>
+ <div class="card red">
+ <h3 class="accent">Symptômes typiques</h3>
+ <ul class="list">
+ <li>Toux avec expectoration muqueuse ou mucopurulente</li>
+ <li><strong>Hémoptysie</strong> (sang dans les crachats)</li>
+ <li>Malaise général</li>
+ <li>Perte de poids progressive et inexpliquée</li>
+ <li><strong>Sueurs nocturnes</strong> (signe très évocateur)</li>
+ <li>Fièvre (surtout en fin de journée)</li>
+ <li>Douleur thoracique</li>
+ <li>Asthénie (fatigue, épuisement)</li>
+ <li>Anorexie</li>
+ <li>Adynamie (↓ force musculaire)</li>
+ <li>Dyspnée</li>
+ </ul>
+ </div>
+ </div>
+ <div>
+ <div class="card blue">
+ <h3 class="blue">Données temporelles clés</h3>
+ <ul class="list">
+ <li><strong>Incubation :</strong> 4–12 semaines (premières lésions)</li>
+ <li><strong>Maladie active :</strong> ~12 mois après infection initiale</li>
+ <li><strong>Latence :</strong> Longue période asymptomatique possible</li>
+ <li><strong>Contagiosité :</strong> Totale tant que le patient élimine des bacilles et n'a pas commencé le traitement</li>
+ </ul>
+ </div>
+ <div class="box warning" style="margin-top:1rem;">
+ <strong>⚠ Réponse granulomateuse</strong>
+ Associée à une inflammation intense et une lésion tissulaire. L'examen thoracique est souvent <strong>sans anomalies</strong> malgré une maladie évoluée → La radio est indispensable.
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <!-- 11 DIAGNOSTIC TB -->
+ <div class="section" id="tb-diagnostic">
+ <div class="section-header">
+ <div class="section-num">11</div>
+ <div class="section-title">Diagnostic de la Tuberculose<small>Méthodes bactériologiques et immunologiques</small></div>
+ </div>
+ <div class="grid">
+ <div class="card red">
+ <h3 class="accent">Bacilloscopie directe (examen microscopique)</h3>
+ <ul class="list">
+ <li>Méthode principale de diagnostic ET contrôle du traitement</li>
+ <li>Simple, rapide, peu coûteuse et sûre</li>
+ <li>Détecte les bacilles en quelques heures</li>
+ <li>Détecte les cas bacillifères (sources d'infection)</li>
+ </ul>
+ <div class="box warning" style="margin-top:0.7rem; padding:0.6rem; font-size:0.82rem;">
+ <strong>Protocole obligatoire</strong>
+ 2 frottis sur 2 jours :<br>
+ — Échantillon <strong>immédiat</strong> (1ère consultation)<br>
+ — Échantillon <strong>matinal</strong> (lendemain matin, à domicile, au réveil)
+ </div>
+ </div>
+ <div class="card blue">
+ <h3 class="blue">Culture microbiologique</h3>
+ <ul class="list">
+ <li>Diagnostic définitif en identifiant M. tuberculosis</li>
+ <li>Résultats en plusieurs semaines</li>
+ <li>Permet les tests de sensibilité</li>
+ <li>Si pas d'expectoration : <strong>bronchoscopie</strong> → LBA + biopsies</li>
+ </ul>
+ </div>
+ <div class="card gold">
+ <h3>Test de Mantoux (IDR tuberculine)</h3>
+ <ul class="list">
+ <li>Injection intradermique de tuberculine</li>
+ <li>Réponse immunitaire des lymphocytes T sensibilisés</li>
+ <li>Formation d'une induration (croûte de citron)</li>
+ <li>Lecture à 48–72h</li>
+ <li><strong>Positif ≠ maladie active</strong> (peut indiquer contact passé ou vaccination BCG)</li>
+ </ul>
+ </div>
+ <div class="card green">
+ <h3 class="green">Autres examens</h3>
+ <ul class="list">
+ <li>Radiographie thoracique (lésions apicales, cavités)</li>
+ <li>Scanner (TDM) thoracique</li>
+ <li>Biopsie du tissu affecté</li>
+ <li>Bilan sanguin</li>
+ <li>IGRA (Interferon Gamma Release Assay)</li>
+ </ul>
+ </div>
+ </div>
+ <div class="box info" style="margin-top:1rem;">
+ <strong>📋 Indications de l'examen microscopique des expectorations</strong>
+ 1) Toux persistante ≥ 2–3 semaines ·
+ 2) Suspicion clinique et/ou radiologique de TB pulmonaire (quelle que soit la durée de toux) ·
+ 3) Suspicion de TB extrapulmonaire (divers matériaux biologiques)
+ </div>
+ <div class="box warning">
+ <strong>⏱ Délai diagnostic TB extrapulmonaire</strong>
+ Le délai moyen entre apparition des symptômes et diagnostic de TB extrapulmonaire varie de <strong>3 à 9 mois</strong> (symptômes non spécifiques + examens spécialisés nécessaires).
+ </div>
+ </div>
+
+ <!-- 12 TRAITEMENT TB -->
+ <div class="section" id="tb-traitement">
+ <div class="section-header">
+ <div class="section-num">12</div>
+ <div class="section-title">Traitement de la Tuberculose<small>Protocole antituberculeux standardisé</small></div>
+ </div>
+ <div class="box success">
+ <strong>✅ Principe fondamental</strong>
+ La tuberculose est guérissable dans pratiquement <strong>100 % des cas</strong> si le traitement est administré correctement. Objectif : éliminer TOUS les bacilles tuberculeux pour supprimer rapidement les sources d'infection.
+ </div>
+ <div class="grid grid-2" style="margin-top:1rem;">
+ <div class="card red">
+ <h3 class="accent">Phase 1 — Intensive (2 mois)</h3>
+ <p style="font-size:0.85rem; color:var(--muted); margin-bottom:0.5rem;">Élimination rapide des bacilles</p>
+ <ul class="list">
+ <li><strong>H</strong> — Isoniazide</li>
+ <li><strong>R</strong> — Rifampicine</li>
+ <li><strong>Z</strong> — Pyrazinamide</li>
+ <li><strong>E</strong> — Éthambutol</li>
+ </ul>
+ <div class="tags"><span class="tag red">4 médicaments</span><span class="tag red">2 mois</span></div>
+ </div>
+ <div class="card blue">
+ <h3 class="blue">Phase 2 — Continuation (4 mois)</h3>
+ <p style="font-size:0.85rem; color:var(--muted); margin-bottom:0.5rem;">Prévention des rechutes</p>
+ <ul class="list">
+ <li><strong>H</strong> — Isoniazide</li>
+ <li><strong>R</strong> — Rifampicine</li>
+ </ul>
+ <div class="tags"><span class="tag blue">2 médicaments</span><span class="tag blue">4 mois</span></div>
+ </div>
+ </div>
+ <div class="remember" style="margin-top:1rem;">
+ <h4>⭐ Points critiques sur le traitement</h4>
+ <ul>
+ <li>Durée minimale totale : <strong>6 mois</strong>Taux de succès &gt; 85 %</li>
+ <li>Cause principale d'échec = <strong>non-adhésion du patient</strong> (se sent mieux après ~4 semaines et arrête)</li>
+ <li>Arrêt prématuré → prolifération bacillaire → <strong>résistances aux antibacillaires</strong> → ↑ risque de décès</li>
+ <li>Résistance aux médicaments 1er choix → minimum 4 médicaments de 2e ligne jamais utilisés</li>
+ <li><strong>TDO</strong> (Traitement Directement Observé) = professionnel de santé observe la prise du médicament de bout en bout → ↑ observance, ↑ guérison, ↓ abandon</li>
+ </ul>
+ </div>
+ <div class="grid grid-3" style="margin-top:1rem;">
+ <div class="card gold">
+ <h3>Vaccin BCG</h3>
+ <ul class="list">
+ <li>Bacille de Calmette-Guérin</li>
+ <li>Efficacité : <strong>50–80 %</strong></li>
+ <li>Ne prévient pas l'infection mais les formes graves/mortelles</li>
+ <li>Immunité acquise en <strong>6–12 semaines</strong></li>
+ <li>Portugal : 1965–2016</li>
+ </ul>
+ </div>
+ <div class="card green">
+ <h3 class="green">Pronostic favorable si :</h3>
+ <ul class="list">
+ <li>Diagnostic <strong>précoce</strong></li>
+ <li>Début <strong>rapide</strong> du traitement</li>
+ <li>Respect <strong>rigoureux</strong> des prescriptions</li>
+ <li>Durée complète respectée (6 mois)</li>
+ </ul>
+ </div>
+ <div class="card muted">
+ <h3>TB et VIH</h3>
+ <ul class="list">
+ <li>Association reconnue depuis 1990</li>
+ <li>VIH = principal facteur de réactivation de la TB latente</li>
+ <li>Traitement complexe (interactions médicamenteuses)</li>
+ <li>Mortalité plus élevée</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+
+ <!-- 13 TB EXTRAPULMONAIRE -->
+ <div class="section" id="tb-extra">
+ <div class="section-header">
+ <div class="section-num">13</div>
+ <div class="section-title">Tuberculose Extrapulmonaire<small>Localisations, manifestations et Maladie de Pott</small></div>
+ </div>
+ <div class="box info">
+ <strong>📌 Définition</strong>
+ Causée par le bacille de Koch <strong>en dehors des poumons</strong>. Pratiquement tous les organes peuvent être atteints. Les symptômes constitutionnels sont identiques à la TB pulmonaire, sans manifestations respiratoires spécifiques.
+ </div>
+ <div class="table-wrap">
+ <table>
+ <thead><tr><th>Localisation</th><th>Symptômes spécifiques</th><th>Particularités</th></tr></thead>
+ <tbody>
+ <tr><td>Ganglionnaire (lymphatique)</td><td>Adénomégalies solides, indolores initialement, croissance graduelle cervicale</td><td>41 % des TB extrapulmonaires · Forme la plus fréquente</td></tr>
+ <tr><td>Pleurale</td><td>Toux sèche, douleur pleurale, dyspnée, épanchement de petit/moyen volume</td><td>Envolvimento pulmonar fréquent (70 %)</td></tr>
+ <tr><td>Ostéoarticulaire — Maladie de Pott</td><td>Douleur rachidienne, limitation fonctionnelle, signes neurologiques</td><td>Colonne vertébrale surtout · Risque compression médullaire · Cyphose</td></tr>
+ <tr><td>Urinaire (génito-urinaire)</td><td>Dysurie, hématurie, pollakiurie, douleur lombaire, infections récurrentes</td><td>Germe détruit la structure rénale progressivement</td></tr>
+ <tr><td>Méningée (SNC)</td><td>Céphalées intenses, altération conscience, syndrome méningé, convulsions</td><td>Urgence neurologique · Pronostic réservé</td></tr>
+ <tr><td>Péricardique</td><td>Dyspnée, tachycardie, distension jugulaire, pouls paradoxal, fièvre</td><td>Épanchement péricardique · Risque tamponnade</td></tr>
+ <tr><td>Abdominale (péritoine)</td><td>Douleur abdominale, ascite, fièvre, anorexie, perte de poids</td><td>Péritonéite tuberculeuse surtout</td></tr>
+ <tr><td>Disséminée miliaire</td><td>Fièvre, asthénie, anorexie, atteinte multi-organes, lésions cutanées</td><td>Envolvimento pulmonar (pattern miliaire 85 %) · Grave</td></tr>
+ </tbody>
+ </table>
+ </div>
+ <div class="grid grid-2" style="margin-top:1rem;">
+ <div class="card red">
+ <h3 class="accent">Maladie de Pott — TB Vertébrale</h3>
+ <ul class="list">
+ <li>Forme la plus courante de TB ostéoarticulaire</li>
+ <li>Destruction progressive des corps vertébraux</li>
+ <li>Formation d'abcès paravertébral (abcesso)</li>
+ <li>Risque de compression médullaire</li>
+ <li>Déformation en cyphose caractéristique</li>
+ <li>Manifestations neurologiques : douleurs et déficits moteurs/sensitifs</li>
+ </ul>
+ <div class="tags"><span class="tag red">Intérêt kinésithérapique majeur</span></div>
+ </div>
+ <div class="card gold">
+ <h3>Symptômes constitutionnels communs (TB extrapulmonaire)</h3>
+ <ul class="list">
+ <li>Perte de poids inexpliquée</li>
+ <li>Perte d'appétit (anorexie)</li>
+ <li>Transpiration nocturne excessive</li>
+ <li>Fièvre ≤ 38°C (surtout en fin de journée)</li>
+ <li>Fatigue / Prostration</li>
+ </ul>
+ <div class="box warning" style="margin-top:0.8rem; padding:0.7rem; font-size:0.82rem;">
+ <strong>⚠ Délai diagnostique long</strong>
+ 3 à 9 mois entre apparition des symptômes et diagnostic → Toujours penser à la TB devant symptômes constitutionnels persistants inexpliqués.
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <!-- TABLEAU COMPARATIF FINAL -->
+ <div class="section">
+ <div class="section-header">
+ <div class="section-num">✦</div>
+ <div class="section-title">Tableau Comparatif Synthèse — Pneumonie vs Tuberculose</div>
+ </div>
+ <div class="table-wrap">
+ <table>
+ <thead><tr><th>Critère</th><th>Pneumonie</th><th>Tuberculose</th></tr></thead>
+ <tbody>
+ <tr><td>Agent</td><td>Bactéries, virus, champignons (nombreux)</td><td>Mycobacterium tuberculosis uniquement</td></tr>
+ <tr><td>Transmission</td><td>Variable : aspiration, inhalation, nosocomiale</td><td>Voie aérienne (inhalation de gouttelettes)</td></tr>
+ <tr><td>Début</td><td>Brutal (typique) ou insidieux (atypique)</td><td>Insidieux, progressif, long</td></tr>
+ <tr><td>Fièvre</td><td>Élevée, avec frissons</td><td>Modérée, vespérale, sueurs nocturnes</td></tr>
+ <tr><td>Toux</td><td>Productive, purulente ou rougeâtre</td><td>Chronique, hémoptysie possible</td></tr>
+ <tr><td>Radiographie</td><td>Condensation lobaire / bronchopneumonie / interstitiel</td><td>Cavités apicales, nodules, pattern miliaire</td></tr>
+ <tr><td>Diagnostic clé</td><td>Clinique + radio + procalcitonine + culture</td><td>Bacilloscopie + culture + Mantoux</td></tr>
+ <tr><td>Traitement</td><td>Antibiotiques ciblés selon l'agent</td><td>4 antibacillaires 2 mois + 2 antibacillaires 4 mois</td></tr>
+ <tr><td>Durée traitement</td><td>7–14 jours</td><td>Minimum 6 mois</td></tr>
+ <tr><td>Contagiosité</td><td>Variable (faible pour bactérienne)</td><td>Élevée jusqu'au début du traitement</td></tr>
+ <tr><td>Prévention</td><td>Vaccination (pneumocoque, grippe), hygiène</td><td>Vaccin BCG (50–80 % efficacité)</td></tr>
+ <tr><td>Guérison</td><td>Bonne avec antibiothérapie adaptée</td><td>~100 % si traitement complet respecté</td></tr>
+ </tbody>
+ </table>
+ </div>
+ </div>
+
+ <!-- MÉMO FINAL -->
+ <div class="remember">
+ <h4>⭐ À retenir absolument pour l'examen</h4>
+ <ul>
+ <li>La pneumonie survient quand les <strong>mécanismes de défense locaux sont altérés</strong> (flux expiratoire, transport mucociliaire, barrière mécanique) ou l'immunité faible</li>
+ <li>Progression histologique : Œdème → <strong>Hépatisation rouge</strong> (PMN + GR) → <strong>Hépatisation grise</strong> (macrophages + fibrine) → Résolution ou complications</li>
+ <li>Pneumonie communautaire = diagnostic dans les <strong>48h après admission</strong>Nosocomiale = après 48h (mortalité 20–50 %)</li>
+ <li>Sputum rouille → <strong>Pneumocoque / Mycoplasma</strong>Vert foncé → <strong>Pseudomonas</strong>Gelée rouge → <strong>Klebsiella</strong></li>
+ <li>TB : <strong>90 % fibrocalcification/guérison</strong><strong>10 % liquéfaction</strong> et cavitation/dissémination</li>
+ <li>TB latente : bacilles dormants, pas contagieux, réactivation possible (immunodépression, VIH...)</li>
+ <li>TB miliaire = dissémination hématogène massive = <strong>urgence vitale</strong> (enfants &lt;4 ans, immunodéprimés, âgés)</li>
+ <li>Traitement TB : <strong>HRZE × 2 mois</strong> puis <strong>HR × 4 mois</strong> = <strong>6 mois minimum</strong></li>
+ <li>Cause principale d'échec thérapeutique TB = <strong>non-adhésion</strong> du patient → résistances → décès</li>
+ <li>BCG : efficacité 50–80 % · Ne prévient pas l'infection mais prévient les <strong>formes graves et mortelles</strong></li>
+ <li>Maladie de Pott = TB osseuse de la <strong>colonne vertébrale</strong> = forme extrapulmonaire la plus courante (intérêt kinésithérapique)</li>
+ <li>Bacilloscopie : <strong>2 frottis sur 2 jours</strong> (immédiat + matinal) = méthode principale de diagnostic TB</li>
+ </ul>
+ </div>
+
+</div>
+
+<footer>Fiche de révision — Physiopathologie · Maladies des Voies Respiratoires Inférieures · 1ère Année — 2e Semestre</footer>
+
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-12.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+</body>
+</html>

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="SVT — Tout le programme en chips et flèches — Vocabulaire essentiel · mécanismes en flèches · chiffres-clés. Pas d'explication, juste ce qu'il faut savoir.">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../assets/css/acces.css">
+<script src="../assets/js/acces.js"></script>
+<title>Antisèche SVT — À lire juste avant le bac</title>
+<link rel="stylesheet" href="assets/css/chrome.css">
+<style>
+:root{
+ --bg:#0f1117; --bg2:#0f1117; --bg3:#0f1117; --border:#2a3050;
+ --text:#a5a0ff; --muted:#6a7388;
+ --c1:#6366f1; --c2:#6366f1; --c3:#a5a0ff; --c4:#a5a0ff; --bonus:#8b7cf8; --red:#8b7cf8;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;font-size:14px;line-height:1.55}
+header{background:linear-gradient(135deg,#0f1117 0%,#0f1117 100%);border-bottom:3px solid var(--c3);padding:1.5rem 2rem 1.2rem;text-align:center}
+header .badge{font-size:.7rem;text-transform:uppercase;letter-spacing:3px;color:var(--c3);font-weight:700;margin-bottom:.3rem}
+header h1{font-size:1.8rem;font-weight:800;color:#e8eaf0;line-height:1.2}
+header p.sub{color:var(--muted);font-size:.85rem;margin-top:.4rem;max-width:600px;margin-left:auto;margin-right:auto}
+nav.jumpbar{position:sticky;top:0;z-index:100;background:rgba(15,17,23,0.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:.7rem 1rem;display:flex;gap:.4rem;flex-wrap:wrap;justify-content:center}
+nav.jumpbar a{font-size:.72rem;font-weight:700;text-decoration:none;padding:.3rem .7rem;border-radius:14px;border:1px solid var(--border);color:var(--muted);transition:all .15s}
+nav.jumpbar a:hover{color:#e8eaf0;background:var(--bg3)}
+nav.jumpbar a.t1{border-color:var(--c1);color:var(--c1)}
+nav.jumpbar a.t2{border-color:var(--c2);color:var(--c2)}
+nav.jumpbar a.t3{border-color:var(--c4);color:var(--c4)}
+nav.jumpbar a.tb{border-color:var(--bonus);color:var(--bonus)}
+main{max-width:1100px;margin:0 auto;padding:1.5rem 1rem 3rem}
+.theme-banner{padding:.5rem 1rem;border-radius:8px;font-size:.72rem;text-transform:uppercase;letter-spacing:2px;font-weight:800;margin:2rem 0 1rem;display:inline-block}
+.theme-banner.t1{background:rgba(32,36,58,0.15);color:var(--c1);border:1px solid var(--c1)}
+.theme-banner.t2{background:rgba(32,36,58,0.15);color:var(--c2);border:1px solid var(--c2)}
+.theme-banner.t3{background:rgba(32,36,58,0.15);color:var(--c4);border:1px solid var(--c4)}
+.theme-banner.tb{background:rgba(32,36,58,0.15);color:var(--bonus);border:1px solid var(--bonus)}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:1.2rem 1.4rem;margin-bottom:1.2rem;scroll-margin-top:60px}
+.card.t1{border-left:5px solid var(--c1)}
+.card.t2{border-left:5px solid var(--c2)}
+.card.t3{border-left:5px solid var(--c4)}
+.card.tb{border-left:5px solid var(--bonus)}
+.card h2{font-size:1.15rem;font-weight:800;color:#20243a;margin-bottom:.5rem;display:flex;align-items:center;gap:.5rem}
+.card .badge-num{font-size:.65rem;font-weight:800;padding:.15rem .5rem;border-radius:10px;background:var(--bg3);color:var(--muted);text-transform:uppercase;letter-spacing:1.5px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:.7rem}
+@media (max-width:720px){.grid2{grid-template-columns:1fr}}
+.block h3{font-size:.7rem;text-transform:uppercase;letter-spacing:2px;font-weight:800;margin-bottom:.5rem;padding-left:.4rem;border-left:3px solid currentColor}
+.block.vocab h3{color:var(--c3)}
+.block.mech h3{color:var(--c2)}
+.block.chiffres h3{color:var(--red)}
+.block.must h3{color:#e8eaf0}
+.chips{display:flex;flex-wrap:wrap;gap:.3rem}
+.chip{display:inline-block;padding:.2rem .55rem;border-radius:12px;background:var(--bg3);color:var(--text);font-size:.74rem;font-weight:600;border:1px solid var(--border)}
+.chip.t1{background:rgba(32,36,58,0.12);border-color:rgba(58,64,96,0.4);color:#a5a0ff}
+.chip.t2{background:rgba(32,36,58,0.12);border-color:rgba(58,64,96,0.4);color:#a5a0ff}
+.chip.t3{background:rgba(32,36,58,0.12);border-color:rgba(58,64,96,0.4);color:#a5a0ff}
+.chip.t4{background:rgba(32,36,58,0.12);border-color:rgba(58,64,96,0.4);color:#a5a0ff}
+.chip.tb{background:rgba(32,36,58,0.12);border-color:rgba(58,64,96,0.4);color:#a5a0ff}
+.chip.red{background:rgba(32,36,58,0.12);border-color:rgba(58,64,96,0.4);color:#a5a0ff}
+.mech-list{list-style:none;padding:0;margin:0}
+.mech-list li{padding:.25rem 0;font-size:.82rem;border-bottom:1px dashed var(--border);display:flex;gap:.4rem;align-items:flex-start}
+.mech-list li:last-child{border-bottom:none}
+.mech-list li::before{content:"→";color:var(--c2);font-weight:800;flex-shrink:0}
+.num-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:.5rem}
+.num{background:#0f1117;border:1px solid var(--border);border-radius:8px;padding:.5rem;text-align:center}
+.num .v{font-size:.95rem;font-weight:800;color:var(--c3)}
+.num .l{font-size:.65rem;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-top:.2rem}
+.must-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:.3rem}
+.must-list li{font-size:.78rem;padding:.3rem .5rem;background:rgba(32,36,58,0.06);border-left:3px solid var(--c3);border-radius:4px}
+.must-list li strong{color:var(--c3)}
+.back-btn{position:fixed;top:14px;left:14px;z-index:200;background:rgba(12,14,20,0.92);backdrop-filter:blur(10px);border:1px solid rgba(58,64,96,0.30);color:#a5a0ff;padding:8px 13px;border-radius:10px;text-decoration:none;font-size:12.5px;font-weight:600}
+.back-btn:hover{border-color:var(--c1);color:#e8eaf0}
+footer{text-align:center;padding:1.5rem;color:var(--muted);font-size:.75rem;border-top:1px solid var(--border);margin-top:2rem}
+.intro-tip{background:rgba(32,36,58,0.08);border:1px solid rgba(58,64,96,0.3);border-radius:10px;padding:.9rem 1.1rem;margin:1rem 0;font-size:.85rem;color:#a5a0ff}
+.intro-tip strong{color:var(--c3)}
+</style>
+</head>
+<body>
+<a href="accueil-svt.html" class="back-nav">← SVT Bac 2026</a>
+
+<a href="accueil-svt.html" class="back-btn">← SVT BAC</a>
+
+<header>
+ <div class="badge">📝 Antisèche · J-1 du bac</div>
+ <h1>SVT — Tout le programme en chips et flèches</h1>
+ <p class="sub">Vocabulaire essentiel · mécanismes en flèches · chiffres-clés. <em>Pas d'explication, juste ce qu'il faut savoir.</em></p>
+</header>
+
+<nav class="jumpbar">
+ <a class="t1" href="#c1">1. Évolution</a>
+ <a class="t1" href="#c2">2. Géologie</a>
+ <a class="t2" href="#c3">3. Plante dom.</a>
+ <a class="t2" href="#c4">4. Climats</a>
+ <a class="t3" href="#c5">5. Système nerveux</a>
+ <a class="t3" href="#c6">6. Contraction</a>
+ <a class="t3" href="#c7">7. Stress</a>
+ <a class="tb" href="#c8">8. Écosystèmes</a>
+ <a class="tb" href="#c9">9. Variation gén.</a>
+ <a class="t3" href="#c10">10. Glycémie</a>
+</nav>
+
+<main>
+
+<div class="intro-tip">
+ <strong>📌 Comment utiliser :</strong> survole, mémorise les <strong>chips de vocabulaire</strong>, vérifie les <strong>flèches</strong> et les <strong>chiffres</strong>. Tu connais ton cours si tu peux remettre l'ordre des étapes. Sinon → relire la fiche complète.
+</div>
+
+<!-- ============ THÈME I ============ -->
+<div class="theme-banner t1">🧬 Thème I — Génétique &amp; évolution</div>
+
+<!-- 1. ÉVOLUTION -->
+<div id="c1" class="card t1">
+ <h2><span class="badge-num">Cours 1</span> 🧬 Diversification du vivant &amp; évolution</h2>
+ <div class="grid2">
+ <div class="block vocab">
+ <h3>📌 Vocabulaire</h3>
+ <div class="chips">
+ <span class="chip t1">gène</span><span class="chip t1">allèle</span><span class="chip t1">génotype</span><span class="chip t1">phénotype</span><span class="chip t1">méiose</span><span class="chip t1">brassage intrachromosomique</span><span class="chip t1">brassage interchromosomique</span><span class="chip t1">crossing-over</span><span class="chip t1">prophase I</span><span class="chip t1">anaphase I</span><span class="chip t1">fécondation</span><span class="chip t1">gamète</span><span class="chip t1">zygote</span><span class="chip t3">mutation</span><span class="chip t3">substitution</span><span class="chip t3">délétion</span><span class="chip t3">insertion</span><span class="chip t3">agent mutagène</span><span class="chip t3">duplication</span><span class="chip t3">famille multigénique</span><span class="chip t3">néofonctionnalisation</span><span class="chip tb">transfert horizontal</span><span class="chip tb">conjugaison</span><span class="chip tb">transformation</span><span class="chip tb">transduction</span><span class="chip tb">plasmide</span><span class="chip tb">endosymbiose</span><span class="chip tb">symbiose</span><span class="chip tb">lichen</span><span class="chip tb">mycorhize</span><span class="chip tb">microbiote</span><span class="chip tb">transmission culturelle</span>
+ </div>
+ </div>
+ <div class="block mech">
+ <h3>⚙️ Mécanismes (flèches)</h3>
+ <ul class="mech-list">
+ <li>Méiose → 2 brassages → gamètes recombinés</li>
+ <li>Crossing-over (prophase I) → brassage <em>intra</em></li>
+ <li>Séparation aléatoire (anaphase I) → brassage <em>inter</em> = 2ⁿ</li>
+ <li>Fécondation → zygote unique</li>
+ <li>Mutation = <strong>seule</strong> source de nouveauté allélique</li>
+ <li>Duplication → divergence → famille multigénique (globines)</li>
+ <li>Conjugaison : pilus → plasmide transféré</li>
+ <li>Endosymbiose : eucaryote englobe bactérie → mitochondrie</li>
+ <li>Symbiose &amp; culture → diversité <em>non héréditaire</em></li>
+ </ul>
+ </div>
+ </div>
+ <div class="grid2" style="margin-top:1rem">
+ <div class="block chiffres">
+ <h3>🔢 Chiffres-clés</h3>
+ <div class="num-grid">
+ <div class="num"><div class="v">2²³ ≈ 8 M</div><div class="l">brassage inter (Homme)</div></div>
+ <div class="num"><div class="v">70 000 Md</div><div class="l">zygotes possibles</div></div>
+ <div class="num"><div class="v">≈ 2 Ga</div><div class="l">endosymbiose mito.</div></div>
+ <div class="num"><div class="v">n = 23</div><div class="l">chromosomes haploïdes H</div></div>
+ </div>
+ </div>
+ <div class="block must">
+ <h3>🎯 À ne pas confondre</h3>
+ <ul class="must-list">
+ <li><strong>Brassage</strong> = réassortit, ne CRÉE PAS d'allèle</li>
+ <li><strong>Mutation</strong> = seule source de nouveauté</li>
+ <li><strong>Évolution</strong> ≠ diversification (sélection + dérive)</li>
+ </ul>
+ </div>
+ </div>
+</div>
+
+<!-- 2. GÉOLOGIE -->
+<div id="c2" class="card t1">
+ <h2><span class="badge-num">Cours 2</span> 🪨 Passé géologique de la Terre</h2>
+ <div class="grid2">
+ <div class="block vocab">
+ <h3>📌 Vocabulaire</h3>
+ <div class="chips">
+ <span class="chip t1">stratigraphie</span><span class="chip t1">superposition</span><span class="chip t1">continuité</span><span class="chip t1">recoupement</span><span class="chip t1">identité paléontologique</span><span class="chip t1">datation relative</span><span class="chip t1">datation absolue</span><span class="chip t3">radiochronologie</span><span class="chip t3">isotope père/fils</span><span class="chip t3">demi-vie</span><span class="chip t3">K/Ar</span><span class="chip t3">U/Pb</span><span class="chip t3">¹⁴C</span><span class="chip t3">zircon</span><span class="chip t2">fossile stratigraphique</span><span class="chip t2">fossile guide</span><span class="chip t2">explosion cambrienne</span><span class="chip t2">crise biologique</span><span class="chip t2">extinction massive</span><span class="chip t2">radiation adaptative</span><span class="chip t4">paléomagnétisme</span><span class="chip t4">anomalie magnétique</span><span class="chip t4">cycle de Wilson</span><span class="chip t4">rift</span><span class="chip t4">dorsale</span><span class="chip t4">marge passive</span><span class="chip t4">subduction</span><span class="chip t4">collision</span><span class="chip t4">ophiolite</span><span class="chip tb">δ¹⁸O</span><span class="chip tb">paléoclimat</span>
+ </div>
+ </div>
+ <div class="block mech">
+ <h3>⚙️ Mécanismes</h3>
+ <ul class="mech-list">
+ <li>4 principes stratigraphiques → ordre relatif</li>
+ <li>Décroissance radioactive → P/F → âge absolu</li>
+ <li>Cambrien -540 Ma → plans d'organisation animaux</li>
+ <li>Conquête terrestre : plantes -450 → vertébrés -380</li>
+ <li>5 crises → suivies de <em>radiations</em></li>
+ <li>Cycle Wilson : <em>rift → océan → subduction → collision → chaîne</em></li>
+ <li>Ophiolites au sommet montagnes → ancien océan</li>
+ </ul>
+ </div>
+ </div>
+ <div class="grid2" style="margin-top:1rem">
+ <div class="block chiffres">
+ <h3>🔢 5 grandes crises</h3>
+ <div class="num-grid">
+ <div class="num"><div class="v">-444 Ma</div><div class="l">Ordovicien</div></div>
+ <div class="num"><div class="v">-372 Ma</div><div class="l">Dévonien</div></div>
+ <div class="num"><div class="v">-252 Ma</div><div class="l">Permien (95%)</div></div>
+ <div class="num"><div class="v">-201 Ma</div><div class="l">Trias</div></div>
+ <div class="num"><div class="v">-66 Ma</div><div class="l">K/T (dinos)</div></div>
+ <div class="num"><div class="v">4,57 Ga</div><div class="l">âge Terre</div></div>
+ <div class="num"><div class="v">¹⁴C : 50 ka</div><div class="l">portée méthode</div></div>
+ <div class="num"><div class="v">U/Pb : 4,4 Ga</div><div class="l">+ ancien zircon</div></div>
+ </div>
+ </div>
+ <div class="block must">
+ <h3>🎯 À ne pas confondre</h3>
+ <ul class="must-list">
+ <li><strong>Relative</strong> (ordre) ≠ <strong>absolue</strong> (chiffre)</li>
+ <li><strong>Stratigraphique</strong> : vie courte + large extension</li>
+ <li>K/T = -66 Ma, météorite + Deccan + iridium</li>
+ </ul>
+ </div>
+ </div>
+</div>
+
+<!-- ============ THÈME II ============ -->
+<div class="theme-banner t2">🌍 Thème II — Enjeux contemporains de la planète</div>
+
+<!-- 3. PLANTE -->
+<div id="c3" class="card t2">
+ <h2><span class="badge-num">Cours 3</span> 🌱 De la plante sauvage à la plante domestiquée</h2>
+ <div class="grid2">
+ <div class="block vocab">
+ <h3>📌 Vocabulaire</h3>
+ <div class="chips">
+ <span class="chip t2">domestication</span><span class="chip t2">Néolithique</span><span class="chip t2">sélection artificielle</span><span class="chip t2">hybridation</span><span class="chip t2">polyploïdisation</span><span class="chip t2">interspécifique</span><span class="chip t2">téosinte</span><span class="chip t2">Triticum aestivum</span><span class="chip t2">non-déhiscence</span><span class="chip t2">palatabilité</span><span class="chip t3">transgenèse</span><span class="chip t3">OGM</span><span class="chip t3">maïs Bt</span><span class="chip t3">RoundUp Ready</span><span class="chip t3">CRISPR-Cas9</span><span class="chip t3">NBT</span><span class="chip red">érosion génétique</span><span class="chip red">famine irlandaise</span><span class="chip tb">banque de semences</span><span class="chip tb">Svalbard</span><span class="chip tb">INRAE</span><span class="chip tb">agroécologie</span><span class="chip tb">sélection participative</span><span class="chip tb">brevet sur le vivant</span>
+ </div>
+ </div>
+ <div class="block mech">
+ <h3>⚙️ Mécanismes</h3>
+ <ul class="mech-list">
+ <li>Sélection artificielle → fréquence allèles favorables ↑</li>
+ <li>Hybridation × polyploïdie → blé hexaploïde</li>
+ <li>Transgenèse → gène <em>Bt</em> de Bacillus → maïs Bt</li>
+ <li>CRISPR-Cas9 → édition ciblée</li>
+ <li>Domestication → ↓ diversité allélique → vulnérabilité</li>
+ </ul>
+ </div>
+ </div>
+ <div class="grid2" style="margin-top:1rem">
+ <div class="block chiffres">
+ <h3>🔢 Chiffres-clés</h3>
+ <div class="num-grid">
+ <div class="num"><div class="v">-10 000 ans</div><div class="l">début domestication</div></div>
+ <div class="num"><div class="v">6n = 42</div><div class="l">blé tendre (AABBDD)</div></div>
+ <div class="num"><div class="v">1845</div><div class="l">famine pomme de terre</div></div>
+ <div class="num"><div class="v">1 M</div><div class="l">semences Svalbard</div></div>
+ </div>
+ </div>
+ <div class="block must">
+ <h3>🎯 À ne pas confondre</h3>
+ <ul class="must-list">
+ <li><strong>Sélection naturelle</strong> (Darwin) ≠ <strong>artificielle</strong> (Homme)</li>
+ <li><strong>OGM transgenèse</strong> ≠ <strong>NBT CRISPR</strong> (frontière débattue)</li>
+ <li>Hybridation + polyploïdie = mécanisme spontané exploité</li>
+ </ul>
+ </div>
+ </div>
+</div>
+
+<!-- 4. CLIMATS -->
+<div id="c4" class="card t2">
+ <h2><span class="badge-num">Cours 4</span> 🌡️ Climats : passé et présent</h2>
+ <div class="grid2">
+ <div class="block vocab">
+ <h3>📌 Vocabulaire</h3>
+ <div class="chips">
+ <span class="chip t2">effet de serre</span><span class="chip t2">GES</span><span class="chip t2">CO₂</span><span class="chip t2">CH₄ méthane</span><span class="chip t2">N₂O</span><span class="chip t2">vapeur d'eau</span><span class="chip t2">rayonnement IR</span><span class="chip t2">albédo</span><span class="chip t3">forçage radiatif</span><span class="chip t3">anthropique</span><span class="chip t3">aérosols</span><span class="chip t3">signature isotopique</span><span class="chip t3">δ¹³C</span><span class="chip t3">δ¹⁸O</span><span class="chip t3">carotte glaciaire</span><span class="chip t3">stomate fossile</span><span class="chip t4">rétroaction positive</span><span class="chip t4">rétroaction négative</span><span class="chip t4">fonte calottes</span><span class="chip t4">acidification océan</span><span class="chip t4">élévation mer</span><span class="chip tb">IPCC / GIEC</span><span class="chip tb">Accord de Paris</span><span class="chip tb">neutralité carbone</span><span class="chip tb">modèle climatique</span>
+ </div>
+ </div>
+ <div class="block mech">
+ <h3>⚙️ Mécanismes</h3>
+ <ul class="mech-list">
+ <li>CO₂ ↑ → IR piégé → effet de serre amplifié → T° ↑</li>
+ <li>δ¹³C ↓ atmosphère → origine FOSSILE (humaine)</li>
+ <li>Fossiles : -25 à -30‰ · Volcans : -5 à -7‰</li>
+ <li>Forçage GES &gt;&gt; solaire + volcans → cause anthropique</li>
+ <li>Rétroactions ⊕ : fonte glaces → albédo ↓ → T° ↑↑</li>
+ </ul>
+ </div>
+ </div>
+ <div class="grid2" style="margin-top:1rem">
+ <div class="block chiffres">
+ <h3>🔢 Chiffres-clés</h3>
+ <div class="num-grid">
+ <div class="num"><div class="v">+1,2 °C</div><div class="l">depuis 1850</div></div>
+ <div class="num"><div class="v">280 → 425</div><div class="l">ppm CO₂</div></div>
+ <div class="num"><div class="v">+3 W/m²</div><div class="l">forçage GES</div></div>
+ <div class="num"><div class="v">-1,1 W/m²</div><div class="l">aérosols</div></div>
+ <div class="num"><div class="v">+0,05 W/m²</div><div class="l">solaire</div></div>
+ <div class="num"><div class="v">1,5 °C</div><div class="l">objectif Paris</div></div>
+ <div class="num"><div class="v">2050</div><div class="l">neutralité C</div></div>
+ <div class="num"><div class="v">95%+</div><div class="l">origine humaine</div></div>
+ </div>
+ </div>
+ <div class="block must">
+ <h3>🎯 À ne pas confondre</h3>
+ <ul class="must-list">
+ <li><strong>Corrélation</strong> ≠ causalité (Doc 1 seul ne tranche pas)</li>
+ <li><strong>δ¹³C</strong> = signature ; <strong>δ¹⁸O</strong> = paléothermomètre</li>
+ <li>Modèles climatiques ne marchent qu'AVEC forçages anthrop.</li>
+ </ul>
+ </div>
+ </div>
+</div>
+
+<!-- ============ THÈME III ============ -->
+<div class="theme-banner t3">🧠 Thème III — Corps humain &amp; santé</div>
+
+<!-- 5. SYSTÈME NERVEUX -->
+<div id="c5" class="card t3">
+ <h2><span class="badge-num">Cours 5</span> ⚡ Réflexe myotatique &amp; système nerveux</h2>
+ <div class="grid2">
+ <div class="block vocab">
+ <h3>📌 Vocabulaire</h3>
+ <div class="chips">
+ <span class="chip t4">arc réflexe</span><span class="chip t4">monosynaptique</span><span class="chip t4">fuseau neuromusculaire</span><span class="chip t4">neurone sensitif</span><span class="chip t4">ganglion rachidien</span><span class="chip t4">racine dorsale</span><span class="chip t4">racine ventrale</span><span class="chip t4">motoneurone</span><span class="chip t4">plaque motrice</span><span class="chip t4">muscle effecteur</span><span class="chip t3">potentiel de repos</span><span class="chip t3">potentiel d'action (PA)</span><span class="chip t3">seuil</span><span class="chip t3">dépolarisation</span><span class="chip t3">repolarisation</span><span class="chip t3">hyperpolarisation</span><span class="chip t3">codage en fréquence</span><span class="chip t3">canal Na⁺</span><span class="chip t3">canal K⁺</span><span class="chip t3">canal mécano-sensible</span><span class="chip t1">conduction saltatoire</span><span class="chip t1">myéline</span><span class="chip t1">nœud de Ranvier</span><span class="chip t1">axone</span><span class="chip tb">synapse chimique</span><span class="chip tb">neurotransmetteur</span><span class="chip tb">glutamate</span><span class="chip tb">acétylcholine</span><span class="chip tb">vésicule synaptique</span><span class="chip tb">fente synaptique</span><span class="chip tb">récepteur post-synaptique</span><span class="chip tb">Ca²⁺ pré-synaptique</span><span class="chip tb">inhibition réciproque</span>
+ </div>
+ </div>
+ <div class="block mech">
+ <h3>⚙️ Mécanismes</h3>
+ <ul class="mech-list">
+ <li>Étirement → fuseau → PA neurone sensitif</li>
+ <li>Sensitif → moelle (racine dorsale) → synapse → motoneurone</li>
+ <li>Motoneurone (racine ventrale) → plaque motrice → ACh</li>
+ <li>ACh → dépolarisation fibre → contraction</li>
+ <li>Antagoniste : inhibition réciproque simultanée</li>
+ <li>Intensité étirement → fréquence PA (codage)</li>
+ <li>Amplitude PA = FIXE (loi du tout ou rien)</li>
+ </ul>
+ </div>
+ </div>
+ <div class="grid2" style="margin-top:1rem">
+ <div class="block chiffres">
+ <h3>🔢 Chiffres-clés</h3>
+ <div class="num-grid">
+ <div class="num"><div class="v">-70 mV</div><div class="l">repos</div></div>
+ <div class="num"><div class="v">+30 mV</div><div class="l">pic PA</div></div>
+ <div class="num"><div class="v">~ 30 ms</div><div class="l">réflexe complet</div></div>
+ <div class="num"><div class="v">100 m/s</div><div class="l">saltatoire</div></div>
+ </div>
+ </div>
+ <div class="block must">
+ <h3>🎯 À ne pas confondre</h3>
+ <ul class="must-list">
+ <li><strong>Amplitude</strong> (fixe) vs <strong>fréquence</strong> (= intensité)</li>
+ <li><strong>Glutamate</strong> (au SNC) vs <strong>ACh</strong> (plaque motrice)</li>
+ <li>Monosynaptique = 1 SEULE synapse → ultra rapide</li>
+ <li>Curare bloque ACh · alcool ralentit conduction</li>
+ </ul>
+ </div>
+ </div>
+</div>
+
+<!-- 6. CONTRACTION -->
+<div id="c6" class="card t3">
+ <h2><span class="badge-num">Cours 6</span> 💪 Contraction musculaire &amp; énergétique</h2>
+ <div class="grid2">
+ <div class="block vocab">
+ <h3>📌 Vocabulaire</h3>
+ <div class="chips">
+ <span class="chip t4">muscle</span><span class="chip t4">fibre musculaire</span><span class="chip t4">myofibrille</span><span class="chip t4">sarcomère</span><span class="chip t4">strie Z</span><span class="chip t4">actine</span><span class="chip t4">myosine</span><span class="chip t4">tête de myosine</span><span class="chip t4">tropomyosine</span><span class="chip t4">troponine</span><span class="chip t4">filament fin / épais</span><span class="chip t3">modèle de Huxley</span><span class="chip t3">glissement</span><span class="chip t3">coup de rame</span><span class="chip t1">ACh</span><span class="chip t1">plaque motrice</span><span class="chip t1">Ca²⁺</span><span class="chip t1">réticulum sarcoplasmique</span><span class="chip tb">ATP</span><span class="chip tb">ADP + Pi</span><span class="chip tb">hydrolyse</span><span class="chip red">phosphocréatine (PCr)</span><span class="chip red">anaérobie alactique</span><span class="chip red">glycolyse</span><span class="chip red">anaérobie lactique</span><span class="chip red">lactate</span><span class="chip red">acidose</span><span class="chip red">respiration cellulaire</span><span class="chip red">aérobie</span><span class="chip red">mitochondrie</span>
+ </div>
+ </div>
+ <div class="block mech">
+ <h3>⚙️ Mécanismes</h3>
+ <ul class="mech-list">
+ <li>ACh → dépol. fibre → Ca²⁺ libéré (rét. sarcoplasmique)</li>
+ <li>Ca²⁺ → troponine → déplace tropomyosine</li>
+ <li>Têtes myosine → fixent actine → basculent → glissement</li>
+ <li>Cycle myosine = ATP hydrolysé à chaque coup</li>
+ <li>Stries Z se rapprochent → sarcomère raccourcit</li>
+ <li>Filaments ne raccourcissent PAS, ils GLISSENT</li>
+ </ul>
+ </div>
+ </div>
+ <div class="grid2" style="margin-top:1rem">
+ <div class="block chiffres">
+ <h3>🔢 3 voies de l'ATP</h3>
+ <div class="num-grid">
+ <div class="num"><div class="v">&lt; 10 s</div><div class="l">PCr · sprint 100m</div></div>
+ <div class="num"><div class="v">2 ATP</div><div class="l">glycolyse anaérobie</div></div>
+ <div class="num"><div class="v">~ 32 ATP</div><div class="l">respiration aérobie</div></div>
+ <div class="num"><div class="v">1-2 s</div><div class="l">réserve ATP brute</div></div>
+ </div>
+ </div>
+ <div class="block must">
+ <h3>🎯 À ne pas confondre</h3>
+ <ul class="must-list">
+ <li><strong>Glycolyse</strong> (2 ATP, lactate) vs <strong>respiration</strong> (32 ATP)</li>
+ <li><strong>Ca²⁺</strong> = déclencheur, <strong>ATP</strong> = carburant</li>
+ <li>EPO ↑ O₂ → favorise voie aérobie (dopage)</li>
+ </ul>
+ </div>
+ </div>
+</div>
+
+<!-- 7. STRESS -->
+<div id="c7" class="card t3">
+ <h2><span class="badge-num">Cours 7</span> 😰 Stress : aigu, chronique &amp; axe HHS</h2>
+ <div class="grid2">
+ <div class="block vocab">
+ <h3>📌 Vocabulaire</h3>
+ <div class="chips">
+ <span class="chip t4">stress aigu</span><span class="chip t4">stress chronique</span><span class="chip t4">amygdale</span><span class="chip t4">hypothalamus</span><span class="chip t1">SN sympathique</span><span class="chip t1">SN parasympathique</span><span class="chip t1">médullosurrénale</span><span class="chip t1">adrénaline</span><span class="chip t1">noradrénaline</span><span class="chip tb">axe HHS</span><span class="chip tb">hypothalamo-hypophyso-surrénalien</span><span class="chip tb">CRH</span><span class="chip tb">ACTH</span><span class="chip tb">hypophyse antérieure</span><span class="chip tb">cortex surrénalien</span><span class="chip tb">cortisol</span><span class="chip tb">glucocorticoïde</span><span class="chip t3">rétrocontrôle négatif</span><span class="chip red">insulinorésistance</span><span class="chip red">immunodépression</span><span class="chip red">HTA</span><span class="chip red">atrophie hippocampe</span><span class="chip red">burnout</span><span class="chip red">anxiolytique</span><span class="chip red">benzodiazépine</span>
+ </div>
+ </div>
+ <div class="block mech">
+ <h3>⚙️ Mécanismes</h3>
+ <ul class="mech-list">
+ <li>Aigu : stimulus → amygdale → sympathique → médulla → ADRÉNALINE</li>
+ <li>Adrénaline → ↑FC, ↑PA, pupilles, glycémie, sang → muscles</li>
+ <li>Chronique : hypothalamus → CRH → hypophyse → ACTH → cortex → CORTISOL</li>
+ <li>Cortisol → glycémie ↑, immunité ↓, mémoire ↓</li>
+ <li>Rétrocontrôle ⊖ : cortisol freine CRH + ACTH</li>
+ <li>Chronique : rétrocontrôle s'épuise → pathologie</li>
+ </ul>
+ </div>
+ </div>
+ <div class="grid2" style="margin-top:1rem">
+ <div class="block chiffres">
+ <h3>🔢 Timing</h3>
+ <div class="num-grid">
+ <div class="num"><div class="v">~ secondes</div><div class="l">adrénaline</div></div>
+ <div class="num"><div class="v">~ minutes</div><div class="l">durée aigu</div></div>
+ <div class="num"><div class="v">~ heures</div><div class="l">cortisol pic</div></div>
+ <div class="num"><div class="v">semaines+</div><div class="l">chronique</div></div>
+ </div>
+ </div>
+ <div class="block must">
+ <h3>🎯 À ne pas confondre</h3>
+ <ul class="must-list">
+ <li><strong>Médulla</strong> (adrénaline) ≠ <strong>cortex</strong> (cortisol)</li>
+ <li><strong>Adrénaline</strong> = rapide + bref ; <strong>cortisol</strong> = lent + durable</li>
+ <li>Stress aigu = ADAPTATIF ; chronique = pathologique</li>
+ </ul>
+ </div>
+ </div>
+</div>
+
+<!-- ============ BONUS ============ -->
+<div class="theme-banner tb">🌌 Bonus &amp; transversaux</div>
+
+<!-- 8. ÉCOSYSTÈMES -->
+<div id="c8" class="card tb">
+ <h2><span class="badge-num">Cours 8</span> 🌿 Écosystèmes &amp; services écosystémiques</h2>
+ <div class="grid2">
+ <div class="block vocab">
+ <h3>📌 Vocabulaire</h3>
+ <div class="chips">
+ <span class="chip tb">écosystème</span><span class="chip tb">biotope</span><span class="chip tb">biocénose</span><span class="chip tb">biodiversité</span><span class="chip tb">équilibre dynamique</span><span class="chip tb">résilience</span><span class="chip tb">producteur primaire</span><span class="chip tb">consommateur</span><span class="chip tb">décomposeur</span><span class="chip tb">chaîne trophique</span><span class="chip tb">cycle biogéochimique</span><span class="chip t2">service d'approvisionnement</span><span class="chip t2">service de régulation</span><span class="chip t2">service culturel</span><span class="chip t2">service de soutien</span><span class="chip t2">pollinisation</span><span class="chip t2">Taxol</span><span class="chip t2">MEA</span><span class="chip red">IPBES</span><span class="chip red">6ᵉ extinction</span><span class="chip red">érosion services</span><span class="chip red">surexploitation</span><span class="chip red">déforestation</span><span class="chip red">espèce invasive</span><span class="chip red">microplastique</span><span class="chip t3">AMP</span><span class="chip t3">One Health</span><span class="chip t3">restauration écologique</span><span class="chip t3">Kunming 2022</span>
+ </div>
+ </div>
+ <div class="block mech">
+ <h3>⚙️ Mécanismes</h3>
+ <ul class="mech-list">
+ <li>Écosystème = biotope + biocénose</li>
+ <li>Énergie ☀️ → producteurs → herbivores → carnivores</li>
+ <li>Décomposeurs → recyclage matière (C, N, P)</li>
+ <li>↑ Biodiversité → ↑ résilience</li>
+ <li>4 services (MEA) → bien-être humain</li>
+ <li>5 cavaliers IPBES dégradent les services</li>
+ </ul>
+ </div>
+ </div>
+ <div class="grid2" style="margin-top:1rem">
+ <div class="block chiffres">
+ <h3>🔢 Chiffres-clés</h3>
+ <div class="num-grid">
+ <div class="num"><div class="v">125 000 Md $</div><div class="l">services/an mondial</div></div>
+ <div class="num"><div class="v">75 %</div><div class="l">cultures pollinisées</div></div>
+ <div class="num"><div class="v">1 M esp.</div><div class="l">menacées (IPBES)</div></div>
+ <div class="num"><div class="v">30 %</div><div class="l">protégés objectif 2030</div></div>
+ </div>
+ </div>
+ <div class="block must">
+ <h3>🎯 5 cavaliers IPBES (ordre)</h3>
+ <ul class="must-list">
+ <li>1️⃣ <strong>Changement d'usage des sols</strong> (n°1)</li>
+ <li>2️⃣ Surexploitation (chasse, pêche)</li>
+ <li>3️⃣ Changement climatique</li>
+ <li>4️⃣ Pollutions (pesticides, plastiques)</li>
+ <li>5️⃣ Espèces invasives</li>
+ </ul>
+ </div>
+ </div>
+</div>
+
+<!-- 9. VARIATION GÉNÉTIQUE -->
+<div id="c9" class="card tb">
+ <h2><span class="badge-num">Cours 9</span> 🦠 Variation génétique &amp; antibiorésistance</h2>
+ <div class="grid2">
+ <div class="block vocab">
+ <h3>📌 Vocabulaire</h3>
+ <div class="chips">
+ <span class="chip tb">mutation aléatoire</span><span class="chip tb">substitution</span><span class="chip tb">délétion</span><span class="chip tb">insertion</span><span class="chip tb">erreur de réplication</span><span class="chip tb">Luria-Delbrück</span><span class="chip t1">antibiotique</span><span class="chip t1">antibiogramme</span><span class="chip t1">β-lactamase</span><span class="chip t1">pénicilline</span><span class="chip t1">pompe à efflux</span><span class="chip t1">modification de cible</span><span class="chip t3">pression de sélection</span><span class="chip t3">sélection naturelle</span><span class="chip t3">variation préexistante</span><span class="chip t3">adaptation</span><span class="chip t3">Darwin</span><span class="chip t4">transfert horizontal</span><span class="chip t4">conjugaison</span><span class="chip t4">plasmide</span><span class="chip t4">pilus</span><span class="chip t4">transformation</span><span class="chip t4">ADN libre</span><span class="chip t4">transduction</span><span class="chip t4">bactériophage</span><span class="chip red">usage raisonné</span><span class="chip red">One Health</span><span class="chip red">vaccin</span>
+ </div>
+ </div>
+ <div class="block mech">
+ <h3>⚙️ Mécanismes</h3>
+ <ul class="mech-list">
+ <li>Réplication → erreur → MUTATION aléatoire</li>
+ <li>Luria-Delbrück : mutation préexiste à l'antibio</li>
+ <li>Antibio → pression de sélection → tri</li>
+ <li>Sensibles meurent · résistantes survivent &amp; ↑↑</li>
+ <li>Conjugaison : pilus → plasmide R transféré</li>
+ <li>Transformation : capture ADN libre du milieu</li>
+ <li>Transduction : bactériophage = vecteur</li>
+ </ul>
+ </div>
+ </div>
+ <div class="grid2" style="margin-top:1rem">
+ <div class="block chiffres">
+ <h3>🔢 Chiffres-clés</h3>
+ <div class="num-grid">
+ <div class="num"><div class="v">20-30 min</div><div class="l">division E. coli</div></div>
+ <div class="num"><div class="v">1928</div><div class="l">pénicilline (Fleming)</div></div>
+ <div class="num"><div class="v">1943</div><div class="l">Luria-Delbrück</div></div>
+ <div class="num"><div class="v">10 M/an</div><div class="l">décès prévus 2050 (OMS)</div></div>
+ </div>
+ </div>
+ <div class="block must">
+ <h3>🎯 À ne pas confondre</h3>
+ <ul class="must-list">
+ <li>Antibio n'induit PAS la mutation → la sélectionne</li>
+ <li>3 transferts horizontaux : <strong>conjugaison · transformation · transduction</strong></li>
+ <li>Antibiotique (bactéries) ≠ antiviral (virus)</li>
+ </ul>
+ </div>
+ </div>
+</div>
+
+<!-- 10. GLYCÉMIE -->
+<div id="c10" class="card t3">
+ <h2><span class="badge-num">Cours 10</span> 🩸 Régulation glycémie &amp; diabète</h2>
+ <div class="grid2">
+ <div class="block vocab">
+ <h3>📌 Vocabulaire</h3>
+ <div class="chips">
+ <span class="chip t4">glycémie</span><span class="chip t4">homéostasie</span><span class="chip t4">milieu intérieur</span><span class="chip t4">valeur de consigne</span><span class="chip t4">boucle de régulation</span><span class="chip t4">rétroaction négative</span><span class="chip t1">pancréas endocrine</span><span class="chip t1">îlot de Langerhans</span><span class="chip t1">cellule α</span><span class="chip t1">cellule β</span><span class="chip t2">insuline</span><span class="chip t2">glucagon</span><span class="chip t2">hypoglycémiant</span><span class="chip t2">hyperglycémiant</span><span class="chip t2">récepteur tyrosine-kinase</span><span class="chip t3">GLUT4</span><span class="chip t3">translocation</span><span class="chip t3">glycogénogenèse</span><span class="chip t3">glycogénolyse</span><span class="chip t3">néoglucogenèse</span><span class="chip t3">lipogenèse</span><span class="chip t3">glycogène</span><span class="chip red">diabète type 1</span><span class="chip red">auto-immun</span><span class="chip red">diabète type 2</span><span class="chip red">insulinorésistance</span><span class="chip red">épuisement cellules β</span><span class="chip red">hyperglycémie</span><span class="chip red">rétinopathie</span><span class="chip red">néphropathie</span><span class="chip red">neuropathie</span>
+ </div>
+ </div>
+ <div class="block mech">
+ <h3>⚙️ Mécanismes</h3>
+ <ul class="mech-list">
+ <li>Repas → glycémie ↑ → cellules β → INSULINE</li>
+ <li>Insuline → foie (glycogène) + muscles/adipo (GLUT4)</li>
+ <li>Glycémie ↓ → retour consigne ✓</li>
+ <li>Jeûne/effort → glycémie ↓ → cellules α → GLUCAGON</li>
+ <li>Glucagon → foie : glycogénolyse + néoglucogenèse</li>
+ <li>T2 = insulinorésistance + épuisement β</li>
+ <li>T1 = destruction auto-immune cellules β</li>
+ </ul>
+ </div>
+ </div>
+ <div class="grid2" style="margin-top:1rem">
+ <div class="block chiffres">
+ <h3>🔢 Chiffres-clés</h3>
+ <div class="num-grid">
+ <div class="num"><div class="v">0,9 g/L</div><div class="l">consigne</div></div>
+ <div class="num"><div class="v">0,7-1,1</div><div class="l">plage normale</div></div>
+ <div class="num"><div class="v">≥ 1,26 g/L</div><div class="l">seuil T2 (à jeun)</div></div>
+ <div class="num"><div class="v">~ 90 %</div><div class="l">diabétiques T2</div></div>
+ <div class="num"><div class="v">500 M</div><div class="l">diabétiques monde</div></div>
+ <div class="num"><div class="v">1-2 %</div><div class="l">vol. pancréas endocrine</div></div>
+ </div>
+ </div>
+ <div class="block must">
+ <h3>🎯 À ne pas confondre</h3>
+ <ul class="must-list">
+ <li><strong>Cellule β</strong> = insuline (centre îlot)</li>
+ <li><strong>Cellule α</strong> = glucagon (périphérie)</li>
+ <li><strong>T1</strong> auto-immun (jeune) ≠ <strong>T2</strong> insulinoR (adulte)</li>
+ <li>Insuline = SEULE hormone hypoglycémiante</li>
+ </ul>
+ </div>
+ </div>
+</div>
+
+</main>
+
+<footer>
+ 📝 Antisèche SVT Terminale Spécialité · Bac 2026<a href="accueil-svt.html" style="color:var(--c3);text-decoration:none">retour à l'index</a><br>
+ <span style="display:inline-block;margin-top:.5rem;font-size:.7rem">Bonne chance ! 🍀</span>
+</footer>
+
+</body>
+</html>

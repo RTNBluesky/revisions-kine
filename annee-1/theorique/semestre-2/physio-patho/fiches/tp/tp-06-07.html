@@ -1,0 +1,1642 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Troubles musculo- squelettiques — Traumatismes, infections, néoplasmes — Troubles du développement et métaboliques — Maladies rhumatismales. Synthèse intégral">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../../assets/css/acces.css">
+<script src="../../../../../../assets/js/acces.js"></script>
+<title>Fiche de Révision — Troubles Musculosquelettiques (TP6 & 7)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,800;1,9..144,500&family=JetBrains+Mono:wght@400;600&family=Inter+Tight:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../../../assets/css/chrome.css">
+<style>
+ :root{
+ --ink:#0f1117;
+ --paper: #ff8fa3;
+ --paper-2: #ff8fa3;
+ --accent:#ff5c6b; /* rouge anatomique */
+ --accent-2: #ff6b9d; /* vert clinique */
+ --accent-3: #ff8fa3; /* ocre */
+ --accent-4:#ff5c6b; /* bleu nuit */
+ --muted: #9aa3b8;
+ --line:rgba(26,22,18,.15);
+ --line-strong:rgba(26,22,18,.4);
+ --shadow:0 1px 0 rgba(26,22,18,.08), 0 8px 24px -12px rgba(26,22,18,.25);
+ }
+ *{box-sizing:border-box;margin:0;padding:0}
+ html{scroll-behavior:smooth;scroll-padding-top:80px}
+ body{
+ font-family:'Inter Tight',sans-serif;
+ background:var(--paper);
+ color:var(--ink);
+ line-height:1.6;
+ font-size:15px;
+ background-image:
+ radial-gradient(ellipse at top left, rgba(255,92,107,.04), transparent 50%),
+ radial-gradient(ellipse at bottom right, rgba(255,107,157,.04), transparent 50%);
+ }
+ /* Texture papier */
+ body::before{
+ content:"";
+ position:fixed;inset:0;
+ background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9'/><feColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.08 0 0 0 0 0.05 0 0 0 0.04 0'/></filter><rect width='200' height='200' filter='url(%23n)'/></svg>");
+ pointer-events:none;z-index:1;opacity:.6;
+ }
+ /* HEADER */
+ header.cover{
+ position:relative;
+ padding:80px 5vw 60px;
+ border-bottom:2px solid var(--ink);
+ background:linear-gradient(180deg, var(--paper-2), var(--paper));
+ overflow:hidden;
+ z-index:2;
+ }
+ .cover-grid{
+ display:grid;
+ grid-template-columns:1fr auto;
+ gap:40px;
+ align-items:end;
+ max-width:1400px;
+ margin:0 auto;
+ }
+ .eyebrow{
+ font-family:'JetBrains Mono',monospace;
+ font-size:11px;
+ letter-spacing:.25em;
+ text-transform:uppercase;
+ color:var(--accent);
+ margin-bottom:16px;
+ display:flex;align-items:center;gap:12px;
+ }
+ .eyebrow::before{content:"";width:40px;height:1px;background:var(--accent)}
+ h1.title{
+ font-family:'Fraunces',serif;
+ font-weight:800;
+ font-size:clamp(48px,8vw,120px);
+ line-height:.92;
+ letter-spacing:-.03em;
+ color:var(--ink);
+ }
+ h1.title em{font-style:italic;color:var(--accent);font-weight:600}
+ .subtitle{
+ font-family:'Fraunces',serif;
+ font-style:italic;
+ font-size:clamp(18px,2vw,24px);
+ color:var(--muted);
+ margin-top:20px;
+ max-width:60ch;
+ }
+ .chapter-tag{
+ font-family:'JetBrains Mono',monospace;
+ font-size:14px;
+ text-align:right;
+ line-height:1.4;
+ }
+ .chapter-tag span{display:block}
+ .chapter-tag .num{
+ font-family:'Fraunces',serif;
+ font-size:64px;
+ font-weight:800;
+ color:var(--accent);
+ line-height:1;
+ }
+ /* NAV */
+ nav.toc{
+ position:sticky;top:0;z-index:50;
+ background:var(--ink);
+ color:var(--paper);
+ padding:14px 5vw;
+ border-bottom:2px solid var(--accent);
+ }
+ .toc-inner{
+ max-width:1400px;margin:0 auto;
+ display:flex;flex-wrap:wrap;gap:8px 24px;align-items:center;
+ font-family:'JetBrains Mono',monospace;
+ font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+ }
+ .toc-inner a{
+ color:var(--paper);text-decoration:none;
+ padding:6px 0;
+ border-bottom:1px solid transparent;
+ transition:border-color .2s, color .2s;
+ }
+ .toc-inner a:hover{color:var(--accent-3);border-color:var(--accent-3)}
+ .toc-label{color:var(--accent-3);margin-right:auto}
+
+ /* MAIN */
+ main{
+ max-width:1400px;margin:0 auto;
+ padding:60px 5vw;
+ position:relative;z-index:2;
+ }
+ section{
+ margin-bottom:80px;
+ padding-top:40px;
+ border-top:1px solid var(--line);
+ }
+ section:first-of-type{border-top:none;padding-top:0}
+ .section-head{
+ display:grid;
+ grid-template-columns:auto 1fr;
+ gap:24px;align-items:baseline;
+ margin-bottom:32px;
+ }
+ .section-num{
+ font-family:'Fraunces',serif;
+ font-weight:800;
+ font-size:80px;
+ line-height:.85;
+ color:var(--accent);
+ font-style:italic;
+ }
+ h2{
+ font-family:'Fraunces',serif;
+ font-weight:700;
+ font-size:clamp(28px,4vw,48px);
+ line-height:1;
+ letter-spacing:-.02em;
+ color:var(--ink);
+ }
+ h3{
+ font-family:'Fraunces',serif;
+ font-weight:600;
+ font-size:24px;
+ margin-top:32px;
+ margin-bottom:14px;
+ color:var(--accent-4);
+ letter-spacing:-.01em;
+ border-bottom:1px solid var(--line);
+ padding-bottom:8px;
+ }
+ h4{
+ font-family:'Inter Tight',sans-serif;
+ font-weight:600;
+ font-size:16px;
+ margin-top:18px;
+ margin-bottom:8px;
+ color:var(--accent-2);
+ text-transform:uppercase;
+ letter-spacing:.05em;
+ font-size:13px;
+ }
+ p{margin-bottom:12px}
+ strong{color:var(--accent);font-weight:600}
+ em{font-style:italic;color:var(--accent-4)}
+
+ /* CARTES & GRILLES */
+ .grid-2{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px;margin:20px 0}
+ .grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:20px 0}
+ .card{
+ background:var(--paper-2);
+ border:1px solid var(--line-strong);
+ padding:22px;
+ box-shadow:var(--shadow);
+ position:relative;
+ }
+ .card.accent{border-left:4px solid var(--accent)}
+ .card.green{border-left:4px solid var(--accent-2)}
+ .card.gold{border-left:4px solid var(--accent-3)}
+ .card.blue{border-left:4px solid var(--accent-4)}
+ .card-title{
+ font-family:'Fraunces',serif;
+ font-weight:600;
+ font-size:18px;
+ margin-bottom:10px;
+ color:var(--ink);
+ }
+ .pill{
+ display:inline-block;
+ font-family:'JetBrains Mono',monospace;
+ font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+ padding:4px 10px;
+ background:var(--ink);color:var(--paper);
+ margin-bottom:10px;
+ }
+ .pill.red{background:var(--accent)}
+ .pill.green{background:var(--accent-2)}
+ .pill.gold{background:var(--accent-3);color:var(--ink)}
+ .pill.blue{background:var(--accent-4)}
+
+ ul,ol{margin-left:20px;margin-bottom:12px}
+ li{margin-bottom:6px}
+ ul.tight li, ol.tight li{margin-bottom:3px}
+ ul.dash{list-style:none;margin-left:0}
+ ul.dash li{padding-left:18px;position:relative}
+ ul.dash li::before{
+ content:"—";
+ position:absolute;left:0;
+ color:var(--accent);font-weight:600;
+ }
+
+ /* TABLEAUX */
+ table{
+ width:100%;
+ border-collapse:collapse;
+ margin:16px 0;
+ font-size:14px;
+ background:var(--paper-2);
+ box-shadow:var(--shadow);
+ }
+ th{
+ background:var(--ink);
+ color:var(--paper);
+ padding:12px;
+ text-align:left;
+ font-family:'JetBrains Mono',monospace;
+ font-size:11px;letter-spacing:.1em;text-transform:uppercase;
+ font-weight:400;
+ }
+ td{
+ padding:12px;
+ border-bottom:1px solid var(--line);
+ vertical-align:top;
+ }
+ tr:last-child td{border-bottom:none}
+ tr:nth-child(even) td{background:rgba(255,255,255,.3)}
+
+ /* ENCADRÉ CLEF */
+ .keybox{
+ background:var(--ink);
+ color:var(--paper);
+ padding:24px 28px;
+ margin:24px 0;
+ position:relative;
+ border-left:6px solid var(--accent);
+ }
+ .keybox h4{color:var(--accent-3);margin-top:0;font-size:11px}
+ .keybox .keytitle{
+ font-family:'Fraunces',serif;
+ font-size:22px;
+ font-weight:600;
+ margin-bottom:10px;
+ color:var(--paper);
+ }
+ .keybox p, .keybox li{color:var(--paper);opacity:.92}
+ .keybox strong{color:var(--accent-3)}
+
+ /* MNEMONIQUE */
+ .mnemo{
+ background:linear-gradient(135deg, rgba(255,107,157,.15), rgba(255,92,107,.08));
+ border:2px dashed var(--accent-3);
+ padding:20px 24px;
+ margin:20px 0;
+ }
+ .mnemo .mtag{
+ font-family:'JetBrains Mono',monospace;
+ font-size:10px;letter-spacing:.2em;text-transform:uppercase;
+ color:var(--accent);font-weight:600;
+ margin-bottom:8px;
+ }
+ .mnemo .mtitle{
+ font-family:'Fraunces',serif;
+ font-size:32px;font-weight:800;
+ letter-spacing:-.02em;color:var(--accent-4);
+ margin-bottom:6px;
+ }
+ .mnemo .mletters{
+ font-family:'JetBrains Mono',monospace;
+ color:var(--ink);
+ }
+ .mnemo .mletters span{color:var(--accent);font-weight:600}
+
+ /* COMPARAISON 2 COL */
+ .compare{
+ display:grid;
+ grid-template-columns:1fr auto 1fr;
+ gap:20px;
+ margin:24px 0;
+ align-items:stretch;
+ }
+ .compare > div{
+ padding:20px;
+ background:var(--paper-2);
+ border:1px solid var(--line-strong);
+ }
+ .compare .vs{
+ display:flex;align-items:center;justify-content:center;
+ background:none;border:none;padding:0;
+ font-family:'Fraunces',serif;font-style:italic;font-size:32px;
+ color:var(--accent);
+ }
+ .compare h4{margin-top:0}
+ @media(max-width:700px){.compare{grid-template-columns:1fr}.compare .vs{padding:10px 0}}
+
+ /* PROGRESSION DE PHASES */
+ .phases{
+ display:grid;
+ grid-template-columns:repeat(4,1fr);
+ gap:12px;
+ margin:24px 0;
+ }
+ .phase{
+ background:var(--paper-2);
+ border-top:4px solid var(--accent);
+ padding:16px;
+ position:relative;
+ }
+ .phase .pn{
+ font-family:'Fraunces',serif;
+ font-weight:800;
+ font-size:36px;
+ color:var(--accent);
+ line-height:1;
+ }
+ .phase .pt{
+ font-weight:600;font-size:14px;
+ margin:6px 0 8px;
+ }
+ .phase .pd{font-size:13px;color:var(--muted)}
+ @media(max-width:800px){.phases{grid-template-columns:repeat(2,1fr)}}
+ @media(max-width:480px){.phases{grid-template-columns:1fr}}
+
+ /* DIAGNOSTIC LISTS */
+ .diag-list{
+ display:grid;
+ grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+ gap:12px;
+ margin:16px 0;
+ }
+ .diag-item{
+ padding:12px 16px;
+ background:rgba(255,107,157,.08);
+ border-left:3px solid var(--accent-2);
+ font-size:14px;
+ }
+ .diag-item .dn{font-weight:600;color:var(--accent-2);font-size:13px;text-transform:uppercase;letter-spacing:.05em}
+
+ /* QUOTE / DEFINITION */
+ .definition{
+ border-left:4px solid var(--accent-3);
+ padding:14px 20px;
+ background:rgba(255,107,157,.08);
+ margin:16px 0;
+ font-style:italic;
+ font-family:'Fraunces',serif;
+ font-size:16px;
+ }
+ .definition::before{
+ content:"DÉFINITION";
+ display:block;
+ font-family:'JetBrains Mono',monospace;
+ font-style:normal;font-size:10px;
+ letter-spacing:.2em;color:var(--accent);
+ margin-bottom:6px;font-weight:600;
+ }
+
+ /* FOOTER */
+ footer{
+ border-top:2px solid var(--ink);
+ padding:40px 5vw;
+ background:var(--ink);
+ color:var(--paper);
+ text-align:center;
+ font-family:'JetBrains Mono',monospace;
+ font-size:11px;
+ letter-spacing:.15em;
+ text-transform:uppercase;
+ position:relative;z-index:2;
+ }
+ footer p{margin:4px 0;opacity:.8}
+ footer strong{color:var(--accent-3)}
+
+ /* PRINT */
+ @media print{
+ nav.toc{position:static}
+ body{background:white;font-size:11pt}
+ body::before{display:none}
+ section{page-break-inside:avoid;margin-bottom:30px}
+ .keybox{page-break-inside:avoid}
+ h2,h3{page-break-after:avoid}
+ }
+
+ /* ANIM ENTRÉE */
+ @keyframes rise{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+ header.cover > *{animation:rise .8s ease-out backwards}
+ header.cover .eyebrow{animation-delay:.1s}
+ header.cover h1.title{animation-delay:.2s}
+ header.cover .subtitle{animation-delay:.4s}
+</style>
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/physio-patho.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-theme.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
+</head>
+<body>
+<a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
+<div class="page-toggle"><div class="pt-inner"><a href="../../qcm/tp/tp-06-07.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<header class="cover">
+ <div class="cover-grid">
+ <div>
+ <div class="eyebrow">Fiche de révision · Pathophysiologie</div>
+ <h1 class="title">Troubles<br>musculo-<em>squelettiques</em></h1>
+ <p class="subtitle">Traumatismes, infections, néoplasmes — Troubles du développement et métaboliques — Maladies rhumatismales. Synthèse intégrale des chapitres 57, 58 et 59.</p>
+ </div>
+ <div class="chapter-tag">
+ <span class="num">57·58·59</span>
+ <span style="margin-top:8px">Unité XIV</span>
+ <span>Sheila Grossman</span>
+ </div>
+ </div>
+</header>
+
+<nav class="toc">
+ <div class="toc-inner">
+ <span class="toc-label">Sommaire →</span>
+ <a href="#ch57">57 · Trauma/Infections/Néoplasmes</a>
+ <a href="#trauma">Traumatismes</a>
+ <a href="#fractures">Fractures</a>
+ <a href="#osteomyelite">Ostéomyélite</a>
+ <a href="#osteonecrose">Ostéonécrose</a>
+ <a href="#tumeurs">Tumeurs</a>
+ <a href="#ch58">58 · Développement/Métabolisme</a>
+ <a href="#osteoporose">Ostéoporose</a>
+ <a href="#paget">Paget</a>
+ <a href="#ch59">59 · Rhumatismes</a>
+ <a href="#pr">PR</a>
+ <a href="#led">LED</a>
+ <a href="#arthrose">Arthrose</a>
+ <a href="#goutte">Goutte</a>
+ </div>
+</nav>
+
+<main>
+
+<!-- ============================================== -->
+<!-- CHAPITRE 57 -->
+<!-- ============================================== -->
+<section id="ch57">
+ <div class="section-head">
+ <div class="section-num">57</div>
+ <div>
+ <h2>Traumatismes, Infections, Néoplasmes</h2>
+ <p style="color:var(--muted);margin-top:8px;font-style:italic">Le système musculosquelettique = os + articulations + muscles + ligaments + tendons. ~206 os chez l'adulte (>300 à la naissance, certains fusionnent).</p>
+ </div>
+ </div>
+
+ <!-- TRAUMATISMES -->
+ <h3 id="trauma">1.1 — Blessures et traumatismes</h3>
+
+ <div class="card accent" style="margin-bottom:16px">
+ <div class="pill red">Épidémiologie clé</div>
+ <ul class="dash tight">
+ <li>Accidents de la route à grande vitesse = <strong>1ère cause de mortalité</strong> chez les adultes &lt; 44 ans</li>
+ <li>Chutes accidentelles = 1ère cause de blessures non mortelles chez 0–19 ans (~2,8M visites urgences/an)</li>
+ <li>Chez les ≥ 65 ans : 1 personne sur 3 chute au moins 1×/an → majorité des fractures (vertèbres, radius distal, hanche), aggravées par <strong>ostéoporose</strong></li>
+ <li>Blessures sportives : aiguës (trauma soudain) ou par <strong>utilisation excessive</strong> (50% des blessures sportives chez l'enfant)</li>
+ </ul>
+ </div>
+
+ <h4>Lésions des tissus mous</h4>
+ <div class="grid-3">
+ <div class="card">
+ <div class="card-title">Contusion</div>
+ <p>Trauma direct, peau intacte. Ecchymose (noir/bleu → brun → jaune). Traitement : élévation + froid 20 min/4h.</p>
+ </div>
+ <div class="card">
+ <div class="card-title">Hématome</div>
+ <p>Hémorragie locale étendue. Douleur par pression sur terminaisons nerveuses. Peut s'<strong>infecter</strong>, peut nécessiter aspiration.</p>
+ </div>
+ <div class="card">
+ <div class="card-title">Lacération</div>
+ <p>Peau déchirée. Risque tétanos/gangrène gazeuse (anaérobies) si plaie perforante rouillée. Traitement : suture après nettoyage.</p>
+ </div>
+ </div>
+
+ <h4>Lésions articulaires (musculo-tendineuses)</h4>
+ <div class="compare">
+ <div>
+ <div class="pill blue">Claquage (foulure)</div>
+ <h4 style="margin-top:0">Étirement musculo-tendineux</h4>
+ <p>Surcharge mécanique d'un muscle/unité musculo-tendineuse. Douleur, raideur, gonflement <em>sans signe extérieur visible</em>. Sites fréquents : <strong>bas du dos, cervicales</strong>, coude, épaule, pied.</p>
+ </div>
+ <div class="vs">vs</div>
+ <div>
+ <div class="pill red">Entorse</div>
+ <h4 style="margin-top:0">Atteinte ligamentaire</h4>
+ <p>Ligaments partiellement ou totalement déchirés. <strong>Cheville</strong> = site n°1. Signes : douleur, gonflement <em>rapide</em>, chaleur, incapacité fonctionnelle, décoloration. Atténuation plus lente que claquage.</p>
+ </div>
+ </div>
+
+ <div class="card gold">
+ <div class="card-title">Degrés d'entorse (face médiale du genou)</div>
+ <ul class="tight">
+ <li><strong>Grade 1</strong> : entorse légère du ligament collatéral médial</li>
+ <li><strong>Grade 2</strong> : modérée + formation d'hématome</li>
+ <li><strong>Grade 3</strong> : grave avec rupture totale du ligament</li>
+ <li><strong>Grade 4</strong> : grave avec avulsion du condyle fémoral médial</li>
+ </ul>
+ </div>
+
+ <div class="keybox">
+ <h4>POINTS CLÉS — Blessures articulaires</h4>
+ <ul class="tight">
+ <li>Articulations = partie la plus fragile du système squelettique</li>
+ <li>Lésions possibles : <strong>tendons</strong> (muscle↔os), <strong>ligaments</strong> (os↔os), <strong>cartilage</strong> articulaire</li>
+ <li>Guérison du tissu conjonctif dense = <strong>longue</strong>. Ligaments : possible chirurgie de rapprochement</li>
+ <li>Atteinte du cartilage articulaire → prédisposition à une <strong>maladie articulaire ultérieure</strong> (arthrose)</li>
+ </ul>
+ </div>
+
+ <h4>Cicatrisation des tissus mous</h4>
+ <ul>
+ <li>Réparation par <strong>fibroblastes</strong> de la gaine tendineuse</li>
+ <li>Capillaires infiltrent la zone → fournissent matériaux pour collagène</li>
+ <li>Faisceaux de collagène : 2 premières semaines</li>
+ <li><strong>Résistance à la traction insuffisante pendant ~2 mois</strong></li>
+ <li>Risques : guérison en position allongée, adhérences (canaux fibreux des mains)</li>
+ </ul>
+
+ <h4>Luxations</h4>
+ <p>Déplacement/séparation des extrémités osseuses avec <strong>perte d'articulation</strong>. <em>Subluxation</em> = luxation partielle (contact maintenu).</p>
+ <ul class="dash tight">
+ <li><strong>Sites les plus fréquents</strong> : épaule (gléno-humérale antérieure), acromio-claviculaire</li>
+ <li>3 types : <strong>congénitales</strong> (hanche, genou)<strong>traumatiques</strong> (chute/coup/rotation)<strong>pathologiques</strong> (infection, PR, paralysie)</li>
+ <li>Traitement : réduction (manipulation/chirurgie) + immobilisation plusieurs semaines</li>
+ </ul>
+
+ <h4>Lésions spécifiques</h4>
+ <div class="grid-2">
+ <div class="card blue">
+ <div class="card-title">Épaule & coiffe des rotateurs</div>
+ <ul class="tight">
+ <li><strong>4 muscles</strong> : supraspinatus (le + touché), teres minor, infraspinatus, subscapularis</li>
+ <li>Articulation gléno-humérale = site n°1 de luxation</li>
+ <li>Causes : utilisation excessive, coup direct, lancer/balancement</li>
+ <li>Récupération post-chirurgicale : <strong>6–12 mois</strong></li>
+ </ul>
+ </div>
+ <div class="card green">
+ <div class="card-title">Genou</div>
+ <ul class="tight">
+ <li><strong>Ménisques</strong> (latéral + médial) : fibrocartilage en C, répartition charge + absorption chocs</li>
+ <li>Lésion par rotation/pivotement (foot, basket, hockey) — souvent associée à rupture LCA</li>
+ <li>Diagnostic par <strong>IRM</strong></li>
+ <li><strong>Chondromalacie</strong> = ramollissement du cartilage rotulien (jeunes adultes)</li>
+ <li>Subluxation/luxation rotulienne : ~10% des blessures sportives, ♀ &gt; ♂</li>
+ </ul>
+ </div>
+ <div class="card accent">
+ <div class="card-title">Hanche — Luxation</div>
+ <ul class="tight">
+ <li>Trauma grave, généralement <strong>postérieure</strong></li>
+ <li>= <strong>URGENCE</strong> : risque de nécrose avasculaire de la tête fémorale</li>
+ <li>Réduction précoce indiquée</li>
+ </ul>
+ </div>
+ <div class="card accent">
+ <div class="card-title">Hanche — Fractures</div>
+ <ul class="tight">
+ <li>Problème majeur de santé publique chez personnes âgées</li>
+ <li>Facteurs de risque : faible IMC, grande taille, benzodiazépines, troubles vision, ostéoporose</li>
+ <li><strong>Localisations</strong> : col fémoral (intracapsulaire) · intertrochantérienne · sous-trochantérienne</li>
+ <li>Col fémoral déplacée → perturbation vascularisation → <strong>nécrose avasculaire + non-consolidation</strong></li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- FRACTURES -->
+ <h3 id="fractures">1.2 — Fractures</h3>
+
+ <div class="definition">Une fracture = discontinuité de l'os, survenant lorsque la contrainte dépasse la capacité d'absorption osseuse.</div>
+
+ <h4>3 catégories causales</h4>
+ <div class="grid-3">
+ <div class="card"><strong>Blessure soudaine</strong> (la + courante) — Force directe (chute, coup) ou indirecte (contraction massive, trauma transmis).</div>
+ <div class="card"><strong>Fracture de fatigue/stress</strong> — Usure répétée. <em>Tibia médial postérieur</em> chez coureurs. N'apparaît qu'à 2 sem sur RX.</div>
+ <div class="card"><strong>Fracture pathologique</strong> — Os affaibli (ostéoporose, Paget, métastases, kyste, infection). Spontanée ou trauma minime.</div>
+ </div>
+
+ <h4>Classification des fractures</h4>
+ <table>
+ <tr><th>Critère</th><th>Types</th></tr>
+ <tr><td><strong>Communication extérieur</strong></td><td><em>Fermée</em> (peau intacte)<em>Ouverte/compound</em> (fragments à travers la peau → infection, ostéomyélite, non-consolidation)</td></tr>
+ <tr><td><strong>Degré (rupture)</strong></td><td>Complète<em>Bois vert</em> (rupture partielle, enfants &lt; 10 ans, os plus résistants)</td></tr>
+ <tr><td><strong>Nature des fragments</strong></td><td><em>Comminutive</em> (&gt; 2 fragments)<em>Compression</em> (vertèbres)<em>Enfoncée/impactée</em> (humérus)</td></tr>
+ <tr><td><strong>Direction du trait</strong></td><td><em>Transversale</em> (force angulaire, stable)<em>Spirale</em> (torsion)<em>Oblique</em><em>Comminutive</em> (instables)</td></tr>
+ <tr><td><strong>Localisation os long</strong></td><td>Proximale · Médiane · Distale</td></tr>
+ </table>
+
+ <h4>Manifestations cliniques</h4>
+ <p>Douleur, sensibilité, gonflement, perte de fonction, déformation, mobilité anormale. <strong>Crépitement</strong> à la mobilisation. <em>Choc local</em> (qq min à 30 min) avec engourdissement post-fracture, puis retour de la douleur + spasmes.</p>
+ <p><strong>3 types de déformations des os longs :</strong> angulation · raccourcissement (chevauchement par traction musculaire) · rotation.</p>
+
+ <h4>Classification d'Oestern et Tscherne (fractures fermées)</h4>
+ <table>
+ <tr><th>Grade</th><th>Lésion tissus mous</th><th>Lésion osseuse</th></tr>
+ <tr><td>0</td><td>Minimes, lésion indirecte</td><td>Fracture simple</td></tr>
+ <tr><td>1</td><td>Abrasion/contusion superficielle</td><td>Fracture légère</td></tr>
+ <tr><td>2</td><td>Abrasion profonde + contusion cutanée/musculaire, trauma direct</td><td>Fracture grave</td></tr>
+ <tr><td>3</td><td>Contusion étendue/écrasement, lésion musculaire grave, avulsion sous-cutanée, syndrome compartimental possible</td><td>Fracture grave</td></tr>
+ </table>
+
+ <h4>Traitement — 3 objectifs</h4>
+ <ol>
+ <li><strong>Réduction</strong> : réalignement (manipulation fermée ou chirurgicale ouverte)</li>
+ <li><strong>Immobilisation</strong> :
+ <ul class="tight">
+ <li><em>Externe</em> : attelles, plâtres (surveiller circulation : froid, cyanose, paresthésie, pouls↓, remplissage capillaire &gt; 3s, douleur), traction (manuelle, cutanée, squelettique), fixation externe (Ilizarov)</li>
+ <li><em>Interne</em> : vis, plaques (mobilisation précoce, mais risque infection)</li>
+ </ul>
+ </li>
+ <li><strong>Préservation/restauration de la fonction</strong> : exercices actifs (membres non touchés), isométriques (membres touchés), stimulation électrique</li>
+ </ol>
+
+ <h4 id="cicatrisation">Cicatrisation osseuse — 4 phases</h4>
+ <div class="phases">
+ <div class="phase">
+ <div class="pn">1</div>
+ <div class="pt">Hématome</div>
+ <div class="pd">1–2 jours. Vaisseaux déchirés, mort cellulaire, gros caillot en 2–5 j. Réseau de fibrine.</div>
+ </div>
+ <div class="phase">
+ <div class="pn">2</div>
+ <div class="pt">Inflammation</div>
+ <div class="pd">Néovascularisation, fibrose précoce. Spicules osseuses, ostéoblastes, tissu de granulation = début du cal fibrocartilagineux.</div>
+ </div>
+ <div class="phase">
+ <div class="pn">3</div>
+ <div class="pt">Réparatrice</div>
+ <div class="pd">Cal de cartilage et os fibreux. Ossification progresse vers le site → cal osseux. <strong>3–4 sem post-blessure</strong>.</div>
+ </div>
+ <div class="phase">
+ <div class="pn">4</div>
+ <div class="pt">Remodelage</div>
+ <div class="pd">Ostéoclastes éliminent l'os nécrosé. Os compact remplace os spongieux. Réorganisation selon les lignes de contrainte.</div>
+ </div>
+ </div>
+
+ <h4>Troubles de la consolidation</h4>
+ <div class="grid-3">
+ <div class="card accent">
+ <div class="card-title">Consolidation vicieuse</div>
+ <p><em>Malunion</em>. Déformation/angulation/rotation visible à la RX. Cause : réduction/alignement inadéquat.</p>
+ </div>
+ <div class="card accent">
+ <div class="card-title">Consolidation retardée</div>
+ <p>Délai dépassé (ex : tibia/fémur adulte = <strong>20 sem</strong>). Intra-articulaires plus lentes (→ arthrite).</p>
+ </div>
+ <div class="card accent">
+ <div class="card-title">Non-consolidation</div>
+ <p>Arrêt de la réparation. Fréquente au tibia (fractures ouvertes/écrasement). Mobilité au site, douleur à la mise en charge. Établie à <strong>6–12 mois</strong>.</p>
+ </div>
+ </div>
+
+ <h4>Complications des fractures</h4>
+ <div class="grid-2">
+ <div class="card">
+ <div class="card-title">Cloques de fracture</div>
+ <p>Bulles cutanées avec nécrose épidermique. Pression intracompartimentale élevée. Sites : cheville, coude, pied, genou. <strong>Signe avant-coureur du syndrome des loges</strong>.</p>
+ </div>
+ <div class="card accent">
+ <div class="card-title">Syndrome des loges (compartimental)</div>
+ <p>↑ pression dans espace fermé (fascia non élastique) → ischémie tissulaire.</p>
+ <ul class="tight">
+ <li>Pression normale : 0–8 mm Hg ; <strong>&gt; 30 mm Hg</strong> = compromis</li>
+ <li>Symptôme cardinal : <strong>douleur intense disproportionnée</strong></li>
+ <li>Paresthésies → perte motrice. <em>Pouls périphériques souvent normaux</em></li>
+ <li>Aigu (post-fracture) ou chronique (coureurs)</li>
+ <li>Traitement : retirer plâtre/bandages, élévation modérée, <strong>fasciotomie</strong> (dernier recours)</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title">SDRC (syndrome douloureux régional complexe)</div>
+ <p>Anciennement dystrophie sympathique réflexe / causalgie. Douleur intense lancinante/brûlante <em>disproportionnée</em>, transpiration ↑, instabilité vasomotrice. Traitement : gestion douleur, analgésie épidurale.</p>
+ </div>
+ <div class="card">
+ <div class="card-title">Thromboembolie</div>
+ <p>Fractures membres inférieurs → risque TVP, EP. <strong>EP mortelle : 1–7%</strong> dans les 3 mois post-chirurgie hanche. Prophylaxie par HBPM. Diagnostic par échographie Doppler.</p>
+ </div>
+ <div class="card accent">
+ <div class="card-title">Syndrome d'embolie graisseuse (FES)</div>
+ <p>Gouttelettes de graisse → poumons, cerveau, reins. Post-fracture os long/bassin.</p>
+ <ul class="tight">
+ <li>Triade : <strong>insuffisance respiratoire + dysfonction cérébrale + pétéchies</strong></li>
+ <li>Apparition : heures à 3–4 j post-trauma (jamais &gt; 1 sem)</li>
+ <li>Pétéchies : thorax ant., aisselles, cou, palais mou, conjonctive</li>
+ <li>Traitement : O₂, ventilation mécanique, corticostéroïdes. Prévention = <strong>stabilisation rapide</strong></li>
+ </ul>
+ </div>
+ </div>
+
+ <!-- INFECTIONS -->
+ <h3 id="osteomyelite">1.3 — Infections osseuses : Ostéomyélite</h3>
+
+ <div class="definition">Ostéomyélite = infection aiguë ou chronique de l'os (ostéo) et de la cavité médullaire (myélo). <strong>Staphylococcus aureus</strong> = cause la plus fréquente.</div>
+
+ <div class="keybox">
+ <h4>POINTS CLÉS — Infections osseuses</h4>
+ <ul class="tight">
+ <li>Voies d'entrée : blessure (exogène), chirurgie, circulation sanguine, infection cutanée (insuffisance vasculaire)</li>
+ <li>Micro-organismes prolifèrent → mort cellulaire → propagation diaphysaire → inflammation chronique → destruction</li>
+ <li><strong>Difficiles à traiter et éradiquer</strong></li>
+ <li>Prévention : nettoyage/débridement minutieux, protocoles stériles en chirurgie</li>
+ </ul>
+ </div>
+
+ <h4>4 types d'ostéomyélite</h4>
+ <div class="grid-2">
+ <div class="card green">
+ <div class="card-title">1. Hématogène</div>
+ <p>Propagation par le sang. Touche surtout les <strong>enfants</strong> (os longs, métaphyse près du cartilage de croissance). Adultes affaiblis : vertèbres, sternoclav, sacro-iliaques, pubis.</p>
+ <p><strong>Pathogenèse</strong> : exsudat purulent → sectionnement artères perforantes → nécrose corticale → sinus drainant. <em>Involucrum</em> = nouvelle gaine osseuse autour du <em>séquestre</em> nécrotique.</p>
+ <p><strong>Manifestations</strong> : bactériémie (frissons, fièvre, malaise), douleur, rougeur, gonflement local. RX : élévation périoste tardive.</p>
+ <p><strong>Traitement</strong> : antimicrobiens IV puis PO, repos, débridement.</p>
+ </div>
+ <div class="card green">
+ <div class="card-title">2. Pénétration directe / contiguë</div>
+ <p>= cause <strong>la plus fréquente aux USA</strong>. Plaie pénétrante, fracture ouverte, chirurgie. Iatrogène : broche traction, prothèse infectée. 25% post-op = Gram négatifs.</p>
+ <p>Manifestations : fièvre persistante/récurrente, douleur ↑ site op, mauvaise cicatrisation, écoulement.</p>
+ <p>Diagnostic : cultures, biopsie osseuse, imagerie (RX, TDM, IRM, scintigraphie). Traitement : antibiotiques précoces ± décompression chirurgicale.</p>
+ </div>
+ <div class="card green">
+ <div class="card-title">3. Chronique</div>
+ <p>Touche surtout les adultes. Caractérisée par la présence d'un <strong>séquestre</strong> (os mort infecté) entouré d'<strong>involucrum</strong> (gaine d'os neuf). Persiste des années.</p>
+ <p>Traitement : <strong>antibiotiques IV jusqu'à 6 sem</strong> + chirurgie (retrait corps étrangers/séquestres) + immobilisation.</p>
+ </div>
+ <div class="card green">
+ <div class="card-title">4. Avec insuffisance vasculaire</div>
+ <p>Ulcères chroniques/ischémiques du pied chez <strong>diabétiques</strong>. Neuropathie + altération circulation + traumatismes répétés. Diagnostic : os exposé ou révélé après débridement.</p>
+ <p>Traitement dépend de la tension en O₂. Antibiothérapie + débridement. <strong>Oxygénothérapie hyperbare</strong> en appoint.</p>
+ </div>
+ </div>
+
+ <h4>Tuberculose osseuse</h4>
+ <ul>
+ <li>Recrudescence (immigration, immunodéprimés)</li>
+ <li>Site n°1 = <strong>colonne vertébrale</strong> (maladie de Pott, spondylite tuberculeuse) → genoux, hanches</li>
+ <li>Plus destructrice que pyogène, vastes zones médullaires, abcès, déformation vertébrale, atteinte neurologique</li>
+ <li>Diagnostic : biopsie tissulaire/culture (TDM-guidée pour vertèbres). Traitement = principes de la TB respiratoire</li>
+ </ul>
+
+ <!-- OSTÉONÉCROSE -->
+ <h3 id="osteonecrose">1.4 — Ostéonécrose</h3>
+
+ <div class="definition">Mort d'un segment osseux par interruption de l'apport sanguin, sans infection.</div>
+
+ <div class="card blue">
+ <div class="card-title">Causes principales</div>
+ <ul class="tight">
+ <li><strong>Rupture mécanique</strong> : fractures, Legg-Calvé-Perthes, Blount</li>
+ <li><strong>Thrombose/embolie</strong> : drépanocytose, bulles d'azote (décompression)</li>
+ <li><strong>Lésion vasculaire</strong> : vascularite, lupus, PR, radiothérapie, Gaucher</li>
+ <li><strong>Corticostéroïdes</strong> (cause la plus fréquente non traumatique) — délai 6 mois à &gt; 3 ans</li>
+ <li>Bisphosphonates → ostéonécrose de la mâchoire</li>
+ </ul>
+ </div>
+
+ <p>Sites les plus touchés : <strong>tête fémorale</strong> (peu de circulation collatérale), fémur distal, humérus proximal. Le cortex est généralement épargné. Infarctus sous-chondraux → effondrement → arthrose secondaire sévère.</p>
+
+ <p>Diagnostic : antécédents, RX, TDM, scintigraphie au technétium 99m. Traitement : immobilisation courte, AINS, exercice, limitation mise en charge ; <strong>prothèse totale</strong> en cas de stade avancé.</p>
+
+ <!-- NÉOPLASMES -->
+ <h3 id="tumeurs">1.5 — Néoplasmes osseux</h3>
+
+ <div class="keybox">
+ <h4>POINTS CLÉS — Néoplasmes osseux</h4>
+ <ul class="tight">
+ <li>Touchent tissu osseux, cartilage ou moelle</li>
+ <li>Tumeurs bénignes : croissance lente, pas de métastase, effets par volume</li>
+ <li>Tumeurs malignes : <strong>rares avant 10 ans</strong>, pic à l'adolescence, croissance rapide, mortalité élevée</li>
+ <li>3 manifestations principales : <strong>douleur</strong> (nocturne au repos = malignité), <strong>masse</strong>, <strong>altération fonctionnelle</strong></li>
+ </ul>
+ </div>
+
+ <h4>Tumeurs bénignes</h4>
+ <table>
+ <tr><th>Type</th><th>Caractéristiques</th></tr>
+ <tr><td>Ostéome</td><td>Petite, surface des os longs/plats/crâne. Ivoire ou trabéculaire.</td></tr>
+ <tr><td>Chondrome</td><td>Cartilage hyalin. Échondrome (surface) ou endochondrome (médullaire). Mains/pieds. Risque de transformation maligne.</td></tr>
+ <tr><td><strong>Ostéochondrome</strong></td><td><strong>La + fréquente</strong> (50% des bénignes). Se développe pendant la croissance, naissance dans cartilage épiphysaire. Transformation maligne rare.</td></tr>
+ <tr><td>Tumeur à cellules géantes (ostéoclastome)</td><td>Cellules multinucléées agressives. 20–40 ans. Genou, poignet, épaule. Métaphyse → épiphyse. Fractures pathologiques fréquentes.</td></tr>
+ </table>
+
+ <h4>Tumeurs malignes primaires</h4>
+ <div class="grid-3">
+ <div class="card accent">
+ <div class="card-title">Ostéosarcome</div>
+ <span class="pill red">Le + fréquent (40%)</span>
+ <ul class="tight">
+ <li>Tumeur osseuse n°1 chez l'enfant ; ♂ &gt; ♀</li>
+ <li>Site : <strong>près du genou</strong> (fémur distal/tibia proximal/péroné), humérus proximal</li>
+ <li>Personnes âgées : humérus, bassin, fémur proximal (lié à Paget)</li>
+ <li>Gènes de susceptibilité : <strong>RB</strong> (rétinoblastome), <strong>TP53</strong></li>
+ <li>Métastase pulmonaire <strong>précoce</strong> via veines</li>
+ <li>Traitement : chirurgie de sauvetage des membres + chimiothérapie</li>
+ </ul>
+ </div>
+ <div class="card accent">
+ <div class="card-title">Sarcome d'Ewing</div>
+ <span class="pill red">Petites cellules rondes</span>
+ <ul class="tight">
+ <li>Origine = crête neurale</li>
+ <li>10–20 ans, ♂ &gt; ♀ légèrement</li>
+ <li>Site n°1 : <strong>fémur diaphyse</strong>, puis bassin</li>
+ <li><strong>Translocation chromosomes 11–22</strong></li>
+ <li>Manifestations : douleur osseuse, fièvre, perte de poids (peut faire évoquer une infection)</li>
+ <li>Métastases : poumons, moelle, autres os</li>
+ <li>Traitement : chimio + radiothérapie (radiosensible) + chirurgie</li>
+ </ul>
+ </div>
+ <div class="card accent">
+ <div class="card-title">Chondrosarcome</div>
+ <span class="pill red">2ème tumeur maligne</span>
+ <ul class="tight">
+ <li>Cartilage. Âge mûr/avancé, ♂ &gt; ♀</li>
+ <li>Sites : tronc, bassin, fémur proximal, épaule</li>
+ <li>Croissance lente, métastase tardive, souvent indolore</li>
+ <li>Calcifications irrégulières typiques à la RX</li>
+ <li>Traitement : <strong>excision chirurgicale radicale précoce</strong> (résiste à radio/chimio)</li>
+ </ul>
+ </div>
+ </div>
+
+ <h4>Maladie osseuse métastatique</h4>
+ <p>= tumeurs malignes <strong>les plus courantes</strong> du tissu osseux. ~50% des cancers métastasent vers l'os.</p>
+ <ul class="dash">
+ <li><strong>Sites primaires</strong> : sein, poumon, prostate, rein, thyroïde</li>
+ <li><strong>Sites métastatiques</strong> : colonne vertébrale, fémur, bassin, côtes, sternum, humérus proximal, crâne</li>
+ <li>Manifestations : douleur localisée progressive (intense la nuit), fractures pathologiques (fémur, humérus, vertèbres)</li>
+ <li>Examens : RX, TDM, TEP-TDM, scintigraphie. ↑ phosphatase alcaline et calcium</li>
+ <li>Traitement : palliatif. Radiothérapie, chimio, stabilisation chirurgicale + ciment (méthacrylate de méthyle), <strong>bisphosphonates</strong> (pamidronate, acide zolédronique)</li>
+ </ul>
+</section>
+
+<!-- ============================================== -->
+<!-- CHAPITRE 58 -->
+<!-- ============================================== -->
+<section id="ch58">
+ <div class="section-head">
+ <div class="section-num">58</div>
+ <div>
+ <h2>Troubles du développement & Métaboliques</h2>
+ <p style="color:var(--muted);margin-top:8px;font-style:italic">Croissance squelettique : modelage (cesse à 18–20 ans) puis remodelage à vie. Avec l'âge, déséquilibre résorption/formation → perte osseuse.</p>
+ </div>
+ </div>
+
+ <h3>2.1 — Croissance et remodelage osseux</h3>
+
+ <div class="keybox">
+ <h4>POINTS CLÉS</h4>
+ <ul class="tight">
+ <li>Beaucoup de troubles infantiles dus à la <strong>position intra-utérine</strong> et se résolvent</li>
+ <li>Troubles nutritionnels/métaboliques perturbent la matrice osseuse → ralentissement au cartilage de croissance</li>
+ </ul>
+ </div>
+
+ <h4>Cartilage de croissance épiphysaire</h4>
+ <p>Cellules cartilagineuses prolifèrent → grossissent → calcifient → meurent → ostéoblastes envahissent → ostéoïde → os mature. Permet la croissance <strong>sans modifier la forme</strong>. Cesse à la puberté.</p>
+ <p>Vulnérabilités : séparation traumatique (zone hypertrophique = zone faible), scorbut (vitamine C ↓ matrice organique), rachitisme (vitamine D ↓ calcification).</p>
+
+ <h4>Remodelage osseux — système RANK/RANKL/OPG</h4>
+ <div class="grid-2">
+ <div class="card">
+ <div class="card-title">Cellules clés</div>
+ <ul class="tight">
+ <li><strong>Ostéoblastes</strong> : formation osseuse, produisent ostéoïde, expriment récepteurs hormonaux. Marqueurs : phosphatase alcaline, ostéocalcine</li>
+ <li><strong>Ostéoclastes</strong> : résorption osseuse. Issus des précurseurs monocytes/macrophages</li>
+ <li><strong>Ostéocytes</strong> : ostéoblastes enfouis, maintiennent la matrice</li>
+ </ul>
+ </div>
+ <div class="card">
+ <div class="card-title">Voie paracrine pivot</div>
+ <ul class="tight">
+ <li><strong>RANKL</strong> (produit par ostéoblastes) → se lie à <strong>RANK</strong> (sur ostéoclastes) → différenciation/activation des ostéoclastes</li>
+ <li><strong>OPG</strong> (ostéoprotégérine) = récepteur leurre soluble qui bloque RANKL</li>
+ <li>Œstrogène ↑ OPG → protection osseuse. Glucocorticoïdes ↑ RANKL → perte osseuse</li>
+ </ul>
+ </div>
+ </div>
+
+ <h3>2.2 — Modifications de la croissance normale</h3>
+
+ <h4>Déformations en torsion</h4>
+ <table>
+ <tr><th>Anomalie</th><th>Description</th><th>Évolution</th></tr>
+ <tr><td><strong>Métatarse adductus</strong> (pieds varus)</td><td>"Pieds en pigeon". Avant-pied adducté, forme en rein. 1/1000–2000 naissances. Lié à position fœtale.</td><td>Grade I souple : aucun traitement. Grade III rigide : plâtres/attelles</td></tr>
+ <tr><td><strong>Pied valgus</strong> (pieds en dehors)</td><td>Torsion fémorale externe. Souvent associé à calcanéo-valgus.</td><td>Auto-correction avec marche. Attelle nocturne possible</td></tr>
+ <tr><td><strong>Torsion tibiale interne</strong></td><td>Cause n°1 de pieds varus chez &lt; 2 ans. Lié au sommeil/assise pieds rentrés.</td><td>Amélioration avec croissance (lente)</td></tr>
+ <tr><td><strong>Antéversion fémorale</strong></td><td>Variante normale 3–4 ans, ♀ +. Position assise en "W". Possible mauvais alignement fémoro-patellaire</td><td>Si grave : ostéotomie de dérotation</td></tr>
+ </table>
+
+ <h4>Genu varum & valgum</h4>
+ <div class="compare">
+ <div>
+ <div class="pill red">Genu varum</div>
+ <h4 style="margin-top:0">Jambes arquées</h4>
+ <p>Déviation externe des genoux &gt; 2,5 cm. Normal jusqu'à 18 mois. Si écart &gt; 15° après 2 ans : exclure rachitisme ou <strong>maladie de Blount</strong> (tibia vara idiopathique).</p>
+ </div>
+ <div class="vs">vs</div>
+ <div>
+ <div class="pill green">Genu valgum</div>
+ <h4 style="margin-top:0">Jambes arquées (genoux X)</h4>
+ <p>Diminution espace entre genoux. Apparaît après 24 mois, max 3–4 ans. Lié à laxité ligamentaire et <strong>obésité</strong>. Résolution spontanée vers 7 ans.</p>
+ </div>
+ </div>
+
+ <h4>Pied plat (pes planus)</h4>
+ <ul class="dash">
+ <li>Normal jusqu'à 2 ans (coussinets adipeux)</li>
+ <li><strong>Flexible</strong> : voûte disparaît à la mise en charge ; pas de traitement</li>
+ <li><strong>Rigide</strong> : associé à maladies neuromusculaires (paralysie cérébrale)</li>
+ </ul>
+
+ <h3>2.3 — Malformations héréditaires et congénitales</h3>
+
+ <div class="card accent">
+ <div class="card-title">Ostéogenèse imparfaite (OI)</div>
+ <span class="pill red">Maladie héréditaire</span>
+ <p>Synthèse défectueuse du <strong>collagène de type I</strong>. Mutations <strong>COL1A1</strong> (chr 17) / <strong>COL1A2</strong> (chr 7). Généralement <em>autosomique dominante</em>.</p>
+ <h4>Manifestations</h4>
+ <ul class="tight">
+ <li><strong>Fragilité squelettique extrême</strong>, fractures multiples</li>
+ <li>Os fins, crâne mou, <strong>sclères bleues/grises</strong>, dents anormales, surdité (otosclérose adulte), laxité articulaire, scoliose, hypotonie</li>
+ <li>4 sous-types principaux. <strong>Type II</strong> : périnatal mortel</li>
+ <li>Traitement : <strong>bisphosphonates</strong> (↑ largeur cortex, ↑ résistance), prévention/traitement fractures, chirurgie</li>
+ </ul>
+ </div>
+
+ <div class="card accent">
+ <div class="card-title">Dysplasie développementale de la hanche (DDH)</div>
+ <span class="pill red">Anciennement luxation congénitale</span>
+ <p><strong>1/100 nouveau-nés</strong> avec instabilité, <strong>1/1000</strong> avec luxation. <em>Hanche gauche, premiers-nés, ♀ &gt; ♂ × 6</em> (œstrogènes maternels, position siège).</p>
+ <h4>Tests diagnostiques</h4>
+ <ul class="tight">
+ <li><strong>Manœuvre d'Ortolani</strong> (luxation réductible) : "clic" lors de la réduction</li>
+ <li><strong>Manœuvre de Barlow</strong> (luxation provocable) : pression vers le bas → luxation</li>
+ <li><strong>Test de Galeazzi</strong> : hauteur des genoux inégale (genoux fléchis)</li>
+ <li>Asymétrie plis fessiers, abduction limitée</li>
+ <li>Confirmation : <strong>échographie</strong> &lt; 6 mois ; RX après 6 mois (têtes fémorales s'ossifient à 4–6 mois)</li>
+ </ul>
+ <p><strong>Traitement</strong> : <em>harnais de Pavlik</em> (jusqu'à 6 mois) ; traction cutanée + plâtre spica si plus âgé. Risque de <strong>nécrose avasculaire</strong> par abduction forcée.</p>
+ </div>
+
+ <div class="card accent">
+ <div class="card-title">Pied bot congénital (talipes)</div>
+ <p>1–2/1000 naissances vivantes, bilatéral 50%, ♂ &gt; ♀.</p>
+ <ul class="tight">
+ <li><strong>Équinovarus</strong> (95%) : pied fléchi plantairement et inversé</li>
+ <li><strong>Calcanéovalgus</strong> (5%) : pied fléchi dorsalement et éversé</li>
+ <li>Traitement = <strong>méthode Ponseti</strong> : étirement + plâtres hebdomadaires (6–8 sem) + ténotomie d'Achille percutanée + attelle Denis Browne (3 mois temps plein, 2–3 ans nocturne)</li>
+ </ul>
+ </div>
+
+ <h3>2.4 — Ostéochondroses juvéniles</h3>
+ <div class="grid-2">
+ <div class="card blue">
+ <div class="card-title">Maladie de Legg-Calvé-Perthes</div>
+ <p><strong>Ostéonécrose idiopathique de l'épiphyse fémorale capitale</strong>. 1/1200, ♂ &gt; ♀, 3–12 ans (médiane 7).</p>
+ <h4>4 stades</h4>
+ <ol class="tight">
+ <li><strong>Avasculaire</strong> (6–12 mois) : nécrose</li>
+ <li><strong>Revascularisation</strong> (1–3 ans) : résorption</li>
+ <li><strong>Réossification</strong></li>
+ <li><strong>Guérison</strong></li>
+ </ol>
+ <p>Symptômes : douleur cuisse/genou, boiterie indolore, abduction/rotation interne limitées. Traitement : maintien tête fémorale dans cotyle (abduction + rotation interne), chirurgie si &gt; 6 ans.</p>
+ </div>
+ <div class="card blue">
+ <div class="card-title">Maladie d'Osgood-Schlatter</div>
+ <p>Microfractures à l'insertion du tendon rotulien sur le tubercule tibial. <strong>Adolescents sportifs</strong>. Tendon enflammé, douleur antérieure du genou, gonflement, proéminence.</p>
+ <p>Spontanément résolutif. Limitation activité, bandes/attelles, AINS, glace. Résolution complète après fermeture du cartilage de croissance (1–2 ans).</p>
+ </div>
+ <div class="card blue">
+ <div class="card-title">Glissement de l'épiphyse fémorale supérieure (coxa vara)</div>
+ <p>Déplacement tridimensionnel à la maturité squelettique. ♂ &gt; ♀ × 2, bilatéral 50%. <strong>Enfants en surpoids</strong> + retard caractères sexuels secondaires (ou grands/minces).</p>
+ <p>Symptômes : douleur référée au genou, difficultés à marcher. Classification : léger &lt; 33%, modéré 33–50%, grave &gt; 50%. Traitement = <strong>fixation in situ</strong> par broches.</p>
+ </div>
+ </div>
+
+ <h3>2.5 — Scoliose</h3>
+ <div class="definition">Déviation latérale de la colonne vertébrale (plan coronal/frontal) avec ou sans rotation/déformation des vertèbres. Déformation tridimensionnelle.</div>
+
+ <table>
+ <tr><th>Type</th><th>Caractéristiques</th></tr>
+ <tr><td><strong>Idiopathique</strong> (80%)</td><td>Cause inconnue. Sous-types : infantile (&lt;3 ans), juvénile (4–9 ans), <em>adolescent</em> (≥10 ans, le + fréquent). ♀ +. Lien gène MTNR1B</td></tr>
+ <tr><td><strong>Congénitale</strong></td><td>Défauts de formation (hémivertèbre) ou segmentation (6–8 sem embryonnaire). Chirurgie souvent nécessaire</td></tr>
+ <tr><td><strong>Neuromusculaire</strong></td><td>Paralysie cérébrale, dystrophie musculaire, myélodysplasie, polio. Courbure longue en C</td></tr>
+ </table>
+
+ <h4>Diagnostic & traitement</h4>
+ <ul class="dash">
+ <li>Signes : épaules/iliaques inégaux, omoplates proéminentes, mauvais alignement, asymétrie flancs, bosse costale (penché en avant)</li>
+ <li><strong>Scoliomètre &gt; 5°</strong> = consultation médicale</li>
+ <li>Confirmation par RX (mesure de la courbure)</li>
+ <li>Traitement selon courbure :
+ <ul class="tight">
+ <li>10–20° : observation</li>
+ <li>20–30° (immature) : surveillance</li>
+ <li>30–40° : <strong>corset</strong> (Milwaukee, sous-axillaire)</li>
+ <li>&gt; 40–45° : <strong>chirurgie</strong> (instrumentation + fusion vertébrale)</li>
+ </ul>
+ </li>
+ </ul>
+
+ <!-- MALADIES MÉTABOLIQUES -->
+ <h3 id="osteoporose">2.6 — Ostéoporose</h3>
+
+ <div class="keybox">
+ <h4>POINTS CLÉS — Troubles métaboliques osseux</h4>
+ <ul class="tight">
+ <li>Origine dans le remodelage : résorption ostéoclastique → formation ostéoblastique → minéralisation</li>
+ <li>Ostéoporose = <strong>perte de masse osseuse totale</strong> par déséquilibre résorption &gt; formation</li>
+ <li>Surtout liée au <strong>vieillissement</strong> et à la <strong>diminution des œstrogènes</strong> à la ménopause</li>
+ </ul>
+ </div>
+
+ <h4>Pathogenèse</h4>
+ <ul class="dash">
+ <li><strong>Pic de masse osseuse</strong> au début de l'âge adulte (déterminé par génétique, œstrogènes, exercice, calcium, race, taille corporelle)</li>
+ <li>Femmes blanches/asiatiques : taux de fracture les + élevés ; femmes noires : DMO la + élevée</li>
+ <li><strong>Carence œstrogénique</strong> : ↑ cytokines (IL-1, IL-6, TNF) → ↑ ostéoclastes ; ↓ OPG → moins d'inhibition de la formation ostéoclastique</li>
+ <li>Hommes : pic de masse osseuse 8–10% supérieur, pas de chute hormonale brutale → ostéoporose plus tardive</li>
+ <li>Ostéoporose secondaire : hyperthyroïdie, hyperparathyroïdie, Cushing, diabète, myélome, alcool, <strong>corticostéroïdes</strong> (cause médicamenteuse n°1)</li>
+ <li><strong>Triade de l'athlète féminine</strong> : trouble alimentaire + aménorrhée + ostéoporose</li>
+ </ul>
+
+ <h4>Manifestations cliniques</h4>
+ <ul>
+ <li>Maladie <strong>silencieuse</strong> jusqu'à la fracture</li>
+ <li>Fractures typiques : <strong>vertèbres</strong> (compression, perte de hauteur), <strong>hanche</strong>, <strong>radius distal</strong>, humérus</li>
+ <li><strong>Cyphose dorsale</strong> ("bosse de la veuve")</li>
+ <li>Postménopausique : os spongieux (vertèbres, radius). Sénile : cortex aminci → hanche</li>
+ </ul>
+
+ <h4>Diagnostic</h4>
+ <ul class="dash">
+ <li><strong>DXA</strong> (absorptiométrie biphotonique) : hanche entière + col fémoral + L1–L4 (utiliser le score le + bas)</li>
+ <li><strong>Score T &lt; −2,5</strong> = ostéoporose</li>
+ <li>Outil <strong>FRAX</strong> : risque sur 10 ans</li>
+ <li>Dépistage NOF : toutes les femmes à 65 ans (ou plus tôt si facteurs de risque)</li>
+ </ul>
+
+ <div class="card gold">
+ <div class="card-title">Facteurs de risque (NOF)</div>
+ <div class="grid-2" style="margin:0">
+ <div>
+ <h4>Personnels</h4>
+ <ul class="tight">
+ <li>Âge avancé, sexe féminin</li>
+ <li>Race blanche, peau claire</li>
+ <li>Petite ossature, faible IMC</li>
+ <li>Postménopause, ATCD familiaux</li>
+ <li>Ménarche tardive (≥15 ans)</li>
+ </ul>
+ </div>
+ <div>
+ <h4>Mode de vie & médicaments</h4>
+ <ul class="tight">
+ <li>Sédentarité, carence calcium/vitamine D</li>
+ <li>Régime hyperprotéiné, alcool, caféine</li>
+ <li><strong>Tabagisme</strong></li>
+ <li>Corticostéroïdes, héparine, anticonvulsivants, antiacides Al</li>
+ <li>Hyperthyroïdie, Cushing, diabète, BPCO, PR</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+
+ <h4>Traitement</h4>
+ <p><strong>Apports recommandés</strong> : calcium 1000 mg/j (préménopause), <strong>1500 mg/j</strong> (postménopause) ; vitamine D <strong>400–800 UI/j</strong>.</p>
+ <table>
+ <tr><th>Classe</th><th>Médicaments</th><th>Action</th></tr>
+ <tr><td>Antirésorptifs</td><td><strong>Bisphosphonates</strong> (alendronate, risédronate, ibandronate)</td><td>Liaison hydroxyapatite, inhibition ostéoclastes — <strong>traitement de référence</strong></td></tr>
+ <tr><td>Antirésorptifs</td><td>Œstrogènes / SERM (raloxifène)</td><td>↑ OPG, inhibition ostéoclastes</td></tr>
+ <tr><td>Antirésorptifs</td><td>Calcitonine</td><td>Inhibition ostéoclastes</td></tr>
+ <tr><td>Anabolisants</td><td>Tériparatide (PTH recombinante)</td><td>↑ formation ostéoblastique</td></tr>
+ </table>
+ <p><strong>Procédures</strong> : vertébroplastie, cyphoplastie (ciment osseux pour fractures vertébrales).</p>
+
+ <h3>2.7 — Ostéomalacie & Rachitisme</h3>
+
+ <div class="compare">
+ <div>
+ <div class="pill blue">Ostéomalacie</div>
+ <h4 style="margin-top:0">Adulte</h4>
+ <p>Minéralisation insuffisante. Causes : <strong>carence en vitamine D</strong> (malabsorption), carence en phosphate. Fréquente chez personnes âgées. <em>Rachitisme rénal</em> = insuffisance rénale chronique.</p>
+ <p>Manifestations : douleurs osseuses, sensibilité, fractures pathologiques (radius distal, fémur proximal), <strong>faiblesse musculaire</strong> (signe précoce). Hyperparathyroïdie secondaire compensatoire.</p>
+ <p>RX : pseudofractures (lignes transversales). Traitement = vitamine D + calcium.</p>
+ </div>
+ <div class="vs">↔</div>
+ <div>
+ <div class="pill blue">Rachitisme</div>
+ <h4 style="margin-top:0">Enfant (épiphyses non soudées)</h4>
+ <p>Calcification défectueuse du cartilage de croissance. Types : nutritionnel, dépendant vit D, résistant vit D (<strong>chr X</strong>).</p>
+ <p>Manifestations : crâne mou, fontanelles tardives, dents lentes, <strong>arc des jambes</strong>, <strong>chapelet rachitique</strong> (cartilage costal proéminent), retard de croissance, <em>ventre rachitique</em>.</p>
+ <p>Traitement : vitamine D + calcium + soleil. Calcitriol pour formes résistantes.</p>
+ </div>
+ </div>
+
+ <h3 id="paget">2.8 — Maladie de Paget (ostéite déformante)</h3>
+
+ <div class="definition">2ème maladie osseuse la plus fréquente après l'ostéoporose. 40–50 ans, origine nord-européenne. Renouvellement osseux excessif et désorganisé.</div>
+
+ <ul class="dash">
+ <li><strong>Phase ostéoclastique</strong> rapide → <strong>phase ostéoblastique</strong> intense désorganisée → os de mauvaise qualité</li>
+ <li>Lésions : squelette axial (vertèbres, crâne, hanches, bassin), fémur proximal, tibia</li>
+ <li>Aspect <strong>mosaïque</strong> avec <em>lignes cémentaires</em> bleues</li>
+ <li>Étiologie : génétique (mutation <strong>SQSTM1/p62</strong>), 15–40% ATCD familiaux. Hypothèse : paramyxovirus</li>
+ </ul>
+
+ <h4>Manifestations</h4>
+ <ul class="tight">
+ <li>Crâne : maux de tête, acouphènes, vertiges, <strong>perte auditive</strong></li>
+ <li>Vertèbres : cyphose</li>
+ <li>Os longs : courbure (fémur, tibia)</li>
+ <li>Coxa vara, démarche dandinante</li>
+ <li>Complications : insuffisance cardiaque à haut débit, sténose aortique, paralysies nerveuses, <strong>sarcome ostéogénique</strong></li>
+ </ul>
+
+ <h4>Diagnostic & traitement</h4>
+ <ul class="dash">
+ <li>↑ <strong>phosphatase alcaline sérique</strong> et hydroxyproline urinaire</li>
+ <li>Scintigraphie osseuse (renouvellement rapide)</li>
+ <li>Traitement : <strong>bisphosphonates</strong> (de choix) + calcitonine + AINS + calcium/vit D</li>
+ </ul>
+</section>
+
+<!-- ============================================== -->
+<!-- CHAPITRE 59 -->
+<!-- ============================================== -->
+<section id="ch59">
+ <div class="section-head">
+ <div class="section-num">59</div>
+ <div>
+ <h2>Maladies rhumatismales</h2>
+ <p style="color:var(--muted);margin-top:8px;font-style:italic">&gt; 100 maladies rhumatismales. Arthrose touche &gt; 27M Américains (1ère cause d'invalidité). PR : 1,3M. Inflammation articulaire = symptôme commun.</p>
+ </div>
+ </div>
+
+ <!-- PR -->
+ <h3 id="pr">3.1 — Polyarthrite rhumatoïde (PR)</h3>
+
+ <div class="definition">Maladie inflammatoire <strong>systémique</strong> chronique. 1–2% de la population. ♀ &gt; ♂ × 3. Auto-immune avec inflammation synoviale et destruction articulaire.</div>
+
+ <div class="keybox">
+ <h4>POINTS CLÉS — PR</h4>
+ <ul class="tight">
+ <li>Atteinte <strong>bilatérale et symétrique</strong> des articulations synoviales (diarthrodiales)</li>
+ <li>Modifications initiales = cellules synoviales</li>
+ <li><strong>Pannus</strong> = tissu de granulation vasculaire qui recouvre le cartilage et l'isole du liquide synovial → caractéristique de la PR</li>
+ </ul>
+ </div>
+
+ <h4>Étiologie & pathogenèse</h4>
+ <ul class="dash">
+ <li>Prédisposition génétique : <strong>HLA-DRB1</strong> (CMH classe II) — "poche rhumatoïde"</li>
+ <li>Activation des lymphocytes T auxiliaires → cytokines (TNF, IL-1) → formation d'anticorps</li>
+ <li><strong>Facteur rhumatoïde (FR)</strong> : 70–80% des patients ; anticorps autologue contre IgG → complexes immuns</li>
+ <li><strong>Anti-CCP</strong> (anticorps anti-peptides citrullinés) : <em>plus spécifiques que FR</em>, marqueur diagnostique précoce</li>
+ <li>Pannus envahit os/cartilage via <strong>MMP type 1</strong> → ankylose finale</li>
+ </ul>
+
+ <h4>Manifestations articulaires</h4>
+ <ul>
+ <li>Symétrique et polyarticulaire. <strong>Raideur matinale &gt; 30 min</strong>, souvent plusieurs heures</li>
+ <li>Articulations précoces : doigts, mains, poignets, genoux, pieds</li>
+ <li>Mains : atteinte <strong>PIP + MCP</strong> ; <em>épargne des DIP</em> (≠ arthrose)</li>
+ <li>Déformations caractéristiques :
+ <ul class="tight">
+ <li><strong>Doigts fusiformes</strong> (PIP)</li>
+ <li><strong>Déviation cubitale</strong> aux MCP</li>
+ <li><strong>Col de cygne</strong> : hyperextension PIP + flexion DIP</li>
+ <li><strong>Boutonnière</strong> : flexion PIP + hyperextension DIP</li>
+ <li>Genou : kyste de Baker (poplité)</li>
+ <li>Pied : hallux valgus, orteils en marteau</li>
+ </ul>
+ </li>
+ <li>Cervicales touchées (≠ rachis lombaire/dorsal)</li>
+ </ul>
+
+ <h4>Manifestations extra-articulaires</h4>
+ <div class="grid-2">
+ <div class="card">
+ <ul class="tight">
+ <li>Fatigue, anorexie, perte de poids, fièvre légère</li>
+ <li>↑ <strong>VS</strong> corrélée à l'activité</li>
+ <li>Anémie résistante au fer</li>
+ <li><strong>Nodules rhumatoïdes</strong> (granulomes périvasculaires, surfaces extenseurs cubitus)</li>
+ </ul>
+ </div>
+ <div class="card">
+ <ul class="tight">
+ <li><strong>Vascularite</strong> (titres élevés FR) : zones ischémiques digitales, ulcères jambes</li>
+ <li>Épisclérite, sclérose</li>
+ <li>Pleurésie, péricardite</li>
+ <li>Splénomégalie, lymphadénopathie</li>
+ </ul>
+ </div>
+ </div>
+
+ <h4>Diagnostic & traitement</h4>
+ <p>Critères ACR/EULAR 2010 : <strong>≥ 6/10 points</strong> sur 4 catégories (atteinte articulaire, sérologie, réactifs phase aiguë, durée). Examen physique + tests + RX (érosions tardives) + analyse liquide synovial.</p>
+
+ <table>
+ <tr><th>Approche</th><th>Détails</th></tr>
+ <tr><td>Repos / exercice</td><td>Repos articulaire ciblé, exercices d'amplitude, isométriques</td></tr>
+ <tr><td><strong>AINS</strong></td><td>Première intention (inhibent COX). Effets secondaires GI, rénaux</td></tr>
+ <tr><td><strong>DMARD</strong></td><td><strong>Méthotrexate = médicament de choix</strong> (1 mois). Sels d'or, hydroxychloroquine, sulfasalazine, azathioprine. Toxicité moelle</td></tr>
+ <tr><td>Corticostéroïdes</td><td>Faible dose, court terme. Injections intra-articulaires limitées (4×/an max)</td></tr>
+ <tr><td><strong>Anti-TNF-α</strong></td><td>Étanercept, infliximab, adalimumab. Bloquent TNF-α. Réduisent progression radiologique</td></tr>
+ <tr><td>Autres biologiques</td><td>Abatacept, rituximab (si échec DMARD)</td></tr>
+ <tr><td>Chirurgie</td><td>Synovectomie, ténosynovectomie, arthroplastie totale, arthrodèse</td></tr>
+ </table>
+
+ <!-- LED -->
+ <h3 id="led">3.2 — Lupus érythémateux disséminé (LED)</h3>
+
+ <div class="definition">Maladie inflammatoire chronique multisystémique. ~1,5M Américains. <strong>♀ &gt; ♂ × 10</strong> (×30 en âge de procréation). Plus fréquent chez Afro-Américains, Hispaniques, Asiatiques. Le "grand imitateur".</div>
+
+ <div class="keybox">
+ <h4>POINTS CLÉS — LED</h4>
+ <ul class="tight">
+ <li>Auto-immune chronique : production d'<strong>auto-anticorps</strong> contre composants nucléaires/cytoplasmiques</li>
+ <li>"<strong>Grand imitateur</strong>" : peut toucher articulations, peau, reins, poumons, SNC, cœur</li>
+ </ul>
+ </div>
+
+ <h4>4 types de lupus</h4>
+ <ul class="dash">
+ <li><strong>LED</strong> (70%)</li>
+ <li><strong>Lupus discoïde</strong> (10%) : peau seulement</li>
+ <li><strong>Lupus médicamenteux</strong> (10%) : disparaît à l'arrêt (hydralazine, minocycline, procaïnamide)</li>
+ <li>LED + autre maladie auto-immune (10%)</li>
+ </ul>
+
+ <h4>Pathogenèse</h4>
+ <ul class="dash">
+ <li>Hyperréactivité des lymphocytes B → auto-anticorps polyclonaux</li>
+ <li>Anticorps : <strong>ANA</strong>, anti-ADN, antiphospholipides, anti-Sm, contre éléments du sang/complément</li>
+ <li>Déclencheurs : <strong>UV</strong>, médicaments, infections, hormones (œstrogènes favorisent)</li>
+ <li>Génétique : HLA-DR / HLA-DQ (CMH classe II)</li>
+ </ul>
+
+ <h4>Manifestations cliniques</h4>
+ <div class="grid-2">
+ <div class="card">
+ <h4>Articulaires (90%)</h4>
+ <ul class="tight">
+ <li>Arthralgies, polyarthrite symétrique</li>
+ <li><strong>Pas de destruction articulaire</strong> (≠ PR)</li>
+ <li>Contractures, subluxation carpométacarpienne</li>
+ <li>Nécrose avasculaire (tête fémorale)</li>
+ </ul>
+ </div>
+ <div class="card">
+ <h4>Cutanées</h4>
+ <ul class="tight">
+ <li><strong>Éruption malaire en papillon</strong> (joues + nez)</li>
+ <li>Livedo reticularis, alopécie</li>
+ <li>Lésions du bout des doigts</li>
+ <li>Photosensibilité, ulcères muqueux</li>
+ </ul>
+ </div>
+ <div class="card accent">
+ <h4>Rénales (50%)</h4>
+ <ul class="tight">
+ <li>Glomérulonéphrites multiples (mésangiale, proliférative focale/diffuse, membraneuse)</li>
+ <li>Syndrome néphrotique → œdèmes</li>
+ <li>Biopsie rénale = meilleur indicateur</li>
+ </ul>
+ </div>
+ <div class="card">
+ <h4>Autres</h4>
+ <ul class="tight">
+ <li>Pulmonaires : pleurésie, pneumopathie</li>
+ <li>Cardiaques : <strong>péricardite</strong>, myocardite</li>
+ <li>SNC : convulsions, psychose, AVC</li>
+ <li>Hématologiques : anémie hémolytique, leucopénie, thrombocytopénie</li>
+ </ul>
+ </div>
+ </div>
+
+ <h4>Diagnostic & traitement</h4>
+ <ul class="dash">
+ <li><strong>≥ 4 critères/11</strong> de l'ACR (spécificité 95%, sensibilité 85%)</li>
+ <li><strong>ANA</strong> : 95% positifs (peu spécifique). <strong>Anti-ADN</strong> : plus spécifique</li>
+ <li>Traitement : AINS (manifestations légères), <strong>hydroxychloroquine</strong> (peau, articulations), corticostéroïdes (rein, SNC), immunosuppresseurs (cyclophosphamide pour néphrite), <strong>belimumab</strong> (anti-BLyS)</li>
+ </ul>
+
+ <h3>3.3 — Sclérose systémique (sclérodermie)</h3>
+ <p>Auto-immune avec dépôt excessif de <strong>collagène</strong> dans peau et organes. ♀ &gt; ♂ × 4, pic 25–50 ans. HLA-DQB1.</p>
+
+ <div class="mnemo">
+ <div class="mtag">Mnémotechnique — Forme limitée</div>
+ <div class="mtitle">CREST</div>
+ <div class="mletters">
+ <span>C</span>alcinose<span>R</span>aynaud · dysmotilité <span>E</span>sophagienne<span>S</span>clérodactylie<span>T</span>élangiectasies
+ </div>
+ </div>
+
+ <p><strong>Forme diffuse</strong> : "visage de pierre", atteinte œsophagienne (dysphagie), pulmonaire (dyspnée), rénale (HTA maligne), cardiaque. Auto-anticorps <strong>Scl-70</strong>. Traitement : symptomatique, IEC pour HTA rénale.</p>
+
+ <h3>3.4 — Polymyosite & Dermatomyosite</h3>
+ <p>Myopathies inflammatoires chroniques. <strong>Faiblesse musculaire proximale symétrique</strong>. Mécanismes immunitaires cellulaires + humoraux. Traitement = <strong>corticostéroïdes</strong>.</p>
+
+ <!-- SPONDYLARTHROPATHIES -->
+ <h3>3.5 — Spondylarthropathies séronégatives</h3>
+
+ <div class="definition">Groupe de troubles inflammatoires multisystémiques touchant principalement le <strong>squelette axial</strong>, sans facteur rhumatoïde, avec lien fort à <strong>HLA-B27</strong>. Inflammation aux insertions tendons/ligaments (enthèses).</div>
+
+ <div class="keybox">
+ <h4>POINTS CLÉS</h4>
+ <ul class="tight">
+ <li>Pas de FR (séronégatives)</li>
+ <li>Atteinte squelette axial + insertions tendineuses</li>
+ <li>Lien fort avec antigène <strong>HLA-B27</strong></li>
+ </ul>
+ </div>
+
+ <h4>Spondylarthrite ankylosante (SA)</h4>
+ <ul class="dash">
+ <li>Adolescent/jeune adulte, ♂ &gt; ♀</li>
+ <li><strong>HLA-B27 chez 90%</strong> (vs 8% population normale)</li>
+ <li>Sacro-iliite bilatérale → ascension cervicale</li>
+ <li>Vertèbres "carrées", colonne en <strong>bambou</strong></li>
+ <li>Perte mobilité vertébrale, cyphose dorsale, extension cou</li>
+ <li>Manifestations extra-squelettiques : <strong>uvéite antérieure aiguë</strong>, fatigue</li>
+ <li>Diagnostic : test de Schober, expansion thoracique, ↑ VS, RX (vertèbres carrées)</li>
+ <li>Traitement : posture (matelas ferme), exercices, <strong>AINS</strong>, anti-TNF (rapides sur symptômes axiaux)</li>
+ </ul>
+
+ <h4>Autres spondylarthropathies</h4>
+ <div class="grid-3">
+ <div class="card">
+ <div class="card-title">Arthrite réactive</div>
+ <p>Stérile, après infection (urogénique, entérogénique). <strong>Syndrome de Reiter</strong> : arthrite + uvéite + urétrite. Plus fréquente avec VIH.</p>
+ </div>
+ <div class="card">
+ <div class="card-title">Arthrite psoriasique</div>
+ <p>7% des psoriasiques. 5 sous-groupes (oligoarticulaire, spondylarthropathie, polyarticulaire, DIP, mutilante). ↑ acide urique. Anti-TNF efficaces.</p>
+ </div>
+ <div class="card">
+ <div class="card-title">Arthrite entéropathique</div>
+ <p>Associée aux MICI (Crohn, RCH), Whipple, infections bactériennes intestinales.</p>
+ </div>
+ </div>
+
+ <!-- ARTHROSE -->
+ <h3 id="arthrose">3.6 — Arthrose (osteoarthritis)</h3>
+
+ <div class="definition">Forme la plus répandue d'arthrite. Destruction progressive du cartilage articulaire des articulations portantes et des doigts. Composante inflammatoire + dégénérative.</div>
+
+ <div class="keybox">
+ <h4>POINTS CLÉS — Arthrose</h4>
+ <ul class="tight">
+ <li>Primaire (étiologie inconnue) ou secondaire (anomalies congénitales/acquises)</li>
+ <li>Pathogenèse : fissures cartilage → érosion complète → exposition os sous-chondral → <em>kystes</em> + <strong>ostéophytes</strong> aux marges</li>
+ </ul>
+ </div>
+
+ <h4>Épidémiologie</h4>
+ <ul class="dash">
+ <li>4% des 18–24 ans ; 85% des cas après 70 ans</li>
+ <li>♂ &gt; ♀ avant 45 ans ; <strong>♀ &gt; ♂ après 55 ans</strong></li>
+ <li>Mains : ♀ blanches +. Genou : ♀ noires +</li>
+ <li>Facteur de risque majeur du genou : <strong>obésité</strong></li>
+ </ul>
+
+ <h4>Pathogenèse — comprendre le cartilage</h4>
+ <ul>
+ <li>Cartilage = chondrocytes + matrice (eau, <strong>protéoglycanes</strong>, <strong>collagène</strong>, substance fondamentale)</li>
+ <li>Rôles : surface lisse de glissement, transmission/dissipation des charges</li>
+ <li>Dans l'arthrose : ↑ eau, ↓ protéoglycanes, affaiblissement du collagène</li>
+ <li>Fissures superficielles → crevasses → érosion → os sous-chondral exposé poli "ivoire"</li>
+ <li>Fragments libres = "<em>souris articulaires</em>"</li>
+ <li>Sclérose os trabéculaire + <strong>ostéophytes</strong> aux marges + kystes</li>
+ </ul>
+
+ <h4>Manifestations</h4>
+ <table>
+ <tr><th>Articulation</th><th>Caractéristiques</th></tr>
+ <tr><td>Cervicale</td><td>Raideur, douleur radiculaire, compression vasculaire</td></tr>
+ <tr><td>Lombaire</td><td>Lombalgie, raideur, sténose spinale</td></tr>
+ <tr><td><strong>Hanche</strong></td><td>♂ âgés. Douleur aine/cuisse interne, irradiation fesses/genou. Démarche traînante</td></tr>
+ <tr><td><strong>Genou</strong></td><td>Crépitement, atrophie quadriceps, genu varus/valgus, épanchement</td></tr>
+ <tr><td>1ère carpométacarpienne</td><td>Aspect carré du pouce</td></tr>
+ <tr><td>PIP</td><td>Nœuds de <strong>Bouchard</strong></td></tr>
+ <tr><td>DIP</td><td>Nœuds d'<strong>Heberden</strong> (≠ PR)</td></tr>
+ <tr><td>1ère MTP</td><td>Hallux, "oignon"</td></tr>
+ </table>
+
+ <h4>Comparaison ARTHROSE vs PR</h4>
+ <table>
+ <tr><th></th><th>Arthrose</th><th>PR</th></tr>
+ <tr><td>Type</td><td>Dégénérative + inflammation locale</td><td>Inflammatoire systémique auto-immune</td></tr>
+ <tr><td>Articulations mains</td><td><strong>DIP</strong> (Heberden), PIP (Bouchard), 1ère carpoMC</td><td><strong>PIP + MCP</strong>, épargne DIP</td></tr>
+ <tr><td>Symétrie</td><td>Souvent asymétrique</td><td>Symétrique</td></tr>
+ <tr><td>Raideur matinale</td><td>&lt; 30 min</td><td>&gt; 30 min, des heures</td></tr>
+ <tr><td>Effet du repos</td><td>Soulage</td><td>Aggrave</td></tr>
+ <tr><td>Sensation articulaire</td><td>Dure (os, ostéophytes)</td><td>Molle/spongieuse (synovite)</td></tr>
+ <tr><td>Symptômes systémiques</td><td>Absents</td><td>Fatigue, fièvre, anorexie</td></tr>
+ <tr><td>VS, FR</td><td>Normaux</td><td>VS↑, FR + (70-80%)</td></tr>
+ <tr><td>RX</td><td>Rétrécissement espace, <strong>ostéophytes</strong>, kystes</td><td>Érosions, pannus</td></tr>
+ </table>
+
+ <h4>Traitement</h4>
+ <ul class="dash">
+ <li>Mesures physiques : repos/exercice, attelles, chaud/froid, perte de poids, canne</li>
+ <li>Médicaments : <strong>acétaminophène</strong> (souvent aussi efficace), AINS</li>
+ <li>Injections corticostéroïdes intra-articulaires (max 3/an)</li>
+ <li>Viscosupplémentation (acide hyaluronique)</li>
+ <li>Chirurgie : débridement, ostéotomie, <strong>arthroplastie totale</strong>, arthrodèse</li>
+ </ul>
+
+ <!-- GOUTTE -->
+ <h3 id="goutte">3.7 — Goutte</h3>
+
+ <div class="definition">Trouble caractérisé par ↑ acide urique sérique et dépôts de cristaux d'urate monosodique dans articulations et reins. ♂ âgés +.</div>
+
+ <h4>Pathogenèse</h4>
+ <ul class="dash">
+ <li>Acide urique = produit final du métabolisme des <strong>purines</strong></li>
+ <li>Hyperuricémie : surproduction OU sous-excrétion (<strong>90% sous-excréteurs</strong>)</li>
+ <li>Goutte primaire (90%) : déficit enzymatique ou idiopathique</li>
+ <li>Goutte secondaire : insuffisance rénale, lyse tumorale, diurétiques thiazidiques</li>
+ <li>Cristaux précipités → réponse inflammatoire (cristaux phagocytés → enzymes lysosomales)</li>
+ <li>Sites froids favorisés (gros orteil, distalités)</li>
+ </ul>
+
+ <h4>4 phases</h4>
+ <div class="phases">
+ <div class="phase">
+ <div class="pn">1</div>
+ <div class="pt">Hyperuricémie asymptomatique</div>
+ <div class="pd">Découverte fortuite. ⅔ des hyperuricémiques ne développent <em>jamais</em> la goutte.</div>
+ </div>
+ <div class="phase">
+ <div class="pn">2</div>
+ <div class="pt">Arthrite goutteuse aiguë</div>
+ <div class="pd">Mono-articulaire, <strong>1ère MTP</strong>. Crise nocturne, douleur extrême, rougeur, gonflement. Dure jours/semaines.</div>
+ </div>
+ <div class="phase">
+ <div class="pn">3</div>
+ <div class="pt">Goutte intercritique</div>
+ <div class="pd">Asymptomatique entre les crises. Mois/années.</div>
+ </div>
+ <div class="phase">
+ <div class="pn">4</div>
+ <div class="pt">Goutte tophacée chronique</div>
+ <div class="pd"><strong>Tophi</strong> = nodules durs (synoviale, bourse olécranienne, tendon Achille). 10+ ans après 1ère crise. Polyarticulaire.</div>
+ </div>
+ </div>
+
+ <h4>Diagnostic & traitement</h4>
+ <ul class="dash">
+ <li>Diagnostic définitif = <strong>cristaux d'urate dans liquide synovial ou tissus tophacés</strong></li>
+ <li>Hyperuricémie &gt; 6,8 mg/dL (mais &lt; 15% développent la goutte)</li>
+ <li>Crise aiguë : AINS (indométacine, ibuprofène), <strong>colchicine</strong> (résolution &lt; 48h PO), corticostéroïdes intra-articulaires</li>
+ <li>Hyperuricémie chronique :
+ <ul class="tight">
+ <li><strong>Allopurinol / fébuxostat</strong> : inhibiteurs xanthine oxydase</li>
+ <li><strong>Probénécide / sulfinpyrazone</strong> : uricosuriques (↑ excrétion)</li>
+ </ul>
+ </li>
+ <li>Modifications du mode de vie : poids, alcool, éviter aliments riches en purines (foie, sardines, anchois)</li>
+ </ul>
+
+ <h4>Pseudogoutte (chondrocalcinose)</h4>
+ <p>Cristaux de <strong>pyrophosphate de calcium dihydraté</strong>. Personnes âgées, associée à arthrose. Pas de médicament pour éliminer les cristaux.</p>
+
+ <!-- MALADIES PÉDIATRIQUES & GÉRIATRIQUES -->
+ <h3>3.8 — Maladies rhumatismales pédiatriques</h3>
+
+ <h4>Arthrite juvénile idiopathique (AJI)</h4>
+ <p>Souvent appelée maladie de Still. Synovite + influence sur cartilage de croissance. <strong>3 sous-types</strong> :</p>
+ <div class="grid-3">
+ <div class="card">
+ <div class="card-title">Systémique</div>
+ <p>Fièvre intermittente quotidienne, éruption, lymphadénopathie, hépatosplénomégalie, leucocytose, anémie.</p>
+ </div>
+ <div class="card">
+ <div class="card-title">Pauciarticulaire</div>
+ <p>≤ 4 articulations. ♀ &lt; 6 ans + uvéite chronique (ANA+) ou ♂ avec sacro-iliite (HLA-B27+).</p>
+ </div>
+ <div class="card">
+ <div class="card-title">Polyarticulaire (40%)</div>
+ <p>≥ 5 articulations dans les 6 premiers mois. Ressemble à PR. FR parfois +.</p>
+ </div>
+ </div>
+
+ <h4>Autres maladies pédiatriques</h4>
+ <ul class="dash">
+ <li><strong>LED pédiatrique</strong> : 0,5–0,6/100k. Atteinte rénale + fréquente et + sévère qu'adulte</li>
+ <li><strong>Dermatomyosite juvénile</strong> : faiblesse proximale + éruption héliotrope + papules de Gottron. Calcifications possibles. Critères de Bohan et Pila</li>
+ <li><strong>Spondylarthropathies juvéniles</strong> : articulations périphériques d'abord (imite l'AJI), atteinte axiale tardive. ♂ +. HLA-B27</li>
+ </ul>
+
+ <h3>3.9 — Maladies rhumatismales chez les personnes âgées</h3>
+
+ <div class="card gold">
+ <div class="card-title">Polymyalgie rhumatismale</div>
+ <span class="pill gold">Spécifique aux ≥ 60 ans</span>
+ <p>Inflammatoire d'origine inconnue. <strong>Douleur + raideur matinale aux épaules et au bassin</strong>. ♀ +.</p>
+ <ul class="tight">
+ <li>Apparition souvent soudaine (du jour au lendemain)</li>
+ <li>Diagnostic : symptômes &gt; 1 mois + <strong>VS élevée</strong> + réponse spectaculaire à la prednisone (~2 jours)</li>
+ <li>Traitement : prednisone faible dose, sevrage progressif sur 2–6 ans</li>
+ </ul>
+ <h4 style="margin-top:14px">⚠️ Artérite à cellules géantes (temporale)</h4>
+ <p>Vascularite associée. <strong>Risque de cécité</strong> si artères ophtalmiques touchées sans traitement. Doses élevées de prednisone d'urgence.</p>
+ </div>
+
+ <p><strong>Particularités gériatriques :</strong></p>
+ <ul class="dash">
+ <li>Plus de résultats <em>faux positifs</em> aux tests FR/ANA</li>
+ <li><strong>Arthrose</strong> = forme d'arthrite la plus fréquente</li>
+ <li>PR à apparition tardive : forme bénigne (séronégative) ou aiguë avec atteinte systémique (séropositive)</li>
+ <li>LED chez personnes âgées : atteinte rénale moins fréquente, + de pleurésie/péricardite (ressemble au LED médicamenteux)</li>
+ <li>Goutte ↑ avec l'âge (souvent précipitée par diurétiques)</li>
+ <li>Arthroplastie : âge non contre-indication ; sédentarité = avantage post-op</li>
+ </ul>
+
+</section>
+
+<!-- ============================================== -->
+<!-- SYNTHÈSE FINALE -->
+<!-- ============================================== -->
+<section>
+ <div class="section-head">
+ <div class="section-num">∑</div>
+ <div>
+ <h2>Synthèse à retenir</h2>
+ <p style="color:var(--muted);margin-top:8px;font-style:italic">L'essentiel pour réviser efficacement.</p>
+ </div>
+ </div>
+
+ <div class="grid-2">
+ <div class="card accent">
+ <div class="card-title">⚠️ URGENCES à reconnaître</div>
+ <ul class="tight">
+ <li><strong>Syndrome des loges</strong> : douleur disproportionnée, paresthésies → fasciotomie</li>
+ <li><strong>Embolie graisseuse (FES)</strong> : insuffisance respi + cérébrale + pétéchies après fracture os long</li>
+ <li><strong>Luxation de hanche</strong> : risque nécrose avasculaire → réduction précoce</li>
+ <li><strong>Artérite temporale</strong> : risque de cécité → prednisone urgente</li>
+ <li><strong>Crise aiguë de LED rénal/SNC</strong> : corticostéroïdes hautes doses</li>
+ </ul>
+ </div>
+ <div class="card green">
+ <div class="card-title">🎯 Tests diagnostiques clés</div>
+ <ul class="tight">
+ <li><strong>Anti-CCP</strong> : marqueur PR plus spécifique que FR</li>
+ <li><strong>ANA + anti-ADN</strong> : LED</li>
+ <li><strong>HLA-B27</strong> : spondylarthropathies (90% en SA)</li>
+ <li><strong>Anti-Scl-70</strong> : sclérodermie</li>
+ <li><strong>Cristaux liquide synovial</strong> : goutte (urate) vs pseudogoutte (CPPD)</li>
+ <li><strong>DXA score T &lt; −2,5</strong> : ostéoporose</li>
+ <li><strong>↑ phosphatase alcaline</strong> : Paget</li>
+ </ul>
+ </div>
+ <div class="card gold">
+ <div class="card-title">💊 Traitements emblématiques</div>
+ <ul class="tight">
+ <li><strong>PR</strong> : méthotrexate (1ère ligne DMARD), anti-TNF</li>
+ <li><strong>Ostéoporose / Paget</strong> : bisphosphonates</li>
+ <li><strong>SA</strong> : AINS, anti-TNF</li>
+ <li><strong>Goutte aiguë</strong> : colchicine, AINS</li>
+ <li><strong>Goutte chronique</strong> : allopurinol, fébuxostat</li>
+ <li><strong>OI</strong> : bisphosphonates</li>
+ <li><strong>LED</strong> : hydroxychloroquine, corticostéroïdes, belimumab</li>
+ </ul>
+ </div>
+ <div class="card blue">
+ <div class="card-title">🦴 Différencier les arthrites</div>
+ <ul class="tight">
+ <li><strong>PR</strong> = symétrique, PIP+MCP, raideur matinale &gt; 30 min, FR/anti-CCP+</li>
+ <li><strong>Arthrose</strong> = asymétrique, DIP (Heberden) + PIP (Bouchard), aggravée par usage</li>
+ <li><strong>SA</strong> = squelette axial, sacro-iliaques, HLA-B27, ♂ jeunes</li>
+ <li><strong>Goutte</strong> = mono-articulaire 1ère MTP, nocturne, cristaux urate</li>
+ <li><strong>LED</strong> = polyarthrite sans destruction + multisystémique</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="mnemo">
+ <div class="mtag">Mnémotechnique — Critères ACR du LED</div>
+ <div class="mtitle">SOAP BRAIN MD</div>
+ <div class="mletters">
+ <span>S</span>érosite<span>O</span>ral ulcers<span>A</span>rthrite<span>P</span>hotosensibilité<span>B</span>lood (cytopénies)<span>R</span>énal<span>A</span>NA<span>I</span>mmunologique (anti-ADN, Sm)<span>N</span>eurologique<span>M</span>alar rash<span>D</span>iscoid rash
+ </div>
+ </div>
+
+ <div class="mnemo">
+ <div class="mtag">Mnémotechnique — Phases de cicatrisation osseuse</div>
+ <div class="mtitle">H · I · R · R</div>
+ <div class="mletters">
+ <span>H</span>ématome (1–2 j)<span>I</span>nflammation<span>R</span>éparation (cal)<span>R</span>emodelage
+ </div>
+ </div>
+</section>
+
+</main>
+
+<footer>
+ <p><strong>Fiche de révision</strong>Troubles musculosquelettiques · Chapitres 57-58-59</p>
+ <p>D'après Sheila Grossman · Unité XIV · TP6 & 7</p>
+</footer>
+
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-06-07.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+</body>
+</html>

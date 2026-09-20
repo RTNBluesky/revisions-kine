@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="../../../../../assets/css/acces.css">
+<script src="../../../../../assets/js/acces.js"></script>
+<title>Statistiques et biostatistique — Pratique fondée sur les preuves K2</title>
+<meta name="description" content="Fiche de révision — Statistiques et biostatistique. Définitions, échantillonnage, variables, paramètres et estimateurs, moyenne, variance, écart-type et proportion, types de variables, inférence sur la moyenne, intervalles de confiance, tests d'hypothèse à un et deux échantillons, échantillons appariés et test d'égalité des variances.">
+<link rel="stylesheet" href="../../../../../assets/css/style.css">
+</head>
+<body>
+<a href="../accueil-pbe.html" class="back-nav">← Pratique fondée sur les preuves</a>
+<div class="page-toggle"><div class="pt-inner"><a href="quiz.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<header class="top">
+ <div class="wrap">
+ <nav class="crumb"><a href="../../../../../index.html">Accueil</a> <span>›</span> <a href="../../../../accueil-k2.html">K2</a> <span>›</span> <a href="../../../accueil-theorique.html">Théorique</a> <span>›</span> <a href="../../accueil-semestre-2.html">Semestre 2</a> <span>›</span> <a href="../accueil-pbe.html">Pratique fondée sur les preuves</a> <span>›</span> Statistiques et biostatistique</nav>
+ <h1>Statistiques et biostatistique</h1>
+ <p>Cours 9 — fiche de révision</p>
+ </div>
+</header>
+<div class="wrap">
+<article class="fiche">
+<div class="essentiel">
+ <h2>L'essentiel</h2>
+ <ul>
+ <li><b>Statistique</b> : science du <b>recueil et de l'analyse des données</b>, dans le but d'utiliser les <b>probabilités</b> pour <b>inférer d'un échantillon à la population</b> et <b>prédire l'évolution future</b> d'un phénomène. <b>Biostatistique</b> = statistiques appliquées aux phénomènes <b>biologiques et liés à la santé</b>.</li>
+ <li><b>Échantillonnage</b> : partie (sous-ensemble) de la population. Objectifs : <b>coût moindre</b>, <b>travail de terrain réduit</b>, <b>meilleure précision / validité</b>, <b>méthodes optimisées</b>.</li>
+ <li><b>Variable</b> (X) : caractéristique pouvant varier. <b>Paramètre</b> : caractéristique numérique de la <b>population</b>, <b>fixe et inconnue</b> (µ, σ², σ, p). <b>Estimateur</b> : fonction de l'échantillon, variable aléatoire (X̄, S², S, p̂). <b>Estimation</b> : valeur numérique observée (x̄, s², s, p̂).</li>
+ <li><b>Variables quantitatives</b> : <b>discrètes</b> (comptages, entiers — nombre d'enfants, de médicaments) et <b>continues</b> (mesures, ensemble non dénombrable — poids, taille, âge).</li>
+ <li><b>Variables qualitatives</b> : <b>nominales</b> (sans ordre inhérent — sexe, groupe sanguin) et <b>ordinales</b> (ordre logique et séquentiel — catégories d'IMC, niveau d'études).</li>
+ <li><b>Moyenne d'échantillon</b> : x̄ = (Σxᵢ)/n. <b>Variance d'échantillon</b> : s² = Σ(xᵢ − x̄)² / (<b>n − 1</b>). <b>Écart-type</b> : s = √s². <b>Proportion</b> : p̂ = x/n.</li>
+ <li><b>Inférence sur µ</b> — trois cas : <b>σ connu</b> (population normale) → <b>Z</b> ; <b>σ inconnu</b> (population normale) → <b>T de Student à n − 1 ddl</b> ; <b>grand échantillon (n ≥ 30)</b> → <b>Z</b> par le <b>Théorème Central Limite</b>.</li>
+ <li><b>Test d'hypothèse</b> : <b>H₀ : µ = µ₀</b> ; <b>H₁</b> bilatérale (µ ≠ µ₀), unilatérale droite (µ &gt; µ₀) ou gauche (µ &lt; µ₀). Rejet selon la <b>région de rejet</b> et le <b>niveau de signification α</b>.</li>
+ <li><b>Deux populations indépendantes</b> : variances <b>connues</b> → Z ; variances <b>inconnues et égales</b> → <b>T avec variance combinée (pooled)</b>, ddl = n₁ + n₂ − 2 ; variances <b>inconnues et différentes</b> → <b>T de Welch</b> ; <b>grands échantillons</b> → Z.</li>
+ <li><b>Échantillons appariés</b> : on définit les <b>différences Dᵢ = Xᵢ − Yᵢ</b>, puis T (loi normale, variance inconnue) ou Z (n &gt; 30).</li>
+ <li><b>Test d'égalité des variances</b> : H₀ : σ₁² = σ₂², statistique <b>F = S₁²/S₂²</b>, loi de <b>Fisher</b> à (n₁ − 1, n₂ − 1) degrés de liberté.</li>
+ <li><b>Logiciels recommandés</b> : <b>Excel</b>, <b>SPSS</b>, <b>RStudio</b>.</li>
+ </ul>
+</div>
+
+<h2>1 · Définitions</h2>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Notion</th><th>Définition</th></tr></thead>
+<tbody>
+<tr><td><b>Statistique</b></td><td>Science du <b>recueil et de l'analyse des données</b>, dans le but d'utiliser les <b>probabilités</b> pour <b>inférer d'un échantillon à la population</b> et <b>prédire l'évolution future</b> d'un phénomène</td></tr>
+<tr><td><b>Biostatistique</b></td><td>Statistiques appliquées aux <b>phénomènes biologiques et liés à la santé</b>. Exemple : effet d'un traitement sur l'échelle <b>Activities-specific Balance Confidence (ABC)</b></td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>2 · Échantillonnage</h2>
+
+<p>L'échantillon est une <b>partie (sous-ensemble) de la population</b>, elle-même composée d'<b>éléments</b>.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Objectifs de l'échantillonnage</th></tr></thead>
+<tbody>
+<tr><td><b>Coût moindre</b></td></tr>
+<tr><td><b>Travail de terrain réduit</b></td></tr>
+<tr><td><b>Meilleure précision / validité</b></td></tr>
+<tr><td><b>Méthodes optimisées</b></td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>3 · Variables, paramètres, estimateurs</h2>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Notion</th><th>Définition</th><th>Notation</th></tr></thead>
+<tbody>
+<tr><td><b>Variable</b></td><td>Caractéristique pouvant <b>varier entre les éléments</b> d'un échantillon ou d'une population</td><td><b>X, Y, Z</b></td></tr>
+<tr><td><b>Paramètre</b></td><td>Caractéristique numérique d'une <b>population</b>, <b>fixe et inconnue</b></td><td><b>µ, σ², σ, p</b></td></tr>
+<tr><td><b>Estimateur</b></td><td><b>Fonction de l'échantillon</b> — c'est une <b>variable aléatoire</b></td><td><b>X̄, S², S, p̂</b></td></tr>
+<tr><td><b>Estimation</b></td><td><b>Observation numérique</b> de l'estimateur, à partir de l'échantillon</td><td><b>x̄, s², s, p̂</b> (ex. p̂ = 0,63)</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="note">
+ <b>Exemple du cours</b> — On veut déterminer la valeur moyenne de l'<b>hémoglobine glyquée</b> dans une population. <b>X</b> = la caractéristique (valeur d'HbA1c) ; <b>µ</b> = la moyenne de la population ; <b>X̄</b> = l'estimateur de la moyenne calculé à partir de l'échantillon ; <b>x̄</b> = la valeur numérique observée dans l'échantillon ; <b>xᵢ</b> = la valeur observée de chaque élément.
+</div>
+
+<h3>Les formules de base</h3>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Mesure</th><th>Paramètre (population, N éléments)</th><th>Estimation (échantillon, n éléments)</th></tr></thead>
+<tbody>
+<tr><td><b>Moyenne</b></td><td><b>µ = (1/N) Σ Xᵢ</b></td><td><b>x̄ = (1/n) Σ xᵢ</b></td></tr>
+<tr><td><b>Variance</b></td><td><b>σ² = (1/N) Σ (Xᵢ − µ)²</b></td><td><b>s² = 1/(n − 1) · Σ (xᵢ − x̄)²</b></td></tr>
+<tr><td><b>Écart-type</b></td><td><b>σ = √σ²</b></td><td><b>s = √s²</b></td></tr>
+<tr><td><b>Proportion</b></td><td><b>p</b> = nombre d'éléments possédant la caractéristique d'intérêt</td><td><b>p̂</b> = nombre d'éléments de l'échantillon possédant la caractéristique d'intérêt, rapporté à n</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="note">
+ <b>Le piège classique</b> — La variance de l'<b>échantillon</b> se divise par <b>n − 1</b> (et non par n), contrairement à la variance de la <b>population</b> qui se divise par <b>N</b>.
+</div>
+
+<h3>Exemples chiffrés du cours</h3>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Calcul</th><th>Données</th><th>Résultat</th></tr></thead>
+<tbody>
+<tr><td><b>Moyenne</b></td><td>Échantillon n = 5 : 3, 7, 8, 10, 11 → (3+7+8+10+11)/5</td><td><b>x̄ = 7,8</b></td></tr>
+<tr><td><b>Variance</b></td><td>Mêmes valeurs : [(3−7,8)² + (7−7,8)² + (8−7,8)² + (10−7,8)² + (11−7,8)²] / 4</td><td><b>s² = 14,70</b></td></tr>
+<tr><td><b>Proportion</b></td><td>n = 10 individus, dont <b>4</b> possèdent la caractéristique d'intérêt → 4/10</td><td><b>p̂ = 0,4</b></td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>4 · Les types de variables</h2>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Grande famille</th><th>Sous-type</th><th>Définition</th><th>Exemples</th></tr></thead>
+<tbody>
+<tr><td rowspan="2"><b>Quantitatives</b> (numériques : mesures ou comptages)</td><td><b>Discrètes</b></td><td><b>Valeurs entières</b> dans un intervalle donné ; elles représentent des <b>comptages</b> (0, 1, 2… entiers naturels)</td><td><b>Nombre d'enfants</b>, <b>nombre de médicaments</b></td></tr>
+<tr><td><b>Continues</b></td><td><b>Toute valeur</b> dans un certain intervalle de mesure ; ce sont généralement des <b>mesures</b> et leurs valeurs possibles forment un <b>ensemble non dénombrable</b> (nombres réels)</td><td><b>Poids</b>, <b>taille</b>, <b>âge</b></td></tr>
+<tr><td rowspan="2"><b>Qualitatives</b> (catégorielles)</td><td><b>Nominales</b></td><td>Caractéristiques <b>sans ordre inhérent</b>, regroupées en catégories</td><td><b>Sexe</b>, <b>groupe sanguin</b></td></tr>
+<tr><td><b>Ordinales</b></td><td>Caractéristiques ayant un <b>ordre logique et séquentiel</b></td><td><b>Catégories d'IMC</b>, <b>niveau d'études</b></td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>5 · Inférence sur la moyenne µ</h2>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Situation</th><th>Statistique</th><th>Loi</th></tr></thead>
+<tbody>
+<tr><td><b>σ connu</b>, population normale</td><td><b>Z = (X̄ − µ) / (σ/√n)</b></td><td><b>N(0, 1)</b></td></tr>
+<tr><td><b>σ inconnu</b>, population normale</td><td><b>T = (X̄ − µ) / (S/√n)</b></td><td><b>t de Student à n − 1 ddl</b></td></tr>
+<tr><td><b>Grand échantillon (n ≥ 30)</b>, toute loi</td><td><b>Z = (X̄ − µ) / (S/√n)</b></td><td><b>N(0, 1)</b>, par le <b>Théorème Central Limite</b></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Intervalles de confiance</h3>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Paramètre</th><th>Condition</th><th>Intervalle de confiance</th></tr></thead>
+<tbody>
+<tr><td rowspan="3"><b>Moyenne µ</b></td><td>σ <b>connu</b>, loi normale</td><td><b>X̄ ± z<sub>1−α/2</sub>σ/√n</b></td></tr>
+<tr><td>σ <b>inconnu</b>, loi normale</td><td><b>X̄ ± t<sub>1−α/2, n−1</sub>S/√n</b></td></tr>
+<tr><td><b>n ≥ 30</b> (TCL), toute loi</td><td><b>X̄ ± z<sub>1−α/2</sub>S/√n</b></td></tr>
+<tr><td><b>Proportion p</b></td><td><b>n &gt; 30</b></td><td><b>p̂ ± z<sub>1−α/2</sub>√[p̂(1 − p̂)/n]</b></td></tr>
+</tbody>
+</table>
+</div>
+
+<p>Où <b>z<sub>1−α/2</sub></b> est le quantile de la <b>loi normale centrée réduite</b> et <b>t<sub>1−α/2, n−1</sub></b> le quantile de la <b>loi de Student à n − 1 degrés de liberté</b>.</p>
+
+<h2>6 · Les tests d'hypothèse</h2>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Hypothèse</th><th>Formulation</th></tr></thead>
+<tbody>
+<tr><td><b>Nulle (H₀)</b></td><td><b>µ = µ₀</b></td></tr>
+<tr><td><b>Alternative (H₁)</b></td><td><b>µ ≠ µ₀</b> → test <b>bilatéral</b><br><b>µ &gt; µ₀</b> → test <b>unilatéral droit</b><br><b>µ &lt; µ₀</b> → test <b>unilatéral gauche</b></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Un échantillon</h3>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Cas</th><th>Statistique</th><th>Règle de rejet au niveau α</th></tr></thead>
+<tbody>
+<tr><td><b>Loi normale, σ connu</b></td><td>Z = (X̄ − µ₀)/(σ/√n)</td><td>Bilatéral : <b>|Z| &gt; z<sub>1−α/2</sub></b><br>Unilatéral droit : <b>Z &gt; z<sub>1−α</sub></b><br>Unilatéral gauche : <b>Z &lt; −z<sub>1−α</sub></b></td></tr>
+<tr><td><b>Loi normale, σ inconnu</b></td><td>T = (X̄ − µ₀)/(S/√n) ~ t<sub>n−1</sub></td><td>Bilatéral : <b>|T| &gt; t<sub>1−α/2, n−1</sub></b><br>Droit : <b>T &gt; t<sub>1−α, n−1</sub></b><br>Gauche : <b>T &lt; −t<sub>1−α, n−1</sub></b></td></tr>
+<tr><td><b>Toute loi, grand échantillon (n &gt; 30)</b></td><td>Z = (X̄ − µ₀)/(S/√n), par le <b>TCL</b></td><td>Mêmes règles qu'avec Z</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Deux populations indépendantes</h3>
+
+<p>Hypothèse nulle : <b>µ₁ = µ₂</b> (ou µ₁ − µ₂ = 0). Alternative : <b>µ₁ ≠ µ₂</b> (bilatéral), <b>µ₁ &gt; µ₂</b> (droit) ou <b>µ₁ &lt; µ₂</b> (gauche).</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Situation</th><th>Statistique de test</th><th>Loi / ddl</th></tr></thead>
+<tbody>
+<tr><td><b>Variances connues</b></td><td>Z = [(X̄₁ − X̄₂) − (µ₁ − µ₂)] / √(σ₁²/n₁ + σ₂²/n₂)</td><td><b>N(0, 1)</b></td></tr>
+<tr><td><b>Variances connues et égales</b></td><td>Z = [(X̄₁ − X̄₂) − (µ₁ − µ₂)] / [σ · √(1/n₁ + 1/n₂)]</td><td><b>N(0, 1)</b></td></tr>
+<tr><td><b>Variances inconnues et égales</b> (pooled)</td><td>Variance combinée <b>S²<sub>p</sub> = [(n₁−1)S₁² + (n₂−1)S₂²] / (n₁ + n₂ − 2)</b><br>T = [(X̄₁ − X̄₂) − (µ₁ − µ₂)] / [S<sub>p</sub>√(1/n₁ + 1/n₂)]</td><td><b>t à n₁ + n₂ − 2 ddl</b></td></tr>
+<tr><td><b>Variances inconnues et différentes</b> (Welch)</td><td>T = [(X̄₁ − X̄₂) − (µ₁ − µ₂)] / √(S₁²/n₁ + S₂²/n₂)</td><td><b>t à ν ddl</b>, ν approché par la formule de Welch-Satterthwaite</td></tr>
+<tr><td><b>Deux grands échantillons</b> (n₁, n₂ &gt; 30)</td><td>Z = [(X̄₁ − X̄₂) − (µ₁ − µ₂)] / √(S₁²/n₁ + S₂²/n₂), par le <b>TCL</b></td><td><b>N(0, 1)</b></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Échantillons appariés (dépendants)</h3>
+
+<p>On définit les <b>différences Dᵢ = Xᵢ − Yᵢ</b>, pour i = 1 … n.</p>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Cas</th><th>Statistique</th><th>Loi</th></tr></thead>
+<tbody>
+<tr><td><b>Loi normale, variance inconnue</b></td><td><b>T = (D̄ − µ<sub>D</sub>) / (S<sub>D</sub>/√n)</b></td><td><b>t à n − 1 ddl</b></td></tr>
+<tr><td><b>Toute loi, n &gt; 30</b></td><td><b>Z = (D̄ − µ<sub>D</sub>) / (S<sub>D</sub>/√n)</b></td><td><b>N(0, 1)</b>, par le TCL</td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Test d'égalité des variances</h3>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Élément</th><th>Contenu</th></tr></thead>
+<tbody>
+<tr><td><b>Hypothèses</b></td><td><b>H₀ : σ₁² = σ₂²</b> versus <b>H₁ : σ₁² ≠ σ₂²</b></td></tr>
+<tr><td><b>Statistique</b></td><td><b>F = S₁² / S₂²</b></td></tr>
+<tr><td><b>Loi</b></td><td><b>F de Fisher à (n₁ − 1, n₂ − 1) degrés de liberté</b></td></tr>
+<tr><td><b>Rejet (bilatéral)</b></td><td><b>F &lt; F<sub>α/2</sub></b> ou <b>F &gt; F<sub>1−α/2</sub></b></td></tr>
+</tbody>
+</table>
+</div>
+
+<h3>Récapitulatif — quelle statistique choisir ?</h3>
+
+<div class="table-wrap">
+<table>
+<thead><tr><th>Situation</th><th>Statistique de test</th><th>Paramètre testé</th></tr></thead>
+<tbody>
+<tr><td>1 échantillon, <b>σ connu</b></td><td><b>Z</b></td><td rowspan="3"><b>µ</b></td></tr>
+<tr><td>1 échantillon, <b>σ inconnu</b></td><td><b>T</b></td></tr>
+<tr><td>1 échantillon, <b>grand n</b></td><td><b>Z</b></td></tr>
+<tr><td>2 échantillons, <b>σ connu</b></td><td><b>Z</b></td><td rowspan="4"><b>µ₁ − µ₂</b></td></tr>
+<tr><td>2 échantillons, σ inconnu, <b>variances égales</b> (pooled)</td><td><b>T</b></td></tr>
+<tr><td>2 échantillons, σ inconnu, <b>variances inégales</b> (Welch)</td><td><b>T</b></td></tr>
+<tr><td>2 échantillons, <b>grand n</b></td><td><b>Z</b></td></tr>
+<tr><td><b>Échantillons appariés</b></td><td><b>T</b></td><td rowspan="2"><b>µ<sub>D</sub></b></td></tr>
+<tr><td><b>Appariés, grand n</b></td><td><b>Z</b></td></tr>
+<tr><td><b>Proportion, grand n</b></td><td><b>Z</b></td><td><b>p</b></td></tr>
+<tr><td><b>Test de variance</b></td><td><b>F</b></td><td><b>σ₁²/σ₂²</b></td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="note">
+ <b>Logiciels recommandés par le cours</b> — <b>Excel</b>, <b>SPSS</b>, <b>RStudio</b>.
+</div>
+
+</article>
+<footer class="foot">Révisions Kinésithérapie</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,119 @@
+/* ============================================================
+   DARK MODE — Override universel pour les fiches de révision
+   ============================================================ */
+:root {
+  --white: #0f1117 !important;
+  --bg: #0f1117 !important;
+  --background: #0f1117 !important;
+  --surface: #161922 !important;
+  --cream: #161922 !important;
+  --paper: #0f1117 !important;
+  --light: #161922 !important;
+  --offwhite: #0f1117 !important;
+  --text: #9aa3b8 !important;
+  --text-light: #6a7388 !important;
+  --text-dark: #e8eaf0 !important;
+  --text-muted: #9aa3b8 !important;
+  --text-dim: #6a7388 !important;
+  --ink: #9aa3b8 !important;
+  --heading: #ff8fa3 !important;
+  --mid: #9aa3b8 !important;
+  --gray: #9aa3b8 !important;
+  --muted: #9aa3b8 !important;
+  --dark: #ff8fa3 !important;
+  --black: #ff8fa3 !important;
+  --border: #3a4060 !important;
+  --border-light: #1a1d2a !important;
+  --divider: #3a4060 !important;
+  --orange-pale: #161922 !important;
+  --orange-light-bg: #161922 !important;
+  --teal-light: #20243a !important;
+  --teal-pale: #20243a !important;
+  --green-light: #1a1d2a !important;
+  --green-pale: #1a1d2a !important;
+  --red-light: #161922 !important;
+  --red-pale: #161922 !important;
+  --blue-light: #ff5c6b !important;
+  --blue-pale: #ff5c6b !important;
+  --purple-light: #ff5c6b !important;
+  --purple-pale: #ff5c6b !important;
+  --gold-light: #161922 !important;
+  --gold-pale: #161922 !important;
+  --yellow-light: #161922 !important;
+  --pink-light: #1a1d2a !important;
+  --pink-pale: #1a1d2a !important;
+}
+html, body { background: #0f1117 !important; color: #ff8fa3 !important; }
+main, article, .container, .content, .wrapper, .main, .page { background: transparent !important; color: #ff8fa3 !important; }
+.card, [class*="card-"], .box, .panel, .info-box, .summary-strip, .def-box, .highlight, .highlight-box, .callout, .compare-col, .feedback-box, .key-block, .key-item, .lesion-card, .syndrome-block, .patho-block, .level-row, .level-bar, .step, .step-content, .timeline-item, .timeline-content, .stat-box, .niveau-item, .asia-card, .memory-card, .mc-content, .mnemonic, .sym-item, .warning-box, .success-box, .danger-box {
+  background: #161922 !important;
+  border-color: #ff5c6b !important;
+  color: #ffa657 !important;
+}
+[style*="background:#ffffff"], [style*="background: #ffffff"], [style*="background:#ffffff"], [style*="background: #ffffff"], [style*="background:white"], [style*="background: white"], [style*="background:#ffa657"], [style*="background: #ffa657"], [style*="background:#ffa657"], [style*="background: #ffa657"] { background: #161922 !important; }
+table { background: transparent !important; color: #ff8fa3 !important; }
+table thead, table thead tr, table th { background: #0f1117 !important; color: #ff8fa3 !important; border-color: #ff5c6b !important; }
+table tbody tr { background: transparent !important; color: #ff8fa3 !important; }
+table tbody tr:nth-child(even) { background: rgba(255,255,255,0.02) !important; }
+table tbody tr:hover { background: rgba(255,107,157,0.06) !important; }
+table td { color: #ff8fa3 !important; border-color: #ff5c6b !important; }
+table tr { border-color: #ff5c6b !important; }
+.td-blue, td.td-blue { background: #ff5c6b !important; color: #f472b6 !important; }
+.td-green, td.td-green { background: #1a1d2a !important; color: #ff6b9d !important; }
+.td-pink, td.td-pink { background: #1a1d2a !important; color: #ff8fa3 !important; }
+.td-gold, td.td-gold { background: #161922 !important; color: #ff8fa3 !important; }
+.td-purple, td.td-purple { background: #ff5c6b !important; color: #f472b6 !important; }
+.td-red, td.td-red { background: #161922 !important; color: #ff8fa3 !important; }
+.td-orange, td.td-orange { background: #161922 !important; color: #ff8fa3 !important; }
+nav, .nav, .toc, .nav-inner { background: #0f1117 !important; border-color: #ff5c6b !important; }
+nav a, .nav a, .toc a { color: #9aa3b8 !important; }
+nav a:hover, .nav a:hover, .toc a:hover { color: #ff5c6b !important; }
+.nav-btn { background: transparent !important; color: #9aa3b8 !important; border-color: #ff5c6b !important; }
+.nav-btn:hover, .nav-btn.active { background: #ff5c6b !important; color: #0f1117 !important; }
+footer, .footnote, .footer { background: #0f1117 !important; color: #9aa3b8 !important; border-color: #ff5c6b !important; }
+.tag, .badge, .chip, .pill { background: rgba(255,107,157,0.15) !important; color: #ff8fa3 !important; border-color: #ff5c6b !important; }
+.tag.blue, .badge.blue, .badge-blue, .pill-blue { background: rgba(255,107,157,0.18) !important; color: #f472b6 !important; }
+.tag.green, .badge.green, .badge-green, .pill-green { background: rgba(255,107,157,0.18) !important; color: #ff6b9d !important; }
+.tag.red, .badge.red, .badge-red, .pill-red { background: rgba(255,92,107,0.18) !important; color: #ff8fa3 !important; }
+.tag.purple, .badge.purple, .badge-purple, .pill-purple { background: rgba(255,107,157,0.18) !important; color: #f472b6 !important; }
+.tag.orange, .badge.orange, .badge-orange, .pill-orange { background: rgba(255,107,157,0.18) !important; color: #ff8fa3 !important; }
+.tag.gold, .badge.gold, .badge-gold { background: rgba(255,107,157,0.18) !important; color: #ff8fa3 !important; }
+.tag.teal, .badge.teal, .badge-teal { background: rgba(255,107,157,0.18) !important; color: #ff6b9d !important; }
+ul.clean li, ul.styled li, ul li { color: #9aa3b8 !important; }
+ul.clean li strong, ul li strong { color: #ff8fa3 !important; }
+h1, h2, h3, h4, h5, h6 { color: #ff8fa3 !important; }
+h1 span, h2 span, h3 span, h4 span { color: inherit; }
+section { background: transparent !important; }
+.section-title, .section-header { color: #ff8fa3 !important; border-color: #ff5c6b !important; }
+.section-num, .section-number { color: #ff5c6b !important; }
+.def-term, .def-content, em { color: #9aa3b8 !important; }
+.highlight strong, .highlight-box strong { color: #ff8fa3 !important; }
+.highlight-blue strong { color: #f472b6 !important; }
+.highlight-teal strong { color: #ff6b9d !important; }
+.highlight-green strong { color: #ff6b9d !important; }
+.highlight-red strong { color: #ff8fa3 !important; }
+.highlight-purple strong { color: #f472b6 !important; }
+.highlight-gold strong { color: #ff8fa3 !important; }
+.memo, .memory-card, .mc-content { background: #0f1117 !important; color: #ff8fa3 !important; border: 1px solid #ff5c6b !important; }
+.memo span, .memory-card .mc-content span { color: #ff8fa3 !important; }
+input, select, textarea, button { background: #161922 !important; color: #ff8fa3 !important; border-color: #ff5c6b !important; }
+code, pre { background: #0f1117 !important; color: #ff8fa3 !important; border: 1px solid #ff5c6b !important; }
+.level-bar { color: #ff8fa3 !important; }
+.callout-info, .callout.callout-info { background: rgba(255,107,157,0.1) !important; border-color: #f472b6 !important; color: #ff8fa3 !important; }
+.callout-warn, .callout.callout-warn { background: rgba(255,166,87,0.1) !important; border-color: #ffa657 !important; color: #ffa657 !important; }
+.callout-success, .callout.callout-success { background: rgba(61,214,140,0.1) !important; border-color: #3dd68c !important; color: #3dd68c !important; }
+.callout-danger, .callout.callout-danger { background: rgba(255,166,87,0.1) !important; border-color: #ff5c6b !important; color: #ff8fa3 !important; }
+#scrollTop { background: #0f1117 !important; border-color: #ff5c6b !important; color: #9aa3b8 !important; }
+#scrollTop:hover { background: rgba(255,107,157,0.15) !important; color: #ff5c6b !important; }
+.hero, header, .header { background: linear-gradient(135deg, #0f1117 0%, #0f1117 100%) !important; color: #ff8fa3 !important; border-color: #ff5c6b !important; }
+.hero h1, header h1, .header h1 { color: #ff8fa3 !important; }
+.hero p, .hero-sub, .hero-meta, header p { color: rgba(254,252,250,0.7) !important; }
+p { color: #9aa3b8; }
+p strong { color: #ff8fa3; }
+a { color: #ff8fa3; }
+a:hover { color: #ff5c6b; }
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: #0f1117; }
+::-webkit-scrollbar-thumb { background: #ff5c6b; border-radius: 5px; }
+::-webkit-scrollbar-thumb:hover { background: #ff8fa3; }
+:root { color-scheme: dark; }

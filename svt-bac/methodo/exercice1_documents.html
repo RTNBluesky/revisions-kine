@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="📑 Exercice 1 — Exploitation de documents — :root{--bg:#0f1117;--bg2:#0f1117;--bg3:#0f1117;--accent:#6366f1;--yellow:#a5a0ff;--green:#6366f1;--red:#8b7cf8;--pu">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../assets/css/acces.css">
+<script src="../../assets/js/acces.js"></script>
+<title>Méthodologie Exercice 1 — Exploitation de documents | Bac SVT 2026</title>
+<link rel="stylesheet" href="../assets/css/chrome.css">
+<style>
+:root{--bg:#0f1117;--bg2:#0f1117;--bg3:#0f1117;--accent:#6366f1;--yellow:#a5a0ff;--green:#6366f1;--red:#8b7cf8;--purple:#8b7cf8;--orange:#a5a0ff;--text:#a5a0ff;--muted:#6a7388;--border:#2a3050}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;font-size:15px;line-height:1.75}
+header{background:linear-gradient(135deg,#0f1117 0%,#0f1117 100%);border-bottom:3px solid var(--accent);padding:2rem 2.5rem 1.6rem}
+header .breadcrumb{font-size:.72rem;text-transform:uppercase;letter-spacing:2.5px;color:var(--accent);font-weight:700;margin-bottom:.4rem}
+header h1{font-size:1.8rem;font-weight:800;color:#e8eaf0;line-height:1.3}
+header .actions{margin-top:1rem;display:flex;gap:.6rem;flex-wrap:wrap}
+header .actions a{font-size:.78rem;text-decoration:none;padding:.35rem .9rem;border-radius:16px;background:var(--bg2);border:1px solid var(--border);color:var(--muted);transition:all .15s}
+header .actions a:hover{color:#e8eaf0;border-color:var(--accent)}
+header .actions a.primary{background:rgba(32,36,58,.1);color:var(--accent);border-color:var(--accent)}
+nav{background:var(--bg2);border-bottom:1px solid var(--border);padding:.65rem 2.5rem;display:flex;gap:.45rem;flex-wrap:wrap;position:sticky;top:0;z-index:100}
+nav a{color:var(--muted);text-decoration:none;font-size:.78rem;padding:.25rem .75rem;border-radius:16px;background:var(--bg3);border:1px solid transparent;transition:all .15s}
+nav a:hover{color:var(--accent);border-color:var(--accent);background:rgba(32,36,58,.08)}
+main{max-width:960px;margin:0 auto;padding:2rem 2.5rem}
+.section-header{display:flex;align-items:center;gap:.9rem;margin-bottom:1.4rem;margin-top:.3rem}
+.section-num{width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1rem;flex-shrink:0;background:rgba(32,36,58,.2);color:var(--accent);border:2px solid var(--accent)}
+h2{font-size:1.3rem;font-weight:700;color:#e8eaf0}
+h3{font-size:1rem;font-weight:700;color:var(--yellow);margin:1.3rem 0 .5rem;padding-left:.5rem;border-left:3px solid var(--yellow)}
+h4{font-size:.92rem;font-weight:600;color:var(--green);margin:1rem 0 .4rem}
+section{margin-bottom:3rem}
+p{margin-bottom:.6rem}
+ul,ol{margin:.4rem 0 .8rem 1.4rem}
+li{margin-bottom:.3rem}
+.card{background:var(--bg2);border:1px solid var(--border);border-radius:10px;padding:1.1rem 1.3rem;margin-bottom:.8rem}
+.card.y{border-left:4px solid var(--yellow)}
+.card.b{border-left:4px solid var(--accent)}
+.card.g{border-left:4px solid var(--green)}
+.card.r{border-left:4px solid var(--red)}
+.card.p{border-left:4px solid var(--purple)}
+.card.o{border-left:4px solid var(--orange)}
+.step{background:var(--bg2);border:1px solid var(--border);border-left:5px solid var(--accent);border-radius:10px;padding:1.2rem 1.4rem;margin-bottom:1rem;position:relative;padding-left:5rem}
+.step-num{position:absolute;left:1.2rem;top:1.2rem;width:38px;height:38px;border-radius:50%;background:var(--accent);color:#0f1117;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.1rem}
+.step h4{margin-top:0;color:#e8eaf0;font-size:1rem}
+.example{background:#0f1117;border:1px dashed #2a3050;border-radius:8px;padding:1rem 1.3rem;margin:.7rem 0;font-size:.9rem}
+.example .lbl{font-size:.7rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--yellow);font-weight:700;margin-bottom:.5rem}
+.tip{background:rgba(32,36,58,.07);border:1px solid rgba(58,64,96,.3);border-left:4px solid var(--green);border-radius:8px;padding:.85rem 1.1rem;margin:.7rem 0;color:#a5a0ff;font-size:.9rem}
+.tip::before{content:"💡 ";font-weight:700}
+.warn{background:rgba(32,36,58,.06);border:1px solid rgba(58,64,96,.3);border-left:4px solid var(--red);border-radius:8px;padding:.85rem 1.1rem;margin:.7rem 0;color:#a5a0ff;font-size:.9rem}
+.warn::before{content:"❌ ";font-weight:700}
+.good{background:rgba(61,214,140,.07);border:1px solid rgba(61,214,140,.3);border-left:4px solid var(--green);border-radius:8px;padding:.85rem 1.1rem;margin:.7rem 0;color:#3dd68c;font-size:.9rem}
+.good::before{content:"✅ ";font-weight:700}
+table{width:100%;border-collapse:collapse;margin:.8rem 0 1.2rem;background:var(--bg2);border-radius:8px;overflow:hidden;font-size:.88rem}
+th{background:var(--bg3);text-align:left;padding:.6rem .9rem;color:var(--accent);font-weight:700;font-size:.78rem;text-transform:uppercase;letter-spacing:1px}
+td{padding:.6rem .9rem;border-top:1px solid var(--border);vertical-align:top}
+footer{text-align:center;padding:2rem;color:var(--muted);font-size:.78rem;border-top:1px solid var(--border);margin-top:2rem}
+footer a{color:var(--accent);text-decoration:none}
+</style>
+</head>
+<body>
+
+<a href="../accueil-svt.html" class="back-nav">← SVT Bac 2026</a>
+
+<header>
+ <div class="breadcrumb">Méthodologie · Exercice 1</div>
+ <h1>📑 Exercice 1 — Exploitation de documents</h1>
+ <div class="actions">
+ <a href="../accueil-svt.html">← Index</a>
+ <a href="methodologie.html">📋 Méthodo générale</a>
+ <a href="exercice2_synthese.html" class="primary">✍️ Méthodo Exercice 2</a>
+ </div>
+</header>
+
+<nav>
+ <a href="#objectif">Objectif</a>
+ <a href="#methode">La méthode VDC</a>
+ <a href="#etapes">Étapes détaillées</a>
+ <a href="#exemple">Exemple corrigé</a>
+ <a href="#pieges">Pièges à éviter</a>
+</nav>
+
+<main>
+
+<section id="objectif">
+ <div class="section-header"><div class="section-num">🎯</div><h2>Objectif de l'exercice 1</h2></div>
+
+ <div class="card b">
+ <p>L'exercice 1 te teste sur ta <strong>capacité à raisonner scientifiquement</strong> à partir de <strong>documents que tu n'as jamais vus</strong>. Tu n'es pas obligé de tout savoir : tu dois <strong>extraire</strong>, <strong>relier</strong>, <strong>conclure</strong>.</p>
+ <p>C'est <strong>~8 points</strong> sur 20 et il dure <strong>~1h15</strong>.</p>
+ </div>
+
+ <h3>Ce que le correcteur attend</h3>
+ <table>
+ <tr><th>Compétence</th><th>Concrètement</th></tr>
+ <tr><td><strong>Saisir des infos</strong></td><td>Lire un graphique, repérer une valeur, comparer deux conditions</td></tr>
+ <tr><td><strong>Interpréter</strong></td><td>« Cela signifie que… », « j'en déduis que… »</td></tr>
+ <tr><td><strong>Mobiliser le cours</strong></td><td>Faire le lien avec une notion vue en classe</td></tr>
+ <tr><td><strong>Conclure</strong></td><td>Répondre clairement à la question posée</td></tr>
+ </table>
+</section>
+
+<section id="methode">
+ <div class="section-header"><div class="section-num">🔑</div><h2>La méthode VDC : Je Vois / J'en Déduis / Je Conclus</h2></div>
+
+ <div class="card y">
+ <p>Pour chaque document, applique systématiquement <strong>trois étapes</strong> dans tes phrases :</p>
+ <ol>
+ <li><strong style="color:var(--accent)">Je VOIS</strong> — observation brute, chiffrée si possible</li>
+ <li><strong style="color:var(--green)">J'en DÉDUIS</strong> — interprétation en lien avec le cours</li>
+ <li><strong style="color:var(--orange)">Je CONCLUS</strong> — réponse partielle au problème posé</li>
+ </ol>
+ </div>
+
+ <div class="example">
+ <div class="lbl">Exemple — phrase type</div>
+ « <span style="color:var(--accent)">Le document 2 montre que le taux de cortisol passe de 5 à 45 µg/dL en 60 min après le stresseur</span> (Je vois). <span style="color:var(--green)">Cette augmentation rapide est caractéristique de l'activation de l'axe HHC (hypothalamus → hypophyse → corticosurrénale)</span> (J'en déduis). <span style="color:var(--orange)">Donc le stress prolongé active bien la sécrétion endocrinienne de cortisol par les corticosurrénales</span> (Je conclus). »
+ </div>
+</section>
+
+<section id="etapes">
+ <div class="section-header"><div class="section-num">📐</div><h2>Étapes détaillées (1h15 chrono)</h2></div>
+
+ <div class="step">
+ <div class="step-num">1</div>
+ <h4>Lis la question en premier (2 min)</h4>
+ <p>Ne te jette PAS sur les documents. <strong>Lis d'abord la question</strong> ou le problème posé. Souligne <strong>le verbe d'action</strong> (montrer, expliquer, démontrer) et <strong>l'objet</strong> de la question.</p>
+ <div class="example">
+ <div class="lbl">Exemple de problème</div>
+ « Montrer que le diabète de type 2 résulte d'une <em>insulinorésistance</em> des cellules cibles, et expliquer le rôle du mode de vie. »<br>
+ → Verbe : <strong>montrer + expliquer</strong>. Objets : <strong>insulinorésistance + mode de vie</strong>. Tu sais déjà ce que tu cherches.
+ </div>
+ </div>
+
+ <div class="step">
+ <div class="step-num">2</div>
+ <h4>Lis tous les documents (10 min)</h4>
+ <p>Lis chaque document en repérant :</p>
+ <ul>
+ <li>Le <strong>titre</strong> et la <strong>source</strong></li>
+ <li>Les <strong>axes</strong> d'un graphique (unités !) ou les <strong>colonnes</strong> d'un tableau</li>
+ <li>La <strong>condition expérimentale</strong> (témoin vs test, sain vs malade, T° 1 vs T° 2…)</li>
+ <li>Les <strong>valeurs remarquables</strong> (maximum, minimum, plateau, rupture)</li>
+ </ul>
+ <p>Entoure ou souligne directement sur le sujet pour pas tout relire après.</p>
+ </div>
+
+ <div class="step">
+ <div class="step-num">3</div>
+ <h4>Brouillon — Tableau d'analyse (10 min)</h4>
+ <p>Sur ton brouillon, fais un tableau rapide :</p>
+ <table>
+ <tr><th>Doc</th><th>Je VOIS</th><th>J'en DÉDUIS</th></tr>
+ <tr><td>1</td><td>Glycémie élevée à jeun (1,5 g/L)</td><td>Hyperglycémie chronique = diabète</td></tr>
+ <tr><td>2</td><td>Insulinémie normale mais glucose stagne</td><td>Cellules ne répondent plus = insulinorésistance</td></tr>
+ <tr><td>3</td><td>Corrélation IMC ↑ / risque diabète ×3</td><td>Surpoids = facteur de risque</td></tr>
+ </table>
+ <p>Ce tableau structure ta réponse, puis tu rédiges en phrases.</p>
+ </div>
+
+ <div class="step">
+ <div class="step-num">4</div>
+ <h4>Identifier le RAISONNEMENT global (5 min)</h4>
+ <p>Comment les documents s'enchaînent-ils ? Trouve <strong>le fil logique</strong> :</p>
+ <ul>
+ <li>Doc 1 → établit le problème</li>
+ <li>Doc 2 → apporte le mécanisme</li>
+ <li>Doc 3 → confirme avec une étude statistique</li>
+ </ul>
+ <p>Tu vas suivre cet ordre dans ta rédaction.</p>
+ </div>
+
+ <div class="step">
+ <div class="step-num">5</div>
+ <h4>Rédiger (40 min)</h4>
+ <p>Structure conseillée :</p>
+ <ul>
+ <li><strong>1 phrase d'introduction</strong> rappelant le problème posé</li>
+ <li><strong>1 paragraphe par document</strong> (= 1 idée principale × 3 phrases VDC)</li>
+ <li><strong>1 paragraphe de mise en relation</strong> entre les documents</li>
+ <li><strong>1 conclusion claire</strong> répondant explicitement au problème</li>
+ </ul>
+ <div class="good">N'oublie pas de citer les docs : « le document 1 montre… », « comme le confirme le document 3… »</div>
+ </div>
+
+ <div class="step">
+ <div class="step-num">6</div>
+ <h4>Relire (5 min)</h4>
+ <ul>
+ <li>Toutes les questions sont traitées ?</li>
+ <li>Conclusion explicite à la question initiale ?</li>
+ <li>Pas de faute d'inattention (insuline ≠ glucagon, gène ≠ allèle…) ?</li>
+ </ul>
+ </div>
+</section>
+
+<section id="exemple">
+ <div class="section-header"><div class="section-num">📝</div><h2>Exemple complet corrigé</h2></div>
+
+ <div class="card o">
+ <h4 style="margin-top:0">🎯 Sujet (extrait type bac)</h4>
+ <p><em>Problème : Expliquer comment, lors d'un effort physique, l'organisme assure l'approvisionnement en ATP des muscles.</em></p>
+ <p><strong>Document 1</strong> : Schéma du sarcomère avec actine et myosine.<br>
+ <strong>Document 2</strong> : Graphique de la consommation des trois substrats énergétiques (PCr, glucose, lipides) au cours d'un effort de 90 minutes.<br>
+ <strong>Document 3</strong> : Mesures de la VO₂ d'un athlète au repos (0,3 L/min) et à l'effort maximal (4,2 L/min).</p>
+ </div>
+
+ <div class="card g">
+ <h4 style="margin-top:0">✅ Rédaction modèle</h4>
+
+ <p><strong>Introduction.</strong> La contraction musculaire repose sur le glissement des filaments d'actine et de myosine, qui nécessite de l'ATP. Or, les réserves musculaires en ATP sont très faibles (~ 5 mmol/kg). Comment l'organisme assure-t-il l'approvisionnement énergétique des muscles à l'effort ?</p>
+
+ <p><strong>Analyse du document 1.</strong> Le document 1 montre la structure du sarcomère, unité contractile élémentaire. <em>Je vois</em> que l'actine et la myosine se chevauchent dans la bande A. <em>J'en déduis</em> que la contraction nécessite la formation de ponts entre les têtes de myosine et l'actine, ce qui consomme de l'ATP à chaque cycle. <em>Je conclus</em> que l'effort musculaire suppose une regénération continue d'ATP.</p>
+
+ <p><strong>Analyse du document 2.</strong> <em>Je vois</em> que la phosphocréatine (PCr) est consommée massivement dans les 10 premières secondes, puis épuisée. Le glucose est mobilisé dès 30 secondes et reste la source principale jusqu'à ~ 30 min. Les lipides prennent le relais après 30 min et deviennent majoritaires au-delà d'1 h. <em>J'en déduis</em> qu'il existe <strong>trois voies de resynthèse de l'ATP</strong> qui s'activent successivement selon la durée de l'effort. <em>Je conclus</em> que l'organisme adapte sa stratégie énergétique à la durée de l'effort.</p>
+
+ <p><strong>Analyse du document 3.</strong> <em>Je vois</em> que la VO₂ passe de 0,3 à 4,2 L/min (× 14) entre repos et effort maximal. <em>J'en déduis</em> que la respiration mitochondriale est très sollicitée à l'effort, ce qui produit l'ATP à partir des nutriments et de l'oxygène. <em>Je conclus</em> que la voie aérobie est la voie principale aux efforts longs, ce qui rejoint le document 2.</p>
+
+ <p><strong>Mise en relation.</strong> Les trois documents convergent : la contraction (doc. 1) requiert un apport continu en ATP, fourni par trois voies (doc. 2) dont la respiration cellulaire est dominante aux efforts longs (doc. 3, augmentation massive de VO₂).</p>
+
+ <p><strong>Conclusion.</strong> L'organisme assure l'approvisionnement en ATP des muscles à l'effort grâce à trois voies de resynthèse complémentaires : la voie anaérobie alactique (phosphocréatine, qq sec), la voie anaérobie lactique (fermentation, qq min) et la voie aérobie (respiration cellulaire, &gt; 2 min). Cette dernière, qui demande de l'O₂ et explique la hausse de VO₂, est essentielle pour les efforts d'endurance.</p>
+ </div>
+
+ <div class="tip">Ce type de rédaction, claire et structurée, rapporte facilement <strong>6 à 7 points sur 8</strong>. Pas besoin d'être génial — il faut juste être <strong>méthodique</strong>.</div>
+</section>
+
+<section id="pieges">
+ <div class="section-header"><div class="section-num">⚠</div><h2>Pièges à éviter</h2></div>
+
+ <div class="warn">
+ <strong>Recopier le document.</strong> Ne dis pas « l'axe Y est la glycémie en g/L et l'axe X est le temps en min ». Décris ce qui se PASSE : « la glycémie monte de 0,9 à 1,4 g/L en 30 min ».
+ </div>
+
+ <div class="warn">
+ <strong>Affirmer sans justifier.</strong> Ne dis pas « c'est un diabète ». Dis : « la glycémie à jeun est ≥ 1,26 g/L, valeur diagnostique du diabète. »
+ </div>
+
+ <div class="warn">
+ <strong>Sortir du sujet.</strong> Ne récite pas tout le cours. Ne mobilise que les connaissances <strong>en lien</strong> avec les documents.
+ </div>
+
+ <div class="warn">
+ <strong>Oublier la conclusion finale.</strong> Termine TOUJOURS par une phrase qui répond <strong>explicitement</strong> à la question initiale.
+ </div>
+
+ <div class="good">
+ <strong>Astuce des bons élèves :</strong> avant de rédiger, écris en haut de ton brouillon <strong>la question posée</strong> + <strong>la conclusion que tu vises</strong>. Tu organises ta démonstration en marchant vers cet objectif.
+ </div>
+</section>
+
+<div style="background:var(--bg2);border:1px solid var(--border);border-radius:12px;padding:1.5rem;margin-top:2rem;text-align:center">
+ <h3 style="margin:0 0 .8rem;padding:0;border:none">📚 Continue</h3>
+ <div style="display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;margin-top:.8rem">
+ <a href="exercice2_synthese.html" style="background:rgba(32,36,58,.15);color:var(--purple);padding:.7rem 1.2rem;border-radius:8px;text-decoration:none;font-weight:700;border:1px solid rgba(58,64,96,.3)">✍️ Méthodo Exercice 2</a>
+ <a href="schemas_bilan.html" style="background:rgba(32,36,58,.15);color:var(--green);padding:.7rem 1.2rem;border-radius:8px;text-decoration:none;font-weight:700;border:1px solid rgba(58,64,96,.3)">🎨 Schémas-bilan</a>
+ <a href="../annales/annale1_evolution.html" style="background:rgba(32,36,58,.15);color:var(--orange);padding:.7rem 1.2rem;border-radius:8px;text-decoration:none;font-weight:700;border:1px solid rgba(58,64,96,.3)">📚 Annales corrigées</a>
+ </div>
+</div>
+
+</main>
+
+<footer>SVT Terminale Spécialité · Bac 2026 — Méthodo Exercice 1<a href="../accueil-svt.html">Retour à l'index</a></footer>
+
+</body>
+</html>

@@ -1,0 +1,1110 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Physiopathologie des Néoplasies — Fiche de révision complète">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../../assets/css/acces.css">
+<script src="../../../../../../assets/js/acces.js"></script>
+<title>Fiche de Révision — Physiopathologie des Néoplasies</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../../../assets/css/chrome.css">
+<style>
+ :root {
+ --bg: #0f1117;
+ --surface: #161922;
+ --surface2: #1a1d2a;
+ --border: #2a3050;
+ --accent: #ff5c6b;
+ --accent2: #ff8fa3;
+ --accent3: #f472b6;
+ --text: #9aa3b8;
+ --text-muted: #9aa3b8;
+ --benign: #ff6b9d;
+ --malign: #ff5c6b;
+ --radius: 10px;
+ }
+
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+
+ body {
+ background: var(--bg);
+ color: var(--text);
+ font-family: 'Source Sans 3', sans-serif;
+ font-size: 15px;
+ line-height: 1.7;
+ }
+
+ /* HEADER */
+ header {
+ background: linear-gradient(135deg, #0f1117 0%, #0f1117 50%, #1a1d2a 100%);
+ border-bottom: 3px solid var(--accent);
+ padding: 50px 40px 40px;
+ position: relative;
+ overflow: hidden;
+ }
+ header::before {
+ content: '';
+ position: absolute;
+ top: -60px; right: -60px;
+ width: 300px; height: 300px;
+ background: radial-gradient(circle, rgba(255,92,107,0.12) 0%, transparent 70%);
+ border-radius: 50%;
+ }
+ header::after {
+ content: '';
+ position: absolute;
+ bottom: -80px; left: -40px;
+ width: 250px; height: 250px;
+ background: radial-gradient(circle, rgba(255,107,157,0.08) 0%, transparent 70%);
+ border-radius: 50%;
+ }
+ .header-badge {
+ display: inline-block;
+ background: var(--accent);
+ color: white;
+ font-size: 11px;
+ font-weight: 600;
+ letter-spacing: 2px;
+ text-transform: uppercase;
+ padding: 4px 14px;
+ border-radius: 20px;
+ margin-bottom: 16px;
+ }
+ header h1 {
+ font-family: 'Playfair Display', serif;
+ font-size: clamp(2rem, 5vw, 3.5rem);
+ font-weight: 900;
+ line-height: 1.1;
+ color: var(--text);
+ position: relative;
+ }
+ header h1 span { color: var(--accent); }
+ .header-sub {
+ margin-top: 12px;
+ color: var(--text-muted);
+ font-size: 14px;
+ letter-spacing: 1px;
+ }
+
+ /* LAYOUT */
+ .container {
+ max-width: 1100px;
+ margin: 0 auto;
+ padding: 40px 24px;
+ }
+
+ /* TABLE OF CONTENTS */
+ .toc {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ border-left: 4px solid var(--accent2);
+ border-radius: var(--radius);
+ padding: 24px 28px;
+ margin-bottom: 40px;
+ }
+ .toc h2 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.1rem;
+ color: var(--accent2);
+ margin-bottom: 14px;
+ letter-spacing: 1px;
+ text-transform: uppercase;
+ font-size: 0.85rem;
+ }
+ .toc-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+ gap: 8px;
+ }
+ .toc a {
+ color: var(--text-muted);
+ text-decoration: none;
+ font-size: 13px;
+ padding: 6px 10px;
+ border-radius: 6px;
+ transition: all 0.2s;
+ display: block;
+ border: 1px solid transparent;
+ }
+ .toc a:hover {
+ color: var(--text);
+ background: var(--surface2);
+ border-color: var(--border);
+ }
+ .toc a::before { content: '→ '; color: var(--accent); }
+
+ /* SECTIONS */
+ section {
+ margin-bottom: 40px;
+ scroll-margin-top: 20px;
+ }
+ .section-title {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.7rem;
+ font-weight: 700;
+ color: var(--text);
+ margin-bottom: 20px;
+ padding-bottom: 12px;
+ border-bottom: 2px solid var(--border);
+ display: flex;
+ align-items: center;
+ gap: 12px;
+ }
+ .section-title .icon {
+ width: 36px; height: 36px;
+ background: var(--accent);
+ border-radius: 8px;
+ display: flex; align-items: center; justify-content: center;
+ font-size: 18px;
+ flex-shrink: 0;
+ }
+ .section-title.blue .icon { background: var(--accent3); }
+ .section-title.gold .icon { background: var(--accent2); }
+ .section-title.green .icon { background: var(--benign); }
+
+ /* CARDS */
+ .card {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ border-radius: var(--radius);
+ padding: 20px 24px;
+ margin-bottom: 16px;
+ }
+ .card h3 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.05rem;
+ color: var(--accent2);
+ margin-bottom: 10px;
+ }
+ .card ul {
+ padding-left: 18px;
+ }
+ .card ul li {
+ margin-bottom: 6px;
+ color: var(--text-muted);
+ }
+ .card ul li strong { color: var(--text); }
+
+ /* DEFINITION BOXES */
+ .def-box {
+ background: linear-gradient(135deg, var(--surface) 0%, var(--surface2) 100%);
+ border: 1px solid var(--border);
+ border-left: 4px solid var(--accent3);
+ border-radius: var(--radius);
+ padding: 18px 22px;
+ margin-bottom: 14px;
+ }
+ .def-box .term {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.1rem;
+ color: var(--accent3);
+ margin-bottom: 6px;
+ }
+ .def-box p { color: var(--text-muted); font-size: 14px; }
+ .def-box p strong { color: var(--text); }
+
+ /* COMPARISON TABLE */
+ .compare-grid {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 16px;
+ margin-bottom: 16px;
+ }
+ .compare-col {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ border-radius: var(--radius);
+ padding: 20px;
+ border-top: 4px solid;
+ }
+ .compare-col.benign { border-top-color: var(--benign); }
+ .compare-col.malign { border-top-color: var(--malign); }
+ .compare-col h3 {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.1rem;
+ margin-bottom: 14px;
+ }
+ .compare-col.benign h3 { color: var(--benign); }
+ .compare-col.malign h3 { color: var(--malign); }
+ .compare-col li {
+ color: var(--text-muted);
+ margin-bottom: 6px;
+ font-size: 14px;
+ list-style: none;
+ padding-left: 16px;
+ position: relative;
+ }
+ .compare-col li::before {
+ content: '•';
+ position: absolute;
+ left: 0;
+ }
+ .compare-col.benign li::before { color: var(--benign); }
+ .compare-col.malign li::before { color: var(--malign); }
+
+ /* TNM TABLE */
+ table {
+ width: 100%;
+ border-collapse: collapse;
+ margin-bottom: 16px;
+ font-size: 13.5px;
+ }
+ th {
+ background: var(--surface2);
+ color: var(--accent2);
+ padding: 10px 14px;
+ text-align: left;
+ font-weight: 600;
+ letter-spacing: 0.5px;
+ border-bottom: 2px solid var(--accent2);
+ }
+ td {
+ padding: 9px 14px;
+ border-bottom: 1px solid var(--border);
+ color: var(--text-muted);
+ }
+ td strong { color: var(--text); }
+ tr:hover td { background: var(--surface2); }
+ .t-badge {
+ display: inline-block;
+ padding: 2px 8px;
+ border-radius: 4px;
+ font-size: 12px;
+ font-weight: 600;
+ background: rgba(255,92,107,0.15);
+ color: var(--accent);
+ font-family: monospace;
+ }
+
+ /* NOMENCLATURE TABLE */
+ .nom-table th { border-bottom-color: var(--accent3); color: var(--accent3); }
+
+ /* RISK FACTORS GRID */
+ .risk-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+ gap: 12px;
+ margin-bottom: 16px;
+ }
+ .risk-card {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ border-radius: var(--radius);
+ padding: 16px;
+ transition: border-color 0.2s;
+ }
+ .risk-card:hover { border-color: var(--accent); }
+ .risk-card .risk-icon { font-size: 24px; margin-bottom: 8px; }
+ .risk-card h4 { font-size: 14px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+ .risk-card p { font-size: 12.5px; color: var(--text-muted); }
+
+ /* PATHWAY DIAGRAM */
+ .pathway {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ border-radius: var(--radius);
+ padding: 24px;
+ margin-bottom: 16px;
+ }
+ .pathway-steps {
+ display: flex;
+ flex-direction: column;
+ gap: 0;
+ }
+ .pathway-step {
+ display: flex;
+ align-items: flex-start;
+ gap: 16px;
+ position: relative;
+ }
+ .pathway-step:not(:last-child)::after {
+ content: '';
+ position: absolute;
+ left: 18px;
+ top: 40px;
+ bottom: -12px;
+ width: 2px;
+ background: linear-gradient(to bottom, var(--accent), var(--accent3));
+ }
+ .step-num {
+ width: 36px; height: 36px;
+ background: var(--accent);
+ border-radius: 50%;
+ display: flex; align-items: center; justify-content: center;
+ font-weight: 700;
+ font-size: 14px;
+ flex-shrink: 0;
+ z-index: 1;
+ }
+ .step-content {
+ background: var(--surface2);
+ border: 1px solid var(--border);
+ border-radius: 8px;
+ padding: 12px 16px;
+ flex: 1;
+ margin-bottom: 24px;
+ }
+ .step-content strong {
+ display: block;
+ color: var(--accent2);
+ font-size: 13px;
+ text-transform: uppercase;
+ letter-spacing: 1px;
+ margin-bottom: 4px;
+ }
+ .step-content p { color: var(--text-muted); font-size: 14px; }
+
+ /* TREATMENT CARDS */
+ .treat-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+ gap: 12px;
+ }
+ .treat-card {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ border-radius: var(--radius);
+ padding: 18px 16px;
+ text-align: center;
+ transition: transform 0.2s, border-color 0.2s;
+ }
+ .treat-card:hover { transform: translateY(-3px); border-color: var(--accent3); }
+ .treat-card .t-icon { font-size: 28px; margin-bottom: 8px; }
+ .treat-card h4 { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 4px; }
+ .treat-card p { font-size: 12px; color: var(--text-muted); }
+
+ /* HIGHLIGHT BOX */
+ .highlight {
+ background: linear-gradient(135deg, rgba(255,92,107,0.1) 0%, rgba(255,107,157,0.05) 100%);
+ border: 1px solid rgba(255,92,107,0.3);
+ border-radius: var(--radius);
+ padding: 16px 20px;
+ margin-bottom: 14px;
+ font-size: 14px;
+ }
+ .highlight strong { color: var(--accent2); }
+
+ /* METASTASIS ROUTES */
+ .routes {
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 14px;
+ margin-bottom: 16px;
+ }
+ .route {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ border-radius: var(--radius);
+ padding: 18px;
+ text-align: center;
+ }
+ .route .r-icon { font-size: 32px; margin-bottom: 10px; }
+ .route h4 { color: var(--accent3); font-size: 14px; margin-bottom: 6px; }
+ .route p { color: var(--text-muted); font-size: 12.5px; }
+
+ /* LUNG CANCER SPECIFIC */
+ .lung-types {
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 14px;
+ margin-bottom: 16px;
+ }
+ .lung-type {
+ background: var(--surface);
+ border: 1px solid var(--border);
+ border-radius: var(--radius);
+ padding: 18px;
+ border-top: 3px solid var(--accent);
+ }
+ .lung-type h4 { color: var(--accent); font-size: 15px; font-weight: 600; margin-bottom: 8px; }
+ .lung-type ul { padding-left: 16px; }
+ .lung-type li { color: var(--text-muted); font-size: 13px; margin-bottom: 4px; }
+
+ /* STATS BAR */
+ .stat-bar {
+ display: flex;
+ align-items: center;
+ gap: 12px;
+ margin-bottom: 10px;
+ }
+ .stat-label { font-size: 13px; color: var(--text-muted); min-width: 180px; }
+ .stat-track {
+ flex: 1;
+ height: 8px;
+ background: var(--border);
+ border-radius: 4px;
+ overflow: hidden;
+ }
+ .stat-fill {
+ height: 100%;
+ border-radius: 4px;
+ background: linear-gradient(to right, var(--accent), var(--accent2));
+ animation: fillBar 1s ease forwards;
+ }
+ @keyframes fillBar { from { width: 0; } }
+ .stat-pct { font-size: 13px; color: var(--accent2); font-weight: 600; min-width: 40px; }
+
+ /* KEY POINTS */
+ .key-points {
+ background: var(--surface2);
+ border: 1px solid var(--border);
+ border-radius: var(--radius);
+ padding: 20px 24px;
+ margin-top: 14px;
+ }
+ .key-points h4 {
+ color: var(--accent);
+ font-size: 12px;
+ letter-spacing: 2px;
+ text-transform: uppercase;
+ margin-bottom: 12px;
+ }
+ .key-points li {
+ list-style: none;
+ padding: 8px 0;
+ border-bottom: 1px solid var(--border);
+ color: var(--text-muted);
+ font-size: 13.5px;
+ padding-left: 22px;
+ position: relative;
+ }
+ .key-points li:last-child { border-bottom: none; }
+ .key-points li::before {
+ content: '✓';
+ position: absolute;
+ left: 0;
+ color: var(--benign);
+ font-weight: 700;
+ }
+
+ /* RESPONSIVE */
+ @media (max-width: 640px) {
+ .compare-grid, .lung-types { grid-template-columns: 1fr; }
+ .routes { grid-template-columns: 1fr; }
+ header { padding: 32px 20px; }
+ .container { padding: 24px 16px; }
+ }
+
+ /* SCROLLBAR */
+ ::-webkit-scrollbar { width: 6px; }
+ ::-webkit-scrollbar-track { background: var(--bg); }
+ ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+ /* PRINT */
+ @media print {
+ body { background: white; color: black; }
+ .card, .def-box, .compare-col { border: 1px solid #e8eaf0; }
+ }
+
+ .tag {
+ display: inline-block;
+ background: rgba(255,107,157,0.15);
+ color: var(--accent3);
+ font-size: 11px;
+ padding: 2px 8px;
+ border-radius: 12px;
+ margin-right: 4px;
+ font-weight: 600;
+ }
+ .tag.orange { background: rgba(255,92,107,0.15); color: var(--accent); }
+ .tag.gold { background: rgba(255,107,157,0.15); color: var(--accent2); }
+</style>
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/physio-patho.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-theme.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
+</head>
+<body>
+<a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
+<div class="page-toggle"><div class="pt-inner"><a href="../../qcm/tp/tp-15.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<header>
+ <div class="header-badge">Licence Physiothérapie · 1ère Année · 2ème Semestre</div>
+ <h1>Physiopathologie des<br><span>Néoplasies</span></h1>
+ <p class="header-sub">Fiche de révision complète</p>
+</header>
+
+<div class="container">
+
+ <!-- TABLE OF CONTENTS -->
+ <nav class="toc">
+ <h2>📋 Sommaire</h2>
+ <div class="toc-grid">
+ <a href="#definitions">Définitions & Terminologie</a>
+ <a href="#mecanisme">Mécanisme du Cancer</a>
+ <a href="#caracteristiques">Caractéristiques des Néoplasmes</a>
+ <a href="#classification">Classification</a>
+ <a href="#nomenclature">Nomenclature</a>
+ <a href="#stades">Stades TNM</a>
+ <a href="#facteurs">Facteurs de Risque</a>
+ <a href="#diagnostic">Diagnostic & Manifestations</a>
+ <a href="#traitement">Traitement</a>
+ <a href="#poumon">Cancer du Poumon</a>
+ </div>
+ </nav>
+
+ <!-- DEFINITIONS -->
+ <section id="definitions">
+ <h2 class="section-title">
+ <span class="icon">📖</span>
+ Définitions & Terminologie
+ </h2>
+
+ <div class="def-box">
+ <div class="term">Néoplasme <span style="font-size:13px;color:var(--text-muted)">(= Tumeur)</span></div>
+ <p>Masse tissulaire <strong>anormale</strong> présentant une croissance <strong>excessive et décoordonnée</strong> avec les cellules des tissus normaux.</p>
+ </div>
+
+ <div class="def-box">
+ <div class="term">Tumeur</div>
+ <p>Terme initialement utilisé pour désigner les augmentations de volume causées par l'inflammation. Désigne aujourd'hui toute <strong>masse occupant un espace anormal</strong> dans un être vivant. Utilisé de manière équivalente à « néoplasme ».</p>
+ </div>
+
+ <div class="def-box">
+ <div class="term">Néoplasie</div>
+ <p>Processus de <strong>croissance anormale et incontrôlée</strong> (à distinguer de l'hypertrophie, hyperplasie, métaplasie, dysplasie). La néoplasie désigne aussi le <em>tissu</em> formé par ce processus.</p>
+ </div>
+
+ <div class="def-box">
+ <div class="term">Cancer</div>
+ <p><strong>Trouble de la croissance et de la différenciation cellulaire</strong> déclenché par des mutations acquises et génétiques. Le cancer est une <strong>néoplasie maligne</strong>. Ce n'est pas une maladie unique : différentes pathogenèses, histoires naturelles et réponses aux traitements.</p>
+ </div>
+
+ <div class="key-points">
+ <h4>🔑 Hiérarchie des termes à retenir</h4>
+ <ul>
+ <li>Néoplasme/Tumeur = masse anormale (bénigne OU maligne)</li>
+ <li>Néoplasie = processus de croissance incontrôlée</li>
+ <li>Cancer = néoplasie <strong>maligne</strong> uniquement</li>
+ <li>Tout cancer est un néoplasme, mais tout néoplasme n'est pas un cancer</li>
+ </ul>
+ </div>
+ </section>
+
+ <!-- MÉCANISME -->
+ <section id="mecanisme">
+ <h2 class="section-title blue">
+ <span class="icon" style="background:var(--accent3)">⚙️</span>
+ Mécanisme du Cancer & Cycle Cellulaire
+ </h2>
+
+ <div class="card">
+ <h3>Rappels : Processus cellulaires normaux</h3>
+ <ul>
+ <li><strong>Prolifération (division cellulaire)</strong> : processus d'adaptation, les cellules se développent pour remplacer ou ajouter les cellules nécessaires</li>
+ <li><strong>Différenciation</strong> : mécanisme par lequel les cellules augmentent leur spécialisation (structure et fonction) à chaque division mitotique</li>
+ <li><strong>Apoptose</strong> : mort cellulaire programmée, élimine les cellules sénescentes, avec dommages ADN, ou inutiles</li>
+ </ul>
+ </div>
+
+ <div class="card">
+ <h3>Types de cellules selon la prolifération</h3>
+ <ul>
+ <li><strong>Cellules permanentes</strong> (ex. neurones) : entrent en phase G0, ne se divisent plus</li>
+ <li><strong>Cellules stables</strong> (ex. hépatocytes) : quiescentes, peuvent rentrer dans le cycle si besoin</li>
+ <li><strong>Cellules labiles</strong> (ex. cellules sanguines) : <em>n'entrent pas en G0</em>, répètent continuellement le cycle</li>
+ <li><strong>Cellules souches adultes</strong> : restent quiescentes jusqu'à nécessité, puis produisent d'autres cellules souches ou se différencient</li>
+ </ul>
+ </div>
+
+ <div class="pathway">
+ <h3 style="font-family:'Playfair Display',serif;color:var(--accent2);margin-bottom:20px;font-size:1.05rem;">Étapes de la carcinogenèse</h3>
+ <div class="pathway-steps">
+ <div class="pathway-step">
+ <div class="step-num">1</div>
+ <div class="step-content">
+ <strong>Initiation</strong>
+ <p>Un agent cancérigène (rayonnement, produit chimique, virus) provoque des <strong>dommages à l'ADN et une mutation cellulaire</strong>. La cellule est en phase G0.</p>
+ </div>
+ </div>
+ <div class="pathway-step">
+ <div class="step-num">2</div>
+ <div class="step-content">
+ <strong>Promotion</strong>
+ <p>L'hypoxie générée stimule le démarrage du cycle cellulaire (passage en G1). Un agent promoteur active les <strong>oncogènes</strong>. La cellule mutée prolifère de manière autonome (sans contrôle de l'apoptose).</p>
+ </div>
+ </div>
+ <div class="pathway-step">
+ <div class="step-num">3</div>
+ <div class="step-content">
+ <strong>Progression</strong>
+ <p>Les mutations confèrent des <strong>avantages de survie et de croissance</strong>. Prolifération indépendante du contrôle et des signaux normaux → tumeur maligne.</p>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ <div class="highlight">
+ <strong>⚠️ Point clé :</strong> La cellule normale évalue s'il y aura réparation (prolifération + différenciation) ou apoptose. La cellule cancéreuse <strong>ne contrôle plus l'apoptose</strong> et prolifère de manière autonome.
+ </div>
+ </section>
+
+ <!-- CARACTÉRISTIQUES -->
+ <section id="caracteristiques">
+ <h2 class="section-title gold">
+ <span class="icon" style="background:var(--accent2)">🔬</span>
+ Caractéristiques des Néoplasmes
+ </h2>
+
+ <div class="card">
+ <h3>1. Différenciation</h3>
+ <ul>
+ <li>Degré de <strong>spécialisation des cellules tumorales</strong> par rapport aux cellules normales (plan morphologique et fonctionnel)</li>
+ <li>Tumeurs bénignes : <strong>bien différenciées</strong> (ressemblent aux cellules d'origine)</li>
+ <li>Tumeurs malignes : <strong>peu ou pas différenciées</strong></li>
+ </ul>
+ </div>
+
+ <div class="card">
+ <h3>2. Anaplasie <span class="tag">Maligne</span></h3>
+ <ul>
+ <li><strong>Absence de différenciation</strong> — caractéristique des cellules malignes</li>
+ <li>Résulte de la prolifération sans maturation (la dédifférenciation est plus rare)</li>
+ </ul>
+ </div>
+
+ <div class="card">
+ <h3>3. Vitesse ou taux de croissance</h3>
+ <ul>
+ <li>Bénignes : croissance <strong>progressive et lente</strong>, mitoses rares et normales</li>
+ <li>Malignes : croissance <strong>erratique</strong>, mitoses nombreuses ou anormales</li>
+ </ul>
+ </div>
+
+ <div class="card">
+ <h3>4. Invasion locale</h3>
+ <ul>
+ <li><strong>Tumeurs bénignes</strong> : masses expansives compactes, avec une capsule de tissu conjonctif condensé → <em>mobiles, discrètement palpables</em>, ne pénètrent pas dans les tissus environnants</li>
+ <li><strong>Tumeurs malignes</strong> : localement invasives, infiltrent et détruisent les tissus adjacents</li>
+ </ul>
+ </div>
+
+ <div class="card">
+ <h3>5. Métastases <span class="tag orange">Maligne uniquement</span></h3>
+ <ul>
+ <li><strong>Implants discontinus</strong> du foyer tumoral primaire (absentes dans les tumeurs bénignes)</li>
+ <li>Plus fréquentes avec les tumeurs primaires larges et peu différenciées</li>
+ <li>La cellule cancéreuse exprime des molécules d'adhésion de surface permettant l'invasion</li>
+ </ul>
+ </div>
+
+ <h3 style="margin:20px 0 12px;color:var(--text-muted);font-size:14px;letter-spacing:1px;text-transform:uppercase;">Voies de dissémination des métastases</h3>
+ <div class="routes">
+ <div class="route">
+ <div class="r-icon">🫀</div>
+ <h4>Voie Sanguine</h4>
+ <p>Vers foie, poumons, os — organes fréquemment atteints</p>
+ </div>
+ <div class="route">
+ <div class="r-icon">🫧</div>
+ <h4>Voie Lymphatique</h4>
+ <p>Système de drainage de l'organe, augmentation des ganglions lymphatiques</p>
+ </div>
+ <div class="route">
+ <div class="r-icon">🔵</div>
+ <h4>Cavités Corporelles</h4>
+ <p>Dissémination dans les cavités (pleurale, péritonéale…)</p>
+ </div>
+ </div>
+ </section>
+
+ <!-- CLASSIFICATION -->
+ <section id="classification">
+ <h2 class="section-title green">
+ <span class="icon" style="background:var(--benign)">📊</span>
+ Classification : Bénin vs Malin
+ </h2>
+
+ <div class="compare-grid">
+ <div class="compare-col benign">
+ <h3>✅ Tumeurs Bénignes</h3>
+ <ul>
+ <li>Cellules <strong>bien différenciées</strong></li>
+ <li>Croissance <strong>lente</strong></li>
+ <li>Localisées (encapsulées)</li>
+ <li>Absence de métastases</li>
+ <li>Ne causent généralement pas la mort</li>
+ <li>Dangereuses si elles interfèrent avec des fonctions vitales (ex. cerveau)</li>
+ </ul>
+ </div>
+ <div class="compare-col malign">
+ <h3>❌ Tumeurs Malignes (Cancer)</h3>
+ <ul>
+ <li>Cellules <strong>peu différenciées</strong> (anaplasie)</li>
+ <li>Croissance <strong>erratique</strong></li>
+ <li>Infiltrent les tissus adjacents</li>
+ <li>Métastases fréquentes</li>
+ <li>Pénètrent dans le système vasculaire ou lymphatique</li>
+ <li>Provoquent des tumeurs secondaires dans d'autres parties du corps</li>
+ </ul>
+ </div>
+ </div>
+
+ <table>
+ <thead>
+ <tr>
+ <th>Caractéristique</th>
+ <th>Bénin</th>
+ <th>Malin</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td><strong>Différenciation</strong></td>
+ <td>Bien différenciée, ressemble au tissu d'origine</td>
+ <td>Anaplasie, structure atypique</td>
+ </tr>
+ <tr>
+ <td><strong>Taux de croissance</strong></td>
+ <td>Progressive et lente, peut régresser</td>
+ <td>Erratique, mitoses nombreuses et anormales</td>
+ </tr>
+ <tr>
+ <td><strong>Invasion locale</strong></td>
+ <td>Cohésive, expansile, bien délimitée</td>
+ <td>Invasive, infiltre les tissus environnants</td>
+ </tr>
+ <tr>
+ <td><strong>Métastases</strong></td>
+ <td style="color:var(--benign)">Absentes</td>
+ <td style="color:var(--malign)">Fréquentes (surtout si tumeur large indifférenciée)</td>
+ </tr>
+ </tbody>
+ </table>
+ </section>
+
+ <!-- NOMENCLATURE -->
+ <section id="nomenclature">
+ <h2 class="section-title">
+ <span class="icon">🏷️</span>
+ Nomenclature des Tumeurs
+ </h2>
+
+ <div class="card">
+ <h3>Règles de dénomination</h3>
+ <ul>
+ <li>La dénomination est basée sur la <strong>composante parenchymateuse</strong> de la tumeur</li>
+ <li><strong>Suffixe -ome</strong> : tumeur bénigne + type de tissu (ex. fibrome, lipome)</li>
+ <li><strong>-carcinome</strong> : tumeur maligne du tissu <em>épithélial</em></li>
+ <li><strong>-sarcome</strong> : tumeur maligne du tissu <em>mésenchymateux</em></li>
+ <li><strong>Papillome</strong> : excroissances sur une surface structurelle</li>
+ <li><strong>Polype</strong> : excroissance dépassant de la surface muqueuse</li>
+ </ul>
+ </div>
+
+ <table class="nom-table">
+ <thead>
+ <tr>
+ <th>Type de Tissu</th>
+ <th>Tumeur Bénigne</th>
+ <th>Tumeur Maligne</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr><td colspan="3" style="background:var(--surface2);color:var(--accent);font-weight:600;font-size:12px;letter-spacing:1px;">ÉPITHÉLIAL</td></tr>
+ <tr><td>De surface</td><td>Papillome</td><td>Carcinome épidermoïde</td></tr>
+ <tr><td>Glandulaire</td><td>Adénome</td><td>Adénocarcinome</td></tr>
+ <tr><td colspan="3" style="background:var(--surface2);color:var(--accent);font-weight:600;font-size:12px;letter-spacing:1px;">CONJONCTIF</td></tr>
+ <tr><td>Fibreux</td><td>Fibrome</td><td>Fibrosarcome</td></tr>
+ <tr><td>Adipeux</td><td>Lipome</td><td>Liposarcome</td></tr>
+ <tr><td>Cartilage</td><td>Chondrome</td><td>Chondrosarcome</td></tr>
+ <tr><td>Os</td><td>Ostéome</td><td>Ostéosarcome</td></tr>
+ <tr><td>Vaisseaux sanguins</td><td>Hémangiome</td><td>Hémangiosarcome</td></tr>
+ <tr><td colspan="3" style="background:var(--surface2);color:var(--accent);font-weight:600;font-size:12px;letter-spacing:1px;">MUSCULAIRE</td></tr>
+ <tr><td>Muscle lisse</td><td>Léiomyome</td><td>Léiomyosarcome</td></tr>
+ <tr><td>Muscle strié</td><td>Rhabdomyome</td><td>Rhabdomyosarcome</td></tr>
+ <tr><td colspan="3" style="background:var(--surface2);color:var(--accent);font-weight:600;font-size:12px;letter-spacing:1px;">NEURAL</td></tr>
+ <tr><td>Tissu glial</td><td>Gliome</td><td>Glioblastome, astrocytome, médulloblastome</td></tr>
+ <tr><td>Méninges</td><td>Méningiome</td><td>Sarcome méningé</td></tr>
+ <tr><td colspan="3" style="background:var(--surface2);color:var(--accent);font-weight:600;font-size:12px;letter-spacing:1px;">HÉMATOLOGIQUE</td></tr>
+ <tr><td>Granulocytaire</td><td></td><td>Leucémie myélocytaire</td></tr>
+ <tr><td>Lymphocytaire</td><td></td><td>Leucémie lymphocytaire / Lymphome</td></tr>
+ <tr><td>Plasmocytaire</td><td></td><td>Myélome multiple</td></tr>
+ </tbody>
+ </table>
+ </section>
+
+ <!-- STADES TNM -->
+ <section id="stades">
+ <h2 class="section-title blue">
+ <span class="icon" style="background:var(--accent3)">📏</span>
+ Stades des Tumeurs Malignes — Système TNM
+ </h2>
+
+ <div class="highlight">
+ Le système TNM classe les tumeurs malignes selon 3 critères : <strong>T</strong> (taille de la tumeur primaire), <strong>N</strong> (ganglions régionaux atteints), <strong>M</strong> (métastases à distance).
+ </div>
+
+ <table>
+ <thead>
+ <tr><th>Paramètre</th><th>Code</th><th>Signification</th></tr>
+ </thead>
+ <tbody>
+ <tr><td rowspan="6"><strong>T — Tumeur</strong></td><td><span class="t-badge">Tx</span></td><td>Tumeur primaire non évaluable</td></tr>
+ <tr><td><span class="t-badge">T0</span></td><td>Pas d'évidence de tumeur primaire</td></tr>
+ <tr><td><span class="t-badge">Tis</span></td><td>Carcinome in situ</td></tr>
+ <tr><td><span class="t-badge">T1</span></td><td>Tumeur ≤ 2 cm dans sa plus grande dimension</td></tr>
+ <tr><td><span class="t-badge">T2</span></td><td>Tumeur > 2 cm et ≤ 4 cm</td></tr>
+ <tr><td><span class="t-badge">T3–T4</span></td><td>T3 : > 4 cm | T4 : envahit les structures adjacentes</td></tr>
+ <tr><td rowspan="4"><strong>N — Ganglions</strong></td><td><span class="t-badge">N0</span></td><td>Absence de métastases ganglionnaires régionales</td></tr>
+ <tr><td><span class="t-badge">N1</span></td><td>Métastase dans un seul ganglion homolatéral ≤ 3 cm</td></tr>
+ <tr><td><span class="t-badge">N2a/b/c</span></td><td>Métastases dans ganglions homolatéraux multiples ou bilatéraux</td></tr>
+ <tr><td><span class="t-badge">N3</span></td><td>Métastase ganglionnaire > 6 cm</td></tr>
+ <tr><td rowspan="3"><strong>M — Métastases</strong></td><td><span class="t-badge">M0</span></td><td>Absence de métastase à distance</td></tr>
+ <tr><td><span class="t-badge">M1</span></td><td>Métastase à distance présente</td></tr>
+ </tbody>
+ </table>
+
+ <table>
+ <thead>
+ <tr><th>Stade Clinique</th><th>T</th><th>N</th><th>M</th></tr>
+ </thead>
+ <tbody>
+ <tr><td><strong>Stade 0</strong></td><td>Tis</td><td>N0</td><td>M0</td></tr>
+ <tr><td><strong>Stade I</strong></td><td>T1</td><td>N0</td><td>M0</td></tr>
+ <tr><td><strong>Stade II</strong></td><td>T2</td><td>N0</td><td>M0</td></tr>
+ <tr><td rowspan="4"><strong>Stade III</strong></td><td>T3</td><td>N0</td><td>M0</td></tr>
+ <tr><td>T1</td><td>N1</td><td>M0</td></tr>
+ <tr><td>T2</td><td>N1</td><td>M0</td></tr>
+ <tr><td>T3</td><td>N1</td><td>M0</td></tr>
+ <tr><td rowspan="3"><strong>Stade IV</strong></td><td>T4</td><td>N0</td><td>M0</td></tr>
+ <tr><td>Quelconque T</td><td>N2, N3</td><td>M0</td></tr>
+ <tr><td>Quelconque T</td><td>Quelconque N</td><td>M1</td></tr>
+ </tbody>
+ </table>
+ </section>
+
+ <!-- FACTEURS DE RISQUE -->
+ <section id="facteurs">
+ <h2 class="section-title">
+ <span class="icon">⚠️</span>
+ Facteurs de Risque
+ </h2>
+
+ <div class="risk-grid">
+ <div class="risk-card">
+ <div class="risk-icon">🚬</div>
+ <h4>Tabagisme</h4>
+ <p>Bouche, pharynx, larynx, œsophage, pancréas, vessie — responsable de 90% des cancers pulmonaires</p>
+ </div>
+ <div class="risk-card">
+ <div class="risk-icon">🍷</div>
+ <h4>Alcool</h4>
+ <p>Oropharynx, larynx, œsophage, foie</p>
+ </div>
+ <div class="risk-card">
+ <div class="risk-icon">☢️</div>
+ <h4>Radiation</h4>
+ <p>Rayonnements ionisants et UV — agent mutagène direct</p>
+ </div>
+ <div class="risk-card">
+ <div class="risk-icon">🦠</div>
+ <h4>Virus oncogènes</h4>
+ <p>Hépatites B et C (foie), HPV (col utérin), EBV (lymphomes)</p>
+ </div>
+ <div class="risk-card">
+ <div class="risk-icon">🧬</div>
+ <h4>Hérédité</h4>
+ <p>Prédispositions génétiques, mutations héréditaires (BRCA1/2…)</p>
+ </div>
+ <div class="risk-card">
+ <div class="risk-icon">🕰️</div>
+ <h4>Âge</h4>
+ <p>Risque élevé si âge > 55 ans ou < 15 ans</p>
+ </div>
+ <div class="risk-card">
+ <div class="risk-icon">🍔</div>
+ <h4>Alimentation</h4>
+ <p>Consommation de viande, graisses, additifs alimentaires</p>
+ </div>
+ <div class="risk-card">
+ <div class="risk-icon">🛡️</div>
+ <h4>Immunodéficience</h4>
+ <p>Déficit immunitaire, inflammations chroniques, lésions précurseurs</p>
+ </div>
+ <div class="risk-card">
+ <div class="risk-icon">💊</div>
+ <h4>Médicaments</h4>
+ <p>Ex. méthotrexate — agents chimiques cancérigènes</p>
+ </div>
+ <div class="risk-card">
+ <div class="risk-icon">⚗️</div>
+ <h4>Substances chimiques</h4>
+ <p>Cancérigènes environnementaux (amiante, benzène, arsenic…)</p>
+ </div>
+ <div class="risk-card">
+ <div class="risk-icon">🔬</div>
+ <h4>Hormones</h4>
+ <p>Perturbations hormonales liées à certains cancers (sein, prostate)</p>
+ </div>
+ </div>
+ </section>
+
+ <!-- DIAGNOSTIC & MANIFESTATIONS -->
+ <section id="diagnostic">
+ <h2 class="section-title blue">
+ <span class="icon" style="background:var(--accent3)">🩺</span>
+ Diagnostic & Manifestations Cliniques
+ </h2>
+
+ <div class="compare-grid">
+ <div class="card">
+ <h3>Méthodes diagnostiques</h3>
+ <ul>
+ <li><strong>Observation</strong> et <strong>palpation</strong></li>
+ <li><strong>Examens de laboratoire</strong> (hémogramme, ionogramme, calcémie, créatinine, albuminémie, LDH…)</li>
+ <li><strong>Méthodes histologiques et cytologiques</strong> (biopsie)</li>
+ <li><strong>Examens complémentaires</strong> d'imagerie (TDM, PET-scan…)</li>
+ <li><strong>Bronchoscopie</strong>, biopsie transthoracique (pour le poumon)</li>
+ </ul>
+ </div>
+ <div class="card">
+ <h3>Manifestations cliniques générales</h3>
+ <ul>
+ <li><strong>Anorexie</strong> — perte d'appétit</li>
+ <li><strong>Cachexie</strong> — perte de masse maigre et grasse</li>
+ <li><strong>Fatigue</strong> chronique</li>
+ <li><strong>Troubles du sommeil</strong></li>
+ <li><strong>Anémie</strong></li>
+ <li>Douleurs locales selon la localisation</li>
+ </ul>
+ </div>
+ </div>
+ </section>
+
+ <!-- TRAITEMENT -->
+ <section id="traitement">
+ <h2 class="section-title gold">
+ <span class="icon" style="background:var(--accent2)">💉</span>
+ Traitements
+ </h2>
+
+ <div class="treat-grid">
+ <div class="treat-card">
+ <div class="t-icon">🔪</div>
+ <h4>Chirurgie</h4>
+ <p>Retrait de la tumeur — curative si stades I et II</p>
+ </div>
+ <div class="treat-card">
+ <div class="t-icon">☢️</div>
+ <h4>Radiothérapie</h4>
+ <p>Rayonnements ciblés pour détruire les cellules tumorales</p>
+ </div>
+ <div class="treat-card">
+ <div class="t-icon">💊</div>
+ <h4>Chimiothérapie</h4>
+ <p>Médicaments cytotoxiques systémiques ou adjuvants</p>
+ </div>
+ <div class="treat-card">
+ <div class="t-icon">🧪</div>
+ <h4>Thérapie hormonale</h4>
+ <p>Pour cancers hormonodépendants (sein, prostate)</p>
+ </div>
+ <div class="treat-card">
+ <div class="t-icon">🧬</div>
+ <h4>Biothérapie</h4>
+ <p>Immunothérapie, thérapies moléculaires ciblées</p>
+ </div>
+ </div>
+
+ <div class="highlight" style="margin-top:16px">
+ <strong>💡 Pronostic :</strong> Les chances de guérison dépendent du <strong>type de cancer</strong>, de son <strong>étendue</strong> et du <strong>moment du diagnostic</strong>. Le taux de survie à 5 ans a augmenté, mais le vieillissement de la population maintient une mortalité globale en hausse.
+ </div>
+ </section>
+
+ <!-- CANCER DU POUMON -->
+ <section id="poumon">
+ <h2 class="section-title">
+ <span class="icon">🫁</span>
+ Cancer du Poumon (Néoplasie Pulmonaire)
+ </h2>
+
+ <div class="card" style="border-left:4px solid var(--accent)">
+ <h3>Épidémiologie clé</h3>
+ <div class="stat-bar">
+ <span class="stat-label">Causé par le tabagisme</span>
+ <div class="stat-track"><div class="stat-fill" style="width:90%"></div></div>
+ <span class="stat-pct">90%</span>
+ </div>
+ <div class="stat-bar">
+ <span class="stat-label">CBNPC (non petites cellules)</span>
+ <div class="stat-track"><div class="stat-fill" style="width:80%;animation-delay:0.2s"></div></div>
+ <span class="stat-pct">~80%</span>
+ </div>
+ <div class="stat-bar">
+ <span class="stat-label">CPPC (petites cellules)</span>
+ <div class="stat-track"><div class="stat-fill" style="width:15%;animation-delay:0.4s"></div></div>
+ <span class="stat-pct">~15%</span>
+ </div>
+ <p style="color:var(--text-muted);font-size:13px;margin-top:10px">6ème cause de mortalité mondiale (hommes) — 4ème chez les femmes au Portugal</p>
+ </div>
+
+ <h3 style="margin:20px 0 12px;color:var(--text-muted);font-size:14px;letter-spacing:1px;text-transform:uppercase;">Types anatomopathologiques</h3>
+ <div class="lung-types">
+ <div class="lung-type">
+ <h4>Cancer Pulmonaire Non à Petites Cellules (CBNPC)</h4>
+ <ul>
+ <li>Adénocarcinome</li>
+ <li>Carcinome épidermoïde (à cellules pavimenteuses)</li>
+ <li>Carcinome adénosquameux</li>
+ <li>Carcinome à grandes cellules</li>
+ </ul>
+ </div>
+ <div class="lung-type" style="border-top-color:var(--malign)">
+ <h4 style="color:var(--malign)">Cancer Pulmonaire à Petites Cellules (CPPC)</h4>
+ <ul>
+ <li>Généralement disséminé au moment du diagnostic</li>
+ <li>Répond bien à la chimiothérapie</li>
+ <li>Chirurgie rarement indiquée</li>
+ <li>Pronostic sombre</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="card">
+ <h3>Signes et Symptômes cliniques</h3>
+ <ul>
+ <li><strong>Toux</strong> (50–75% des cas)</li>
+ <li><strong>Hémoptysies</strong> (25–50%)</li>
+ <li><strong>Dyspnée</strong> (25%)</li>
+ <li><strong>Douleur thoracique</strong> (20%)</li>
+ <li>Autres : amaigrissement, asthénie, anorexie, raucité de la voix, dysphagie</li>
+ <li><strong>Syndrome de Pancoast</strong> : tumeur du sommet pulmonaire → compression structures adjacentes → douleur épaule irradiant vers le membre supérieur, ptose, myose, anidrose (Syndrome de Horner)</li>
+ </ul>
+ </div>
+
+ <div class="card">
+ <h3>Traitement selon le stade</h3>
+ <ul>
+ <li><strong>Stades I–II</strong> : résection chirurgicale (curative), chimiothérapie adjuvante postopératoire au stade II</li>
+ <li><strong>Stade III</strong> : chimioradiothérapie concomitante avant traitement définitif</li>
+ <li><strong>Stade IV</strong> : traitement systémique (chimiothérapie, thérapie moléculaire ciblée, immunothérapie) ou approche palliative</li>
+ <li><strong>Radiothérapie stéréotaxique</strong> : pour les cas non chirurgicaux (thérapie locale)</li>
+ <li>Décision prise en <strong>réunion multidisciplinaire</strong></li>
+ </ul>
+ </div>
+
+ <div class="key-points">
+ <h4>🔑 Points essentiels à retenir</h4>
+ <ul>
+ <li>Le tabagisme est le principal facteur de risque (90% des cas)</li>
+ <li>L'arrêt du tabac est bénéfique quel que soit l'âge</li>
+ <li>95% des cancers pulmonaires sont CBNPC ou CPPC</li>
+ <li>Le poumon est aussi fréquemment la cible de métastases d'autres cancers</li>
+ <li>Le CPPC répond bien à la chimio mais est souvent diagnostiqué tardivement</li>
+ <li>Le syndrome de Pancoast est caractéristique des tumeurs de l'apex pulmonaire</li>
+ </ul>
+ </div>
+ </section>
+
+ <!-- FOOTER -->
+ <footer style="margin-top:48px;padding-top:24px;border-top:1px solid var(--border);text-align:center;color:var(--text-muted);font-size:12px;">
+ <p>Fiche de révision — Physiopathologie des Néoplasies</p>
+ <p style="margin-top:6px">Licence en Physiothérapie | 1ère Année | 2ème Semestre</p>
+ </footer>
+
+</div>
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-15.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+</body>
+</html>

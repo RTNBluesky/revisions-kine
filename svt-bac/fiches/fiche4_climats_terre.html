@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Les climats de la Terre : comprendre le passé pour agir aujourd'hui et demain — :root { --bg: #0f1117; --bg2: #0f1117; --bg3: #161922; --accent: #a5a0ff; --ac">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../assets/css/acces.css">
+<script src="../../assets/js/acces.js"></script>
+<title>Fiche 4 — Les climats de la Terre | SVT Terminale</title>
+<link rel="stylesheet" href="../assets/css/chrome.css">
+<style>
+ :root {
+ --bg: #0f1117; --bg2: #0f1117; --bg3: #161922;
+ --accent: #a5a0ff; --accent2: #a5a0ff; --accent3: #a5a0ff;
+ --accent4: #a5a0ff; --text: #a5a0ff; --muted: #9aa3b8;
+ --border: #2a3050; --tag-bg: #161922;
+ }
+ * { box-sizing: border-box; margin: 0; padding: 0; }
+ body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; font-size: 15px; line-height: 1.7; }
+ header { background: linear-gradient(135deg, #0f1117 0%, #0f1117 100%); border-bottom: 2px solid var(--accent); padding: 2rem 2.5rem; display: flex; flex-direction: column; gap: 0.5rem; }
+ header .tag { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); font-weight: 700; }
+ header h1 { font-size: 2rem; font-weight: 800; color: #e8eaf0; }
+ header .meta { color: var(--muted); font-size: 0.88rem; display: flex; gap: 1.5rem; flex-wrap: wrap; margin-top: 0.25rem; }
+ nav { background: var(--bg2); border-bottom: 1px solid var(--border); padding: 0.75rem 2.5rem; display: flex; gap: 0.6rem; flex-wrap: wrap; }
+ nav a { color: var(--muted); text-decoration: none; font-size: 0.82rem; padding: 0.3rem 0.8rem; border-radius: 20px; background: var(--bg3); }
+ nav a:hover { color: var(--accent); }
+ main { max-width: 960px; margin: 0 auto; padding: 2rem 2.5rem; }
+ section { margin-bottom: 2.5rem; }
+ h2 { font-size: 1.25rem; font-weight: 700; color: var(--accent); border-left: 4px solid var(--accent); padding-left: 0.9rem; margin-bottom: 1.2rem; margin-top: 0.5rem; }
+ h3 { font-size: 1rem; font-weight: 700; color: var(--accent2); margin: 1.1rem 0 0.5rem; }
+ h4 { font-size: 0.93rem; font-weight: 600; color: var(--accent3); margin: 0.9rem 0 0.3rem; }
+ p { margin-bottom: 0.7rem; }
+ .card { background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; padding: 1.2rem 1.4rem; margin-bottom: 1rem; }
+ .card.green { border-left: 4px solid var(--accent3); }
+ .card.blue { border-left: 4px solid var(--accent); }
+ .card.yellow{ border-left: 4px solid var(--accent2); }
+ .card.red { border-left: 4px solid var(--accent4); }
+ .def-box { background: #0f1117; border: 1px solid #2a3050; border-radius: 8px; padding: 0.9rem 1.2rem; margin: 0.5rem 0 1rem; }
+ .def-box .label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 1.5px; color: var(--accent2); font-weight: 700; margin-bottom: 0.3rem; }
+ .def-box strong { color: var(--accent3); }
+ ul { padding-left: 1.4rem; margin-bottom: 0.8rem; }
+ ul li { margin-bottom: 0.3rem; }
+ ul li::marker { color: var(--accent); }
+ ol { padding-left: 1.4rem; margin-bottom: 0.8rem; }
+ ol li { margin-bottom: 0.4rem; }
+ ol li::marker { color: var(--accent3); font-weight: 700; }
+ table { width: 100%; border-collapse: collapse; margin: 0.8rem 0 1.2rem; font-size: 0.88rem; }
+ th { background: var(--bg3); color: var(--accent); padding: 0.6rem 0.9rem; text-align: left; border-bottom: 2px solid var(--accent); }
+ td { padding: 0.55rem 0.9rem; border-bottom: 1px solid var(--border); vertical-align: top; }
+ tr:nth-child(even) td { background: #0f1117; }
+ .keyword { display: inline-block; background: var(--tag-bg); color: var(--accent); border: 1px solid #2a3050; border-radius: 4px; padding: 0.1rem 0.5rem; font-size: 0.8rem; font-weight: 600; margin: 0.15rem; }
+ .important { background: #0f1117; border: 1px solid #2a3050; border-radius: 8px; padding: 0.8rem 1.1rem; margin: 0.8rem 0; color: var(--accent); }
+ .important::before { content: "⚠ À retenir — "; font-weight: 700; }
+ .schema-box { background: var(--bg3); border: 1px dashed var(--border); border-radius: 8px; padding: 1rem; margin: 0.8rem 0; font-family: monospace; font-size: 0.85rem; color: var(--accent3); line-height: 2; }
+ .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+ @media(max-width:640px){ .grid2 { grid-template-columns: 1fr; } }
+ footer { text-align: center; padding: 2rem; color: var(--muted); font-size: 0.8rem; border-top: 1px solid var(--border); margin-top: 2rem; }
+</style>
+</head>
+<body>
+
+<a href="../accueil-svt.html" class="back-nav">← SVT Bac 2026</a>
+
+<div class="page-toggle"><div class="pt-inner"><a href="../qcm/qcm4_climats_terre.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+
+<header>
+ <div class="tag">Thème II — Enjeux planétaires contemporains</div>
+ <h1>Les climats de la Terre : comprendre le passé pour agir aujourd'hui et demain</h1>
+ <div class="meta">
+ <span>📚 2 semaines</span>
+ <span>🎯 SVT Terminale Spécialité</span>
+ <span>🗂 Fiche 4 / 7</span>
+ </div>
+</header>
+
+<nav>
+ <a href="../accueil-svt.html" style="background:rgba(32,36,58,.1);color:#8b7cf8;border:1px solid rgba(58,64,96,.3);text-decoration:none;font-size:.78rem;padding:.25rem .75rem;border-radius:16px;margin-right:.25rem">← Index</a>
+ <a href="#climat-passe">Paléoclimats</a>
+ <a href="#forçage">Forçages climatiques</a>
+ <a href="#serre">Effet de serre</a>
+ <a href="#anthropique">Changement anthropique</a>
+ <a href="#mots-cles">Mots-clés</a>
+</nav>
+
+<main>
+
+ <section>
+ <div class="card blue">
+ <h3 style="margin-top:0">🌍 Plan du chapitre</h3>
+ <ol>
+ <li>Reconstituer les paléoclimats</li>
+ <li>Les facteurs naturels du climat</li>
+ <li>L'effet de serre et les gaz à effet de serre</li>
+ <li>Le changement climatique actuel et ses conséquences</li>
+ </ol>
+ </div>
+ </section>
+
+ <!-- 1. PALÉOCLIMATS -->
+ <section id="climat-passe">
+ <h2>1. Reconstituer les paléoclimats</h2>
+
+ <h3>1.1 Les marqueurs climatiques (proxies)</h3>
+ <table>
+ <tr><th>Marqueur (proxy)</th><th>Source</th><th>Information obtenue</th></tr>
+ <tr><td>Rapport ¹⁸O/¹⁶O (δ¹⁸O)</td><td>Foraminifères, glaces</td><td>T° océanique, volume des glaces</td></tr>
+ <tr><td>Bulles d'air dans glaces (carottes)</td><td>Calotte antarctique, Groenland</td><td>Composition de l'atmosphère (CO₂, CH₄) jusqu'à 800 000 ans</td></tr>
+ <tr><td>Rapport Mg/Ca</td><td>Foraminifères</td><td>Température de l'eau de mer</td></tr>
+ <tr><td>Pollens fossilisés</td><td>Sédiments lacustres, tourbières</td><td>Végétation et climat régional</td></tr>
+ <tr><td>Cernes des arbres</td><td>Troncs fossiles ou récents</td><td>Température et humidité annuelles</td></tr>
+ <tr><td>Coraux (squelette)</td><td>Récifs tropicaux</td><td>T° eau, précipitations, pH</td></tr>
+ <tr><td>Niveau des mers</td><td>Sédiments côtiers, coraux</td><td>Volume des glaces continentales</td></tr>
+ </table>
+
+ <div class="def-box">
+ <div class="label">Principe du δ¹⁸O — attention à l'interprétation !</div>
+ <strong>Dans les glaces polaires :</strong> lors des glaciations, il fait très froid → moins d'¹⁸O se dépose → δ¹⁸O de la glace <em>diminue</em> = signal de période froide.<br>
+ <strong>Dans les carbonates (foraminifères) :</strong> lors des glaciations, l'eau légère (H₂¹⁶O) s'accumule dans les glaces → les océans s'enrichissent en ¹⁸O → δ¹⁸O des carbonates <em>augmente</em> = signal de période froide.<br>
+ → <strong>Attention : l'interprétation est inversée selon le support de mesure !</strong>
+ </div>
+
+ <h3>1.3 Indices sédimentaires et principe d'actualisme</h3>
+ <div class="def-box">
+ <div class="label">Principe d'actualisme</div>
+ <strong>Principe d'actualisme :</strong> les lois régissant les phénomènes géologiques actuels étaient également valables dans le passé. On lit le passé à partir des processus connus dans le présent.
+ </div>
+ <p>Les <strong>glaciers façonnent les paysages</strong> de façon caractéristique. Les traces laissées par d'anciens glaciers permettent de reconstituer leur extension passée :</p>
+ <table>
+ <tr><th>Indice sédimentaire</th><th>Description</th><th>Information fournie</th></tr>
+ <tr><td><strong>Vallées en U</strong></td><td>Vallée à fond plat, creusée par un glacier</td><td>Présence d'un ancien glacier (vs vallée en V = eau)</td></tr>
+ <tr><td><strong>Moraines</strong></td><td>Amas de roches déposés sur les bords, le fond ou le front d'un glacier</td><td>Extension maximale du glacier</td></tr>
+ <tr><td><strong>Blocs erratiques</strong></td><td>Blocs rocheux transportés loin de leur origine par un glacier</td><td>Trajectoire du glacier, nature des roches sources</td></tr>
+ <tr><td><strong>Stries glaciaires</strong></td><td>Rayures sur les roches créées par le déplacement du glacier</td><td>Direction du mouvement glaciaire</td></tr>
+ <tr><td><strong>Tillites</strong></td><td>Dépôts sédimentaires laissés par d'anciens glaciers</td><td>Présence de glaciations anciennes (ex. glaciation du Carbonifère)</td></tr>
+ </table>
+ <div class="important">
+ Il y a 20 000 ans (maximum glaciaire), le nord de l'Europe et les Alpes étaient sous une épaisse calotte glaciaire, et le niveau marin était inférieur de <strong>120 m</strong> au niveau actuel.
+ </div>
+
+ <h3>1.2 Les grandes variations climatiques du passé</h3>
+ <ul>
+ <li><strong>Optimum climatique de l'Éocène</strong> (~55 Ma) : T° moyenne +14°C vs aujourd'hui, pas de glaces polaires</li>
+ <li><strong>Glaciations du Quaternaire</strong> (depuis ~2,6 Ma) : alternance de périodes glaciaires (~100 000 ans) et interglaciaires (~10–20 000 ans)</li>
+ <li><strong>Optimum de l'Holocène</strong> (~6 000 ans BP) : légèrement plus chaud que préindustriel</li>
+ <li><strong>Petit Âge Glaciaire</strong> (XIV–XIX s.) : refroidissement modeste (-0,5°C) en Europe</li>
+ </ul>
+ </section>
+
+ <!-- 2. FORÇAGES CLIMATIQUES -->
+ <section id="forçage">
+ <h2>2. Les facteurs naturels du climat</h2>
+
+ <h3>2.1 Les paramètres orbitaux (cycles de Milankovitch)</h3>
+ <p>Les variations de l'orbite terrestre autour du Soleil modifient la quantité d'énergie reçue (insolation) et déclenchent les cycles glaciaires-interglaciaires :</p>
+
+ <table>
+ <tr><th>Paramètre</th><th>Période</th><th>Effet</th></tr>
+ <tr><td>Excentricité de l'orbite</td><td>~100 000 ans</td><td>Varie la forme de l'ellipse (plus ou moins ronde)</td></tr>
+ <tr><td>Obliquité (inclinaison axiale)</td><td>~41 000 ans</td><td>Varie entre 22,1° et 24,5° → intensité des saisons</td></tr>
+ <tr><td>Précession des équinoxes</td><td>~23 000 ans</td><td>Modification lente de la direction de l'axe de rotation → saisons plus ou moins longues selon l'hémisphère</td></tr>
+ </table>
+
+ <h3>2.2 Les rétroactions climatiques — amplificateurs du signal orbital</h3>
+ <div class="def-box">
+ <div class="label">Définition</div>
+ <strong>Rétroaction (feedback) :</strong> mécanisme par lequel une variation initiale du climat déclenche un processus qui <em>amplifie</em> (rétroaction positive) ou <em>atténue</em> (rétroaction négative) cette variation.
+ </div>
+ <p>Les variations orbitales de Milankovitch ne suffisent pas à elles seules à expliquer l'ampleur des glaciations. Elles sont amplifiées par des <strong>rétroactions positives</strong> :</p>
+ <table>
+ <tr><th>Rétroaction</th><th>Mécanisme</th><th>Sens</th></tr>
+ <tr><td><strong>Albédo-glaces</strong></td><td>Refroidissement → extension des glaces → plus de réflexion solaire → amplification du refroidissement</td><td>Positive (amplifie)</td></tr>
+ <tr><td><strong>Vapeur d'eau</strong></td><td>Réchauffement → plus d'évaporation → plus de vapeur d'eau (GES) → amplification du réchauffement</td><td>Positive (amplifie)</td></tr>
+ <tr><td><strong>Solubilité du CO₂</strong></td><td>Refroidissement → océans plus froids → dissolvent plus de CO₂ → moins de CO₂ atmosphérique → amplification du refroidissement</td><td>Positive (amplifie)</td></tr>
+ <tr><td><strong>Pergélisol (permafrost)</strong></td><td>Réchauffement → dégel du pergélisol → libération de CH₄ et CO₂ → amplification du réchauffement</td><td>Positive (amplifie)</td></tr>
+ </table>
+ <div class="important">
+ Les rétroactions positives expliquent pourquoi de légères variations orbitales peuvent déclencher des glaciations ou des déglaciations majeures. Elles sont aussi au cœur des craintes actuelles : le dégel du pergélisol pourrait libérer des quantités massives de CH₄, accélérant le réchauffement anthropique.
+ </div>
+
+ <h3>2.3 Activité volcanique</h3>
+ <p>Les éruptions volcaniques massives injectent des <strong>aérosols sulfurés</strong> (SO₂ → H₂SO₄) dans la stratosphère → réfléchissent le rayonnement solaire → <strong>refroidissement</strong> temporaire (quelques années).</p>
+ <p>Exemple : éruption du Pinatubo (1991) → -0,5°C pendant 2 ans.</p>
+
+ <h3>2.4 Activité solaire</h3>
+ <p>Variations de l'irradiance solaire (taches solaires, cycles de ~11 ans) → influence limitée sur le long terme (< 0,1°C au XX° siècle).</p>
+
+ <h3>2.5 Variabilité interne — ENSO &amp; oscillations océaniques</h3>
+ <p>Le climat fluctue aussi à cause de phénomènes internes au système océan-atmosphère, sans changement du forçage radiatif :</p>
+ <ul>
+ <li><strong>ENSO</strong> (El Niño Southern Oscillation) : oscillation de la T° de surface du Pacifique équatorial. <strong>El Niño</strong> (réchauffement) → sécheresses en Asie, pluies sur les côtes américaines, années plus chaudes globalement. <strong>La Niña</strong> = phase inverse.</li>
+ <li>NAO (Atlantique Nord), AMO, PDO… autres oscillations à plus longue échelle.</li>
+ </ul>
+ <p>Ces phénomènes sont des bruits climatiques superposés à la tendance de fond.</p>
+
+ <div class="important">
+ Les facteurs naturels ne suffisent PAS à expliquer le réchauffement actuel. Depuis 1970, les forçages naturels sont neutres ou légèrement négatifs, alors que la T° monte. → Rôle majeur des activités humaines.
+ </div>
+ </section>
+
+ <!-- 3. EFFET DE SERRE -->
+ <section id="serre">
+ <h2>3. L'effet de serre</h2>
+
+ <div class="def-box">
+ <div class="label">Définition</div>
+ <strong>Effet de serre naturel :</strong> phénomène par lequel certains gaz atmosphériques absorbent le rayonnement infrarouge terrestre et le réémettent en partie vers le sol, maintenant une T° moyenne de +15°C (sans effet de serre : -18°C).
+ </div>
+
+ <h3>3.1 Les gaz à effet de serre (GES)</h3>
+ <table>
+ <tr><th>Gaz</th><th>Formule</th><th>Origine naturelle</th><th>Origine anthropique</th><th>PRG (sur 100 ans)</th></tr>
+ <tr><td>Vapeur d'eau</td><td>H₂O</td><td>Évaporation</td><td>Faible</td><td></td></tr>
+ <tr><td>Dioxyde de carbone</td><td>CO₂</td><td>Respiration, volcans</td><td>Combustibles fossiles, déforestation</td><td>1 (référence)</td></tr>
+ <tr><td>Méthane</td><td>CH₄</td><td>Zones humides, termites</td><td>Élevage, rizières, gaz naturel</td><td>28</td></tr>
+ <tr><td>Protoxyde d'azote</td><td>N₂O</td><td>Sols, océans</td><td>Agriculture (engrais)</td><td>265</td></tr>
+ <tr><td>Ozone troposphérique</td><td>O₃</td><td>Naturel</td><td>Smog, transport</td><td></td></tr>
+ <tr><td>HFC / CFC</td><td></td><td>Aucune</td><td>Réfrigérants, aérosols</td><td>Jusqu'à 22 800</td></tr>
+ </table>
+
+ <h3>3.2 Le bilan radiatif de la Terre</h3>
+ <div class="schema-box">
+Rayonnement solaire entrant (courtes λ) : ~342 W/m²
+ ├── Albédo (réfléchi) : ~30 % (nuages, glaces, sols)
+ └── Absorbé par la Terre : ~70 %
+ └── Émis en infrarouge (grandes λ) → absorbé par GES
+ └── Réémis vers le sol (effet de serre)
+ </div>
+
+ <p>Le <strong>forçage radiatif</strong> (W/m²) mesure la perturbation du bilan énergétique. Un forçage positif → réchauffement ; négatif → refroidissement.</p>
+ </section>
+
+ <!-- 4. CHANGEMENT ANTHROPIQUE -->
+ <section id="anthropique">
+ <h2>4. Le changement climatique actuel</h2>
+
+ <h3>4.1 Tendances observées</h3>
+ <div class="grid2">
+ <div class="card red">
+ <h4 style="margin-top:0">Températures</h4>
+ <p>+1,1°C depuis 1850–1900 (GIEC, AR6). Les 10 années les plus chaudes jamais enregistrées sont toutes postérieures à 2010.</p>
+ </div>
+ <div class="card yellow">
+ <h4 style="margin-top:0">CO₂ atmosphérique</h4>
+ <p>Préindustriel : ~280 ppm. Aujourd'hui : ~420 ppm. Corrélation avec combustibles fossiles (signature isotopique du ¹³C).</p>
+ </div>
+ <div class="card blue">
+ <h4 style="margin-top:0">Niveau des mers</h4>
+ <p>+20 cm depuis 1900 (dilatation thermique + fonte des glaces). Rythme actuel : +3,6 mm/an.</p>
+ </div>
+ <div class="card green">
+ <h4 style="margin-top:0">Glaces</h4>
+ <p>Réduction de la banquise arctique estivale de -13 %/décennie depuis 1979. Recul des glaciers mondiaux.</p>
+ </div>
+ </div>
+
+ <h3>4.2 Conséquences du changement climatique</h3>
+
+ <h4>Effets abiotiques</h4>
+ <ul>
+ <li><strong>Événements extrêmes plus fréquents :</strong> vagues de chaleur, sécheresses, tempêtes, inondations</li>
+ <li><strong>Acidification des océans :</strong> CO₂ + H₂O → H₂CO₃ → abaissement du pH (~8,1 → ~7,8 d'ici 2100) → dissolution des coquilles calcaires (coraux, mollusques)</li>
+ </ul>
+
+ <h4>Effets sur la biodiversité et les écosystèmes</h4>
+ <div class="grid2">
+ <div class="card red">
+ <h4 style="margin-top:0">Effets directs sur les populations</h4>
+ <ul>
+ <li>Modification des effectifs des populations</li>
+ <li>Dégradation de l'état sanitaire des espèces</li>
+ <li>Déplacement des aires de répartition vers les pôles et en altitude</li>
+ <li>Risque d'extinction accrue pour les espèces peu mobiles ou à habitat limité</li>
+ </ul>
+ </div>
+ <div class="card yellow">
+ <h4 style="margin-top:0">Effets indirects (via les écosystèmes)</h4>
+ <ul>
+ <li>Perturbations des écosystèmes naturels et agricoles</li>
+ <li>Désertification → réduction des terres agricoles disponibles</li>
+ <li>Diffusion de nouveaux pathogènes vers des zones auparavant indemnes</li>
+ <li>Dégradation de la qualité des sols et des apports en eau</li>
+ <li>CO₂ ↑ → favorise la production de biomasse mais peut <em>diminuer la biodiversité végétale</em></li>
+ </ul>
+ </div>
+ </div>
+
+ <h4>Effets sur les sociétés humaines</h4>
+ <ul>
+ <li>Sécurité alimentaire et accès à l'eau potable menacés</li>
+ <li>Migrations climatiques dues à la montée du niveau marin et à la désertification</li>
+ <li>Impacts sur la santé humaine : stress thermique, maladies vectorielles (paludisme, dengue…)</li>
+ </ul>
+
+ <h3>4.3 Les scénarios du GIEC (SSP)</h3>
+ <table>
+ <tr><th>Scénario</th><th>Émissions</th><th>Réchauffement estimé 2100</th></tr>
+ <tr><td>SSP1-1.9</td><td>Très faibles (neutralité carbone ~2050)</td><td>+1,0°C à +1,8°C</td></tr>
+ <tr><td>SSP2-4.5</td><td>Intermédiaires</td><td>+2,1°C à +3,5°C</td></tr>
+ <tr><td>SSP5-8.5</td><td>Très élevées (« business as usual »)</td><td>+3,3°C à +5,7°C</td></tr>
+ </table>
+
+ <h3>4.4 Solutions et leviers d'action</h3>
+ <ul>
+ <li><strong>Atténuation :</strong> réduction des émissions de GES (énergies renouvelables, efficacité énergétique, sobriété)</li>
+ <li><strong>Séquestration du carbone :</strong> reforestation, sols agricoles, captage-stockage géologique</li>
+ <li><strong>Adaptation :</strong> modification des pratiques agricoles, gestion de l'eau, urbanisme résilient</li>
+ <li><strong>Accords internationaux :</strong> Accord de Paris (2015) → limiter à +1,5 / +2°C</li>
+ </ul>
+
+ <div class="important">
+ L'attribution scientifique du réchauffement actuel aux activités humaines repose sur : 1) la corrélation CO₂-T°, 2) la signature isotopique du carbone fossile, 3) la modélisation climatique (les modèles ne reproduisent le réchauffement qu'en incluant les GES anthropiques).
+ </div>
+ </section>
+
+ <!-- MOTS CLÉS -->
+ <section id="mots-cles">
+ <h2>5. Mots-clés à maîtriser</h2>
+ <div class="card">
+ <span class="keyword">Proxy / Indicateur climatique</span>
+ <span class="keyword">δ¹⁸O (glaces vs carbonates)</span>
+ <span class="keyword">δD (deutérium)</span>
+ <span class="keyword">Carotte de glace</span>
+ <span class="keyword">Foraminifères</span>
+ <span class="keyword">Principe d'actualisme</span>
+ <span class="keyword">Vallée en U / Moraine</span>
+ <span class="keyword">Blocs erratiques / Tillites</span>
+ <span class="keyword">Cycles de Milankovitch</span>
+ <span class="keyword">Excentricité (100 000 ans)</span>
+ <span class="keyword">Obliquité (41 000 ans)</span>
+ <span class="keyword">Précession (23 000 ans)</span>
+ <span class="keyword">Rétroaction climatique</span>
+ <span class="keyword">Albédo-glaces (rétroaction +)</span>
+ <span class="keyword">Pergélisol / Permafrost</span>
+ <span class="keyword">Effet de serre</span>
+ <span class="keyword">GES / PRG</span>
+ <span class="keyword">Forçage radiatif</span>
+ <span class="keyword">Albédo</span>
+ <span class="keyword">Acidification des océans</span>
+ <span class="keyword">Consensus scientifique</span>
+ <span class="keyword">GIEC / SSP</span>
+ <span class="keyword">Accord de Paris</span>
+ <span class="keyword">Neutralité carbone</span>
+ <span class="keyword">ENSO / El Niño / La Niña</span>
+ </div>
+ </section>
+
+<a href="../qcm/qcm4_climats_terre.html" style="display:block;background:linear-gradient(135deg,rgba(32,36,58,.14),rgba(32,36,58,.14));border:1px solid rgba(58,64,96,.35);border-radius:12px;padding:1.2rem;text-align:center;text-decoration:none;color:#e8eaf0;margin-top:2rem;font-weight:700;transition:all .2s">🎯 Tester mes connaissances — QCM Fiche 4</a>
+
+</main>
+<footer>SVT Terminale Spécialité · Bac 2026 — Fiche 4 / 10 · Climats de la Terre<a href="../accueil-svt.html" style="color:#6366f1">Retour à l'index</a></footer>
+</body>
+</html>

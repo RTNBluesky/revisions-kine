@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="Inflammation & Réparation — Fiche de révision complète">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../../../../../../assets/css/acces.css">
+<script src="../../../../../../assets/js/acces.js"></script>
+<title>Fiche de Révision — Inflammation & Réparation</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../../../../../assets/css/chrome.css">
+<style>
+ :root {
+ --ink: #0f1117;
+ --paper: #ff8fa3;
+ --cream: #ff8fa3;
+ --gold: #ff8fa3;
+ --gold-light: #ff8fa3;
+ --red: #ff5c6b;
+ --red-light: #ff5c6b;
+ --blue: #ff5c6b;
+ --blue-light: #f472b6;
+ --green: #ff6b9d;
+ --green-light: #ff6b9d;
+ --purple: #ff5c6b;
+ --border: #3a4060;
+ --shadow: rgba(26,20,16,0.15);
+ }
+
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+
+ body {
+ font-family: 'Source Serif 4', Georgia, serif;
+ background: var(--paper);
+ color: var(--ink);
+ font-size: 15px;
+ line-height: 1.65;
+ }
+
+ /* ── HEADER ── */
+ header {
+ background: var(--ink);
+ color: var(--paper);
+ padding: 3rem 4rem 2.5rem;
+ position: relative;
+ overflow: hidden;
+ border-bottom: 4px solid var(--gold);
+ }
+ header::before {
+ content: '';
+ position: absolute;
+ top: -60px; right: -60px;
+ width: 300px; height: 300px;
+ border: 2px solid rgba(255,107,157,0.2);
+ border-radius: 50%;
+ }
+ header::after {
+ content: '';
+ position: absolute;
+ bottom: -80px; left: 200px;
+ width: 200px; height: 200px;
+ border: 1px solid rgba(255,107,157,0.15);
+ border-radius: 50%;
+ }
+ .header-tag {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 11px;
+ letter-spacing: 0.2em;
+ text-transform: uppercase;
+ color: var(--gold-light);
+ margin-bottom: 0.6rem;
+ }
+ header h1 {
+ font-family: 'Playfair Display', Georgia, serif;
+ font-size: 3rem;
+ font-weight: 900;
+ line-height: 1.1;
+ letter-spacing: -0.02em;
+ }
+ header h1 span { color: var(--gold-light); }
+ .header-meta {
+ margin-top: 1rem;
+ font-size: 13px;
+ color: rgba(245,240,232,0.6);
+ font-style: italic;
+ }
+
+ /* ── NAV ── */
+ nav {
+ background: var(--cream);
+ border-bottom: 1px solid var(--border);
+ padding: 0.8rem 4rem;
+ display: flex;
+ gap: 0.3rem;
+ flex-wrap: wrap;
+ position: sticky;
+ top: 0;
+ z-index: 100;
+ box-shadow: 0 2px 12px var(--shadow);
+ }
+ nav a {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 11px;
+ letter-spacing: 0.1em;
+ text-transform: uppercase;
+ color: var(--ink);
+ text-decoration: none;
+ padding: 0.4rem 0.9rem;
+ border: 1px solid var(--border);
+ border-radius: 2px;
+ transition: all 0.2s;
+ }
+ nav a:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+
+ /* ── MAIN ── */
+ main { max-width: 1100px; margin: 0 auto; padding: 3rem 2rem 5rem; }
+
+ /* ── SECTION ── */
+ .section {
+ margin-bottom: 3.5rem;
+ animation: fadeUp 0.5s ease both;
+ }
+ @keyframes fadeUp {
+ from { opacity: 0; transform: translateY(16px); }
+ to { opacity: 1; transform: translateY(0); }
+ }
+
+ .section-header {
+ display: flex;
+ align-items: baseline;
+ gap: 1rem;
+ margin-bottom: 1.5rem;
+ padding-bottom: 0.7rem;
+ border-bottom: 2px solid var(--ink);
+ }
+ .section-num {
+ font-family: 'Playfair Display', serif;
+ font-size: 3rem;
+ font-weight: 900;
+ color: var(--border);
+ line-height: 1;
+ flex-shrink: 0;
+ }
+ .section-title {
+ font-family: 'Playfair Display', serif;
+ font-size: 1.7rem;
+ font-weight: 700;
+ color: var(--ink);
+ }
+
+ /* ── DEF BOX ── */
+ .def-box {
+ background: var(--ink);
+ color: var(--paper);
+ padding: 1.4rem 1.8rem;
+ border-left: 5px solid var(--gold);
+ margin-bottom: 1.5rem;
+ position: relative;
+ }
+ .def-box .label {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 10px;
+ letter-spacing: 0.2em;
+ text-transform: uppercase;
+ color: var(--gold-light);
+ display: block;
+ margin-bottom: 0.4rem;
+ }
+ .def-box p { font-size: 14.5px; line-height: 1.6; }
+
+ /* ── GRID ── */
+ .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1.2rem; margin-bottom: 1.2rem; }
+ .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1.2rem; margin-bottom: 1.2rem; }
+ @media (max-width: 720px) {
+ .grid-2, .grid-3 { grid-template-columns: 1fr; }
+ }
+
+ /* ── CARD ── */
+ .card {
+ border: 1.5px solid var(--border);
+ padding: 1.2rem 1.4rem;
+ background: #ffffff;
+ }
+ .card-title {
+ font-family: 'Playfair Display', serif;
+ font-size: 1rem;
+ font-weight: 700;
+ margin-bottom: 0.7rem;
+ padding-bottom: 0.4rem;
+ border-bottom: 1px solid var(--border);
+ }
+ .card.accent-red { border-top: 3px solid var(--red); }
+ .card.accent-blue { border-top: 3px solid var(--blue); }
+ .card.accent-green { border-top: 3px solid var(--green); }
+ .card.accent-gold { border-top: 3px solid var(--gold); }
+ .card.accent-purple { border-top: 3px solid var(--purple); }
+ .card.accent-red .card-title { color: var(--red); }
+ .card.accent-blue .card-title { color: var(--blue); }
+ .card.accent-green .card-title { color: var(--green); }
+ .card.accent-gold .card-title { color: var(--gold); }
+ .card.accent-purple .card-title { color: var(--purple); }
+
+ /* ── LISTS ── */
+ ul.dot-list { list-style: none; padding: 0; }
+ ul.dot-list li {
+ padding: 0.2rem 0 0.2rem 1.2rem;
+ position: relative;
+ font-size: 14px;
+ }
+ ul.dot-list li::before {
+ content: '▸';
+ position: absolute;
+ left: 0;
+ color: var(--gold);
+ font-size: 11px;
+ top: 0.3rem;
+ }
+
+ /* ── TABLE ── */
+ table {
+ width: 100%;
+ border-collapse: collapse;
+ font-size: 13.5px;
+ margin: 1rem 0;
+ }
+ th {
+ background: var(--ink);
+ color: var(--paper);
+ padding: 0.6rem 0.9rem;
+ text-align: left;
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 11px;
+ letter-spacing: 0.1em;
+ text-transform: uppercase;
+ }
+ td {
+ padding: 0.55rem 0.9rem;
+ border-bottom: 1px solid var(--border);
+ vertical-align: top;
+ }
+ tr:nth-child(even) td { background: var(--cream); }
+
+ /* ── TIMELINE ── */
+ .timeline { position: relative; padding-left: 2rem; }
+ .timeline::before {
+ content: '';
+ position: absolute;
+ left: 0.55rem;
+ top: 0;
+ bottom: 0;
+ width: 2px;
+ background: linear-gradient(to bottom, var(--gold), var(--border));
+ }
+ .timeline-item {
+ position: relative;
+ margin-bottom: 1.1rem;
+ padding-bottom: 0.4rem;
+ }
+ .timeline-item::before {
+ content: '';
+ position: absolute;
+ left: -1.58rem;
+ top: 0.45rem;
+ width: 10px;
+ height: 10px;
+ border-radius: 50%;
+ background: var(--gold);
+ border: 2px solid var(--paper);
+ box-shadow: 0 0 0 2px var(--gold);
+ }
+ .timeline-item strong {
+ display: block;
+ font-size: 13px;
+ font-family: 'JetBrains Mono', monospace;
+ color: var(--gold);
+ margin-bottom: 0.15rem;
+ }
+ .timeline-item p { font-size: 14px; }
+
+ /* ── BADGE ── */
+ .badge {
+ display: inline-block;
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 10px;
+ letter-spacing: 0.1em;
+ text-transform: uppercase;
+ padding: 0.2rem 0.6rem;
+ border-radius: 2px;
+ margin-right: 0.3rem;
+ margin-bottom: 0.3rem;
+ }
+ .badge-red { background: var(--red); color: white; }
+ .badge-blue { background: var(--blue); color: white; }
+ .badge-green { background: var(--green); color: white; }
+ .badge-gold { background: var(--gold); color: white; }
+ .badge-purple { background: var(--purple); color: white; }
+
+ /* ── CALLOUT ── */
+ .callout {
+ border: 1.5px solid;
+ padding: 1rem 1.3rem;
+ margin: 1rem 0;
+ font-size: 14px;
+ position: relative;
+ }
+ .callout::before {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 10px;
+ letter-spacing: 0.15em;
+ text-transform: uppercase;
+ position: absolute;
+ top: -0.6rem;
+ left: 1rem;
+ padding: 0 0.4rem;
+ background: var(--paper);
+ }
+ .callout-warning { border-color: var(--red-light); }
+ .callout-warning::before { content: '⚠ À RETENIR'; color: var(--red-light); }
+ .callout-key { border-color: var(--blue-light); }
+ .callout-key::before { content: '🔑 CLEF'; color: var(--blue-light); }
+ .callout-tip { border-color: var(--green-light); }
+ .callout-tip::before { content: '✦ ASTUCE'; color: var(--green-light); }
+
+ /* ── FLOW DIAGRAM ── */
+ .flow {
+ display: flex;
+ align-items: center;
+ flex-wrap: wrap;
+ gap: 0.3rem;
+ margin: 1rem 0;
+ }
+ .flow-step {
+ background: var(--ink);
+ color: var(--paper);
+ padding: 0.5rem 1rem;
+ font-size: 13px;
+ border-radius: 2px;
+ text-align: center;
+ min-width: 90px;
+ }
+ .flow-arrow {
+ color: var(--gold);
+ font-size: 1.3rem;
+ font-weight: bold;
+ }
+
+ /* ── MEDIATOR GRID ── */
+ .med-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+ gap: 1rem;
+ margin: 1rem 0;
+ }
+ .med-card {
+ border: 1px solid var(--border);
+ padding: 0.9rem 1rem;
+ background: #ffffff;
+ font-size: 13.5px;
+ }
+ .med-name {
+ font-weight: 700;
+ font-size: 14px;
+ margin-bottom: 0.4rem;
+ color: var(--ink);
+ }
+ .med-source { color: #6a7388; font-size: 12px; font-style: italic; margin-bottom: 0.3rem; }
+ .med-action { font-size: 13px; }
+
+ /* ── 5R DIAGRAM ── */
+ .five-r {
+ display: grid;
+ grid-template-columns: repeat(5, 1fr);
+ gap: 0;
+ margin: 1.2rem 0;
+ }
+ .r-step {
+ text-align: center;
+ padding: 1.2rem 0.8rem;
+ position: relative;
+ }
+ .r-step:not(:last-child)::after {
+ content: '→';
+ position: absolute;
+ right: -0.5rem;
+ top: 50%;
+ transform: translateY(-50%);
+ color: var(--gold);
+ font-size: 1.2rem;
+ z-index: 2;
+ }
+ .r-step:nth-child(1) { background: #0f1117; color: var(--paper); }
+ .r-step:nth-child(2) { background: #1a1d2a; color: var(--paper); }
+ .r-step:nth-child(3) { background: #2a3050; color: var(--paper); }
+ .r-step:nth-child(4) { background: #3a4060; color: var(--paper); }
+ .r-step:nth-child(5) { background: #3a4060; color: var(--paper); }
+ .r-num {
+ font-family: 'Playfair Display', serif;
+ font-size: 2rem;
+ font-weight: 900;
+ color: var(--gold-light);
+ display: block;
+ }
+ .r-label {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 10px;
+ letter-spacing: 0.1em;
+ text-transform: uppercase;
+ display: block;
+ margin-top: 0.2rem;
+ }
+ .r-desc { font-size: 11px; margin-top: 0.4rem; opacity: 0.85; }
+ @media (max-width: 700px) {
+ .five-r { grid-template-columns: 1fr 1fr; }
+ .r-step::after { display: none; }
+ }
+
+ /* ── FOOTER ── */
+ footer {
+ background: var(--ink);
+ color: var(--paper);
+ text-align: center;
+ padding: 1.5rem;
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 11px;
+ letter-spacing: 0.1em;
+ opacity: 0.8;
+ }
+
+ .divider {
+ border: none;
+ height: 1px;
+ background: linear-gradient(to right, transparent, var(--border), transparent);
+ margin: 2rem 0;
+ }
+
+ strong { font-weight: 600; }
+ em { font-style: italic; }
+
+ .highlight {
+ background: rgba(255,107,157,0.15);
+ padding: 0 3px;
+ border-radius: 1px;
+ }
+</style>
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/physio-patho.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-theme.css">
+
+ <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
+</head>
+<body>
+<a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
+<div class="page-toggle"><div class="pt-inner"><a href="../../qcm/tp/tp-04.html">📝 QCM interactif</a><span class="pt-on">📚 Fiche de révision</span></div></div>
+<!-- HEADER -->
+<header>
+ <div class="header-tag">Physiopathologie 1 — Licence en Physiothérapie | 1ère Année</div>
+ <h1>Inflammation <span>&</span> Réparation</h1>
+ <p class="header-meta">Fiche de révision complète</p>
+</header>
+
+<!-- NAV -->
+<nav>
+ <a href="#def">Définition</a>
+ <a href="#types">Aiguë/Chronique</a>
+ <a href="#signes">Signes</a>
+ <a href="#5r">Les 5 R</a>
+ <a href="#vasculaire">Phase Vasculaire</a>
+ <a href="#cellulaire">Phase Cellulaire</a>
+ <a href="#mediateurs">Médiateurs</a>
+ <a href="#consequences">Conséquences</a>
+ <a href="#chronique">Inflam. Chronique</a>
+ <a href="#reparation">Réparation</a>
+</nav>
+
+<!-- MAIN -->
+<main>
+
+<!-- ══ SECTION 1 : DÉFINITION ══ -->
+<section class="section" id="def">
+ <div class="section-header">
+ <span class="section-num">01</span>
+ <h2 class="section-title">Définition de l'Inflammation</h2>
+ </div>
+
+ <div class="def-box">
+ <span class="label">Définition Officielle</span>
+ <p>Réponse de défense des <strong>tissus vascularisés</strong> qui acheminent les leucocytes et les molécules de défense de la circulation vers les sites d'infection ou de lésion cellulaire, afin d'<strong>éliminer les agents délétères</strong>.</p>
+ </div>
+
+ <div class="grid-2">
+ <div class="card accent-blue">
+ <div class="card-title">Rôle Protecteur</div>
+ <ul class="dot-list">
+ <li>Éliminer la cause initiale de la lésion (microbes, toxines)</li>
+ <li>Éliminer les conséquences de la lésion (cellules nécrotiques)</li>
+ <li>Déclencher le processus de réparation</li>
+ <li>Essentielle à la survie de l'organisme</li>
+ </ul>
+ </div>
+ <div class="card accent-red">
+ <div class="card-title">Rôle Délétère (si dérégulée)</div>
+ <ul class="dot-list">
+ <li>Polyarthrite rhumatoïde, athérosclérose</li>
+ <li>Fibrose pulmonaire</li>
+ <li>Réactions allergiques / anaphylaxie</li>
+ <li>Choc septique (excès de TNF, IL-1)</li>
+ <li>Maladies auto-immunes</li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="callout callout-tip">
+ <strong>Composants principaux :</strong> Vaisseaux sanguins + Leucocytes, activés par des médiateurs dérivés des protéines plasmatiques et de diverses cellules.
+ </div>
+</section>
+
+<hr class="divider">
+
+<!-- ══ SECTION 2 : AIGUË vs CHRONIQUE ══ -->
+<section class="section" id="types">
+ <div class="section-header">
+ <span class="section-num">02</span>
+ <h2 class="section-title">Inflammation Aiguë vs Chronique</h2>
+ </div>
+
+ <table>
+ <thead>
+ <tr>
+ <th>Caractéristique</th>
+ <th>Aiguë</th>
+ <th>Chronique</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td><strong>Durée</strong></td>
+ <td>Minutes → heures → quelques jours</td>
+ <td>Jours → semaines → années</td>
+ </tr>
+ <tr>
+ <td><strong>Apparition</strong></td>
+ <td>Rapide (minutes / heures)</td>
+ <td>Lente (quelques jours)</td>
+ </tr>
+ <tr>
+ <td><strong>Cellules dominantes</strong></td>
+ <td>Neutrophiles (1er recrutés)</td>
+ <td>Macrophages, lymphocytes, plasmocytes</td>
+ </tr>
+ <tr>
+ <td><strong>Résolution</strong></td>
+ <td>Spontanément résolutive</td>
+ <td>Auto-perpétuée</td>
+ </tr>
+ <tr>
+ <td><strong>Lésion tissulaire</strong></td>
+ <td>Généralement légère et autolimitée</td>
+ <td>Souvent sévère et progressive</td>
+ </tr>
+ <tr>
+ <td><strong>Signes locaux</strong></td>
+ <td>Prominents (calor, rubor, tumor, dolor)</td>
+ <td>Moins marqués</td>
+ </tr>
+ <tr>
+ <td><strong>Exsudat</strong></td>
+ <td>Liquide + protéines plasmatiques (œdème)</td>
+ <td>Fibrose (prolifération de fibroblastes)</td>
+ </tr>
+ </tbody>
+ </table>
+
+ <div class="callout callout-warning">
+ <strong>Elles peuvent se chevaucher !</strong> L'inflammation chronique peut succéder à une inflammation aiguë ou apparaître de novo. Elles peuvent coexister (ex : ulcère gastroduodénal).
+ </div>
+</section>
+
+<hr class="divider">
+
+<!-- ══ SECTION 3 : SIGNES CARDINAUX ══ -->
+<section class="section" id="signes">
+ <div class="section-header">
+ <span class="section-num">03</span>
+ <h2 class="section-title">Signes Cardinaux de l'Inflammation</h2>
+ </div>
+
+ <div class="grid-3" style="grid-template-columns: repeat(5, 1fr);">
+ <div class="card accent-red" style="text-align:center;">
+ <div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:var(--red);">Calor</div>
+ <div class="card-title" style="border:none;text-align:center;">Chaleur</div>
+ <p style="font-size:12px;">Vasodilatation → augmentation du flux sanguin</p>
+ </div>
+ <div class="card accent-red" style="text-align:center;">
+ <div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:var(--red);">Rubor</div>
+ <div class="card-title" style="border:none;text-align:center;">Rougeur</div>
+ <p style="font-size:12px;">Vasodilatation → érythème local</p>
+ </div>
+ <div class="card accent-red" style="text-align:center;">
+ <div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:var(--red);">Tumor</div>
+ <div class="card-title" style="border:none;text-align:center;">Gonflement</div>
+ <p style="font-size:12px;">Augmentation perméabilité → œdème</p>
+ </div>
+ <div class="card accent-red" style="text-align:center;">
+ <div style="font-family:'Playfair Display',serif;font-size:2rem;font-weight:900;color:var(--red);">Dolor</div>
+ <div class="card-title" style="border:none;text-align:center;">Douleur</div>
+ <p style="font-size:12px;">Prostaglandines, bradykinine, substance P</p>
+ </div>
+ <div class="card accent-red" style="text-align:center;">
+ <div style="font-family:'Playfair Display',serif;font-size:1.3rem;font-weight:900;color:var(--red);">Functio<br>Laesa</div>
+ <div class="card-title" style="border:none;text-align:center;">Perte de fonction</div>
+ <p style="font-size:12px;">Douleur + lésions tissulaires (Virchow)</p>
+ </div>
+ </div>
+</section>
+
+<hr class="divider">
+
+<!-- ══ SECTION 4 : 5 R ══ -->
+<section class="section" id="5r">
+ <div class="section-header">
+ <span class="section-num">04</span>
+ <h2 class="section-title">Réaction Inflammatoire Typique — Les 5 R</h2>
+ </div>
+
+ <div class="five-r">
+ <div class="r-step">
+ <span class="r-num">1</span>
+ <span class="r-label">Reconnaître</span>
+ <div class="r-desc">Reconnaissance du stimulus nocif par les cellules sentinelles (TLR, NLR)</div>
+ </div>
+ <div class="r-step">
+ <span class="r-num">2</span>
+ <span class="r-label">Recruter</span>
+ <div class="r-desc">Recrutement des leucocytes (1. neutrophiles 2. monocytes 3. lymphocytes)</div>
+ </div>
+ <div class="r-step">
+ <span class="r-num">3</span>
+ <span class="r-label">Supprimer</span>
+ <div class="r-desc">Élimination des agents nocifs par phagocytose + destruction intracellulaire</div>
+ </div>
+ <div class="r-step">
+ <span class="r-num">4</span>
+ <span class="r-label">Réguler</span>
+ <div class="r-desc">Régulation de la réponse : arrêt quand l'objectif est atteint</div>
+ </div>
+ <div class="r-step">
+ <span class="r-num">5</span>
+ <span class="r-label">Réparer</span>
+ <div class="r-desc">Résolution : régénération cellulaire + comblement par tissu conjonctif</div>
+ </div>
+ </div>
+
+ <div class="callout callout-key">
+ La séquence 5 R garantit à la fois <strong>l'efficacité de la défense</strong> et la <strong>limitation des dommages collatéraux</strong>.
+ </div>
+</section>
+
+<hr class="divider">
+
+<!-- ══ SECTION 5 : PHASE VASCULAIRE ══ -->
+<section class="section" id="vasculaire">
+ <div class="section-header">
+ <span class="section-num">05</span>
+ <h2 class="section-title">Phase Vasculaire — Inflammation Aiguë</h2>
+ </div>
+
+ <div class="grid-2">
+ <div>
+ <h3 style="font-family:'Playfair Display',serif;margin-bottom:0.8rem;color:var(--blue);">Modifications vasculaires</h3>
+ <div class="timeline">
+ <div class="timeline-item">
+ <strong>Vasoconstriction initiale</strong>
+ <p>Brève (quelques secondes), précède la vasodilatation.</p>
+ </div>
+ <div class="timeline-item">
+ <strong>Vasodilatation</strong>
+ <p>Artérioles puis capillaires (histamine, NO, prostaglandines). → <span class="highlight">Chaleur + Rougeur</span></p>
+ </div>
+ <div class="timeline-item">
+ <strong>Augmentation perméabilité</strong>
+ <p>Fuite de liquide riche en protéines → <span class="highlight">Œdème (Tumor)</span></p>
+ </div>
+ <div class="timeline-item">
+ <strong>Stase</strong>
+ <p>Ralentissement du flux, concentration des GR → leucocytes se marginent</p>
+ </div>
+ </div>
+ </div>
+
+ <div>
+ <h3 style="font-family:'Playfair Display',serif;margin-bottom:0.8rem;color:var(--blue);">Mécanismes d'augmentation de la perméabilité</h3>
+ <div class="card accent-blue" style="margin-bottom:0.8rem;">
+ <div class="card-title">B — Contraction endothéliale</div>
+ <ul class="dot-list">
+ <li>Mécanisme le plus fréquent</li>
+ <li>Induite par histamine, bradykinine, leucotriènes</li>
+ <li>Rapide et de courte durée (15–30 min)</li>
+ </ul>
+ </div>
+ <div class="card accent-red">
+ <div class="card-title">C — Lésion endothéliale directe</div>
+ <ul class="dot-list">
+ <li>Brûlures thermiques, toxines microbiennes</li>
+ <li>Rapide, peut être de longue durée (heures → jours)</li>
+ <li>Fuite immédiate et soutenue</li>
+ </ul>
+ </div>
+ </div>
+ </div>
+
+ <h3 style="font-family:'Playfair Display',serif;margin:1.5rem 0 0.8rem;color:var(--ink);">Transsudat vs Exsudat</h3>
+ <table>
+ <thead>
+ <tr><th>Critère</th><th>Transsudat</th><th>Exsudat</th></tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td><strong>Contenu</strong></td>
+ <td>Eau, peu de protéines (albumine)</td>
+ <td>Eau + protéines + fibrine + leucocytes</td>
+ </tr>
+ <tr>
+ <td><strong>Mécanisme</strong></td>
+ <td>Déséquilibre osmotique/hydrostatique <em>sans</em> augmentation de perméabilité</td>
+ <td>Augmentation de la perméabilité vasculaire</td>
+ </tr>
+ <tr>
+ <td><strong>Signe clinique</strong></td>
+ <td>Signal de Godet (pitting edema)</td>
+ <td>Signal de casier (non pitting)</td>
+ </tr>
+ <tr>
+ <td><strong>Causes</strong></td>
+ <td>Insuffisance cardiaque, maladie rénale, hépatique</td>
+ <td>Inflammation (infection, traumatisme)</td>
+ </tr>
+ </tbody>
+ </table>
+
+ <h3 style="font-family:'Playfair Display',serif;margin:1.5rem 0 0.8rem;">Types d'exsudats</h3>
+ <div class="grid-3" style="grid-template-columns:repeat(5,1fr);">
+ <div class="card accent-blue"><div class="card-title">Séreux</div><p style="font-size:13px;">Fluide aqueux, peu de protéines. Ex : vésicule cutanée.</p></div>
+ <div class="card accent-red"><div class="card-title">Hémorragique</div><p style="font-size:13px;">Contient des globules rouges.</p></div>
+ <div class="card accent-gold"><div class="card-title">Fibrineux</div><p style="font-size:13px;">Riche en fibrinogène. Épais, collant. Ex : péricardite.</p></div>
+ <div class="card accent-purple"><div class="card-title">Purulent (Pus)</div><p style="font-size:13px;">Leucocytes + cellules mortes + microbes. Ex : abcès.</p></div>
+ <div class="card accent-green"><div class="card-title">Nécrotique/Ulcéreux</div><p style="font-size:13px;">Cellules nécrotiques. Ex : ulcère gastrique.</p></div>
+ </div>
+</section>
+
+<hr class="divider">
+
+<!-- ══ SECTION 6 : PHASE CELLULAIRE ══ -->
+<section class="section" id="cellulaire">
+ <div class="section-header">
+ <span class="section-num">06</span>
+ <h2 class="section-title">Phase Cellulaire — Recrutement des Leucocytes</h2>
+ </div>
+
+ <h3 style="font-family:'Playfair Display',serif;margin-bottom:1rem;">Étapes du recrutement (MRATCH)</h3>
+ <div class="flow">
+ <div class="flow-step">Marginalisation</div><div class="flow-arrow">→</div>
+ <div class="flow-step">Roulement<br><span style="font-size:10px;">(Sélectines)</span></div><div class="flow-arrow">→</div>
+ <div class="flow-step">Activation<br><span style="font-size:10px;">(Chimiokines)</span></div><div class="flow-arrow">→</div>
+ <div class="flow-step">Adhésion ferme<br><span style="font-size:10px;">(Intégrines)</span></div><div class="flow-arrow">→</div>
+ <div class="flow-step">Transmigration<br><span style="font-size:10px;">(PECAM-1/CD31)</span></div><div class="flow-arrow">→</div>
+ <div class="flow-step">Chimiotaxie</div><div class="flow-arrow">→</div>
+ <div class="flow-step">Phagocytose</div>
+ </div>
+
+ <div class="grid-2" style="margin-top:1.2rem;">
+ <div class="card accent-gold">
+ <div class="card-title">Molécules d'adhésion clés</div>
+ <table>
+ <thead><tr><th>Molécule</th><th>Rôle</th></tr></thead>
+ <tbody>
+ <tr><td><strong>P-sélectine, E-sélectine</strong></td><td>Roulement</td></tr>
+ <tr><td><strong>L-sélectine</strong></td><td>Roulement (côté leucocyte)</td></tr>
+ <tr><td><strong>Intégrines (LFA-1, MAC-1)</strong></td><td>Adhésion ferme</td></tr>
+ <tr><td><strong>ICAM-1, VCAM-1</strong></td><td>Ligands des intégrines (endothélium)</td></tr>
+ <tr><td><strong>PECAM-1 (CD31)</strong></td><td>Transmigration</td></tr>
+ </tbody>
+ </table>
+ </div>
+ <div class="card accent-blue">
+ <div class="card-title">Chimioattractants (Chimiotaxie)</div>
+ <ul class="dot-list">
+ <li><strong>Exogènes :</strong> produits bactériens (peptides N-formylméthionine)</li>
+ <li><strong>Chimiokines :</strong> IL-8 (CXCL8) → neutrophiles</li>
+ <li><strong>Complément :</strong> C5a → neutrophiles, monocytes</li>
+ <li><strong>Leucotriène B4 (LTB4)</strong></li>
+ <li>Mouvement via polymérisation d'actine à l'avant de la cellule</li>
+ </ul>
+ </div>
+ </div>
+
+ <h3 style="font-family:'Playfair Display',serif;margin:1.5rem 0 0.8rem;">Cinétique de l'infiltrat cellulaire</h3>
+ <table>
+ <thead><tr><th>Période</th><th>Cellules dominantes</th><th>Raison</th></tr></thead>
+ <tbody>
+ <tr><td><strong>0–24 h</strong></td><td><span class="badge badge-red">Neutrophiles</span></td><td>Plus nombreux, réaction plus rapide aux chimiokines, forte adhérence à P-/E-sélectine</td></tr>
+ <tr><td><strong>24–48 h</strong></td><td><span class="badge badge-blue">Monocytes/Macrophages</span></td><td>Survie plus longue, peuvent proliférer dans les tissus</td></tr>
+ <tr><td><strong>Infections virales</strong></td><td><span class="badge badge-purple">Lymphocytes</span></td><td>Réponse immunitaire spécifique</td></tr>
+ <tr><td><strong>Allergies / helminthes</strong></td><td><span class="badge badge-green">Éosinophiles</span></td><td>Réaction IgE-médiée, éotaxine</td></tr>
+ </tbody>
+ </table>
+
+ <h3 style="font-family:'Playfair Display',serif;margin:1.5rem 0 0.8rem;">Phagocytose — 3 étapes</h3>
+ <div class="flow">
+ <div class="flow-step">1. Reconnaissance<br><span style="font-size:10px;">Récepteurs mannose, scavengers, IgG, C3b (opsonines)</span></div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-step">2. Engloutissement<br><span style="font-size:10px;">Formation du phagosome</span></div>
+ <div class="flow-arrow">→</div>
+ <div class="flow-step">3. Destruction<br><span style="font-size:10px;">ERO + NO + enzymes lysosomales</span></div>
+ </div>
+
+ <div class="callout callout-warning" style="margin-top:1rem;">
+ <strong>Mécanismes de destruction intracellulaire :</strong> ERO (NADPH oxydase → O₂⁻ → H₂O₂ → HOCl via MPO) + Oxyde Nitrique (iNOS → NO → ONOO⁻) + Enzymes lysosomales (MPO, élastase, défensines, lysozyme)
+ </div>
+</section>
+
+<hr class="divider">
+
+<!-- ══ SECTION 7 : MÉDIATEURS ══ -->
+<section class="section" id="mediateurs">
+ <div class="section-header">
+ <span class="section-num">07</span>
+ <h2 class="section-title">Médiateurs Chimiques de l'Inflammation</h2>
+ </div>
+
+ <div class="grid-2">
+ <div class="card accent-gold">
+ <div class="card-title">Propriétés générales</div>
+ <ul class="dot-list">
+ <li>Provenant du plasma (foie) ou des cellules inflammatoires</li>
+ <li>Produits en réponse à un stimulus</li>
+ <li>Cibles spécifiques, peuvent provoquer une cascade</li>
+ <li><strong>Durée de vie courte</strong> (dégradés ou inactivés rapidement)</li>
+ <li>Un médiateur peut en stimuler d'autres (amplification)</li>
+ </ul>
+ </div>
+ <div class="card accent-blue">
+ <div class="card-title">Sources</div>
+ <ul class="dot-list">
+ <li><strong>Cellulaires :</strong> mastocytes, macrophages, neutrophiles, endothélium, plaquettes</li>
+ <li><strong>Plasmatiques :</strong> foie (complément, kinines, facteurs de coagulation)</li>
+ <li>Les médiateurs préformés = libération rapide (ex : histamine)</li>
+ <li>Les médiateurs néosynthétisés = délai (ex : prostaglandines)</li>
+ </ul>
+ </div>
+ </div>
+
+ <h3 style="font-family:'Playfair Display',serif;margin:1.5rem 0 0.8rem;">Principaux médiateurs</h3>
+ <div class="med-grid">
+ <div class="med-card">
+ <div class="med-name">Histamine</div>
+ <div class="med-source">Source : mastocytes, basophiles, plaquettes</div>
+ <div class="med-action">Vasodilatation (le plus puissant), ↑ perméabilité vasculaire, activation endothéliale. Déclenche les signes classiques.</div>
+ </div>
+ <div class="med-card">
+ <div class="med-name">Sérotonine (5-HT)</div>
+ <div class="med-source">Source : plaquettes, cellules neuroendocrines</div>
+ <div class="med-action">Vasodilatateur indirect. Neurotransmetteur dans le SNC/GI. Rôle inflammatoire moins clair.</div>
+ </div>
+ <div class="med-card">
+ <div class="med-name">Prostaglandines (PG)</div>
+ <div class="med-source">Source : mastocytes, leucocytes, cellules endothéliales (COX-1/COX-2)</div>
+ <div class="med-action">PGE₂, PGD₂ : vasodilatation, ↑ perméabilité. PGE₂ : hyperalgésie, fièvre. PGI₂ (prostacycline) : vasodilatation, inhibe plaquettes. TxA₂ : vasoconstriction, agrégation.</div>
+ </div>
+ <div class="med-card">
+ <div class="med-name">Leucotriènes</div>
+ <div class="med-source">Source : leucocytes, mastocytes (5-lipoxygénase)</div>
+ <div class="med-action">LTB4 : chimiotaxie des neutrophiles. LTC4, LTD4, LTE4 : bronchospasme, ↑ perméabilité (plus puissants que histamine). Cibles de l'asthme.</div>
+ </div>
+ <div class="med-card">
+ <div class="med-name">Cytokines (TNF, IL-1, IL-6)</div>
+ <div class="med-source">Source : macrophages, cellules endothéliales, mastocytes</div>
+ <div class="med-action">Expression molécules d'adhésion, recrutement leucocytes, fièvre, réponse de phase aiguë. TNF : cachexie si prolongé.</div>
+ </div>
+ <div class="med-card">
+ <div class="med-name">Chimiokines</div>
+ <div class="med-source">Source : leucocytes, macrophages activés, endothélium</div>
+ <div class="med-action">IL-8 (CXCL8) : chimiotaxie neutrophiles. MCP-1 : monocytes. Éotaxine : éosinophiles. Activent aussi les intégrines.</div>
+ </div>
+ <div class="med-card">
+ <div class="med-name">Système du Complément</div>
+ <div class="med-source">Source : plasma (produit dans le foie)</div>
+ <div class="med-action">C3a, C5a (anaphylatoxines) : vasodilatation, libération histamine. C5a : chimiotaxie. C3b : opsonisation. C5b-9 (MAC) : lyse cellulaire.</div>
+ </div>
+ <div class="med-card">
+ <div class="med-name">Kinines (Bradykinine)</div>
+ <div class="med-source">Source : plasma (foie), kallikréine</div>
+ <div class="med-action">↑ perméabilité vasculaire, contraction muscles lisses, vasodilatation, douleur. Courte durée de vie.</div>
+ </div>
+ <div class="med-card">
+ <div class="med-name">PAF (Facteur Activant les Plaquettes)</div>
+ <div class="med-source">Source : leucocytes, mastocytes, plaquettes</div>
+ <div class="med-action">Vasodilatation, ↑ perméabilité, adhésion leucocytes, chimiotaxie, dégranulation, explosion oxydative.</div>
+ </div>
+ <div class="med-card">
+ <div class="med-name">Oxyde Nitrique (NO)</div>
+ <div class="med-source">Source : macrophages (iNOS), endothélium (eNOS)</div>
+ <div class="med-action">Microbicide (ONOO⁻). Vasodilatation. Régule le tonus vasculaire. Inhibe agrégation plaquettaire.</div>
+ </div>
+ <div class="med-card">
+ <div class="med-name">Lipoxines</div>
+ <div class="med-source">Source : neutrophiles + plaquettes (biosynthèse transcellulaire)</div>
+ <div class="med-action"><strong>Anti-inflammatoires.</strong> Inhibent chimiotaxie des neutrophiles. Résolution de l'inflammation.</div>
+ </div>
+ <div class="med-card">
+ <div class="med-name">Enzymes Lysosomales</div>
+ <div class="med-source">Source : neutrophiles (granules primaires/secondaires)</div>
+ <div class="med-action">MPO, élastase, défensines, lysozyme, collagénase. Destruction microbes + risque de lésion tissulaire si libération extracellulaire.</div>
+ </div>
+ </div>
+
+ <div class="callout callout-tip">
+ <strong>Cibles pharmacologiques :</strong> AINS (↓ COX-1 + COX-2 → ↓ prostaglandines) | Anti-histaminiques (↓ réaction allergique) | Corticostéroïdes (↓ COX-2, phospholipase A2, cytokines) | Anti-leucotriènes (asthme) | Anti-TNF (polyarthrite rhumatoïde)
+ </div>
+</section>
+
+<hr class="divider">
+
+<!-- ══ SECTION 8 : CONSÉQUENCES ══ -->
+<section class="section" id="consequences">
+ <div class="section-header">
+ <span class="section-num">08</span>
+ <h2 class="section-title">Conséquences de l'Inflammation Aiguë</h2>
+ </div>
+
+ <div class="grid-3">
+ <div class="card accent-green">
+ <div class="card-title">✓ Résolution complète</div>
+ <ul class="dot-list">
+ <li>Retour à la structure et fonction normales</li>
+ <li>Si stimulus éliminé + peu de destruction tissulaire</li>
+ <li>Élimination des débris par macrophages</li>
+ <li>Résorption de l'œdème par lymphatiques</li>
+ </ul>
+ </div>
+ <div class="card accent-gold">
+ <div class="card-title">↻ Réparation par cicatrice</div>
+ <ul class="dot-list">
+ <li>Si destruction tissulaire importante</li>
+ <li>Si tissu incapable de se régénérer</li>
+ <li>Remplacement par tissu conjonctif → fibrose</li>
+ <li>Ex : infarctus du myocarde</li>
+ </ul>
+ </div>
+ <div class="card accent-red">
+ <div class="card-title">⟳ Inflammation chronique</div>
+ <ul class="dot-list">
+ <li>Si le stimulus persiste</li>
+ <li>Si défaut dans le processus de guérison</li>
+ <li>Destruction + réparation concomitantes</li>
+ <li>Ex : tuberculose, ulcère peptique</li>
+ </ul>
+ </div>
+ </div>
+
+ <h3 style="font-family:'Playfair Display',serif;margin:1.5rem 0 0.8rem;">Effets systémiques (Réponse de Phase Aiguë)</h3>
+ <table>
+ <thead><tr><th>Manifestation</th><th>Mécanisme</th><th>Médiateurs</th></tr></thead>
+ <tbody>
+ <tr><td><strong>Fièvre</strong></td><td>↑ cyclooxygénases → PGE₂ → ↑ thermostat hypothalamus</td><td>IL-1, TNF (pyrogènes endogènes), LPS</td></tr>
+ <tr><td><strong>Leucocytose</strong></td><td>Libération accélérée depuis moelle osseuse + prolifération des précurseurs</td><td>TNF, IL-1, CSF (facteurs stimulants)</td></tr>
+ <tr><td><strong>Protéines de phase aiguë</strong></td><td>Synthèse hépatique augmentée : CRP, fibrinogène, SAA</td><td>IL-6 (CRP, fibrinogène), IL-1, TNF (SAA)</td></tr>
+ <tr><td><strong>Choc septique</strong></td><td>Forte production de cytokines → hypotension, CIVD, résistance à l'insuline</td><td>Très hauts taux de TNF, IL-1</td></tr>
+ </tbody>
+ </table>
+
+ <div class="callout callout-warning">
+ <strong>Neutrophilie</strong> = infections bactériennes | <strong>Lymphocytose</strong> = infections virales | <strong>Éosinophilie</strong> = allergies, helminthes | <strong>Leucopénie</strong> = typhoïde, certains virus
+ </div>
+</section>
+
+<hr class="divider">
+
+<!-- ══ SECTION 9 : INFLAMMATION CHRONIQUE ══ -->
+<section class="section" id="chronique">
+ <div class="section-header">
+ <span class="section-num">09</span>
+ <h2 class="section-title">Inflammation Chronique</h2>
+ </div>
+
+ <div class="def-box">
+ <span class="label">Définition</span>
+ <p>Réponse de longue durée (semaines/mois) dans laquelle <strong>inflammation, lésions tissulaires et tentatives de réparation coexistent</strong>. Caractérisée par la prolifération de fibroblastes et la migration de macrophages.</p>
+ </div>
+
+ <div class="grid-2">
+ <div>
+ <h3 style="font-family:'Playfair Display',serif;margin-bottom:0.8rem;">Causes</h3>
+ <ul class="dot-list">
+ <li><strong>Infections persistantes</strong> : mycobactéries (tuberculose), certains virus, champignons — difficiles à éradiquer</li>
+ <li><strong>Maladies d'hypersensibilité</strong> : maladies auto-immunes (polyarthrite rhumatoïde, SEP), allergies (asthme)</li>
+ <li><strong>Exposition prolongée à agents toxiques</strong> : silice (silicose), cholestérol (athérosclérose)</li>
+ </ul>
+ </div>
+ <div>
+ <h3 style="font-family:'Playfair Display',serif;margin-bottom:0.8rem;">Caractéristiques morphologiques</h3>
+ <ul class="dot-list">
+ <li>Infiltration de cellules mononucléaires (macrophages, lymphocytes, plasmocytes)</li>
+ <li>Destruction tissulaire progressive</li>
+ <li>Tentatives de guérison : angiogenèse + fibrose</li>
+ <li>Pas d'œdème ni de neutrophiles prédominants</li>
+ </ul>
+ </div>
+ </div>
+
+ <h3 style="font-family:'Playfair Display',serif;margin:1.5rem 0 0.8rem;">Les Macrophages — Cellule Clé de l'Inflammation Chronique</h3>
+ <div class="grid-2">
+ <div class="card accent-red">
+ <div class="card-title">Activation Classique (M1)</div>
+ <ul class="dot-list">
+ <li>Induite par : endotoxines, IFN-γ, produits microbiens</li>
+ <li>Produisent : NO, ERO, enzymes lysosomales → microbicides</li>
+ <li>Sécrètent : IL-1, IL-12, IL-23, TNF, chimiokines</li>
+ <li>Rôle : détruire les microbes, amplifier l'inflammation</li>
+ </ul>
+ </div>
+ <div class="card accent-green">
+ <div class="card-title">Activation Alternative (M2)</div>
+ <ul class="dot-list">
+ <li>Induite par : IL-4, IL-13 (lymphocytes Th2)</li>
+ <li>Produisent : facteurs de croissance, TGF-β, IL-10</li>
+ <li>Rôle : réparation tissulaire, angiogenèse, fibrose, collagénogenèse</li>
+ <li><strong>Non microbicides</strong></li>
+ </ul>
+ </div>
+ </div>
+
+ <div class="card accent-blue" style="margin-top:1rem;">
+ <div class="card-title">Fonctions des macrophages</div>
+ <ul class="dot-list">
+ <li>Ingestion et élimination des microbes et tissus morts (phagocytose)</li>
+ <li>Initiation de la réparation (cicatrisation + fibrose)</li>
+ <li>Sécrétion de médiateurs inflammatoires (cytokines, eicosanoïdes)</li>
+ <li>Présentation d'antigènes aux lymphocytes T</li>
+ <li>Demi-vie macrophage tissulaire : <strong>plusieurs mois à années</strong> (vs monocytes : ~1 jour)</li>
+ </ul>
+ </div>
+
+ <h3 style="font-family:'Playfair Display',serif;margin:1.5rem 0 0.8rem;">Lymphocytes dans l'Inflammation Chronique</h3>
+ <table>
+ <thead><tr><th>Sous-type</th><th>Cytokines sécrétées</th><th>Effet principal</th></tr></thead>
+ <tbody>
+ <tr><td><strong>Th1</strong></td><td>IFN-γ</td><td>Activation classique des macrophages (M1)</td></tr>
+ <tr><td><strong>Th2</strong></td><td>IL-4, IL-5, IL-13</td><td>Activation alternative macrophages (M2), éosinophiles, allergies</td></tr>
+ <tr><td><strong>Th17</strong></td><td>IL-17</td><td>Recrutement neutrophiles + monocytes</td></tr>
+ <tr><td><strong>Lymphocytes B / Plasmocytes</strong></td><td>Anticorps</td><td>Réponses auto-immunes</td></tr>
+ </tbody>
+ </table>
+
+ <h3 style="font-family:'Playfair Display',serif;margin:1.5rem 0 0.8rem;">Inflammation Granulomateuse</h3>
+ <div class="def-box">
+ <span class="label">Définition</span>
+ <p>Forme d'inflammation chronique caractérisée par des <strong>accumulations de macrophages activés</strong> (cellules épithélioïdes), lymphocytes T, et parfois nécrose. Tentative de contenir un agent pathogène difficile à éradiquer.</p>
+ </div>
+ <div class="grid-2">
+ <div class="card accent-blue">
+ <div class="card-title">Granulomes à corps étrangers</div>
+ <ul class="dot-list">
+ <li>Matériaux inertes non immunogènes (talc, sutures)</li>
+ <li>Corps étranger identifiable au centre</li>
+ <li>Cellules épithélioïdes + cellules géantes de Langhans</li>
+ </ul>
+ </div>
+ <div class="card accent-red">
+ <div class="card-title">Granulomes immunitaires</div>
+ <ul class="dot-list">
+ <li>Agents persistants difficiles à éradiquer</li>
+ <li>Cellules Th1 → IFN-γ → activation macrophages</li>
+ <li>Ex : tuberculose (nécrose caséeuse centrale)</li>
+ <li>Ex : maladie de Crohn, sarcoïdose (non caséeux)</li>
+ </ul>
+ </div>
+ </div>
+</section>
+
+<hr class="divider">
+
+<!-- ══ SECTION 10 : RÉPARATION ══ -->
+<section class="section" id="reparation">
+ <div class="section-header">
+ <span class="section-num">10</span>
+ <h2 class="section-title">Réparation Tissulaire</h2>
+ </div>
+
+ <div class="grid-2">
+ <div class="card accent-green">
+ <div class="card-title">Régénération</div>
+ <ul class="dot-list">
+ <li>Restauration <strong>complète</strong> du tissu normal</li>
+ <li>Tissus labiles (épithéliums, hémato.) : régénération facile</li>
+ <li>Tissus stables (foie, reins) : régénération possible si structure intacte</li>
+ <li>Ex : régénération hépatique après hépatectomie partielle (IL-6, HGF, TGF-α)</li>
+ </ul>
+ </div>
+ <div class="card accent-gold">
+ <div class="card-title">Cicatrisation (formation de cicatrice)</div>
+ <ul class="dot-list">
+ <li>Remplacement par tissu conjonctif fibreux</li>
+ <li>Si tissu incapable de se régénérer (tissus permanents : cœur, neurones)</li>
+ <li>Ou si structure de soutien trop endommagée</li>
+ <li>Ex : infarctus du myocarde → cicatrice fibrotique</li>
+ </ul>
+ </div>
+ </div>
+
+ <h3 style="font-family:'Playfair Display',serif;margin:1.5rem 0 0.8rem;">Classification des Tissus selon leur capacité proliférative</h3>
+ <table>
+ <thead><tr><th>Type</th><th>Caractéristique</th><th>Exemples</th><th>Réparation</th></tr></thead>
+ <tbody>
+ <tr>
+ <td><span class="badge badge-green">Labiles</span></td>
+ <td>En division continue, cellules souches actives</td>
+ <td>Épithéliums (peau, intestin, voies urinaires), hématopoïétique</td>
+ <td>Régénération complète</td>
+ </tr>
+ <tr>
+ <td><span class="badge badge-gold">Stables</span></td>
+ <td>Quiescents (G₀), peuvent se diviser si stimulés</td>
+ <td>Foie, reins, pancréas, endothélium, fibroblastes</td>
+ <td>Régénération partielle</td>
+ </tr>
+ <tr>
+ <td><span class="badge badge-red">Permanents</span></td>
+ <td>Différenciation terminale, non prolifératifs</td>
+ <td>Neurones, cardiomyocytes, muscle squelettique</td>
+ <td>Cicatrice fibreuse obligatoire</td>
+ </tr>
+ </tbody>
+ </table>
+
+ <h3 style="font-family:'Playfair Display',serif;margin:1.5rem 0 0.8rem;">Étapes de la formation de cicatrice</h3>
+ <div class="timeline">
+ <div class="timeline-item">
+ <strong>Minutes après la lésion</strong>
+ <p>Bouchon hémostatique plaquettaire + dépôt de fibrine → arrêt du saignement</p>
+ </div>
+ <div class="timeline-item">
+ <strong>0–6 h : Inflammation</strong>
+ <p>Recrutement neutrophiles → puis monocytes (6–48 h). Élimination des microbes et débris nécrotiques.</p>
+ </div>
+ <div class="timeline-item">
+ <strong>Jour 3–7 : Prolifération cellulaire</strong>
+ <p>Migration + prolifération de fibroblastes, cellules endothéliales (angiogenèse), cellules épithéliales. Formation de tissu de granulation (rose, mou, granuleux, très vascularisé).</p>
+ </div>
+ <div class="timeline-item">
+ <strong>Semaine 2 : Dépôt de tissu conjonctif</strong>
+ <p>Collagène type III → puis type I. Remplacement progressif du tissu de granulation. ↓ vascularisation.</p>
+ </div>
+ <div class="timeline-item">
+ <strong>Semaines–mois : Remodelage (MMP vs TIMP)</strong>
+ <p>Équilibre synthèse/dégradation du collagène. Contraction par myofibroblastes. Cicatrice pâle et avasculaire.</p>
+ </div>
+ </div>
+
+ <div class="grid-2" style="margin-top:1.2rem;">
+ <div class="card accent-blue">
+ <div class="card-title">Angiogenèse</div>
+ <ul class="dot-list">
+ <li>Formation de nouveaux vaisseaux à partir de vaisseaux existants</li>
+ <li><strong>VEGF</strong> : migration + prolifération des cellules endothéliales, vasodilatation (NO)</li>
+ <li><strong>FGF-2</strong> : prolifération cellules endothéliales</li>
+ <li><strong>Ang 1/Ang 2</strong> : maturation structurelle</li>
+ <li>MMP : dégradation MEC pour permettre la croissance</li>
+ </ul>
+ </div>
+ <div class="card accent-purple">
+ <div class="card-title">TGF-β — Cytokine fibrogénique clé</div>
+ <ul class="dot-list">
+ <li>Stimule migration + prolifération des fibroblastes</li>
+ <li>↑ synthèse de collagène et fibronectine</li>
+ <li>↓ dégradation MEC (inhibe MMP)</li>
+ <li>Source : macrophages M2, cellules de granulation</li>
+ <li>Impliqué dans fibrose pulmonaire, hépatique, rénale</li>
+ <li>Aussi anti-inflammatoire (inhibe lymphocytes)</li>
+ </ul>
+ </div>
+ </div>
+
+ <h3 style="font-family:'Playfair Display',serif;margin:1.5rem 0 0.8rem;">Cicatrisation par 1ère vs 2ème Intention</h3>
+ <table>
+ <thead><tr><th>Critère</th><th>1ère Intention (union primaire)</th><th>2ème Intention (union secondaire)</th></tr></thead>
+ <tbody>
+ <tr><td><strong>Type de plaie</strong></td><td>Incision propre, bords rapprochés</td><td>Perte de substance étendue</td></tr>
+ <tr><td><strong>Inflammation</strong></td><td>Minimale</td><td>Intense, prolongée</td></tr>
+ <tr><td><strong>Tissu de granulation</strong></td><td>Peu</td><td>Beaucoup</td></tr>
+ <tr><td><strong>Contraction de la plaie</strong></td><td>Minime</td><td>Importante (myofibroblastes)</td></tr>
+ <tr><td><strong>Cicatrice finale</strong></td><td>Petite, discrète</td><td>Large, rétractile</td></tr>
+ </tbody>
+ </table>
+
+ <h3 style="font-family:'Playfair Display',serif;margin:1.5rem 0 0.8rem;">Facteurs qui altèrent la réparation</h3>
+ <div class="grid-2">
+ <div class="card accent-red">
+ <div class="card-title">Facteurs locaux</div>
+ <ul class="dot-list">
+ <li>Infection persistante → prolonge l'inflammation</li>
+ <li>Corps étrangers (verre, métal, os)</li>
+ <li>Mauvaise vascularisation / ischémie</li>
+ <li>Facteurs mécaniques (pression, torsion)</li>
+ <li>Localisation (espaces tissulaires → exsudats)</li>
+ </ul>
+ </div>
+ <div class="card accent-gold">
+ <div class="card-title">Facteurs systémiques</div>
+ <ul class="dot-list">
+ <li><strong>Diabète</strong> : compromise la réparation (vasculaire, neuropathie, infections)</li>
+ <li><strong>Carences nutritionnelles</strong> : protéines, vitamine C → ↓ synthèse collagène</li>
+ <li><strong>Glucocorticoïdes</strong> : inhibent TGF-β → ↓ fibrose</li>
+ <li>Maladies vasculaires périphériques</li>
+ </ul>
+ </div>
+ </div>
+
+ <h3 style="font-family:'Playfair Display',serif;margin:1.5rem 0 0.8rem;">Anomalies de la réparation</h3>
+ <table>
+ <thead><tr><th>Anomalie</th><th>Description</th><th>Exemple clinique</th></tr></thead>
+ <tbody>
+ <tr><td><strong>Cicatrice hypertrophique</strong></td><td>Excès de collagène dans les limites de la plaie. Contient myofibroblastes. Peut régresser.</td><td>Après brûlures profondes</td></tr>
+ <tr><td><strong>Chéloïde</strong></td><td>Tissu cicatriciel dépasse les limites de la plaie, ne régresse pas. Prédisposition individuelle.</td><td>Plus fréquent chez les personnes à peau sombre</td></tr>
+ <tr><td><strong>Granulation exubérante</strong></td><td>Excès de tissu de granulation → bloque la réépithélialisation</td><td>Plaies chroniques infectées</td></tr>
+ <tr><td><strong>Contracture</strong></td><td>Contraction excessive de la plaie → déformations</td><td>Brûlures graves, paumes, plante des pieds</td></tr>
+ <tr><td><strong>Fibrose pathologique</strong></td><td>Dépôt excessif de collagène → dysfonction organique</td><td>Cirrhose, fibrose pulmonaire, sclérodermie</td></tr>
+ </tbody>
+ </table>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer>
+ PHYSIOPATHOLOGIE 1 — LICENCE EN PHYSIOTHÉRAPIE — Fiche de Révision Complète
+</footer>
+
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-04.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+</body>
+</html>
