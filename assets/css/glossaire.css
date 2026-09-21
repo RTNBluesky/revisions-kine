@@ -1,0 +1,91 @@
+/* ------------------------------------------------------------------
+   glossaire.css — termes définis au fil du texte.
+
+   Un terme repéré est souligné en pointillés. Au survol, au clavier ou
+   au toucher, une infobulle affiche sa définition. Les définitions
+   elles-mêmes vivent dans assets/js/glossaire.js, en un seul exemplaire.
+   ------------------------------------------------------------------ */
+
+.def {
+  border-bottom: 1px dotted var(--accent-4, #ff8fa3);
+  cursor: help;
+  color: inherit;
+  transition: background 0.15s, border-color 0.15s;
+  border-radius: 2px;
+}
+.def:hover,
+.def:focus-visible,
+.def[aria-expanded="true"] {
+  background: var(--accent-soft, rgba(255, 107, 157, 0.12));
+  border-bottom-color: var(--accent, #ff6b9d);
+  outline: none;
+}
+.def:focus-visible { box-shadow: 0 0 0 2px var(--accent-soft-2, rgba(255, 107, 157, 0.20)); }
+
+/* ---- l'infobulle ---- */
+#glo-bulle {
+  position: absolute;
+  z-index: 9998;
+  max-width: 330px;
+  padding: 13px 15px;
+  border-radius: 11px;
+  background: #1a1d2a;
+  border: 1px solid var(--accent-soft-2, rgba(255, 107, 157, 0.20));
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.55);
+  font-family: 'Source Sans 3', -apple-system, system-ui, sans-serif;
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: #c9d0e0;
+  opacity: 0;
+  transform: translateY(4px);
+  transition: opacity 0.14s ease, transform 0.14s ease;
+  pointer-events: none;
+}
+#glo-bulle.visible { opacity: 1; transform: translateY(0); }
+
+#glo-bulle .glo-terme {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.2px;
+  color: var(--accent-4, #ff8fa3);
+}
+
+/* petite flèche vers le mot */
+#glo-bulle::after {
+  content: '';
+  position: absolute;
+  left: var(--fleche, 22px);
+  width: 9px;
+  height: 9px;
+  background: #1a1d2a;
+  border-left: 1px solid var(--accent-soft-2, rgba(255, 107, 157, 0.20));
+  border-top: 1px solid var(--accent-soft-2, rgba(255, 107, 157, 0.20));
+  transform: rotate(45deg);
+}
+#glo-bulle.dessous::after { top: -5px; }
+#glo-bulle.dessus::after {
+  bottom: -5px;
+  transform: rotate(225deg);
+}
+
+@media (max-width: 520px) {
+  #glo-bulle { max-width: calc(100vw - 32px); font-size: 13px; }
+}
+
+/* à l'impression, la définition suit le mot entre parenthèses */
+@media print {
+  #glo-bulle { display: none !important; }
+  .def { border-bottom: 0; }
+  .def::after {
+    content: ' (' attr(data-impression) ')';
+    font-size: 0.85em;
+    font-style: italic;
+    color: #444;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  #glo-bulle, .def { transition: none !important; }
+}

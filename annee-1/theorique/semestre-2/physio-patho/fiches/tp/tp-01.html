@@ -5,6 +5,7 @@
 <meta name="description" content="Fiche de Révision Physiopathologie 1 — Grossman & Porth · Tortora & Derrickson">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="../../../../../../assets/css/acces.css">
+<link rel="stylesheet" href="../../../../../../assets/css/glossaire.css">
 <script src="../../../../../../assets/js/acces.js"></script>
 <title>Fiche de Révision – Physiopathologie 1</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
@@ -532,8 +533,8 @@
  <div class="header-pills">
  <span class="pill pill-blue">Concepts Santé & Maladie</span>
  <span class="pill pill-pink">Étiologie & Pathogenèse</span>
- <span class="pill pill-green">Homéostasie</span>
- <span class="pill pill-gold">Systèmes de rétroaction</span>
+ <span class="pill pill-green"><span class="def" data-terme="homeostasie">Homéostasie</span></span>
+ <span class="pill pill-gold">Systèmes de <span class="def" data-terme="retroaction">rétroaction</span></span>
  <span class="pill pill-purple">Épidémiologie</span>
  </div>
 </header>
@@ -626,7 +627,7 @@
 
  <div class="grid-2">
  <div class="card card-green">
- <div class="card-title"><span class="icon">🌿</span>Santé (OMS, 1948)</div>
+ <div class="card-title"><span class="icon">🌿</span>Santé (<span class="def" data-terme="oms">OMS</span>, 1948)</div>
  <p style="font-size:14px; color:var(--text-light); font-style:italic; margin-bottom:12px;">
  « Un état de complet bien-être physique, mental et social — pas seulement absence de maladie ou d'infirmité. »
  </p>
@@ -728,7 +729,7 @@
  <li><strong>Histologie :</strong> étude des cellules et de la matrice extracellulaire</li>
  <li><strong>Lésion :</strong> discontinuité pathologique/traumatique d'un organe ou tissu</li>
  <li>Coupes histologiques → diagnostic de nombreux cancers</li>
- <li>Outils : radiographies, échographies, biopsies, IRM, immunologie moléculaire</li>
+ <li>Outils : radiographies, échographies, biopsies, <span class="def" data-terme="irm">IRM</span>, immunologie moléculaire</li>
  </ul>
  </div>
  <div class="card card-green">
@@ -744,7 +745,7 @@
  </tr>
  <tr>
  <td>Douleur, vertiges, céphalées, hallucinations</td>
- <td>Fièvre, tachycardie, désaturation, éruption, œdème</td>
+ <td>Fièvre, tachycardie, désaturation, éruption, <span class="def" data-terme="oedeme">œdème</span></td>
  </tr>
  </table>
  <div style="margin-top:12px; font-size:13px; color:var(--text-muted);">
@@ -759,7 +760,7 @@
  <li>Identification et désignation d'une maladie spécifique</li>
  <li><strong>Anamnèse :</strong> antécédents médicaux passés et actuels</li>
  <li><strong>Examen objectif :</strong> inspection, palpation, auscultation, percussion</li>
- <li><strong>Examens complémentaires :</strong> labo, imagerie (TDM, écho…)</li>
+ <li><strong>Examens complémentaires :</strong> labo, imagerie (<span class="def" data-terme="tdm">TDM</span>, écho…)</li>
  <li>Analyse et interprétation → raisonnement clinique</li>
  </ul>
  </div>
@@ -835,7 +836,7 @@
  <div class="level-bar" style="background: linear-gradient(90deg,#1a2a1a,#203020); max-width:50%;">
  ⚛️ <strong>Niveau Chimique (1)</strong> — Atomes + Molécules
  </div>
- <div class="level-desc">C, H, O, N, P, Ca, S — ADN, glucose…</div>
+ <div class="level-desc">C, H, O, N, P, Ca, S — <span class="def" data-terme="adn">ADN</span>, glucose…</div>
  </div>
  </div>
 
@@ -910,14 +911,14 @@
  <tr><td style="color:var(--accent4);font-weight:600;">Liquide interstitiel</td><td>ECF dans les espaces étroits entre cellules = <em>environnement interne</em></td></tr>
  <tr><td>Plasma sanguin</td><td>ECF dans les vaisseaux sanguins</td></tr>
  <tr><td>Lymphe</td><td>ECF dans les vaisseaux lymphatiques</td></tr>
- <tr><td>LCR</td><td>Liquide céphalo-rachidien (cerveau + moelle)</td></tr>
+ <tr><td><span class="def" data-terme="lcr">LCR</span></td><td>Liquide céphalo-rachidien (cerveau + moelle)</td></tr>
  </table>
  </div>
  <div class="card card-blue">
  <div class="card-title">Perturbations de l'homéostasie</div>
  <ul class="styled">
  <li><strong>Environnement externe :</strong> chaleur intense, manque d'O₂, traumatismes</li>
- <li><strong>Environnement interne :</strong> hypoglycémie (sauter un repas), infection…</li>
+ <li><strong>Environnement interne :</strong> <span class="def" data-terme="hyperglycemie">hypoglycémie</span> (sauter un repas), infection…</li>
  <li><strong>Stress psychologique :</strong> exigences travail/école</li>
  </ul>
  <div class="callout callout-warn" style="margin-top:12px; padding:10px 14px;">
@@ -946,7 +947,7 @@
  <ul class="styled">
  <li>Sécrète des hormones dans le sang (messagers chimiques)</li>
  <li>Réponses <strong>plus lentes</strong> mais durables</li>
- <li>Ex : insuline/glucagon pour la glycémie, ocytocine pour l'accouchement</li>
+ <li>Ex : <span class="def" data-terme="insuline">insuline</span>/<span class="def" data-terme="glucagon">glucagon</span> pour la glycémie, ocytocine pour l'accouchement</li>
  </ul>
  </div>
  </div>
@@ -1185,7 +1186,7 @@
  <li><strong>Palpation :</strong> palper la surface avec les mains</li>
  <li><strong>Auscultation :</strong> écouter les sons (stéthoscope)</li>
  <li><strong>Percussion :</strong> taper la surface, écouter l'écho</li>
- <li><strong>Signes vitaux :</strong> T°, pouls, FR, PA</li>
+ <li><strong>Signes vitaux :</strong> T°, pouls, <span class="def" data-terme="fr-resp">FR</span>, PA</li>
  </ul>
  </div>
  <div class="card card-gold" style="margin-top:16px;">
@@ -1261,7 +1262,7 @@
  <div class="callout callout-warn" style="margin-top:16px;">
  <span class="callout-icon">⚠️</span>
  <div class="callout-body">
- <strong>Valeur prédictive :</strong> Dépend davantage de la <em>prévalence</em> de la maladie dans la population que de la sensibilité/spécificité. La valeur prédictive positive augmente avec la prévalence.
+ <strong>Valeur prédictive :</strong> Dépend davantage de la <em><span class="def" data-terme="prevalence">prévalence</span></em> de la maladie dans la population que de la sensibilité/spécificité. La valeur prédictive positive augmente avec la prévalence.
  </div>
  </div>
 </section>
@@ -1283,7 +1284,7 @@
 
  <div class="grid-2">
  <div class="card card-blue">
- <div class="card-title"><span class="icon">📉</span>Incidence vs Prévalence</div>
+ <div class="card-title"><span class="icon">📉</span><span class="def" data-terme="incidence">Incidence</span> vs Prévalence</div>
  <table class="compare-table">
  <tr>
  <th></th>
@@ -1332,8 +1333,8 @@
  <div style="color:var(--accent5); font-weight:600; margin-bottom:8px;">Types d'études</div>
  <ul class="styled">
  <li><strong>Études transversales :</strong> mesure à un instant T</li>
- <li><strong>Études cas-témoins :</strong> comparaison malades vs sains</li>
- <li><strong>Études de cohorte :</strong> suivi prospectif d'une population</li>
+ <li><strong>Études <span class="def" data-terme="cas-temoins">cas-témoins</span> :</strong> comparaison malades vs sains</li>
+ <li><strong>Études de <span class="def" data-terme="cohorte">cohorte</span> :</strong> suivi prospectif d'une population</li>
  </ul>
  </div>
  </div>
@@ -1397,5 +1398,6 @@
 </footer>
 
 <div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-01.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+<script src="../../../../../../assets/js/glossaire.js"></script>
 </body>
 </html>

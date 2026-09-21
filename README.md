@@ -20,6 +20,7 @@ indigo pour SVT** — pour distinguer d'un coup d'œil le cursus kiné du bac.
 ```
 .
 ├── index.html                    ← accueil du site — le SEUL index.html
+├── glossaire.html                ← glossaire général, recherche et filtres
 ├── README.md · LICENSE
 ├── .nojekyll                     ← désactive Jekyll sur GitHub Pages
 ├── .gitignore
@@ -31,10 +32,12 @@ indigo pour SVT** — pour distinguer d'un coup d'œil le cursus kiné du bac.
 │   │   ├── hub.css                   ← pages d'accueil (site, année, branche, semestre)
 │   │   ├── module.css                ← pages d'accueil de module (onglets, cartes)
 │   │   ├── acces.css                 ← écran d'accès
+│   │   ├── glossaire.css             ← soulignement et infobulle
 │   │   └── modules/                  ← 23 feuilles spécifiques à un module
 │   └── js/
 │       ├── quiz.js                   ← moteur de quiz, exemplaire unique K1/K2/SVT
-│       └── acces.js                  ← écran d'accès (voir la section dédiée)
+│       ├── acces.js                  ← écran d'accès (voir la section dédiée)
+│       └── glossaire.js              ← 269 définitions + infobulles
 │
 ├── annee-1/                      ← K1 — complète
 │   ├── accueil-k1.html
@@ -172,6 +175,24 @@ Quatre matières : cardio-respiratoire, EAIF III, musculo-squelettique (S1) et n
 - **Une seule palette, deux accents** : fonds `#0f1117 → #20243a` et textes `#e8eaf0 / #9aa3b8 / #6a7388` partout ; accents **roses** `#ff6b9d · #ff5c6b · #f472b6 · #ff8fa3` en K1/K2 et **indigo** `#7c6cf5 · #6366f1 · #8b7cf8 · #a5a0ff` en SVT. Le vert `#3dd68c` (« correct ») et le rouge `#ff5c6b` (« faux ») sont identiques dans les deux thèmes : une mauvaise réponse doit rester rouge quel que soit l'habillage.
 - Les feuilles de `svt-bac/assets/` sont **le même code** que celles de `annee-1/assets/` : seules les déclarations d'accent diffèrent.
 - Polices Google Fonts : Playfair Display (titres) + Source Sans 3 (texte)
+
+## Glossaire
+
+269 termes et sigles définis à partir des fiches, répartis en 13 domaines. Le dictionnaire
+vit en un seul exemplaire dans `assets/js/glossaire.js` : le corriger une fois le corrige partout.
+
+Dans les fiches, un terme repéré est écrit `<span class="def" data-terme="cle">mot</span>` ;
+le script pose le soulignement pointillé, l'infobulle, l'accès clavier et un repli `title`
+si le JavaScript est bloqué. La page `glossaire.html`, à la racine, lit le même dictionnaire
+et ajoute la recherche et le filtre par domaine.
+
+**Ajouter un terme** — l'écrire dans le dictionnaire, puis marquer sa première occurrence
+dans les fiches concernées. Une seule occurrence par fiche : au-delà, le texte devient illisible.
+
+**Attention aux sigles polysémiques.** `AP` vaut antéro-postérieur en musculo-squelettique,
+activité physique en santé publique, et initiales d'auteur dans une référence. Plusieurs clés
+portent donc une restriction de terrain, et `sensibilité` n'est jamais marqué automatiquement :
+le mot désigne aussi bien la sensibilité d'un test que la sensibilité cutanée.
 
 ## Écran d'accès
 

@@ -171,7 +171,7 @@
  .year-badge {
  width: 78px; height: 78px;
  border-radius: 22px;
- background: linear-gradient(135deg, var(--year-accent, var(--accent2)), var(--accent));
+ background: linear-gradient(135deg, var(--year-accent, var(--accent2)), var(--year-accent-2, var(--accent)));
  display: flex;
  align-items: center;
  justify-content: center;
@@ -264,7 +264,9 @@
  .year-card.year-2 { --year-accent: #f472b6; }
  .year-card.year-3 { --year-accent: #ff6b9d; }
  .year-card.year-4 { --year-accent: #ff5c6b; }
- .year-card.bac { --year-accent: #f472b6; }
+ /* Annexes — indigo, pour les distinguer d'un coup d'œil des années de kiné */
+ .year-card.bac,
+ .year-card.glossaire { --year-accent: #7c6cf5; --year-accent-2: #6366f1; }
 
  /* Divider title */
  .extra-divider {
@@ -297,9 +299,9 @@
  }
  .extra-grid {
  display: grid;
- grid-template-columns: 1fr;
+ grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
  gap: 24px;
- max-width: 720px;
+ max-width: 1000px;
  margin: 0 auto;
  }
 
@@ -473,8 +475,8 @@
  <div class="extra-divider">
  <div class="ed-line"></div>
  <div>
- <div class="ed-label">Avant la kiné</div>
- <div class="ed-sub">Préparation Bac · Lycée</div>
+ <div class="ed-label">Annexes</div>
+ <div class="ed-sub">Préparation Bac · Outils</div>
  </div>
  <div class="ed-line"></div>
  </div>
@@ -506,11 +508,36 @@
  <span class="year-cta">Ouvrir →</span>
  </div>
  </a>
+  <a href="glossaire.html" class="year-card glossaire">
+ <div class="year-card-head">
+ <div class="year-badge" style="font-size:24px;">📖</div>
+ <div class="year-card-titles">
+ <div class="year-eyebrow">Outil transversal · toutes matières</div>
+ <div class="year-title">Glossaire</div>
  </div>
+ </div>
+ <div class="desc">
+ <strong>441 termes et sigles</strong> définis à partir des fiches : anatomie, physiologie, physiopathologie, cardio-respiratoire, neurologie, méthodes de recherche et SVT. Recherche instantanée et filtre par domaine.
+ </div>
+ <div class="stats">
+ <div class="stat"><span class="num">441</span><span class="lbl">Termes</span></div>
+ <div class="stat"><span class="num">13</span><span class="lbl">Domaines</span></div>
+ <div class="stat"><span class="num">354</span><span class="lbl">Fiches</span></div>
+ <div class="stat"><span class="num">3 275</span><span class="lbl">Renvois</span></div>
+ </div>
+ <div class="foot">
+ <div class="year-tags">
+ <span class="year-tag">Sigles</span>
+ <span class="year-tag">Définitions</span>
+ <span class="year-tag">Recherche</span>
+ </div>
+ <span class="year-cta">Ouvrir →</span>
+ </div>
+ </a>
+</div>
 
 </section>
 </main>
-
 <footer>
  <div class="container">
  <div>Révisions Kinésithérapie</div>

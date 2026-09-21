@@ -15,6 +15,10 @@
   --accent: #ff6b9d;
   --accent-2: #ff5c6b;
   --accent-4: #ff8fa3;
+  /* teintes dérivées de l'accent : une page peut les redéfinir pour changer de palette */
+  --accent-bord: rgba(255,107,157,0.30);
+  --accent-ombre: rgba(255,107,157,0.20);
+  --accent-voile: rgba(255,107,157,0.10);
 }
 
 /* ---------- bouton retour flottant ---------- */
@@ -22,14 +26,14 @@
   position: fixed; top: 14px; left: 14px; z-index: 10000;
   background: rgba(20,22,32,0.92);
   backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(255,107,157,0.30);
+  border: 1px solid var(--accent-bord, rgba(255,107,157,0.30));
   color: var(--ink); padding: 9px 14px; border-radius: 10px;
   text-decoration: none;
   font-family: 'Source Sans 3', -apple-system, system-ui, sans-serif;
   font-size: 13px; font-weight: 600;
   display: inline-flex; align-items: center; gap: 6px;
   transition: all .2s;
-  box-shadow: 0 4px 14px rgba(255,107,157,0.20);
+  box-shadow: 0 4px 14px var(--accent-ombre, rgba(255,107,157,0.20));
 }
 .back-nav:hover { border-color: var(--accent); color: #fff; }
 
@@ -52,9 +56,9 @@
   font-weight: 700; font-size: 13px;
   white-space: nowrap; transition: all .2s;
 }
-.page-toggle span.pt-on { background: linear-gradient(135deg, #ff5c6b, #ff6b9d); color: #fff; }
+.page-toggle span.pt-on { background: linear-gradient(135deg, var(--accent-2, #ff5c6b), var(--accent, #ff6b9d)); color: #fff; }
 .page-toggle a { background: transparent; color: #9aa3b8; }
-.page-toggle a:hover { background: rgba(255,107,157,0.10); color: #fff; }
+.page-toggle a:hover { background: var(--accent-voile, rgba(255,107,157,0.10)); color: #fff; }
 
 /* ---------- fil d'Ariane ---------- */
 nav.crumb {

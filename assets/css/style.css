@@ -51,9 +51,9 @@ body::before {
   position: fixed;
   inset: 0;
   background:
-    radial-gradient(circle at 15% 20%, rgba(255,107,157,0.10), transparent 40%),
-    radial-gradient(circle at 85% 10%, rgba(255,92,107,0.10), transparent 40%),
-    radial-gradient(circle at 50% 90%, rgba(244,114,182,0.08), transparent 40%);
+    radial-gradient(circle at 15% 20%, var(--halo-1, rgba(255,107,157,0.10)), transparent 40%),
+    radial-gradient(circle at 85% 10%, var(--halo-2, rgba(255,92,107,0.10)), transparent 40%),
+    radial-gradient(circle at 50% 90%, var(--halo-3, rgba(244,114,182,0.08)), transparent 40%);
   z-index: -1;
   pointer-events: none;
 }
