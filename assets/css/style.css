@@ -491,6 +491,104 @@ article.fiche tbody tr:hover { background: rgba(255,107,157,0.05); }
 .score.good .big { color: var(--ok); }
 .score.bad .big { color: var(--ko); }
 
+/* ---- rappel des questions manquées, sous le score ---- */
+.ratees {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+.ratees-titre {
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+  color: var(--muted);
+  margin-bottom: 11px;
+}
+.ratees-liste { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.ratee {
+  min-width: 40px;
+  height: 40px;
+  padding: 0 11px;
+  border-radius: 11px;
+  border: 1px solid rgba(255,92,107,0.45);
+  background: var(--ko-soft);
+  color: #ffd1d6;
+  font-family: inherit;
+  font-size: .95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .15s, border-color .15s, transform .15s;
+}
+.ratee:hover {
+  background: rgba(255,92,107,0.22);
+  border-color: var(--ko);
+  transform: translateY(-2px);
+}
+.ratee:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+/* question laissée sans réponse : contour en pointillés, pas de rouge */
+.ratee.vide {
+  border-style: dashed;
+  border-color: var(--line-strong);
+  background: rgba(255,255,255,0.03);
+  color: var(--muted);
+}
+.ratee.vide:hover { background: rgba(255,255,255,0.08); border-color: var(--dim); }
+
+/* la question visée se signale un instant */
+.q.vise { animation: quizVise 2.4s ease; }
+@keyframes quizVise {
+  0%, 55% {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px var(--accent-soft), var(--shadow);
+  }
+  100% {
+    border-color: var(--line);
+    box-shadow: 0 0 0 0 transparent, var(--shadow);
+  }
+}
+
+/* bouton flottant pour remonter au score après un saut */
+.retour-score {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 60;
+  padding: 11px 17px;
+  border-radius: 999px;
+  border: 1px solid rgba(255,107,157,0.45);
+  background: var(--card);
+  color: var(--accent-4);
+  font-family: inherit;
+  font-size: .84rem;
+  font-weight: 700;
+  box-shadow: 0 8px 26px rgba(0,0,0,0.45);
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: opacity .2s ease, transform .2s ease, color .15s, border-color .15s;
+}
+.retour-score.visible { opacity: 1; transform: none; pointer-events: auto; }
+.retour-score:hover { color: #fff; border-color: var(--accent); }
+
+@media (max-width: 600px) {
+  .retour-score { right: 12px; bottom: 12px; font-size: .8rem; padding: 10px 14px; }
+}
+
+/* à l'impression les numéros restent lisibles ; le bouton flottant, non */
+@media print {
+  .retour-score { display: none; }
+  .ratee { background: none; color: #000; border-color: #000; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .q.vise { animation: none; border-color: var(--accent); }
+  .ratee, .retour-score { transition: none; }
+  .ratee:hover { transform: none; }
+}
+
 
 
 @media (max-width: 600px) {

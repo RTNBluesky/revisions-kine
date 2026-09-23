@@ -96,8 +96,23 @@
 
     /* ---------- session ---------- */
 
+    /* le système peut demander qu'on limite les animations */
+    function sobre() {
+      return !!(window.matchMedia &&
+                window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+    }
+    function amener(node, bloc) {
+      if (!node || !node.scrollIntoView) return;
+      try {
+        node.scrollIntoView({ behavior: sobre() ? "auto" : "smooth", block: bloc || "center" });
+      } catch (e) {
+        node.scrollIntoView(true);
+      }
+    }
+
     function lancer() {
       var repondu = 0, justes = 0;
+      var retour = null;              /* bouton flottant « revenir au score » */
       root.innerHTML = "";
 
       // Les questions gardent leur ordre ; seules les propositions sont mélangées,
@@ -126,6 +141,7 @@
         if (entete) entete.classList.add("hidden");
         var sc = document.querySelector(".score");
         if (sc) sc.remove();
+        if (retour) { retour.remove(); retour = null; }
         try { window.scrollTo({ top: 0, behavior: "smooth" }); } catch (e) {}
       });
       badge.appendChild(chg);
@@ -346,6 +362,71 @@
         root.appendChild(actions);
       }
 
+      /* ---- rappel des questions manquées ----
+         Sous le score, les numéros des questions ratées. Un clic ramène à la
+         question, qui se signale un instant ; les réponses y sont déjà
+         corrigées, donc on voit ce qu'on avait coché et ce qu'il fallait.
+         Une question laissée sans réponse est distinguée d'une fausse. */
+
+      function montrerRetour(box) {
+        if (!retour) {
+          retour = el("button", "retour-score", "↑ Revenir au score");
+          retour.type = "button";
+          retour.addEventListener("click", function () { amener(box); });
+          document.body.appendChild(retour);
+          /* le bouton s'efface de lui-même quand le score revient à l'écran */
+          if (window.IntersectionObserver) {
+            new window.IntersectionObserver(function (entrees) {
+              if (retour) retour.classList.toggle("visible", !entrees[0].isIntersecting);
+            }, { threshold: 0.15 }).observe(box);
+          }
+        }
+        retour.classList.add("visible");
+      }
+
+      /* rien de coché, rien de cliqué : la question a été sautée, pas ratée */
+      function sansReponse(e) {
+        if (e.q.multi) {
+          return !e.lignes.some(function (l) { return l.input && l.input.checked; });
+        }
+        return !e.choix;
+      }
+
+      function listerRatees(box) {
+        var ratees = blocs.filter(function (e) { return !e.juste; });
+        if (!ratees.length) return;
+
+        var zone = el("div", "ratees");
+        zone.appendChild(el("div", "ratees-titre",
+          (ratees.length === 1 ? "1 question à revoir" : ratees.length + " questions à revoir") +
+          " — clique sur un numéro pour y retourner"));
+
+        var liste = el("div", "ratees-liste");
+        ratees.forEach(function (e) {
+          var vide = sansReponse(e);
+          var puce = el("button", "ratee" + (vide ? " vide" : ""), String(e.q.n));
+          puce.type = "button";
+          var enonce = e.bloc.querySelector(".stem");
+          var quoi = vide ? "sans réponse" : "mauvaise réponse";
+          puce.title = quoi.charAt(0).toUpperCase() + quoi.slice(1) +
+                       (enonce ? " — " + enonce.textContent : "");
+          puce.setAttribute("aria-label",
+            "Question " + e.q.n + ", " + quoi +
+            (enonce ? " : " + enonce.textContent : ""));
+          puce.addEventListener("click", function () {
+            amener(e.bloc);
+            e.bloc.classList.remove("vise");
+            void e.bloc.offsetWidth;            /* relance l'animation */
+            e.bloc.classList.add("vise");
+            montrerRetour(box);
+          });
+          liste.appendChild(puce);
+        });
+
+        zone.appendChild(liste);
+        box.appendChild(zone);
+      }
+
       function afficherScore(justes) {
         /* un glissement encore en attente arracherait l'écran au score */
         if (glissement) { clearTimeout(glissement); glissement = null; }
@@ -359,6 +440,7 @@
           '<div class="score-mode">' + (mode === "exam" ? "Mode examen" : "Mode révision") + '</div>' +
           '<div class="big">' + justes + " / " + total + "  (" + pct + "%)</div>" +
           '<p class="msg">' + msg + "</p>";
+        listerRatees(box);
         var act = el("div", "actions");
         var again = el("button", "btn quiz", "Refaire le quiz");
         again.type = "button";
@@ -377,7 +459,7 @@
         act.appendChild(back);
         box.appendChild(act);
         root.parentNode.insertBefore(box, root);
-        if (box.scrollIntoView) box.scrollIntoView({ behavior: "smooth", block: "center" });
+        amener(box);
       }
 
       majBarre();
