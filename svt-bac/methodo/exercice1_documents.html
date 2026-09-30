@@ -71,12 +71,6 @@ footer a{color:var(--accent);text-decoration:none}
 <header>
  <div class="breadcrumb">Méthodologie · Exercice 1</div>
  <h1>📑 Exercice 1 — Exploitation de documents</h1>
-<div class="schemas">
-<span class="schemas-titre">🖼 Schémas</span>
-<a class="schema" href="https://commons.wikimedia.org/wiki/File:R%C3%A9gulation_hypoglyc%C3%A9mie.svg" target="_blank" rel="noopener" title="Régulation de la glycémie — planche libre de droits sur Wikimédia Commons (nouvel onglet)">Régulation de la glycémie</a>
-<a class="schema" href="https://commons.wikimedia.org/wiki/File:Sarcomere_schema_et_photo-FR.svg" target="_blank" rel="noopener" title="Sarcomère — planche libre de droits sur Wikimédia Commons (nouvel onglet)">Sarcomère</a>
-<a class="schema" href="https://commons.wikimedia.org/wiki/File:Glande_surrenale_fr.jpg" target="_blank" rel="noopener" title="Glande surrénale — planche libre de droits sur Wikimédia Commons (nouvel onglet)">Glande surrénale</a>
-</div>
  <div class="actions">
  <a href="../accueil-svt.html">← Index</a>
  <a href="methodologie.html">📋 Méthodo générale</a>
@@ -126,7 +120,7 @@ footer a{color:var(--accent);text-decoration:none}
 
  <div class="example">
  <div class="lbl">Exemple — phrase type</div>
- « <span style="color:var(--accent)">Le document 2 montre que le taux de <span class="def" data-terme="cortisol">cortisol</span> passe de 5 à 45 µg/dL en 60 min après le stresseur</span> (Je vois). <span style="color:var(--green)">Cette augmentation rapide est caractéristique de l'activation de l'axe HHC (hypothalamus → hypophyse → corticosurrénale)</span> (J'en déduis). <span style="color:var(--orange)">Donc le stress prolongé active bien la sécrétion endocrinienne de cortisol par les corticosurrénales</span> (Je conclus). »
+ « <span style="color:var(--accent)">Le document 2 montre que le taux de <span class="def" data-terme="cortisol">cortisol</span> passe de 5 à 45 µg/dL en 60 min après le stresseur</span> (Je vois). <span style="color:var(--green)">Cette augmentation rapide est caractéristique de l'activation de l'axe HHC (hypothalamus → <span class="def" data-terme="hypophyse">hypophyse</span> → corticosurrénale)</span> (J'en déduis). <span style="color:var(--orange)">Donc le stress prolongé active bien la sécrétion endocrinienne de cortisol <a class="schema-lien" href="https://commons.wikimedia.org/wiki/File:Glande_surrenale_fr.jpg" target="_blank" rel="noopener" title="Glande surrénale — schéma libre de droits sur Wikimédia Commons (nouvel onglet)" aria-label="Voir le schéma : Glande surrénale">🖼</a> par les corticosurrénales</span> (Je conclus). »
  </div>
 </section>
 
@@ -163,7 +157,7 @@ footer a{color:var(--accent);text-decoration:none}
  <p>Sur ton brouillon, fais un tableau rapide :</p>
  <table>
  <tr><th>Doc</th><th>Je VOIS</th><th>J'en DÉDUIS</th></tr>
- <tr><td>1</td><td>Glycémie élevée à jeun (1,5 g/L)</td><td>Hyperglycémie chronique = diabète</td></tr>
+ <tr><td>1</td><td><span class="def" data-terme="glycemie">Glycémie</span> <a class="schema-lien" href="https://commons.wikimedia.org/wiki/File:R%C3%A9gulation_hypoglyc%C3%A9mie.svg" target="_blank" rel="noopener" title="Régulation de la glycémie — schéma libre de droits sur Wikimédia Commons (nouvel onglet)" aria-label="Voir le schéma : Régulation de la glycémie">🖼</a> élevée à jeun (1,5 g/L)</td><td>Hyperglycémie chronique = diabète</td></tr>
  <tr><td>2</td><td>Insulinémie normale mais glucose stagne</td><td>Cellules ne répondent plus = insulinorésistance</td></tr>
  <tr><td>3</td><td>Corrélation IMC ↑ / risque diabète ×3</td><td>Surpoids = facteur de risque</td></tr>
  </table>
@@ -222,7 +216,7 @@ footer a{color:var(--accent);text-decoration:none}
 
  <p><strong>Introduction.</strong> La contraction musculaire repose sur le glissement des filaments d'actine et de myosine, qui nécessite de l'ATP. Or, les réserves musculaires en ATP sont très faibles (~ 5 mmol/kg). Comment l'organisme assure-t-il l'approvisionnement énergétique des muscles à l'effort ?</p>
 
- <p><strong>Analyse du document 1.</strong> Le document 1 montre la structure du sarcomère, unité contractile élémentaire. <em>Je vois</em> que l'actine et la myosine se chevauchent dans la bande A. <em>J'en déduis</em> que la contraction nécessite la formation de ponts entre les têtes de myosine et l'actine, ce qui consomme de l'ATP à chaque cycle. <em>Je conclus</em> que l'effort musculaire suppose une regénération continue d'ATP.</p>
+ <p><strong>Analyse du document 1.</strong> Le document 1 montre la structure du sarcomère <a class="schema-lien" href="https://commons.wikimedia.org/wiki/File:Sarcomere_schema_et_photo-FR.svg" target="_blank" rel="noopener" title="Sarcomère — schéma libre de droits sur Wikimédia Commons (nouvel onglet)" aria-label="Voir le schéma : Sarcomère">🖼</a>, unité contractile élémentaire. <em>Je vois</em> que l'actine et la myosine se chevauchent dans la bande A. <em>J'en déduis</em> que la contraction nécessite la formation de ponts entre les têtes de myosine et l'actine, ce qui consomme de l'ATP à chaque cycle. <em>Je conclus</em> que l'effort musculaire suppose une regénération continue d'ATP.</p>
 
  <p><strong>Analyse du document 2.</strong> <em>Je vois</em> que la phosphocréatine (PCr) est consommée massivement dans les 10 premières secondes, puis épuisée. Le glucose est mobilisé dès 30 secondes et reste la source principale jusqu'à ~ 30 min. Les lipides prennent le relais après 30 min et deviennent majoritaires au-delà d'1 h. <em>J'en déduis</em> qu'il existe <strong>trois voies de resynthèse de l'ATP</strong> qui s'activent successivement selon la durée de l'effort. <em>Je conclus</em> que l'organisme adapte sa stratégie énergétique à la durée de l'effort.</p>
 

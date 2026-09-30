@@ -1,77 +1,51 @@
 /* ------------------------------------------------------------------
-   schemas.css — bandeau de schémas en tête de fiche.
+   schemas.css — renvoi vers un schéma, au fil du texte.
 
-   Chaque bouton ouvre, dans un nouvel onglet, une planche de Wikimédia
-   Commons sous licence libre. Les liens sortent du site : ils portent
-   rel="noopener" et un repère visuel (↗) pour qu'on sache où l'on va.
+   Un petit 🖼 se pose juste après la notion, à sa première mention dans
+   la fiche. Il ouvre une planche de Wikimédia Commons sous licence libre,
+   dans un nouvel onglet.
+
+   Le lien reste discret : il ne doit pas casser la ligne ni attirer l'œil
+   plus que le texte qu'il accompagne.
    ------------------------------------------------------------------ */
 
-.schemas {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
-  margin: 18px 0 24px;
-  padding: 14px 16px;
-  border-radius: 12px;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid var(--line, rgba(255, 255, 255, 0.08));
-}
-
-.schemas-titre {
-  font-family: 'Source Sans 3', -apple-system, system-ui, sans-serif;
-  font-size: 0.74rem;
-  font-weight: 800;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted, #9aa3b8);
-  margin-right: 4px;
-}
-
-a.schema {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 7px 12px;
-  border-radius: 999px;
-  border: 1px solid var(--accent-bord, rgba(255, 107, 157, 0.30));
+a.schema-lien {
+  display: inline-block;
+  margin-left: 3px;
+  padding: 0 5px;
+  border-radius: 6px;
+  border: 1px solid var(--accent-bord, rgba(255, 107, 157, 0.28));
   background: var(--accent-voile, rgba(255, 107, 157, 0.08));
-  color: var(--accent-4, #ff8fa3);
-  font-family: 'Source Sans 3', -apple-system, system-ui, sans-serif;
-  font-size: 0.82rem;
-  font-weight: 600;
-  text-decoration: none;
-  transition: background 0.15s, border-color 0.15s, transform 0.15s, color 0.15s;
-}
-a.schema::after {
-  content: '↗';
   font-size: 0.78em;
-  opacity: 0.6;
+  line-height: 1.5;
+  text-decoration: none;
+  vertical-align: baseline;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, transform 0.15s;
+  /* un pictogramme n'a pas à être souligné par les styles de lien des fiches */
+  border-bottom-width: 1px !important;
 }
-a.schema:hover {
-  background: var(--accent-soft, rgba(255, 107, 157, 0.16));
+a.schema-lien:hover {
+  background: var(--accent-soft, rgba(255, 107, 157, 0.18));
   border-color: var(--accent, #ff6b9d);
-  color: #fff;
   transform: translateY(-1px);
 }
-a.schema:focus-visible {
+a.schema-lien:focus-visible {
   outline: 2px solid var(--accent, #ff6b9d);
   outline-offset: 2px;
 }
 
-@media (max-width: 600px) {
-  .schemas { padding: 12px; gap: 6px; }
-  a.schema { font-size: 0.78rem; padding: 6px 10px; }
-}
-
-/* à l'impression, l'adresse complète plutôt qu'un bouton mort */
+/* à l'impression, l'adresse plutôt qu'un pictogramme muet */
 @media print {
-  .schemas { border: 0; padding: 0; background: none; }
-  a.schema { border: 0; background: none; color: #000; padding: 0 6px 0 0; }
-  a.schema::after { content: ' (' attr(href) ')'; font-size: 0.75em; opacity: 1; }
+  a.schema-lien { border: 0; background: none; padding: 0; }
+  a.schema-lien::after {
+    content: ' [schéma : ' attr(href) ']';
+    font-size: 0.7em;
+    font-style: italic;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  a.schema { transition: none; }
-  a.schema:hover { transform: none; }
+  a.schema-lien { transition: none; }
+  a.schema-lien:hover { transform: none; }
 }
