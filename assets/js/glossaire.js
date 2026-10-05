@@ -22,6 +22,11 @@ window.GLOSSAIRE = {
   "d": "Chez Piaget, modifier le schéma mental existant parce que l'expérience nouvelle n'y entre pas.",
   "dom": "Psychologie"
  },
+ "accroupissement": {
+  "t": "Accroupissement",
+  "d": "La position en flexion complète de hanches, genoux et chevilles. Son analyse renseigne sur mobilité, force et équilibre.",
+  "dom": "Biomécanique"
+ },
  "acido-basique": {
   "t": "Équilibre acido-basique",
   "d": "Le maintien du pH sanguin autour de 7,40, par les tampons, le poumon qui règle le CO₂ et le rein qui règle les bicarbonates.",
@@ -137,6 +142,11 @@ window.GLOSSAIRE = {
   "d": "Incapacité à reconnaître un objet ou un visage, alors que la perception sensorielle fonctionne.",
   "dom": "Neurologie"
  },
+ "aidant": {
+  "t": "Aidant",
+  "d": "Proche qui accompagne une personne dépendante au quotidien. Son épuisement est un enjeu de santé à part entière.",
+  "dom": "Sociologie"
+ },
  "ains": {
   "t": "AINS — anti-inflammatoire non stéroïdien",
   "d": "Médicament qui bloque les cyclo-oxygénases et réduit douleur et inflammation, sans être un corticoïde.",
@@ -216,6 +226,11 @@ window.GLOSSAIRE = {
   "t": "Amiante",
   "d": "Fibre minérale interdite, responsable d'asbestose et de mésothéliome plusieurs décennies après l'exposition.",
   "dom": "Physiopathologie"
+ },
+ "amnesie": {
+  "t": "Amnésie",
+  "d": "Perte de mémoire. Antérograde quand on n'enregistre plus rien de nouveau, rétrograde quand on perd le passé.",
+  "dom": "Neurologie"
  },
  "ampa": {
   "t": "Récepteur AMPA",
@@ -332,10 +347,20 @@ window.GLOSSAIRE = {
   "d": "Protéine produite par les plasmocytes, qui reconnaît un antigène précis et le neutralise.",
   "dom": "SVT"
  },
+ "antidote": {
+  "t": "Antidote",
+  "d": "Substance qui neutralise un toxique. La N-acétylcystéine pour le paracétamol, la vitamine K pour les AVK.",
+  "dom": "Pharmacologie"
+ },
  "antigene": {
   "t": "Antigène",
   "d": "Molécule reconnue comme étrangère, capable de déclencher une réponse immunitaire.",
   "dom": "SVT"
+ },
+ "antihypertenseur": {
+  "t": "Antihypertenseurs",
+  "d": "Cinq grandes familles : diurétiques, bêtabloquants, inhibiteurs calciques, IEC et sartans.",
+  "dom": "Pharmacologie"
  },
  "antiviral": {
   "t": "Antiviral",
@@ -431,6 +456,11 @@ window.GLOSSAIRE = {
   "t": "Aquaporine",
   "d": "Canal membranaire spécifique de l'eau. Leur insertion dans le tube collecteur, commandée par l'ADH, règle la concentration des urines.",
   "dom": "Physiologie"
+ },
+ "arachnoide": {
+  "t": "Arachnoïde et pie-mère",
+  "d": "Les deux méninges internes. Entre elles circule le liquide cérébrospinal, dans l'espace sous-arachnoïdien.",
+  "dom": "Anatomie"
  },
  "arn": {
   "t": "ARN — acide ribonucléique",
@@ -632,6 +662,11 @@ window.GLOSSAIRE = {
   "d": "On frotte le bord externe de la plante du pied : normalement les orteils se recroquevillent. S'ils s'écartent et que le gros orteil se relève, le faisceau pyramidal est atteint.",
   "dom": "Neurologie"
  },
+ "bacille": {
+  "t": "Bacille",
+  "d": "Bactérie de forme allongée. Le bacille de Koch donne la tuberculose. Les cocci, eux, sont ronds.",
+  "dom": "Physiopathologie"
+ },
  "bactericide": {
   "t": "Bactéricide",
   "d": "Qui tue les bactéries. Un bactériostatique se contente de les empêcher de se multiplier.",
@@ -646,6 +681,11 @@ window.GLOSSAIRE = {
   "t": "Bandage et contention",
   "d": "Le bandage maintient ; la contention exerce une pression active. L'un immobilise, l'autre lutte contre l'œdème.",
   "dom": "EAIF"
+ },
+ "bandura": {
+  "t": "Bandura",
+  "d": "Théoricien de l'apprentissage social : on apprend en observant autrui. D'où le sentiment d'efficacité personnelle.",
+  "dom": "Psychologie"
  },
  "barthel": {
   "t": "Indice de Barthel",
@@ -682,6 +722,16 @@ window.GLOSSAIRE = {
   "d": "Quatorze tâches d'équilibre cotées de 0 à 4, sur 56 points. En dessous de 45, le risque de chute augmente nettement.",
   "dom": "Neurologie"
  },
+ "bestest": {
+  "t": "BESTest",
+  "d": "Balance Evaluation Systems Test : il décompose l'équilibre en six systèmes, pour savoir lequel est déficitaire.",
+  "dom": "Neurologie"
+ },
+ "betabloquant": {
+  "t": "Bêtabloquants",
+  "d": "Ils freinent le cœur et abaissent la pression en bloquant les récepteurs bêta. Attention : ils masquent la tachycardie d'hypoglycémie et bornent la fréquence à l'effort.",
+  "dom": "Pharmacologie"
+ },
  "bicarbonate": {
   "t": "Bicarbonates",
   "d": "Le principal tampon du sang. Le rein en règle la quantité, le poumon règle le CO₂ : ensemble, ils tiennent le pH.",
@@ -716,6 +766,11 @@ window.GLOSSAIRE = {
   "t": "Échelle de Borg",
   "d": "Cote l'effort perçu, de 6 à 20 dans la version d'origine, de 0 à 10 dans la version modifiée. Sert à régler l'intensité quand la fréquence cardiaque n'est pas fiable.",
   "dom": "Cardio-respiratoire"
+ },
+ "bourrelet": {
+  "t": "Bourrelet (labrum)",
+  "d": "Anneau fibrocartilagineux qui agrandit et approfondit une cavité articulaire : glène de l'épaule, acétabulum de la hanche.",
+  "dom": "Anatomie"
  },
  "bpco": {
   "t": "BPCO — bronchopneumopathie chronique obstructive",
@@ -826,6 +881,11 @@ window.GLOSSAIRE = {
   "t": "Cardiopathie",
   "d": "Terme général pour toute maladie du cœur, qu'elle touche le muscle, les valves, les coronaires ou le rythme.",
   "dom": "Cardio-respiratoire"
+ },
+ "carotide": {
+  "t": "Carotide",
+  "d": "Artère principale du cou. Son sinus porte des barorécepteurs qui règlent la pression artérielle.",
+  "dom": "Anatomie"
  },
  "cas-temoins": {
   "t": "Étude cas-témoins",
@@ -997,6 +1057,11 @@ window.GLOSSAIRE = {
   "d": "Surface articulaire arrondie, comme celles du fémur au genou.",
   "dom": "Anatomie"
  },
+ "congestion": {
+  "t": "Congestion",
+  "d": "Accumulation de sang dans un territoire. La congestion pulmonaire de l'insuffisance cardiaque gauche donne la dyspnée.",
+  "dom": "Cardio-respiratoire"
+ },
  "connectivite": {
   "t": "Connectivite",
   "d": "Maladie auto-immune du tissu conjonctif, touchant plusieurs organes : lupus, sclérodermie, dermatomyosite.",
@@ -1022,10 +1087,20 @@ window.GLOSSAIRE = {
   "d": "Contraction involontaire et durable d'un muscle, douloureuse, qui ne cède pas au repos.",
   "dom": "Musculo-squelettique"
  },
+ "convergence": {
+  "t": "Convergence",
+  "d": "En vision, le rapprochement des axes oculaires pour fixer un objet proche. En neurologie, l'arrivée de plusieurs afférences sur un même neurone.",
+  "dom": "Physiologie"
+ },
  "convulsion": {
   "t": "Convulsion",
   "d": "Contractions musculaires involontaires et saccadées, d'origine cérébrale, isolées ou en crise d'épilepsie.",
   "dom": "Neurologie"
+ },
+ "coping": {
+  "t": "Coping",
+  "d": "L'ensemble des stratégies mises en œuvre pour faire face à une situation éprouvante. Centré sur le problème, ou sur l'émotion.",
+  "dom": "Psychologie"
  },
  "coraco-brachial": {
   "t": "Coraco-brachial",
@@ -1057,6 +1132,11 @@ window.GLOSSAIRE = {
   "d": "Référentiel d'évaluation des qualités psychométriques d'un instrument de mesure.",
   "dom": "Recherche"
  },
+ "couturier": {
+  "t": "Couturier (sartorius)",
+  "d": "Le plus long muscle du corps, de l'épine iliaque antéro-supérieure à la patte d'oie. Il croise les deux articulations.",
+  "dom": "Anatomie"
+ },
  "cox2": {
   "t": "COX-2 — cyclo-oxygénase 2",
   "d": "Enzyme inductible de l'inflammation, cible des AINS dits sélectifs.",
@@ -1081,6 +1161,11 @@ window.GLOSSAIRE = {
   "t": "CPG — générateur de patron central",
   "d": "Réseau médullaire capable de produire un rythme moteur, comme celui de la marche, sans commande corticale continue.",
   "dom": "Neurologie"
+ },
+ "crampe": {
+  "t": "Crampe",
+  "d": "Contraction involontaire, brutale et douloureuse d'un muscle, qui cède à l'étirement.",
+  "dom": "Musculo-squelettique"
  },
  "creatinine": {
   "t": "Créatinine",
@@ -1267,6 +1352,11 @@ window.GLOSSAIRE = {
   "d": "Conditions de vie, de travail et de revenu qui expliquent une large part des écarts de santé entre groupes sociaux.",
   "dom": "Sociologie"
  },
+ "detroit": {
+  "t": "Détroits du bassin",
+  "d": "Les trois rétrécissements que franchit le fœtus : détroit supérieur, moyen et inférieur.",
+  "dom": "Anatomie"
+ },
  "detrusor": {
   "t": "Détrusor",
   "d": "Le muscle lisse de la paroi vésicale. Sa contraction vide la vessie ; son hyperactivité donne l'impériosité.",
@@ -1287,6 +1377,11 @@ window.GLOSSAIRE = {
   "d": "Articulation mobile avec capsule, cavité et liquide synovial. Autre nom de l'articulation synoviale.",
   "dom": "Anatomie"
  },
+ "diastolique": {
+  "t": "Systole et diastole",
+  "d": "La systole est la contraction qui éjecte le sang, la diastole le remplissage. La pression artérielle se note systolique sur diastolique.",
+  "dom": "Cardio-respiratoire"
+ },
  "diplopie": {
   "t": "Diplopie",
   "d": "Vision double.",
@@ -1301,6 +1396,11 @@ window.GLOSSAIRE = {
   "t": "Disease, illness, sickness",
   "d": "Trois regards sur la maladie : disease, la lésion vue par le médecin ; illness, l'expérience vécue ; sickness, le statut social de malade.",
   "dom": "Sociologie"
+ },
+ "dispersion": {
+  "t": "Dispersion",
+  "d": "L'étalement des valeurs autour de la moyenne. Une moyenne sans dispersion ne dit presque rien.",
+  "dom": "Recherche"
  },
  "dissemination": {
   "t": "Dissémination",
@@ -1406,6 +1506,11 @@ window.GLOSSAIRE = {
   "t": "Dyspnée",
   "d": "Sensation pénible de manquer d'air : c'est un symptôme rapporté par le patient, pas une mesure.",
   "dom": "Cardio-respiratoire"
+ },
+ "dysreflexie": {
+  "t": "Dysréflexie autonome",
+  "d": "Au-dessus de T6, une stimulation sous la lésion — vessie pleine, fécalome — déclenche une poussée d'hypertension avec céphalée, sueurs et bradycardie. Urgence vitale.",
+  "dom": "Neurologie"
  },
  "dystonie": {
   "t": "Dystonie",
@@ -1547,6 +1652,11 @@ window.GLOSSAIRE = {
   "d": "Théorie selon laquelle mitochondries et chloroplastes descendent de bactéries capturées par une cellule ancestrale.",
   "dom": "SVT"
  },
+ "endothelium": {
+  "t": "Endothélium",
+  "d": "La couche de cellules qui tapisse l'intérieur des vaisseaux. Sa souffrance ouvre la voie à l'athérosclérose.",
+  "dom": "Physiologie"
+ },
  "enthese": {
   "t": "Enthèse",
   "d": "Zone d'ancrage d'un tendon ou d'un ligament dans l'os. Son inflammation s'appelle une enthésopathie.",
@@ -1587,6 +1697,16 @@ window.GLOSSAIRE = {
   "d": "Ce qui modifie l'expression des gènes sans toucher à la séquence de l'ADN. En partie réversible, et sensible au mode de vie.",
   "dom": "SVT"
  },
+ "epiglotte": {
+  "t": "Épiglotte",
+  "d": "Clapet cartilagineux qui bascule sur le larynx à la déglutition et protège les voies aériennes.",
+  "dom": "Anatomie"
+ },
+ "epiphysaire": {
+  "t": "Cartilage de croissance",
+  "d": "Le disque épiphysaire où l'os s'allonge. Il se ferme à la fin de la puberté ; une fracture qui le traverse peut dévier la croissance.",
+  "dom": "Anatomie"
+ },
  "epiphysiolyse": {
   "t": "Épiphysiolyse",
   "d": "Glissement de l'épiphyse sur le cartilage de croissance, chez l'adolescent, surtout à la hanche.",
@@ -1611,6 +1731,11 @@ window.GLOSSAIRE = {
   "t": "EPOC — surconsommation d'oxygène post-exercice",
   "d": "Oxygène consommé au-delà du repos après l'effort, pour reconstituer les stocks et évacuer la chaleur et les métabolites.",
   "dom": "Physiologie"
+ },
+ "ergonomie": {
+  "t": "Ergonomie",
+  "d": "L'adaptation du travail à l'homme plutôt que l'inverse : poste, geste, rythme, matériel.",
+  "dom": "Sociologie"
  },
  "erosion": {
   "t": "Érosion",
@@ -1642,6 +1767,11 @@ window.GLOSSAIRE = {
   "d": "La réflexion sur ce qu'il est juste de faire, quand les règles ne tranchent pas d'elles-mêmes. Quatre repères : autonomie, bienfaisance, non-malfaisance, justice.",
   "dom": "Recherche"
  },
+ "ethmoide": {
+  "t": "Ethmoïde",
+  "d": "Os de la base du crâne, entre les orbites. Sa lame criblée laisse passer les filets du nerf olfactif.",
+  "dom": "Anatomie"
+ },
  "etiologique": {
   "t": "Étiologique",
   "d": "Qui concerne la cause. Un traitement étiologique s'attaque à l'origine du mal, un traitement symptomatique seulement à ses effets.",
@@ -1657,6 +1787,11 @@ window.GLOSSAIRE = {
   "d": "Se dit d'un traitement dirigé contre la cause elle-même — un antibiotique contre la bactérie, par exemple.",
   "dom": "Pharmacologie"
  },
+ "etrier": {
+  "t": "Osselets de l’oreille",
+  "d": "Marteau, enclume et étrier transmettent et amplifient les vibrations du tympan vers la cochlée.",
+  "dom": "Anatomie"
+ },
  "eupnee": {
   "t": "Eupnée",
   "d": "Respiration normale, calme et sans effort.",
@@ -1666,6 +1801,11 @@ window.GLOSSAIRE = {
   "t": "EVA — échelle visuelle analogique",
   "d": "Réglette de 0 à 10 sur laquelle le patient place lui-même sa douleur. Simple, reproductible, sensible au changement.",
   "dom": "Musculo-squelettique"
+ },
+ "excitateur": {
+  "t": "Excitateur et inhibiteur",
+  "d": "Un neurotransmetteur excitateur rapproche le neurone du seuil de décharge, un inhibiteur l'en éloigne. Glutamate contre GABA.",
+  "dom": "Neurologie"
  },
  "executives": {
   "t": "Fonctions exécutives",
@@ -1791,6 +1931,11 @@ window.GLOSSAIRE = {
   "t": "Fibrothorax",
   "d": "Épaississement fibreux de la plèvre qui emprisonne le poumon et bride la ventilation.",
   "dom": "Cardio-respiratoire"
+ },
+ "fidelite": {
+  "t": "Fidélité",
+  "d": "La reproductibilité d'une mesure : même résultat d'un examinateur à l'autre, ou d'une fois sur l'autre. La validité, elle, dit si l'on mesure la bonne chose.",
+  "dom": "Recherche"
  },
  "filtrat": {
   "t": "Filtrat glomérulaire",
@@ -1927,6 +2072,11 @@ window.GLOSSAIRE = {
   "d": "Étendre les conclusions d'un échantillon à toute une population. Elle n'est légitime que si l'échantillon la représente.",
   "dom": "Recherche"
  },
+ "generativite": {
+  "t": "Générativité",
+  "d": "Chez Erikson, le besoin de l'adulte d'âge mûr de transmettre et de contribuer. Son contraire est la stagnation.",
+  "dom": "Psychologie"
+ },
  "ges": {
   "t": "GES — gaz à effet de serre",
   "d": "Gaz qui absorbent l'infrarouge émis par la Terre et le réémettent vers le sol : CO₂, CH₄, H₂O, N₂O.",
@@ -1951,6 +2101,11 @@ window.GLOSSAIRE = {
   "t": "Glissement articulaire",
   "d": "Le déplacement d'une surface sur l'autre dans le plan de traitement. Avec le roulement, il forme l'arthrocinématique.",
   "dom": "EAIF"
+ },
+ "globus": {
+  "t": "Globus",
+  "d": "Sensation de boule dans la gorge sans obstacle réel. Fréquent dans le reflux et l'anxiété.",
+  "dom": "Physiopathologie"
  },
  "glomerule": {
   "t": "Glomérule",
@@ -2027,9 +2182,19 @@ window.GLOSSAIRE = {
   "d": "Méthode de gradation du niveau de preuve et de la force d'une recommandation.",
   "dom": "Recherche"
  },
+ "granulation": {
+  "t": "Tissu de granulation",
+  "d": "Le tissu rouge et bourgeonnant, riche en vaisseaux neufs, qui comble une plaie avant l'épithélialisation.",
+  "dom": "Physiopathologie"
+ },
  "granulomateuse": {
   "t": "Réaction granulomateuse",
   "d": "Inflammation chronique qui enferme ce qu'elle ne peut détruire dans un amas de macrophages : le granulome.",
+  "dom": "Physiopathologie"
+ },
+ "grippe": {
+  "t": "Grippe",
+  "d": "Infection respiratoire à virus Influenza : fièvre brutale, courbatures, toux. Dangereuse par ses complications.",
   "dom": "Physiopathologie"
  },
  "harm": {
@@ -2132,6 +2297,11 @@ window.GLOSSAIRE = {
   "d": "Axe hormonal du stress prolongé : CRH, puis ACTH, puis cortisol.",
   "dom": "SVT"
  },
+ "hiatus": {
+  "t": "Hiatus",
+  "d": "Orifice de passage à travers une cloison. Le hiatus œsophagien du diaphragme est le siège des hernies hiatales.",
+  "dom": "Anatomie"
+ },
  "hile": {
   "t": "Hile",
   "d": "Zone d'un organe par laquelle entrent et sortent vaisseaux, nerfs et conduits.",
@@ -2172,10 +2342,20 @@ window.GLOSSAIRE = {
   "d": "Élévation chronique de la pression artérielle au-delà des seuils de référence.",
   "dom": "Physiopathologie"
  },
+ "huffing": {
+  "t": "Huffing (expiration forcée)",
+  "d": "Expiration glotte ouverte, moins violente que la toux, qui remonte les sécrétions sans collaber les bronches.",
+  "dom": "Cardio-respiratoire"
+ },
  "hyalinose": {
   "t": "Hyalinose",
   "d": "Dépôt d'une substance homogène et vitreuse dans un tissu, qui perd sa souplesse et sa fonction.",
   "dom": "Physiopathologie"
+ },
+ "hybridation": {
+  "t": "Hybridation",
+  "d": "Croisement entre deux variétés ou deux espèces. Outil majeur de la sélection des plantes cultivées.",
+  "dom": "SVT"
  },
  "hydrolyse": {
   "t": "Hydrolyse",
@@ -2432,6 +2612,11 @@ window.GLOSSAIRE = {
   "d": "Articulation entre la première et la deuxième phalange d'un doigt.",
   "dom": "Anatomie"
  },
+ "illich": {
+  "t": "Illich",
+  "d": "Penseur de la « némésis médicale » : à force de s'étendre, la médecine produirait elle-même de la maladie et déposséderait les gens de leur santé.",
+  "dom": "Sociologie"
+ },
  "imitation": {
   "t": "Imitation différée",
   "d": "Reproduire une action observée plus tôt : elle prouve que l'enfant garde une représentation mentale du modèle.",
@@ -2482,6 +2667,11 @@ window.GLOSSAIRE = {
   "d": "Les cellules répondent mal à l'insuline. Le pancréas compense d'abord en produisant plus, puis s'épuise : c'est le diabète de type 2.",
   "dom": "Physiopathologie"
  },
+ "interneurone": {
+  "t": "Interneurone",
+  "d": "Neurone intercalé entre deux autres, souvent inhibiteur. C'est lui qui organise l'inhibition réciproque des antagonistes.",
+  "dom": "Neurologie"
+ },
  "interosseuse": {
   "t": "Membrane interosseuse",
   "d": "Nappe fibreuse tendue entre deux os parallèles — tibia et fibula, radius et ulna. Elle transmet les contraintes et sert d'insertion.",
@@ -2491,6 +2681,11 @@ window.GLOSSAIRE = {
   "t": "Intolérance",
   "d": "Mauvaise tolérance d'une substance, sans mécanisme immunitaire — à la différence de l'allergie.",
   "dom": "Physiopathologie"
+ },
+ "ionique": {
+  "t": "Canaux ioniques",
+  "d": "Pores de la membrane qui laissent passer un ion précis. Leur ouverture et leur fermeture font le potentiel d'action.",
+  "dom": "Physiologie"
  },
  "ira": {
   "t": "IRA — insuffisance rénale aiguë",
@@ -2521,6 +2716,11 @@ window.GLOSSAIRE = {
   "t": "Isocinétique",
   "d": "Mode de contraction à vitesse constante imposée par une machine, qui mesure la force sur toute l'amplitude.",
   "dom": "Biomécanique"
+ },
+ "isotopique": {
+  "t": "Datation isotopique",
+  "d": "On mesure le rapport entre un isotope radioactif et son produit de désintégration : la demi-vie donne l'âge.",
+  "dom": "SVT"
  },
  "jackson": {
   "t": "Test de Jackson",
@@ -2571,6 +2771,11 @@ window.GLOSSAIRE = {
   "t": "KOOS — Knee Injury and Osteoarthritis Outcome Score",
   "d": "42 items, 5 sous-échelles (douleur, symptômes, AVQ, sport, qualité de vie). Score élevé = meilleur état. Contient le WOMAC.",
   "dom": "Musculo-squelettique"
+ },
+ "labile": {
+  "t": "Tissus labiles, stables, permanents",
+  "d": "Labile : se renouvelle sans cesse (épiderme, intestin). Stable : se divise si besoin (foie). Permanent : ne se divise plus (neurone, myocarde).",
+  "dom": "Physiopathologie"
  },
  "labrum": {
   "t": "Labrum",
@@ -2632,6 +2837,11 @@ window.GLOSSAIRE = {
   "d": "Élévation des globules blancs dans le sang. Fréquente dans les infections bactériennes.",
   "dom": "Physiopathologie"
  },
+ "levodopa": {
+  "t": "Lévodopa",
+  "d": "Précurseur de la dopamine, traitement de référence du Parkinson. À long terme : fluctuations et dyskinésies.",
+  "dom": "Pharmacologie"
+ },
  "lh": {
   "t": "LH — hormone lutéinisante",
   "d": "Hormone hypophysaire dont le pic déclenche l'ovulation et la formation du corps jaune.",
@@ -2646,6 +2856,11 @@ window.GLOSSAIRE = {
   "t": "Lipolyse",
   "d": "Dégradation des graisses de réserve en acides gras utilisables comme carburant.",
   "dom": "Physiologie"
+ },
+ "lithiase": {
+  "t": "Lithiase",
+  "d": "Formation de calculs dans un conduit : voies biliaires, voies urinaires, glandes salivaires.",
+  "dom": "Physiopathologie"
  },
  "lle": {
   "t": "LLE — ligament latéral externe",
@@ -2702,6 +2917,11 @@ window.GLOSSAIRE = {
   "d": "Organite chargé d'enzymes digestives, qui recycle les déchets de la cellule.",
   "dom": "Physiologie"
  },
+ "macule": {
+  "t": "Macule",
+  "d": "En vestibulaire, la zone sensible de l'utricule et du saccule. En ophtalmologie, la zone centrale de la rétine.",
+  "dom": "Anatomie"
+ },
  "maitland": {
   "t": "Concept Maitland",
   "d": "Thérapie manuelle fondée sur des mobilisations passives graduées de I à IV, dosées d'après la réponse du patient et réévaluées en permanence.",
@@ -2751,6 +2971,11 @@ window.GLOSSAIRE = {
   "t": "MCT — mémoire à court terme",
   "d": "Stockage temporaire d'une petite quantité d'informations, de l'ordre de quelques dizaines de secondes.",
   "dom": "Psychologie"
+ },
+ "mediastinale": {
+  "t": "Médiastin",
+  "d": "L'espace central du thorax, entre les deux poumons : cœur, gros vaisseaux, trachée, œsophage, thymus.",
+  "dom": "Anatomie"
  },
  "medicalisation": {
   "t": "Médicalisation",
@@ -2847,6 +3072,16 @@ window.GLOSSAIRE = {
   "d": "Les cinq os longs de l'avant-pied, entre le tarse et les orteils. Leur équivalent à la main : les métacarpiens.",
   "dom": "Anatomie"
  },
+ "microbiote": {
+  "t": "Microbiote",
+  "d": "L'ensemble des micro-organismes qui vivent dans un milieu du corps, surtout l'intestin. Il participe à la digestion et à l'immunité.",
+  "dom": "Physiologie"
+ },
+ "miction": {
+  "t": "Miction",
+  "d": "L'acte d'uriner, qui associe contraction du détrusor et relâchement des sphincters.",
+  "dom": "Physiologie"
+ },
  "mif": {
   "t": "MIF — mesure d'indépendance fonctionnelle",
   "d": "Échelle de 18 à 126 points cotant l'autonomie sur 18 activités, du niveau 1 dépendance totale au niveau 7 indépendance complète.",
@@ -2912,6 +3147,11 @@ window.GLOSSAIRE = {
   "d": "La fréquence des maladies dans une population, et le poids qu'elles y font peser. La mortalité ne compte que les décès.",
   "dom": "Recherche"
  },
+ "morton": {
+  "t": "Névrome de Morton",
+  "d": "Épaississement d'un nerf interdigital, entre les troisième et quatrième orteils : brûlure et décharge à la marche.",
+  "dom": "Musculo-squelettique"
+ },
  "motilite": {
   "t": "Motilité",
   "d": "La capacité d'un organe à se mouvoir par lui-même — motilité intestinale, motilité ciliaire.",
@@ -2941,6 +3181,11 @@ window.GLOSSAIRE = {
   "t": "Concept Mulligan",
   "d": "Mobilisations avec mouvement : le thérapeute corrige la position articulaire pendant que le patient fait le geste douloureux, qui doit devenir indolore.",
   "dom": "EAIF"
+ },
+ "multifidus": {
+  "t": "Multifides",
+  "d": "Petits muscles profonds du rachis, stabilisateurs segmentaires. Leur atrophie accompagne la lombalgie chronique.",
+  "dom": "Anatomie"
  },
  "mutagene": {
   "t": "Mutagène",
@@ -3182,6 +3427,11 @@ window.GLOSSAIRE = {
   "d": "Oxygénation artérielle normale. L'hypoxémie est son défaut, l'hyperoxie son excès.",
   "dom": "Cardio-respiratoire"
  },
+ "nottingham": {
+  "t": "Nottingham",
+  "d": "Famille d'échelles de l'autonomie et de la qualité de vie après AVC — index d'ADM étendues, profil de santé.",
+  "dom": "Neurologie"
+ },
  "nsc": {
   "t": "NSC — noyau suprachiasmatique",
   "d": "Horloge biologique centrale de l'hypothalamus, qui cale le rythme circadien sur la lumière.",
@@ -3201,6 +3451,11 @@ window.GLOSSAIRE = {
   "t": "Test d'Ober",
   "d": "En décubitus latéral, on laisse retomber la jambe du dessus. Si elle reste en abduction, le tenseur du fascia lata et la bandelette ilio-tibiale sont rétractés.",
   "dom": "Musculo-squelettique"
+ },
+ "observationnelle": {
+  "t": "Étude observationnelle",
+  "d": "On regarde sans intervenir : cohorte, cas-témoins, transversale. L'essai, lui, attribue le traitement.",
+  "dom": "Recherche"
  },
  "obturateur": {
   "t": "Nerf et foramen obturateurs",
@@ -3407,6 +3662,11 @@ window.GLOSSAIRE = {
   "d": "Inversion brève et propagée du potentiel de membrane, qui transmet l'information le long d'un axone ou d'une fibre musculaire.",
   "dom": "Physiologie"
  },
+ "palpitation": {
+  "t": "Palpitations",
+  "d": "Perception désagréable de ses propres battements cardiaques, qu'ils soient rapides, irréguliers ou simplement plus forts.",
+  "dom": "Cardio-respiratoire"
+ },
  "pancreatite": {
   "t": "Pancréatite",
   "d": "Inflammation du pancréas : douleur épigastrique transfixiante, lipase élevée. Causes principales : alcool et calculs biliaires.",
@@ -3457,6 +3717,11 @@ window.GLOSSAIRE = {
   "d": "Échelle d'évaluation du contrôle postural après un AVC, en position couchée, assise et debout.",
   "dom": "Neurologie"
  },
+ "passation": {
+  "t": "Passation",
+  "d": "Le déroulement standardisé d'un test : consignes, position, matériel. S'en écarter rend la mesure incomparable.",
+  "dom": "Recherche"
+ },
  "patella": {
   "t": "Patella",
   "d": "Nom moderne de la rotule. Os sésamoïde inclus dans le tendon du quadriceps, qui augmente son bras de levier.",
@@ -3486,6 +3751,11 @@ window.GLOSSAIRE = {
   "t": "PEACE & LOVE",
   "d": "Protocole actuel de prise en charge des lésions des tissus mous, qui a remplacé RICE puis PRICE et POLICE.",
   "dom": "EAIF"
+ },
+ "pectus": {
+  "t": "Pectus excavatum et carinatum",
+  "d": "Deux déformations du sternum : en entonnoir quand il s'enfonce, en carène quand il fait saillie.",
+  "dom": "Cardio-respiratoire"
  },
  "pedicule": {
   "t": "Pédicule vertébral",
@@ -3536,6 +3806,11 @@ window.GLOSSAIRE = {
   "t": "Permafrost",
   "d": "Sol gelé en permanence. Son dégel libère méthane et CO₂ : rétroaction positive sur le réchauffement.",
   "dom": "SVT"
+ },
+ "peronier": {
+  "t": "Fibulaires (péroniers)",
+  "d": "Muscles du compartiment latéral de la jambe, éverseurs du pied. Leur faiblesse favorise l'entorse en inversion.",
+  "dom": "Anatomie"
  },
  "petechie": {
   "t": "Pétéchie",
@@ -3597,6 +3872,11 @@ window.GLOSSAIRE = {
   "d": "Cloque : décollement de l'épiderme rempli de liquide clair.",
   "dom": "Physiopathologie"
  },
+ "phonation": {
+  "t": "Phonation",
+  "d": "La production des sons par le larynx. Elle demande un souffle suffisant : d'où son atteinte dans les maladies neuromusculaires.",
+  "dom": "Physiologie"
+ },
  "phosphocreatine": {
   "t": "Phosphocréatine",
   "d": "Réserve d'énergie immédiate du muscle : elle régénère l'ATP pendant les dix premières secondes d'un effort maximal.",
@@ -3627,10 +3907,20 @@ window.GLOSSAIRE = {
   "d": "Force des muscles inspiratoires, mesurée à la bouche. Elle chiffre la faiblesse du diaphragme.",
   "dom": "Cardio-respiratoire"
  },
+ "piriforme": {
+  "t": "Piriforme",
+  "d": "Muscle pelvi-trochantérien, rotateur externe de hanche. Le nerf sciatique passe sous lui, parfois à travers : d'où le syndrome du piriforme.",
+  "dom": "Anatomie"
+ },
  "pkb": {
   "t": "PKB — Prone Knee Bend",
   "d": "Test neurodynamique du nerf fémoral : patient en décubitus ventral, flexion du genou.",
   "dom": "Musculo-squelettique"
+ },
+ "plasmide": {
+  "t": "Plasmide",
+  "d": "Petit ADN circulaire indépendant du chromosome bactérien, échangeable d'une bactérie à l'autre. Vecteur classique de l'antibiorésistance.",
+  "dom": "SVT"
  },
  "plasmocyte": {
   "t": "Plasmocyte",
@@ -3736,6 +4026,11 @@ window.GLOSSAIRE = {
   "t": "Préopératoire",
   "d": "Avant l'opération. La kinésithérapie préopératoire — préhabilitation — réduit les complications postopératoires.",
   "dom": "Cardio-respiratoire"
+ },
+ "presbyacousie": {
+  "t": "Presbyacousie",
+  "d": "La perte auditive liée à l'âge, qui touche d'abord les sons aigus et gêne la compréhension dans le bruit.",
+  "dom": "Physiopathologie"
  },
  "prevalence": {
   "t": "Prévalence",
@@ -3847,6 +4142,11 @@ window.GLOSSAIRE = {
   "d": "Douleur de la région du pubis, fréquente chez le sportif, à la croisée des adducteurs et des abdominaux.",
   "dom": "Musculo-squelettique"
  },
+ "pubmed": {
+  "t": "PubMed",
+  "d": "La base de données bibliographiques de référence en santé, interrogée par mots-clés MeSH et opérateurs booléens.",
+  "dom": "Recherche"
+ },
  "pudendal": {
   "t": "Nerf pudendal",
   "d": "Nerf du périnée : sensibilité génitale, commande du sphincter anal et du plancher pelvien. Clé en rééducation périnéale.",
@@ -3866,6 +4166,16 @@ window.GLOSSAIRE = {
   "t": "Pyélonéphrite",
   "d": "Infection du rein, montée depuis la vessie : fièvre, douleur lombaire. Plus grave qu'une simple cystite.",
   "dom": "Physiopathologie"
+ },
+ "pylori": {
+  "t": "Helicobacter pylori",
+  "d": "Bactérie de la muqueuse gastrique, responsable de la plupart des ulcères et facteur de cancer de l'estomac.",
+  "dom": "Physiopathologie"
+ },
+ "pylorique": {
+  "t": "Pylore",
+  "d": "Le sphincter qui ferme l'estomac en bas et règle la vidange gastrique vers le duodénum.",
+  "dom": "Anatomie"
  },
  "pyrogene": {
   "t": "Pyrogène",
@@ -3907,6 +4217,11 @@ window.GLOSSAIRE = {
   "d": "Traitement du cancer par rayonnements ionisants. Fatigue, radiodermite et fibrose tardive en sont les effets fréquents.",
   "dom": "Physiopathologie"
  },
+ "ranvier": {
+  "t": "Nœuds de Ranvier",
+  "d": "Les interruptions de la gaine de myéline. Le potentiel d'action y saute de l'un à l'autre : c'est la conduction saltatoire.",
+  "dom": "Neurologie"
+ },
  "rct": {
   "t": "RCT — randomized controlled trial",
   "d": "Nom anglais de l'essai contrôlé randomisé.",
@@ -3946,6 +4261,11 @@ window.GLOSSAIRE = {
   "t": "Rémission",
   "d": "Disparition des signes de la maladie, sans garantie qu'elle soit guérie. La rechute reste possible.",
   "dom": "Physiopathologie"
+ },
+ "renine": {
+  "t": "Rénine",
+  "d": "Enzyme libérée par le rein quand la pression baisse. Elle déclenche la cascade rénine-angiotensine-aldostérone.",
+  "dom": "Physiologie"
  },
  "repolarisation": {
   "t": "Repolarisation",
@@ -4037,6 +4357,11 @@ window.GLOSSAIRE = {
   "d": "Bascule d'un segment vers l'arrière, l'inverse de l'antéversion.",
   "dom": "Musculo-squelettique"
  },
+ "sackett": {
+  "t": "Sackett",
+  "d": "L'un des fondateurs de la médecine fondée sur les preuves : croiser la meilleure preuve, l'expertise clinique et les préférences du patient.",
+  "dom": "Recherche"
+ },
  "sacro-iliite": {
   "t": "Sacro-iliite",
   "d": "Inflammation de l'articulation sacro-iliaque : douleur fessière et raideur matinale. Signe précoce des spondylarthrites.",
@@ -4082,6 +4407,11 @@ window.GLOSSAIRE = {
   "d": "Le réservoir à calcium de la fibre musculaire. Sa libération déclenche la contraction, sa recapture la relâche.",
   "dom": "Physiologie"
  },
+ "scalene": {
+  "t": "Scalènes",
+  "d": "Trois muscles latéraux du cou, inspirateurs accessoires. Le paquet vasculo-nerveux du bras passe entre eux : premier défilé thoraco-brachial.",
+  "dom": "Anatomie"
+ },
  "scapulo-humeral": {
   "t": "Rythme scapulo-huméral",
   "d": "La répartition du mouvement entre glénohumérale et scapula pendant l'élévation du bras : environ deux tiers, un tiers.",
@@ -4091,6 +4421,11 @@ window.GLOSSAIRE = {
   "t": "Schéma capsulaire",
   "d": "L'ordre caractéristique dans lequel les amplitudes se limitent quand la capsule entière est atteinte. Chaque articulation a le sien : il signe une atteinte capsulaire plutôt qu'une lésion isolée.",
   "dom": "Musculo-squelettique"
+ },
+ "schizophrenie": {
+  "t": "Schizophrénie",
+  "d": "Trouble psychotique chronique associant des signes positifs — délire, hallucinations — et négatifs : retrait, appauvrissement de l'élan.",
+  "dom": "Psychologie"
  },
  "schober": {
   "t": "Test de Schober",
@@ -4142,6 +4477,21 @@ window.GLOSSAIRE = {
   "d": "Diminution volontaire de la vigilance par médicament, pour calmer l'anxiété, la douleur ou permettre un geste.",
   "dom": "Pharmacologie"
  },
+ "sediment": {
+  "t": "Sédiments",
+  "d": "Dépôts accumulés couche par couche. Leur ordre et leur contenu permettent de reconstituer les climats du passé.",
+  "dom": "SVT"
+ },
+ "segmentation": {
+  "t": "Segmentation",
+  "d": "Mouvement intestinal de brassage sur place, qui mélange le contenu sans le faire avancer. Le péristaltisme, lui, propulse.",
+  "dom": "Physiologie"
+ },
+ "semence": {
+  "t": "Semences",
+  "d": "Graines sélectionnées pour la culture. Leur contrôle est devenu un enjeu économique et politique.",
+  "dom": "SVT"
+ },
  "semi-fowler": {
   "t": "Position de Fowler",
   "d": "Demi-assis au lit. Fowler à 45-60°, semi-Fowler à 30°. Elle facilite la ventilation et limite le reflux.",
@@ -4182,6 +4532,16 @@ window.GLOSSAIRE = {
   "d": "Lié à une infection. Un choc septique est une défaillance circulatoire provoquée par une infection généralisée.",
   "dom": "Physiopathologie"
  },
+ "septum": {
+  "t": "Septum",
+  "d": "Cloison qui sépare deux cavités : septum nasal, septum interventriculaire du cœur.",
+  "dom": "Anatomie"
+ },
+ "sertoli": {
+  "t": "Cellules de Sertoli et de Leydig",
+  "d": "Sertoli nourrit les cellules germinales dans le tube séminifère ; Leydig, à côté, produit la testostérone.",
+  "dom": "Physiologie"
+ },
  "sfp": {
   "t": "SFP — syndrome fémoro-patellaire",
   "d": "Douleur antérieure du genou liée au mauvais engagement de la rotule dans la trochlée. Explorée par McConnell, Clarke et l'angle Q.",
@@ -4191,6 +4551,11 @@ window.GLOSSAIRE = {
   "t": "Shaking et vibrations",
   "d": "Secousses rythmées appliquées au thorax ou au membre, pour décoller les sécrétions ou relâcher un muscle.",
   "dom": "EAIF"
+ },
+ "sibilant": {
+  "t": "Sibilants et ronchi",
+  "d": "Bruits respiratoires d'obstruction. Sibilants aigus des petites bronches — asthme ; ronchi graves des grosses bronches encombrées.",
+  "dom": "Cardio-respiratoire"
  },
  "sin-ss": {
   "t": "SIN-SS",
@@ -4211,6 +4576,11 @@ window.GLOSSAIRE = {
   "t": "SLAP — Superior Labrum Anterior to Posterior",
   "d": "Lésion du bourrelet glénoïdien à son attache supérieure, là où s'insère le long biceps. Explorée par O'Brien et Biceps Load II.",
   "dom": "Musculo-squelettique"
+ },
+ "sling": {
+  "t": "Slings (chaînes myofasciales)",
+  "d": "Les chaînes musculaires obliques et longitudinales qui transmettent les forces d'un membre à l'autre à travers le tronc.",
+  "dom": "Biomécanique"
  },
  "slr": {
   "t": "SLR — Straight Leg Raise",
@@ -4387,10 +4757,20 @@ window.GLOSSAIRE = {
   "d": "Grille de rédaction des études observationnelles : cohortes, cas-témoins, transversales.",
   "dom": "Recherche"
  },
+ "stroma": {
+  "t": "Stroma",
+  "d": "La charpente de soutien d'un organe — conjonctif et vaisseaux — par opposition au parenchyme, qui en assure la fonction.",
+  "dom": "Anatomie"
+ },
  "subduction": {
   "t": "Subduction",
   "d": "Plongement d'une lithosphère océanique dense sous une autre plaque, avec fosse, volcanisme andésitique et séismes profonds.",
   "dom": "SVT"
+ },
+ "sublinguale": {
+  "t": "Voie sublinguale",
+  "d": "Sous la langue : absorption rapide, qui évite le premier passage hépatique. Utilisée pour la trinitrine.",
+  "dom": "Pharmacologie"
  },
  "subscapulaire": {
   "t": "Subscapulaire",
@@ -4467,6 +4847,11 @@ window.GLOSSAIRE = {
   "d": "En densitométrie osseuse, l'écart à la densité d'un adulte jeune. Sous −2,5 écarts-types : ostéoporose.",
   "dom": "Musculo-squelettique"
  },
+ "tabatiere": {
+  "t": "Tabatière anatomique",
+  "d": "Le creux à la base du pouce, bordé par les tendons extenseurs. Une douleur à ce niveau évoque une fracture du scaphoïde.",
+  "dom": "Anatomie"
+ },
  "tachycardie": {
   "t": "Tachycardie",
   "d": "Fréquence cardiaque au repos au-dessus de 100 battements par minute.",
@@ -4476,6 +4861,11 @@ window.GLOSSAIRE = {
   "t": "Tachypnée",
   "d": "Respiration anormalement rapide.",
   "dom": "Cardio-respiratoire"
+ },
+ "taping": {
+  "t": "Taping",
+  "d": "Application de bandes adhésives sur la peau pour soutenir, limiter une amplitude ou modifier la perception du mouvement.",
+  "dom": "EAIF"
  },
  "tardieu": {
   "t": "Échelle de Tardieu",
@@ -4672,6 +5062,16 @@ window.GLOSSAIRE = {
   "d": "En appui sur une jambe, le bassin bascule du côté opposé : les abducteurs de hanche — moyen fessier en tête — ne tiennent pas.",
   "dom": "Musculo-squelettique"
  },
+ "tricuspide": {
+  "t": "Valves auriculo-ventriculaires",
+  "d": "La tricuspide à droite, la mitrale à gauche. Elles empêchent le reflux du ventricule vers l'oreillette.",
+  "dom": "Anatomie"
+ },
+ "trigger": {
+  "t": "Point trigger",
+  "d": "Nodule douloureux dans un cordon musculaire, qui déclenche une douleur projetée à distance quand on le presse.",
+  "dom": "Musculo-squelettique"
+ },
  "trijumeau": {
   "t": "Nerf trijumeau",
   "d": "Cinquième nerf crânien : sensibilité de la face en trois territoires, et commande des muscles masticateurs.",
@@ -4722,10 +5122,20 @@ window.GLOSSAIRE = {
   "d": "Perte de substance d'un revêtement — peau ou muqueuse — qui met le tissu sous-jacent à nu.",
   "dom": "Physiopathologie"
  },
+ "updrs": {
+  "t": "MDS-UPDRS",
+  "d": "L'échelle de référence du Parkinson : vécu quotidien, examen moteur, complications du traitement.",
+  "dom": "Neurologie"
+ },
  "uretere": {
   "t": "Uretère",
   "d": "Le conduit qui descend du rein à la vessie. À ne pas confondre avec l'urètre, qui va de la vessie à l'extérieur.",
   "dom": "Anatomie"
+ },
+ "urique": {
+  "t": "Acide urique",
+  "d": "Produit final de la dégradation des purines. Son excès précipite en cristaux dans les articulations : la goutte.",
+  "dom": "Physiologie"
  },
  "usi": {
   "t": "USI — unité de soins intensifs",
@@ -4736,6 +5146,11 @@ window.GLOSSAIRE = {
   "t": "Utricule et saccule",
   "d": "Les deux organes otolithiques du vestibule : ils détectent les accélérations linéaires et la position de la tête.",
   "dom": "Neurologie"
+ },
+ "valgum": {
+  "t": "Valgum et varum",
+  "d": "Genu valgum : genoux en dedans, jambes en X. Genu varum : genoux en dehors, jambes arquées.",
+  "dom": "Biomécanique"
  },
  "valgus": {
   "t": "Valgus",
@@ -4761,6 +5176,11 @@ window.GLOSSAIRE = {
   "t": "Varus",
   "d": "Déviation d'un segment vers l'intérieur — genoux qui s'écartent, en O.",
   "dom": "Musculo-squelettique"
+ },
+ "vascularise": {
+  "t": "Vascularisation",
+  "d": "L'apport sanguin d'un tissu. Bien vascularisé, il cicatrise vite ; peu vascularisé — tendon, ménisque, cartilage — il cicatrise mal.",
+  "dom": "Physiologie"
  },
  "vasoconstriction": {
   "t": "Vasoconstriction",
@@ -4817,6 +5237,11 @@ window.GLOSSAIRE = {
   "d": "Consommation maximale d'oxygène, plafond de la capacité aérobie d'un individu.",
   "dom": "Physiologie"
  },
+ "volcanisme": {
+  "t": "Volcanisme",
+  "d": "Remontée de magma en surface. Il accompagne les dorsales, les zones de subduction et les points chauds.",
+  "dom": "SVT"
+ },
  "vr": {
   "t": "VR — volume résiduel",
   "d": "Volume d'air qui reste dans les poumons après une expiration maximale. Il ne peut pas être mesuré par spirométrie simple.",
@@ -4840,6 +5265,16 @@ window.GLOSSAIRE = {
  "vygotsky": {
   "t": "Vygotsky",
   "d": "Psychologue du développement pour qui l'apprentissage précède et tire la maturation, grâce à l'étayage d'un adulte ou d'un pair.",
+  "dom": "Psychologie"
+ },
+ "warfarine": {
+  "t": "Warfarine",
+  "d": "Anticoagulant oral antivitamine K, à marge thérapeutique étroite, surveillé par l'INR.",
+  "dom": "Pharmacologie"
+ },
+ "watson": {
+  "t": "Watson",
+  "d": "Fondateur du behaviorisme : seul le comportement observable compte, et tout s'apprend par conditionnement.",
   "dom": "Psychologie"
  },
  "weber-rinne": {
