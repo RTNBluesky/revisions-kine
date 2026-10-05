@@ -11,19 +11,19 @@
   --bg-tertiary: #161922;
   --bg-card: #161922;
   --border-subtle: #2a3050;
-  --text-primary: #ff8fa3;
-  --text-secondary: #f472b6;
+  --text-primary: var(--accent-4, #ff8fa3);
+  --text-secondary: var(--accent-3, #f472b6);
   --text-muted: #6a7388;
 
   /* Couleurs par système */
-  --c-digestif: #ff8fa3;
-  --c-digestif-soft: rgba(255,107,157,0.15);
-  --c-urinaire: #ff8fa3;
-  --c-urinaire-soft: rgba(255,107,157,0.15);
+  --c-digestif: var(--accent-4, #ff8fa3);
+  --c-digestif-soft: rgba(var(--accent-rgb, 255,107,157), 0.15);
+  --c-urinaire: var(--accent-4, #ff8fa3);
+  --c-urinaire-soft: rgba(var(--accent-rgb, 255,107,157), 0.15);
   --c-cardio: #20243a;
-  --c-cardio-soft: rgba(255,92,107,0.15);
-  --c-respi: #f472b6;
-  --c-respi-soft: rgba(255,107,157,0.15);
+  --c-cardio-soft: rgba(var(--accent-2-rgb, 255,92,107), 0.15);
+  --c-respi: var(--accent-3, #f472b6);
+  --c-respi-soft: rgba(var(--accent-rgb, 255,107,157), 0.15);
 
   --accent: var(--c-urinaire);
   --accent-soft: var(--c-urinaire-soft);
@@ -40,8 +40,8 @@ body {
   line-height: 1.65;
   min-height: 100vh;
   background-image:
-    radial-gradient(circle at 20% 0%, rgba(255,107,157,0.04) 0%, transparent 40%),
-    radial-gradient(circle at 80% 100%, rgba(255,107,157,0.04) 0%, transparent 40%);
+    radial-gradient(circle at 20% 0%, rgba(var(--accent-rgb, 255,107,157), 0.04) 0%, transparent 40%),
+    radial-gradient(circle at 80% 100%, rgba(var(--accent-rgb, 255,107,157), 0.04) 0%, transparent 40%);
   background-attachment: fixed;
 }
 
@@ -674,7 +674,7 @@ body.theme-respi    { --accent: var(--c-respi);    --accent-soft: var(--c-respi-
 }
 
 .qcm-opt.wrong {
-  background: rgba(255,166,87,0.18);
+  background: rgba(var(--orange-rgb, 255,159,67), 0.18);
   border-color: var(--c-cardio);
   color: var(--c-cardio);
   text-decoration: line-through;

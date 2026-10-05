@@ -21,13 +21,13 @@
  --surface: #161922;
  --surface2: #1a1d2a;
  --border: #2a3050;
- --accent: #ff5c6b;
- --accent2: #ff8fa3;
- --accent3: #f472b6;
+ --accent: var(--accent-2, #ff5c6b);
+ --accent2: var(--accent-4, #ff8fa3);
+ --accent3: var(--accent-3, #f472b6);
  --text: #9aa3b8;
  --text-muted: #9aa3b8;
- --benign: #ff6b9d;
- --malign: #ff5c6b;
+ --benign: var(--accent, #ff6b9d);
+ --malign: var(--accent-2, #ff5c6b);
  --radius: 10px;
  }
 
@@ -54,7 +54,7 @@
  position: absolute;
  top: -60px; right: -60px;
  width: 300px; height: 300px;
- background: radial-gradient(circle, rgba(255,92,107,0.12) 0%, transparent 70%);
+ background: radial-gradient(circle, rgba(var(--accent-2-rgb, 255,92,107), 0.12) 0%, transparent 70%);
  border-radius: 50%;
  }
  header::after {
@@ -62,7 +62,7 @@
  position: absolute;
  bottom: -80px; left: -40px;
  width: 250px; height: 250px;
- background: radial-gradient(circle, rgba(255,107,157,0.08) 0%, transparent 70%);
+ background: radial-gradient(circle, rgba(var(--accent-rgb, 255,107,157), 0.08) 0%, transparent 70%);
  border-radius: 50%;
  }
  .header-badge {
@@ -278,7 +278,7 @@
  border-radius: 4px;
  font-size: 12px;
  font-weight: 600;
- background: rgba(255,92,107,0.15);
+ background: rgba(var(--accent-2-rgb, 255,92,107), 0.15);
  color: var(--accent);
  font-family: monospace;
  }
@@ -382,8 +382,8 @@
 
  /* HIGHLIGHT BOX */
  .highlight {
- background: linear-gradient(135deg, rgba(255,92,107,0.1) 0%, rgba(255,107,157,0.05) 100%);
- border: 1px solid rgba(255,92,107,0.3);
+ background: linear-gradient(135deg, rgba(var(--accent-2-rgb, 255,92,107), 0.1) 0%, rgba(var(--accent-rgb, 255,107,157), 0.05) 100%);
+ border: 1px solid rgba(var(--accent-2-rgb, 255,92,107), 0.3);
  border-radius: var(--radius);
  padding: 16px 20px;
  margin-bottom: 14px;
@@ -505,7 +505,7 @@
 
  .tag {
  display: inline-block;
- background: rgba(255,107,157,0.15);
+ background: rgba(var(--accent-rgb, 255,107,157), 0.15);
  color: var(--accent3);
  font-size: 11px;
  padding: 2px 8px;
@@ -513,8 +513,8 @@
  margin-right: 4px;
  font-weight: 600;
  }
- .tag.orange { background: rgba(255,92,107,0.15); color: var(--accent); }
- .tag.gold { background: rgba(255,107,157,0.15); color: var(--accent2); }
+ .tag.orange { background: rgba(var(--accent-2-rgb, 255,92,107), 0.15); color: var(--accent); }
+ .tag.gold { background: rgba(var(--accent-rgb, 255,107,157), 0.15); color: var(--accent2); }
 </style>
  <link rel="stylesheet" href="../../../../../../assets/css/modules/physio-patho.css">
 
@@ -522,6 +522,8 @@
 
  <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
 <link rel="stylesheet" href="../../../../../../assets/css/schemas.css">
+<link rel="stylesheet" href="../../../../../../assets/css/themes.css">
+<script src="../../../../../../assets/js/theme.js"></script>
 </head>
 <body>
 <a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
@@ -1112,7 +1114,7 @@
  </footer>
 
 </div>
-<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-15.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-15.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(var(--accent-2-rgb, 255,92,107), 0.12), rgba(var(--accent-rgb, 255,107,157), 0.12)); border:1px solid rgba(var(--accent-rgb, 255,107,157), 0.35); color:var(--accent-4, #ff8fa3); text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
 <script src="../../../../../../assets/js/glossaire.js"></script>
 </body>
 </html>

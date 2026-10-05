@@ -11,8 +11,8 @@
   height: 20px;
   margin-left: 7px;
   border-radius: 6px;
-  background: rgba(255, 92, 107, 0.14);
-  border: 1px solid rgba(255, 92, 107, 0.32);
+  background: rgba(var(--accent-2-rgb, 255,92,107), 0.14);
+  border: 1px solid rgba(var(--accent-2-rgb, 255,92,107), 0.32);
   color: var(--accent-4);
   font-size: 9px;
   line-height: 1;
@@ -21,7 +21,7 @@
   transition: background 0.2s, border-color 0.2s, transform 0.2s;
 }
 .video-test:hover {
-  background: rgba(255, 92, 107, 0.28);
+  background: rgba(var(--accent-2-rgb, 255,92,107), 0.28);
   border-color: var(--accent-2);
   color: #ffe3ea;
   transform: scale(1.12);
@@ -39,8 +39,8 @@
   margin: 18px 0 8px;
   padding: 11px 15px;
   border-radius: 12px;
-  background: rgba(255, 92, 107, 0.07);
-  border: 1px solid rgba(255, 92, 107, 0.20);
+  background: rgba(var(--accent-2-rgb, 255,92,107), 0.07);
+  border: 1px solid rgba(var(--accent-2-rgb, 255,92,107), 0.20);
   font-size: 13.5px;
   color: var(--muted);
 }
@@ -56,8 +56,8 @@
   width: 19px;
   height: 19px;
   border-radius: 6px;
-  background: rgba(255, 92, 107, 0.14);
-  border: 1px solid rgba(255, 92, 107, 0.32);
+  background: rgba(var(--accent-2-rgb, 255,92,107), 0.14);
+  border: 1px solid rgba(var(--accent-2-rgb, 255,92,107), 0.32);
   color: var(--accent-4);
   font-size: 9px;
   line-height: 1;
@@ -89,7 +89,7 @@
 }
 .som-liste a:hover {
   border-color: var(--accent-2);
-  background: rgba(255, 92, 107, 0.06);
+  background: rgba(var(--accent-2-rgb, 255,92,107), 0.06);
 }
 .som-n, .h2-n {
   font-size: 11.5px;
@@ -106,9 +106,9 @@ article.fiche td.col-test { white-space: normal; }
 article.fiche td.col-patho {
   vertical-align: middle;
   text-align: center;
-  background: rgba(255, 92, 107, 0.05);
-  border-left: 2px solid rgba(255, 92, 107, 0.28);
-  border-right: 2px solid rgba(255, 92, 107, 0.28);
+  background: rgba(var(--accent-2-rgb, 255,92,107), 0.05);
+  border-left: 2px solid rgba(var(--accent-2-rgb, 255,92,107), 0.28);
+  border-right: 2px solid rgba(var(--accent-2-rgb, 255,92,107), 0.28);
   font-size: .88rem;
 }
 article.fiche td.col-patho strong { color: var(--accent-4); }

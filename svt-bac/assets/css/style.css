@@ -27,7 +27,7 @@
   --ok: #3dd68c;
   --ok-soft: rgba(61,214,140,0.12);
   --ko: #ff5c6b;
-  --ko-soft: rgba(255,92,107,0.12);
+  --ko-soft: rgba(255,92,107, 0.12);
   --warn: #a5a0ff;
 
   --radius: 14px;
@@ -329,8 +329,8 @@ article.fiche tbody tr:hover { background: rgba(124,108,245,0.05); }
   margin: -4px 0 12px;
   padding: 5px 11px;
   border-radius: 999px;
-  background: rgba(255,159,67,0.10);
-  border: 1px solid rgba(255,159,67,0.35);
+  background: rgba(var(--orange-rgb, 255,159,67), 0.10);
+  border: 1px solid rgba(var(--orange-rgb, 255,159,67), 0.35);
   color: #fcd49b;
   font-size: .78rem;
   font-weight: 600;
@@ -365,7 +365,7 @@ article.fiche tbody tr:hover { background: rgba(124,108,245,0.05); }
 }
 .opt.wrong {
   background: var(--ko-soft);
-  border-color: rgba(255,92,107,0.45);
+  border-color: rgba(var(--accent-2-rgb, 255,92,107), 0.45);
   color: #ffd1d6;
 }
 .opt.locked { cursor: default; transform: none; }

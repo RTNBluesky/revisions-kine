@@ -19,11 +19,11 @@
  :root {
  --bg: #0f1117;
  --ink: #e8eaf0;
- --accent: #ff5c6b;
- --accent2: #ff8fa3;
- --accent3: #ff6b9d;
- --accent4: #f472b6;
- --accent5: #f472b6;
+ --accent: var(--accent-2, #ff5c6b);
+ --accent2: var(--accent-4, #ff8fa3);
+ --accent3: var(--accent, #ff6b9d);
+ --accent4: var(--accent-3, #f472b6);
+ --accent5: var(--accent-3, #f472b6);
  --muted: #9aa3b8;
  --card: #1a1d2a;
  --border: #2a3050;
@@ -151,25 +151,25 @@
  }
 
  /* Color themes per section */
- .red .section-icon { background: rgba(255, 92, 107, 0.15); }
+ .red .section-icon { background: rgba(var(--accent-2-rgb, 255,92,107), 0.15); }
  .red .section-title { color: var(--accent); }
- .red .section-header { border-color: rgba(255, 92, 107, 0.3); }
+ .red .section-header { border-color: rgba(var(--accent-2-rgb, 255,92,107), 0.3); }
 
- .orange .section-icon { background: rgba(255,107,157,0.15); }
+ .orange .section-icon { background: rgba(var(--accent-rgb, 255,107,157), 0.15); }
  .orange .section-title { color: var(--accent2); }
- .orange .section-header { border-color: rgba(255,107,157,0.3); }
+ .orange .section-header { border-color: rgba(var(--accent-rgb, 255,107,157), 0.3); }
 
  .green .section-icon { background: rgba(61, 214, 140, 0.15); }
  .green .section-title { color: var(--accent3); }
  .green .section-header { border-color: rgba(61, 214, 140, 0.3); }
 
- .blue .section-icon { background: rgba(255,107,157,0.15); }
+ .blue .section-icon { background: rgba(var(--accent-rgb, 255,107,157), 0.15); }
  .blue .section-title { color: var(--accent4); }
- .blue .section-header { border-color: rgba(255,107,157,0.3); }
+ .blue .section-header { border-color: rgba(var(--accent-rgb, 255,107,157), 0.3); }
 
- .purple .section-icon { background: rgba(255,107,157,0.15); }
+ .purple .section-icon { background: rgba(var(--accent-rgb, 255,107,157), 0.15); }
  .purple .section-title { color: var(--accent5); }
- .purple .section-header { border-color: rgba(255,107,157,0.3); }
+ .purple .section-header { border-color: rgba(var(--accent-rgb, 255,107,157), 0.3); }
 
  .dark .section-icon { background: rgba(232, 234, 240, 0.1); }
  .dark .section-title { color: var(--ink); }
@@ -189,7 +189,7 @@
  padding: 3px 9px;
  font-size: 11px;
  font-weight: 600;
- box-shadow: 0 2px 6px rgba(255,107,157,0.25);
+ box-shadow: 0 2px 6px rgba(var(--accent-rgb, 255,107,157), 0.25);
  }
  .arrow {
  color: var(--accent2);
@@ -382,6 +382,8 @@
 
  <link rel="stylesheet" href="../../../../../assets/css/modules/fiche-layout.css">
 <link rel="stylesheet" href="../../../../../assets/css/schemas.css">
+<link rel="stylesheet" href="../../../../../assets/css/themes.css">
+<script src="../../../../../assets/js/theme.js"></script>
 </head>
 <body>
 <a href="../accueil-physio.html" class="back-nav">← Physiologie II</a>
@@ -807,7 +809,7 @@
  Fiche de révision – Physiologie II | · Cours 1 : Système Digestif
 </div>
 
-<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../qcm/qcm-1-systeme-digestif.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../qcm/qcm-1-systeme-digestif.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(var(--accent-2-rgb, 255,92,107), 0.12), rgba(var(--accent-rgb, 255,107,157), 0.12)); border:1px solid rgba(var(--accent-rgb, 255,107,157), 0.35); color:var(--accent-4, #ff8fa3); text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
 <script src="../../../../../assets/js/glossaire.js"></script>
 </body>
 </html>

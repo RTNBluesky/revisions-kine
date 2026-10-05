@@ -21,11 +21,11 @@
  --surface: #161922;
  --surface2: #1a1d2a;
  --border: #3a4060;
- --accent: #ff5c6b;
- --accent2: #ff8fa3;
- --accent3: #f472b6;
- --accent4: #ff6b9d;
- --accent5: #f472b6;
+ --accent: var(--accent-2, #ff5c6b);
+ --accent2: var(--accent-4, #ff8fa3);
+ --accent3: var(--accent-3, #f472b6);
+ --accent4: var(--accent, #ff6b9d);
+ --accent5: var(--accent-3, #f472b6);
  --text: #9aa3b8;
  --text-muted: #9aa3b8;
  --text-dim: #6a7388;
@@ -55,7 +55,7 @@
  content: '';
  position: absolute;
  inset: 0;
- background: radial-gradient(ellipse at 50% 0%, rgba(255,92,107,0.15) 0%, transparent 70%);
+ background: radial-gradient(ellipse at 50% 0%, rgba(var(--accent-2-rgb, 255,92,107), 0.15) 0%, transparent 70%);
  pointer-events: none;
  }
  .header-tag {
@@ -188,15 +188,15 @@
 
  /* HIGHLIGHT BOX */
  .highlight {
- background: linear-gradient(135deg, rgba(255,92,107,0.08) 0%, rgba(255,92,107,0.03) 100%);
- border: 1px solid rgba(255,92,107,0.3);
+ background: linear-gradient(135deg, rgba(var(--accent-2-rgb, 255,92,107), 0.08) 0%, rgba(var(--accent-2-rgb, 255,92,107), 0.03) 100%);
+ border: 1px solid rgba(var(--accent-2-rgb, 255,92,107), 0.3);
  padding: 1.2rem 1.5rem;
  border-radius: 4px;
  margin-bottom: 1.2rem;
  }
- .highlight.blue { background: linear-gradient(135deg, rgba(255,107,157,0.08) 0%, transparent 100%); border-color: rgba(255,107,157,0.3); }
- .highlight.green { background: linear-gradient(135deg, rgba(255,107,157,0.08) 0%, transparent 100%); border-color: rgba(255,107,157,0.3); }
- .highlight.yellow { background: linear-gradient(135deg, rgba(255,107,157,0.08) 0%, transparent 100%); border-color: rgba(255,107,157,0.3); }
+ .highlight.blue { background: linear-gradient(135deg, rgba(var(--accent-rgb, 255,107,157), 0.08) 0%, transparent 100%); border-color: rgba(var(--accent-rgb, 255,107,157), 0.3); }
+ .highlight.green { background: linear-gradient(135deg, rgba(var(--accent-rgb, 255,107,157), 0.08) 0%, transparent 100%); border-color: rgba(var(--accent-rgb, 255,107,157), 0.3); }
+ .highlight.yellow { background: linear-gradient(135deg, rgba(var(--accent-rgb, 255,107,157), 0.08) 0%, transparent 100%); border-color: rgba(var(--accent-rgb, 255,107,157), 0.3); }
 
  .highlight h4 {
  font-family: 'JetBrains Mono', monospace;
@@ -338,11 +338,11 @@
  border-radius: 2px;
  margin-right: 0.3rem;
  }
- .badge-red { background: rgba(255,92,107,0.15); color: var(--accent); }
- .badge-blue { background: rgba(255,107,157,0.15); color: var(--accent3); }
- .badge-green { background: rgba(255,107,157,0.15); color: var(--accent4); }
- .badge-yellow { background: rgba(255,107,157,0.15); color: var(--accent2); }
- .badge-purple { background: rgba(255,107,157,0.15); color: var(--accent5); }
+ .badge-red { background: rgba(var(--accent-2-rgb, 255,92,107), 0.15); color: var(--accent); }
+ .badge-blue { background: rgba(var(--accent-rgb, 255,107,157), 0.15); color: var(--accent3); }
+ .badge-green { background: rgba(var(--accent-rgb, 255,107,157), 0.15); color: var(--accent4); }
+ .badge-yellow { background: rgba(var(--accent-rgb, 255,107,157), 0.15); color: var(--accent2); }
+ .badge-purple { background: rgba(var(--accent-rgb, 255,107,157), 0.15); color: var(--accent5); }
 
  /* KEY TERM */
  .key { color: var(--accent2); font-weight: 600; }
@@ -396,6 +396,8 @@
  <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-theme.css">
 
  <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
+<link rel="stylesheet" href="../../../../../../assets/css/themes.css">
+<script src="../../../../../../assets/js/theme.js"></script>
 </head>
 <body>
 <a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
@@ -1115,7 +1117,7 @@
 <footer>
  PHYSIOPATHOLOGIE 1 · LICENCE EN PHYSIOTHÉRAPIE · 1ER ANNÉE · 2E SEMESTRE</footer>
 
-<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-03.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-03.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(var(--accent-2-rgb, 255,92,107), 0.12), rgba(var(--accent-rgb, 255,107,157), 0.12)); border:1px solid rgba(var(--accent-rgb, 255,107,157), 0.35); color:var(--accent-4, #ff8fa3); text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
 <script src="../../../../../../assets/js/glossaire.js"></script>
 </body>
 </html>

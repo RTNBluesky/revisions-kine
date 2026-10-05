@@ -21,17 +21,17 @@
  --surface: #161922;
  --surface2: #1a1d2a;
  --border: #2a3050;
- --accent: #ff8fa3;
- --accent2: #f472b6;
- --accent3: #ff6b9d;
- --accent4: #ff6b9d;
+ --accent: var(--accent-4, #ff8fa3);
+ --accent2: var(--accent-3, #f472b6);
+ --accent3: var(--accent, #ff6b9d);
+ --accent4: var(--accent, #ff6b9d);
  --text: #9aa3b8;
  --text-muted: #9aa3b8;
  --text-dim: #6a7388;
- --reversible: #ff6b9d;
- --irreversible: #ff6b9d;
- --adaptation: #f472b6;
- --accumulation: #ff8fa3;
+ --reversible: var(--accent, #ff6b9d);
+ --irreversible: var(--accent, #ff6b9d);
+ --adaptation: var(--accent-3, #f472b6);
+ --accumulation: var(--accent-4, #ff8fa3);
  }
 
  * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -58,8 +58,8 @@
  content: '';
  position: absolute;
  inset: 0;
- background: radial-gradient(ellipse 60% 80% at 80% 50%, rgba(255,107,157,0.07) 0%, transparent 70%),
- radial-gradient(ellipse 40% 60% at 20% 80%, rgba(255,107,157,0.06) 0%, transparent 70%);
+ background: radial-gradient(ellipse 60% 80% at 80% 50%, rgba(var(--accent-rgb, 255,107,157), 0.07) 0%, transparent 70%),
+ radial-gradient(ellipse 40% 60% at 20% 80%, rgba(var(--accent-rgb, 255,107,157), 0.06) 0%, transparent 70%);
  }
 
  .hero-label {
@@ -109,10 +109,10 @@
  border: 1px solid;
  }
 
- .tag-adapt { border-color: var(--adaptation); color: var(--adaptation); background: rgba(255,107,157,0.08); }
- .tag-lesion { border-color: var(--reversible); color: var(--reversible); background: rgba(255,107,157,0.08); }
- .tag-mort { border-color: var(--irreversible); color: var(--irreversible); background: rgba(255,92,107,0.08); }
- .tag-acc { border-color: var(--accumulation); color: var(--accumulation); background: rgba(255,107,157,0.08); }
+ .tag-adapt { border-color: var(--adaptation); color: var(--adaptation); background: rgba(var(--accent-rgb, 255,107,157), 0.08); }
+ .tag-lesion { border-color: var(--reversible); color: var(--reversible); background: rgba(var(--accent-rgb, 255,107,157), 0.08); }
+ .tag-mort { border-color: var(--irreversible); color: var(--irreversible); background: rgba(var(--accent-2-rgb, 255,92,107), 0.08); }
+ .tag-acc { border-color: var(--accumulation); color: var(--accumulation); background: rgba(var(--accent-rgb, 255,107,157), 0.08); }
 
  /* ─── NAV ─────────────────────────────────────────── */
  .nav-bar {
@@ -223,7 +223,7 @@
  .card-green::before { background: var(--reversible); }
  .card-red::before { background: var(--irreversible); }
  .card-gold::before { background: var(--accumulation); }
- .card-purple::before { background: #f472b6; }
+ .card-purple::before { background: var(--accent-3, #f472b6); }
 
  .card-title {
  font-family: 'IBM Plex Mono', monospace;
@@ -247,7 +247,7 @@
  .dot-green { background: var(--reversible); }
  .dot-red { background: var(--irreversible); }
  .dot-gold { background: var(--accumulation); }
- .dot-purple { background: #f472b6; }
+ .dot-purple { background: var(--accent-3, #f472b6); }
 
  .card h3 {
  font-family: 'Playfair Display', serif;
@@ -364,12 +364,12 @@
  flex-shrink: 0;
  }
 
- .fn-normal { background: rgba(255,107,157,0.15); border: 1px solid rgba(255,107,157,0.4); color: var(--adaptation); }
- .fn-adapt { background: rgba(255,107,157,0.1); border: 1px solid rgba(255,107,157,0.3); color: var(--adaptation); }
- .fn-rev { background: rgba(255,107,157,0.1); border: 1px solid rgba(255,107,157,0.3); color: var(--reversible); }
- .fn-irrev { background: rgba(255,92,107,0.1); border: 1px solid rgba(255,92,107,0.3); color: var(--irreversible); }
- .fn-necr { background: rgba(255,92,107,0.2); border: 1px solid rgba(255,92,107,0.5); color: var(--irreversible); }
- .fn-apo { background: rgba(255,107,157,0.15); border: 1px solid rgba(255,107,157,0.4); color: #f472b6; }
+ .fn-normal { background: rgba(var(--accent-rgb, 255,107,157), 0.15); border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.4); color: var(--adaptation); }
+ .fn-adapt { background: rgba(var(--accent-rgb, 255,107,157), 0.1); border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.3); color: var(--adaptation); }
+ .fn-rev { background: rgba(var(--accent-rgb, 255,107,157), 0.1); border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.3); color: var(--reversible); }
+ .fn-irrev { background: rgba(var(--accent-2-rgb, 255,92,107), 0.1); border: 1px solid rgba(var(--accent-2-rgb, 255,92,107), 0.3); color: var(--irreversible); }
+ .fn-necr { background: rgba(var(--accent-2-rgb, 255,92,107), 0.2); border: 1px solid rgba(var(--accent-2-rgb, 255,92,107), 0.5); color: var(--irreversible); }
+ .fn-apo { background: rgba(var(--accent-rgb, 255,107,157), 0.15); border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.4); color: var(--accent-3, #f472b6); }
 
  /* ─── DEUX COLONNES ───────────────────────────────── */
  .two-col {
@@ -426,8 +426,8 @@
  vertical-align: middle;
  }
 
- .pill-physio { background: rgba(255,107,157,0.2); color: var(--reversible); border: 1px solid rgba(255,107,157,0.4); }
- .pill-patho { background: rgba(255,92,107,0.2); color: var(--irreversible); border: 1px solid rgba(255,92,107,0.4); }
+ .pill-physio { background: rgba(var(--accent-rgb, 255,107,157), 0.2); color: var(--reversible); border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.4); }
+ .pill-patho { background: rgba(var(--accent-2-rgb, 255,92,107), 0.2); color: var(--irreversible); border: 1px solid rgba(var(--accent-2-rgb, 255,92,107), 0.4); }
 
  /* ─── SÉPARATEUR ─────────────────────────────────── */
  .sep {
@@ -517,6 +517,8 @@
 
  <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
 <link rel="stylesheet" href="../../../../../../assets/css/schemas.css">
+<link rel="stylesheet" href="../../../../../../assets/css/themes.css">
+<script src="../../../../../../assets/js/theme.js"></script>
 </head>
 <body>
 <a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
@@ -1247,7 +1249,7 @@
  Physiopathologie 1 — Licence en Physiothérapie · Fiche de révision complète · Enseignante D
 </div>
 
-<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-02.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-02.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(var(--accent-2-rgb, 255,92,107), 0.12), rgba(var(--accent-rgb, 255,107,157), 0.12)); border:1px solid rgba(var(--accent-rgb, 255,107,157), 0.35); color:var(--accent-4, #ff8fa3); text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
 <script src="../../../../../../assets/js/glossaire.js"></script>
 </body>
 </html>

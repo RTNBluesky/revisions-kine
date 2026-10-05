@@ -21,11 +21,11 @@
  --surface: #1a1d2a;
  --surface2: #1a1d2a;
  --border: #3a4060;
- --accent-blue: #f472b6;
- --accent-teal: #ff6b9d;
- --accent-amber: #ff8fa3;
- --accent-rose: #ff6b9d;
- --accent-violet: #f472b6;
+ --accent-blue: var(--accent-3, #f472b6);
+ --accent-teal: var(--accent, #ff6b9d);
+ --accent-amber: var(--accent-4, #ff8fa3);
+ --accent-rose: var(--accent, #ff6b9d);
+ --accent-violet: var(--accent-3, #f472b6);
  --text: #e8eaf0;
  --text-muted: #9aa3b8;
  --heading: #ffffff;
@@ -40,7 +40,7 @@
  padding: 0 0 60px;
  }
  .hero {
- background: linear-gradient(135deg, #161922 0%, #0f1117 40%, #ff5c6b 100%);
+ background: linear-gradient(135deg, #161922 0%, #0f1117 40%, var(--accent-2, #ff5c6b) 100%);
  border-bottom: 1px solid var(--border);
  padding: 60px 40px 50px;
  text-align: center;
@@ -52,7 +52,7 @@
  position: absolute;
  width: 600px; height: 600px;
  border-radius: 50%;
- background: radial-gradient(circle, rgba(255,107,157,0.07) 0%, transparent 70%);
+ background: radial-gradient(circle, rgba(var(--accent-rgb, 255,107,157), 0.07) 0%, transparent 70%);
  top: -200px; left: 50%; transform: translateX(-50%);
  pointer-events: none;
  }
@@ -62,7 +62,7 @@
  letter-spacing: 3px;
  text-transform: uppercase;
  color: var(--accent-teal);
- border: 1px solid rgba(255,107,157,0.3);
+ border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.3);
  padding: 5px 14px;
  border-radius: 20px;
  margin-bottom: 20px;
@@ -107,7 +107,7 @@
  color: var(--text-muted);
  transition: all 0.25s;
  }
- .nav-pills a:hover { border-color: var(--accent-blue); color: var(--accent-blue); background: rgba(255,107,157,0.06); }
+ .nav-pills a:hover { border-color: var(--accent-blue); color: var(--accent-blue); background: rgba(var(--accent-rgb, 255,107,157), 0.06); }
  .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
  .section-header {
  display: flex;
@@ -142,7 +142,7 @@
  padding: 22px 22px 18px;
  transition: transform 0.2s, border-color 0.2s;
  }
- .card:hover { transform: translateY(-2px); border-color: rgba(255,107,157,0.25); }
+ .card:hover { transform: translateY(-2px); border-color: rgba(var(--accent-rgb, 255,107,157), 0.25); }
  .card-title {
  font-family: 'Playfair Display', serif;
  font-size: 1rem;
@@ -196,10 +196,10 @@
  .gold-card .level { font-family: 'Playfair Display', serif; font-size: 1.2rem; font-weight: 900; margin-bottom: 4px; }
  .gold-card .severity { font-size: 11px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
  .gold-card .value { font-size: 13px; font-weight: 600; }
- .gold1 { background: rgba(255,107,157,0.12); border: 1px solid rgba(255,107,157,0.3); color: var(--accent-teal); }
- .gold2 { background: rgba(255,107,157,0.12); border: 1px solid rgba(255,107,157,0.3); color: var(--accent-blue); }
- .gold3 { background: rgba(255,107,157,0.12); border: 1px solid rgba(255,107,157,0.3); color: var(--accent-amber); }
- .gold4 { background: rgba(255,107,157,0.12); border: 1px solid rgba(255,107,157,0.3); color: var(--accent-rose); }
+ .gold1 { background: rgba(var(--accent-rgb, 255,107,157), 0.12); border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.3); color: var(--accent-teal); }
+ .gold2 { background: rgba(var(--accent-rgb, 255,107,157), 0.12); border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.3); color: var(--accent-blue); }
+ .gold3 { background: rgba(var(--accent-rgb, 255,107,157), 0.12); border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.3); color: var(--accent-amber); }
+ .gold4 { background: rgba(var(--accent-rgb, 255,107,157), 0.12); border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.3); color: var(--accent-rose); }
  .flow { display: flex; align-items: center; flex-wrap: wrap; gap: 0; margin: 16px 0; }
  .flow-step {
  background: var(--surface2);
@@ -213,8 +213,8 @@
  }
  .flow-arrow { color: var(--text-muted); font-size: 18px; padding: 0 6px; flex-shrink: 0; }
  .mnemonic {
- background: linear-gradient(135deg, rgba(255,107,157,0.1), rgba(255,107,157,0.07));
- border: 1px solid rgba(255,107,157,0.3);
+ background: linear-gradient(135deg, rgba(var(--accent-rgb, 255,107,157), 0.1), rgba(var(--accent-rgb, 255,107,157), 0.07));
+ border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.3);
  border-radius: 14px;
  padding: 20px 24px;
  margin-bottom: 16px;
@@ -224,7 +224,7 @@
  .mnemonic-letter { font-family: 'Playfair Display', serif; font-size: 1.6rem; font-weight: 900; color: var(--accent-violet); line-height: 1; }
  .mnemonic-word { font-size: 14px; padding: 2px 0; }
  .key-point {
- background: rgba(255,107,157,0.08);
+ background: rgba(var(--accent-rgb, 255,107,157), 0.08);
  border-left: 3px solid var(--accent-amber);
  border-radius: 0 10px 10px 0;
  padding: 12px 18px;
@@ -235,9 +235,9 @@
  .key-point strong { color: var(--accent-amber); font-style: normal; }
  .divider { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
  .tag { display: inline-block; padding: 2px 10px; border-radius: 12px; font-size: 11px; font-weight: 600; letter-spacing: 0.5px; margin-left: 6px; vertical-align: middle; }
- .tag-blue { background: rgba(255,107,157,0.15); color: var(--accent-blue); }
- .tag-teal { background: rgba(255,107,157,0.15); color: var(--accent-teal); }
- .tag-rose { background: rgba(255,107,157,0.15); color: var(--accent-rose); }
+ .tag-blue { background: rgba(var(--accent-rgb, 255,107,157), 0.15); color: var(--accent-blue); }
+ .tag-teal { background: rgba(var(--accent-rgb, 255,107,157), 0.15); color: var(--accent-teal); }
+ .tag-rose { background: rgba(var(--accent-rgb, 255,107,157), 0.15); color: var(--accent-rose); }
  .footer { text-align: center; color: var(--text-muted); font-size: 12px; padding: 40px 24px 20px; border-top: 1px solid var(--border); margin-top: 60px; font-style: italic; }
  @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
  @media (max-width: 700px) {
@@ -252,6 +252,8 @@
 
  <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
 <link rel="stylesheet" href="../../../../../../assets/css/schemas.css">
+<link rel="stylesheet" href="../../../../../../assets/css/themes.css">
+<script src="../../../../../../assets/js/theme.js"></script>
 </head>
 <body>
 <a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
@@ -322,7 +324,7 @@
  <!-- BPCO -->
  <div id="bpco">
  <div class="section-header">
- <div class="section-icon" style="background:rgba(255,183,77,0.12);border:1px solid rgba(255,183,77,0.25);">🚬</div>
+ <div class="section-icon" style="background:rgba(var(--orange-rgb, 255,159,67), 0.12);border:1px solid rgba(var(--orange-rgb, 255,159,67), 0.25);">🚬</div>
  <div>
  <h2>BPCO</h2>
  <p>Broncho-Pneumopathie Chronique Obstructive</p>
@@ -373,18 +375,18 @@
  <div class="flow-arrow">→</div>
  <div class="flow-step" style="border-color:rgba(156,143,230,0.3)">Stress oxydatif<br>Apoptose · Sénescence</div>
  <div class="flow-arrow">→</div>
- <div class="flow-step" style="border-color:rgba(240,98,146,0.3)">Cellules inflammatoires<br>Médiateurs libérés</div>
+ <div class="flow-step" style="border-color:rgba(var(--accent-3-rgb, 244,114,182), 0.3)">Cellules inflammatoires<br>Médiateurs libérés</div>
  <div class="flow-arrow">→</div>
  <div class="flow-step" style="border-color:rgba(79,195,247,0.3)">Déséquilibre<br>protéase / antiprotéase</div>
  <div class="flow-arrow">→</div>
- <div class="flow-step" style="border-color:rgba(240,98,146,0.4);background:rgba(240,98,146,0.08)"><strong style="color:var(--accent-rose)">Destruction<br>paroi alvéolaire</strong></div>
+ <div class="flow-step" style="border-color:rgba(var(--accent-3-rgb, 244,114,182), 0.4);background:rgba(var(--accent-3-rgb, 244,114,182), 0.08)"><strong style="color:var(--accent-rose)">Destruction<br>paroi alvéolaire</strong></div>
  </div>
  <div style="margin-top:16px;">
  <div class="card-title" style="margin-bottom:10px;"><span class="dot" style="background:var(--accent-teal)"></span>Causes des modifications musculaires</div>
  <div style="display:flex;flex-wrap:wrap;gap:10px;">
  <span style="background:rgba(79,195,247,0.1);border:1px solid rgba(79,195,247,0.2);border-radius:8px;padding:6px 14px;font-size:13px;">Hypoxémie</span>
- <span style="background:rgba(240,98,146,0.1);border:1px solid rgba(240,98,146,0.2);border-radius:8px;padding:6px 14px;font-size:13px;">Processus inflammatoire</span>
- <span style="background:rgba(255,183,77,0.1);border:1px solid rgba(255,183,77,0.2);border-radius:8px;padding:6px 14px;font-size:13px;">Âge</span>
+ <span style="background:rgba(var(--accent-3-rgb, 244,114,182), 0.1);border:1px solid rgba(var(--accent-3-rgb, 244,114,182), 0.2);border-radius:8px;padding:6px 14px;font-size:13px;">Processus inflammatoire</span>
+ <span style="background:rgba(var(--orange-rgb, 255,159,67), 0.1);border:1px solid rgba(var(--orange-rgb, 255,159,67), 0.2);border-radius:8px;padding:6px 14px;font-size:13px;">Âge</span>
  <span style="background:rgba(156,143,230,0.1);border:1px solid rgba(156,143,230,0.2);border-radius:8px;padding:6px 14px;font-size:13px;">Stress oxydatif</span>
  <span style="background:rgba(38,198,160,0.15);border:1px solid rgba(38,198,160,0.35);border-radius:8px;padding:6px 14px;font-size:13px;font-weight:700;color:var(--accent-teal)">⚡ Inactivité physique</span>
  </div>
@@ -571,7 +573,7 @@
  <!-- ASTHME -->
  <div id="asthme">
  <div class="section-header">
- <div class="section-icon" style="background:rgba(240,98,146,0.12);border:1px solid rgba(240,98,146,0.25);">💨</div>
+ <div class="section-icon" style="background:rgba(var(--accent-3-rgb, 244,114,182), 0.12);border:1px solid rgba(var(--accent-3-rgb, 244,114,182), 0.25);">💨</div>
  <div>
  <h2>Asthme bronchique</h2>
  <p>Maladie inflammatoire chronique réversible des voies respiratoires</p>
@@ -582,10 +584,10 @@
  <div class="card-title"><span class="dot" style="background:var(--accent-rose)"></span>Définition & Caractéristiques fondamentales</div>
  <p style="font-size:14px;margin-bottom:12px;">L'asthme est une maladie <span class="highlight-rose">hétérogène</span> caractérisée par une <span class="highlight">inflammation chronique</span> des voies respiratoires et une obstruction du flux expiratoire (sifflements, modification des temps inspiro-expiratoires, hypomobilité thoracique, toux). L'obstruction est <span class="highlight-teal">partiellement ou totalement réversible</span> — spontanément ou par traitement.</p>
  <div style="display:flex;flex-wrap:wrap;gap:10px;">
- <span style="background:rgba(240,98,146,0.1);border:1px solid rgba(240,98,146,0.25);border-radius:8px;padding:7px 14px;font-size:13px;"><strong style="color:var(--accent-rose)">Hétérogène</strong> — phénotypes multiples</span>
- <span style="background:rgba(240,98,146,0.1);border:1px solid rgba(240,98,146,0.25);border-radius:8px;padding:7px 14px;font-size:13px;"><strong style="color:var(--accent-rose)">Inflammation chronique</strong> des voies aériennes</span>
- <span style="background:rgba(240,98,146,0.1);border:1px solid rgba(240,98,146,0.25);border-radius:8px;padding:7px 14px;font-size:13px;"><strong style="color:var(--accent-rose)">Symptômes variables</strong> au fil du temps</span>
- <span style="background:rgba(240,98,146,0.1);border:1px solid rgba(240,98,146,0.25);border-radius:8px;padding:7px 14px;font-size:13px;"><strong style="color:var(--accent-rose)">Limitation variable</strong> du flux expiratoire</span>
+ <span style="background:rgba(var(--accent-3-rgb, 244,114,182), 0.1);border:1px solid rgba(var(--accent-3-rgb, 244,114,182), 0.25);border-radius:8px;padding:7px 14px;font-size:13px;"><strong style="color:var(--accent-rose)">Hétérogène</strong> — phénotypes multiples</span>
+ <span style="background:rgba(var(--accent-3-rgb, 244,114,182), 0.1);border:1px solid rgba(var(--accent-3-rgb, 244,114,182), 0.25);border-radius:8px;padding:7px 14px;font-size:13px;"><strong style="color:var(--accent-rose)">Inflammation chronique</strong> des voies aériennes</span>
+ <span style="background:rgba(var(--accent-3-rgb, 244,114,182), 0.1);border:1px solid rgba(var(--accent-3-rgb, 244,114,182), 0.25);border-radius:8px;padding:7px 14px;font-size:13px;"><strong style="color:var(--accent-rose)">Symptômes variables</strong> au fil du temps</span>
+ <span style="background:rgba(var(--accent-3-rgb, 244,114,182), 0.1);border:1px solid rgba(var(--accent-3-rgb, 244,114,182), 0.25);border-radius:8px;padding:7px 14px;font-size:13px;"><strong style="color:var(--accent-rose)">Limitation variable</strong> du flux expiratoire</span>
  </div>
  </div>
 
@@ -634,11 +636,11 @@
  <div class="flow-arrow">→</div>
  <div class="flow-step" style="border-color:rgba(156,143,230,0.3)">Cellule Th2<br>IgE · IL-4 · IL-5</div>
  <div class="flow-arrow">→</div>
- <div class="flow-step" style="border-color:rgba(240,98,146,0.3)"><span class="def" data-terme="mastocyte">Mastocytes</span> activés<br>Éosinophiles recrutés</div>
+ <div class="flow-step" style="border-color:rgba(var(--accent-3-rgb, 244,114,182), 0.3)"><span class="def" data-terme="mastocyte">Mastocytes</span> activés<br>Éosinophiles recrutés</div>
  <div class="flow-arrow">→</div>
- <div class="flow-step" style="border-color:rgba(240,98,146,0.4);background:rgba(240,98,146,0.08)"><strong style="color:var(--accent-rose)">Phase immédiate</strong><br>(min) <span class="def" data-terme="bronchodilatation">Bronchoconstriction</span></div>
+ <div class="flow-step" style="border-color:rgba(var(--accent-3-rgb, 244,114,182), 0.4);background:rgba(var(--accent-3-rgb, 244,114,182), 0.08)"><strong style="color:var(--accent-rose)">Phase immédiate</strong><br>(min) <span class="def" data-terme="bronchodilatation">Bronchoconstriction</span></div>
  <div class="flow-arrow">→</div>
- <div class="flow-step" style="border-color:rgba(255,183,77,0.4);background:rgba(255,183,77,0.08)"><strong style="color:var(--accent-amber)">Phase tardive</strong><br>(heures) Infiltration + remodelage</div>
+ <div class="flow-step" style="border-color:rgba(var(--orange-rgb, 255,159,67), 0.4);background:rgba(var(--orange-rgb, 255,159,67), 0.08)"><strong style="color:var(--accent-amber)">Phase tardive</strong><br>(heures) Infiltration + remodelage</div>
  </div>
 
  <div class="card-title" style="margin-bottom:10px;"><span class="dot" style="background:var(--accent-blue)"></span>5 mécanismes d'obstruction lors d'une crise</div>
@@ -810,7 +812,7 @@
  <!-- COMPARAISON -->
  <div id="comparaison">
  <div class="section-header">
- <div class="section-icon" style="background:rgba(255,183,77,0.12);border:1px solid rgba(255,183,77,0.25);">⚖️</div>
+ <div class="section-icon" style="background:rgba(var(--orange-rgb, 255,159,67), 0.12);border:1px solid rgba(var(--orange-rgb, 255,159,67), 0.25);">⚖️</div>
  <div>
  <h2>Tableau comparatif</h2>
  <p>BPCO vs Asthme vs Bronchiectasie — synthèse</p>
@@ -923,7 +925,7 @@
  Sources : GOLD Report 2024-2025 · JPneumol 28(Suppl.1) 2002 · Brito et al., Pulmonology 2025
 </div>
 
-<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-13.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-13.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(var(--accent-2-rgb, 255,92,107), 0.12), rgba(var(--accent-rgb, 255,107,157), 0.12)); border:1px solid rgba(var(--accent-rgb, 255,107,157), 0.35); color:var(--accent-4, #ff8fa3); text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
 <script src="../../../../../../assets/js/glossaire.js"></script>
 </body>
 </html>

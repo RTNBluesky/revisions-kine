@@ -23,13 +23,13 @@
  --border: #2a3050;
  --text: #9aa3b8;
  --text-muted: #9aa3b8;
- --accent1: #f472b6;
- --accent2: #ff6b9d;
- --accent3: #ff5c6b;
- --accent4: #f472b6;
- --accent5: #ff8fa3;
- --accent6: #f472b6;
- --gold: #ff8fa3;
+ --accent1: var(--accent-3, #f472b6);
+ --accent2: var(--accent, #ff6b9d);
+ --accent3: var(--accent-2, #ff5c6b);
+ --accent4: var(--accent-3, #f472b6);
+ --accent5: var(--accent-4, #ff8fa3);
+ --accent6: var(--accent-3, #f472b6);
+ --gold: var(--accent-4, #ff8fa3);
  }
 
  * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -58,13 +58,13 @@
  content: '';
  position: absolute;
  inset: 0;
- background: radial-gradient(ellipse at 50% 0%, rgba(255,107,157,0.12) 0%, transparent 70%);
+ background: radial-gradient(ellipse at 50% 0%, rgba(var(--accent-rgb, 255,107,157), 0.12) 0%, transparent 70%);
  pointer-events: none;
  }
  .header-tag {
  display: inline-block;
- background: rgba(255,107,157,0.15);
- border: 1px solid rgba(255,107,157,0.35);
+ background: rgba(var(--accent-rgb, 255,107,157), 0.15);
+ border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.35);
  color: var(--accent1);
  font-size: 0.7rem;
  letter-spacing: 0.2em;
@@ -135,7 +135,7 @@
  overflow: hidden;
  transition: border-color 0.2s, transform 0.2s;
  }
- .card:hover { border-color: rgba(255,107,157,0.4); transform: translateY(-2px); }
+ .card:hover { border-color: rgba(var(--accent-rgb, 255,107,157), 0.4); transform: translateY(-2px); }
  .card-accent-top {
  position: absolute;
  top: 0; left: 0; right: 0;
@@ -266,11 +266,11 @@
  margin-right: 0.3rem;
  margin-bottom: 0.3rem;
  }
- .tag-blue { background: rgba(255,107,157,0.15); color: var(--accent1); border: 1px solid rgba(255,107,157,0.3); }
- .tag-green { background: rgba(255,107,157,0.15); color: var(--accent2); border: 1px solid rgba(255,107,157,0.3); }
- .tag-orange { background: rgba(255,92,107,0.15); color: var(--accent3); border: 1px solid rgba(255,92,107,0.3); }
- .tag-purple { background: rgba(255,107,157,0.15); color: var(--accent4); border: 1px solid rgba(255,107,157,0.3); }
- .tag-gold { background: rgba(255,107,157,0.15); color: var(--gold); border: 1px solid rgba(255,107,157,0.3); }
+ .tag-blue { background: rgba(var(--accent-rgb, 255,107,157), 0.15); color: var(--accent1); border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.3); }
+ .tag-green { background: rgba(var(--accent-rgb, 255,107,157), 0.15); color: var(--accent2); border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.3); }
+ .tag-orange { background: rgba(var(--accent-2-rgb, 255,92,107), 0.15); color: var(--accent3); border: 1px solid rgba(var(--accent-2-rgb, 255,92,107), 0.3); }
+ .tag-purple { background: rgba(var(--accent-rgb, 255,107,157), 0.15); color: var(--accent4); border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.3); }
+ .tag-gold { background: rgba(var(--accent-rgb, 255,107,157), 0.15); color: var(--gold); border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.3); }
 
  /* COMPARISON TABLE */
  .compare-table {
@@ -298,8 +298,8 @@
 
  /* MEMO BOX */
  .memo {
- background: rgba(255,107,157,0.07);
- border: 1px solid rgba(255,107,157,0.3);
+ background: rgba(var(--accent-rgb, 255,107,157), 0.07);
+ border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.3);
  border-radius: 10px;
  padding: 1.2rem 1.5rem;
  margin-bottom: 1.2rem;
@@ -371,7 +371,7 @@
  border-radius: 8px;
  padding: 1rem;
  }
- .gf-card:hover { border-color: rgba(255,107,157,0.35); }
+ .gf-card:hover { border-color: rgba(var(--accent-rgb, 255,107,157), 0.35); }
  .gf-name {
  font-weight: 600;
  font-size: 0.88rem;
@@ -387,7 +387,7 @@
  grid-template-columns: 1fr 1fr;
  gap: 1.2rem;
  background: var(--surface);
- border: 1px solid rgba(255,92,107,0.35);
+ border: 1px solid rgba(var(--accent-2-rgb, 255,92,107), 0.35);
  border-radius: 10px;
  padding: 1.4rem;
  margin-bottom: 1.2rem;
@@ -407,7 +407,7 @@
  cursor: pointer;
  transition: border-color 0.2s;
  }
- .qcm-list li:hover { border-color: rgba(255,107,157,0.4); }
+ .qcm-list li:hover { border-color: rgba(var(--accent-rgb, 255,107,157), 0.4); }
  .qcm-q { font-weight: 600; color: var(--accent1); margin-bottom: 0.3rem; }
  .qcm-a { color: var(--text-muted); font-size: 0.85rem; display: none; padding-top: 0.4rem; border-top: 1px solid var(--border); margin-top: 0.4rem; }
  .qcm-list li.open .qcm-a { display: block; }
@@ -445,6 +445,8 @@
  <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-theme.css">
 
  <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
+<link rel="stylesheet" href="../../../../../../assets/css/themes.css">
+<script src="../../../../../../assets/js/theme.js"></script>
 </head>
 <body>
 <a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
@@ -734,7 +736,7 @@
  <!-- 6. REMODELAGE PHYSIOPATHOLOGIQUE -->
  <div class="section">
  <div class="section-title">
- <span class="num" style="background:rgba(255,166,87,0.15);color:var(--accent5);">6</span>
+ <span class="num" style="background:rgba(var(--orange-rgb, 255,159,67), 0.15);color:var(--accent5);">6</span>
  Mécanisme physiopathologique du remodelage
  </div>
  <div class="grid-2">
@@ -945,7 +947,7 @@
  li.addEventListener('click', () => li.classList.toggle('open'));
  });
 </script>
-<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-09.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-09.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(var(--accent-2-rgb, 255,92,107), 0.12), rgba(var(--accent-rgb, 255,107,157), 0.12)); border:1px solid rgba(var(--accent-rgb, 255,107,157), 0.35); color:var(--accent-4, #ff8fa3); text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
 <script src="../../../../../../assets/js/glossaire.js"></script>
 </body>
 </html>

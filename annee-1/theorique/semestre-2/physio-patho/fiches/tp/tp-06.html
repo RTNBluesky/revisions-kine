@@ -21,10 +21,10 @@
  --surface: #161922;
  --surface2: #1a1d2a;
  --border: #3a4060;
- --accent: #ff8fa3;
- --accent2: #f472b6;
- --accent3: #ff5c6b;
- --accent4: #ff6b9d;
+ --accent: var(--accent-4, #ff8fa3);
+ --accent2: var(--accent-3, #f472b6);
+ --accent3: var(--accent-2, #ff5c6b);
+ --accent4: var(--accent, #ff6b9d);
  --text: #e8eaf0;
  --text-muted: #9aa3b8;
  --text-dim: #6a7388;
@@ -53,8 +53,8 @@
  .hero::before {
  content: '';
  position: absolute; inset: 0;
- background: radial-gradient(ellipse at 30% 50%, rgba(255,107,157,0.07) 0%, transparent 60%),
- radial-gradient(ellipse at 70% 30%, rgba(255,107,157,0.07) 0%, transparent 60%);
+ background: radial-gradient(ellipse at 30% 50%, rgba(var(--accent-rgb, 255,107,157), 0.07) 0%, transparent 60%),
+ radial-gradient(ellipse at 70% 30%, rgba(var(--accent-rgb, 255,107,157), 0.07) 0%, transparent 60%);
  pointer-events: none;
  }
  .hero-tag {
@@ -64,7 +64,7 @@
  letter-spacing: 0.2em;
  color: var(--accent);
  text-transform: uppercase;
- border: 1px solid rgba(255,107,157,0.3);
+ border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.3);
  padding: 0.3rem 0.9rem;
  border-radius: 2px;
  margin-bottom: 1.2rem;
@@ -185,24 +185,24 @@
 
  /* ACCENT BOXES */
  .box-warn {
- background: rgba(255,166,87,0.07);
- border: 1px solid rgba(255,166,87,0.25);
+ background: rgba(var(--orange-rgb, 255,159,67), 0.07);
+ border: 1px solid rgba(var(--orange-rgb, 255,159,67), 0.25);
  border-left: 3px solid var(--accent);
  border-radius: 2px;
  padding: 1rem 1.2rem;
  margin-bottom: 1rem;
  }
  .box-info {
- background: rgba(255,107,157,0.07);
- border: 1px solid rgba(255,107,157,0.2);
+ background: rgba(var(--accent-rgb, 255,107,157), 0.07);
+ border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.2);
  border-left: 3px solid var(--accent2);
  border-radius: 2px;
  padding: 1rem 1.2rem;
  margin-bottom: 1rem;
  }
  .box-danger {
- background: rgba(255,166,87,0.07);
- border: 1px solid rgba(255,166,87,0.2);
+ background: rgba(var(--orange-rgb, 255,159,67), 0.07);
+ border: 1px solid rgba(var(--orange-rgb, 255,159,67), 0.2);
  border-left: 3px solid var(--accent3);
  border-radius: 2px;
  padding: 1rem 1.2rem;
@@ -235,10 +235,10 @@
  border-radius: 2px;
  border: 1px solid;
  }
- .tag-orange { color: var(--accent); border-color: rgba(255,107,157,0.35); background: rgba(255,107,157,0.07); }
- .tag-blue { color: var(--accent2); border-color: rgba(255,107,157,0.35); background: rgba(255,107,157,0.07); }
- .tag-red { color: var(--accent3); border-color: rgba(255,92,107,0.35); background: rgba(255,92,107,0.07); }
- .tag-green { color: var(--accent4); border-color: rgba(255,107,157,0.35); background: rgba(255,107,157,0.07); }
+ .tag-orange { color: var(--accent); border-color: rgba(var(--accent-rgb, 255,107,157), 0.35); background: rgba(var(--accent-rgb, 255,107,157), 0.07); }
+ .tag-blue { color: var(--accent2); border-color: rgba(var(--accent-rgb, 255,107,157), 0.35); background: rgba(var(--accent-rgb, 255,107,157), 0.07); }
+ .tag-red { color: var(--accent3); border-color: rgba(var(--accent-2-rgb, 255,92,107), 0.35); background: rgba(var(--accent-2-rgb, 255,92,107), 0.07); }
+ .tag-green { color: var(--accent4); border-color: rgba(var(--accent-rgb, 255,107,157), 0.35); background: rgba(var(--accent-rgb, 255,107,157), 0.07); }
 
  /* TIMELINE */
  .timeline { border-left: 2px solid var(--border); padding-left: 1.5rem; }
@@ -285,7 +285,7 @@
  }
  td {
  padding: 0.65rem 1rem;
- border-bottom: 1px solid rgba(255,107,157,0.5);
+ border-bottom: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.5);
  vertical-align: top;
  color: var(--text);
  }
@@ -367,6 +367,8 @@
 
  <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
 <link rel="stylesheet" href="../../../../../../assets/css/schemas.css">
+<link rel="stylesheet" href="../../../../../../assets/css/themes.css">
+<script src="../../../../../../assets/js/theme.js"></script>
 </head>
 <body>
 <a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
@@ -934,7 +936,7 @@
  Licence en Physiothérapie — 1ère année, 2e semestre
 </div>
 
-<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-06.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-06.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(var(--accent-2-rgb, 255,92,107), 0.12), rgba(var(--accent-rgb, 255,107,157), 0.12)); border:1px solid rgba(var(--accent-rgb, 255,107,157), 0.35); color:var(--accent-4, #ff8fa3); text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
 <script src="../../../../../../assets/js/glossaire.js"></script>
 </body>
 </html>

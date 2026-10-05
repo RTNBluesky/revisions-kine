@@ -19,22 +19,22 @@
  :root {
  --bg: #161922;
  --card: #1a1d2a;
- --bone: #ff8fa3;
- --bone-light: #ff8fa3;
- --bone-dark: #ff8fa3;
- --accent: #f472b6;
- --accent-light: #ff8fa3;
- --accent-dark: #ff5c6b;
- --green: #ff6b9d;
- --green-light: #ff8fa3;
- --red: #ff5c6b;
- --red-light: #ff8fa3;
- --amber: #ff8fa3;
- --amber-light: #ff8fa3;
- --teal: #ff6b9d;
- --teal-light: #ff6b9d;
- --purple: #f472b6;
- --purple-light: #ff8fa3;
+ --bone: var(--accent-4, #ff8fa3);
+ --bone-light: var(--accent-4, #ff8fa3);
+ --bone-dark: var(--accent-4, #ff8fa3);
+ --accent: var(--accent-3, #f472b6);
+ --accent-light: var(--accent-4, #ff8fa3);
+ --accent-dark: var(--accent-2, #ff5c6b);
+ --green: var(--accent, #ff6b9d);
+ --green-light: var(--accent-4, #ff8fa3);
+ --red: var(--accent-2, #ff5c6b);
+ --red-light: var(--accent-4, #ff8fa3);
+ --amber: var(--accent-4, #ff8fa3);
+ --amber-light: var(--accent-4, #ff8fa3);
+ --teal: var(--accent, #ff6b9d);
+ --teal-light: var(--accent, #ff6b9d);
+ --purple: var(--accent-3, #f472b6);
+ --purple-light: var(--accent-4, #ff8fa3);
  --text: #161922;
  --muted: #6a7388;
  --border: rgba(0,0,0,0.12);
@@ -55,7 +55,7 @@
 
  /* HEADER */
  .header {
- background: linear-gradient(135deg, var(--accent-dark) 0%, var(--accent) 60%, #f472b6 100%);
+ background: linear-gradient(135deg, var(--accent-dark) 0%, var(--accent) 60%, var(--accent-3, #f472b6) 100%);
  color: white;
  border-radius: 20px;
  padding: 48px 48px 40px;
@@ -170,32 +170,32 @@
  }
 
  /* COLORED CARD VARIANTS */
- .card-blue { background: var(--accent-light); border-color: #ff8fa3; }
+ .card-blue { background: var(--accent-light); border-color: var(--accent-4, #ff8fa3); }
  .card-blue .card-title { color: var(--accent); }
  .card-blue h3 { color: var(--accent-dark); }
 
- .card-bone { background: var(--bone-light); border-color: #ffa657; }
+ .card-bone { background: var(--bone-light); border-color: var(--orange, #ffa657); }
  .card-bone .card-title { color: var(--bone-dark); }
 
- .card-green { background: var(--green-light); border-color: #ff8fa3; }
+ .card-green { background: var(--green-light); border-color: var(--accent-4, #ff8fa3); }
  .card-green .card-title { color: var(--green); }
- .card-green h3 { color: #ff6b9d; }
+ .card-green h3 { color: var(--accent, #ff6b9d); }
 
- .card-red { background: var(--red-light); border-color: #ff8fa3; }
+ .card-red { background: var(--red-light); border-color: var(--accent-4, #ff8fa3); }
  .card-red .card-title { color: var(--red); }
- .card-red h3 { color: #ff5c6b; }
+ .card-red h3 { color: var(--accent-2, #ff5c6b); }
 
- .card-amber { background: var(--amber-light); border-color: #ff8fa3; }
+ .card-amber { background: var(--amber-light); border-color: var(--accent-4, #ff8fa3); }
  .card-amber .card-title { color: var(--amber); }
- .card-amber h3 { color: #ff8fa3; }
+ .card-amber h3 { color: var(--accent-4, #ff8fa3); }
 
- .card-teal { background: var(--teal-light); border-color: #ff6b9d; }
+ .card-teal { background: var(--teal-light); border-color: var(--accent, #ff6b9d); }
  .card-teal .card-title { color: var(--teal); }
- .card-teal h3 { color: #ff6b9d; }
+ .card-teal h3 { color: var(--accent, #ff6b9d); }
 
- .card-purple { background: var(--purple-light); border-color: #f472b6; }
+ .card-purple { background: var(--purple-light); border-color: var(--accent-3, #f472b6); }
  .card-purple .card-title { color: var(--purple); }
- .card-purple h3 { color: #ff5c6b; }
+ .card-purple h3 { color: var(--accent-2, #ff5c6b); }
 
  /* LISTS */
  ul.list { list-style: none; padding: 0; }
@@ -480,6 +480,8 @@
 
  <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
 <link rel="stylesheet" href="../../../../../../assets/css/schemas.css">
+<link rel="stylesheet" href="../../../../../../assets/css/themes.css">
+<script src="../../../../../../assets/js/theme.js"></script>
 </head>
 <body>
 <a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
@@ -1154,7 +1156,7 @@
  </div>
 
 </div>
-<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-05.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-05.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(var(--accent-2-rgb, 255,92,107), 0.12), rgba(var(--accent-rgb, 255,107,157), 0.12)); border:1px solid rgba(var(--accent-rgb, 255,107,157), 0.35); color:var(--accent-4, #ff8fa3); text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
 <script src="../../../../../../assets/js/glossaire.js"></script>
 </body>
 </html>

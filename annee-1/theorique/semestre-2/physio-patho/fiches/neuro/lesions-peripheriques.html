@@ -19,20 +19,20 @@
  :root {
  --bg: #161922;
  --surface: #1a1d2a;
- --orange: #ff8fa3;
- --orange-light: #ff8fa3;
- --orange-pale: #ff8fa3;
+ --orange: var(--accent-4, #ff8fa3);
+ --orange-light: var(--accent-4, #ff8fa3);
+ --orange-pale: var(--accent-4, #ff8fa3);
  --dark: #0f1117;
- --mid: #ff8fa3;
+ --mid: var(--accent-4, #ff8fa3);
  --muted: #6a7388;
- --green: #ff6b9d;
- --green-pale: #ff6b9d;
- --red: #ff5c6b;
- --red-pale: #ff8fa3;
- --blue: #f472b6;
- --blue-pale: #ff8fa3;
+ --green: var(--accent, #ff6b9d);
+ --green-pale: var(--accent, #ff6b9d);
+ --red: var(--accent-2, #ff5c6b);
+ --red-pale: var(--accent-4, #ff8fa3);
+ --blue: var(--accent-3, #f472b6);
+ --blue-pale: var(--accent-4, #ff8fa3);
  --border: #3a4060;
- --shadow: 0 4px 24px rgba(255,107,157,0.10);
+ --shadow: 0 4px 24px rgba(var(--accent-rgb, 255,107,157), 0.10);
  }
 
  * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -55,7 +55,7 @@
  content: '';
  position: absolute;
  inset: 0;
- background: radial-gradient(ellipse at 80% 20%, rgba(255,107,157,0.25) 0%, transparent 60%);
+ background: radial-gradient(ellipse at 80% 20%, rgba(var(--accent-rgb, 255,107,157), 0.25) 0%, transparent 60%);
  }
  .hero-tag {
  font-family: 'DM Mono', monospace;
@@ -164,7 +164,7 @@
  box-shadow: var(--shadow);
  transition: transform .2s, box-shadow .2s;
  }
- .card:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(255,107,157,0.14); }
+ .card:hover { transform: translateY(-2px); box-shadow: 0 8px 32px rgba(var(--accent-rgb, 255,107,157), 0.14); }
 
  .card-title {
  font-family: 'DM Serif Display', serif;
@@ -276,7 +276,7 @@
  vertical-align: top;
  }
  tr:last-child td { border-bottom: none; }
- tr:nth-child(even) td { background: #ff8fa3; }
+ tr:nth-child(even) td { background: var(--accent-4, #ff8fa3); }
  td:first-child { font-weight: 600; color: var(--orange); font-family: 'DM Mono', monospace; font-size: 12px; }
 
  /* HIGHLIGHT BOX */
@@ -514,6 +514,8 @@
 
  <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
 <link rel="stylesheet" href="../../../../../../assets/css/schemas.css">
+<link rel="stylesheet" href="../../../../../../assets/css/themes.css">
+<script src="../../../../../../assets/js/theme.js"></script>
 </head>
 <body>
 <a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
@@ -1266,7 +1268,7 @@
  Fiche de révision — <span>Lésions Périphériques</span>Physiopathologie I
 </footer>
 
-<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/neuro/lesions-peripheriques.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/neuro/lesions-peripheriques.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(var(--accent-2-rgb, 255,92,107), 0.12), rgba(var(--accent-rgb, 255,107,157), 0.12)); border:1px solid rgba(var(--accent-rgb, 255,107,157), 0.35); color:var(--accent-4, #ff8fa3); text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
 <script src="../../../../../../assets/js/glossaire.js"></script>
 </body>
 </html>

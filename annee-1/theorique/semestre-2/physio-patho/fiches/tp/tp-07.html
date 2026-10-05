@@ -19,20 +19,20 @@
 <link rel="stylesheet" href="../../../../../../assets/css/chrome.css">
 <style>
  :root{
- --paper: #ff8fa3;
- --paper-deep: #ff8fa3;
+ --paper: var(--accent-4, #ff8fa3);
+ --paper-deep: var(--accent-4, #ff8fa3);
  --paper-line: #3a4060;
  --ink:#0f1117;
  --ink-soft:#2a3050;
  --ink-mute:#6a7388;
- --burgundy:#ff5c6b;
- --burgundy-deep:#ff5c6b;
- --burgundy-soft:#ff5c6b;
- --forest: #ff6b9d;
+ --burgundy:var(--accent-2, #ff5c6b);
+ --burgundy-deep:var(--accent-2, #ff5c6b);
+ --burgundy-soft:var(--accent-2, #ff5c6b);
+ --forest: var(--accent, #ff6b9d);
  --forest-soft:#6a7388;
- --ochre: #ff8fa3;
+ --ochre: var(--accent-4, #ff8fa3);
  --rule:#161922;
- --warning:#ff5c6b;
+ --warning:var(--accent-2, #ff5c6b);
  }
  *{box-sizing:border-box;margin:0;padding:0}
  html{scroll-behavior:smooth}
@@ -43,8 +43,8 @@
  line-height:1.65;
  font-size:16px;
  background-image:
- radial-gradient(circle at 20% 10%, rgba(255,92,107,0.04) 0%, transparent 50%),
- radial-gradient(circle at 80% 80%, rgba(255,107,157,0.04) 0%, transparent 50%),
+ radial-gradient(circle at 20% 10%, rgba(var(--accent-2-rgb, 255,92,107), 0.04) 0%, transparent 50%),
+ radial-gradient(circle at 80% 80%, rgba(var(--accent-rgb, 255,107,157), 0.04) 0%, transparent 50%),
  url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.1 0 0 0 0 0.08 0 0 0 0 0.06 0 0 0 0.04 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
  }
 
@@ -286,7 +286,7 @@
  .definition{
  margin:28px 0;
  padding:28px 32px;
- background:linear-gradient(180deg, var(--paper-deep), rgba(255,107,157,0.5));
+ background:linear-gradient(180deg, var(--paper-deep), rgba(var(--accent-rgb, 255,107,157), 0.5));
  border:1px solid var(--paper-line);
  position:relative;
  }
@@ -358,7 +358,7 @@
  .callout{
  margin:30px 0;
  padding:22px 28px 22px 50px;
- background:rgba(255,92,107,0.06);
+ background:rgba(var(--accent-2-rgb, 255,92,107), 0.06);
  border-left:3px solid var(--burgundy);
  position:relative;
  }
@@ -384,7 +384,7 @@
  .callout strong{color:var(--burgundy-deep)}
 
  .callout.tip{
- background:rgba(255,107,157,0.06);
+ background:rgba(var(--accent-rgb, 255,107,157), 0.06);
  border-left-color:var(--forest);
  }
  .callout.tip::before{
@@ -658,7 +658,7 @@
 
  /* ========== INLINE TERMS ========== */
  .term-inline{
- background:linear-gradient(transparent 60%, rgba(255,107,157,0.3) 60%);
+ background:linear-gradient(transparent 60%, rgba(var(--accent-rgb, 255,107,157), 0.3) 60%);
  padding:0 2px;
  color:var(--ink);
  font-weight:500;
@@ -715,6 +715,8 @@
 
  <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
 <link rel="stylesheet" href="../../../../../../assets/css/schemas.css">
+<link rel="stylesheet" href="../../../../../../assets/css/themes.css">
+<script src="../../../../../../assets/js/theme.js"></script>
 </head>
 <body>
 <a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
@@ -1240,7 +1242,7 @@
 
 </div>
 
-<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-07.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-07.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(var(--accent-2-rgb, 255,92,107), 0.12), rgba(var(--accent-rgb, 255,107,157), 0.12)); border:1px solid rgba(var(--accent-rgb, 255,107,157), 0.35); color:var(--accent-4, #ff8fa3); text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
 <script src="../../../../../../assets/js/glossaire.js"></script>
 </body>
 </html>

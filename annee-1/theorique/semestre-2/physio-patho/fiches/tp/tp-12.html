@@ -18,19 +18,19 @@
 <style>
  :root {
  --bg: #161922;
- --paper: #ff8fa3;
+ --paper: var(--accent-4, #ff8fa3);
  --ink: #0f1117;
  --ink-light: #1a1d2a;
- --accent: #ff5c6b;
- --accent2: #f472b6;
- --accent3: #ff6b9d;
- --gold: #ff8fa3;
+ --accent: var(--accent-2, #ff5c6b);
+ --accent2: var(--accent-3, #f472b6);
+ --accent3: var(--accent, #ff6b9d);
+ --gold: var(--accent-4, #ff8fa3);
  --muted: #6a7388;
  --border: #3a4060;
- --highlight: #ff8fa3;
- --alert: #ff8fa3;
- --info: #ff8fa3;
- --success: #ff6b9d;
+ --highlight: var(--accent-4, #ff8fa3);
+ --alert: var(--accent-4, #ff8fa3);
+ --info: var(--accent-4, #ff8fa3);
+ --success: var(--accent, #ff6b9d);
  }
  * { margin: 0; padding: 0; box-sizing: border-box; }
  body { font-family: 'Source Serif 4', Georgia, serif; background: var(--bg); color: var(--ink); font-size: 15px; line-height: 1.7; }
@@ -39,7 +39,7 @@
  .masthead .label { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; letter-spacing: 0.3em; color: var(--gold); text-transform: uppercase; margin-bottom: 0.8rem; }
  .masthead h1 { font-family: 'Playfair Display', serif; font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 900; line-height: 1.1; letter-spacing: -0.02em; margin-bottom: 0.5rem; }
  .masthead h1 span { color: var(--gold); }
- .masthead .subtitle { font-style: italic; color: #ff8fa3; font-size: 0.95rem; }
+ .masthead .subtitle { font-style: italic; color: var(--accent-4, #ff8fa3); font-size: 0.95rem; }
  .masthead .meta { margin-top: 1.2rem; display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; }
  .masthead .meta span { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; letter-spacing: 0.15em; color: #6a7388; text-transform: uppercase; }
  .toc { background: var(--paper); border-bottom: 2px solid var(--border); padding: 1.5rem 2rem; display: flex; gap: 0.5rem 1.5rem; flex-wrap: wrap; justify-content: center; }
@@ -91,14 +91,14 @@
  .keyfact .icon { font-size: 1.2rem; min-width: 1.5rem; line-height: 1.4; }
  .tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.5rem; }
  .tag { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; padding: 0.2rem 0.5rem; border-radius: 2px; letter-spacing: 0.05em; text-transform: uppercase; }
- .tag.red { background: var(--alert); color: var(--accent); border: 1px solid #ff8fa3; }
- .tag.blue { background: var(--info); color: var(--accent2); border: 1px solid #f472b6; }
- .tag.green { background: var(--success); color: var(--accent3); border: 1px solid #ff6b9d; }
- .tag.gold { background: var(--highlight); color: #ff8fa3; border: 1px solid #ff8fa3; }
+ .tag.red { background: var(--alert); color: var(--accent); border: 1px solid var(--accent-4, #ff8fa3); }
+ .tag.blue { background: var(--info); color: var(--accent2); border: 1px solid var(--accent-3, #f472b6); }
+ .tag.green { background: var(--success); color: var(--accent3); border: 1px solid var(--accent, #ff6b9d); }
+ .tag.gold { background: var(--highlight); color: var(--accent-4, #ff8fa3); border: 1px solid var(--accent-4, #ff8fa3); }
  .divider { text-align: center; margin: 2rem 0 1.5rem; position: relative; }
  .divider::before { content: ''; position: absolute; top: 50%; left: 0; right: 0; height: 1px; background: var(--border); }
  .divider span { position: relative; background: var(--bg); padding: 0 1rem; font-family: 'Playfair Display', serif; font-size: 1.1rem; color: var(--accent); font-style: italic; }
- .remember { background: linear-gradient(135deg, #0f1117 0%, #1a1d2a 100%); color: #ff8fa3; padding: 1.5rem 1.8rem; border-radius: 2px; margin-top: 1rem; }
+ .remember { background: linear-gradient(135deg, #0f1117 0%, #1a1d2a 100%); color: var(--accent-4, #ff8fa3); padding: 1.5rem 1.8rem; border-radius: 2px; margin-top: 1rem; }
  .remember h4 { font-family: 'Playfair Display', serif; font-size: 1rem; color: var(--gold); margin-bottom: 0.8rem; letter-spacing: 0.05em; }
  .remember ul { list-style: none; }
  .remember ul li { padding: 0.3rem 0 0.3rem 1.4rem; position: relative; font-size: 0.88rem; border-bottom: 1px solid rgba(255,255,255,0.06); }
@@ -118,6 +118,8 @@
 
  <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
 <link rel="stylesheet" href="../../../../../../assets/css/schemas.css">
+<link rel="stylesheet" href="../../../../../../assets/css/themes.css">
+<script src="../../../../../../assets/js/theme.js"></script>
 </head>
 <body>
 <a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
@@ -854,7 +856,7 @@
 
 <footer>Fiche de révision — Physiopathologie · Maladies des Voies Respiratoires Inférieures · 1ère Année — 2e Semestre</footer>
 
-<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-12.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-12.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(var(--accent-2-rgb, 255,92,107), 0.12), rgba(var(--accent-rgb, 255,107,157), 0.12)); border:1px solid rgba(var(--accent-rgb, 255,107,157), 0.35); color:var(--accent-4, #ff8fa3); text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
 <script src="../../../../../../assets/js/glossaire.js"></script>
 </body>
 </html>

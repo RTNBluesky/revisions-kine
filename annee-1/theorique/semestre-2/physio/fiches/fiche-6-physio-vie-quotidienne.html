@@ -21,11 +21,11 @@
  --surface: #161922;
  --surface2: #20243a;
  --border: #2a3050;
- --accent: #ff8fa3;
- --accent2: #f472b6;
- --accent3: #ff6b9d;
- --accent4: #ff5c6b;
- --accent5: #f472b6;
+ --accent: var(--accent-4, #ff8fa3);
+ --accent2: var(--accent-3, #f472b6);
+ --accent3: var(--accent, #ff6b9d);
+ --accent4: var(--accent-2, #ff5c6b);
+ --accent5: var(--accent-3, #f472b6);
  --text: #9aa3b8;
  --text-muted: #9aa3b8;
  --text-dim: #6a7388;
@@ -53,7 +53,7 @@
  content: '';
  position: absolute;
  inset: 0;
- background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(255,107,157,0.12) 0%, transparent 70%);
+ background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(var(--accent-rgb, 255,107,157), 0.12) 0%, transparent 70%);
  }
  .hero-label {
  font-family: 'JetBrains Mono', monospace;
@@ -122,7 +122,7 @@
  .toc a:hover {
  color: var(--accent);
  border-color: var(--accent);
- background: rgba(255,107,157,0.06);
+ background: rgba(var(--accent-rgb, 255,107,157), 0.06);
  }
 
  /* ---- LAYOUT ---- */
@@ -178,7 +178,7 @@
  }
  .card:hover {
  transform: translateY(-2px);
- border-color: rgba(255,107,157,0.4);
+ border-color: rgba(var(--accent-rgb, 255,107,157), 0.4);
  }
  .card-accent {
  position: absolute;
@@ -225,8 +225,8 @@
 
  /* ---- HIGHLIGHT BOX ---- */
  .highlight {
- background: linear-gradient(135deg, rgba(255,107,157,0.08), rgba(255,107,157,0.03));
- border: 1px solid rgba(255,107,157,0.25);
+ background: linear-gradient(135deg, rgba(var(--accent-rgb, 255,107,157), 0.08), rgba(var(--accent-rgb, 255,107,157), 0.03));
+ border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.25);
  border-radius: 8px;
  padding: 20px 24px;
  font-size: 14px;
@@ -355,18 +355,18 @@
  border-radius: 4px;
  border: 1px solid;
  }
- .tag-y { color: var(--accent); border-color: rgba(255,107,157,0.3); background: rgba(255,107,157,0.06); }
- .tag-b { color: var(--accent2); border-color: rgba(255,107,157,0.3); background: rgba(255,107,157,0.06); }
- .tag-g { color: var(--accent3); border-color: rgba(255,107,157,0.3); background: rgba(255,107,157,0.06); }
- .tag-r { color: var(--accent4); border-color: rgba(255,92,107,0.3); background: rgba(255,92,107,0.06); }
- .tag-p { color: var(--accent5); border-color: rgba(255,107,157,0.3); background: rgba(255,107,157,0.06); }
+ .tag-y { color: var(--accent); border-color: rgba(var(--accent-rgb, 255,107,157), 0.3); background: rgba(var(--accent-rgb, 255,107,157), 0.06); }
+ .tag-b { color: var(--accent2); border-color: rgba(var(--accent-rgb, 255,107,157), 0.3); background: rgba(var(--accent-rgb, 255,107,157), 0.06); }
+ .tag-g { color: var(--accent3); border-color: rgba(var(--accent-rgb, 255,107,157), 0.3); background: rgba(var(--accent-rgb, 255,107,157), 0.06); }
+ .tag-r { color: var(--accent4); border-color: rgba(var(--accent-2-rgb, 255,92,107), 0.3); background: rgba(var(--accent-2-rgb, 255,92,107), 0.06); }
+ .tag-p { color: var(--accent5); border-color: rgba(var(--accent-rgb, 255,107,157), 0.3); background: rgba(var(--accent-rgb, 255,107,157), 0.06); }
 
  /* ---- KEY POINT ---- */
  .key-point {
  display: flex;
  gap: 14px;
- background: rgba(255,107,157,0.06);
- border: 1px solid rgba(255,107,157,0.2);
+ background: rgba(var(--accent-rgb, 255,107,157), 0.06);
+ border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.2);
  border-radius: 8px;
  padding: 16px 20px;
  margin-top: 16px;
@@ -380,8 +380,8 @@
  .warning {
  display: flex;
  gap: 14px;
- background: rgba(255,166,87,0.06);
- border: 1px solid rgba(255,166,87,0.2);
+ background: rgba(var(--orange-rgb, 255,159,67), 0.06);
+ border: 1px solid rgba(var(--orange-rgb, 255,159,67), 0.2);
  border-radius: 8px;
  padding: 16px 20px;
  margin-top: 16px;
@@ -442,12 +442,12 @@
  padding: 14px 18px;
  transition: border-color .2s;
  }
- .num-item:hover { border-color: rgba(255,107,157,0.3); }
+ .num-item:hover { border-color: rgba(var(--accent-rgb, 255,107,157), 0.3); }
  .num-badge {
  width: 28px; height: 28px;
  border-radius: 6px;
- background: rgba(255,107,157,0.12);
- border: 1px solid rgba(255,107,157,0.3);
+ background: rgba(var(--accent-rgb, 255,107,157), 0.12);
+ border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.3);
  display: flex;
  align-items: center;
  justify-content: center;
@@ -473,13 +473,13 @@
  }
  .fear-card h4 { font-size: 15px; font-weight: 600; margin-bottom: 6px; }
  .fear-card p { font-size: 13px; color: var(--text-muted); }
- .fc-fight { border-color: rgba(255,92,107,0.3); background: rgba(255,92,107,0.06); }
+ .fc-fight { border-color: rgba(var(--accent-2-rgb, 255,92,107), 0.3); background: rgba(var(--accent-2-rgb, 255,92,107), 0.06); }
  .fc-fight h4 { color: var(--accent4); }
- .fc-flight { border-color: rgba(255,107,157,0.3); background: rgba(255,107,157,0.06); }
+ .fc-flight { border-color: rgba(var(--accent-rgb, 255,107,157), 0.3); background: rgba(var(--accent-rgb, 255,107,157), 0.06); }
  .fc-flight h4 { color: var(--accent2); }
- .fc-freeze { border-color: rgba(255,107,157,0.3); background: rgba(255,107,157,0.06); }
+ .fc-freeze { border-color: rgba(var(--accent-rgb, 255,107,157), 0.3); background: rgba(var(--accent-rgb, 255,107,157), 0.06); }
  .fc-freeze h4 { color: var(--accent5); }
- .fc-face { border-color: rgba(255,107,157,0.3); background: rgba(255,107,157,0.06); }
+ .fc-face { border-color: rgba(var(--accent-rgb, 255,107,157), 0.3); background: rgba(var(--accent-rgb, 255,107,157), 0.06); }
  .fc-face h4 { color: var(--accent3); }
 
  /* ---- FOOTER ---- */
@@ -513,6 +513,8 @@
  <link rel="stylesheet" href="../../../../../assets/css/modules/fiche-theme.css">
 
  <link rel="stylesheet" href="../../../../../assets/css/modules/fiche-layout.css">
+<link rel="stylesheet" href="../../../../../assets/css/themes.css">
+<script src="../../../../../assets/js/theme.js"></script>
 </head>
 <body>
 <a href="../accueil-physio.html" class="back-nav">← Physiologie II</a>
@@ -1103,7 +1105,7 @@
  2025/2026 &nbsp;·&nbsp; Physiologie II — Physiothérapie &nbsp;·&nbsp; Cours 6 — Enseignante J &nbsp;·&nbsp; Fiche de révision
 </footer>
 
-<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../qcm/qcm-6-physio-vie-quotidienne.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../qcm/qcm-6-physio-vie-quotidienne.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(var(--accent-2-rgb, 255,92,107), 0.12), rgba(var(--accent-rgb, 255,107,157), 0.12)); border:1px solid rgba(var(--accent-rgb, 255,107,157), 0.35); color:var(--accent-4, #ff8fa3); text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
 <script src="../../../../../assets/js/glossaire.js"></script>
 </body>
 </html>

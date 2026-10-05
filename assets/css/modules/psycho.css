@@ -8,22 +8,22 @@
   --surface-hover: #161922;
   --border: #2a3050;
   --border-light: #2a3050;
-  --text: #ff8fa3;
-  --text-strong: #ff8fa3;
-  --text-muted: #f472b6;
+  --text: var(--accent-4, #ff8fa3);
+  --text-strong: var(--accent-4, #ff8fa3);
+  --text-muted: var(--accent-3, #f472b6);
   --text-dim: #6a7388;
 
-  --accent: #f472b6;
-  --accent-strong: #f472b6;
-  --accent-soft: rgba(255,107,157,0.12);
-  --accent-glow: rgba(255,107,157,0.25);
+  --accent: var(--accent-3, #f472b6);
+  --accent-strong: var(--accent-3, #f472b6);
+  --accent-soft: rgba(var(--accent-rgb, 255,107,157), 0.12);
+  --accent-glow: rgba(var(--accent-rgb, 255,107,157), 0.25);
 
-  --cyan: #f472b6;
-  --violet: #f472b6;
+  --cyan: var(--accent-3, #f472b6);
+  --violet: var(--accent-3, #f472b6);
   --pink: #9aa3b8;
-  --green: #ff8fa3;
-  --amber: #ff5c6b;
-  --red: #ff5c6b;
+  --green: var(--accent-4, #ff8fa3);
+  --amber: var(--accent-2, #ff5c6b);
+  --red: var(--accent-2, #ff5c6b);
 
   --radius: 14px;
   --radius-sm: 10px;
@@ -36,8 +36,8 @@ html, body { background: var(--bg); }
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", Roboto, sans-serif;
   background:
-    radial-gradient(1200px 600px at 10% -10%, rgba(255,107,157,0.07), transparent 60%),
-    radial-gradient(1000px 600px at 100% 10%, rgba(255,107,157,0.08), transparent 60%),
+    radial-gradient(1200px 600px at 10% -10%, rgba(var(--accent-rgb, 255,107,157), 0.07), transparent 60%),
+    radial-gradient(1000px 600px at 100% 10%, rgba(var(--accent-rgb, 255,107,157), 0.08), transparent 60%),
     var(--bg);
   color: var(--text);
   line-height: 1.65;
@@ -344,7 +344,7 @@ body {
 /* === QCM session === */
 .qcm-bar {
   position: sticky; top: 0; z-index: 10;
-  background: rgba(255,107,157,0.92); backdrop-filter: blur(10px);
+  background: rgba(var(--accent-rgb, 255,107,157), 0.92); backdrop-filter: blur(10px);
   border: 1px solid var(--border); border-radius: var(--radius);
   padding: 14px 20px; margin-bottom: 18px;
   display: flex; gap: 24px; align-items: center; flex-wrap: wrap;
@@ -392,7 +392,7 @@ body {
 .option:hover { border-color: var(--accent); background: var(--surface-hover); }
 .option.selected { border-color: var(--accent); background: var(--accent-soft); }
 .option.correct { border-color: var(--green); background: rgba(61,214,140,0.1); }
-.option.wrong { border-color: var(--red); background: rgba(255,166,87,0.08); }
+.option.wrong { border-color: var(--red); background: rgba(var(--orange-rgb, 255,159,67), 0.08); }
 .option .letter {
   font-weight: 800; color: var(--accent); flex-shrink: 0;
   min-width: 20px;
@@ -406,7 +406,7 @@ body {
 }
 .feedback.show { display: block; }
 .feedback.correct { background: rgba(61,214,140,0.12); color: var(--green); border: 1px solid rgba(61,214,140,0.3); }
-.feedback.wrong { background: rgba(255,166,87,0.1); color: var(--red); border: 1px solid rgba(255,166,87,0.3); }
+.feedback.wrong { background: rgba(var(--orange-rgb, 255,159,67), 0.1); color: var(--red); border: 1px solid rgba(var(--orange-rgb, 255,159,67), 0.3); }
 
 .qcm-actions {
   display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap;

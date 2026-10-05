@@ -21,11 +21,11 @@
  --surface: #161922;
  --card: #1a1d2a;
  --border: #3a4060;
- --accent1: #f472b6;
- --accent2: #ff5c6b;
- --accent3: #ff6b9d;
- --accent4: #ff8fa3;
- --accent5: #f472b6;
+ --accent1: var(--accent-3, #f472b6);
+ --accent2: var(--accent-2, #ff5c6b);
+ --accent3: var(--accent, #ff6b9d);
+ --accent4: var(--accent-4, #ff8fa3);
+ --accent5: var(--accent-3, #f472b6);
  --text: #9aa3b8;
  --text-muted: #6a7388;
  --text-light: #6a7388;
@@ -56,7 +56,7 @@
  position: absolute;
  top: -80px; right: -80px;
  width: 400px; height: 400px;
- background: radial-gradient(circle, rgba(255,107,157,0.12) 0%, transparent 70%);
+ background: radial-gradient(circle, rgba(var(--accent-rgb, 255,107,157), 0.12) 0%, transparent 70%);
  border-radius: 50%;
  }
  header::after {
@@ -64,7 +64,7 @@
  position: absolute;
  bottom: -60px; left: 30%;
  width: 300px; height: 300px;
- background: radial-gradient(circle, rgba(255,92,107,0.08) 0%, transparent 70%);
+ background: radial-gradient(circle, rgba(var(--accent-2-rgb, 255,92,107), 0.08) 0%, transparent 70%);
  border-radius: 50%;
  }
  .header-tag {
@@ -108,11 +108,11 @@
  text-transform: uppercase;
  border: 1px solid;
  }
- .pill-blue { border-color: var(--accent1); color: var(--accent1); background: rgba(255,107,157,0.08); }
- .pill-pink { border-color: var(--accent2); color: var(--accent2); background: rgba(255,92,107,0.08); }
- .pill-green { border-color: var(--accent3); color: var(--accent3); background: rgba(255,107,157,0.08); }
- .pill-gold { border-color: var(--accent4); color: var(--accent4); background: rgba(255,107,157,0.08); }
- .pill-purple{ border-color: var(--accent5); color: var(--accent5); background: rgba(255,107,157,0.08); }
+ .pill-blue { border-color: var(--accent1); color: var(--accent1); background: rgba(var(--accent-rgb, 255,107,157), 0.08); }
+ .pill-pink { border-color: var(--accent2); color: var(--accent2); background: rgba(var(--accent-2-rgb, 255,92,107), 0.08); }
+ .pill-green { border-color: var(--accent3); color: var(--accent3); background: rgba(var(--accent-rgb, 255,107,157), 0.08); }
+ .pill-gold { border-color: var(--accent4); color: var(--accent4); background: rgba(var(--accent-rgb, 255,107,157), 0.08); }
+ .pill-purple{ border-color: var(--accent5); color: var(--accent5); background: rgba(var(--accent-rgb, 255,107,157), 0.08); }
 
  /* ---- NAV ---- */
  nav {
@@ -189,7 +189,7 @@
  overflow: hidden;
  transition: border-color 0.2s, transform 0.2s;
  }
- .card:hover { border-color: #ff5c6b; transform: translateY(-1px); }
+ .card:hover { border-color: var(--accent-2, #ff5c6b); transform: translateY(-1px); }
  .card::before {
  content: '';
  position: absolute;
@@ -232,8 +232,8 @@
 
  /* ---- DEFINITION BOX ---- */
  .def-box {
- background: linear-gradient(135deg, rgba(255,107,157,0.07), rgba(255,107,157,0.02));
- border: 1px solid rgba(255,107,157,0.25);
+ background: linear-gradient(135deg, rgba(var(--accent-rgb, 255,107,157), 0.07), rgba(var(--accent-rgb, 255,107,157), 0.02));
+ border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.25);
  border-radius: 10px;
  padding: 20px 24px;
  margin-bottom: 16px;
@@ -253,8 +253,8 @@
 
  /* ---- KEY CONCEPT ---- */
  .key-concept {
- background: rgba(255,107,157,0.06);
- border: 1px solid rgba(255,107,157,0.2);
+ background: rgba(var(--accent-rgb, 255,107,157), 0.06);
+ border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.2);
  border-radius: 8px;
  padding: 14px 18px;
  margin: 12px 0;
@@ -293,7 +293,7 @@
  }
  .compare-table td {
  padding: 12px 16px;
- border-bottom: 1px solid rgba(255,107,157,0.6);
+ border-bottom: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.6);
  vertical-align: top;
  color: var(--text-light);
  }
@@ -338,7 +338,7 @@
  position: relative;
  font-size: 14.5px;
  color: var(--text-light);
- border-bottom: 1px solid rgba(255,107,157,0.4);
+ border-bottom: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.4);
  }
  ul.styled li:last-child, ol.styled li:last-child { border-bottom: none; }
  ul.styled li::before {
@@ -375,9 +375,9 @@
  gap: 14px;
  align-items: flex-start;
  }
- .callout-info { background: rgba(255,107,157,0.08); border-left: 3px solid var(--accent1); }
- .callout-warn { background: rgba(255,166,87,0.08); border-left: 3px solid var(--accent4); }
- .callout-danger { background: rgba(255,166,87,0.08); border-left: 3px solid var(--accent2); }
+ .callout-info { background: rgba(var(--accent-rgb, 255,107,157), 0.08); border-left: 3px solid var(--accent1); }
+ .callout-warn { background: rgba(var(--orange-rgb, 255,159,67), 0.08); border-left: 3px solid var(--accent4); }
+ .callout-danger { background: rgba(var(--orange-rgb, 255,159,67), 0.08); border-left: 3px solid var(--accent2); }
  .callout-success{ background: rgba(61,214,140,0.08); border-left: 3px solid var(--accent3); }
  .callout-icon { font-size: 20px; flex-shrink: 0; }
  .callout-body { font-size: 14px; color: var(--text-light); }
@@ -394,11 +394,11 @@
  font-weight: 600;
  text-transform: uppercase;
  }
- .badge-blue { background: rgba(255,107,157,0.15); color: var(--accent1); }
- .badge-pink { background: rgba(255,92,107,0.15); color: var(--accent2); }
- .badge-green { background: rgba(255,107,157,0.15); color: var(--accent3); }
- .badge-gold { background: rgba(255,107,157,0.15); color: var(--accent4); }
- .badge-purple { background: rgba(255,107,157,0.15); color: var(--accent5); }
+ .badge-blue { background: rgba(var(--accent-rgb, 255,107,157), 0.15); color: var(--accent1); }
+ .badge-pink { background: rgba(var(--accent-2-rgb, 255,92,107), 0.15); color: var(--accent2); }
+ .badge-green { background: rgba(var(--accent-rgb, 255,107,157), 0.15); color: var(--accent3); }
+ .badge-gold { background: rgba(var(--accent-rgb, 255,107,157), 0.15); color: var(--accent4); }
+ .badge-purple { background: rgba(var(--accent-rgb, 255,107,157), 0.15); color: var(--accent5); }
 
  /* ---- FORMULA BOX ---- */
  .formula {
@@ -461,8 +461,8 @@
  padding: 20px;
  margin: 12px 0;
  }
- .fb-neg { background: rgba(255,107,157,0.05); border: 1px solid rgba(255,107,157,0.2); }
- .fb-pos { background: rgba(255,92,107,0.05); border: 1px solid rgba(255,92,107,0.2); }
+ .fb-neg { background: rgba(var(--accent-rgb, 255,107,157), 0.05); border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.2); }
+ .fb-pos { background: rgba(var(--accent-2-rgb, 255,92,107), 0.05); border: 1px solid rgba(var(--accent-2-rgb, 255,92,107), 0.2); }
  .fb-title {
  font-family: 'Playfair Display', serif;
  font-size: 1rem;
@@ -474,8 +474,8 @@
 
  /* ---- MEMORY AID ---- */
  .memory-card {
- background: linear-gradient(135deg, rgba(255,107,157,0.07), rgba(255,107,157,0.02));
- border: 1px solid rgba(255,107,157,0.2);
+ background: linear-gradient(135deg, rgba(var(--accent-rgb, 255,107,157), 0.07), rgba(var(--accent-rgb, 255,107,157), 0.02));
+ border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.2);
  border-radius: 10px;
  padding: 20px 24px;
  margin-top: 20px;
@@ -527,6 +527,8 @@
 
  <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
 <link rel="stylesheet" href="../../../../../../assets/css/schemas.css">
+<link rel="stylesheet" href="../../../../../../assets/css/themes.css">
+<script src="../../../../../../assets/js/theme.js"></script>
 </head>
 <body>
 <a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
@@ -1403,7 +1405,7 @@
  Fiche de Révision · Physiopathologie 1 · Licence en Physiothérapie &nbsp;|&nbsp; Sources : Grossman & Porth · Tortora & Derrickson
 </footer>
 
-<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-01.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-01.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(var(--accent-2-rgb, 255,92,107), 0.12), rgba(var(--accent-rgb, 255,107,157), 0.12)); border:1px solid rgba(var(--accent-rgb, 255,107,157), 0.35); color:var(--accent-4, #ff8fa3); text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
 <script src="../../../../../../assets/js/glossaire.js"></script>
 </body>
 </html>

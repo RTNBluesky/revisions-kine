@@ -2,8 +2,8 @@
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --primary: #f472b6;
-  --primary-dark: #f472b6;
+  --primary: var(--accent-3, #f472b6);
+  --primary-dark: var(--accent-3, #f472b6);
   --bg: #161922;
   --bg-secondary: #20243a;
   --bg-sidebar: #161922;
@@ -13,8 +13,8 @@
   --text-light: #6a7388;
   --border: #3a4060;
   --success: #3dd68c;
-  --warning: #ffa657;
-  --danger: #ffa657;
+  --warning: var(--orange, #ffa657);
+  --danger: var(--orange, #ffa657);
   --code-bg: #20243a;
   --shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
@@ -195,12 +195,12 @@ ul li, ol li { margin-bottom: 4px; }
 
 .alert-warning {
   border-color: var(--warning);
-  background: #ffa657;
+  background: var(--orange, #ffa657);
 }
 
 .alert-danger {
   border-color: var(--danger);
-  background: #ffa657;
+  background: var(--orange, #ffa657);
 }
 
 .alert-success {
@@ -250,8 +250,8 @@ code {
 
 .badge-primary { background: #20243a; color: var(--primary-dark); }
 .badge-success { background: #3dd68c; color: var(--success); }
-.badge-warning { background: #ffa657; color: var(--warning); }
-.badge-danger { background: #ffa657; color: var(--danger); }
+.badge-warning { background: var(--orange, #ffa657); color: var(--warning); }
+.badge-danger { background: var(--orange, #ffa657); color: var(--danger); }
 
 /* INDEX CARDS (homepage) */
 .module-grid {

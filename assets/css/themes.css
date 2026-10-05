@@ -1,0 +1,173 @@
+/* ------------------------------------------------------------------
+   themes.css — les palettes du site.
+
+   Le fond sombre, les gris de texte, le vert de validation et le rouge de
+   « mauvaise réponse » ne changent jamais : ce sont des repères de lecture.
+   Seule la famille des accents bascule d'un thème à l'autre.
+
+   Le sélecteur html[data-theme="…"] est plus spécifique que :root, donc il
+   l'emporte sur les palettes déclarées dans les feuilles de module et dans
+   les styles en ligne des pages.
+   ------------------------------------------------------------------ */
+
+html[data-theme="rouge"] {
+  --accent: #fa5252;   --accent-rgb: 250,82,82;
+  --accent-2: #e03131; --accent-2-rgb: 224,49,49;
+  --accent-3: #ff6b6b; --accent-3-rgb: 255,107,107;
+  --accent-4: #ff8787; --accent-4-rgb: 255,135,135;
+  --orange: #ff922b;   --orange-rgb: 255,146,43;
+}
+
+html[data-theme="vert"] {
+  --accent: #2fbf71;   --accent-rgb: 47,191,113;
+  --accent-2: #12a150; --accent-2-rgb: 18,161,80;
+  --accent-3: #40c057; --accent-3-rgb: 64,192,87;
+  --accent-4: #69db7c; --accent-4-rgb: 105,219,124;
+  --orange: #94d82d;   --orange-rgb: 148,216,45;
+}
+
+html[data-theme="bleu"] {
+  --accent: #4dabf7;   --accent-rgb: 77,171,247;
+  --accent-2: #1c7ed6; --accent-2-rgb: 28,126,214;
+  --accent-3: #3bc9db; --accent-3-rgb: 59,201,219;
+  --accent-4: #74c0fc; --accent-4-rgb: 116,192,252;
+  --orange: #22b8cf;   --orange-rgb: 34,184,207;
+}
+
+html[data-theme="violet"] {
+  --accent: #9775fa;   --accent-rgb: 151,117,250;
+  --accent-2: #7048e8; --accent-2-rgb: 112,72,232;
+  --accent-3: #cc5de8; --accent-3-rgb: 204,93,232;
+  --accent-4: #b197fc; --accent-4-rgb: 177,151,252;
+  --orange: #e599f7;   --orange-rgb: 229,153,247;
+}
+
+html[data-theme="ambre"] {
+  --accent: #ffa94d;   --accent-rgb: 255,169,77;
+  --accent-2: #f08c00; --accent-2-rgb: 240,140,0;
+  --accent-3: #ffc078; --accent-3-rgb: 255,192,120;
+  --accent-4: #ffd8a8; --accent-4-rgb: 255,216,168;
+  --orange: #fab005;   --orange-rgb: 250,176,5;
+}
+
+html[data-theme="ardoise"] {
+  --accent: #90a4c4;   --accent-rgb: 144,164,196;
+  --accent-2: #6b82a8; --accent-2-rgb: 107,130,168;
+  --accent-3: #a5b8d4; --accent-3-rgb: 165,184,212;
+  --accent-4: #b8c7de; --accent-4-rgb: 184,199,222;
+  --orange: #8ca0b8;   --orange-rgb: 140,160,184;
+}
+
+/* les variables dérivées suivent toutes la palette active */
+html[data-theme] {
+  --accent-soft:    rgba(var(--accent-rgb), 0.12);
+  --accent-soft-2:  rgba(var(--accent-rgb), 0.20);
+  --accent-bord:    rgba(var(--accent-rgb), 0.30);
+  --accent-ombre:   rgba(var(--accent-rgb), 0.20);
+  --accent-voile:   rgba(var(--accent-rgb), 0.10);
+  --halo-1:         rgba(var(--accent-rgb), 0.10);
+  --halo-2:         rgba(var(--accent-2-rgb), 0.10);
+  --halo-3:         rgba(var(--accent-3-rgb), 0.08);
+  --accent1: var(--accent);
+  --accent2: var(--accent-2);
+  --accent3: var(--accent-3);
+  --accent4: var(--accent-4);
+  --accent5: var(--accent);
+  --rose: var(--accent);
+}
+
+/* ---------------- le sélecteur ---------------- */
+
+.theme-bouton {
+  position: fixed;
+  top: 14px;
+  right: 14px;
+  z-index: 10001;
+  width: 38px;
+  height: 38px;
+  padding: 0;
+  border-radius: 10px;
+  border: 1px solid var(--accent-bord, rgba(255, 107, 157, 0.30));
+  background: rgba(20, 22, 32, 0.92);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+  transition: border-color 0.18s, transform 0.18s;
+}
+.theme-bouton:hover { border-color: var(--accent, #ff6b9d); transform: translateY(-1px); }
+.theme-bouton:focus-visible { outline: 2px solid var(--accent, #ff6b9d); outline-offset: 2px; }
+.theme-pastille {
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--accent, #ff6b9d), var(--accent-2, #ff5c6b));
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.10);
+}
+
+.theme-choix {
+  position: fixed;
+  top: 60px;
+  right: 14px;
+  z-index: 10001;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 8px;
+  border-radius: 12px;
+  background: rgba(20, 22, 32, 0.97);
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.10);
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.55);
+  opacity: 0;
+  transform: translateY(-6px);
+  pointer-events: none;
+  transition: opacity 0.16s ease, transform 0.16s ease;
+}
+.theme-choix.ouvert { opacity: 1; transform: none; pointer-events: auto; }
+
+.theme-choix button {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  padding: 7px 12px 7px 9px;
+  border: 0;
+  border-radius: 8px;
+  background: none;
+  color: #c9d0e0;
+  font-family: 'Source Sans 3', -apple-system, system-ui, sans-serif;
+  font-size: 0.84rem;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.14s, color 0.14s;
+}
+.theme-choix button:hover { background: rgba(255, 255, 255, 0.07); color: #fff; }
+.theme-choix button[aria-checked="true"] { background: rgba(255, 255, 255, 0.10); color: #fff; }
+.theme-choix button[aria-checked="true"]::after { content: '✓'; margin-left: auto; opacity: 0.75; }
+.theme-choix .pois {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex: none;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.14);
+}
+
+/* le bouton ne doit pas gêner le lecteur sur petit écran */
+@media (max-width: 560px) {
+  .theme-bouton { top: 10px; right: 10px; width: 34px; height: 34px; }
+  .theme-choix { top: 52px; right: 10px; }
+}
+
+@media print { .theme-bouton, .theme-choix { display: none !important; } }
+
+@media (prefers-reduced-motion: reduce) {
+  .theme-bouton, .theme-choix, .theme-choix button { transition: none; }
+  .theme-bouton:hover { transform: none; }
+}

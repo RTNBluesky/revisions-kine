@@ -22,16 +22,16 @@
  --bg3: #1a1d2a;
  --card: #1a1d2a;
  --card2: #1a1d2a;
- --accent1: #f472b6;
- --accent2: #ff6b9d;
- --accent3: #ff8fa3;
- --accent4: #ff8fa3;
- --accent5: #f472b6;
+ --accent1: var(--accent-3, #f472b6);
+ --accent2: var(--accent, #ff6b9d);
+ --accent3: var(--accent-4, #ff8fa3);
+ --accent4: var(--accent-4, #ff8fa3);
+ --accent5: var(--accent-3, #f472b6);
  --text: #9aa3b8;
  --text2: #9aa3b8;
  --text3: #6a7388;
- --border: rgba(255,107,157,0.15);
- --glow: 0 0 20px rgba(255,107,157,0.15);
+ --border: rgba(var(--accent-rgb, 255,107,157), 0.15);
+ --glow: 0 0 20px rgba(var(--accent-rgb, 255,107,157), 0.15);
  }
 
  * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -46,7 +46,7 @@
 
  /* HEADER */
  header {
- background: linear-gradient(135deg, #20243a 0%, #ff5c6b 50%, #20243a 100%);
+ background: linear-gradient(135deg, #20243a 0%, var(--accent-2, #ff5c6b) 50%, #20243a 100%);
  border-bottom: 2px solid var(--accent1);
  padding: 50px 40px 40px;
  text-align: center;
@@ -56,7 +56,7 @@
  header::before {
  content: '';
  position: absolute; inset: 0;
- background: radial-gradient(ellipse at 50% 0%, rgba(255,107,157,0.12) 0%, transparent 70%);
+ background: radial-gradient(ellipse at 50% 0%, rgba(var(--accent-rgb, 255,107,157), 0.12) 0%, transparent 70%);
  }
  header .badge {
  display: inline-block;
@@ -170,16 +170,16 @@
  .section-body { padding: 24px 30px; }
 
  /* COLOR THEMES */
- .theme-blue .section-icon { background: rgba(255,107,157,0.15); color: var(--accent1); }
- .theme-blue .section-header { background: rgba(255,107,157,0.04); }
- .theme-green .section-icon { background: rgba(255,107,157,0.15); color: var(--accent2); }
- .theme-green .section-header { background: rgba(255,107,157,0.04); }
- .theme-orange .section-icon { background: rgba(255,107,157,0.15); color: var(--accent3); }
- .theme-orange .section-header { background: rgba(255,107,157,0.04); }
- .theme-pink .section-icon { background: rgba(255,107,157,0.15); color: var(--accent4); }
- .theme-pink .section-header { background: rgba(255,107,157,0.04); }
- .theme-purple .section-icon { background: rgba(255,107,157,0.15); color: var(--accent5); }
- .theme-purple .section-header { background: rgba(255,107,157,0.04); }
+ .theme-blue .section-icon { background: rgba(var(--accent-rgb, 255,107,157), 0.15); color: var(--accent1); }
+ .theme-blue .section-header { background: rgba(var(--accent-rgb, 255,107,157), 0.04); }
+ .theme-green .section-icon { background: rgba(var(--accent-rgb, 255,107,157), 0.15); color: var(--accent2); }
+ .theme-green .section-header { background: rgba(var(--accent-rgb, 255,107,157), 0.04); }
+ .theme-orange .section-icon { background: rgba(var(--accent-rgb, 255,107,157), 0.15); color: var(--accent3); }
+ .theme-orange .section-header { background: rgba(var(--accent-rgb, 255,107,157), 0.04); }
+ .theme-pink .section-icon { background: rgba(var(--accent-rgb, 255,107,157), 0.15); color: var(--accent4); }
+ .theme-pink .section-header { background: rgba(var(--accent-rgb, 255,107,157), 0.04); }
+ .theme-purple .section-icon { background: rgba(var(--accent-rgb, 255,107,157), 0.15); color: var(--accent5); }
+ .theme-purple .section-header { background: rgba(var(--accent-rgb, 255,107,157), 0.04); }
 
  /* SUBSECTIONS */
  .sub {
@@ -276,11 +276,11 @@
  font-weight: 600;
  letter-spacing: 0.03em;
  }
- .pill-blue { background: rgba(255,107,157,0.15); color: var(--accent1); border: 1px solid rgba(255,107,157,0.3); }
- .pill-green { background: rgba(255,107,157,0.15); color: var(--accent2); border: 1px solid rgba(255,107,157,0.3); }
- .pill-orange { background: rgba(255,107,157,0.15); color: var(--accent3); border: 1px solid rgba(255,107,157,0.3); }
- .pill-pink { background: rgba(255,107,157,0.15); color: var(--accent4); border: 1px solid rgba(255,107,157,0.3); }
- .pill-purple { background: rgba(255,107,157,0.15); color: var(--accent5); border: 1px solid rgba(255,107,157,0.3); }
+ .pill-blue { background: rgba(var(--accent-rgb, 255,107,157), 0.15); color: var(--accent1); border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.3); }
+ .pill-green { background: rgba(var(--accent-rgb, 255,107,157), 0.15); color: var(--accent2); border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.3); }
+ .pill-orange { background: rgba(var(--accent-rgb, 255,107,157), 0.15); color: var(--accent3); border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.3); }
+ .pill-pink { background: rgba(var(--accent-rgb, 255,107,157), 0.15); color: var(--accent4); border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.3); }
+ .pill-purple { background: rgba(var(--accent-rgb, 255,107,157), 0.15); color: var(--accent5); border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.3); }
 
  /* TABLE */
  table { width: 100%; border-collapse: collapse; font-size: 0.87rem; }
@@ -307,7 +307,7 @@
  .formula {
  font-family: 'JetBrains Mono', monospace;
  background: rgba(0,0,0,0.35);
- border: 1px solid rgba(255,107,157,0.3);
+ border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.3);
  border-radius: 8px;
  padding: 10px 16px;
  font-size: 0.85rem;
@@ -328,10 +328,10 @@
  font-size: 0.9rem;
  }
  .alert-icon { font-size: 1.1rem; flex-shrink: 0; }
- .alert-blue { background: rgba(255,107,157,0.1); border: 1px solid rgba(255,107,157,0.25); }
- .alert-green { background: rgba(255,107,157,0.1); border: 1px solid rgba(255,107,157,0.25); }
- .alert-orange { background: rgba(255,107,157,0.1); border: 1px solid rgba(255,107,157,0.25); }
- .alert-pink { background: rgba(255,107,157,0.1); border: 1px solid rgba(255,107,157,0.25); }
+ .alert-blue { background: rgba(var(--accent-rgb, 255,107,157), 0.1); border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.25); }
+ .alert-green { background: rgba(var(--accent-rgb, 255,107,157), 0.1); border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.25); }
+ .alert-orange { background: rgba(var(--accent-rgb, 255,107,157), 0.1); border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.25); }
+ .alert-pink { background: rgba(var(--accent-rgb, 255,107,157), 0.1); border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.25); }
 
  /* STEPS */
  .steps { display: flex; flex-direction: column; gap: 10px; }
@@ -349,10 +349,10 @@
  flex-shrink: 0;
  font-family: 'JetBrains Mono', monospace;
  }
- .step-blue { background: rgba(255,107,157,0.2); color: var(--accent1); }
- .step-green { background: rgba(255,107,157,0.2); color: var(--accent2); }
- .step-orange { background: rgba(255,107,157,0.2); color: var(--accent3); }
- .step-pink { background: rgba(255,107,157,0.2); color: var(--accent1); }
+ .step-blue { background: rgba(var(--accent-rgb, 255,107,157), 0.2); color: var(--accent1); }
+ .step-green { background: rgba(var(--accent-rgb, 255,107,157), 0.2); color: var(--accent2); }
+ .step-orange { background: rgba(var(--accent-rgb, 255,107,157), 0.2); color: var(--accent3); }
+ .step-pink { background: rgba(var(--accent-rgb, 255,107,157), 0.2); color: var(--accent1); }
  .step-text { font-size: 0.9rem; padding-top: 3px; }
 
  /* HIGHLIGHT */
@@ -450,6 +450,8 @@
 
  <link rel="stylesheet" href="../../../../../assets/css/modules/fiche-layout.css">
 <link rel="stylesheet" href="../../../../../assets/css/schemas.css">
+<link rel="stylesheet" href="../../../../../assets/css/themes.css">
+<script src="../../../../../assets/js/theme.js"></script>
 </head>
 <body>
 <a href="../accueil-physio.html" class="back-nav">← Physiologie II</a>
@@ -945,7 +947,7 @@
  <div class="sub" style="margin-top:14px;">
  <h3><span class="dot"></span>Cycle de Cori (recyclage du lactate)</h3>
  <div class="flow">
- <div class="flow-box" style="background:rgba(255,183,77,0.15); color:var(--accent3); border:1px solid rgba(255,183,77,0.3);">Muscle actif<br>(respiration anaérobie)</div>
+ <div class="flow-box" style="background:rgba(var(--orange-rgb, 255,159,67), 0.15); color:var(--accent3); border:1px solid rgba(var(--orange-rgb, 255,159,67), 0.3);">Muscle actif<br>(respiration anaérobie)</div>
  <div class="flow-arrow">→</div>
  <div class="flow-box" style="background:rgba(79,195,247,0.15); color:var(--accent1); border:1px solid rgba(79,195,247,0.3);">Lactate<br>sanguin</div>
  <div class="flow-arrow">→</div>
@@ -953,7 +955,7 @@
  <div class="flow-arrow">→</div>
  <div class="flow-box" style="background:rgba(206,147,216,0.15); color:var(--accent5); border:1px solid rgba(206,147,216,0.3);">Glucose<br>(<span class="def" data-terme="gluconeogenese">néoglucogenèse</span>)</div>
  <div class="flow-arrow">→</div>
- <div class="flow-box" style="background:rgba(255,183,77,0.15); color:var(--accent3); border:1px solid rgba(255,183,77,0.3);">Retour<br>au muscle</div>
+ <div class="flow-box" style="background:rgba(var(--orange-rgb, 255,159,67), 0.15); color:var(--accent3); border:1px solid rgba(var(--orange-rgb, 255,159,67), 0.3);">Retour<br>au muscle</div>
  </div>
  </div>
  </div>
@@ -1045,7 +1047,7 @@
  </div>
  <div style="color:var(--text3); font-size:1.5rem; padding-top:40px;">→</div>
  <div style="text-align:center; min-width:120px;">
- <div style="background:rgba(255,183,77,0.15); border:1px solid rgba(255,183,77,0.3); border-radius:10px; padding:10px 8px; color:var(--accent3); font-size:0.78rem; font-weight:700; margin-bottom:6px;">CHAÎNE TRANSPORT e⁻</div>
+ <div style="background:rgba(var(--orange-rgb, 255,159,67), 0.15); border:1px solid rgba(var(--orange-rgb, 255,159,67), 0.3); border-radius:10px; padding:10px 8px; color:var(--accent3); font-size:0.78rem; font-weight:700; margin-bottom:6px;">CHAÎNE TRANSPORT e⁻</div>
  <div style="font-size:0.75rem; color:var(--text2);">NADH → 3 ATP<br>FADH₂ → 2 ATP<br>Gradient H⁺<br>O₂ → H₂O</div>
  </div>
  </div>
@@ -1294,7 +1296,7 @@
  Physiologie II — Physiothérapie · Cours 5 — Physiologie de l'Exercice
 </footer>
 
-<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../qcm/qcm-5-physio-exercice.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../qcm/qcm-5-physio-exercice.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(var(--accent-2-rgb, 255,92,107), 0.12), rgba(var(--accent-rgb, 255,107,157), 0.12)); border:1px solid rgba(var(--accent-rgb, 255,107,157), 0.35); color:var(--accent-4, #ff8fa3); text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
 <script src="../../../../../assets/js/glossaire.js"></script>
 </body>
 </html>

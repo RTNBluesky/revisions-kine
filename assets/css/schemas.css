@@ -14,8 +14,8 @@ a.schema-lien {
   margin-left: 3px;
   padding: 0 5px;
   border-radius: 6px;
-  border: 1px solid var(--accent-bord, rgba(255, 107, 157, 0.28));
-  background: var(--accent-voile, rgba(255, 107, 157, 0.08));
+  border: 1px solid var(--accent-bord, rgba(var(--accent-rgb, 255,107,157), 0.28));
+  background: var(--accent-voile, rgba(var(--accent-rgb, 255,107,157), 0.08));
   font-size: 0.78em;
   line-height: 1.5;
   text-decoration: none;
@@ -26,7 +26,7 @@ a.schema-lien {
   border-bottom-width: 1px !important;
 }
 a.schema-lien:hover {
-  background: var(--accent-soft, rgba(255, 107, 157, 0.18));
+  background: var(--accent-soft, rgba(var(--accent-rgb, 255,107,157), 0.18));
   border-color: var(--accent, #ff6b9d);
   transform: translateY(-1px);
 }

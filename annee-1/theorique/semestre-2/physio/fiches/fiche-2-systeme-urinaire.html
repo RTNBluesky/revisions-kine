@@ -18,16 +18,16 @@
 <style>
  :root {
  --navy: #161922;
- --deep: #ff5c6b;
- --teal: #f472b6;
- --teal-light: #f472b6;
- --gold: #ff8fa3;
- --gold-light: #ff8fa3;
- --cream: #ff8fa3;
+ --deep: var(--accent-2, #ff5c6b);
+ --teal: var(--accent-3, #f472b6);
+ --teal-light: var(--accent-3, #f472b6);
+ --gold: var(--accent-4, #ff8fa3);
+ --gold-light: var(--accent-4, #ff8fa3);
+ --cream: var(--accent-4, #ff8fa3);
  --white: #ffffff;
  --gray: #9aa3b8;
- --red-accent: #ff5c6b;
- --green-accent: #ff6b9d;
+ --red-accent: var(--accent-2, #ff5c6b);
+ --green-accent: var(--accent, #ff6b9d);
  }
 
  * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -55,7 +55,7 @@
  top: -80px; right: -80px;
  width: 300px; height: 300px;
  border-radius: 50%;
- background: radial-gradient(circle, rgba(255,107,157,0.18) 0%, transparent 70%);
+ background: radial-gradient(circle, rgba(var(--accent-rgb, 255,107,157), 0.18) 0%, transparent 70%);
  }
  .hero::after {
  content: '';
@@ -63,7 +63,7 @@
  bottom: -60px; left: -60px;
  width: 250px; height: 250px;
  border-radius: 50%;
- background: radial-gradient(circle, rgba(255,107,157,0.12) 0%, transparent 70%);
+ background: radial-gradient(circle, rgba(var(--accent-rgb, 255,107,157), 0.12) 0%, transparent 70%);
  }
  .hero-badge {
  display: inline-block;
@@ -139,13 +139,13 @@
 
  .card {
  background: var(--deep);
- border: 1px solid rgba(255,107,157,0.15);
+ border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.15);
  border-radius: 6px;
  padding: 1.2rem 1.3rem;
  transition: border-color 0.2s, transform 0.2s;
  }
  .card:hover {
- border-color: rgba(255,107,157,0.5);
+ border-color: rgba(var(--accent-rgb, 255,107,157), 0.5);
  transform: translateY(-2px);
  }
  .card-title {
@@ -164,7 +164,7 @@
  }
  .card p, .card li {
  font-size: 0.88rem;
- color: #ff8fa3;
+ color: var(--accent-4, #ff8fa3);
  line-height: 1.6;
  }
  .card ul { list-style: none; padding: 0; }
@@ -172,19 +172,19 @@
 
  /* Highlight boxes */
  .highlight {
- background: linear-gradient(135deg, rgba(255,107,157,0.2), rgba(255,107,157,0.05));
- border: 1px solid rgba(255,107,157,0.4);
+ background: linear-gradient(135deg, rgba(var(--accent-rgb, 255,107,157), 0.2), rgba(var(--accent-rgb, 255,107,157), 0.05));
+ border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.4);
  border-radius: 6px;
  padding: 1rem 1.2rem;
  margin: 0.8rem 0;
  font-size: 0.88rem;
- color: #ff8fa3;
+ color: var(--accent-4, #ff8fa3);
  }
  .highlight strong { color: var(--teal-light); }
 
  .formula-box {
- background: rgba(255,107,157,0.08);
- border: 1px solid rgba(255,107,157,0.4);
+ background: rgba(var(--accent-rgb, 255,107,157), 0.08);
+ border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.4);
  border-radius: 6px;
  padding: 1rem 1.4rem;
  text-align: center;
@@ -196,15 +196,15 @@
  }
 
  .alert {
- background: rgba(255,92,107,0.12);
+ background: rgba(var(--accent-2-rgb, 255,92,107), 0.12);
  border-left: 3px solid var(--red-accent);
  padding: 0.7rem 1rem;
  margin: 0.7rem 0;
  font-size: 0.86rem;
  border-radius: 0 4px 4px 0;
- color: #ff8fa3;
+ color: var(--accent-4, #ff8fa3);
  }
- .alert strong { color: #ff6b9d; }
+ .alert strong { color: var(--accent, #ff6b9d); }
 
  .success {
  background: rgba(61,214,140,0.12);
@@ -237,10 +237,10 @@
  td {
  padding: 0.55rem 0.9rem;
  border-bottom: 1px solid rgba(255,255,255,0.06);
- color: #ff8fa3;
+ color: var(--accent-4, #ff8fa3);
  vertical-align: top;
  }
- tr:hover td { background: rgba(255,107,157,0.07); }
+ tr:hover td { background: rgba(var(--accent-rgb, 255,107,157), 0.07); }
  td strong { color: var(--gold-light); }
 
  /* Flow/Process steps */
@@ -253,7 +253,7 @@
  }
  .flow-step {
  background: var(--deep);
- border: 1px solid rgba(255,107,157,0.4);
+ border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.4);
  border-radius: 4px;
  padding: 0.4rem 0.8rem;
  font-size: 0.82rem;
@@ -285,7 +285,7 @@
  /* Separator */
  .sep {
  border: none;
- border-top: 1px solid rgba(255,107,157,0.2);
+ border-top: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.2);
  margin: 2.5rem 0;
  }
 
@@ -297,8 +297,8 @@
  margin: 0.5rem 0;
  }
  .tag {
- background: rgba(255,107,157,0.2);
- border: 1px solid rgba(255,107,157,0.4);
+ background: rgba(var(--accent-rgb, 255,107,157), 0.2);
+ border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.4);
  border-radius: 20px;
  padding: 0.2rem 0.8rem;
  font-size: 0.78rem;
@@ -306,8 +306,8 @@
  font-weight: 600;
  }
  .tag-gold {
- background: rgba(255,107,157,0.15);
- border-color: rgba(255,107,157,0.4);
+ background: rgba(var(--accent-rgb, 255,107,157), 0.15);
+ border-color: rgba(var(--accent-rgb, 255,107,157), 0.4);
  color: var(--gold-light);
  }
 
@@ -332,6 +332,8 @@
 
  <link rel="stylesheet" href="../../../../../assets/css/modules/fiche-layout.css">
 <link rel="stylesheet" href="../../../../../assets/css/schemas.css">
+<link rel="stylesheet" href="../../../../../assets/css/themes.css">
+<script src="../../../../../assets/js/theme.js"></script>
 </head>
 <body>
 <a href="../accueil-physio.html" class="back-nav">← Physiologie II</a>
@@ -769,7 +771,7 @@
  Physiologie II – Physiothérapie · Fiche de révision réalisée à partir du Cours 2
 </footer>
 
-<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../qcm/qcm-2-systeme-urinaire.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../qcm/qcm-2-systeme-urinaire.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(var(--accent-2-rgb, 255,92,107), 0.12), rgba(var(--accent-rgb, 255,107,157), 0.12)); border:1px solid rgba(var(--accent-rgb, 255,107,157), 0.35); color:var(--accent-4, #ff8fa3); text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
 <script src="../../../../../assets/js/glossaire.js"></script>
 </body>
 </html>

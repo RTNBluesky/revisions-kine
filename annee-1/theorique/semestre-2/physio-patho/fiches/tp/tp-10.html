@@ -21,17 +21,17 @@
  --surface: #161922;
  --surface2: #20243a;
  --border: #2a3050;
- --accent: #ff5c6b;
- --accent2: #ff5c6b;
- --accent3: #f472b6;
- --accent4: #ff6b9d;
+ --accent: var(--accent-2, #ff5c6b);
+ --accent2: var(--accent-2, #ff5c6b);
+ --accent3: var(--accent-3, #f472b6);
+ --accent4: var(--accent, #ff6b9d);
  --text: #9aa3b8;
  --text-muted: #9aa3b8;
  --text-dim: #6a7388;
- --red-soft: rgba(255,92,107,0.12);
- --orange-soft: rgba(255,107,157,0.12);
- --blue-soft: rgba(255,107,157,0.12);
- --green-soft: rgba(255,107,157,0.12);
+ --red-soft: rgba(var(--accent-2-rgb, 255,92,107), 0.12);
+ --orange-soft: rgba(var(--accent-rgb, 255,107,157), 0.12);
+ --blue-soft: rgba(var(--accent-rgb, 255,107,157), 0.12);
+ --green-soft: rgba(var(--accent-rgb, 255,107,157), 0.12);
  }
 
  * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -59,7 +59,7 @@
  top: -80px; right: -80px;
  width: 400px; height: 400px;
  border-radius: 50%;
- background: radial-gradient(circle, rgba(255,92,107,0.15) 0%, transparent 70%);
+ background: radial-gradient(circle, rgba(var(--accent-2-rgb, 255,92,107), 0.15) 0%, transparent 70%);
  }
  header::after {
  content: '⚕';
@@ -317,7 +317,7 @@
  overflow: hidden;
  }
  .score-header {
- background: rgba(255,92,107,0.15);
+ background: rgba(var(--accent-2-rgb, 255,92,107), 0.15);
  border-bottom: 1px solid var(--border);
  padding: 12px 20px;
  font-family: 'Playfair Display', serif;
@@ -337,9 +337,9 @@
  gap: 12px;
  }
  .alert-icon { font-size: 18px; flex-shrink: 0; margin-top: 2px; }
- .alert.danger { background: var(--red-soft); border: 1px solid rgba(255,166,87,0.3); }
- .alert.warn { background: var(--orange-soft); border: 1px solid rgba(255,166,87,0.3); }
- .alert.info { background: var(--blue-soft); border: 1px solid rgba(255,107,157,0.3); }
+ .alert.danger { background: var(--red-soft); border: 1px solid rgba(var(--orange-rgb, 255,159,67), 0.3); }
+ .alert.warn { background: var(--orange-soft); border: 1px solid rgba(var(--orange-rgb, 255,159,67), 0.3); }
+ .alert.info { background: var(--blue-soft); border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.3); }
  .alert.success { background: var(--green-soft); border: 1px solid rgba(61,214,140,0.3); }
 
  /* ===== PILL TAGS ===== */
@@ -351,10 +351,10 @@
  border-radius: 100px;
  letter-spacing: 0.5px;
  }
- .tag.red { background: var(--red-soft); color: var(--accent); border: 1px solid rgba(255,92,107,0.3); }
- .tag.orange { background: var(--orange-soft); color: var(--accent2); border: 1px solid rgba(255,107,157,0.3); }
- .tag.blue { background: var(--blue-soft); color: var(--accent3); border: 1px solid rgba(255,107,157,0.3); }
- .tag.green { background: var(--green-soft); color: var(--accent4); border: 1px solid rgba(255,107,157,0.3); }
+ .tag.red { background: var(--red-soft); color: var(--accent); border: 1px solid rgba(var(--accent-2-rgb, 255,92,107), 0.3); }
+ .tag.orange { background: var(--orange-soft); color: var(--accent2); border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.3); }
+ .tag.blue { background: var(--blue-soft); color: var(--accent3); border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.3); }
+ .tag.green { background: var(--green-soft); color: var(--accent4); border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.3); }
 
  /* ===== KEY NUMBERS ===== */
  .numbers-row {
@@ -413,6 +413,8 @@
 
  <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
 <link rel="stylesheet" href="../../../../../../assets/css/schemas.css">
+<link rel="stylesheet" href="../../../../../../assets/css/themes.css">
+<script src="../../../../../../assets/js/theme.js"></script>
 </head>
 <body>
 <a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
@@ -954,7 +956,7 @@
  sections.forEach(s => observer.observe(s));
 </script>
 
-<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-10.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-10.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(var(--accent-2-rgb, 255,92,107), 0.12), rgba(var(--accent-rgb, 255,107,157), 0.12)); border:1px solid rgba(var(--accent-rgb, 255,107,157), 0.35); color:var(--accent-4, #ff8fa3); text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
 <script src="../../../../../../assets/js/glossaire.js"></script>
 </body>
 </html>

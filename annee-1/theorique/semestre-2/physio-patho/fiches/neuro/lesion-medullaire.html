@@ -17,22 +17,22 @@
 <link rel="stylesheet" href="../../../../../../assets/css/chrome.css">
 <style>
  :root {
- --orange: #ff5c6b;
- --orange-light: #ff8fa3;
- --orange-pale: #ff8fa3;
+ --orange: var(--accent-2, #ff5c6b);
+ --orange-light: var(--accent-4, #ff8fa3);
+ --orange-pale: var(--accent-4, #ff8fa3);
  --dark: #0f1117;
- --mid: #ff8fa3;
- --cream: #ff8fa3;
+ --mid: var(--accent-4, #ff8fa3);
+ --cream: var(--accent-4, #ff8fa3);
  --white: #FFFFFF;
  --gray: #6a7388;
- --gray-light: #ff8fa3;
- --red: #ff5c6b;
- --blue: #f472b6;
- --blue-light: #ff8fa3;
- --green: #ff6b9d;
- --green-light: #ff6b9d;
- --purple: #f472b6;
- --purple-light: #ff8fa3;
+ --gray-light: var(--accent-4, #ff8fa3);
+ --red: var(--accent-2, #ff5c6b);
+ --blue: var(--accent-3, #f472b6);
+ --blue-light: var(--accent-4, #ff8fa3);
+ --green: var(--accent, #ff6b9d);
+ --green-light: var(--accent, #ff6b9d);
+ --purple: var(--accent-3, #f472b6);
+ --purple-light: var(--accent-4, #ff8fa3);
  --shadow: 0 4px 24px rgba(26,18,8,0.10);
  --shadow-lg: 0 12px 48px rgba(26,18,8,0.16);
  }
@@ -63,8 +63,8 @@
  45deg,
  transparent,
  transparent 40px,
- rgba(255,107,157,0.07) 40px,
- rgba(255,107,157,0.07) 41px
+ rgba(var(--accent-rgb, 255,107,157), 0.07) 40px,
+ rgba(var(--accent-rgb, 255,107,157), 0.07) 41px
  );
  }
  header .badge {
@@ -298,11 +298,11 @@
  .syn-col ul li::before { content: '• '; color: var(--orange); }
 
  /* SYNDROME COLORS */
- .syn-total .syn-header { background: linear-gradient(135deg, #161922, #ff5c6b); color: white; }
- .syn-ant .syn-header { background: linear-gradient(135deg, #ff5c6b, #f472b6); color: white; }
- .syn-brown .syn-header { background: linear-gradient(135deg, #ff6b9d, #ff6b9d); color: white; }
- .syn-centro.syn-header { background: linear-gradient(135deg, #ff5c6b, #f472b6); color: white; }
- .syn-cone .syn-header { background: linear-gradient(135deg, #ff5c6b, var(--red)); color: white; }
+ .syn-total .syn-header { background: linear-gradient(135deg, #161922, var(--accent-2, #ff5c6b)); color: white; }
+ .syn-ant .syn-header { background: linear-gradient(135deg, var(--accent-2, #ff5c6b), var(--accent-3, #f472b6)); color: white; }
+ .syn-brown .syn-header { background: linear-gradient(135deg, var(--accent, #ff6b9d), var(--accent, #ff6b9d)); color: white; }
+ .syn-centro.syn-header { background: linear-gradient(135deg, var(--accent-2, #ff5c6b), var(--accent-3, #f472b6)); color: white; }
+ .syn-cone .syn-header { background: linear-gradient(135deg, var(--accent-2, #ff5c6b), var(--red)); color: white; }
 
  /* ─── NIVEAU TABLE ─── */
  .niveau-grid {
@@ -319,9 +319,9 @@
  transition: transform 0.15s;
  }
  .niveau-item:hover { transform: translateY(-2px); }
- .niveau-item.cervical { border-top-color: #ff5c6b; }
- .niveau-item.dorsal { border-top-color: #f472b6; }
- .niveau-item.lombaire { border-top-color: #ff6b9d; }
+ .niveau-item.cervical { border-top-color: var(--accent-2, #ff5c6b); }
+ .niveau-item.dorsal { border-top-color: var(--accent-3, #f472b6); }
+ .niveau-item.lombaire { border-top-color: var(--accent, #ff6b9d); }
  .niveau-item .niv-code {
  font-family: 'DM Mono', monospace;
  font-weight: 600;
@@ -329,9 +329,9 @@
  margin-bottom: 0.3rem;
  }
  .niveau-item .niv-desc { font-size: 0.78rem; color: var(--gray); }
- .cervical .niv-code { color: #ff5c6b; }
- .dorsal .niv-code { color: #f472b6; }
- .lombaire .niv-code { color: #ff6b9d; }
+ .cervical .niv-code { color: var(--accent-2, #ff5c6b); }
+ .dorsal .niv-code { color: var(--accent-3, #f472b6); }
+ .lombaire .niv-code { color: var(--accent, #ff6b9d); }
 
  /* ─── ASIA ─── */
  .asia-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 0.8rem; }
@@ -350,10 +350,10 @@
  }
  .asia-card h4 { font-size: 0.78rem; margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.1em; }
  .asia-card p { font-size: 0.78rem; opacity: 0.9; }
- .asia-a { background: linear-gradient(135deg, #ff5c6b, #ff5c6b); }
- .asia-b { background: linear-gradient(135deg, #ff8fa3, #ff5c6b); }
- .asia-c { background: linear-gradient(135deg, #ff6b9d, #ff6b9d); }
- .asia-d { background: linear-gradient(135deg, #ff5c6b, #f472b6); }
+ .asia-a { background: linear-gradient(135deg, var(--accent-2, #ff5c6b), var(--accent-2, #ff5c6b)); }
+ .asia-b { background: linear-gradient(135deg, var(--accent-4, #ff8fa3), var(--accent-2, #ff5c6b)); }
+ .asia-c { background: linear-gradient(135deg, var(--accent, #ff6b9d), var(--accent, #ff6b9d)); }
+ .asia-d { background: linear-gradient(135deg, var(--accent-2, #ff5c6b), var(--accent-3, #f472b6)); }
  .asia-e { background: linear-gradient(135deg, #2a3050, #3a4060); }
 
  /* ─── EPID STATS ─── */
@@ -390,7 +390,7 @@
  .tag.blue { background: var(--blue-light); color: var(--blue); border-color: var(--blue); }
  .tag.green { background: var(--green-light); color: var(--green); border-color: var(--green); }
  .tag.purple { background: var(--purple-light); color: var(--purple); border-color: var(--purple); }
- .tag.red { background: #ff8fa3; color: var(--red); border-color: var(--red); }
+ .tag.red { background: var(--accent-4, #ff8fa3); color: var(--red); border-color: var(--red); }
 
  /* ─── LEGEND ─── */
  .legend { display: flex; flex-wrap: wrap; gap: 0.5rem 1.2rem; font-size: 0.8rem; color: var(--gray); margin-bottom: 1rem; }
@@ -431,6 +431,8 @@
 
  <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
 <link rel="stylesheet" href="../../../../../../assets/css/schemas.css">
+<link rel="stylesheet" href="../../../../../../assets/css/themes.css">
+<script src="../../../../../../assets/js/theme.js"></script>
 </head>
 <body>
 <a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
@@ -1271,7 +1273,7 @@
  Fiche de révision — pour usage pédagogique
 </footer>
 
-<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/neuro/lesion-medullaire.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/neuro/lesion-medullaire.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(var(--accent-2-rgb, 255,92,107), 0.12), rgba(var(--accent-rgb, 255,107,157), 0.12)); border:1px solid rgba(var(--accent-rgb, 255,107,157), 0.35); color:var(--accent-4, #ff8fa3); text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
 <script src="../../../../../../assets/js/glossaire.js"></script>
 </body>
 </html>

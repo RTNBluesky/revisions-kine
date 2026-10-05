@@ -15,8 +15,9 @@
 <title>Antisèche Anatomie II — À lire avant l'exam</title>
 <link rel="stylesheet" href="../../../../assets/css/chrome.css">
 <link rel="stylesheet" href="../../../../assets/css/schemas.css">
+<link rel="stylesheet" href="../../../../assets/css/themes.css">
 <style>
-:root{--bg:#0f1117;--bg2:#1a1d2a;--bg3: #161922;--border:#2a3050;--ink:#e8eaf0;--muted:#9aa3b8;--rose:#ff5c6b;--orange: #ff8fa3;--vert: #ff6b9d;--bleu:#f472b6;--violet:#f472b6}
+:root{--bg:#0f1117;--bg2:#1a1d2a;--bg3: #161922;--border:#2a3050;--ink:#e8eaf0;--muted:#9aa3b8;--rose:var(--accent-2, #ff5c6b);--orange: var(--accent-4, #ff8fa3);--vert: var(--accent, #ff6b9d);--bleu:var(--accent-3, #f472b6);--violet:var(--accent-3, #f472b6)}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--ink);font-family:'Segoe UI',system-ui,sans-serif;font-size:14px;line-height:1.55}
 header{background:linear-gradient(135deg,#0f1117 0%,#1a1d2a 100%);border-bottom:3px solid var(--rose);padding:1.5rem 2rem 1.2rem;text-align:center}
@@ -33,18 +34,19 @@ main{max-width:1100px;margin:0 auto;padding:1.5rem 1rem 3rem}
 .block h3{font-size:.7rem;text-transform:uppercase;letter-spacing:2px;font-weight:800;margin:.7rem 0 .4rem;padding-left:.4rem;border-left:3px solid currentColor;color:var(--orange)}
 .chips{display:flex;flex-wrap:wrap;gap:.3rem}
 .chip{display:inline-block;padding:.18rem .5rem;border-radius:12px;background:var(--bg3);color:var(--ink);font-size:.72rem;font-weight:600;border:1px solid var(--border)}
-.chip.r{background:rgba(255,92,107,0.10);border-color:rgba(255,92,107,0.4);color:#ff8fa3}
-.chip.o{background:rgba(255,107,157,0.10);border-color:rgba(255,107,157,0.4);color:#ff8fa3}
-.chip.v{background:rgba(61,214,140,0.10);border-color:rgba(61,214,140,0.4);color:#ff6b9d}
-.chip.b{background:rgba(255,107,157,0.10);border-color:rgba(255,107,157,0.4);color:#f472b6}
-.chip.p{background:rgba(255,107,157,0.10);border-color:rgba(255,107,157,0.4);color:#f472b6}
-.back-btn{position:fixed;top:14px;left:14px;z-index:200;background:rgba(15,17,23,0.92);backdrop-filter:blur(10px);border:1px solid rgba(255,92,107,0.30);color:#e8eaf0;padding:8px 13px;border-radius:10px;text-decoration:none;font-size:12.5px;font-weight:600}
+.chip.r{background:rgba(var(--accent-2-rgb, 255,92,107), 0.10);border-color:rgba(var(--accent-2-rgb, 255,92,107), 0.4);color:var(--accent-4, #ff8fa3)}
+.chip.o{background:rgba(var(--accent-rgb, 255,107,157), 0.10);border-color:rgba(var(--accent-rgb, 255,107,157), 0.4);color:var(--accent-4, #ff8fa3)}
+.chip.v{background:rgba(61,214,140,0.10);border-color:rgba(61,214,140,0.4);color:var(--accent, #ff6b9d)}
+.chip.b{background:rgba(var(--accent-rgb, 255,107,157), 0.10);border-color:rgba(var(--accent-rgb, 255,107,157), 0.4);color:var(--accent-3, #f472b6)}
+.chip.p{background:rgba(var(--accent-rgb, 255,107,157), 0.10);border-color:rgba(var(--accent-rgb, 255,107,157), 0.4);color:var(--accent-3, #f472b6)}
+.back-btn{position:fixed;top:14px;left:14px;z-index:200;background:rgba(15,17,23,0.92);backdrop-filter:blur(10px);border:1px solid rgba(var(--accent-2-rgb, 255,92,107), 0.30);color:#e8eaf0;padding:8px 13px;border-radius:10px;text-decoration:none;font-size:12.5px;font-weight:600}
 .back-btn:hover{border-color:var(--rose);color:#ffffff}
 footer{text-align:center;padding:1.5rem;color:var(--muted);font-size:.75rem;border-top:1px solid var(--border);margin-top:2rem}
-.intro-tip{background:rgba(255,107,157,0.08);border:1px solid rgba(255,107,157,0.3);border-radius:10px;padding:.9rem 1.1rem;margin:1rem 0;font-size:.85rem;color:#ff8fa3}
+.intro-tip{background:rgba(var(--accent-rgb, 255,107,157), 0.08);border:1px solid rgba(var(--accent-rgb, 255,107,157), 0.3);border-radius:10px;padding:.9rem 1.1rem;margin:1rem 0;font-size:.85rem;color:var(--accent-4, #ff8fa3)}
 .intro-tip strong{color:var(--orange)}
-.module-label{font-size:.65rem;text-transform:uppercase;letter-spacing:2px;color:var(--rose);font-weight:800;margin:1.5rem 0 .5rem;padding:.4rem .8rem;border-radius:6px;background:rgba(255,92,107,0.10);display:inline-block}
+.module-label{font-size:.65rem;text-transform:uppercase;letter-spacing:2px;color:var(--rose);font-weight:800;margin:1.5rem 0 .5rem;padding:.4rem .8rem;border-radius:6px;background:rgba(var(--accent-2-rgb, 255,92,107), 0.10);display:inline-block}
 </style>
+<script src="../../../../assets/js/theme.js"></script>
 </head>
 <body>
 <a href="accueil-anat.html" class="back-nav">← Anatomie II</a>

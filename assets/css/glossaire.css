@@ -16,11 +16,11 @@
 .def:hover,
 .def:focus-visible,
 .def[aria-expanded="true"] {
-  background: var(--accent-soft, rgba(255, 107, 157, 0.12));
+  background: var(--accent-soft, rgba(var(--accent-rgb, 255,107,157), 0.12));
   border-bottom-color: var(--accent, #ff6b9d);
   outline: none;
 }
-.def:focus-visible { box-shadow: 0 0 0 2px var(--accent-soft-2, rgba(255, 107, 157, 0.20)); }
+.def:focus-visible { box-shadow: 0 0 0 2px var(--accent-soft-2, rgba(var(--accent-rgb, 255,107,157), 0.20)); }
 
 /* ---- l'infobulle ---- */
 #glo-bulle {
@@ -30,7 +30,7 @@
   padding: 13px 15px;
   border-radius: 11px;
   background: #1a1d2a;
-  border: 1px solid var(--accent-soft-2, rgba(255, 107, 157, 0.20));
+  border: 1px solid var(--accent-soft-2, rgba(var(--accent-rgb, 255,107,157), 0.20));
   box-shadow: 0 14px 40px rgba(0, 0, 0, 0.55);
   font-family: 'Source Sans 3', -apple-system, system-ui, sans-serif;
   font-size: 13.5px;
@@ -60,8 +60,8 @@
   width: 9px;
   height: 9px;
   background: #1a1d2a;
-  border-left: 1px solid var(--accent-soft-2, rgba(255, 107, 157, 0.20));
-  border-top: 1px solid var(--accent-soft-2, rgba(255, 107, 157, 0.20));
+  border-left: 1px solid var(--accent-soft-2, rgba(var(--accent-rgb, 255,107,157), 0.20));
+  border-top: 1px solid var(--accent-soft-2, rgba(var(--accent-rgb, 255,107,157), 0.20));
   transform: rotate(45deg);
 }
 #glo-bulle.dessous::after { top: -5px; }

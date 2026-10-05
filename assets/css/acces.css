@@ -23,8 +23,8 @@ html.verrouille { overflow: hidden; }
   padding: 24px;
   background: #0f1117;
   background-image:
-    radial-gradient(900px 500px at 20% -10%, rgba(255, 92, 107, 0.16), transparent 60%),
-    radial-gradient(800px 500px at 90% 110%, rgba(255, 107, 157, 0.13), transparent 60%);
+    radial-gradient(900px 500px at 20% -10%, rgba(var(--accent-2-rgb, 255,92,107), 0.16), transparent 60%),
+    radial-gradient(800px 500px at 90% 110%, rgba(var(--accent-rgb, 255,107,157), 0.13), transparent 60%);
   font-family: 'Source Sans 3', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
   color: #e8eaf0;
 }
@@ -44,7 +44,7 @@ html.verrouille { overflow: hidden; }
 #acces-ecran .acces-carte::before {
   content: '';
   position: absolute; top: 0; left: 0; right: 0; height: 3px;
-  background: linear-gradient(90deg, #ff5c6b, #ff6b9d, transparent);
+  background: linear-gradient(90deg, var(--accent-2, #ff5c6b), var(--accent, #ff6b9d), transparent);
 }
 
 /* ---------------- le cadenas ---------------- */
@@ -60,7 +60,7 @@ html.verrouille { overflow: hidden; }
 
 #acces-ecran .acces-anse {
   fill: none;
-  stroke: #ff8fa3;
+  stroke: var(--accent-4, #ff8fa3);
   stroke-width: 6;
   stroke-linecap: round;
   /* pivot : le pied droit de l'anse */
@@ -68,7 +68,7 @@ html.verrouille { overflow: hidden; }
   transition: transform 0.42s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 #acces-ecran .acces-corps {
-  fill: #ff5c6b;
+  fill: var(--accent-2, #ff5c6b);
   transform-origin: 32px 42px;
   transition: fill 0.4s ease;
 }
@@ -83,7 +83,7 @@ html.verrouille { overflow: hidden; }
   height: 70px;
   margin: -35px 0 0 -35px;
   border-radius: 50%;
-  border: 2px solid #ff8fa3;
+  border: 2px solid var(--accent-4, #ff8fa3);
   opacity: 0;
   pointer-events: none;
 }
@@ -172,15 +172,15 @@ html.verrouille { overflow: hidden; }
 #acces-ecran input[type="password"]::placeholder { color: #6a7388; letter-spacing: normal; }
 #acces-ecran input[type="password"]:focus {
   outline: none;
-  border-color: #ff6b9d;
-  box-shadow: 0 0 0 3px rgba(255, 107, 157, 0.16);
+  border-color: var(--accent, #ff6b9d);
+  box-shadow: 0 0 0 3px rgba(var(--accent-rgb, 255,107,157), 0.16);
 }
 
 #acces-ecran button {
   padding: 13px 15px;
   border: none;
   border-radius: 10px;
-  background: linear-gradient(135deg, #ff5c6b, #ff6b9d);
+  background: linear-gradient(135deg, var(--accent-2, #ff5c6b), var(--accent, #ff6b9d));
   color: #fff;
   font-family: inherit;
   font-size: 0.95rem;
@@ -188,7 +188,7 @@ html.verrouille { overflow: hidden; }
   cursor: pointer;
   transition: transform 0.15s, box-shadow 0.15s;
 }
-#acces-ecran button:hover { transform: translateY(-1px); box-shadow: 0 8px 22px rgba(255, 92, 107, 0.3); }
+#acces-ecran button:hover { transform: translateY(-1px); box-shadow: 0 8px 22px rgba(var(--accent-2-rgb, 255,92,107), 0.3); }
 #acces-ecran button:active { transform: none; }
 
 #acces-ecran .acces-erreur {
@@ -196,7 +196,7 @@ html.verrouille { overflow: hidden; }
   margin: 2px 0 0;
   font-size: 0.84rem;
   font-weight: 600;
-  color: #ff8fa3;
+  color: var(--accent-4, #ff8fa3);
 }
 
 #acces-ecran .acces-note {

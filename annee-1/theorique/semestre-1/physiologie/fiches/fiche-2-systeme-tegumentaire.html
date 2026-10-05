@@ -23,10 +23,10 @@
  --text: #9aa3b8;
  --text-dim: #9aa3b8;
  --accent: #ff6b9d;
- --accent-2: #f472b6;
- --accent-3: #ff8fa3;
- --accent-4: #ff5c6b;
- --accent-5: #ff6b9d;
+ --accent-2: var(--accent-3, #f472b6);
+ --accent-3: var(--accent-4, #ff8fa3);
+ --accent-4: var(--accent-2, #ff5c6b);
+ --accent-5: var(--accent, #ff6b9d);
  --code-bg: #0f1117;
  }
  * { box-sizing: border-box; }
@@ -152,7 +152,9 @@
 </style>
  <link rel="stylesheet" href="../../../../../assets/css/modules/physiologie-1-theme.css">
 <link rel="stylesheet" href="../../../../../assets/css/schemas.css">
+<link rel="stylesheet" href="../../../../../assets/css/themes.css">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&amp;family=Source+Sans+3:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
+<script src="../../../../../assets/js/theme.js"></script>
 </head>
 <body>
 <a href="../accueil-physiologie.html" class="back-nav">← Physiologie I</a>

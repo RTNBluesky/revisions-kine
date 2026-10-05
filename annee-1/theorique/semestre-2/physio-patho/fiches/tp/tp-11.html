@@ -21,11 +21,11 @@
  --surface: #1a1d2a;
  --ink: #0f1117;
  --muted: #9aa3b8;
- --accent: #ff5c6b;
- --accent2: #f472b6;
- --accent3: #ff6b9d;
- --accent4: #f472b6;
- --accent5: #ff5c6b;
+ --accent: var(--accent-2, #ff5c6b);
+ --accent2: var(--accent-3, #f472b6);
+ --accent3: var(--accent, #ff6b9d);
+ --accent4: var(--accent-3, #f472b6);
+ --accent5: var(--accent-2, #ff5c6b);
  --border: #3a4060;
  --tag-bg: #161922;
  }
@@ -63,7 +63,7 @@
  line-height: 1.15;
  position: relative;
  }
- .hero h1 span { color: #ff8fa3; }
+ .hero h1 span { color: var(--accent-4, #ff8fa3); }
  .hero p {
  margin-top: .75rem;
  font-size: .9rem;
@@ -103,7 +103,7 @@
  .pill-3 { color: var(--accent4); }
  .pill-4 { color: var(--accent3); }
  .pill-5 { color: var(--accent5); }
- .pill-6 { color: #ff6b9d; }
+ .pill-6 { color: var(--accent, #ff6b9d); }
 
  /* LAYOUT */
  .main { max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem 4rem; }
@@ -149,7 +149,7 @@
  .theme-purple { color: var(--accent4); }
  .theme-green { color: var(--accent3); }
  .theme-orange { color: var(--accent5); }
- .theme-teal { color: #ff6b9d; }
+ .theme-teal { color: var(--accent, #ff6b9d); }
 
  /* CARDS GRID */
  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
@@ -202,9 +202,9 @@
  border: 1px solid var(--border);
  font-weight: 600;
  }
- .tag.viral { background: #ff8fa3; border-color: #ff8fa3; color: #ff5c6b; }
- .tag.bacterial { background: #ff8fa3; border-color: #ff8fa3; color: #f472b6; }
- .tag.viral-main { background: #ff8fa3; border-color: #ff8fa3; color: #ff8fa3; }
+ .tag.viral { background: var(--accent-4, #ff8fa3); border-color: var(--accent-4, #ff8fa3); color: var(--accent-2, #ff5c6b); }
+ .tag.bacterial { background: var(--accent-4, #ff8fa3); border-color: var(--accent-4, #ff8fa3); color: var(--accent-3, #f472b6); }
+ .tag.viral-main { background: var(--accent-4, #ff8fa3); border-color: var(--accent-4, #ff8fa3); color: var(--accent-4, #ff8fa3); }
 
  /* TIMELINE */
  .timeline { position: relative; padding-left: 1.5rem; }
@@ -249,9 +249,9 @@
  font-size: .9rem;
  border-left: 4px solid currentColor;
  }
- .highlight.danger { background: #ff8fa3; color: #ff5c6b; }
- .highlight.info { background: #ff8fa3; color: #f472b6; }
- .highlight.warn { background: #ffa657; color: #ffa657; }
+ .highlight.danger { background: var(--accent-4, #ff8fa3); color: var(--accent-2, #ff5c6b); }
+ .highlight.info { background: var(--accent-4, #ff8fa3); color: var(--accent-3, #f472b6); }
+ .highlight.warn { background: var(--orange, #ffa657); color: var(--orange, #ffa657); }
  .highlight.success { background: #3dd68c; color: #3dd68c; }
 
  /* TABLE */
@@ -266,7 +266,7 @@
  }
  th {
  background: var(--ink);
- color: #ff8fa3;
+ color: var(--accent-4, #ff8fa3);
  font-family: 'Playfair Display', serif;
  font-size: .9rem;
  padding: .65rem .9rem;
@@ -278,7 +278,7 @@
  vertical-align: top;
  }
  tr:last-child td { border-bottom: none; }
- tr:nth-child(even) td { background: #ff8fa3; }
+ tr:nth-child(even) td { background: var(--accent-4, #ff8fa3); }
 
  /* COMPARE BOX */
  .compare-row {
@@ -338,7 +338,7 @@
  font-family: 'Playfair Display', serif;
  font-size: 2rem;
  font-weight: 900;
- color: #ff8fa3;
+ color: var(--accent-4, #ff8fa3);
  }
  .intro-stat .desc {
  font-size: .8rem;
@@ -388,6 +388,8 @@
 
  <link rel="stylesheet" href="../../../../../../assets/css/modules/fiche-layout.css">
 <link rel="stylesheet" href="../../../../../../assets/css/schemas.css">
+<link rel="stylesheet" href="../../../../../../assets/css/themes.css">
+<script src="../../../../../../assets/js/theme.js"></script>
 </head>
 <body>
 <a href="../../accueil-physio-patho.html" class="back-nav">← Physiopathologie I</a>
@@ -1010,7 +1012,7 @@
  Licence Physiothérapie 1ère année
 </footer>
 
-<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-11.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12)); border:1px solid rgba(255,107,157,0.35); color:#ff8fa3; text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
+<div id="crossLinkBtn" style="text-align:center; margin:30px auto; max-width:1100px; padding:0 20px;"><a href="../../qcm/tp/tp-11.html" style="display:inline-flex; align-items:center; gap:8px; padding:12px 24px; background:linear-gradient(135deg, rgba(var(--accent-2-rgb, 255,92,107), 0.12), rgba(var(--accent-rgb, 255,107,157), 0.12)); border:1px solid rgba(var(--accent-rgb, 255,107,157), 0.35); color:var(--accent-4, #ff8fa3); text-decoration:none; border-radius:12px; font-weight:700; font-size:14px; transition:all 0.25s; font-family:'Source Sans 3',sans-serif;" onmouseover="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.20), rgba(255,107,157,0.20))'; this.style.borderColor='#ff6b9d'; this.style.color='#fff';" onmouseout="this.style.background='linear-gradient(135deg, rgba(255,92,107,0.12), rgba(255,107,157,0.12))'; this.style.borderColor='rgba(255,107,157,0.35)'; this.style.color='#ff8fa3';">🎯 Faire le QCM correspondant →</a></div>
 <script src="../../../../../../assets/js/glossaire.js"></script>
 </body>
 </html>
