@@ -187,7 +187,7 @@ body {
   padding: 32px;
   margin-bottom: 22px;
 }
-.fiche-hero .tag { 
+.fiche-hero .tag {
   display: inline-block; font-size: 0.72rem; font-weight: 600;
   letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent);
   margin-bottom: 12px;

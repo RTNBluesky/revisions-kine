@@ -90,6 +90,10 @@ nav.topnav, .topbar, nav.fiche-nav { display: none; }
     position: static; transform: none;
     display: block; margin: 0 auto 18px; width: fit-content;
   }
+  /* Le bouton retour reste fixe en haut à gauche à toutes les largeurs.
+     On dégage donc le premier élément qui le suit — la bascule si elle est
+     là, sinon l'en-tête — et seulement celui-là, pour ne pas cumuler. */
+  .back-nav + .page-toggle { margin-top: 62px; }
   .page-toggle a, .page-toggle span.pt-on { padding: 8px 12px; font-size: 12px; }
 }
 

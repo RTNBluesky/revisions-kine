@@ -86,6 +86,10 @@ nav.topnav, .topbar, nav.fiche-nav { display: none; }
     position: static; transform: none;
     display: block; margin: 0 auto 18px; width: fit-content;
   }
+  /* Le bouton retour reste fixe en haut à gauche à toutes les largeurs.
+     On dégage donc le premier élément qui le suit — la bascule si elle est
+     là, sinon l'en-tête — et seulement celui-là, pour ne pas cumuler. */
+  .back-nav + .page-toggle { margin-top: 62px; }
   .page-toggle a, .page-toggle span.pt-on { padding: 8px 12px; font-size: 12px; }
 }
 
@@ -101,13 +105,14 @@ body > .hero:first-of-type { padding-top: 76px; }
 body > a.back-btn { display: none; }
 
 @media (max-width: 780px) {
-  /* la bascule redevient normale, mais le bouton retour reste fixe :
-     il faut encore lui réserver sa hauteur, sinon il recouvre la
-     première ligne de l'en-tête. */
+  /* la bascule n'est plus flottante : la réserve de 76 px n'a plus lieu d'être */
   body > header:first-of-type,
-  body > .hero:first-of-type { padding-top: 66px; }
+  body > .hero:first-of-type { padding-top: 32px; }
+  /* …sauf quand l'en-tête suit directement le bouton retour, lui toujours fixe */
+  body > .back-nav + header,
+  body > .back-nav + .hero { padding-top: 66px; }
 }
 @media (max-width: 560px) {
-  body > header:first-of-type,
-  body > .hero:first-of-type { padding-top: 56px; }
+  body > .back-nav + header,
+  body > .back-nav + .hero { padding-top: 56px; }
 }
