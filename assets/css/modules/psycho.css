@@ -8,9 +8,9 @@
   --surface-hover: #161922;
   --border: #2a3050;
   --border-light: #2a3050;
-  --text: var(--accent-4, #ff8fa3);
-  --text-strong: var(--accent-4, #ff8fa3);
-  --text-muted: var(--accent-3, #f472b6);
+  --text: #e8eaf0;
+  --text-strong: #f2f4fa;
+  --text-muted: #9aa3b8;
   --text-dim: #6a7388;
 
   --accent: var(--accent-3, #f472b6);
@@ -21,9 +21,9 @@
   --cyan: var(--accent-3, #f472b6);
   --violet: var(--accent-3, #f472b6);
   --pink: #9aa3b8;
-  --green: var(--accent-4, #ff8fa3);
+  --green: #3dd68c;
   --amber: var(--accent-2, #ff5c6b);
-  --red: var(--accent-2, #ff5c6b);
+  --red: #ff5c6b;
 
   --radius: 14px;
   --radius-sm: 10px;

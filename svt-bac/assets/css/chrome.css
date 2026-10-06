@@ -33,6 +33,7 @@
 }
 .back-nav:hover { border-color: var(--accent); color: #fff; }
 .back-nav:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
 @media (max-width: 560px) { .back-nav { top: 10px; left: 10px; padding: 7px 11px; font-size: 12px; } }
 @media (prefers-reduced-motion: reduce) { .back-nav { transition: none; } }
 
@@ -100,7 +101,13 @@ body > .hero:first-of-type { padding-top: 76px; }
 body > a.back-btn { display: none; }
 
 @media (max-width: 780px) {
-  /* en mobile la bascule redevient normale : plus besoin de réserver */
+  /* la bascule redevient normale, mais le bouton retour reste fixe :
+     il faut encore lui réserver sa hauteur, sinon il recouvre la
+     première ligne de l'en-tête. */
   body > header:first-of-type,
-  body > .hero:first-of-type { padding-top: 32px; }
+  body > .hero:first-of-type { padding-top: 66px; }
+}
+@media (max-width: 560px) {
+  body > header:first-of-type,
+  body > .hero:first-of-type { padding-top: 56px; }
 }

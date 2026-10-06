@@ -372,7 +372,7 @@
 
   /* QCM correctness — keep readable */
   --correct: #3dd68c !important;
-  --wrong: var(--accent-2, #ff5c6b) !important;
+  --wrong: #ff5c6b !important;
 }
 
 /* Force body dark */

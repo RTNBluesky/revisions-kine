@@ -11,8 +11,8 @@
   --bg-tertiary: #161922;
   --bg-card: #161922;
   --border-subtle: #2a3050;
-  --text-primary: var(--accent-4, #ff8fa3);
-  --text-secondary: var(--accent-3, #f472b6);
+  --text-primary: #e8eaf0;
+  --text-secondary: #9aa3b8;
   --text-muted: #6a7388;
 
   /* Couleurs par système */
