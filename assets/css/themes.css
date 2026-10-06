@@ -11,51 +11,51 @@
    ------------------------------------------------------------------ */
 
 html[data-theme="rouge"] {
-  --accent: #fa5252;   --accent-rgb: 250,82,82;
-  --accent-2: #e03131; --accent-2-rgb: 224,49,49;
-  --accent-3: #ff6b6b; --accent-3-rgb: 255,107,107;
-  --accent-4: #ff8787; --accent-4-rgb: 255,135,135;
-  --orange: #ff922b;   --orange-rgb: 255,146,43;
+  --accent: #fa5252 !important;   --accent-rgb: 250,82,82 !important;
+  --accent-2: #e03131 !important; --accent-2-rgb: 224,49,49 !important;
+  --accent-3: #ff6b6b !important; --accent-3-rgb: 255,107,107 !important;
+  --accent-4: #ff8787 !important; --accent-4-rgb: 255,135,135 !important;
+  --orange: #ff922b !important;   --orange-rgb: 255,146,43 !important;
 }
 
 html[data-theme="vert"] {
-  --accent: #2fbf71;   --accent-rgb: 47,191,113;
-  --accent-2: #12a150; --accent-2-rgb: 18,161,80;
-  --accent-3: #40c057; --accent-3-rgb: 64,192,87;
-  --accent-4: #69db7c; --accent-4-rgb: 105,219,124;
-  --orange: #94d82d;   --orange-rgb: 148,216,45;
+  --accent: #2fbf71 !important;   --accent-rgb: 47,191,113 !important;
+  --accent-2: #12a150 !important; --accent-2-rgb: 18,161,80 !important;
+  --accent-3: #40c057 !important; --accent-3-rgb: 64,192,87 !important;
+  --accent-4: #69db7c !important; --accent-4-rgb: 105,219,124 !important;
+  --orange: #94d82d !important;   --orange-rgb: 148,216,45 !important;
 }
 
 html[data-theme="bleu"] {
-  --accent: #4dabf7;   --accent-rgb: 77,171,247;
-  --accent-2: #1c7ed6; --accent-2-rgb: 28,126,214;
-  --accent-3: #3bc9db; --accent-3-rgb: 59,201,219;
-  --accent-4: #74c0fc; --accent-4-rgb: 116,192,252;
-  --orange: #22b8cf;   --orange-rgb: 34,184,207;
+  --accent: #4dabf7 !important;   --accent-rgb: 77,171,247 !important;
+  --accent-2: #1c7ed6 !important; --accent-2-rgb: 28,126,214 !important;
+  --accent-3: #3bc9db !important; --accent-3-rgb: 59,201,219 !important;
+  --accent-4: #74c0fc !important; --accent-4-rgb: 116,192,252 !important;
+  --orange: #22b8cf !important;   --orange-rgb: 34,184,207 !important;
 }
 
 html[data-theme="violet"] {
-  --accent: #9775fa;   --accent-rgb: 151,117,250;
-  --accent-2: #7048e8; --accent-2-rgb: 112,72,232;
-  --accent-3: #cc5de8; --accent-3-rgb: 204,93,232;
-  --accent-4: #b197fc; --accent-4-rgb: 177,151,252;
-  --orange: #e599f7;   --orange-rgb: 229,153,247;
+  --accent: #9775fa !important;   --accent-rgb: 151,117,250 !important;
+  --accent-2: #7048e8 !important; --accent-2-rgb: 112,72,232 !important;
+  --accent-3: #cc5de8 !important; --accent-3-rgb: 204,93,232 !important;
+  --accent-4: #b197fc !important; --accent-4-rgb: 177,151,252 !important;
+  --orange: #e599f7 !important;   --orange-rgb: 229,153,247 !important;
 }
 
 html[data-theme="ambre"] {
-  --accent: #ffa94d;   --accent-rgb: 255,169,77;
-  --accent-2: #f08c00; --accent-2-rgb: 240,140,0;
-  --accent-3: #ffc078; --accent-3-rgb: 255,192,120;
-  --accent-4: #ffd8a8; --accent-4-rgb: 255,216,168;
-  --orange: #fab005;   --orange-rgb: 250,176,5;
+  --accent: #ffa94d !important;   --accent-rgb: 255,169,77 !important;
+  --accent-2: #f08c00 !important; --accent-2-rgb: 240,140,0 !important;
+  --accent-3: #ffc078 !important; --accent-3-rgb: 255,192,120 !important;
+  --accent-4: #ffd8a8 !important; --accent-4-rgb: 255,216,168 !important;
+  --orange: #fab005 !important;   --orange-rgb: 250,176,5 !important;
 }
 
 html[data-theme="ardoise"] {
-  --accent: #90a4c4;   --accent-rgb: 144,164,196;
-  --accent-2: #6b82a8; --accent-2-rgb: 107,130,168;
-  --accent-3: #a5b8d4; --accent-3-rgb: 165,184,212;
-  --accent-4: #b8c7de; --accent-4-rgb: 184,199,222;
-  --orange: #8ca0b8;   --orange-rgb: 140,160,184;
+  --accent: #90a4c4 !important;   --accent-rgb: 144,164,196 !important;
+  --accent-2: #6b82a8 !important; --accent-2-rgb: 107,130,168 !important;
+  --accent-3: #a5b8d4 !important; --accent-3-rgb: 165,184,212 !important;
+  --accent-4: #b8c7de !important; --accent-4-rgb: 184,199,222 !important;
+  --orange: #8ca0b8 !important;   --orange-rgb: 140,160,184 !important;
 }
 
 /* les variables dérivées suivent toutes la palette active */

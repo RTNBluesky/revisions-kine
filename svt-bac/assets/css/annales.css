@@ -1,4 +1,4 @@
-:root{--bg:#0f1117;--bg2:#0f1117;--bg3:#0f1117;--accent:#6366f1;--yellow:#a5a0ff;--green:#6366f1;--red:#8b7cf8;--purple:#8b7cf8;--orange:#a5a0ff;--text:#a5a0ff;--muted:#6a7388;--border:#2a3050}
+:root{--bg:#0f1117;--bg2:#0f1117;--bg3:#0f1117;--accent:var(--accent-2, #ff5c6b);--yellow:var(--accent-4, #ff8fa3);--green:var(--accent-2, #ff5c6b);--red:var(--accent-3, #f472b6);--purple:var(--accent-3, #f472b6);--orange:var(--accent-4, #ff8fa3);--text:var(--accent-4, #ff8fa3);--muted:#6a7388;--border:#2a3050}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--bg);color:var(--text);font-family:'Segoe UI',system-ui,sans-serif;font-size:15px;line-height:1.75}
 header{background:linear-gradient(135deg,#0f1117 0%,#161922 100%);border-bottom:3px solid var(--purple);padding:2rem 2.5rem 1.6rem}
@@ -24,9 +24,9 @@ li{margin-bottom:.3rem}
 .sujet-box .lbl{font-size:.72rem;text-transform:uppercase;letter-spacing:2px;color:var(--yellow);font-weight:700;margin-bottom:.6rem}
 .sujet-box h3{color:#e8eaf0;border:none;padding:0;margin:.5rem 0 .8rem}
 .corrige-box{background:var(--bg2);border:1px solid var(--border);border-left:4px solid var(--purple);border-radius:10px;padding:1.2rem 1.4rem;margin-bottom:1rem}
-.tip{background:rgba(32,36,58,.07);border:1px solid rgba(58,64,96,.3);border-left:4px solid var(--green);border-radius:8px;padding:.85rem 1.1rem;margin:.7rem 0;color:#a5a0ff;font-size:.9rem}
+.tip{background:rgba(32,36,58,.07);border:1px solid rgba(58,64,96,.3);border-left:4px solid var(--green);border-radius:8px;padding:.85rem 1.1rem;margin:.7rem 0;color:var(--accent-4, #ff8fa3);font-size:.9rem}
 .tip::before{content:"💡 ";font-weight:700}
-.warn{background:rgba(32,36,58,.06);border:1px solid rgba(58,64,96,.3);border-left:4px solid var(--red);border-radius:8px;padding:.85rem 1.1rem;margin:.7rem 0;color:#a5a0ff;font-size:.9rem}
+.warn{background:rgba(32,36,58,.06);border:1px solid rgba(58,64,96,.3);border-left:4px solid var(--red);border-radius:8px;padding:.85rem 1.1rem;margin:.7rem 0;color:var(--accent-4, #ff8fa3);font-size:.9rem}
 .warn::before{content:"⚠️ ";font-weight:700}
 .points{display:inline-block;background:rgba(32,36,58,.15);color:var(--purple);padding:.2rem .7rem;border-radius:14px;font-size:.78rem;font-weight:700;margin-left:.5rem}
 .table-data{width:100%;border-collapse:collapse;margin:.6rem 0;background:var(--bg2);border-radius:6px;overflow:hidden;font-size:.85rem}
