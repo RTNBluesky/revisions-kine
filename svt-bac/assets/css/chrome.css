@@ -180,3 +180,110 @@ body > a.back-btn { display: none; }
   .suite-lien { transition: none; }
   .suite-lien:hover { transform: none; }
 }
+
+/* ---- rappel des questions manquées, sous le score ----
+   Les pastilles suivent la couleur du site : « raté » est déjà dit par le
+   titre juste au-dessus, inutile de les figer en rouge quel que soit le
+   thème choisi. Seules les questions laissées sans réponse se distinguent,
+   par un contour en pointillés. */
+.ratees {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line, rgba(255,255,255,0.08));
+}
+.ratees-titre {
+  font-size: .8rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+  color: var(--muted, #9aa3b8);
+  margin-bottom: 11px;
+}
+.ratees-liste { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.ratee {
+  min-width: 40px;
+  height: 40px;
+  padding: 0 11px;
+  border-radius: 11px;
+  border: 1px solid var(--accent-bord, rgba(var(--accent-rgb, 255,107,157), 0.40));
+  background: var(--accent-voile, rgba(var(--accent-rgb, 255,107,157), 0.10));
+  color: var(--accent-4, #ff8fa3);
+  font-family: inherit;
+  font-size: .95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background .15s, border-color .15s, color .15s, transform .15s;
+}
+.ratee:hover {
+  background: var(--accent-soft-2, rgba(var(--accent-rgb, 255,107,157), 0.20));
+  border-color: var(--accent, #ff6b9d);
+  color: #fff;
+  transform: translateY(-2px);
+}
+.ratee:focus-visible { outline: 2px solid var(--accent, #ff6b9d); outline-offset: 2px; }
+
+/* question laissée sans réponse : contour en pointillés, pas de couleur */
+.ratee.vide {
+  border-style: dashed;
+  border-color: var(--line-strong, rgba(255,255,255,0.14));
+  background: rgba(255,255,255,0.03);
+  color: var(--muted, #9aa3b8);
+}
+.ratee.vide:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: var(--dim, #6a7388);
+  color: var(--ink, #e8eaf0);
+}
+
+/* la question visée se signale un instant */
+.q.vise { animation: quizVise 2.4s ease; }
+@keyframes quizVise {
+  0%, 55% {
+    border-color: var(--accent, #ff6b9d);
+    box-shadow: 0 0 0 3px var(--accent-soft, rgba(var(--accent-rgb, 255,107,157), 0.12));
+  }
+  100% {
+    border-color: var(--line, rgba(255,255,255,0.08));
+    box-shadow: 0 0 0 0 transparent;
+  }
+}
+
+/* bouton flottant pour remonter au score après un saut */
+.retour-score {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 60;
+  padding: 11px 17px;
+  border-radius: 999px;
+  border: 1px solid var(--accent-bord, rgba(var(--accent-rgb, 255,107,157), 0.45));
+  background: var(--card, #1a1d2a);
+  color: var(--accent-4, #ff8fa3);
+  font-family: inherit;
+  font-size: .84rem;
+  font-weight: 700;
+  box-shadow: 0 8px 26px rgba(0,0,0,0.45);
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(8px);
+  pointer-events: none;
+  transition: opacity .2s ease, transform .2s ease, color .15s, border-color .15s;
+}
+.retour-score.visible { opacity: 1; transform: none; pointer-events: auto; }
+.retour-score:hover { color: #fff; border-color: var(--accent, #ff6b9d); }
+
+@media (max-width: 600px) {
+  .retour-score { right: 12px; bottom: 12px; font-size: .8rem; padding: 10px 14px; }
+}
+
+/* à l'impression les numéros restent lisibles ; le bouton flottant, non */
+@media print {
+  .retour-score { display: none; }
+  .ratee { background: none; color: #000; border-color: #000; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .q.vise { animation: none; border-color: var(--accent, #ff6b9d); }
+  .ratee, .retour-score { transition: none; }
+  .ratee:hover { transform: none; }
+}
