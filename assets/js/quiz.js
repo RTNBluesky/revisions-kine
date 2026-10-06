@@ -427,6 +427,28 @@
         box.appendChild(zone);
       }
 
+      /* Enchaînement vers le quiz précédent et le suivant du module.
+         Il n'apparaît qu'ici, une fois le score affiché : avant la fin,
+         proposer de partir ailleurs n'aurait pas de sens. La page dépose
+         window.SUITE_QCM ; si elle ne le fait pas, rien ne s'affiche. */
+      function suiteQcm(box) {
+        var s = window.SUITE_QCM;
+        if (!s || (!s.prec && !s.suiv)) return;
+        var nav = el("nav", "suite suite-quiz");
+        nav.setAttribute("aria-label", "Navigation dans le module");
+        function lien(d, classe, sens) {
+          var a = el("a", "suite-lien " + classe);
+          a.href = d.href;
+          a.innerHTML = '<span class="suite-sens"></span><span class="suite-titre"></span>';
+          a.firstChild.textContent = sens;
+          a.lastChild.textContent = d.titre || "";
+          nav.appendChild(a);
+        }
+        if (s.prec) lien(s.prec, "suite-prec", "← Quiz précédent");
+        if (s.suiv) lien(s.suiv, "suite-suiv", "Quiz suivant →");
+        box.appendChild(nav);
+      }
+
       function afficherScore(justes) {
         /* un glissement encore en attente arracherait l'écran au score */
         if (glissement) { clearTimeout(glissement); glissement = null; }
@@ -458,6 +480,7 @@
         back.href = data.fiche || "fiche.html";
         act.appendChild(back);
         box.appendChild(act);
+        suiteQcm(box);
         root.parentNode.insertBefore(box, root);
         amener(box);
       }
