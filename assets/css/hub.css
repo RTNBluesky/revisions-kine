@@ -352,7 +352,7 @@
   --accent-blue: var(--accent, #ff6b9d) !important;
   --accent-teal: var(--accent-4, #ff8fa3) !important;
   --accent-green: var(--accent-3, #ec4899) !important;
-  --accent-yellow: #ff9faf !important;
+  --accent-yellow: var(--accent-4, #ff8fa3) !important;
   --accent-purple: var(--accent-3, #ec4899) !important;
   --accent-violet: var(--accent-3, #ec4899) !important;
   --accent-amber: var(--accent-2, #ff5c6b) !important;
@@ -392,26 +392,26 @@ body::before, body::after {
 /* Class-based colored sections → rose family variants */
 .blue, .c-blue { --section-color: var(--accent, #ff6b9d) !important; }
 .green, .c-green { --section-color: var(--accent-3, #ec4899) !important; }
-.yellow, .c-yellow { --section-color: #ff9faf !important; }
+.yellow, .c-yellow { --section-color: var(--accent-4, #ff8fa3) !important; }
 .purple, .c-purple { --section-color: var(--accent-3, #ec4899) !important; }
 .orange, .c-orange { --section-color: var(--accent-2, #ff5c6b) !important; }
 .red, .c-red { --section-color: var(--accent-2, #ff5c6b) !important; }
 .teal { --section-color: var(--accent-4, #ff8fa3) !important; }
-.amber { --section-color: #ff9faf !important; }
+.amber { --section-color: var(--accent-4, #ff8fa3) !important; }
 .violet { --section-color: var(--accent-3, #ec4899) !important; }
 .rose { --section-color: var(--accent, #ff6b9d) !important; }
 
 /* Force colored borders & icons inside themed sections */
 .blue .section-icon, .c-blue .card-accent { background: rgba(var(--accent-rgb, 255,107,157), 0.15) !important; color: var(--accent, #ff6b9d) !important; }
 .green .section-icon, .c-green .card-accent { background: rgba(var(--accent-3-rgb, 244,114,182), 0.15) !important; color: var(--accent-3, #ec4899) !important; }
-.yellow .section-icon, .c-yellow .card-accent { background: rgba(255,159,175,0.15) !important; color: #ff9faf !important; }
+.yellow .section-icon, .c-yellow .card-accent { background: rgba(var(--accent-4-rgb, 255,143,163),0.15) !important; color: var(--accent-4, #ff8fa3) !important; }
 .purple .section-icon, .c-purple .card-accent { background: rgba(var(--accent-3-rgb, 244,114,182), 0.15) !important; color: var(--accent-3, #ec4899) !important; }
 .orange .section-icon { background: rgba(var(--accent-2-rgb, 255,92,107), 0.15) !important; color: var(--accent-2, #ff5c6b) !important; }
 .red .section-icon, .c-red .card-accent { background: rgba(var(--accent-2-rgb, 255,92,107), 0.15) !important; color: var(--accent-2, #ff5c6b) !important; }
 
 .blue .section-title, .c-blue .card h3 { color: var(--accent, #ff6b9d) !important; }
 .green .section-title, .c-green .card h3 { color: var(--accent-3, #ec4899) !important; }
-.yellow .section-title, .c-yellow .card h3 { color: #ff9faf !important; }
+.yellow .section-title, .c-yellow .card h3 { color: var(--accent-4, #ff8fa3) !important; }
 .purple .section-title, .c-purple .card h3 { color: var(--accent-3, #ec4899) !important; }
 .orange .section-title { color: var(--accent-2, #ff5c6b) !important; }
 .red .section-title, .c-red .card h3 { color: var(--accent-2, #ff5c6b) !important; }
@@ -420,26 +420,26 @@ body::before, body::after {
 .card.blue::before { background: linear-gradient(90deg, var(--accent, #ff6b9d), transparent) !important; }
 .card.teal::before { background: linear-gradient(90deg, var(--accent-4, #ff8fa3), transparent) !important; }
 .card.rose::before { background: linear-gradient(90deg, var(--accent, #ff6b9d), transparent) !important; }
-.card.amber::before { background: linear-gradient(90deg, #ff9faf, transparent) !important; }
+.card.amber::before { background: linear-gradient(90deg, var(--accent-4, #ff8fa3), transparent) !important; }
 .card.violet::before { background: linear-gradient(90deg, var(--accent-3, #ec4899), transparent) !important; }
 .card.blue h3 { color: var(--accent, #ff6b9d) !important; }
 .card.teal h3 { color: var(--accent-4, #ff8fa3) !important; }
 .card.rose h3 { color: var(--accent, #ff6b9d) !important; }
-.card.amber h3 { color: #ff9faf !important; }
+.card.amber h3 { color: var(--accent-4, #ff8fa3) !important; }
 .card.violet h3 { color: var(--accent-3, #ec4899) !important; }
 
 /* Pills */
 .pill-blue { background: rgba(var(--accent-rgb, 255,107,157), 0.20) !important; color: var(--accent, #ff6b9d) !important; }
 .pill-teal { background: rgba(var(--accent-4-rgb, 255,143,163), 0.20) !important; color: var(--accent-4, #ff8fa3) !important; }
 .pill-rose { background: rgba(var(--accent-3-rgb, 244,114,182), 0.20) !important; color: var(--accent-3, #f472b6) !important; }
-.pill-amber { background: rgba(255,159,175,0.20) !important; color: #ff9faf !important; }
+.pill-amber { background: rgba(var(--accent-4-rgb, 255,143,163),0.20) !important; color: var(--accent-4, #ff8fa3) !important; }
 .pill-violet { background: rgba(var(--accent-3-rgb, 244,114,182), 0.20) !important; color: var(--accent-3, #ec4899) !important; }
 
 /* Badges (urinaire) */
 .badge-blue { background: rgba(var(--accent-rgb, 255,107,157), 0.15) !important; color: var(--accent, #ff6b9d) !important; }
 .badge-red { background: rgba(var(--accent-2-rgb, 255,92,107), 0.15) !important; color: var(--accent-2, #ff5c6b) !important; }
 .badge-green { background: rgba(var(--accent-3-rgb, 244,114,182), 0.15) !important; color: var(--accent-3, #ec4899) !important; }
-.badge-yellow { background: rgba(255,159,175,0.15) !important; color: #ff9faf !important; }
+.badge-yellow { background: rgba(var(--accent-4-rgb, 255,143,163),0.15) !important; color: var(--accent-4, #ff8fa3) !important; }
 .badge-gold { background: var(--accent-2, #ff5c6b) !important; color: #0f1117 !important; }
 
 /* Tags & flow elements (urinaire) */
@@ -460,9 +460,9 @@ td strong { color: var(--accent-4, #ff8fa3) !important; }
   color: #e8eaf0 !important;
 }
 .highlight strong, .formula-box { color: var(--accent-4, #ff8fa3) !important; }
-.alert { background: rgba(var(--accent-2-rgb, 255,92,107), 0.12) !important; border-left-color: var(--accent-2, #e63946) !important; color: #ffb3bf !important; }
+.alert { background: rgba(var(--accent-2-rgb, 255,92,107), 0.12) !important; border-left-color: var(--accent-2, #e63946) !important; color: var(--accent-4, #ff8fa3) !important; }
 .alert strong { color: var(--accent-4, #ff8fa3) !important; }
-.success { background: rgba(var(--accent-rgb, 255,107,157), 0.12) !important; border-left-color: var(--accent, #ff6b9d) !important; color: #ffd1e0 !important; }
+.success { background: rgba(var(--accent-rgb, 255,107,157), 0.12) !important; border-left-color: var(--accent, #ff6b9d) !important; color: var(--accent-4, #ff8fa3) !important; }
 .success strong { color: var(--accent-4, #ff8fa3) !important; }
 
 /* Hero gradients & badges → rose */
@@ -526,9 +526,9 @@ td strong { color: var(--accent-4, #ff8fa3) !important; }
   --card-accent-border: rgba(var(--accent-3-rgb, 244,114,182), 0.28) !important;
 }
 .archive-card.theme-eaifs1 {
-  --card-accent: #ff9faf !important;
-  --card-accent-bg: rgba(255,159,175,0.12) !important;
-  --card-accent-border: rgba(255,159,175,0.28) !important;
+  --card-accent: var(--accent-4, #ff8fa3) !important;
+  --card-accent-bg: rgba(var(--accent-4-rgb, 255,143,163),0.12) !important;
+  --card-accent-border: rgba(var(--accent-4-rgb, 255,143,163),0.28) !important;
 }
 .archive-card.theme-physios1 {
   --card-accent: var(--accent-2, #ff5c6b) !important;

@@ -93,6 +93,6 @@ body { font-family: 'Source Sans 3', sans-serif; background: var(--bg); color: v
 .note {
   background: rgba(var(--orange-rgb, 255,159,67), 0.08); border: 1px solid rgba(var(--orange-rgb, 255,159,67), 0.3);
   border-radius: 10px; padding: .9rem 1.1rem; margin: 0 0 1.4rem;
-  font-size: .86rem; color: #fcd49b;
+  font-size: .86rem; color: var(--orange, #ff9f43);
 }
 .note strong { color: var(--orange); }

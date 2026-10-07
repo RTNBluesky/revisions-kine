@@ -26,7 +26,7 @@
   --ok-soft: rgba(61,214,140,0.12);
   --ko: #ff5c6b;
   --ko-soft: rgba(255,92,107, 0.12);
-  --warn: #ff9faf;
+  --warn: var(--accent-4, #ff8fa3);
 
   --radius: 14px;
   --shadow: 0 12px 40px rgba(0,0,0,0.45);
@@ -329,7 +329,7 @@ article.fiche tbody tr:hover { background: rgba(var(--accent-rgb, 255,107,157), 
   border-radius: 999px;
   background: rgba(var(--orange-rgb, 255,159,67), 0.10);
   border: 1px solid rgba(var(--orange-rgb, 255,159,67), 0.35);
-  color: #fcd49b;
+  color: var(--orange, #ff9f43);
   font-size: .78rem;
   font-weight: 600;
 }

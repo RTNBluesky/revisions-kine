@@ -331,7 +331,7 @@ article.fiche tbody tr:hover { background: rgba(var(--accent-rgb, 255,107,157), 
   border-radius: 999px;
   background: rgba(var(--orange-rgb, 255,159,67), 0.10);
   border: 1px solid rgba(var(--orange-rgb, 255,159,67), 0.35);
-  color: #fcd49b;
+  color: var(--orange, #ff9f43);
   font-size: .78rem;
   font-weight: 600;
 }
