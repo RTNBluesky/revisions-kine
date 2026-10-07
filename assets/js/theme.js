@@ -35,39 +35,6 @@
   function appliquer(v) {
     if (v) document.documentElement.setAttribute('data-theme', v);
     else document.documentElement.removeAttribute('data-theme');
-    majIcone();
-  }
-
-  /* ------------------------------------------------------------------
-     L'icône de l'onglet suit la couleur du site.
-
-     Un fichier SVG ne voit pas les variables CSS de la page : on redessine
-     donc le « K » à la volée, avec la couleur effectivement calculée, et on
-     le pose dans le lien d'icône sous forme d'adresse « data: ». Même dessin
-     et mêmes proportions que favicon.svg, qui reste le repli des navigateurs
-     sans JavaScript.
-     ------------------------------------------------------------------ */
-
-  function dessin(couleur) {
-    return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" ' +
-             'role="img" aria-label="Révisions Kinésithérapie">' +
-             '<rect width="64" height="64" rx="14.7" fill="' + couleur + '"/>' +
-             '<path d="M19.5 10.9V53.1M19.5 32 45.4 10.9M19.5 32 45.4 53.1" ' +
-                   'fill="none" stroke="#fff" stroke-width="9.3" ' +
-                   'stroke-linecap="round" stroke-linejoin="round"/>' +
-           '</svg>';
-  }
-
-  function majIcone() {
-    var lien = document.querySelector('link[rel="icon"][type="image/svg+xml"]');
-    if (!lien) return;                       /* le <head> n'est pas encore lu */
-    var c = '';
-    try {
-      c = getComputedStyle(document.documentElement)
-            .getPropertyValue('--accent').trim();
-    } catch (e) { /* rien : on garde le rose */ }
-    if (!/^#[0-9a-fA-F]{3,8}$|^rgb/.test(c)) c = '#ff6b9d';
-    lien.setAttribute('href', 'data:image/svg+xml,' + encodeURIComponent(dessin(c)));
   }
 
   /* avant tout affichage */
@@ -135,15 +102,9 @@
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', function () {
-      construire();
-      /* le script est chargé dans le <head> : au premier passage, le lien
-         d'icône n'existait pas encore. On repasse une fois la page lue. */
-      majIcone();
-    });
+    document.addEventListener('DOMContentLoaded', construire);
   } else {
     construire();
-    majIcone();
   }
 
   /* un autre onglet a changé le thème : on suit */
