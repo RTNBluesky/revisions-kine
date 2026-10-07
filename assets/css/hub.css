@@ -35,9 +35,9 @@
     position: fixed;
     inset: 0;
     background:
-      radial-gradient(circle at 15% 20%, rgba(74,158,255,0.12), transparent 40%),
-      radial-gradient(circle at 85% 10%, rgba(181,124,246,0.10), transparent 40%),
-      radial-gradient(circle at 50% 90%, rgba(61,214,140,0.08), transparent 40%);
+      radial-gradient(circle at 15% 20%, rgba(var(--accent-rgb, 255,107,157), 0.12), transparent 40%),
+      radial-gradient(circle at 85% 10%, rgba(var(--accent-2-rgb, 255,92,107), 0.10), transparent 40%),
+      radial-gradient(circle at 50% 90%, rgba(var(--accent-3-rgb, 244,114,182), 0.08), transparent 40%);
     z-index: -1;
     pointer-events: none;
   }
@@ -48,8 +48,8 @@
   .hero-tag {
     display: inline-flex; align-items: center; gap: 8px;
     padding: 6px 14px;
-    background: rgba(74,158,255,0.1);
-    border: 1px solid rgba(74,158,255,0.25);
+    background: rgba(var(--accent-rgb, 255,107,157), 0.10);
+    border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.25);
     border-radius: 30px;
     font-size: 12px;
     color: var(--accent4);
@@ -178,8 +178,8 @@
 
   .archive-icon {
     width: 64px; height: 64px;
-    background: var(--card-accent-bg, rgba(74,158,255,0.12));
-    border: 1px solid var(--card-accent-border, rgba(74,158,255,0.25));
+    background: var(--card-accent-bg, rgba(var(--accent-rgb, 255,107,157), 0.12));
+    border: 1px solid var(--card-accent-border, rgba(var(--accent-rgb, 255,107,157), 0.25));
     border-radius: 16px;
     display: flex;
     align-items: center;
@@ -273,19 +273,19 @@
     --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28);
   }
   .archive-card.theme-physio {
-    --card-accent: var(--accent-2, #ff5c6b);
-    --card-accent-bg: rgba(var(--accent-2-rgb, 255,92,107), 0.12);
-    --card-accent-border: rgba(var(--accent-2-rgb, 255,92,107), 0.28);
+    --card-accent: var(--accent, #ff6b9d);
+    --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12);
+    --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28);
   }
   .archive-card.theme-socio {
-    --card-accent: var(--accent-3, #f472b6);
-    --card-accent-bg: rgba(var(--accent-3-rgb, 244,114,182), 0.12);
-    --card-accent-border: rgba(var(--accent-3-rgb, 244,114,182), 0.28);
+    --card-accent: var(--accent, #ff6b9d);
+    --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12);
+    --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28);
   }
   .archive-card.theme-eaif {
-    --card-accent: var(--accent-3, #ec4899);
-    --card-accent-bg: rgba(var(--accent-3-rgb, 244,114,182), 0.12);
-    --card-accent-border: rgba(var(--accent-3-rgb, 244,114,182), 0.28);
+    --card-accent: var(--accent, #ff6b9d);
+    --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12);
+    --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28);
   }
 
   /* FOOTER */
@@ -496,44 +496,44 @@ td strong { color: var(--accent-4, #ff8fa3) !important; }
   --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important;
 }
 .archive-card.theme-physio {
-  --card-accent: var(--accent-2, #ff5c6b) !important;
-  --card-accent-bg: rgba(var(--accent-2-rgb, 255,92,107), 0.12) !important;
-  --card-accent-border: rgba(var(--accent-2-rgb, 255,92,107), 0.28) !important;
+  --card-accent: var(--accent, #ff6b9d) !important;
+  --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important;
+  --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important;
 }
 .archive-card.theme-socio {
-  --card-accent: var(--accent-3, #f472b6) !important;
-  --card-accent-bg: rgba(var(--accent-3-rgb, 244,114,182), 0.12) !important;
-  --card-accent-border: rgba(var(--accent-3-rgb, 244,114,182), 0.28) !important;
+  --card-accent: var(--accent, #ff6b9d) !important;
+  --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important;
+  --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important;
 }
 .archive-card.theme-eaif {
-  --card-accent: var(--accent-3, #ec4899) !important;
-  --card-accent-bg: rgba(var(--accent-3-rgb, 244,114,182), 0.12) !important;
-  --card-accent-border: rgba(var(--accent-3-rgb, 244,114,182), 0.28) !important;
+  --card-accent: var(--accent, #ff6b9d) !important;
+  --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important;
+  --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important;
 }
 .archive-card.theme-anat {
-  --card-accent: var(--accent-2, #e63946) !important;
-  --card-accent-bg: rgba(var(--accent-2-rgb, 255,92,107), 0.12) !important;
-  --card-accent-border: rgba(var(--accent-2-rgb, 255,92,107), 0.28) !important;
+  --card-accent: var(--accent, #ff6b9d) !important;
+  --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important;
+  --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important;
 }
 .archive-card.theme-psycho {
-  --card-accent: var(--accent-4, #ff8fa3) !important;
-  --card-accent-bg: rgba(var(--accent-4-rgb, 255,143,163), 0.12) !important;
-  --card-accent-border: rgba(var(--accent-4-rgb, 255,143,163), 0.28) !important;
+  --card-accent: var(--accent, #ff6b9d) !important;
+  --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important;
+  --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important;
 }
 .archive-card.theme-biomeca {
-  --card-accent: var(--accent-3, #f472b6) !important;
-  --card-accent-bg: rgba(var(--accent-3-rgb, 244,114,182), 0.12) !important;
-  --card-accent-border: rgba(var(--accent-3-rgb, 244,114,182), 0.28) !important;
+  --card-accent: var(--accent, #ff6b9d) !important;
+  --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important;
+  --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important;
 }
 .archive-card.theme-eaifs1 {
-  --card-accent: var(--accent-4, #ff8fa3) !important;
-  --card-accent-bg: rgba(var(--accent-4-rgb, 255,143,163),0.12) !important;
-  --card-accent-border: rgba(var(--accent-4-rgb, 255,143,163),0.28) !important;
+  --card-accent: var(--accent, #ff6b9d) !important;
+  --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important;
+  --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important;
 }
 .archive-card.theme-physios1 {
-  --card-accent: var(--accent-2, #ff5c6b) !important;
-  --card-accent-bg: rgba(var(--accent-2-rgb, 255,92,107), 0.12) !important;
-  --card-accent-border: rgba(var(--accent-2-rgb, 255,92,107), 0.28) !important;
+  --card-accent: var(--accent, #ff6b9d) !important;
+  --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important;
+  --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important;
 }
 .archive-card.theme-mtr {
   --card-accent: var(--accent, #ff6b9d) !important;
@@ -541,18 +541,18 @@ td strong { color: var(--accent-4, #ff8fa3) !important; }
   --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important;
 }
 .archive-card.theme-anats1 {
-  --card-accent: var(--accent-2, #e63946) !important;
-  --card-accent-bg: rgba(var(--accent-2-rgb, 255,92,107), 0.12) !important;
-  --card-accent-border: rgba(var(--accent-2-rgb, 255,92,107), 0.28) !important;
+  --card-accent: var(--accent, #ff6b9d) !important;
+  --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important;
+  --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important;
 }
 
 /* Index page card themes (theme-1..theme-6) */
-.card.theme-1 { --card-accent: var(--accent-2, #ff5c6b) !important; --card-accent-bg: rgba(var(--accent-2-rgb, 255,92,107), 0.12) !important; --card-accent-border: rgba(var(--accent-2-rgb, 255,92,107), 0.25) !important; }
-.card.theme-2 { --card-accent: var(--accent, #ff6b9d) !important; --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important; --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.25) !important; }
-.card.theme-3 { --card-accent: var(--accent-3, #f472b6) !important; --card-accent-bg: rgba(var(--accent-3-rgb, 244,114,182), 0.12) !important; --card-accent-border: rgba(var(--accent-3-rgb, 244,114,182), 0.25) !important; }
-.card.theme-4 { --card-accent: var(--accent-4, #ff8fa3) !important; --card-accent-bg: rgba(var(--accent-4-rgb, 255,143,163), 0.12) !important; --card-accent-border: rgba(var(--accent-4-rgb, 255,143,163), 0.25) !important; }
-.card.theme-5 { --card-accent: var(--accent-3, #ec4899) !important; --card-accent-bg: rgba(var(--accent-3-rgb, 244,114,182), 0.12) !important; --card-accent-border: rgba(var(--accent-3-rgb, 244,114,182), 0.25) !important; }
-.card.theme-6 { --card-accent: var(--accent-2, #e63946) !important; --card-accent-bg: rgba(var(--accent-2-rgb, 255,92,107), 0.12) !important; --card-accent-border: rgba(var(--accent-2-rgb, 255,92,107), 0.25) !important; }
+.card.theme-1 { --card-accent: var(--accent, #ff6b9d) !important; --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important; --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important; }
+.card.theme-2 { --card-accent: var(--accent, #ff6b9d) !important; --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important; --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important; }
+.card.theme-3 { --card-accent: var(--accent, #ff6b9d) !important; --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important; --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important; }
+.card.theme-4 { --card-accent: var(--accent, #ff6b9d) !important; --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important; --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important; }
+.card.theme-5 { --card-accent: var(--accent, #ff6b9d) !important; --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important; --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important; }
+.card.theme-6 { --card-accent: var(--accent, #ff6b9d) !important; --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important; --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important; }
 
 /* Physio patho index neuro/tp/neuroanat cards */
 .card.neuro, .card.neuroanat, .card.tp {
@@ -582,29 +582,29 @@ td strong { color: var(--accent-4, #ff8fa3) !important; }
   --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important;
 }
 .archive-card.theme-pratique {
-  --card-accent: var(--accent-2, #ff5c6b) !important;
-  --card-accent-bg: rgba(var(--accent-2-rgb, 255,92,107), 0.12) !important;
-  --card-accent-border: rgba(var(--accent-2-rgb, 255,92,107), 0.28) !important;
+  --card-accent: var(--accent, #ff6b9d) !important;
+  --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important;
+  --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important;
 }
 .archive-card.theme-s1 {
-  --card-accent: var(--accent-3, #f472b6) !important;
-  --card-accent-bg: rgba(var(--accent-3-rgb, 244,114,182), 0.12) !important;
-  --card-accent-border: rgba(var(--accent-3-rgb, 244,114,182), 0.28) !important;
+  --card-accent: var(--accent, #ff6b9d) !important;
+  --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important;
+  --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important;
 }
 .archive-card.theme-s2 {
-  --card-accent: var(--accent-3, #ec4899) !important;
-  --card-accent-bg: rgba(var(--accent-3-rgb, 244,114,182), 0.12) !important;
-  --card-accent-border: rgba(var(--accent-3-rgb, 244,114,182), 0.28) !important;
+  --card-accent: var(--accent, #ff6b9d) !important;
+  --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important;
+  --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important;
 }
 .archive-card.theme-p1 {
-  --card-accent: var(--accent-4, #ff8fa3) !important;
-  --card-accent-bg: rgba(var(--accent-4-rgb, 255,143,163), 0.12) !important;
-  --card-accent-border: rgba(var(--accent-4-rgb, 255,143,163), 0.28) !important;
+  --card-accent: var(--accent, #ff6b9d) !important;
+  --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important;
+  --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important;
 }
 .archive-card.theme-p2 {
-  --card-accent: var(--accent-2, #e63946) !important;
-  --card-accent-bg: rgba(var(--accent-2-rgb, 255,92,107), 0.12) !important;
-  --card-accent-border: rgba(var(--accent-2-rgb, 255,92,107), 0.28) !important;
+  --card-accent: var(--accent, #ff6b9d) !important;
+  --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important;
+  --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important;
 }
 
 /* Grille 2 colonnes pour les pages de choix */

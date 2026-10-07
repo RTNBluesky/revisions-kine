@@ -184,18 +184,18 @@ td strong { color: var(--accent-4, #ff8fa3) !important; }
   --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important;
 }
 .archive-card.theme-physio {
-  --card-accent: var(--accent-2, #ff5c6b) !important;
-  --card-accent-bg: rgba(var(--accent-2-rgb, 255,92,107), 0.12) !important;
-  --card-accent-border: rgba(var(--accent-2-rgb, 255,92,107), 0.28) !important;
+  --card-accent: var(--accent, #ff6b9d) !important;
+  --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important;
+  --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important;
 }
 
 /* Index page card themes (theme-1..theme-6) */
-.card.theme-1 { --card-accent: var(--accent-2, #ff5c6b) !important; --card-accent-bg: rgba(var(--accent-2-rgb, 255,92,107), 0.12) !important; --card-accent-border: rgba(var(--accent-2-rgb, 255,92,107), 0.25) !important; }
-.card.theme-2 { --card-accent: var(--accent, #ff6b9d) !important; --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important; --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.25) !important; }
-.card.theme-3 { --card-accent: var(--accent-3, #f472b6) !important; --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important; --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.25) !important; }
-.card.theme-4 { --card-accent: var(--accent-4, #ff8fa3) !important; --card-accent-bg: rgba(var(--accent-2-rgb, 255,92,107), 0.12) !important; --card-accent-border: rgba(var(--accent-2-rgb, 255,92,107), 0.25) !important; }
-.card.theme-5 { --card-accent: var(--accent, #ff6b9d) !important; --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important; --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.25) !important; }
-.card.theme-6 { --card-accent: var(--accent-2, #ff5c6b) !important; --card-accent-bg: rgba(var(--accent-2-rgb, 255,92,107), 0.12) !important; --card-accent-border: rgba(var(--accent-2-rgb, 255,92,107), 0.25) !important; }
+.card.theme-1 { --card-accent: var(--accent, #ff6b9d) !important; --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important; --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important; }
+.card.theme-2 { --card-accent: var(--accent, #ff6b9d) !important; --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important; --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important; }
+.card.theme-3 { --card-accent: var(--accent, #ff6b9d) !important; --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important; --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important; }
+.card.theme-4 { --card-accent: var(--accent, #ff6b9d) !important; --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important; --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important; }
+.card.theme-5 { --card-accent: var(--accent, #ff6b9d) !important; --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important; --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important; }
+.card.theme-6 { --card-accent: var(--accent, #ff6b9d) !important; --card-accent-bg: rgba(var(--accent-rgb, 255,107,157), 0.12) !important; --card-accent-border: rgba(var(--accent-rgb, 255,107,157), 0.28) !important; }
 
 /* Physio patho index neuro/tp/neuroanat cards */
 .card.neuro, .card.neuroanat, .card.tp {
