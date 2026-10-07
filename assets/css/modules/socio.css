@@ -261,14 +261,14 @@ ul.clean li::before {
   padding: 18px;
 }
 .compare .col.left { border-left: 4px solid var(--accent-blue); }
-.compare .col.right { border-left: 4px solid var(--accent-purple); }
+.compare .col.right { border-left: 4px solid #3dd68c; }
 .compare .col h4 {
   margin-top: 0;
   color: var(--text-primary);
   font-size: 1.1em;
 }
 .compare .col.left h4 { color: var(--accent-blue); }
-.compare .col.right h4 { color: var(--accent-purple); }
+.compare .col.right h4 { color: #3dd68c; }
 @media (max-width: 720px) { .compare { grid-template-columns: 1fr; } }
 
 table {
@@ -421,7 +421,7 @@ blockquote {
   transition: width 0.3s;
 }
 .qcm-progress .score { color: var(--accent-green); font-weight: 700; }
-.qcm-progress .score.bad { color: var(--accent-red); }
+.qcm-progress .score.bad { color: #ff5c6b; }
 
 .question {
   background: var(--bg-card);
@@ -432,8 +432,8 @@ blockquote {
   transition: all 0.25s;
 }
 .question.answered { border-color: var(--accent-blue); }
-.question.correct { border-color: var(--accent-green); background: linear-gradient(135deg, rgba(61,214,140,0.06), var(--bg-card)); }
-.question.wrong { border-color: var(--accent-red); background: linear-gradient(135deg, rgba(var(--orange-rgb, 255,159,67), 0.06), var(--bg-card)); }
+.question.correct { border-color: #3dd68c; background: linear-gradient(135deg, rgba(61,214,140, 0.06), var(--bg-card)); }
+.question.wrong { border-color: #ff5c6b; background: linear-gradient(135deg, rgba(255,92,107, 0.06), var(--bg-card)); }
 
 .question .qheader {
   display: flex;
@@ -508,15 +508,15 @@ blockquote {
 .choice.selected { background: rgba(var(--accent-rgb, 255,107,157), 0.12); border-color: var(--accent-blue); }
 .choice.selected .letter { background: var(--accent-blue); color: #ffffff; }
 .choice.correct {
-  background: rgba(61,214,140,0.14);
-  border-color: var(--accent-green);
+  background: rgba(61,214,140, 0.14);
+  border-color: #3dd68c;
 }
-.choice.correct .letter { background: var(--accent-green); color: #0f1117; }
+.choice.correct .letter { background: #3dd68c; color: #0f1117; }
 .choice.wrong {
-  background: rgba(var(--orange-rgb, 255,159,67), 0.14);
-  border-color: var(--accent-red);
+  background: rgba(255,92,107, 0.14);
+  border-color: #ff5c6b;
 }
-.choice.wrong .letter { background: var(--accent-red); color: #0f1117; }
+.choice.wrong .letter { background: #ff5c6b; color: #0f1117; }
 .choice.disabled { cursor: not-allowed; opacity: 0.85; }
 
 .explanation {

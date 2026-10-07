@@ -58,6 +58,25 @@ html[data-theme="ardoise"] {
   --orange: #8ca0b8 !important;   --orange-rgb: 140,160,184 !important;
 }
 
+/* ------------------------------------------------------------------
+   Une seule teinte.
+   Les quatre déclinaisons d'accent servaient à varier la couleur d'un
+   encadré à l'autre ; on les ramène toutes sur la couleur principale,
+   pour que deux cases voisines ne soient jamais de deux tons différents.
+   Le vert de « bonne réponse » et le rouge de « mauvaise réponse » ne
+   passent pas par ces variables : eux ne bougent pas.
+   ------------------------------------------------------------------ */
+html:root, html[data-theme] {
+  --accent-2: var(--accent) !important;
+  --accent-3: var(--accent) !important;
+  --accent-4: var(--accent) !important;
+  --accent-2-rgb: var(--accent-rgb, 255,107,157) !important;
+  --accent-3-rgb: var(--accent-rgb, 255,107,157) !important;
+  --accent-4-rgb: var(--accent-rgb, 255,107,157) !important;
+  --orange:     var(--accent) !important;
+  --orange-rgb: var(--accent-rgb, 255,107,157) !important;
+}
+
 /* les variables dérivées suivent toutes la palette active */
 html[data-theme] {
   --accent-soft:    rgba(var(--accent-rgb), 0.12);

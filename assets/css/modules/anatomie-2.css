@@ -658,9 +658,9 @@ body.theme-respi    { --accent: var(--c-respi);    --accent-soft: var(--c-respi-
 }
 
 .qcm-opt.correct {
-  background: rgba(61,214,140,0.18);
-  border-color: var(--c-digestif);
-  color: var(--c-digestif);
+  background: rgba(61,214,140, 0.18);
+  border-color: #3dd68c;
+  color: #3dd68c;
   font-weight: 600;
 }
 
@@ -674,9 +674,9 @@ body.theme-respi    { --accent: var(--c-respi);    --accent-soft: var(--c-respi-
 }
 
 .qcm-opt.wrong {
-  background: rgba(var(--orange-rgb, 255,159,67), 0.18);
-  border-color: var(--c-cardio);
-  color: var(--c-cardio);
+  background: rgba(255,92,107, 0.18);
+  border-color: #ff5c6b;
+  color: #ff5c6b;
   text-decoration: line-through;
   opacity: 0.85;
 }
@@ -691,9 +691,9 @@ body.theme-respi    { --accent: var(--c-respi);    --accent-soft: var(--c-respi-
 }
 
 .qcm-opt.correct-reveal {
-  background: rgba(61,214,140,0.10);
-  border-color: var(--c-digestif);
-  color: var(--c-digestif);
+  background: rgba(61,214,140, 0.10);
+  border-color: #3dd68c;
+  color: #3dd68c;
 }
 
 .qcm-opt.correct-reveal::after {

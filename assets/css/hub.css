@@ -338,7 +338,7 @@
   --gray: #9aa3b8 !important;
 
   /* === ROSE / RED accents === */
-  --accent: var(--accent-2, #ff5c6b) !important;
+  --accent: #ff6b9d !important;
   --accent2: var(--accent, #ff6b9d) !important;
   --accent3: var(--accent-3, #f472b6) !important;
   --accent4: var(--accent-4, #ff8fa3) !important;

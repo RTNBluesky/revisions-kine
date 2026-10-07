@@ -362,7 +362,7 @@ code {
 }
 
 .qcm-options li.incorrect {
-  background: #3dd68c;
+  background: #ff5c6b;
   border-color: var(--danger);
 }
 

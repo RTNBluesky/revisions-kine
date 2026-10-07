@@ -28,10 +28,10 @@ td { border-top-color:#2a3050 !important; color:var(--accent-4, #ff8fa3) !import
 .qcm-option { background:#0f1117 !important; border-color:#2a3050 !important; color:var(--accent-4, #ff8fa3) !important; }
 .qcm-option:hover { border-color:rgba(var(--accent-rgb, 255,107,157), 0.40) !important; background:rgba(var(--accent-rgb, 255,107,157), 0.06) !important; }
 .qcm-option.selected { background:rgba(var(--accent-rgb, 255,107,157), 0.15) !important; border-color:var(--accent, #ff6b9d) !important; }
-.qcm-option.correct { background:rgba(61,214,140,0.15) !important; border-color:#3dd68c !important; color:#3dd68c !important; }
-.qcm-option.incorrect { background:rgba(var(--accent-2-rgb, 255,92,107), 0.15) !important; border-color:var(--accent-2, #ff5c6b) !important; color:var(--accent-4, #ff8fa3) !important; }
-.qcm-feedback.correct { background:rgba(61,214,140,0.10) !important; color:#3dd68c !important; border-left-color:#3dd68c !important; }
-.qcm-feedback.incorrect { background:rgba(var(--accent-2-rgb, 255,92,107), 0.10) !important; color:var(--accent-4, #ff8fa3) !important; border-left-color:var(--accent-2, #ff5c6b) !important; }
+.qcm-option.correct { background:rgba(61,214,140, 0.15) !important; border-color:#3dd68c !important; color:#3dd68c !important; }
+.qcm-option.incorrect { background:rgba(255,92,107, 0.15) !important; border-color:#ff5c6b !important; color:#ff5c6b !important; }
+.qcm-feedback.correct { background:rgba(61,214,140, 0.10) !important; color:#3dd68c !important; border-left-color:#3dd68c !important; }
+.qcm-feedback.incorrect { background:rgba(255,92,107, 0.10) !important; color:#ff5c6b !important; border-left-color:#ff5c6b !important; }
 .qcm-actions button { background:linear-gradient(135deg,var(--accent-2, #ff5c6b),var(--accent, #ff6b9d)) !important; color:#ffffff !important; border:none !important; }
 .qcm-actions button.secondary { background:#2a3050 !important; color:#e8eaf0 !important; }
 .score-display { background:linear-gradient(135deg,var(--accent-2, #ff5c6b),var(--accent, #ff6b9d)) !important; }

@@ -358,13 +358,13 @@ article.fiche tbody tr:hover { background: rgba(var(--accent-rgb, 255,107,157), 
 .opt input { margin-top: 4px; accent-color: var(--accent); flex: none; }
 .opt.correct {
   background: var(--ok-soft);
-  border-color: rgba(61,214,140,0.45);
-  color: #d6f7e6;
+  border-color: rgba(61,214,140, 0.45);
+  color: #3dd68c;
 }
 .opt.wrong {
   background: var(--ko-soft);
-  border-color: rgba(var(--accent-2-rgb, 255,92,107), 0.45);
-  color: #ffd1d6;
+  border-color: rgba(255,92,107, 0.45);
+  color: #ff5c6b;
 }
 .opt.locked { cursor: default; transform: none; }
 .opt.locked:hover { background: inherit; border-color: inherit; }
