@@ -96,3 +96,47 @@ body { font-family: 'Source Sans 3', sans-serif; background: var(--bg); color: v
   font-size: .86rem; color: var(--orange, #ff9f43);
 }
 .note strong { color: var(--orange); }
+
+/* ---------- appel vers le quiz infini, sur l'accueil d'une matière ---------- */
+.infini-appel {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 0 0 1.5rem;
+  padding: 1rem 1.4rem;
+  border-radius: 14px;
+  background: linear-gradient(135deg,
+      rgba(var(--accent-rgb, 255,107,157), 0.16) 0%,
+      rgba(var(--accent-rgb, 255,107,157), 0.06) 100%);
+  border: 2px solid var(--accent, #ff6b9d);
+  text-decoration: none;
+  color: inherit;
+  transition: transform .2s, box-shadow .2s;
+}
+.infini-appel:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(var(--accent-rgb, 255,107,157), 0.25);
+}
+.infini-appel:focus-visible { outline: 2px solid var(--accent, #ff6b9d); outline-offset: 3px; }
+.infini-appel-icone {
+  font-size: 2.3rem;
+  line-height: 1;
+  color: var(--accent, #ff6b9d);
+  flex: none;
+}
+.infini-appel-texte { flex: 1; display: flex; flex-direction: column; gap: .2rem; min-width: 0; }
+.infini-appel-sur {
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 800;
+  color: var(--accent, #ff6b9d);
+}
+.infini-appel-titre { font-size: 1.1rem; font-weight: 800; color: #fff; }
+.infini-appel-sous { font-size: .82rem; color: var(--muted, #9aa3b8); }
+.infini-appel-fleche { font-size: 1.5rem; color: var(--accent, #ff6b9d); flex: none; }
+
+@media (max-width: 560px) {
+  .infini-appel { gap: 12px; padding: .9rem 1rem; }
+  .infini-appel-titre { font-size: .98rem; }
+}

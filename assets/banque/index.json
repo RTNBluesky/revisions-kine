@@ -1,0 +1,266 @@
+[
+ {
+  "cle": "annee-1~pratique~semestre-1~anatomie-palpatoire",
+  "module": "annee-1/pratique/semestre-1/anatomie-palpatoire",
+  "titre": "Anatomie palpatoire",
+  "situe": "K1 · Pratique · S1",
+  "n": 262,
+  "s": 6
+ },
+ {
+  "cle": "annee-1~pratique~semestre-1~massage",
+  "module": "annee-1/pratique/semestre-1/massage",
+  "titre": "Massage et mobilisation tissulaire",
+  "situe": "K1 · Pratique · S1",
+  "n": 219,
+  "s": 5
+ },
+ {
+  "cle": "annee-1~pratique~semestre-1~mobilisation-physiologique",
+  "module": "annee-1/pratique/semestre-1/mobilisation-physiologique",
+  "titre": "Mobilisation physiologique",
+  "situe": "K1 · Pratique · S1",
+  "n": 100,
+  "s": 2
+ },
+ {
+  "cle": "annee-1~pratique~semestre-1~positionnements-transferts",
+  "module": "annee-1/pratique/semestre-1/positionnements-transferts",
+  "titre": "Positionnements, mobilité et transferts",
+  "situe": "K1 · Pratique · S1",
+  "n": 244,
+  "s": 5
+ },
+ {
+  "cle": "annee-1~pratique~semestre-2~goniometrie",
+  "module": "annee-1/pratique/semestre-2/goniometrie",
+  "titre": "Goniométrie",
+  "situe": "K1 · Pratique · S2",
+  "n": 150,
+  "s": 3
+ },
+ {
+  "cle": "annee-1~pratique~semestre-2~immobilisation-selective",
+  "module": "annee-1/pratique/semestre-2/immobilisation-selective",
+  "titre": "Immobilisation sélective",
+  "situe": "K1 · Pratique · S2",
+  "n": 50,
+  "s": 1
+ },
+ {
+  "cle": "annee-1~pratique~semestre-2~mobilisation-accessoire",
+  "module": "annee-1/pratique/semestre-2/mobilisation-accessoire",
+  "titre": "Mobilisation accessoire",
+  "situe": "K1 · Pratique · S2",
+  "n": 200,
+  "s": 4
+ },
+ {
+  "cle": "annee-1~pratique~semestre-2~testing",
+  "module": "annee-1/pratique/semestre-2/testing",
+  "titre": "Testing musculaire",
+  "situe": "K1 · Pratique · S2",
+  "n": 100,
+  "s": 2
+ },
+ {
+  "cle": "annee-1~theorique~semestre-1~anatomie",
+  "module": "annee-1/theorique/semestre-1/anatomie",
+  "titre": "Anatomie I",
+  "situe": "K1 · Théorique · S1",
+  "n": 976,
+  "s": 20
+ },
+ {
+  "cle": "annee-1~theorique~semestre-1~eaif",
+  "module": "annee-1/theorique/semestre-1/eaif",
+  "titre": "EAIF I",
+  "situe": "K1 · Théorique · S1",
+  "n": 807,
+  "s": 17
+ },
+ {
+  "cle": "annee-1~theorique~semestre-1~methodes-et-techniques-de-recherche",
+  "module": "annee-1/theorique/semestre-1/methodes-et-techniques-de-recherche",
+  "titre": "MTR I",
+  "situe": "K1 · Théorique · S1",
+  "n": 400,
+  "s": 8
+ },
+ {
+  "cle": "annee-1~theorique~semestre-1~mf-1",
+  "module": "annee-1/theorique/semestre-1/mf-1",
+  "titre": "Mouvement & Fonction I",
+  "situe": "K1 · Théorique · S1",
+  "n": 550,
+  "s": 11
+ },
+ {
+  "cle": "annee-1~theorique~semestre-1~physiologie",
+  "module": "annee-1/theorique/semestre-1/physiologie",
+  "titre": "Physiologie I",
+  "situe": "K1 · Théorique · S1",
+  "n": 400,
+  "s": 8
+ },
+ {
+  "cle": "annee-1~theorique~semestre-1~psycho",
+  "module": "annee-1/theorique/semestre-1/psycho",
+  "titre": "Psychologie",
+  "situe": "K1 · Théorique · S1",
+  "n": 900,
+  "s": 16
+ },
+ {
+  "cle": "annee-1~theorique~semestre-2~anat",
+  "module": "annee-1/theorique/semestre-2/anat",
+  "titre": "Anatomie II",
+  "situe": "K1 · Théorique · S2",
+  "n": 1400,
+  "s": 28
+ },
+ {
+  "cle": "annee-1~theorique~semestre-2~eaif-2",
+  "module": "annee-1/theorique/semestre-2/eaif-2",
+  "titre": "EAIF II",
+  "situe": "K1 · Théorique · S2",
+  "n": 700,
+  "s": 14
+ },
+ {
+  "cle": "annee-1~theorique~semestre-2~physio",
+  "module": "annee-1/theorique/semestre-2/physio",
+  "titre": "Physiologie II",
+  "situe": "K1 · Théorique · S2",
+  "n": 300,
+  "s": 6
+ },
+ {
+  "cle": "annee-1~theorique~semestre-2~physio-patho",
+  "module": "annee-1/theorique/semestre-2/physio-patho",
+  "titre": "Physiopathologie I",
+  "situe": "K1 · Théorique · S2",
+  "n": 1150,
+  "s": 23
+ },
+ {
+  "cle": "annee-1~theorique~semestre-2~socio",
+  "module": "annee-1/theorique/semestre-2/socio",
+  "titre": "Sociologie de la santé",
+  "situe": "K1 · Théorique · S2",
+  "n": 562,
+  "s": 9
+ },
+ {
+  "cle": "annee-2~pratique~semestre-1~cardio-respi",
+  "module": "annee-2/pratique/semestre-1/cardio-respi",
+  "titre": "Cardio-respiratoire",
+  "situe": "K2 · Pratique · S1",
+  "n": 450,
+  "s": 9
+ },
+ {
+  "cle": "annee-2~pratique~semestre-1~eaif-3",
+  "module": "annee-2/pratique/semestre-1/eaif-3",
+  "titre": "EAIF III",
+  "situe": "K2 · Pratique · S1",
+  "n": 350,
+  "s": 7
+ },
+ {
+  "cle": "annee-2~pratique~semestre-1~musculo-squelettique",
+  "module": "annee-2/pratique/semestre-1/musculo-squelettique",
+  "titre": "Musculo-squelettique",
+  "situe": "K2 · Pratique · S1",
+  "n": 550,
+  "s": 11
+ },
+ {
+  "cle": "annee-2~pratique~semestre-2~neuro-musculo-squelettique",
+  "module": "annee-2/pratique/semestre-2/neuro-musculo-squelettique",
+  "titre": "Neuro-musculo-squelettique",
+  "situe": "K2 · Pratique · S2",
+  "n": 150,
+  "s": 3
+ },
+ {
+  "cle": "annee-2~theorique~semestre-1~cardio-respi",
+  "module": "annee-2/theorique/semestre-1/cardio-respi",
+  "titre": "Cardio-respiratoire",
+  "situe": "K2 · Théorique · S1",
+  "n": 600,
+  "s": 12
+ },
+ {
+  "cle": "annee-2~theorique~semestre-1~eaif-3",
+  "module": "annee-2/theorique/semestre-1/eaif-3",
+  "titre": "EAIF III",
+  "situe": "K2 · Théorique · S1",
+  "n": 300,
+  "s": 6
+ },
+ {
+  "cle": "annee-2~theorique~semestre-1~mf-2",
+  "module": "annee-2/theorique/semestre-1/mf-2",
+  "titre": "Mouvement & Fonction II",
+  "situe": "K2 · Théorique · S1",
+  "n": 400,
+  "s": 8
+ },
+ {
+  "cle": "annee-2~theorique~semestre-1~musculo-squelettique",
+  "module": "annee-2/theorique/semestre-1/musculo-squelettique",
+  "titre": "Conditions Musculo-squelettiques",
+  "situe": "K2 · Théorique · S1",
+  "n": 450,
+  "s": 9
+ },
+ {
+  "cle": "annee-2~theorique~semestre-1~physio-patho-2",
+  "module": "annee-2/theorique/semestre-1/physio-patho-2",
+  "titre": "Physiopathologie II",
+  "situe": "K2 · Théorique · S1",
+  "n": 750,
+  "s": 15
+ },
+ {
+  "cle": "annee-2~theorique~semestre-2~neuro-musculo-squelettique",
+  "module": "annee-2/theorique/semestre-2/neuro-musculo-squelettique",
+  "titre": "Neuro-musculo-squelettique",
+  "situe": "K2 · Théorique · S2",
+  "n": 500,
+  "s": 10
+ },
+ {
+  "cle": "annee-2~theorique~semestre-2~pbe",
+  "module": "annee-2/theorique/semestre-2/pbe",
+  "titre": "Pratique fondée sur les preuves",
+  "situe": "K2 · Théorique · S2",
+  "n": 400,
+  "s": 8
+ },
+ {
+  "cle": "annee-2~theorique~semestre-2~pharmaco-imagerie",
+  "module": "annee-2/theorique/semestre-2/pharmaco-imagerie",
+  "titre": "Pharmacologie & imagerie",
+  "situe": "K2 · Théorique · S2",
+  "n": 300,
+  "s": 6
+ },
+ {
+  "cle": "annee-2~theorique~semestre-2~rc-1",
+  "module": "annee-2/theorique/semestre-2/rc-1",
+  "titre": "Raisonnement clinique I",
+  "situe": "K2 · Théorique · S2",
+  "n": 250,
+  "s": 5
+ },
+ {
+  "cle": "svt-bac",
+  "module": "svt-bac",
+  "titre": "Fiches de révision Bac 2026",
+  "situe": "SVT",
+  "n": 500,
+  "s": 10
+ }
+]
