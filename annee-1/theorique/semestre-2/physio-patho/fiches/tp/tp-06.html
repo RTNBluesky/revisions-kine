@@ -562,7 +562,7 @@ ul li::marker { color: var(--accent); }
                 <tr><td class="td-accent">Vitamines K &amp; B₁₂</td><td>Synthèse des protéines osseuses. Déficit = ↓ densité osseuse</td></tr>
                 <tr><td class="td-accent">Œstrogènes</td><td>↓ résorption par ostéoclastes, ↑ dépôt par ostéoblastes. Chute à la ménopause = ostéoporose</td></tr>
                 <tr><td class="td-accent">PTH (<span class="def" data-terme="calcitonine">parathormone</span>)</td><td>↑ résorption osseuse + récupération Ca²⁺ urinaire + activation Vit. D</td></tr>
-                <tr><td class="td-accent">Calcitonine (CT)</td><td>Inhibe la résorption osseuse par les ostéoclastes</td></tr>
+                <tr><td class="td-accent">Calcitonine (<span class="def" data-terme="pth_ct">CT</span>)</td><td>Inhibe la résorption osseuse par les ostéoclastes</td></tr>
                 <tr><td class="td-accent">Exercice physique (charge)</td><td>Stimule les ostéoblastes → os plus épais, ↓ perte de masse osseuse</td></tr>
                 <tr><td class="td-accent">Vieillissement</td><td>↓ hormones sexuelles → résorption &gt; formation → ↓ masse osseuse</td></tr>
               </tbody>
@@ -575,7 +575,7 @@ ul li::marker { color: var(--accent); }
               <ul>
                 <li>↓ Œstrogènes sériques</li>
                 <li>↑ IL-1, IL-6, <span class="def" data-terme="tnf">TNF</span></li>
-                <li>↑ Expression RANK / RANKL</li>
+                <li>↑ Expression RANK / <span class="def" data-terme="rank_opg">RANKL</span></li>
                 <li>↑ Activité des ostéoclastes</li>
                 <li>→ Résorption &gt; Formation</li>
               </ul>
@@ -594,7 +594,7 @@ ul li::marker { color: var(--accent); }
 
           <div class="box-danger" style="margin-top:1rem">
             <span class="box-label">Glucocorticoïdes (ostéoporose induite)</span>
-            <p style="font-size:0.88rem">Les GC agissent comme hormone exogène → <span class="def" data-terme="retroaction">rétroaction</span> négative sur axe HPA → <em>↓ hormones sexuelles</em><em>inhibition des ostéoblastes</em><em>↓ synthèse Vit. D</em><em>↑ ostéoclastes</em> → ↓ DMO → Ostéoporose + risque de <span class="def" data-terme="necrose">nécrose</span> <span class="def" data-terme="avasculaire">avasculaire</span>.</p>
+            <p style="font-size:0.88rem">Les GC agissent comme hormone exogène → <span class="def" data-terme="retroaction">rétroaction</span> négative sur axe <span class="def" data-terme="hhc_sigle">HPA</span> → <em>↓ hormones sexuelles</em><em>inhibition des ostéoblastes</em><em>↓ synthèse Vit. D</em><em>↑ ostéoclastes</em> → ↓ DMO → Ostéoporose + risque de <span class="def" data-terme="necrose">nécrose</span> <span class="def" data-terme="avasculaire">avasculaire</span>.</p>
           </div>
         </div>
 
@@ -608,7 +608,7 @@ ul li::marker { color: var(--accent); }
 
           <div class="grid-2">
             <div class="card">
-              <div class="card-title" style="color:var(--accent)">DEXA / DXA</div>
+              <div class="card-title" style="color:var(--accent)"><span class="def" data-terme="dexa">DEXA</span> / DXA</div>
               <p style="font-size:0.88rem; margin-bottom:0.8rem">Ostéodensitométrie par <em>absorptiométrie biphotonique à rayons X</em>. Mesure la densité minérale osseuse (DMO / BMD). <strong>Recommandée chez toutes les femmes &gt; 65 ans et les hommes &gt; 70 ans</strong>.</p>
               <div class="mnemonic">
                 <span class="mnemonic-title">T-Score — Critères <span class="def" data-terme="oms">OMS</span></span>
@@ -624,7 +624,7 @@ ul li::marker { color: var(--accent); }
               </div>
             </div>
             <div class="card">
-              <div class="card-title" style="color:var(--accent2)">Outil FRAX®</div>
+              <div class="card-title" style="color:var(--accent2)">Outil <span class="def" data-terme="frax">FRAX</span>®</div>
               <p style="font-size:0.88rem; margin-bottom:0.7rem">Calcule la <em>probabilité sur 10 ans</em> de fracture de la hanche et de fracture ostéoporotique majeure (vertèbre, avant-bras, hanche, épaule), avec ou sans DMO.</p>
               <div class="box-warn" style="padding:0.8rem">
                 <span class="box-label">Limites du FRAX</span>
@@ -646,7 +646,7 @@ ul li::marker { color: var(--accent); }
               <span class="tag tag-green">Bilan phosphocalcique</span>
               <span class="tag tag-green">Phosphatase <span class="def" data-terme="alcalin">alcaline</span></span>
               <span class="tag tag-green">Créatinine</span>
-              <span class="tag tag-green">TSH</span>
+              <span class="tag tag-green"><span class="def" data-terme="tsh">TSH</span></span>
               <span class="tag tag-green">Protéinogramme</span>
             </div>
           </div>
@@ -666,7 +666,7 @@ ul li::marker { color: var(--accent); }
               <li>Apport adéquat en calcium et vitamine D (400–800 UI/jour si risque de déficit)</li>
               <li>Exercice physique <em>de mise en charge</em> + renforcement musculaire adapté à l'âge</li>
               <li>Éviter tabac et limiter alcool</li>
-              <li>Maintien des œstrogènes chez la femme (dont THS post-ménopause)</li>
+              <li>Maintien des œstrogènes chez la femme (dont <span class="def" data-terme="ths">THS</span> post-ménopause)</li>
               <li>Corriger toujours les facteurs de risque modifiables</li>
             </ul>
           </div>
@@ -709,7 +709,7 @@ ul li::marker { color: var(--accent); }
                   <td>Préférable si insuffisance rénale</td>
                 </tr>
                 <tr>
-                  <td class="td-accent">Raloxifène (SERM)</td>
+                  <td class="td-accent">Raloxifène (<span class="def" data-terme="serm">SERM</span>)</td>
                   <td>Modulateur sélectif récepteurs œstrogènes</td>
                   <td>Alternative</td>
                 </tr>

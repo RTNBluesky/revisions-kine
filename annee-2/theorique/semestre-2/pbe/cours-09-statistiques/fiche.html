@@ -35,14 +35,14 @@
             <li><b>Échantillonnage</b> : partie (sous-ensemble) de la population. Objectifs : <b>coût moindre</b>, <b>travail de terrain réduit</b>, <b>meilleure précision / <span class="def" data-terme="fidelite">validité</span></b>, <b>méthodes optimisées</b>.</li>
             <li><b>Variable</b> (X) : caractéristique pouvant varier. <b>Paramètre</b> : caractéristique numérique de la <b>population</b>, <b>fixe et inconnue</b> (µ, σ², σ, p). <b>Estimateur</b> : fonction de l'échantillon, variable aléatoire (X̄, S², S, p̂). <b>Estimation</b> : valeur numérique observée (x̄, s², s, p̂).</li>
             <li><b>Variables quantitatives</b> : <b>discrètes</b> (comptages, entiers — nombre d'enfants, de médicaments) et <b>continues</b> (mesures, ensemble non dénombrable — poids, taille, âge).</li>
-            <li><b>Variables qualitatives</b> : <b>nominales</b> (sans ordre inhérent — sexe, groupe sanguin) et <b>ordinales</b> (ordre logique et séquentiel — catégories d'IMC, niveau d'études).</li>
+            <li><b>Variables qualitatives</b> : <b>nominales</b> (sans ordre inhérent — sexe, groupe sanguin) et <b>ordinales</b> (ordre logique et séquentiel — catégories d'<span class="def" data-terme="imc_sigle">IMC</span>, niveau d'études).</li>
             <li><b>Moyenne d'échantillon</b> : x̄ = (Σxᵢ)/n. <b><span class="def" data-terme="variance">Variance</span> d'échantillon</b> : s² = Σ(xᵢ − x̄)² / (<b>n − 1</b>). <b>Écart-type</b> : s = √s². <b>Proportion</b> : p̂ = x/n.</li>
             <li><b>Inférence sur µ</b> — trois cas : <b>σ connu</b> (population normale) → <b>Z</b> ; <b>σ inconnu</b> (population normale) → <b>T de Student à n − 1 ddl</b> ; <b>grand échantillon (n ≥ 30)</b> → <b>Z</b> par le <b>Théorème Central Limite</b>.</li>
             <li><b>Test d'hypothèse</b> : <b>H₀ : µ = µ₀</b> ; <b>H₁</b> bilatérale (µ ≠ µ₀), unilatérale droite (µ &gt; µ₀) ou gauche (µ &lt; µ₀). Rejet selon la <b>région de rejet</b> et le <b>niveau de signification α</b>.</li>
             <li><b>Deux populations indépendantes</b> : <span class="def" data-terme="dispersion">variances</span> <b>connues</b> → Z ; variances <b>inconnues et égales</b> → <b>T avec variance combinée (pooled)</b>, ddl = n₁ + n₂ − 2 ; variances <b>inconnues et différentes</b> → <b>T de Welch</b> ; <b>grands échantillons</b> → Z.</li>
             <li><b>Échantillons appariés</b> : on définit les <b>différences Dᵢ = Xᵢ − Yᵢ</b>, puis T (loi normale, variance inconnue) ou Z (n &gt; 30).</li>
             <li><b>Test d'égalité des variances</b> : H₀ : σ₁² = σ₂², statistique <b>F = S₁²/S₂²</b>, loi de <b>Fisher</b> à (n₁ − 1, n₂ − 1) degrés de liberté.</li>
-            <li><b>Logiciels recommandés</b> : <b>Excel</b>, <b>SPSS</b>, <b>RStudio</b>.</li>
+            <li><b>Logiciels recommandés</b> : <b>Excel</b>, <b><span class="def" data-terme="spss">SPSS</span></b>, <b>RStudio</b>.</li>
           </ul>
         </div>
 
@@ -158,7 +158,7 @@
             <tbody>
               <tr><td rowspan="3"><b>Moyenne µ</b></td><td>σ <b>connu</b>, loi normale</td><td><b>X̄ ± z<sub>1−α/2</sub>σ/√n</b></td></tr>
               <tr><td>σ <b>inconnu</b>, loi normale</td><td><b>X̄ ± t<sub>1−α/2, n−1</sub>S/√n</b></td></tr>
-              <tr><td><b>n ≥ 30</b> (TCL), toute loi</td><td><b>X̄ ± z<sub>1−α/2</sub>S/√n</b></td></tr>
+              <tr><td><b>n ≥ 30</b> (<span class="def" data-terme="tcl">TCL</span>), toute loi</td><td><b>X̄ ± z<sub>1−α/2</sub>S/√n</b></td></tr>
               <tr><td><b>Proportion p</b></td><td><b>n &gt; 30</b></td><td><b>p̂ ± z<sub>1−α/2</sub>√[p̂(1 − p̂)/n]</b></td></tr>
             </tbody>
           </table>

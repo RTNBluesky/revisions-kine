@@ -443,7 +443,7 @@ footer {
           </div>
           <div class="number-card">
             <div class="number-value" style="color:var(--accent4)">10%</div>
-            <div class="number-label">Mortalité si score SOFA ≥ 2</div>
+            <div class="number-label">Mortalité si score <span class="def" data-terme="sofa">SOFA</span> ≥ 2</div>
           </div>
         </div>
 
@@ -460,17 +460,17 @@ footer {
           </div>
 
           <div class="def-box">
-            <div class="def-label">Sepsie (Sepsis-3 — JAMA 2016)</div>
+            <div class="def-label">Sepsie (Sepsis-3 — <span class="def" data-terme="jama">JAMA</span> 2016)</div>
             <div class="def-text"><strong>Dysfonctionnement organique potentiellement mortel</strong> causé par une <strong>réponse dérégulée de l'hôte à une infection</strong>. Ce qui distingue la sepsie d'une infection simple : la réponse aberrante de l'hôte ET la présence d'un dysfonctionnement organique.</div>
           </div>
 
           <div class="grid-2">
             <div class="def-box" style="margin-bottom:0">
               <div class="def-label">Choc septique (Sepsis-3)</div>
-              <div class="def-text">Sous-ensemble de la sepsie avec <strong>anomalies circulatoires, cellulaires et métaboliques</strong> suffisamment graves pour augmenter considérablement la mortalité. Nécessite des vasopresseurs pour maintenir PAM ≥ 65 mmHg <strong>ET</strong> lactate sérique &gt; 2 mmol/L malgré <span class="def" data-terme="reanimation">réanimation</span> volémique adéquate.</div>
+              <div class="def-text">Sous-ensemble de la sepsie avec <strong>anomalies circulatoires, cellulaires et métaboliques</strong> suffisamment graves pour augmenter considérablement la mortalité. Nécessite des vasopresseurs pour maintenir <span class="def" data-terme="pam_pas_pad">PAM</span> ≥ 65 mmHg <strong>ET</strong> lactate sérique &gt; 2 mmol/L malgré <span class="def" data-terme="reanimation">réanimation</span> volémique adéquate.</div>
             </div>
             <div class="def-box" style="margin-bottom:0; border-color:var(--accent2)">
-              <div class="def-label" style="color:var(--accent2)">SIRS (ancienne définition)</div>
+              <div class="def-label" style="color:var(--accent2)"><span class="def" data-terme="sirs">SIRS</span> (ancienne définition)</div>
               <div class="def-text">Syndrome de réponse inflammatoire systémique. Critères dépassés mais utile pour identifier l'infection. Présence d'au moins <strong>2 des critères</strong> : fièvre/hypothermie, <span class="def" data-terme="tachycardie">tachycardie</span>, <span class="def" data-terme="tachypnee">tachypnée</span>, anomalie des GB. Sensibilité faible — <em>ne pas utiliser seul pour diagnostiquer la sepsie.</em></div>
             </div>
           </div>
@@ -538,13 +538,13 @@ footer {
 
           <div class="alert info" style="margin-bottom:20px">
             <span class="alert-icon">🔬</span>
-            <div>Les <strong>PAMPs</strong> (Pathogen-Associated Molecular Patterns) des produits microbiens activent les récepteurs Toll-like (TLR), déclenchant une cascade inflammatoire complexe via NF-κB → <span class="def" data-terme="cytokine">cytokines</span> pro-inflammatoires (<span class="def" data-terme="tnf">TNF</span>, IL-1, IL-6, IL-8, HMGB1).</div>
+            <div>Les <strong>PAMPs</strong> (Pathogen-Associated Molecular Patterns) des produits microbiens activent les récepteurs Toll-like (<span class="def" data-terme="tlr">TLR</span>), déclenchant une cascade inflammatoire complexe via NF-κB → <span class="def" data-terme="cytokine">cytokines</span> pro-inflammatoires (<span class="def" data-terme="tnf">TNF</span>, IL-1, IL-6, IL-8, <span class="def" data-terme="hmgb1">HMGB1</span>).</div>
           </div>
 
           <ol class="styled" style="margin-bottom:20px">
             <li style="padding:10px 0 10px 28px"><strong>Activation endothéliale :</strong> Les PAMPs sont reconnus par les cellules <span class="def" data-terme="endothelium">endothéliales</span> → réponses inflammatoires → état hyperinflammatoire → activation des mécanismes <span class="def" data-terme="immunosuppresseur">immunosuppresseurs</span> régulateurs (oscillation entre états hyper- et immunosuppressif)</li>
-            <li style="padding:10px 0 10px 28px"><strong><span class="def" data-terme="oedeme">Œdème</span> et vasodilatation :</strong> Relâchement des jonctions serrées endothéliales → augmentation de la perméabilité vasculaire → accumulation de liquide œdémateux → production de NO → vasodilatation → hypotension systémique → <span class="def" data-terme="hypoxemie">hypoxie</span> tissulaire</li>
-            <li style="padding:10px 0 10px 28px"><strong>CIVD (Coagulation Intravasculaire Disséminée) :</strong> Augmentation du facteur tissulaire (TF) → formation de <span class="def" data-terme="fibrine">fibrine</span> → <span class="def" data-terme="thrombose">thrombose</span> microvasculaire → <span class="def" data-terme="ischemie">ischémie</span> tissulaire. Simultanément : ↑ PAI-1 (antifibrinolytique), ↓ TFPI/thrombomoduline/protéine C (anticoagulants)</li>
+            <li style="padding:10px 0 10px 28px"><strong><span class="def" data-terme="oedeme">Œdème</span> et vasodilatation :</strong> Relâchement des jonctions serrées endothéliales → augmentation de la perméabilité vasculaire → accumulation de liquide œdémateux → production de <span class="def" data-terme="no_sigle">NO</span> → vasodilatation → hypotension systémique → <span class="def" data-terme="hypoxemie">hypoxie</span> tissulaire</li>
+            <li style="padding:10px 0 10px 28px"><strong><span class="def" data-terme="civd">CIVD</span> (Coagulation Intravasculaire Disséminée) :</strong> Augmentation du facteur tissulaire (TF) → formation de <span class="def" data-terme="fibrine">fibrine</span> → <span class="def" data-terme="thrombose">thrombose</span> microvasculaire → <span class="def" data-terme="ischemie">ischémie</span> tissulaire. Simultanément : ↑ PAI-1 (antifibrinolytique), ↓ <span class="def" data-terme="tfpi">TFPI</span>/thrombomoduline/protéine C (anticoagulants)</li>
             <li style="padding:10px 0 10px 28px"><strong>Modifications métaboliques :</strong> Résistance à l'<span class="def" data-terme="insuline">insuline</span> + <span class="def" data-terme="hyperglycemie">hyperglycémie</span> (TNF, IL-1, catécholamines) → altération fonction neutrophiles → augmentation expression molécules d'adhésion. Hypoxie cellulaire → <span class="def" data-terme="glycolyse">glycolyse</span> anaérobie → <em><span class="def" data-terme="acidose">acidose</span> lactique</em></li>
             <li style="padding:10px 0 10px 28px"><strong>Dysfonctionnement organique :</strong> Hypoperfusion + thrombose microvasculaire → atteinte des reins, foie, poumons, cœur. Myopathie induite par les cytokines → perte de masse et de force musculaire</li>
           </ol>
@@ -577,7 +577,7 @@ footer {
                 <p style="font-size:12px;color:var(--accent4);font-weight:600;margin-bottom:6px">COAGULATION</p>
                 <div class="tags">
                   <span class="tag green">↑ TF</span>
-                  <span class="tag green">↑ PAI-1</span>
+                  <span class="tag green">↑ <span class="def" data-terme="pai">PAI</span>-1</span>
                   <span class="tag red">↓ Protéine C</span>
                   <span class="tag red">↓ TFPI</span>
                   <span class="tag red">↓ Thrombomoduline</span>
@@ -607,7 +607,7 @@ footer {
               <tr>
                 <td class="red-cell"><strong>Cardiogénique</strong></td>
                 <td>Défaillance de la pompe <span class="def" data-terme="myocarde">myocardique</span> → ↓ débit cardiaque</td>
-                <td>IDM, <span class="def" data-terme="arythmie">arythmies</span> complexes, tamponnade, <span class="def" data-terme="embolie">embolie</span> pulmonaire</td>
+                <td><span class="def" data-terme="idm">IDM</span>, <span class="def" data-terme="arythmie">arythmies</span> complexes, tamponnade, <span class="def" data-terme="embolie">embolie</span> pulmonaire</td>
                 <td>Peau froide et moite, hypotension, tachycardie</td>
               </tr>
               <tr>
@@ -772,8 +772,8 @@ footer {
               <div>
                 <p style="font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--accent2);margin-bottom:8px">Biologie de base</p>
                 <ul class="styled">
-                  <li>Hémogramme complet (NFS)</li>
-                  <li>CRP et procalcitonine</li>
+                  <li>Hémogramme complet (<span class="def" data-terme="nfs">NFS</span>)</li>
+                  <li><span class="def" data-terme="crp">CRP</span> et procalcitonine</li>
                   <li><span class="def" data-terme="glycemie">Glycémie</span></li>
                   <li>Créatinine, urée, bilirubine</li>
                   <li>Lactate sérique ★</li>
@@ -791,7 +791,7 @@ footer {
               <div>
                 <p style="font-size:12px;font-weight:600;letter-spacing:1px;text-transform:uppercase;color:var(--accent4);margin-bottom:8px">Microbiologie ★</p>
                 <ul class="styled">
-                  <li><strong>Hémocultures (×2 avant ATB)</strong></li>
+                  <li><strong>Hémocultures (×2 avant <span class="def" data-terme="atb">ATB</span>)</strong></li>
                   <li>ECBU (urine)</li>
                   <li>Prélèvement du foyer infectieux</li>
                   <li><em>Culture + dans 30–40% des cas</em></li>
@@ -820,7 +820,7 @@ footer {
                 <li><strong>Antibiothérapie précoce à large spectre</strong> (après hémocultures)</li>
                 <li><strong>Remplissage vasculaire</strong> agressif (cristalloïdes IV)</li>
                 <li><strong>Vasopresseurs</strong> (noradrénaline, vasopressine, phényléphrine) pour PAM ≥ 65 mmHg</li>
-                <li>Oxygénothérapie / ventilation mécanique si ARDS</li>
+                <li>Oxygénothérapie / ventilation mécanique si <span class="def" data-terme="ards_sigle">ARDS</span></li>
                 <li>Inotropes positifs (dobutamine, milrinone) si ↓ débit cardiaque</li>
                 <li>Insulinothérapie : maintenir glycémie 80–110 mg/dL</li>
                 <li><span class="def" data-terme="corticosteroide">Corticostéroïdes</span> : controversé — seulement si échec réanimation</li>
@@ -855,9 +855,9 @@ footer {
             <div class="card">
               <h3 style="margin-top:0">Pourquoi l'incidence augmente-t-elle ?</h3>
               <ul class="styled">
-                <li>↑ Patients <span class="def" data-terme="immunodepression">immunodéprimés</span> (<span class="def" data-terme="radiotherapie">chimiothérapie</span>, HIV/SIDA, âge avancé)</li>
+                <li>↑ Patients <span class="def" data-terme="immunodepression">immunodéprimés</span> (<span class="def" data-terme="radiotherapie">chimiothérapie</span>, HIV/<span class="def" data-terme="sida">SIDA</span>, âge avancé)</li>
                 <li>↑ Procédures invasives (<span class="def" data-terme="catheter">cathéters</span>, chirurgies)</li>
-                <li>↑ Organismes multirésistants (BMR)</li>
+                <li>↑ Organismes multirésistants (<span class="def" data-terme="bmr">BMR</span>)</li>
                 <li>Meilleur soutien aux patients critiques → survie prolongée</li>
                 <li>Meilleure reconnaissance du diagnostic</li>
               </ul>

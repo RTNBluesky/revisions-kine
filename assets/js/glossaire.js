@@ -7,15 +7,55 @@
    ------------------------------------------------------------------ */
 
 window.GLOSSAIRE = {
+ "aa_bb_dd": {
+  "t": "AA, BB, DD — génomes du blé",
+  "d": "Les trois génomes réunis dans le blé tendre hexaploïde, issus d'hybridations successives entre espèces sauvages.",
+  "dom": "SVT"
+ },
+ "aabbdd_ble": {
+  "t": "AABBDD — génome du blé tendre",
+  "d": "Les trois paires de génomes du blé hexaploïde, héritées de trois espèces sauvages par hybridations successives.",
+  "dom": "SVT"
+ },
+ "aarc": {
+  "t": "AARC — American Association for Respiratory Care",
+  "d": "Société américaine de soins respiratoires, émettrice de recommandations sur l'aspiration et la ventilation.",
+  "dom": "Cardio-respiratoire"
+ },
  "aarom": {
   "t": "AAROM — amplitude active aidée",
   "d": "Amplitude produite par le patient avec une aide extérieure, quand la force seule ne suffit pas.",
   "dom": "EAIF"
  },
+ "ab_amplitude": {
+  "t": "AB — amplitude de base",
+  "d": "Le début de l'amplitude de mouvement, point de départ de la cotation de la raideur articulaire.",
+  "dom": "EAIF"
+ },
+ "abc_echelle": {
+  "t": "ABC — Activities-specific Balance Confidence",
+  "d": "Échelle de confiance en son équilibre dans seize activités de la vie courante.",
+  "dom": "Neurologie"
+ },
+ "abcde_thorax": {
+  "t": "ABCDE — lecture systématique d'une radiographie de thorax",
+  "d": "Airway, Bones, Cardiac, Diaphragm, Everything else : l'ordre de lecture qui évite d'oublier une anomalie.",
+  "dom": "Cardio-respiratoire"
+ },
  "ac": {
   "t": "AC — articulation acromio-claviculaire",
   "d": "Articulation entre l'acromion et l'extrémité latérale de la clavicule. Explorée par Paxinos, Shear Test et le test de l'écharpe.",
   "dom": "Musculo-squelettique"
+ },
+ "aca": {
+  "t": "ACA — artère cérébrale antérieure",
+  "d": "Vascularise la face interne du lobe frontal : son atteinte touche surtout le membre inférieur.",
+  "dom": "Neurologie"
+ },
+ "acbt": {
+  "t": "ACBT — active cycle of breathing techniques",
+  "d": "Cycle actif du contrôle respiratoire : respiration contrôlée, exercices d'expansion thoracique et expiration forcée, enchaînés pour désencombrer sans fatiguer.",
+  "dom": "Cardio-respiratoire"
  },
  "accommodation": {
   "t": "Accommodation",
@@ -26,6 +66,11 @@ window.GLOSSAIRE = {
   "t": "Accroupissement",
   "d": "La position en flexion complète de hanches, genoux et chevilles. Son analyse renseigne sur mobilité, force et équilibre.",
   "dom": "Biomécanique"
+ },
+ "aci": {
+  "t": "ACI — artère carotide interne",
+  "d": "Principale artère nourricière de l'hémisphère cérébral, origine des artères cérébrales antérieure et moyenne.",
+  "dom": "Neurologie"
  },
  "acido-basique": {
   "t": "Équilibre acido-basique",
@@ -42,10 +87,25 @@ window.GLOSSAIRE = {
   "d": "Baisse du pH sanguin. Son contraire est l'alcalose.",
   "dom": "Physiologie"
  },
+ "acm_sigle": {
+  "t": "ACM — artère cérébrale moyenne",
+  "d": "Aussi appelée artère sylvienne. Son occlusion est la cause la plus fréquente d'AVC, avec hémiparésie et aphasie si l'hémisphère dominant est touché.",
+  "dom": "Neurologie"
+ },
  "acouphene": {
   "t": "Acouphène",
   "d": "Perception d'un son — sifflement, bourdonnement — sans source extérieure.",
   "dom": "Neurologie"
+ },
+ "acp": {
+  "t": "ACP — artère cérébrale postérieure",
+  "d": "Vascularise le lobe occipital : son occlusion donne une amputation du champ visuel.",
+  "dom": "Neurologie"
+ },
+ "acr": {
+  "t": "ACR — American College of Rheumatology",
+  "d": "Société savante dont les critères servent au diagnostic de la polyarthrite et de la fibromyalgie.",
+  "dom": "Physiopathologie"
  },
  "acromioplastie": {
   "t": "Acromioplastie",
@@ -56,6 +116,11 @@ window.GLOSSAIRE = {
   "t": "ACSM — American College of Sports Medicine",
   "d": "Société savante dont les recommandations font référence en prescription d'exercice.",
   "dom": "Musculo-squelettique"
+ },
+ "acsm_gold": {
+  "t": "GOLD — Global Initiative for Chronic Obstructive Lung Disease",
+  "d": "Classification internationale de la BPCO en quatre stades d'obstruction, et recommandations associées.",
+  "dom": "Cardio-respiratoire"
  },
  "acth": {
   "t": "ACTH",
@@ -71,6 +136,11 @@ window.GLOSSAIRE = {
   "t": "Principe d'actualisme",
   "d": "Postulat selon lequel les lois régissant les phénomènes géologiques actuels valaient déjà dans le passé.",
   "dom": "SVT"
+ },
+ "adek": {
+  "t": "ADEK — vitamines liposolubles",
+  "d": "Vitamines A, D, E et K, absorbées avec les graisses : leur carence accompagne les malabsorptions.",
+  "dom": "Physiologie"
  },
  "adenocarcinome": {
   "t": "Adénocarcinome",
@@ -92,6 +162,11 @@ window.GLOSSAIRE = {
   "d": "Aussi appelée vasopressine. Elle ouvre les aquaporines du tube collecteur et fait réabsorber l'eau, concentrant les urines.",
   "dom": "Physiologie"
  },
+ "adh_sigle": {
+  "t": "ADH — hormone antidiurétique",
+  "d": "Aussi appelée vasopressine : elle ouvre les aquaporines du tube collecteur et concentre les urines.",
+  "dom": "Physiologie"
+ },
  "adherence": {
   "t": "Adhérence",
   "d": "Accolement anormal entre deux plans qui devraient glisser l'un sur l'autre. Conséquence fréquente d'une inflammation ou d'une chirurgie.",
@@ -101,6 +176,21 @@ window.GLOSSAIRE = {
   "t": "Adipocyte",
   "d": "Cellule du tissu graisseux, réserve d'énergie et organe endocrine à part entière.",
   "dom": "Physiologie"
+ },
+ "adl_sigle": {
+  "t": "ADL — activités de la vie quotidienne",
+  "d": "Se laver, s'habiller, se déplacer, manger : les gestes de base dont dépend l'autonomie.",
+  "dom": "Démarche clinique"
+ },
+ "adm_nottingham": {
+  "t": "ADM — activités de la vie domestique étendues",
+  "d": "Famille d'échelles de Nottingham qui mesurent l'autonomie dans les activités élaborées après un AVC.",
+  "dom": "Neurologie"
+ },
+ "adme": {
+  "t": "ADME — absorption, distribution, métabolisation, élimination",
+  "d": "Les quatre étapes du trajet d'un médicament dans l'organisme : ce que le corps fait au médicament.",
+  "dom": "Pharmacologie"
  },
  "adn": {
   "t": "ADN — acide désoxyribonucléique",
@@ -137,9 +227,24 @@ window.GLOSSAIRE = {
   "d": "La force avec laquelle une molécule se fixe à son récepteur. Grande affinité, fixation durable.",
   "dom": "Pharmacologie"
  },
+ "ag_sigle": {
+  "t": "AG — acides gras",
+  "d": "Substrat énergétique majeur du muscle au repos et à l'effort prolongé.",
+  "dom": "Physiologie"
+ },
  "agnosie": {
   "t": "Agnosie",
   "d": "Incapacité à reconnaître un objet ou un visage, alors que la perception sensorielle fonctionne.",
+  "dom": "Neurologie"
+ },
+ "agree": {
+  "t": "AGREE — grille d'évaluation des recommandations",
+  "d": "Outil qui note la qualité méthodologique d'une recommandation de bonne pratique.",
+  "dom": "Recherche"
+ },
+ "aica": {
+  "t": "AICA — artère cérébelleuse antéro-inférieure",
+  "d": "Vascularise la partie antérieure du cervelet et l'oreille interne.",
   "dom": "Neurologie"
  },
  "aidant": {
@@ -152,6 +257,21 @@ window.GLOSSAIRE = {
   "d": "Médicament qui bloque les cyclo-oxygénases et réduit douleur et inflammation, sans être un corticoïde.",
   "dom": "Physiopathologie"
  },
+ "aip": {
+  "t": "AIP — articulation interapophysaire postérieure",
+  "d": "Articulation entre les processus articulaires de deux vertèbres ; son arthrose donne une douleur lombaire mécanique.",
+  "dom": "Musculo-squelettique"
+ },
+ "airofit": {
+  "t": "AIROFIT — dispositif d'entraînement respiratoire",
+  "d": "Appareil connecté de mesure et d'entraînement des muscles respiratoires, aux côtés du Threshold et du POWERbreathe.",
+  "dom": "Cardio-respiratoire"
+ },
+ "ajia": {
+  "t": "AJI — arthrite juvénile idiopathique",
+  "d": "Arthrite qui débute avant seize ans et dure plus de six semaines, sans cause retrouvée.",
+  "dom": "Physiopathologie"
+ },
  "akinesie": {
   "t": "Akinésie",
   "d": "Difficulté à initier le mouvement. Associée à la bradykinésie, sa lenteur, dans le syndrome parkinsonien.",
@@ -161,6 +281,11 @@ window.GLOSSAIRE = {
   "t": "Filière anaérobie alactique",
   "d": "La voie d'énergie des efforts très brefs et maximaux : phosphocréatine, sans production de lactate. Au-delà, la voie lactique prend le relais.",
   "dom": "Physiologie"
+ },
+ "alara": {
+  "t": "ALARA — as low as reasonably achievable",
+  "d": "Principe de radioprotection : délivrer la dose la plus faible raisonnablement possible.",
+  "dom": "Physiopathologie"
  },
  "albedo": {
   "t": "Albédo",
@@ -207,6 +332,11 @@ window.GLOSSAIRE = {
   "d": "Douleur déclenchée par un stimulus qui normalement n'en provoque pas, comme le frottement d'un drap.",
   "dom": "Neurologie"
  },
+ "alsfrs": {
+  "t": "ALSFRS-R — échelle fonctionnelle de la SLA",
+  "d": "Treize items cotés de 4 à 0, qui suivent la perte d'autonomie dans la sclérose latérale amyotrophique.",
+  "dom": "Neurologie"
+ },
  "alveolite": {
   "t": "Alvéolite",
   "d": "Inflammation des alvéoles pulmonaires, souvent d'origine allergique ou toxique, qui évolue vers la fibrose.",
@@ -232,6 +362,11 @@ window.GLOSSAIRE = {
   "d": "Perte de mémoire. Antérograde quand on n'enregistre plus rien de nouveau, rétrograde quand on perd le passé.",
   "dom": "Neurologie"
  },
+ "amp_aires": {
+  "t": "AMP — aires marines protégées",
+  "d": "Zones où l'exploitation est encadrée pour préserver la biodiversité marine.",
+  "dom": "SVT"
+ },
  "ampa": {
   "t": "Récepteur AMPA",
   "d": "Récepteur du glutamate à réponse rapide, acteur de la transmission excitatrice et de la potentialisation à long terme.",
@@ -246,6 +381,11 @@ window.GLOSSAIRE = {
   "t": "AMS — artère mésentérique supérieure",
   "d": "Branche de l'aorte abdominale qui vascularise l'intestin grêle et le côlon droit.",
   "dom": "Anatomie"
+ },
+ "amstar": {
+  "t": "AMSTAR — grille d'évaluation des revues systématiques",
+  "d": "Outil qui juge la rigueur méthodologique d'une revue systématique.",
+  "dom": "Recherche"
  },
  "amyotrophie": {
   "t": "Amyotrophie",
@@ -276,6 +416,11 @@ window.GLOSSAIRE = {
   "t": "Anastomose",
   "d": "Communication entre deux vaisseaux, deux nerfs ou deux segments d'organe — naturelle, ou créée par le chirurgien.",
   "dom": "Anatomie"
+ },
+ "anca": {
+  "t": "ANCA — anticorps anticytoplasme des polynucléaires",
+  "d": "Auto-anticorps associés aux vascularites des petits vaisseaux.",
+  "dom": "Physiopathologie"
  },
  "anechogene": {
   "t": "Échogénicité",
@@ -326,6 +471,16 @@ window.GLOSSAIRE = {
   "t": "Ankylosant",
   "d": "Qui conduit à la soudure d'une articulation. Dans la spondylarthrite ankylosante, le rachis finit en « colonne de bambou ».",
   "dom": "Musculo-squelettique"
+ },
+ "anp": {
+  "t": "ANP — peptide natriurétique auriculaire",
+  "d": "Hormone libérée par l'oreillette quand elle est distendue : elle fait éliminer sel et eau, donc baisse la pression.",
+  "dom": "Physiologie"
+ },
+ "ansa": {
+  "t": "ANA — anticorps antinucléaires",
+  "d": "Auto-anticorps dirigés contre le noyau des cellules, dépistés devant une suspicion de maladie auto-immune.",
+  "dom": "Physiopathologie"
  },
  "antalgique": {
   "t": "Antalgique",
@@ -402,6 +557,11 @@ window.GLOSSAIRE = {
   "d": "Trouble acquis du langage — l'expression, la compréhension, ou les deux — sans atteinte des organes de la parole.",
   "dom": "Neurologie"
  },
+ "apl": {
+  "t": "APL — long abducteur du pouce",
+  "d": "Écarte le pouce dans le plan de la paume ; tendu avec le court extenseur dans la ténosynovite de De Quervain.",
+  "dom": "Anatomie"
+ },
  "aplasie": {
   "t": "Aplasie",
   "d": "Absence ou arrêt de développement d'un tissu. L'aplasie médullaire est l'effondrement de la production sanguine.",
@@ -432,6 +592,11 @@ window.GLOSSAIRE = {
   "d": "Suicide programmé de la cellule, sans inflammation. Mécanisme normal de renouvellement des tissus.",
   "dom": "Physiopathologie"
  },
+ "app": {
+  "t": "APP — protéine précurseur de l'amyloïde",
+  "d": "Son clivage anormal produit le peptide bêta-amyloïde qui s'accumule dans la maladie d'Alzheimer.",
+  "dom": "Physiopathologie"
+ },
  "appendicite": {
   "t": "Appendicite",
   "d": "Inflammation de l'appendice : douleur de la fosse iliaque droite, fièvre, défense.",
@@ -452,6 +617,11 @@ window.GLOSSAIRE = {
   "d": "Incapacité à exécuter un geste appris, alors que la force, la sensibilité et la compréhension sont intactes.",
   "dom": "Neurologie"
  },
+ "apta": {
+  "t": "APTA — American Physical Therapy Association",
+  "d": "Association professionnelle américaine de physiothérapie, à l'origine de nombreuses recommandations.",
+  "dom": "Recherche"
+ },
  "aquaporine": {
   "t": "Aquaporine",
   "d": "Canal membranaire spécifique de l'eau. Leur insertion dans le tube collecteur, commandée par l'ADH, règle la concentration des urines.",
@@ -461,6 +631,11 @@ window.GLOSSAIRE = {
   "t": "Arachnoïde et pie-mère",
   "d": "Les deux méninges internes. Entre elles circule le liquide cérébrospinal, dans l'espace sous-arachnoïdien.",
   "dom": "Anatomie"
+ },
+ "ards_sigle": {
+  "t": "ARDS — acute respiratory distress syndrome",
+  "d": "Le SDRA en anglais : œdème lésionnel diffus avec hypoxémie réfractaire.",
+  "dom": "Cardio-respiratoire"
  },
  "arn": {
   "t": "ARN — acide ribonucléique",
@@ -542,6 +717,16 @@ window.GLOSSAIRE = {
   "d": "Classification internationale des lésions médullaires, qui détermine le niveau neurologique et le caractère complet ou incomplet, des grades A à E.",
   "dom": "Neurologie"
  },
+ "asia_ais": {
+  "t": "AIS — ASIA Impairment Scale",
+  "d": "Classe la lésion médullaire de A, complète, à E, normale, à partir de l'examen sensitif et moteur ASIA.",
+  "dom": "Neurologie"
+ },
+ "ask_etapes": {
+  "t": "ASK, ACQUIRE, APPRAISE, APPLY, ANALYZE — les cinq étapes de la PBE",
+  "d": "Formuler la question, chercher les preuves, les évaluer, les appliquer au patient, puis analyser le résultat.",
+  "dom": "Recherche"
+ },
  "assimilation": {
   "t": "Assimilation",
   "d": "Chez Piaget, intégrer une expérience nouvelle dans un schéma mental déjà là.",
@@ -582,10 +767,25 @@ window.GLOSSAIRE = {
   "d": "Trouble de la coordination des mouvements, sans déficit de force. Typique des atteintes cérébelleuses.",
   "dom": "Neurologie"
  },
+ "atb": {
+  "t": "ATB — antibiotique",
+  "d": "Médicament qui tue les bactéries ou bloque leur multiplication.",
+  "dom": "Pharmacologie"
+ },
+ "atcd": {
+  "t": "ATCD — antécédents",
+  "d": "Les maladies, opérations et traitements antérieurs du patient, recueillis à l'examen subjectif.",
+  "dom": "Démarche clinique"
+ },
  "atelectasie": {
   "t": "Atélectasie",
   "d": "Affaissement d'un territoire pulmonaire qui ne se ventile plus.",
   "dom": "Cardio-respiratoire"
+ },
+ "atg_codon": {
+  "t": "ATG — codon d'initiation",
+  "d": "Triplet de bases qui marque le début de la traduction et code la méthionine.",
+  "dom": "SVT"
  },
  "atherome": {
   "t": "Athérome",
@@ -612,6 +812,16 @@ window.GLOSSAIRE = {
   "d": "La monnaie énergétique de la cellule : son hydrolyse libère l'énergie utilisée par toutes les réactions coûteuses.",
   "dom": "Physiologie"
  },
+ "atp_cp": {
+  "t": "ATP-CP — voie anaérobie alactique",
+  "d": "Filière de la phosphocréatine : puissance maximale pendant quelques secondes, sans oxygène ni lactate.",
+  "dom": "EAIF"
+ },
+ "atp_rm": {
+  "t": "RM — répétition maximale",
+  "d": "Charge qu'on ne peut soulever qu'un nombre donné de fois. La 1 RM est la charge maximale sur une répétition.",
+  "dom": "EAIF"
+ },
  "atrophie": {
   "t": "Atrophie",
   "d": "Diminution du volume d'un tissu ou d'un organe, par perte de substance ou de cellules.",
@@ -621,6 +831,11 @@ window.GLOSSAIRE = {
   "t": "Attachement",
   "d": "Lien affectif durable construit avec la figure de soin, qui sert de base de sécurité pour explorer.",
   "dom": "Psychologie"
+ },
+ "atv": {
+  "t": "ATV — aire tegmentale ventrale",
+  "d": "Origine des neurones dopaminergiques du circuit de la récompense, cible des substances addictives.",
+  "dom": "Neurologie"
  },
  "auto-immunite": {
   "t": "Auto-immunité",
@@ -677,6 +892,11 @@ window.GLOSSAIRE = {
   "d": "Virus qui infecte les bactéries. Utilisé en recherche, et parfois en thérapeutique.",
   "dom": "Physiopathologie"
  },
+ "bamic": {
+  "t": "BAMIC — British Athletics Muscle Injury Classification",
+  "d": "Classe les lésions musculaires selon leur étendue et leur siège, de 0 à 4 avec les suffixes a, b ou c.",
+  "dom": "Musculo-squelettique"
+ },
  "bandage": {
   "t": "Bandage et contention",
   "d": "Le bandage maintient ; la contention exerce une pression active. L'un immobilise, l'autre lutte contre l'œdème.",
@@ -702,10 +922,30 @@ window.GLOSSAIRE = {
   "d": "Ralentissement ou interruption de la conduction entre oreillettes et ventricules.",
   "dom": "Cardio-respiratoire"
  },
+ "bc_sigle": {
+  "t": "BC — contrôle respiratoire",
+  "d": "Respiration calme à volume courant, premier et dernier temps du cycle actif ACBT.",
+  "dom": "Cardio-respiratoire"
+ },
+ "bcg": {
+  "t": "BCG — bacille de Calmette et Guérin",
+  "d": "Vaccin vivant atténué contre les formes graves de tuberculose.",
+  "dom": "Physiopathologie"
+ },
+ "bcl2": {
+  "t": "BCL2, BAX, BAK — protéines de l'apoptose",
+  "d": "BCL2 protège la cellule, BAX et BAK percent la mitochondrie et déclenchent la mort cellulaire programmée.",
+  "dom": "Physiopathologie"
+ },
  "bd": {
   "t": "BD — bronchodilatateur",
   "d": "Médicament qui relâche le muscle lisse bronchique. Le test de réversibilité compare la spirométrie avant et après administration.",
   "dom": "Cardio-respiratoire"
+ },
+ "bdi": {
+  "t": "BDI — inventaire de dépression de Beck",
+  "d": "Auto-questionnaire de référence pour mesurer l'intensité d'un état dépressif.",
+  "dom": "Psychologie"
  },
  "benzodiazepine": {
   "t": "Benzodiazépines",
@@ -730,6 +970,11 @@ window.GLOSSAIRE = {
  "betabloquant": {
   "t": "Bêtabloquants",
   "d": "Ils freinent le cœur et abaissent la pression en bloquant les récepteurs bêta. Attention : ils masquent la tachycardie d'hypoglycémie et bornent la fréquence à l'effort.",
+  "dom": "Pharmacologie"
+ },
+ "bhe": {
+  "t": "BHE — barrière hémato-encéphalique",
+  "d": "Filtre formé par les jonctions serrées des capillaires cérébraux, qui ne laisse passer qu'une partie des médicaments. Immature chez le nourrisson.",
   "dom": "Pharmacologie"
  },
  "bicarbonate": {
@@ -757,10 +1002,25 @@ window.GLOSSAIRE = {
   "d": "Ventilation non invasive avec une pression inspiratoire et une pression expiratoire distinctes, utilisée dans la BPCO.",
   "dom": "Cardio-respiratoire"
  },
+ "bjsm": {
+  "t": "BJSM — British Journal of Sports Medicine",
+  "d": "Revue de référence en médecine du sport et en rééducation.",
+  "dom": "Recherche"
+ },
+ "bmr": {
+  "t": "BMR — métabolisme de base",
+  "d": "Dépense énergétique au repos complet. Plus élevé chez l'homme que chez la femme sous l'effet de la testostérone.",
+  "dom": "Physiologie"
+ },
  "bobath": {
   "t": "Concept Bobath",
   "d": "Approche neurodéveloppementale de la rééducation neurologique : on inhibe les schémas pathologiques et on facilite le mouvement normal par des prises et des appuis.",
   "dom": "Neurologie"
+ },
+ "bode": {
+  "t": "BODE — index pronostique de la BPCO",
+  "d": "Combine indice de masse corporelle, obstruction, dyspnée et capacité d'exercice pour estimer le pronostic.",
+  "dom": "Cardio-respiratoire"
  },
  "borg": {
   "t": "Échelle de Borg",
@@ -776,6 +1036,16 @@ window.GLOSSAIRE = {
   "t": "BPCO — bronchopneumopathie chronique obstructive",
   "d": "Obstruction bronchique permanente et peu réversible, principalement liée au tabac.",
   "dom": "Physiopathologie"
+ },
+ "bpg": {
+  "t": "BPG — bronchopneumopathie",
+  "d": "Atteinte simultanée des bronches et du parenchyme pulmonaire.",
+  "dom": "Cardio-respiratoire"
+ },
+ "bppv": {
+  "t": "BPPV — vertige positionnel paroxystique bénin",
+  "d": "Vertige bref déclenché par un changement de position de la tête, dû à des otolithes déplacés dans un canal semi-circulaire.",
+  "dom": "Neurologie"
  },
  "bradycardie": {
   "t": "Bradycardie",
@@ -796,6 +1066,11 @@ window.GLOSSAIRE = {
   "t": "Brassage génétique",
   "d": "La méiose en produit deux : l'interchromosomique, par répartition au hasard des paires, et l'intrachromosomique, par crossing-over.",
   "dom": "SVT"
+ },
+ "brca": {
+  "t": "BRCA1, BRCA2 — gènes de prédisposition",
+  "d": "Gènes de réparation de l'ADN dont la mutation augmente fortement le risque de cancer du sein et de l'ovaire.",
+  "dom": "Physiopathologie"
  },
  "bronchectasie": {
   "t": "Bronchectasie",
@@ -832,20 +1107,50 @@ window.GLOSSAIRE = {
   "d": "Décrit la récupération motrice après un AVC en six étapes, de la flaccidité au mouvement isolé, en passant par les syncinésies.",
   "dom": "Neurologie"
  },
+ "bt1_bt2": {
+  "t": "T1, T2, BT1, BT2 — étapes de la traduction d'un questionnaire",
+  "d": "Procédure de Beaton : deux traductions directes, leur synthèse, puis deux rétrotraductions à l'aveugle avant validation par un comité d'experts.",
+  "dom": "Recherche"
+ },
  "bursite": {
   "t": "Bursite",
   "d": "Inflammation d'une bourse séreuse, ce coussinet qui limite les frottements entre tendon et os.",
   "dom": "Musculo-squelettique"
+ },
+ "bz_recepteur": {
+  "t": "Récepteur BZ — site benzodiazépine",
+  "d": "Site de fixation sur le récepteur GABA-A : son activation augmente l'affinité du récepteur pour le GABA.",
+  "dom": "Pharmacologie"
+ },
+ "bz_sigle": {
+  "t": "BZD — benzodiazépines",
+  "d": "Médicaments qui renforcent l'action du GABA : anxiolyse, sédation, risque de dépendance.",
+  "dom": "Pharmacologie"
  },
  "bzd": {
   "t": "BZD — benzodiazépine",
   "d": "Famille de médicaments qui potentialisent le GABA : anxiolytiques, myorelaxants, sédatifs.",
   "dom": "Pharmacologie"
  },
+ "ca_co": {
+  "t": "CA, CO — conduction aérienne et osseuse",
+  "d": "Les deux voies testées à l'audiogramme : leur comparaison distingue surdité de transmission et de perception.",
+  "dom": "Anatomie"
+ },
  "cachexie": {
   "t": "Cachexie",
   "d": "Amaigrissement profond avec fonte musculaire, au cours d'une maladie grave et prolongée.",
   "dom": "Physiopathologie"
+ },
+ "cae": {
+  "t": "CAE — conduit auditif externe",
+  "d": "Conduit en S de deux à trois centimètres, bordé de glandes à cérumen, qui mène au tympan.",
+  "dom": "Anatomie"
+ },
+ "cag_htt": {
+  "t": "CAG — triplet répété",
+  "d": "Répétition du triplet CAG dans le gène HTT : au-delà d'un seuil, elle provoque la maladie de Huntington.",
+  "dom": "SVT"
  },
  "caillot": {
   "t": "Caillot",
@@ -861,6 +1166,11 @@ window.GLOSSAIRE = {
   "t": "Calcitonine",
   "d": "Hormone thyroïdienne qui fait baisser la calcémie en freinant les ostéoclastes. Elle s'oppose à la parathormone.",
   "dom": "Physiologie"
+ },
+ "cam_icu": {
+  "t": "CAM-ICU — méthode d'évaluation de la confusion en réanimation",
+  "d": "Outil de dépistage du delirium chez le patient de soins intensifs, utilisé avec le score de sédation RASS.",
+  "dom": "Cardio-respiratoire"
  },
  "capsulite": {
   "t": "Capsulite rétractile",
@@ -882,6 +1192,11 @@ window.GLOSSAIRE = {
   "d": "Terme général pour toute maladie du cœur, qu'elle touche le muscle, les valves, les coronaires ou le rythme.",
   "dom": "Cardio-respiratoire"
  },
+ "care_checklist": {
+  "t": "CARE — checklist des cas cliniques",
+  "d": "Liste de contrôle pour publier un cas clinique de façon reproductible.",
+  "dom": "Recherche"
+ },
  "carotide": {
   "t": "Carotide",
   "d": "Artère principale du cou. Son sinus porte des barorécepteurs qui règlent la pression artérielle.",
@@ -891,6 +1206,16 @@ window.GLOSSAIRE = {
   "t": "Étude cas-témoins",
   "d": "On part de la maladie et on remonte vers l'exposition, en comparant des malades à des témoins.",
   "dom": "Recherche"
+ },
+ "casp": {
+  "t": "CASP — critical appraisal skills programme",
+  "d": "Jeu de grilles de lecture critique, une par type d'étude.",
+  "dom": "Recherche"
+ },
+ "cat_copd": {
+  "t": "CAT — COPD Assessment Test",
+  "d": "Huit items sur le retentissement quotidien de la BPCO, cotés de 0 à 5.",
+  "dom": "Cardio-respiratoire"
  },
  "catabolisme": {
   "t": "Catabolisme",
@@ -907,6 +1232,46 @@ window.GLOSSAIRE = {
   "d": "Caudal : vers les pieds. Céphalique : vers la tête. Deux repères de direction employés pour décrire une prise ou une mobilisation.",
   "dom": "Biomécanique"
  },
+ "cck": {
+  "t": "CCK — cholécystokinine",
+  "d": "Hormone duodénale libérée par les lipides : elle contracte la vésicule biliaire et freine la vidange gastrique.",
+  "dom": "Physiologie"
+ },
+ "cco_ccf": {
+  "t": "CCO — chaîne cinétique ouverte",
+  "d": "Mouvement dont l'extrémité distale est libre, par opposition à la chaîne fermée où elle est en appui.",
+  "dom": "EAIF"
+ },
+ "ccp": {
+  "t": "CCP — peptides cycliques citrullinés",
+  "d": "Les anticorps anti-CCP sont très spécifiques de la polyarthrite rhumatoïde.",
+  "dom": "Physiopathologie"
+ },
+ "ccr_cas": {
+  "t": "CCR — cas clinique cardio-respiratoire",
+  "d": "Les cas cardio-respiratoires travaillés dans le module de raisonnement clinique.",
+  "dom": "Démarche clinique"
+ },
+ "cd4_cd8": {
+  "t": "CD4, CD8 — sous-populations de lymphocytes T",
+  "d": "Les CD4 coordonnent la réponse immunitaire et sont la cible du VIH ; les CD8 détruisent les cellules infectées.",
+  "dom": "Physiopathologie"
+ },
+ "cd_cluster": {
+  "t": "CD — cluster de différenciation",
+  "d": "Nomenclature des marqueurs de surface des cellules immunitaires : CD4, CD8, CD31.",
+  "dom": "Physiopathologie"
+ },
+ "cd_coronaire": {
+  "t": "CD — artère coronaire droite",
+  "d": "Née du sinus aortique droit, elle chemine dans le sillon coronaire et donne l'interventriculaire postérieure dans la majorité des cas.",
+  "dom": "Anatomie"
+ },
+ "cdsr": {
+  "t": "CDSR — Cochrane Database of Systematic Reviews",
+  "d": "La base des revues systématiques Cochrane, référence en kinésithérapie.",
+  "dom": "Recherche"
+ },
  "cervicalgie": {
   "t": "Cervicalgie",
   "d": "Douleur du cou.",
@@ -921,6 +1286,11 @@ window.GLOSSAIRE = {
   "t": "CG — centre de gravité",
   "d": "Point d'application de la résultante du poids du corps. Sa position conditionne l'équilibre.",
   "dom": "Biomécanique"
+ },
+ "cgm": {
+  "t": "CGM — capteur de glycémie en continu",
+  "d": "Capteur sous-cutané qui mesure le glucose interstitiel en permanence.",
+  "dom": "Physiopathologie"
  },
  "chimiotaxie": {
   "t": "Chimiotaxie",
@@ -997,6 +1367,11 @@ window.GLOSSAIRE = {
   "d": "Destruction fibreuse et définitive de l'architecture du foie.",
   "dom": "Physiopathologie"
  },
+ "civd": {
+  "t": "CIVD — coagulation intravasculaire disséminée",
+  "d": "Activation massive de la coagulation dans tout l'organisme, qui épuise les facteurs et finit par faire saigner.",
+  "dom": "Physiopathologie"
+ },
  "claudication": {
   "t": "Claudication",
   "d": "Boiterie. Dans l'artériopathie, elle est intermittente : elle survient à la marche et cède à l'arrêt.",
@@ -1012,10 +1387,25 @@ window.GLOSSAIRE = {
   "d": "Articulation entre le carpe et un métacarpien ; celle du pouce autorise l'opposition.",
   "dom": "Anatomie"
  },
+ "cme": {
+  "t": "CME — concentration minimale efficace",
+  "d": "La plus basse concentration sanguine à partir de laquelle le médicament agit.",
+  "dom": "Pharmacologie"
+ },
+ "cmh": {
+  "t": "CMH — complexe majeur d'histocompatibilité",
+  "d": "Molécules qui présentent les antigènes aux lymphocytes T ; leur version humaine est le système HLA.",
+  "dom": "Physiopathologie"
+ },
  "cms": {
   "t": "CMS — conditions musculo-squelettiques",
   "d": "Ensemble des atteintes de l'appareil locomoteur, traumatiques, dégénératives, inflammatoires ou de surmenage.",
   "dom": "Musculo-squelettique"
+ },
+ "cmt": {
+  "t": "CMT — concentration maximale tolérée",
+  "d": "La plus haute concentration que l'organisme supporte sans effet toxique.",
+  "dom": "Pharmacologie"
  },
  "cochlee": {
   "t": "Cochlée",
@@ -1036,6 +1426,11 @@ window.GLOSSAIRE = {
   "t": "Coloscopie",
   "d": "Exploration du côlon par une caméra souple, avec possibilité de biopsier ou de retirer un polype.",
   "dom": "Physiopathologie"
+ },
+ "comet": {
+  "t": "COMET — core outcome measures in effectiveness trials",
+  "d": "Initiative qui définit le jeu minimal de résultats à mesurer dans un domaine donné.",
+  "dom": "Recherche"
  },
  "commissure": {
   "t": "Commissure",
@@ -1127,6 +1522,11 @@ window.GLOSSAIRE = {
   "d": "Hormone du stress durable : elle mobilise le glucose et freine l'inflammation et l'immunité.",
   "dom": "SVT"
  },
+ "cos": {
+  "t": "COS — core outcome set",
+  "d": "Ensemble minimal de critères de jugement que toute étude d'un domaine devrait rapporter.",
+  "dom": "Recherche"
+ },
  "cosmin": {
   "t": "COSMIN",
   "d": "Référentiel d'évaluation des qualités psychométriques d'un instrument de mesure.",
@@ -1136,6 +1536,16 @@ window.GLOSSAIRE = {
   "t": "Couturier (sartorius)",
   "d": "Le plus long muscle du corps, de l'épine iliaque antéro-supérieure à la patte d'oie. Il croise les deux articulations.",
   "dom": "Anatomie"
+ },
+ "covid": {
+  "t": "COVID — maladie à coronavirus 2019",
+  "d": "Infection due au SARS-CoV-2, dont l'atteinte pulmonaire typique est bilatérale et périphérique à l'imagerie.",
+  "dom": "Physiopathologie"
+ },
+ "cox": {
+  "t": "COX — cyclo-oxygénase",
+  "d": "Enzyme qui fabrique les prostaglandines. COX-1 protège l'estomac, COX-2 est induite par l'inflammation : c'est la cible des anti-inflammatoires.",
+  "dom": "Pharmacologie"
  },
  "cox2": {
   "t": "COX-2 — cyclo-oxygénase 2",
@@ -1152,15 +1562,45 @@ window.GLOSSAIRE = {
   "d": "Extension contrariée du poignet, coude tendu. Douleur sur l'épicondyle latéral : épicondylite.",
   "dom": "Musculo-squelettique"
  },
+ "cp_phosphocreatine": {
+  "t": "CP — phosphocréatine",
+  "d": "Réserve de phosphate du muscle, qui recharge l'ATP pendant les premières secondes d'effort intense.",
+  "dom": "Physiologie"
+ },
+ "cpa_apa": {
+  "t": "APA, CPA — ajustements posturaux",
+  "d": "Ajustements anticipés avant le mouvement et compensateurs après la perturbation : les deux temps du contrôle postural.",
+  "dom": "Neurologie"
+ },
  "cpap": {
   "t": "CPAP — pression positive continue",
   "d": "Ventilation non invasive délivrant une pression constante, indiquée notamment dans le syndrome d'apnées du sommeil.",
+  "dom": "Cardio-respiratoire"
+ },
+ "cpap_bipap": {
+  "t": "CPAP, BiPAP — pressions positives continues",
+  "d": "La CPAP délivre une pression constante, indiquée dans le syndrome d'apnées ; la BiPAP alterne deux niveaux, plutôt dans la BPCO.",
   "dom": "Cardio-respiratoire"
  },
  "cpg": {
   "t": "CPG — générateur de patron central",
   "d": "Réseau médullaire capable de produire un rythme moteur, comme celui de la marche, sans commande corticale continue.",
   "dom": "Neurologie"
+ },
+ "cpnpc": {
+  "t": "CPNPC — carcinome pulmonaire non à petites cellules",
+  "d": "Le groupe le plus fréquent des cancers du poumon, d'évolution plus lente que la forme à petites cellules.",
+  "dom": "Physiopathologie"
+ },
+ "cppc": {
+  "t": "CPPC — carcinome pulmonaire à petites cellules",
+  "d": "Cancer bronchique très lié au tabac, à croissance rapide et métastasant tôt.",
+  "dom": "Physiopathologie"
+ },
+ "cpt": {
+  "t": "CPT — capacité pulmonaire totale",
+  "d": "Volume d'air contenu dans les poumons à la fin d'une inspiration maximale : la somme de tous les volumes pulmonaires.",
+  "dom": "Cardio-respiratoire"
  },
  "crampe": {
   "t": "Crampe",
@@ -1182,6 +1622,11 @@ window.GLOSSAIRE = {
   "d": "Craquement ou grincement perçu à la palpation ou à la mobilisation, signe de frottement anormal.",
   "dom": "Musculo-squelettique"
  },
+ "crf": {
+  "t": "CRF — capacité résiduelle fonctionnelle",
+  "d": "Volume d'air qui reste dans les poumons à la fin d'une expiration calme. C'est la position de repos du système respiratoire.",
+  "dom": "Cardio-respiratoire"
+ },
  "crh": {
   "t": "CRH",
   "d": "Hormone hypothalamique qui déclenche la libération d'ACTH par l'hypophyse, premier maillon de l'axe du stress.",
@@ -1197,10 +1642,20 @@ window.GLOSSAIRE = {
   "d": "Échange de segments entre chromosomes homologues en prophase I. Source du brassage intrachromosomique.",
   "dom": "SVT"
  },
+ "crp": {
+  "t": "CRP — protéine C réactive",
+  "d": "Protéine de l'inflammation fabriquée par le foie. Elle monte vite et redescend vite : bon marqueur de suivi.",
+  "dom": "Physiopathologie"
+ },
  "csa": {
   "t": "CSA — conflit sous-acromial",
   "d": "Compression des tendons de la coiffe sous l'arche acromio-coracoïdienne. Explorée par Neer, Hawkins-Kennedy et Yocum.",
   "dom": "Musculo-squelettique"
+ },
+ "cte": {
+  "t": "CTE — chaîne de transport des électrons",
+  "d": "La chaîne respiratoire mitochondriale, qui produit la majeure partie de l'ATP en présence d'oxygène.",
+  "dom": "SVT"
  },
  "cuboide": {
   "t": "Cuboïde",
@@ -1212,15 +1667,35 @@ window.GLOSSAIRE = {
   "d": "Chez Erikson, le pôle négatif du stade « initiative contre culpabilité » : l'enfant qui n'ose plus entreprendre.",
   "dom": "Psychologie"
  },
+ "cv_risque": {
+  "t": "CV — cardiovasculaire",
+  "d": "Qualifie le risque vasculaire, notamment celui des coxibs et des anti-inflammatoires.",
+  "dom": "Cardio-respiratoire"
+ },
+ "cva": {
+  "t": "CVA — angle crânio-vertébral",
+  "d": "Angle entre l'horizontale et la ligne tragus-C7 : il quantifie l'antériorisation de la tête.",
+  "dom": "Musculo-squelettique"
+ },
  "cvf": {
   "t": "CVF — capacité vitale forcée",
   "d": "Volume total expiré lors d'une expiration forcée après une inspiration maximale.",
   "dom": "Cardio-respiratoire"
  },
+ "cxcl8": {
+  "t": "CXCL8 — interleukine 8",
+  "d": "Chimiokine qui attire les polynucléaires neutrophiles vers le foyer inflammatoire.",
+  "dom": "Physiopathologie"
+ },
  "cyanose": {
   "t": "Cyanose",
   "d": "Coloration bleutée de la peau et des muqueuses, par excès d'hémoglobine non oxygénée.",
   "dom": "Physiopathologie"
+ },
+ "cyp": {
+  "t": "CYP — cytochrome P450",
+  "d": "Famille d'enzymes hépatiques qui métabolisent la plupart des médicaments ; source majeure d'interactions.",
+  "dom": "Pharmacologie"
  },
  "cyphose": {
   "t": "Cyphose",
@@ -1247,6 +1722,11 @@ window.GLOSSAIRE = {
   "d": "Réseau de filaments qui donne sa forme à la cellule et permet ses mouvements internes.",
   "dom": "Physiologie"
  },
+ "damp": {
+  "t": "DAMP — motifs moléculaires associés aux dégâts",
+  "d": "Molécules libérées par les cellules lésées qui déclenchent l'inflammation sans qu'il y ait d'infection.",
+  "dom": "Physiopathologie"
+ },
  "dash": {
   "t": "DASH — Disabilities of the Arm, Shoulder and Hand",
   "d": "Auto-questionnaire de 30 items sur tout le membre supérieur. Score de 0 à 100 : plus il monte, plus l'incapacité est grande.",
@@ -1256,6 +1736,16 @@ window.GLOSSAIRE = {
   "t": "Datation",
   "d": "Relative, par superposition des couches ; absolue, par décroissance d'un isotope radioactif.",
   "dom": "SVT"
+ },
+ "dbs": {
+  "t": "DBS — stimulation cérébrale profonde",
+  "d": "Électrode implantée dans les noyaux gris centraux pour atténuer les symptômes du Parkinson.",
+  "dom": "Neurologie"
+ },
+ "dc_rp": {
+  "t": "DC, RP — débit cardiaque et résistance périphérique",
+  "d": "Les deux facteurs de la pression artérielle moyenne : PAM = DC × RP.",
+  "dom": "Cardio-respiratoire"
  },
  "dd": {
   "t": "Décubitus dorsal",
@@ -1362,10 +1852,30 @@ window.GLOSSAIRE = {
   "d": "Le muscle lisse de la paroi vésicale. Sa contraction vide la vessie ; son hyperactivité donne l'impériosité.",
   "dom": "Anatomie"
  },
+ "dexa": {
+  "t": "DEXA — absorptiométrie biphotonique",
+  "d": "Mesure de la densité minérale osseuse au rachis et à la hanche. Ostéoporose si le T-score est inférieur ou égal à −2,5.",
+  "dom": "Physiopathologie"
+ },
+ "dfg": {
+  "t": "DFG — débit de filtration glomérulaire",
+  "d": "Volume de plasma filtré par les reins chaque minute. C'est la mesure de référence de la fonction rénale.",
+  "dom": "Physiopathologie"
+ },
  "dgi": {
   "t": "DGI — Dynamic Gait Index",
   "d": "Huit situations de marche cotées de 0 à 3. En dessous de 20 sur 24, le risque de chute est élevé.",
   "dom": "Neurologie"
+ },
+ "dhap": {
+  "t": "DHAP — dihydroxyacétone phosphate",
+  "d": "Intermédiaire de la glycolyse, à la charnière entre métabolisme du glucose et des lipides.",
+  "dom": "SVT"
+ },
+ "di_dii_diii": {
+  "t": "DI, DII, DIII — dérivations frontales de l'ECG",
+  "d": "Les trois dérivations bipolaires des membres, qui explorent le cœur dans le plan frontal.",
+  "dom": "Cardio-respiratoire"
  },
  "dialyse": {
   "t": "Dialyse",
@@ -1381,6 +1891,11 @@ window.GLOSSAIRE = {
   "t": "Systole et diastole",
   "d": "La systole est la contraction qui éjecte le sang, la diastole le remplissage. La pression artérielle se note systolique sur diastolique.",
   "dom": "Cardio-respiratoire"
+ },
+ "did_dnid": {
+  "t": "DID, DNID — anciennes appellations des diabètes",
+  "d": "Diabète insulino-dépendant pour le type 1, non insulino-dépendant pour le type 2. Termes abandonnés car le type 2 finit souvent sous insuline.",
+  "dom": "Physiopathologie"
  },
  "diplopie": {
   "t": "Diplopie",
@@ -1427,20 +1942,55 @@ window.GLOSSAIRE = {
   "d": "Patient allongé sur le côté. Position du test d'Ober et du test des adducteurs.",
   "dom": "Musculo-squelettique"
  },
+ "dlm": {
+  "t": "DLM — drainage lymphatique manuel",
+  "d": "Manœuvres lentes et superficielles qui suivent le trajet des collecteurs pour évacuer l'œdème.",
+  "dom": "EAIF"
+ },
+ "dmard": {
+  "t": "DMARD — traitement de fond de la polyarthrite",
+  "d": "Médicament qui freine l'évolution de la maladie rhumatismale, et pas seulement ses symptômes.",
+  "dom": "Pharmacologie"
+ },
  "dmo": {
   "t": "DMO — densité minérale osseuse",
   "d": "Quantité de minéral par unité de surface d'os, mesurée pour diagnostiquer l'ostéoporose.",
   "dom": "Physiopathologie"
+ },
+ "doi": {
+  "t": "DOI — identifiant d'objet numérique",
+  "d": "Adresse permanente d'un article scientifique, à citer dans la bibliographie.",
+  "dom": "Recherche"
  },
  "domestication": {
   "t": "Domestication",
   "d": "La sélection, par l'homme et sur des générations, de caractères utiles : rendement, docilité, absence d'épines.",
   "dom": "SVT"
  },
+ "doms": {
+  "t": "DOMS — courbatures retardées",
+  "d": "Douleurs musculaires d'apparition différée, après un travail excentrique : pic à 24-48 h, disparition vers 72 h.",
+  "dom": "EAIF"
+ },
+ "dopa": {
+  "t": "DOPA décarboxylase",
+  "d": "Enzyme qui transforme la L-dopa en dopamine. La carbidopa l'inhibe en périphérie pour que le médicament atteigne le cerveau.",
+  "dom": "Pharmacologie"
+ },
  "dopaminergique": {
   "t": "Dopaminergique",
   "d": "Qui utilise la dopamine. La voie nigro-striée dopaminergique est celle qui dégénère dans la maladie de Parkinson.",
   "dom": "Neurologie"
+ },
+ "dp_irm": {
+  "t": "DP — densité de protons",
+  "d": "Séquence IRM intermédiaire entre T1 et T2, très utilisée en musculo-squelettique.",
+  "dom": "Physiopathologie"
+ },
+ "dpfs": {
+  "t": "DPFS — séquence IRM avec saturation de la graisse",
+  "d": "Séquence qui éteint le signal graisseux pour faire ressortir l'œdème osseux et les érosions.",
+  "dom": "Physiopathologie"
  },
  "dr": {
   "t": "DR — décubitus",
@@ -1452,6 +2002,16 @@ window.GLOSSAIRE = {
   "d": "Maladie génétique de l'hémoglobine : les globules rouges se déforment en faucille, bouchent les petits vaisseaux et provoquent des crises douloureuses.",
   "dom": "Physiopathologie"
  },
+ "drr": {
+  "t": "DRR — désencombrement rhinopharyngé rétrograde",
+  "d": "Technique pédiatrique qui mobilise les sécrétions du rhinopharynx à l'aide d'une inspiration forcée réflexe.",
+  "dom": "Cardio-respiratoire"
+ },
+ "ds_sigle": {
+  "t": "DS — déviation standard",
+  "d": "Mesure de dispersion autour de la moyenne. Un score à −1,5 DS est considéré comme déficitaire.",
+  "dom": "Recherche"
+ },
  "dure-mere": {
   "t": "Dure-mère",
   "d": "La plus externe et la plus résistante des trois méninges. Sous elle, l'arachnoïde, puis la pie-mère collée au tissu nerveux.",
@@ -1461,6 +2021,11 @@ window.GLOSSAIRE = {
   "t": "Décubitus ventral",
   "d": "Patient allongé sur le ventre, aussi appelé procubitus. Utilisée pour Ely, Thompson, Nachlas.",
   "dom": "Musculo-squelettique"
+ },
+ "dwi": {
+  "t": "DWI — imagerie de diffusion",
+  "d": "Séquence IRM qui repère l'ischémie cérébrale dès les premières minutes.",
+  "dom": "Physiopathologie"
  },
  "dynamometrie": {
   "t": "Dynamométrie",
@@ -1527,10 +2092,35 @@ window.GLOSSAIRE = {
   "d": "Difficulté à uriner. La pollakiurie, elle, est le besoin d'uriner trop souvent.",
   "dom": "Physiopathologie"
  },
+ "eaif": {
+  "t": "EAIF — stratégies d'évaluation et d'intervention en physiothérapie",
+  "d": "Le module qui enseigne les techniques d'évaluation et d'intervention : massage, mobilisations, goniométrie, testing, exercice thérapeutique. Décliné en EAIF I, II et III.",
+  "dom": "EAIF"
+ },
+ "ebm_sigle": {
+  "t": "EBM — evidence-based medicine",
+  "d": "La médecine fondée sur les preuves, dont découle la démarche appliquée en kinésithérapie.",
+  "dom": "Recherche"
+ },
+ "ebpp": {
+  "t": "EBPP — evidence-based physical therapy practice",
+  "d": "La pratique fondée sur les preuves appliquée à la kinésithérapie, telle que définie par l'association américaine de physiothérapie.",
+  "dom": "Recherche"
+ },
+ "ebv": {
+  "t": "EBV — virus d'Epstein-Barr",
+  "d": "Virus de la mononucléose, associé à plusieurs lymphomes et au cancer du nasopharynx.",
+  "dom": "Physiopathologie"
+ },
  "ecchymose": {
   "t": "Ecchymose",
   "d": "Le bleu : infiltration de sang sous la peau, sans collection.",
   "dom": "Physiopathologie"
+ },
+ "ecf_icf": {
+  "t": "ECF, ICF — compartiments liquidiens",
+  "d": "Le liquide extracellulaire, environ un tiers de l'eau du corps, et le liquide intracellulaire, les deux autres tiers.",
+  "dom": "Physiologie"
  },
  "ecg": {
   "t": "ECG — électrocardiogramme",
@@ -1557,10 +2147,45 @@ window.GLOSSAIRE = {
   "d": "Étude où l'attribution du traitement est tirée au sort. C'est le protocole de référence pour juger l'efficacité d'une intervention.",
   "dom": "Recherche"
  },
+ "ecrb": {
+  "t": "ECRB — extenseur radial court du carpe",
+  "d": "Extenseur du poignet dont l'enthèse est le siège habituel de l'épicondylalgie latérale.",
+  "dom": "Anatomie"
+ },
+ "ecrl": {
+  "t": "ECRL — extenseur radial long du carpe",
+  "d": "Muscle de la loge postérieure de l'avant-bras : extension et inclinaison radiale du poignet.",
+  "dom": "Anatomie"
+ },
  "ects": {
   "t": "ECTS",
   "d": "Crédits européens qui chiffrent la charge de travail d'une unité d'enseignement.",
   "dom": "Recherche"
+ },
+ "ecu": {
+  "t": "ECU — extenseur ulnaire du carpe",
+  "d": "Extension et inclinaison ulnaire du poignet ; stabilisateur du bord interne.",
+  "dom": "Anatomie"
+ },
+ "edc": {
+  "t": "EDC — extenseur commun des doigts",
+  "d": "Étend les quatre doigts longs à partir de l'épicondyle latéral.",
+  "dom": "Anatomie"
+ },
+ "edic": {
+  "t": "EDIC — exercices à débit inspiratoire contrôlé",
+  "d": "Inspirations lentes et profondes en décubitus latéral, région à traiter en position supra-latérale, avec pause télé-inspiratoire.",
+  "dom": "Cardio-respiratoire"
+ },
+ "edss": {
+  "t": "EDSS — échelle de Kurtzke",
+  "d": "Mesure le handicap dans la sclérose en plaques, de 0 à 10. Le score monte quand l'état se dégrade.",
+  "dom": "Neurologie"
+ },
+ "eeg": {
+  "t": "EEG — électroencéphalographie",
+  "d": "Enregistrement de l'activité électrique du cortex par des électrodes de surface.",
+  "dom": "Neurologie"
  },
  "effectivite": {
   "t": "Efficacité et effectivité",
@@ -1572,10 +2197,20 @@ window.GLOSSAIRE = {
   "d": "Batterie de mesures des volumes et des débits ventilatoires, dont la spirométrie.",
   "dom": "Cardio-respiratoire"
  },
+ "egf": {
+  "t": "EGF — facteur de croissance épidermique",
+  "d": "Stimule la multiplication des cellules épithéliales lors de la cicatrisation.",
+  "dom": "Physiologie"
+ },
  "egocentrisme": {
   "t": "Égocentrisme",
   "d": "Chez Piaget, l'incapacité de l'enfant d'âge préopératoire à se représenter un autre point de vue que le sien. Ce n'est pas de l'égoïsme.",
   "dom": "Psychologie"
+ },
+ "ehl": {
+  "t": "EHL — long extenseur de l'hallux",
+  "d": "Relève le gros orteil ; son testing explore la racine L5.",
+  "dom": "Anatomie"
  },
  "eiai": {
   "t": "EIAI — épine iliaque antéro-inférieure",
@@ -1586,6 +2221,11 @@ window.GLOSSAIRE = {
   "t": "EIAS — épine iliaque antéro-supérieure",
   "d": "Relief osseux à l'avant de la crête iliaque. Repère de palpation utilisé pour l'angle Q et l'alignement du bassin.",
   "dom": "Musculo-squelettique"
+ },
+ "eias_sigle": {
+  "t": "EIAS — épine iliaque antéro-supérieure",
+  "d": "Saillie antérieure de la crête iliaque, repère palpatoire majeur du bassin.",
+  "dom": "Anatomie"
  },
  "eic": {
   "t": "EIC — espace intercostal",
@@ -1607,6 +2247,16 @@ window.GLOSSAIRE = {
   "d": "Les conditions d'inclusion et d'exclusion qui décident qui peut entrer dans une étude. Ils bornent la portée des résultats.",
   "dom": "Recherche"
  },
+ "eltgol": {
+  "t": "ELTGOL — expiration lente totale glotte ouverte en latérocubitus",
+  "d": "Technique de désencombrement des voies aériennes moyennes : le patient est couché sur le côté encombré et expire lentement, glotte ouverte.",
+  "dom": "Cardio-respiratoire"
+ },
+ "em_espace_mort": {
+  "t": "VEM — volume de l'espace mort",
+  "d": "Partie du volume courant qui reste dans les voies aériennes sans participer aux échanges. La ventilation alvéolaire vaut FR × (VT − VEM).",
+  "dom": "Cardio-respiratoire"
+ },
  "embolie": {
   "t": "Embolie",
   "d": "Migration d'un caillot, d'une bulle ou d'une gouttelette de graisse qui vient obstruer un vaisseau à distance.",
@@ -1615,6 +2265,16 @@ window.GLOSSAIRE = {
  "embolique": {
   "t": "Embolique",
   "d": "Dû à la migration d'un corps étranger dans la circulation — caillot, graisse, air — qui va boucher un vaisseau plus loin.",
+  "dom": "Cardio-respiratoire"
+ },
+ "emg": {
+  "t": "EMG — électromyographie",
+  "d": "Enregistrement de l'activité électrique du muscle, pour confirmer une atteinte nerveuse ou musculaire.",
+  "dom": "Neurologie"
+ },
+ "emi": {
+  "t": "EMI — entraînement des muscles inspiratoires",
+  "d": "Renforcement du diaphragme et des inspirateurs accessoires contre une résistance réglable.",
   "dom": "Cardio-respiratoire"
  },
  "empirique": {
@@ -1657,15 +2317,35 @@ window.GLOSSAIRE = {
   "d": "La couche de cellules qui tapisse l'intérieur des vaisseaux. Sa souffrance ouvre la voie à l'athérosclérose.",
   "dom": "Physiologie"
  },
+ "enso": {
+  "t": "ENSO — oscillation australe El Niño",
+  "d": "Variation périodique de la température du Pacifique équatorial, qui dérègle le climat mondial sur quelques années.",
+  "dom": "SVT"
+ },
  "enthese": {
   "t": "Enthèse",
   "d": "Zone d'ancrage d'un tendon ou d'un ligament dans l'os. Son inflammation s'appelle une enthésopathie.",
   "dom": "Musculo-squelettique"
  },
+ "ep_sigle": {
+  "t": "EP — embolie pulmonaire",
+  "d": "Obstruction d'une artère pulmonaire par un caillot, le plus souvent venu d'une thrombose veineuse profonde.",
+  "dom": "Cardio-respiratoire"
+ },
  "epanchement": {
   "t": "Épanchement",
   "d": "Liquide accumulé dans une cavité qui n'en contient normalement que très peu : articulation, plèvre, péricarde.",
   "dom": "Physiopathologie"
+ },
+ "epap": {
+  "t": "EPAP — pression expiratoire positive",
+  "d": "Pression maintenue dans les voies aériennes en fin d'expiration, pour garder les alvéoles ouvertes.",
+  "dom": "Cardio-respiratoire"
+ },
+ "epb": {
+  "t": "EPB — court extenseur du pouce",
+  "d": "Étend la métacarpo-phalangienne du pouce ; borde en avant la tabatière anatomique.",
+  "dom": "Anatomie"
  },
  "epi": {
   "t": "EPI — équipement de protection individuelle",
@@ -1727,20 +2407,45 @@ window.GLOSSAIRE = {
   "d": "Tendinopathie des fléchisseurs à leur insertion sur l'épicondyle médial. Le « golfer's elbow ».",
   "dom": "Musculo-squelettique"
  },
+ "epl": {
+  "t": "EPL — long extenseur du pouce",
+  "d": "Étend l'interphalangienne du pouce ; borde en arrière la tabatière anatomique.",
+  "dom": "Anatomie"
+ },
+ "epo": {
+  "t": "EPO — érythropoïétine",
+  "d": "Hormone rénale qui stimule la fabrication des globules rouges. Augmente le transport d'oxygène, d'où son détournement comme dopant.",
+  "dom": "Physiologie"
+ },
  "epoc": {
   "t": "EPOC — surconsommation d'oxygène post-exercice",
   "d": "Oxygène consommé au-delà du repos après l'effort, pour reconstituer les stocks et évacuer la chaleur et les métabolites.",
   "dom": "Physiologie"
+ },
+ "eq5d": {
+  "t": "EQ-5D — questionnaire EuroQol",
+  "d": "Questionnaire générique de qualité de vie en cinq dimensions, utilisé en économie de la santé.",
+  "dom": "Recherche"
  },
  "ergonomie": {
   "t": "Ergonomie",
   "d": "L'adaptation du travail à l'homme plutôt que l'inverse : poste, geste, rythme, matériel.",
   "dom": "Sociologie"
  },
+ "ero_sigle": {
+  "t": "ERO — espèces réactives de l'oxygène",
+  "d": "Radicaux libres produits par la NADPH oxydase du phagocyte pour détruire les micro-organismes ingérés.",
+  "dom": "Physiopathologie"
+ },
  "erosion": {
   "t": "Érosion",
   "d": "Perte de substance superficielle, plus limitée que l'ulcération. Les érosions articulaires sont un signe précoce de polyarthrite.",
   "dom": "Physiopathologie"
+ },
+ "erv": {
+  "t": "ERV — rétrovirus endogènes",
+  "d": "Séquences virales intégrées au génome et transmises à la descendance ; elles représentent une part notable de l'ADN humain.",
+  "dom": "SVT"
  },
  "erytheme": {
   "t": "Érythème",
@@ -1761,6 +2466,21 @@ window.GLOSSAIRE = {
   "t": "Escarre",
   "d": "Lésion due à la pression prolongée sur une zone d'appui, de la rougeur jusqu'à la nécrose profonde.",
   "dom": "Physiopathologie"
+ },
+ "esicm": {
+  "t": "ESICM — société européenne de médecine intensive",
+  "d": "Société savante dont les recommandations encadrent la kinésithérapie en réanimation.",
+  "dom": "Cardio-respiratoire"
+ },
+ "ess": {
+  "t": "ESS — échelle de somnolence d'Epworth",
+  "d": "Huit situations de la vie courante cotées de 0 à 3 : mesure la somnolence diurne.",
+  "dom": "Neurologie"
+ },
+ "esv": {
+  "t": "ESV — extrasystole ventriculaire",
+  "d": "Battement prématuré né dans le ventricule, large et sans onde P.",
+  "dom": "Cardio-respiratoire"
  },
  "ethique": {
   "t": "Éthique",
@@ -1827,15 +2547,35 @@ window.GLOSSAIRE = {
   "d": "Liquide riche en protéines et en cellules, signe d'une inflammation ou d'une infection.",
   "dom": "Physiopathologie"
  },
+ "fa_sigle": {
+  "t": "FA — fibrillation auriculaire",
+  "d": "Activité électrique anarchique des oreillettes, pouls irrégulier et risque d'embolie par caillot intracardiaque.",
+  "dom": "Cardio-respiratoire"
+ },
  "faber": {
   "t": "FABER (Patrick)",
   "d": "Flexion, ABduction, Rotation Externe de hanche, en chiffre 4. Douleur inguinale : hanche ; douleur fessière : sacro-iliaque.",
   "dom": "Musculo-squelettique"
  },
+ "fac": {
+  "t": "FAC — Functional Ambulation Categories",
+  "d": "Six niveaux d'autonomie à la marche, de l'impossible à l'indépendant en tout terrain.",
+  "dom": "Neurologie"
+ },
  "fadir": {
   "t": "FADIR",
   "d": "Flexion, ADduction, Rotation Interne de hanche. Douleur antérieure : conflit fémoro-acétabulaire ou lésion du labrum.",
   "dom": "Musculo-squelettique"
+ },
+ "fai": {
+  "t": "FAI — conflit fémoro-acétabulaire",
+  "d": "Butée anormale entre le col fémoral et le cotyle en flexion-rotation, source de douleur de hanche chez le sportif jeune.",
+  "dom": "Musculo-squelettique"
+ },
+ "faith_check": {
+  "t": "FAITH — grille de lecture critique",
+  "d": "Check-list d'évaluation de la qualité d'une revue, utilisée à côté de CASP et d'AMSTAR.",
+  "dom": "Recherche"
  },
  "faos": {
   "t": "FAOS — Foot and Ankle Outcome Score",
@@ -1856,6 +2596,41 @@ window.GLOSSAIRE = {
   "t": "Fasciite plantaire",
   "d": "Souffrance de l'aponévrose plantaire à son insertion sur le calcanéum : douleur des premiers pas du matin.",
   "dom": "Musculo-squelettique"
+ },
+ "fc": {
+  "t": "FC — fréquence cardiaque",
+  "d": "Nombre de battements du cœur par minute. Elle monte sous adrénaline et sert de repère de sécurité pendant l'effort.",
+  "dom": "Cardio-respiratoire"
+ },
+ "fcr": {
+  "t": "FCR — fléchisseur radial du carpe",
+  "d": "Fléchit et incline le poignet du côté du pouce.",
+  "dom": "Anatomie"
+ },
+ "fcu": {
+  "t": "FCU — fléchisseur ulnaire du carpe",
+  "d": "Fléchit et incline le poignet du côté de l'auriculaire.",
+  "dom": "Anatomie"
+ },
+ "fd_fp": {
+  "t": "FD, FP — flexion dorsale et flexion plantaire",
+  "d": "Les deux mouvements de la cheville dans le plan sagittal.",
+  "dom": "EAIF"
+ },
+ "fdp_degradation": {
+  "t": "PDF — produits de dégradation de la fibrine",
+  "d": "Fragments libérés par la lyse du caillot, dont les D-dimères, marqueurs de thrombose.",
+  "dom": "Physiopathologie"
+ },
+ "fdp_sigle": {
+  "t": "FDP — fléchisseur profond des doigts",
+  "d": "Seul fléchisseur des interphalangiennes distales.",
+  "dom": "Anatomie"
+ },
+ "fds": {
+  "t": "FDS — fléchisseur superficiel des doigts",
+  "d": "Fléchit les interphalangiennes proximales des doigts longs.",
+  "dom": "Anatomie"
  },
  "fecalome": {
   "t": "Fécalome",
@@ -1886,6 +2661,26 @@ window.GLOSSAIRE = {
   "t": "FET — technique d'expiration forcée",
   "d": "Le huffing : expiration active glotte ouverte, moins collapsante que la toux pour remonter les sécrétions.",
   "dom": "Cardio-respiratoire"
+ },
+ "fet_sigle": {
+  "t": "FET — technique d'expiration forcée",
+  "d": "Expiration active bouche ouverte, le « huff », qui remonte les sécrétions sans fermer les bronches comme le ferait la toux.",
+  "dom": "Cardio-respiratoire"
+ },
+ "fgf": {
+  "t": "FGF — facteur de croissance des fibroblastes",
+  "d": "Stimule la prolifération des fibroblastes et la formation de nouveaux vaisseaux.",
+  "dom": "Physiologie"
+ },
+ "fhl": {
+  "t": "FHL — long fléchisseur de l'hallux",
+  "d": "Fléchit le gros orteil et participe à la propulsion.",
+  "dom": "Anatomie"
+ },
+ "fi_sigle": {
+  "t": "FI — fluide interstitiel",
+  "d": "Le liquide entre les cellules : avec le plasma, il compose le compartiment extracellulaire.",
+  "dom": "Physiologie"
  },
  "fibrillation": {
   "t": "Fibrillation",
@@ -1942,6 +2737,11 @@ window.GLOSSAIRE = {
   "d": "Le plasma filtré par le glomérule, avant toute réabsorption. Environ 180 litres par jour, dont 99 % reviennent.",
   "dom": "Physiologie"
  },
+ "fim": {
+  "t": "FIM — Functional Independence Measure",
+  "d": "La mesure d'indépendance fonctionnelle, dite MIF en français : elle cote l'aide nécessaire, pas la performance.",
+  "dom": "Neurologie"
+ },
  "finer": {
   "t": "FINER",
   "d": "Critères d'une bonne question de recherche : Faisable, Intéressante, Nouvelle, Éthique, Pertinente.",
@@ -1967,9 +2767,29 @@ window.GLOSSAIRE = {
   "d": "Perte complète du tonus : le membre est mou et sans réflexe. Signe une atteinte du motoneurone inférieur, ou la phase initiale d'une lésion médullaire.",
   "dom": "Neurologie"
  },
+ "flair": {
+  "t": "FLAIR — séquence IRM à inversion-récupération",
+  "d": "Éteint le signal du liquide cérébro-spinal pour faire ressortir les lésions de la substance blanche.",
+  "dom": "Physiopathologie"
+ },
+ "fm_force": {
+  "t": "FM — force musculaire",
+  "d": "Le travail de force proprement dit, associé au renforcement sous-maximal dans la progression de rééducation.",
+  "dom": "EAIF"
+ },
  "fnm": {
   "t": "FNM — fuseau neuromusculaire",
   "d": "Récepteur logé dans le muscle, sensible à l'étirement et à sa vitesse. Point de départ du réflexe myotatique.",
+  "dom": "Neurologie"
+ },
+ "fnst": {
+  "t": "FNST — test de tension du nerf fémoral",
+  "d": "Mise en tension des racines L2 à L4 en extension de hanche, genou fléchi, chez le patient en procubitus.",
+  "dom": "Musculo-squelettique"
+ },
+ "fog": {
+  "t": "FOG-Q — questionnaire du freezing de la marche",
+  "d": "Six items cotés de 0 à 24 sur les blocages moteurs de la maladie de Parkinson.",
   "dom": "Neurologie"
  },
  "folliculaire": {
@@ -1997,6 +2817,16 @@ window.GLOSSAIRE = {
   "d": "Reste ou trace d'un organisme conservé dans la roche. Les fossiles stratigraphiques servent à dater les couches.",
   "dom": "SVT"
  },
+ "fpi": {
+  "t": "FPI — fibrose pulmonaire idiopathique",
+  "d": "Fibrose progressive sans cause retrouvée, de pronostic sombre : environ 30 % de survie à cinq ans.",
+  "dom": "Cardio-respiratoire"
+ },
+ "fpl": {
+  "t": "FPL — long fléchisseur du pouce",
+  "d": "Fléchit l'interphalangienne du pouce.",
+  "dom": "Anatomie"
+ },
  "fr": {
   "t": "FR — fauteuil roulant",
   "d": "Aide technique de déplacement. Avant tout transfert : freins bloqués, accoudoir retiré et pédale relevée du côté concerné.",
@@ -2006,6 +2836,16 @@ window.GLOSSAIRE = {
   "t": "FR — fréquence respiratoire",
   "d": "Nombre de cycles respiratoires par minute. Repères adulte : 12 à 20 cycles, jusqu'à 30 en soins intensifs.",
   "dom": "Cardio-respiratoire"
+ },
+ "frax": {
+  "t": "FRAX — outil d'évaluation du risque fracturaire",
+  "d": "Calcule la probabilité de fracture à dix ans à partir de l'âge, des antécédents et de la densité osseuse.",
+  "dom": "Physiopathologie"
+ },
+ "frc_fsd_fuc": {
+  "t": "FRC, FSD, FUC — abréviations de palpation de l'avant-bras",
+  "d": "Fléchisseur radial du carpe, fléchisseur superficiel des doigts, fléchisseur ulnaire du carpe : l'ordre de palpation du plan superficiel, de dehors en dedans.",
+  "dom": "Anatomie"
  },
  "freezing": {
   "t": "Freezing",
@@ -2021,6 +2861,16 @@ window.GLOSSAIRE = {
   "t": "FSH — hormone folliculo-stimulante",
   "d": "Hormone hypophysaire qui stimule la maturation du follicule ovarien et la spermatogenèse.",
   "dom": "Physiologie"
+ },
+ "fsh_lh": {
+  "t": "FSH, LH — gonadotrophines hypophysaires",
+  "d": "La FSH fait mûrir le follicule, le pic de LH déclenche l'ovulation.",
+  "dom": "Physiologie"
+ },
+ "fss": {
+  "t": "FSS — échelle de sévérité de la fatigue",
+  "d": "Neuf items sur le retentissement de la fatigue dans la vie quotidienne.",
+  "dom": "Neurologie"
  },
  "ftcnm": {
   "t": "FTCNM — fonctionnement et traitement des conditions neuro-musculo-squelettiques",
@@ -2041,6 +2891,11 @@ window.GLOSSAIRE = {
   "t": "Test de Gaenslen",
   "d": "Une hanche en hyperextension au bord de la table, l'autre fléchie sur le ventre : on cisaille la sacro-iliaque pour reproduire la douleur.",
   "dom": "Musculo-squelettique"
+ },
+ "gag": {
+  "t": "GAG — glycosaminoglycanes",
+  "d": "Longues chaînes sucrées de la substance fondamentale qui retiennent l'eau. Leur perte à l'immobilisation favorise les ponts entre fibres de collagène.",
+  "dom": "Physiologie"
  },
  "gastrectomie": {
   "t": "Gastrectomie",
@@ -2067,6 +2922,16 @@ window.GLOSSAIRE = {
   "d": "Prélèvement artériel qui mesure pH, PaO₂, PaCO₂ et bicarbonates : il dit d'un coup si le patient oxygène, ventile et compense.",
   "dom": "Cardio-respiratoire"
  },
+ "gb_gr": {
+  "t": "GB, GR — globules blancs et globules rouges",
+  "d": "Leucocytes de la défense et hématies du transport de l'oxygène, tous deux recyclés par le foie et la rate.",
+  "dom": "Physiologie"
+ },
+ "gbs": {
+  "t": "GBS — syndrome de Guillain-Barré",
+  "d": "Polyradiculonévrite aiguë auto-immune : paralysie ascendante après un épisode infectieux.",
+  "dom": "Neurologie"
+ },
  "generalisation": {
   "t": "Généralisation",
   "d": "Étendre les conclusions d'un échantillon à toute une population. Elle n'est légitime que si l'échantillon la représente.",
@@ -2082,15 +2947,40 @@ window.GLOSSAIRE = {
   "d": "Gaz qui absorbent l'infrarouge émis par la Terre et le réémettent vers le sol : CO₂, CH₄, H₂O, N₂O.",
   "dom": "SVT"
  },
+ "ggt": {
+  "t": "GGT — gamma-glutamyl-transférase",
+  "d": "Enzyme hépatique sensible à la cholestase et à l'alcool.",
+  "dom": "Physiopathologie"
+ },
  "gh": {
   "t": "GH — gléno-humérale",
   "d": "L'articulation de l'épaule proprement dite, entre la tête humérale et la glène de la scapula.",
   "dom": "Biomécanique"
  },
+ "gh_sigle": {
+  "t": "GH — gléno-humérale",
+  "d": "L'articulation de l'épaule proprement dite, entre tête humérale et glène scapulaire.",
+  "dom": "Anatomie"
+ },
+ "gi_sigle": {
+  "t": "GI — gastro-intestinal",
+  "d": "Qualifie le tube digestif, de la bouche à l'anus.",
+  "dom": "Physiopathologie"
+ },
  "giec": {
   "t": "GIEC",
   "d": "Groupe d'experts intergouvernemental sur l'évolution du climat, créé en 1988, qui synthétise l'état des connaissances.",
   "dom": "SVT"
+ },
+ "gin": {
+  "t": "G-I-N — Guidelines International Network",
+  "d": "Réseau international qui recense et harmonise les recommandations de pratique.",
+  "dom": "Recherche"
+ },
+ "gip": {
+  "t": "GIP — peptide insulinotrope dépendant du glucose",
+  "d": "Hormone intestinale qui freine la sécrétion gastrique et stimule l'insuline.",
+  "dom": "Physiologie"
  },
  "glasgow": {
   "t": "Échelle de Glasgow (GCS)",
@@ -2152,9 +3042,24 @@ window.GLOSSAIRE = {
   "d": "Présence de glucose dans les urines : le seuil rénal de réabsorption, autour de 1,8 g/L de glycémie, est dépassé.",
   "dom": "Physiopathologie"
  },
+ "gmfm": {
+  "t": "GMFM — Gross Motor Function Measure",
+  "d": "Échelle de la motricité globale de l'enfant, cotée de 0 à 3 sur cinq dimensions. Référence dans la paralysie cérébrale.",
+  "dom": "Neurologie"
+ },
  "gn": {
   "t": "GN — glomérulonéphrite",
   "d": "Inflammation des glomérules rénaux, responsable de protéinurie, d'hématurie et parfois d'insuffisance rénale.",
+  "dom": "Physiopathologie"
+ },
+ "gnrh_sigle": {
+  "t": "GnRH — gonadolibérine",
+  "d": "Hormone hypothalamique qui commande la libération de FSH et de LH, par pulses.",
+  "dom": "Physiologie"
+ },
+ "gnrp": {
+  "t": "GNRP — glomérulonéphrite rapidement progressive",
+  "d": "Destruction rapide des glomérules, qui mène à l'insuffisance rénale terminale en quelques semaines.",
   "dom": "Physiopathologie"
  },
  "gonade": {
@@ -2177,9 +3082,19 @@ window.GLOSSAIRE = {
   "d": "Pour se relever du sol, l'enfant « grimpe le long de ses cuisses » avec les mains. Traduit une faiblesse des ceintures, évocatrice d'une myopathie.",
   "dom": "Neurologie"
  },
+ "gqol": {
+  "t": "GQOL — qualité de vie globale",
+  "d": "Score synthétique de qualité de vie : plus il est élevé, meilleure est la qualité de vie rapportée.",
+  "dom": "Démarche clinique"
+ },
  "grade": {
   "t": "GRADE",
   "d": "Méthode de gradation du niveau de preuve et de la force d'une recommandation.",
+  "dom": "Recherche"
+ },
+ "grade_sigle": {
+  "t": "GRADE — gradation des recommandations",
+  "d": "Système international qui cote la certitude des preuves et la force d'une recommandation.",
   "dom": "Recherche"
  },
  "granulation": {
@@ -2197,6 +3112,11 @@ window.GLOSSAIRE = {
   "d": "Infection respiratoire à virus Influenza : fièvre brutale, courbatures, toux. Dangereuse par ses complications.",
   "dom": "Physiopathologie"
  },
+ "hads": {
+  "t": "HADS — échelle d'anxiété et de dépression",
+  "d": "Quatorze items de dépistage de l'anxiété et de la dépression en milieu hospitalier.",
+  "dom": "Psychologie"
+ },
  "harm": {
   "t": "HARM",
   "d": "Ce qu'il faut éviter en phase inflammatoire : Heat, Alcohol, Running, Massage.",
@@ -2206,6 +3126,21 @@ window.GLOSSAIRE = {
   "t": "Test de Hawkins",
   "d": "Bras à 90° de flexion, coude fléchi, on imprime une rotation interne. Douleur = conflit sous-acromial, comme Neer mais plus sensible.",
   "dom": "Musculo-squelettique"
+ },
+ "hbp": {
+  "t": "HBP — hypertrophie bénigne de la prostate",
+  "d": "Augmentation de volume de la prostate avec l'âge, qui gêne la vidange de la vessie.",
+  "dom": "Physiopathologie"
+ },
+ "hcg": {
+  "t": "HCG — gonadotrophine chorionique humaine",
+  "d": "Hormone du placenta qui maintient le corps jaune en début de grossesse. Base des tests de grossesse.",
+  "dom": "Physiologie"
+ },
+ "hdl": {
+  "t": "HDL — lipoprotéine de haute densité",
+  "d": "Ramène le cholestérol des tissus vers le foie : le « bon » cholestérol.",
+  "dom": "Physiopathologie"
  },
  "hemato-encephalique": {
   "t": "Barrière hémato-encéphalique",
@@ -2292,6 +3227,16 @@ window.GLOSSAIRE = {
   "d": "Augmentation du volume du foie.",
   "dom": "Physiopathologie"
  },
+ "hgpo": {
+  "t": "HGPO — hyperglycémie provoquée par voie orale",
+  "d": "Mesure de la glycémie après ingestion de 75 g de glucose : dépiste le diabète et l'intolérance au glucose.",
+  "dom": "Physiopathologie"
+ },
+ "hhc_sigle": {
+  "t": "HHC — axe hypothalamo-hypophyso-corticosurrénalien",
+  "d": "Chaîne hormonale du stress : l'hypothalamus libère la CRH, l'hypophyse l'ACTH, la corticosurrénale le cortisol. Noté aussi HPA en anglais.",
+  "dom": "Physiologie"
+ },
  "hhs": {
   "t": "Axe HHS — hypothalamo-hypophyso-surrénalien",
   "d": "Axe hormonal du stress prolongé : CRH, puis ACTH, puis cortisol.",
@@ -2311,6 +3256,21 @@ window.GLOSSAIRE = {
   "t": "Histamine",
   "d": "Médiateur libéré par les mastocytes : il dilate les vaisseaux, les rend perméables et déclenche le prurit.",
   "dom": "Physiologie"
+ },
+ "hla": {
+  "t": "HLA — système d'histocompatibilité humain",
+  "d": "Groupe de gènes qui présentent les antigènes au système immunitaire. HLA-B27 est fortement associé à la spondylarthrite.",
+  "dom": "Physiopathologie"
+ },
+ "hmg": {
+  "t": "HMG-CoA réductase",
+  "d": "Enzyme clé de la synthèse du cholestérol, cible des statines.",
+  "dom": "Pharmacologie"
+ },
+ "hmgb1": {
+  "t": "HMGB1 — protéine de la boîte 1 du groupe de haute mobilité",
+  "d": "Alarmine libérée par les cellules nécrosées, qui entretient l'inflammation.",
+  "dom": "Physiopathologie"
  },
  "homeostasie": {
   "t": "Homéostasie",
@@ -2337,9 +3297,34 @@ window.GLOSSAIRE = {
   "d": "Échelle d'atténuation du scanner : l'eau vaut 0, l'air −1000, l'os compact +1000.",
   "dom": "Pharmacologie"
  },
+ "hp_bt_ht_bp": {
+  "t": "HP, BP, HT, BT — conditions du métamorphisme",
+  "d": "Haute et basse pression, haute et basse température. Schistes bleus et éclogites signent la subduction, gneiss et migmatites la collision.",
+  "dom": "SVT"
+ },
+ "hpv": {
+  "t": "HPV — papillomavirus humain",
+  "d": "Virus sexuellement transmissible, principal facteur de risque du cancer du col de l'utérus.",
+  "dom": "Physiopathologie"
+ },
+ "hsv": {
+  "t": "HSV — virus herpès simplex",
+  "d": "HSV-1 est la cause la plus fréquente d'encéphalite herpétique, urgence thérapeutique.",
+  "dom": "Physiopathologie"
+ },
  "hta": {
   "t": "HTA — hypertension artérielle",
   "d": "Élévation chronique de la pression artérielle au-delà des seuils de référence.",
+  "dom": "Physiopathologie"
+ },
+ "htic": {
+  "t": "HTIC — hypertension intracrânienne",
+  "d": "Augmentation de la pression dans la boîte crânienne : céphalées, vomissements, troubles de la vigilance.",
+  "dom": "Neurologie"
+ },
+ "htp": {
+  "t": "HTP — hypertension portale",
+  "d": "Augmentation de pression dans la veine porte, qui ouvre des voies de dérivation et donne des varices œsophagiennes.",
   "dom": "Physiopathologie"
  },
  "huffing": {
@@ -2587,6 +3572,16 @@ window.GLOSSAIRE = {
   "d": "Baisse de l'oxygène dans le sang artériel. L'hypoxie, elle, est le manque d'oxygène dans les tissus.",
   "dom": "Cardio-respiratoire"
  },
+ "ia_ib_updrs": {
+  "t": "IA, IB — sous-parties de la partie I du MDS-UPDRS",
+  "d": "La partie IA est remplie par l'examinateur, la partie IB par le patient lui-même.",
+  "dom": "Neurologie"
+ },
+ "ia_intra": {
+  "t": "IA — intra-articulaire",
+  "d": "Injection directement dans la cavité articulaire, par exemple de corticoïdes ou d'acide hyaluronique.",
+  "dom": "Pharmacologie"
+ },
  "iapt": {
   "t": "IAPT — tests fonctionnels de référence",
   "d": "Batterie d'activités concrètes servant de repère quand aucun questionnaire validé n'est disponible : s'accroupir, monter les escaliers, courir, sauter.",
@@ -2595,6 +3590,26 @@ window.GLOSSAIRE = {
  "iatrogene": {
   "t": "Iatrogène",
   "d": "Causé par le soin lui-même : effet d'un médicament, complication d'un geste, conséquence d'une hospitalisation.",
+  "dom": "Pharmacologie"
+ },
+ "icf_cif": {
+  "t": "ICF — classification internationale du fonctionnement",
+  "d": "La CIF en français : décrit la santé par les fonctions, les activités, la participation et les facteurs contextuels, plutôt que par la seule maladie.",
+  "dom": "Démarche clinique"
+ },
+ "ichi": {
+  "t": "ICHI — classification internationale des interventions en santé",
+  "d": "Nomenclature de l'OMS qui code les actes de soin, en pendant de la CIF.",
+  "dom": "Démarche clinique"
+ },
+ "ichom": {
+  "t": "ICHOM — consortium international de mesure des résultats de santé",
+  "d": "Organisme qui propose des jeux standardisés d'indicateurs centrés sur le patient.",
+  "dom": "Recherche"
+ },
+ "ics": {
+  "t": "ICS — corticoïde inhalé",
+  "d": "Anti-inflammatoire local des bronches, pierre angulaire du traitement de fond de l'asthme.",
   "dom": "Pharmacologie"
  },
  "ictere": {
@@ -2607,15 +3622,50 @@ window.GLOSSAIRE = {
   "d": "Sans cause retrouvée. Se dit d'une maladie dont l'origine reste inconnue malgré le bilan.",
   "dom": "Physiopathologie"
  },
+ "idm": {
+  "t": "IDM — infarctus du myocarde",
+  "d": "Nécrose d'une partie du muscle cardiaque par occlusion d'une artère coronaire.",
+  "dom": "Cardio-respiratoire"
+ },
+ "iec": {
+  "t": "IEC — inhibiteur de l'enzyme de conversion",
+  "d": "Antihypertenseur qui bloque la formation d'angiotensine II : les vaisseaux se relâchent et le sel est moins retenu.",
+  "dom": "Pharmacologie"
+ },
+ "ifd_dip": {
+  "t": "IFD — interphalangienne distale",
+  "d": "Articulation entre la deuxième et la troisième phalange. Notée DIP en anglais. Épargnée dans la polyarthrite, atteinte dans l'arthrose.",
+  "dom": "Anatomie"
+ },
+ "ifn": {
+  "t": "IFN — interféron",
+  "d": "Cytokine antivirale et activatrice des macrophages. L'interféron gamma est central dans la défense antituberculeuse.",
+  "dom": "Physiopathologie"
+ },
  "ifp": {
   "t": "IFP — interphalangienne proximale",
   "d": "Articulation entre la première et la deuxième phalange d'un doigt.",
+  "dom": "Anatomie"
+ },
+ "ifp_pip": {
+  "t": "IFP — interphalangienne proximale",
+  "d": "Articulation entre la première et la deuxième phalange d'un doigt. Notée PIP en anglais. Touchée tôt dans la polyarthrite rhumatoïde.",
+  "dom": "Anatomie"
+ },
+ "ij_sigle": {
+  "t": "IJ — ischio-jambiers",
+  "d": "Le groupe postérieur de la cuisse, très exposé à l'accélération en course.",
   "dom": "Anatomie"
  },
  "illich": {
   "t": "Illich",
   "d": "Penseur de la « némésis médicale » : à force de s'étendre, la médecine produirait elle-même de la maladie et déposséderait les gens de leur santé.",
   "dom": "Sociologie"
+ },
+ "imc_sigle": {
+  "t": "IMC — indice de masse corporelle",
+  "d": "Poids divisé par la taille au carré. Au-delà de 25 on parle de surpoids, au-delà de 30 d'obésité.",
+  "dom": "Physiopathologie"
  },
  "imitation": {
   "t": "Imitation différée",
@@ -2642,6 +3692,11 @@ window.GLOSSAIRE = {
   "d": "Traitement qui mobilise le système immunitaire contre une maladie, notamment contre un cancer.",
   "dom": "Pharmacologie"
  },
+ "imv_simv": {
+  "t": "SIMV — ventilation assistée contrôlée intermittente synchronisée",
+  "d": "Le ventilateur délivre un nombre fixe de cycles, synchronisés sur les efforts du patient, qui peut respirer librement entre-temps.",
+  "dom": "Cardio-respiratoire"
+ },
  "incidence": {
   "t": "Incidence",
   "d": "Nombre de nouveaux cas survenus dans une population pendant une période donnée.",
@@ -2656,6 +3711,26 @@ window.GLOSSAIRE = {
   "t": "Infériorité",
   "d": "Chez Erikson, le pôle négatif du stade « travail contre infériorité » : l'enfant d'âge scolaire qui se juge incapable.",
   "dom": "Psychologie"
+ },
+ "inr": {
+  "t": "INR — international normalized ratio",
+  "d": "Mesure standardisée de la coagulation, utilisée pour surveiller les antivitamines K comme la warfarine.",
+  "dom": "Pharmacologie"
+ },
+ "inrae": {
+  "t": "INRAE — institut national de recherche pour l'agriculture",
+  "d": "Organisme public français de recherche sur l'agriculture, l'alimentation et l'environnement.",
+  "dom": "SVT"
+ },
+ "inspect_grille": {
+  "t": "INSPECT-SR — grille d'intégrité des études",
+  "d": "Outil qui repère, dans une revue systématique, les études dont les données ne sont pas fiables.",
+  "dom": "Recherche"
+ },
+ "inspect_sr": {
+  "t": "INSPECT-SR — grille d'intégrité des revues systématiques",
+  "d": "Outil de dépistage des études problématiques dans une revue systématique.",
+  "dom": "Recherche"
  },
  "insuline": {
   "t": "Insuline",
@@ -2687,6 +3762,41 @@ window.GLOSSAIRE = {
   "d": "Pores de la membrane qui laissent passer un ion précis. Leur ouverture et leur fermeture font le potentiel d'action.",
   "dom": "Physiologie"
  },
+ "ip_pouce": {
+  "t": "IP — interphalangienne du pouce",
+  "d": "L'unique articulation interphalangienne du pouce, étendue par le long extenseur.",
+  "dom": "Anatomie"
+ },
+ "ipap": {
+  "t": "IPAP — pression inspiratoire positive",
+  "d": "Pression délivrée pendant l'inspiration en ventilation à deux niveaux de pression.",
+  "dom": "Cardio-respiratoire"
+ },
+ "ipbes": {
+  "t": "IPBES — plateforme intergouvernementale sur la biodiversité",
+  "d": "L'équivalent du GIEC pour le vivant : elle évalue l'état de la biodiversité et des services écosystémiques.",
+  "dom": "SVT"
+ },
+ "ipcc_giec": {
+  "t": "IPCC — groupe d'experts intergouvernemental sur l'évolution du climat",
+  "d": "Le GIEC en français : il synthétise l'état des connaissances sur le changement climatique.",
+  "dom": "SVT"
+ },
+ "ipd_pouce": {
+  "t": "IPD — interphalangienne du pouce",
+  "d": "Articulation distale du pouce, testée notamment dans le signe de Froment.",
+  "dom": "Anatomie"
+ },
+ "ipp": {
+  "t": "IPP — inhibiteur de la pompe à protons",
+  "d": "Médicament qui bloque la sécrétion acide de l'estomac. Utilisé dans le reflux et l'ulcère.",
+  "dom": "Pharmacologie"
+ },
+ "ir_sigle": {
+  "t": "IR — infrarouge",
+  "d": "Rayonnement thermique réémis par la Terre et piégé par les gaz à effet de serre.",
+  "dom": "SVT"
+ },
  "ira": {
   "t": "IRA — insuffisance rénale aiguë",
   "d": "Chute brutale de la filtration rénale, potentiellement réversible.",
@@ -2701,6 +3811,16 @@ window.GLOSSAIRE = {
   "t": "IRM — imagerie par résonance magnétique",
   "d": "Imagerie sans rayons X, fondée sur le comportement des protons dans un champ magnétique. Excellente pour les tissus mous.",
   "dom": "Physiopathologie"
+ },
+ "irr_sigle": {
+  "t": "IRR — information de retour sur le résultat",
+  "d": "Feedback donné au patient sur le résultat de son mouvement, par opposition au retour sur l'exécution.",
+  "dom": "EAIF"
+ },
+ "is_module": {
+  "t": "IS — immobilisation sélective",
+  "d": "Le module consacré aux bandages fonctionnels et au taping.",
+  "dom": "EAIF"
  },
  "ischemie": {
   "t": "Ischémie",
@@ -2722,15 +3842,50 @@ window.GLOSSAIRE = {
   "d": "On mesure le rapport entre un isotope radioactif et son produit de désintégration : la demi-vie donne l'âge.",
   "dom": "SVT"
  },
+ "isrs": {
+  "t": "ISRS — inhibiteur sélectif de la recapture de la sérotonine",
+  "d": "Famille d'antidépresseurs qui prolonge l'action de la sérotonine dans la fente synaptique.",
+  "dom": "Pharmacologie"
+ },
+ "itu": {
+  "t": "ITU — infection des voies urinaires",
+  "d": "Infection urinaire, due à Escherichia coli dans environ 85 % des cas.",
+  "dom": "Physiopathologie"
+ },
+ "iva": {
+  "t": "IVA — artère interventriculaire antérieure",
+  "d": "Branche de la coronaire gauche qui vascularise la paroi antérieure du ventricule gauche et le septum.",
+  "dom": "Anatomie"
+ },
+ "ivp": {
+  "t": "IVP — artère interventriculaire postérieure",
+  "d": "Branche terminale qui vascularise la face inférieure du cœur ; elle naît de la coronaire droite dans 70 à 80 % des cas.",
+  "dom": "Anatomie"
+ },
  "jackson": {
   "t": "Test de Jackson",
   "d": "Compression axiale de la tête inclinée du côté douloureux. Comme Spurling, referme le foramen et réveille la radiculalgie.",
   "dom": "Musculo-squelettique"
  },
+ "jama": {
+  "t": "JAMA — Journal of the American Medical Association",
+  "d": "Revue médicale majeure, dont la hiérarchie des niveaux de preuve est souvent citée.",
+  "dom": "Recherche"
+ },
+ "jcq": {
+  "t": "JCQ — Job Content Questionnaire",
+  "d": "Questionnaire de Karasek : mesure la demande psychologique, la latitude décisionnelle et le soutien social au travail.",
+  "dom": "Sociologie"
+ },
  "jejunum": {
   "t": "Jéjunum",
   "d": "Le segment moyen de l'intestin grêle, entre duodénum et iléon. C'est là que l'essentiel de l'absorption se fait.",
   "dom": "Anatomie"
+ },
+ "jnm": {
+  "t": "JNM — jonction neuromusculaire",
+  "d": "Synapse entre le motoneurone et la fibre musculaire, où l'acétylcholine déclenche la contraction.",
+  "dom": "Neurologie"
  },
  "jobe": {
   "t": "Test de Jobe",
@@ -2740,6 +3895,11 @@ window.GLOSSAIRE = {
  "kabat": {
   "t": "Méthode Kabat",
   "d": "Autre nom de la facilitation neuromusculaire proprioceptive : on travaille en diagonales et en spirales, en s'appuyant sur les groupes forts pour recruter les faibles.",
+  "dom": "Neurologie"
+ },
+ "kafo": {
+  "t": "KAFO — orthèse cruro-pédieuse",
+  "d": "Appareillage englobant genou, cheville et pied. La version HKAFO remonte jusqu'à la hanche.",
   "dom": "Neurologie"
  },
  "kendall": {
@@ -2772,6 +3932,16 @@ window.GLOSSAIRE = {
   "d": "42 items, 5 sous-échelles (douleur, symptômes, AVQ, sport, qualité de vie). Score élevé = meilleur état. Contient le WOMAC.",
   "dom": "Musculo-squelettique"
  },
+ "kt_sigle": {
+  "t": "KT — Kinesio-Tape",
+  "d": "Bande élastique adhésive posée sur la peau pour soutenir, décharger ou stimuler, sans limiter l'amplitude.",
+  "dom": "EAIF"
+ },
+ "laba": {
+  "t": "LABA — bêta-2 agoniste de longue durée d'action",
+  "d": "Bronchodilatateur inhalé dont l'effet se prolonge sur douze heures ou plus.",
+  "dom": "Pharmacologie"
+ },
  "labile": {
   "t": "Tissus labiles, stables, permanents",
   "d": "Labile : se renouvelle sans cesse (épiderme, intestin). Stable : se divise si besoin (foie). Permanent : ne se divise plus (neurone, myocarde).",
@@ -2792,6 +3962,11 @@ window.GLOSSAIRE = {
   "d": "Taux de lactate dans le sang. Son élévation à l'effort marque le passage au métabolisme anaérobie.",
   "dom": "Physiologie"
  },
+ "lama": {
+  "t": "LAMA — anticholinergique de longue durée d'action",
+  "d": "Bronchodilatateur inhalé qui bloque les récepteurs muscariniques des bronches.",
+  "dom": "Pharmacologie"
+ },
  "lambdoide": {
   "t": "Suture lambdoïde",
   "d": "La suture entre l'occipital et les pariétaux, en forme de lambda. La coronale sépare frontal et pariétaux, la sagittale les deux pariétaux.",
@@ -2800,6 +3975,16 @@ window.GLOSSAIRE = {
  "lasegue": {
   "t": "Signe de Lasègue",
   "d": "Jambe tendue, on élève le membre inférieur. La douleur irradiée avant 60° évoque une souffrance radiculaire L5-S1.",
+  "dom": "Musculo-squelettique"
+ },
+ "lb_lt": {
+  "t": "LB, LT — lymphocytes B et T",
+  "d": "Les lymphocytes B fabriquent les anticorps, les lymphocytes T tuent les cellules infectées ou coordonnent la réponse.",
+  "dom": "SVT"
+ },
+ "lbp": {
+  "t": "LBP — lombalgie",
+  "d": "Low back pain : douleur du bas du dos, aiguë, subaiguë ou chronique selon son ancienneté.",
   "dom": "Musculo-squelettique"
  },
  "lca": {
@@ -2816,6 +4001,26 @@ window.GLOSSAIRE = {
   "t": "LCR — liquide cérébro-spinal",
   "d": "Liquide sécrété par les plexus choroïdes, qui circule dans les ventricules et autour du névraxe. Il amortit, nourrit et draine.",
   "dom": "Anatomie"
+ },
+ "ldh": {
+  "t": "LDH — lactate déshydrogénase",
+  "d": "Enzyme libérée par toute cellule détruite : marqueur peu spécifique de souffrance tissulaire.",
+  "dom": "Physiopathologie"
+ },
+ "ldl": {
+  "t": "LDL — lipoprotéine de basse densité",
+  "d": "Transporte le cholestérol du foie vers les tissus. En excès, il se dépose dans la paroi artérielle : le « mauvais » cholestérol.",
+  "dom": "Physiopathologie"
+ },
+ "lec": {
+  "t": "LEC — liquide extracellulaire",
+  "d": "Le milieu intérieur hors des cellules : plasma et liquide interstitiel.",
+  "dom": "Physiologie"
+ },
+ "led": {
+  "t": "LED — lupus érythémateux disséminé",
+  "d": "Maladie auto-immune systémique touchant peau, articulations, reins et séreuses.",
+  "dom": "Physiopathologie"
  },
  "leptine": {
   "t": "Leptine",
@@ -2842,6 +4047,16 @@ window.GLOSSAIRE = {
   "d": "Précurseur de la dopamine, traitement de référence du Parkinson. À long terme : fluctuations et dyskinésies.",
   "dom": "Pharmacologie"
  },
+ "lfa": {
+  "t": "LFA-1 — intégrine leucocytaire",
+  "d": "Molécule d'adhésion ferme du globule blanc à l'endothélium, avant la diapédèse.",
+  "dom": "Physiopathologie"
+ },
+ "lfd_lfgo": {
+  "t": "LFD, LFGO — longs fléchisseurs du pied",
+  "d": "Long fléchisseur des orteils et long fléchisseur du gros orteil : flexion plantaire, inversion, propulsion.",
+  "dom": "Anatomie"
+ },
  "lh": {
   "t": "LH — hormone lutéinisante",
   "d": "Hormone hypophysaire dont le pic déclenche l'ovulation et la formation du corps jaune.",
@@ -2862,6 +4077,11 @@ window.GLOSSAIRE = {
   "d": "Formation de calculs dans un conduit : voies biliaires, voies urinaires, glandes salivaires.",
   "dom": "Physiopathologie"
  },
+ "lk": {
+  "t": "Lequesne — indice algo-fonctionnel",
+  "d": "Questionnaire de la coxarthrose et de la gonarthrose, plus sensible au changement que le WOMAC sur certaines sous-échelles.",
+  "dom": "Musculo-squelettique"
+ },
  "lle": {
   "t": "LLE — ligament latéral externe",
   "d": "Ligament collatéral latéral. À la cheville, il comporte trois faisceaux, le faisceau antérieur étant le plus souvent lésé dans l'entorse en inversion.",
@@ -2871,6 +4091,26 @@ window.GLOSSAIRE = {
   "t": "LLI — ligament latéral interne",
   "d": "Ligament collatéral médial, appelé ligament deltoïdien à la cheville. Lésé dans les mécanismes en valgus ou en éversion.",
   "dom": "Musculo-squelettique"
+ },
+ "lm_sigle": {
+  "t": "LM — lésion médullaire",
+  "d": "Atteinte de la moelle spinale, avec perte motrice et sensitive sous le niveau lésionnel.",
+  "dom": "Neurologie"
+ },
+ "lmn": {
+  "t": "LMN — neurone moteur inférieur",
+  "d": "Le motoneurone périphérique, de la corne antérieure au muscle. Son atteinte donne paralysie flasque et amyotrophie.",
+  "dom": "Neurologie"
+ },
+ "lms": {
+  "t": "LMS — orthèse de stabilisation des membres inférieurs",
+  "d": "Appareillage qui verrouille les articulations que le patient ne contrôle plus, pour rendre la marche possible.",
+  "dom": "Neurologie"
+ },
+ "loe": {
+  "t": "LOE — lésion occupant l'espace",
+  "d": "Toute masse intracrânienne — tumeur, abcès, hématome — qui comprime le parenchyme voisin.",
+  "dom": "Neurologie"
  },
  "lombalgie": {
   "t": "Lombalgie",
@@ -2887,10 +4127,45 @@ window.GLOSSAIRE = {
   "d": "Courbure du rachis à concavité postérieure, physiologique au cou et aux lombes. Excessive, on parle d'hyperlordose.",
   "dom": "Anatomie"
  },
+ "lp_sigle": {
+  "t": "LP — liquide pleural",
+  "d": "Les trois à quinze millilitres qui lubrifient la plèvre. Un rapport protéines LP/sérum supérieur à 0,5 oriente vers un exsudat.",
+  "dom": "Cardio-respiratoire"
+ },
  "lpb": {
   "t": "LPB — longue portion du biceps",
   "d": "Tendon du chef long du biceps brachial, qui coulisse dans la gouttière bicipitale. Exploré par Yergason, Speed et Uppercut.",
   "dom": "Musculo-squelettique"
+ },
+ "lpl": {
+  "t": "LPL — long péronier latéral",
+  "d": "Éverse le pied et soutient l'arche plantaire transversale.",
+  "dom": "Anatomie"
+ },
+ "lr_sigle": {
+  "t": "LR — rapport de vraisemblance",
+  "d": "LR+ et LR− : de combien un résultat de test modifie la probabilité de la maladie.",
+  "dom": "Recherche"
+ },
+ "lsst": {
+  "t": "LSST — test de glissement scapulaire latéral",
+  "d": "Mesure la distance entre le bord médial de la scapula et le rachis dans trois positions ; asymétrie significative au-delà de 1,5 cm.",
+  "dom": "Musculo-squelettique"
+ },
+ "lt_leucotrienes": {
+  "t": "LT — leucotriènes",
+  "d": "Médiateurs lipidiques bronchoconstricteurs, produits par la voie de la lipoxygénase.",
+  "dom": "Pharmacologie"
+ },
+ "ltb4": {
+  "t": "LTB4 — leucotriène B4",
+  "d": "Médiateur lipidique très chimiotactique pour les neutrophiles.",
+  "dom": "Physiopathologie"
+ },
+ "ltp": {
+  "t": "LTP — potentialisation à long terme",
+  "d": "Renforcement durable d'une synapse après stimulation répétée : la base cellulaire de l'apprentissage.",
+  "dom": "Neurologie"
  },
  "lymphe": {
   "t": "Lymphe",
@@ -2917,6 +4192,11 @@ window.GLOSSAIRE = {
   "d": "Organite chargé d'enzymes digestives, qui recycle les déchets de la cellule.",
   "dom": "Physiologie"
  },
+ "mac_complement": {
+  "t": "MAC — complexe d'attaque membranaire",
+  "d": "Pore formé par le complément qui perfore la membrane bactérienne.",
+  "dom": "Physiopathologie"
+ },
  "macule": {
   "t": "Macule",
   "d": "En vestibulaire, la zone sensible de l'utricule et du saccule. En ophtalmologie, la zone centrale de la rétine.",
@@ -2931,6 +4211,11 @@ window.GLOSSAIRE = {
   "t": "Malignité",
   "d": "Le caractère d'une tumeur qui envahit les tissus voisins et essaime à distance. Une tumeur bénigne refoule mais n'envahit pas.",
   "dom": "Physiopathologie"
+ },
+ "malt_galt": {
+  "t": "MALT, GALT — tissu lymphoïde des muqueuses",
+  "d": "Amas de lymphocytes associés aux muqueuses, en particulier digestives pour le GALT : première barrière immunitaire locale.",
+  "dom": "Anatomie"
  },
  "mas": {
   "t": "MAS — échelle d'Ashworth modifiée",
@@ -2947,15 +4232,30 @@ window.GLOSSAIRE = {
   "d": "L'os de la mâchoire supérieure, fixe. La mandibule est la mâchoire inférieure, mobile.",
   "dom": "Anatomie"
  },
+ "mbg": {
+  "t": "MBG — membrane basale glomérulaire",
+  "d": "Filtre du glomérule rénal. Les dépôts d'immunoglobulines le long de cette membrane signent la glomérulonéphrite extramembraneuse.",
+  "dom": "Physiopathologie"
+ },
  "mc": {
   "t": "MC — maladie chronique",
   "d": "Affection durable, évolutive, qui appelle une prise en charge au long cours plutôt qu'une guérison.",
   "dom": "Sociologie"
  },
+ "mci": {
+  "t": "MCI — trouble cognitif léger",
+  "d": "Déclin cognitif objectivable mais sans retentissement majeur sur l'autonomie. Score MoCA entre 18 et 25.",
+  "dom": "Neurologie"
+ },
  "mcid": {
   "t": "MCID — différence minimale cliniquement importante",
   "d": "Le plus petit écart de score que le patient perçoit réellement comme une amélioration. En dessous, une variation n'est pas interprétable comme un progrès.",
   "dom": "Musculo-squelettique"
+ },
+ "mcid_sigle": {
+  "t": "MCID — différence minimale cliniquement importante",
+  "d": "Le plus petit changement de score que le patient perçoit comme une vraie amélioration.",
+  "dom": "Recherche"
  },
  "mcmurray": {
   "t": "Test de McMurray",
@@ -2967,10 +4267,30 @@ window.GLOSSAIRE = {
   "d": "Articulation entre un métacarpien et la première phalange du doigt.",
   "dom": "Anatomie"
  },
+ "mcp_sigle": {
+  "t": "MCP — métacarpo-phalangienne",
+  "d": "Articulation entre un métacarpien et la première phalange, à la racine du doigt.",
+  "dom": "Anatomie"
+ },
  "mct": {
   "t": "MCT — mémoire à court terme",
   "d": "Stockage temporaire d'une petite quantité d'informations, de l'ordre de quelques dizaines de secondes.",
   "dom": "Psychologie"
+ },
+ "mds_updrs": {
+  "t": "MDS-UPDRS — échelle unifiée du Parkinson",
+  "d": "L'échelle de référence de la maladie de Parkinson, en quatre parties, de la vie quotidienne aux complications motrices.",
+  "dom": "Neurologie"
+ },
+ "mea": {
+  "t": "MEA — évaluation des écosystèmes pour le millénaire",
+  "d": "Rapport de l'ONU qui a classé les services rendus par les écosystèmes en quatre catégories.",
+  "dom": "SVT"
+ },
+ "mec_sigle": {
+  "t": "MEC — matrice extracellulaire",
+  "d": "Réseau de collagène, d'élastine et de substance fondamentale qui entoure les cellules et donne au tissu ses propriétés mécaniques.",
+  "dom": "Physiologie"
  },
  "mediastinale": {
   "t": "Médiastin",
@@ -3072,6 +4392,26 @@ window.GLOSSAIRE = {
   "d": "Les cinq os longs de l'avant-pied, entre le tarse et les orteils. Leur équivalent à la main : les métacarpiens.",
   "dom": "Anatomie"
  },
+ "mf_sigle": {
+  "t": "MF — mouvement et fonction",
+  "d": "Le module consacré au mouvement humain : biomécanique articulaire en MF I, contrôle moteur et neurosciences du mouvement en MF II.",
+  "dom": "Biomécanique"
+ },
+ "mfis": {
+  "t": "MFIS — échelle d'impact de la fatigue",
+  "d": "Mesure le retentissement de la fatigue, physique, cognitif et social, dans la sclérose en plaques.",
+  "dom": "Neurologie"
+ },
+ "mhi": {
+  "t": "MHI — hyperinsufflation manuelle",
+  "d": "Insufflations amples au ballon pour recruter les alvéoles et mobiliser les sécrétions chez le patient ventilé.",
+  "dom": "Cardio-respiratoire"
+ },
+ "mici": {
+  "t": "MICI — maladies inflammatoires chroniques de l'intestin",
+  "d": "Maladie de Crohn et rectocolite hémorragique : inflammation chronique de la paroi digestive, évoluant par poussées.",
+  "dom": "Physiopathologie"
+ },
  "microbiote": {
   "t": "Microbiote",
   "d": "L'ensemble des micro-organismes qui vivent dans un milieu du corps, surtout l'intestin. Il participe à la digestion et à l'immunité.",
@@ -3097,6 +4437,16 @@ window.GLOSSAIRE = {
   "d": "Coude tendu, on étire passivement les extenseurs en fléchissant poignet et doigts. Douleur latérale : épicondylite.",
   "dom": "Musculo-squelettique"
  },
+ "mip_pim": {
+  "t": "PIM — pression inspiratoire maximale",
+  "d": "Force des muscles inspiratoires mesurée à la bouche. Son pendant expiratoire est la PEM.",
+  "dom": "Cardio-respiratoire"
+ },
+ "mip_pneumo": {
+  "t": "MIP — pneumopathie interstitielle diffuse",
+  "d": "Atteinte diffuse du tissu entre les alvéoles, qui raidit le poumon et altère les échanges gazeux.",
+  "dom": "Cardio-respiratoire"
+ },
  "mitochondrie": {
   "t": "Mitochondrie",
   "d": "Organite producteur d'ATP par respiration cellulaire. La « centrale énergétique » de la cellule.",
@@ -3107,10 +4457,20 @@ window.GLOSSAIRE = {
   "d": "Division qui donne deux cellules filles génétiquement identiques à la cellule mère.",
   "dom": "SVT"
  },
+ "mlg": {
+  "t": "MLG-R — classification des lésions musculaires",
+  "d": "Système de Munich révisé : mécanisme, localisation, grade et récidive.",
+  "dom": "Musculo-squelettique"
+ },
  "mlt": {
   "t": "MLT — mémoire à long terme",
   "d": "Stockage durable et de capacité très grande, où l'information est consolidée.",
   "dom": "Psychologie"
+ },
+ "mmp": {
+  "t": "MMP — métalloprotéinases matricielles",
+  "d": "Enzymes qui dégradent la matrice extracellulaire : indispensables au remodelage, délétères en excès.",
+  "dom": "Physiologie"
  },
  "mmse": {
   "t": "MMSE",
@@ -3122,10 +4482,20 @@ window.GLOSSAIRE = {
   "d": "Manœuvre qui augmente les diamètres antéro-postérieur et transverse du thorax, diminue l'espace mort et le volume résiduel.",
   "dom": "Cardio-respiratoire"
  },
+ "mn_sigle": {
+  "t": "MN — motoneurone",
+  "d": "Le premier motoneurone descend du cortex, le second part de la corne antérieure vers le muscle. La SLA atteint les deux.",
+  "dom": "Neurologie"
+ },
  "moca": {
   "t": "MoCA",
   "d": "Montreal Cognitive Assessment : dépistage cognitif sur 30 points, plus sensible que le MMSE aux troubles légers. Seuil habituel : 26.",
   "dom": "Neurologie"
+ },
+ "mods": {
+  "t": "MODS — syndrome de défaillance multiviscérale",
+  "d": "Atteinte successive de plusieurs organes au décours d'un sepsis ou d'un état de choc.",
+  "dom": "Physiopathologie"
  },
  "monitorage": {
   "t": "Monitorage",
@@ -3141,6 +4511,11 @@ window.GLOSSAIRE = {
   "t": "Réflexe monosynaptique",
   "d": "Une seule synapse entre la fibre sensitive et le motoneurone : c'est le réflexe myotatique, le plus rapide de tous.",
   "dom": "Neurologie"
+ },
+ "morb_sigle": {
+  "t": "MORB — basalte de dorsale océanique",
+  "d": "Basalte émis au niveau des dorsales, marqueur de l'accrétion océanique.",
+  "dom": "SVT"
  },
  "morbidite": {
   "t": "Morbidité",
@@ -3162,10 +4537,65 @@ window.GLOSSAIRE = {
   "d": "Glissement, roulement ou décoaptation que le patient ne peut pas produire volontairement, mais que le kiné provoque passivement. Indispensable à l'amplitude normale.",
   "dom": "Musculo-squelettique"
  },
+ "mp_sigle": {
+  "t": "MP — métacarpo-phalangienne",
+  "d": "Autre notation de l'articulation entre métacarpien et première phalange, utilisée dans la description des actions musculaires.",
+  "dom": "Anatomie"
+ },
+ "mpo_ero": {
+  "t": "MPO — myéloperoxydase",
+  "d": "Enzyme du polynucléaire qui transforme le peroxyde d'hydrogène en acide hypochloreux, puissant bactéricide.",
+  "dom": "Physiopathologie"
+ },
+ "mrc": {
+  "t": "MRC — échelle de dyspnée du Medical Research Council",
+  "d": "Cote l'essoufflement dans la vie courante, de 0, gêné à l'effort intense, à 4, gêné pour s'habiller.",
+  "dom": "Cardio-respiratoire"
+ },
+ "msfc": {
+  "t": "MSFC — Multiple Sclerosis Functional Composite",
+  "d": "Score composite de la sclérose en plaques : marche sur 25 pieds, dextérité manuelle et test cognitif PASAT.",
+  "dom": "Neurologie"
+ },
+ "msg_mid": {
+  "t": "MSG, MSD, MIG, MID — membres",
+  "d": "Membre supérieur gauche, membre supérieur droit, membre inférieur gauche, membre inférieur droit. Notation du bilan clinique.",
+  "dom": "Démarche clinique"
+ },
+ "msh": {
+  "t": "MSH — hormone mélanotrope",
+  "d": "Hormone hypophysaire qui stimule la production de mélanine par les mélanocytes.",
+  "dom": "Physiologie"
+ },
+ "msk": {
+  "t": "MSK — musculo-squelettique",
+  "d": "Abréviation courante de l'appareil locomoteur : os, articulations, muscles et tendons.",
+  "dom": "Musculo-squelettique"
+ },
+ "msws": {
+  "t": "MSWS-12 — échelle de marche de la sclérose en plaques",
+  "d": "Douze items sur la gêne à la marche rapportée par le patient.",
+  "dom": "Neurologie"
+ },
+ "mt_sigle": {
+  "t": "MT — métatarsiens",
+  "d": "Les cinq os longs de l'avant-pied, repères de pose du taping plantaire.",
+  "dom": "Anatomie"
+ },
  "mtp": {
   "t": "MTP — métatarso-phalangienne",
   "d": "Articulation entre un métatarsien et la première phalange d'un orteil.",
   "dom": "Anatomie"
+ },
+ "mtp_sigle": {
+  "t": "MTP — métatarso-phalangienne",
+  "d": "Articulation entre un métatarsien et la première phalange de l'orteil.",
+  "dom": "Anatomie"
+ },
+ "mtr": {
+  "t": "MTR — méthodes et techniques de recherche",
+  "d": "Le module qui apprend à lire un article, à construire une question clinique et à juger du niveau de preuve.",
+  "dom": "Recherche"
  },
  "mucociliaire": {
   "t": "Clairance mucociliaire",
@@ -3267,6 +4697,26 @@ window.GLOSSAIRE = {
   "d": "Ensemble des muscles commandés par une seule racine nerveuse. Un déficit de force sur un myotome oriente vers le niveau lésé.",
   "dom": "Musculo-squelettique"
  },
+ "na_sigle": {
+  "t": "NA — noradrénaline",
+  "d": "Neurotransmetteur du système sympathique : vasoconstriction, accélération cardiaque, vigilance.",
+  "dom": "Physiologie"
+ },
+ "nad_gtp": {
+  "t": "NAD⁺, GTP — cofacteurs du métabolisme",
+  "d": "Le NAD⁺ est la forme oxydée du transporteur d'électrons ; le GTP est un nucléotide riche en énergie produit par le cycle de Krebs.",
+  "dom": "SVT"
+ },
+ "nadh": {
+  "t": "NADH — nicotinamide adénine dinucléotide réduit",
+  "d": "Transporteur d'électrons produit par la glycolyse et le cycle de Krebs, qui alimente la chaîne respiratoire.",
+  "dom": "SVT"
+ },
+ "nadph": {
+  "t": "NADPH — nicotinamide adénine dinucléotide phosphate réduit",
+  "d": "Transporteur d'électrons de la phase photochimique, utilisé pour réduire le CO₂ dans le cycle de Calvin.",
+  "dom": "SVT"
+ },
  "napqi": {
   "t": "NAPQI",
   "d": "Métabolite toxique du paracétamol. Il s'accumule quand le glutathion est épuisé ; l'antidote est la N-acétylcystéine.",
@@ -3280,6 +4730,16 @@ window.GLOSSAIRE = {
  "naviculaire": {
   "t": "Naviculaire",
   "d": "Os du tarse, en forme de barque, repère de palpation sous la malléole interne. Il existe aussi un scaphoïde au poignet.",
+  "dom": "Anatomie"
+ },
+ "nbt": {
+  "t": "NBT — nouvelles techniques de sélection",
+  "d": "Techniques récentes d'amélioration des plantes, dont l'édition du génome par CRISPR-Cas9.",
+  "dom": "SVT"
+ },
+ "nc_sigle": {
+  "t": "NC — nerf crânien",
+  "d": "Les douze paires de nerfs issues de l'encéphale, numérotées en chiffres romains.",
   "dom": "Anatomie"
  },
  "ndi": {
@@ -3392,10 +4852,40 @@ window.GLOSSAIRE = {
   "d": "Inflammation d'un nerf. La névrite optique est souvent révélatrice d'une sclérose en plaques.",
   "dom": "Neurologie"
  },
+ "nfs": {
+  "t": "NFS — numération formule sanguine",
+  "d": "Comptage des globules rouges, des globules blancs et des plaquettes, avec le détail des différents leucocytes.",
+  "dom": "Physiopathologie"
+ },
  "ngc": {
   "t": "NGC — noyaux gris centraux",
   "d": "Ensemble de cinq noyaux sous-corticaux qui règlent l'initiation et l'amplitude du mouvement. Leur sortie est inhibitrice.",
   "dom": "Neurologie"
+ },
+ "ngf_bdnf": {
+  "t": "NGF, BDNF — facteurs neurotrophiques",
+  "d": "Nerve Growth Factor et Brain-Derived Neurotrophic Factor : ils assurent survie, croissance et différenciation des neurones.",
+  "dom": "Neurologie"
+ },
+ "nice": {
+  "t": "NICE — National Institute for Health and Care Excellence",
+  "d": "Organisme britannique qui publie des recommandations de bonne pratique très utilisées.",
+  "dom": "Recherche"
+ },
+ "nk": {
+  "t": "NK — cellules tueuses naturelles",
+  "d": "Lymphocytes qui détruisent sans apprentissage préalable les cellules infectées ou tumorales.",
+  "dom": "Physiopathologie"
+ },
+ "nm_nt": {
+  "t": "Récepteurs NM et NN — récepteurs nicotiniques",
+  "d": "NM à la jonction neuromusculaire, bloqué par le curare ; NN dans les ganglions autonomes, bloqué par l'hexaméthonium.",
+  "dom": "Pharmacologie"
+ },
+ "nm_nt_recepteurs": {
+  "t": "NM, NT — récepteurs nicotiniques",
+  "d": "NM à la jonction neuromusculaire, bloqué par les curares ; NT dans les ganglions autonomes, bloqué par l'hexaméthonium.",
+  "dom": "Pharmacologie"
  },
  "nmda": {
   "t": "Récepteur NMDA",
@@ -3407,10 +4897,20 @@ window.GLOSSAIRE = {
   "d": "Neurone de la corne antérieure au muscle. Sa lésion donne paralysie flasque, amyotrophie et aréflexie.",
   "dom": "Neurologie"
  },
+ "nmq": {
+  "t": "NMQ — questionnaire nordique musculo-squelettique",
+  "d": "Dépiste les douleurs musculo-squelettiques par région du corps, en santé au travail.",
+  "dom": "Musculo-squelettique"
+ },
  "nms": {
   "t": "NMS — neurone moteur supérieur",
   "d": "Neurone central, du cortex à la moelle. Sa lésion donne spasticité, hyperréflexie et Babinski.",
   "dom": "Neurologie"
+ },
+ "no_sigle": {
+  "t": "NO — monoxyde d'azote",
+  "d": "Médiateur vasodilatateur libéré par l'endothélium ; il déclenche notamment l'érection.",
+  "dom": "Physiologie"
  },
  "nocicepteur": {
   "t": "Nocicepteur",
@@ -3422,6 +4922,16 @@ window.GLOSSAIRE = {
   "d": "Détection par le système nerveux d'un stimulus potentiellement lésionnel. Elle précède la douleur, qui est le vécu conscient.",
   "dom": "Neurologie"
  },
+ "nof": {
+  "t": "NOF — National Osteoporosis Foundation",
+  "d": "Fondation américaine dont les critères de dépistage de l'ostéoporose font référence.",
+  "dom": "Physiopathologie"
+ },
+ "nof_oi": {
+  "t": "OI — ostéogenèse imparfaite",
+  "d": "Maladie héréditaire du collagène de type I : os fragiles et fractures répétées.",
+  "dom": "Physiopathologie"
+ },
  "normoxemie": {
   "t": "Normoxémie",
   "d": "Oxygénation artérielle normale. L'hypoxémie est son défaut, l'hyperoxie son excès.",
@@ -3432,15 +4942,45 @@ window.GLOSSAIRE = {
   "d": "Famille d'échelles de l'autonomie et de la qualité de vie après AVC — index d'ADM étendues, profil de santé.",
   "dom": "Neurologie"
  },
+ "npo": {
+  "t": "NPO — noyau préoptique",
+  "d": "Noyau hypothalamique riche en neurones GABAergiques, qui freine l'axe du stress et déclenche le sommeil.",
+  "dom": "Physiologie"
+ },
+ "npv": {
+  "t": "NPV — noyau paraventriculaire de l'hypothalamus",
+  "d": "Point de départ de l'axe du stress : il sécrète la CRH qui déclenche la cascade hormonale.",
+  "dom": "Physiologie"
+ },
+ "nrem": {
+  "t": "NREM — sommeil sans mouvements oculaires rapides",
+  "d": "Le sommeil lent, par opposition au sommeil paradoxal. C'est là que se fait la récupération physique.",
+  "dom": "Physiologie"
+ },
  "nsc": {
   "t": "NSC — noyau suprachiasmatique",
   "d": "Horloge biologique centrale de l'hypothalamus, qui cale le rythme circadien sur la lumière.",
   "dom": "Physiologie"
  },
+ "nyha": {
+  "t": "NYHA — classification de la New York Heart Association",
+  "d": "Quatre stades de gêne fonctionnelle dans l'insuffisance cardiaque, du patient asymptomatique à celui gêné au repos.",
+  "dom": "Cardio-respiratoire"
+ },
  "nystagmus": {
   "t": "Nystagmus",
   "d": "Oscillations rythmiques involontaires des yeux, signe d'atteinte vestibulaire ou cérébelleuse.",
   "dom": "Neurologie"
+ },
+ "oa_arthrose": {
+  "t": "OA — arthrose",
+  "d": "Osteoarthritis : usure du cartilage et remaniement de l'os sous-chondral.",
+  "dom": "Musculo-squelettique"
+ },
+ "oap": {
+  "t": "OAP — œdème aigu du poumon",
+  "d": "Inondation brutale des alvéoles par du liquide, le plus souvent d'origine cardiaque. Détresse respiratoire aiguë.",
+  "dom": "Cardio-respiratoire"
  },
  "obduction": {
   "t": "Obduction",
@@ -3472,6 +5012,11 @@ window.GLOSSAIRE = {
   "d": "Mince, basaltique et dense, elle naît aux dorsales et plonge en subduction. La croûte continentale est épaisse, granitique et légère.",
   "dom": "SVT"
  },
+ "od_og": {
+  "t": "OD, OG, VD, VG — cavités cardiaques",
+  "d": "Oreillette droite, oreillette gauche, ventricule droit, ventricule gauche : les quatre cavités du cœur.",
+  "dom": "Anatomie"
+ },
  "odi": {
   "t": "ODI — Oswestry Disability Index",
   "d": "Référence internationale de l'incapacité lombaire. 10 sections, score de 0 à 100 % ; MCID 10-12 points.",
@@ -3491,6 +5036,16 @@ window.GLOSSAIRE = {
   "t": "OGM — organisme génétiquement modifié",
   "d": "Organisme dont le génome a été modifié par transgenèse ou édition ciblée.",
   "dom": "SVT"
+ },
+ "oh_sigle": {
+  "t": "OH⁻ — ion hydroxyde",
+  "d": "Ion libéré par les bases, qui neutralise les protons et fait monter le pH.",
+  "dom": "Physiologie"
+ },
+ "old": {
+  "t": "OLD — oxygénothérapie de longue durée",
+  "d": "Oxygène à domicile au moins quinze heures par jour dans l'insuffisance respiratoire chronique.",
+  "dom": "Cardio-respiratoire"
  },
  "oligodendrocyte": {
   "t": "Oligodendrocyte",
@@ -3517,6 +5072,11 @@ window.GLOSSAIRE = {
   "d": "Gène dont l'activation excessive pousse la cellule à proliférer. Sa version normale est un proto-oncogène.",
   "dom": "Physiopathologie"
  },
+ "onoo": {
+  "t": "ONOO⁻ — peroxynitrite",
+  "d": "Oxydant très agressif formé par la rencontre du monoxyde d'azote et de l'anion superoxyde dans le phagosome.",
+  "dom": "Physiopathologie"
+ },
  "ophiolite": {
   "t": "Ophiolite",
   "d": "Fragment de lithosphère océanique charrié sur un continent. Sa présence en montagne prouve la fermeture d'un ancien océan.",
@@ -3526,6 +5086,11 @@ window.GLOSSAIRE = {
   "t": "Modèle OPT — Optimum Performance Training",
   "d": "Progression en 5 phases : stabilisation, force-endurance, hypertrophie, force maximale, puissance.",
   "dom": "Musculo-squelettique"
+ },
+ "orl": {
+  "t": "ORL — oto-rhino-laryngologie",
+  "d": "La spécialité de l'oreille, du nez et de la gorge.",
+  "dom": "Physiopathologie"
  },
  "oropharynx": {
   "t": "Étages du pharynx",
@@ -3662,9 +5227,34 @@ window.GLOSSAIRE = {
   "d": "Inversion brève et propagée du potentiel de membrane, qui transmet l'information le long d'un axone ou d'une fibre musculaire.",
   "dom": "Physiologie"
  },
+ "pa_sigle": {
+  "t": "PA — pression artérielle",
+  "d": "Pression du sang contre la paroi des artères, notée systolique sur diastolique. À ne pas confondre avec le potentiel d'action, noté PA lui aussi en neurophysiologie.",
+  "dom": "Cardio-respiratoire"
+ },
+ "pac_pau": {
+  "t": "PAC, PAU — mobilisations postéro-antérieures",
+  "d": "Pressions postéro-antérieures centrales sur les épineuses, ou unilatérales sur les apophyses articulaires.",
+  "dom": "EAIF"
+ },
+ "paf_facteur": {
+  "t": "PAF — facteur d'activation plaquettaire",
+  "d": "Médiateur lipidique qui agrège les plaquettes et amplifie la réaction inflammatoire.",
+  "dom": "Physiopathologie"
+ },
+ "pai": {
+  "t": "PAI-1 — inhibiteur de l'activateur du plasminogène",
+  "d": "Il bloque la fibrinolyse : son excès favorise la persistance des caillots.",
+  "dom": "Physiopathologie"
+ },
  "palpitation": {
   "t": "Palpitations",
   "d": "Perception désagréable de ses propres battements cardiaques, qu'ils soient rapides, irréguliers ou simplement plus forts.",
+  "dom": "Cardio-respiratoire"
+ },
+ "pam_pas_pad": {
+  "t": "PAS, PAD, PAM — pressions artérielles",
+  "d": "Systolique, diastolique et moyenne. La moyenne est le produit du débit cardiaque par les résistances périphériques.",
   "dom": "Cardio-respiratoire"
  },
  "pancreatite": {
@@ -3712,6 +5302,11 @@ window.GLOSSAIRE = {
   "d": "Diminution de la force musculaire. Complète, on parle de paralysie ou de plégie.",
   "dom": "Neurologie"
  },
+ "pasat": {
+  "t": "PASAT — Paced Auditory Serial Addition Test",
+  "d": "Additions successives au rythme imposé : mesure l'attention soutenue et la vitesse de traitement.",
+  "dom": "Neurologie"
+ },
  "pass": {
   "t": "PASS",
   "d": "Échelle d'évaluation du contrôle postural après un AVC, en position couchée, assise et debout.",
@@ -3742,15 +5337,65 @@ window.GLOSSAIRE = {
   "d": "Décider en croisant trois sources : les meilleures données de la recherche, l'expérience du clinicien et les préférences du patient.",
   "dom": "Recherche"
  },
+ "pbe_sigle": {
+  "t": "PBE — pratique fondée sur les preuves",
+  "d": "Décider en combinant les meilleures données de la recherche, l'expérience du praticien et les préférences du patient.",
+  "dom": "Recherche"
+ },
  "pcc": {
   "t": "PCC",
   "d": "Population, Concept, Contexte : la grille des scoping reviews, plus large que PICO.",
   "dom": "Recherche"
  },
+ "pcf": {
+  "t": "PCF — débit de pointe à la toux",
+  "d": "Peak Cough Flow : débit maximal mesuré au débitmètre pendant une toux. Seule mesure objective de l'efficacité de la toux, là où les autres échelles cotent un ressenti d'effort.",
+  "dom": "Cardio-respiratoire"
+ },
+ "pcg_phc_poc": {
+  "t": "PCG, PHC, POC — pressions de la filtration glomérulaire",
+  "d": "Pression capillaire glomérulaire, pression hydrostatique capsulaire et pression oncotique : leur bilan, environ 10 mmHg, fait la filtration.",
+  "dom": "Physiologie"
+ },
+ "pcr_sigle": {
+  "t": "PCR — amplification en chaîne par polymérase",
+  "d": "Technique qui multiplie un fragment d'ADN pour le rendre détectable. Base des tests virologiques.",
+  "dom": "SVT"
+ },
+ "pcs_mcs": {
+  "t": "PCS, MCS — scores résumés du SF-36",
+  "d": "Physical Component Summary et Mental Component Summary : les deux scores synthétiques du questionnaire de qualité de vie SF-36.",
+  "dom": "Recherche"
+ },
+ "pd_pk": {
+  "t": "PD, PK — pharmacodynamie et pharmacocinétique",
+  "d": "Ce que le médicament fait à l'organisme, et ce que l'organisme fait au médicament.",
+  "dom": "Pharmacologie"
+ },
+ "pdgf": {
+  "t": "PDGF — facteur de croissance dérivé des plaquettes",
+  "d": "Libéré par les plaquettes au site de lésion, il attire les fibroblastes et lance la réparation.",
+  "dom": "Physiologie"
+ },
+ "pdq": {
+  "t": "PDQ-39 — Parkinson's Disease Questionnaire",
+  "d": "Trente-neuf items sur la qualité de vie dans la maladie de Parkinson.",
+  "dom": "Neurologie"
+ },
  "peace-love": {
   "t": "PEACE & LOVE",
   "d": "Protocole actuel de prise en charge des lésions des tissus mous, qui a remplacé RICE puis PRICE et POLICE.",
   "dom": "EAIF"
+ },
+ "pecam": {
+  "t": "PECAM-1 — molécule d'adhésion plaquette-endothélium",
+  "d": "Aussi appelée CD31 : elle permet au leucocyte de franchir la paroi vasculaire.",
+  "dom": "Physiopathologie"
+ },
+ "pecot": {
+  "t": "PECOT — population, exposition, comparateur, outcome, temps",
+  "d": "Variante du PICO pour les questions d'étiologie ou de pronostic, où l'on observe une exposition plutôt qu'une intervention.",
+  "dom": "Recherche"
  },
  "pectus": {
   "t": "Pectus excavatum et carinatum",
@@ -3812,6 +5457,11 @@ window.GLOSSAIRE = {
   "d": "Muscles du compartiment latéral de la jambe, éverseurs du pied. Leur faiblesse favorise l'entorse en inversion.",
   "dom": "Anatomie"
  },
+ "pet": {
+  "t": "PET — tomographie par émission de positons",
+  "d": "Imagerie fonctionnelle qui repère les zones à forte consommation de glucose, notamment les tumeurs.",
+  "dom": "Physiopathologie"
+ },
  "petechie": {
   "t": "Pétéchie",
   "d": "Minuscule tache rouge due à une hémorragie capillaire, qui ne s'efface pas à la pression.",
@@ -3821,6 +5471,16 @@ window.GLOSSAIRE = {
   "t": "Pétrissage",
   "d": "Manœuvre de massage qui saisit et presse le muscle. Ses formes anglaises : kneading, wringing, pincées roulées.",
   "dom": "EAIF"
+ },
+ "pg_sigle": {
+  "t": "PG — prostaglandines",
+  "d": "Médiateurs lipidiques de l'inflammation, de la douleur et de la protection gastrique, bloqués par les anti-inflammatoires.",
+  "dom": "Pharmacologie"
+ },
+ "pge1": {
+  "t": "PGE1 — prostaglandine E1",
+  "d": "Prostaglandine protectrice de la muqueuse gastrique ; le misoprostol en est l'analogue.",
+  "dom": "Pharmacologie"
  },
  "phagocytose": {
   "t": "Phagocytose",
@@ -3882,9 +5542,24 @@ window.GLOSSAIRE = {
   "d": "Réserve d'énergie immédiate du muscle : elle régénère l'ATP pendant les dix premières secondes d'un effort maximal.",
   "dom": "Physiologie"
  },
+ "pia": {
+  "t": "PIA — pression intra-abdominale",
+  "d": "Pression du caisson abdominal : sa montée rigidifie le tronc et participe à la stabilité lombaire.",
+  "dom": "Musculo-squelettique"
+ },
+ "pica": {
+  "t": "PICA — artère cérébelleuse postéro-inférieure",
+  "d": "Son occlusion donne le syndrome de Wallenberg, avec vertiges, troubles de déglutition et atteinte sensitive croisée.",
+  "dom": "Neurologie"
+ },
  "pico": {
   "t": "PICO",
   "d": "Grille de formulation d'une question clinique : Population, Intervention, Comparateur, Outcome. Elle oriente la recherche bibliographique.",
+  "dom": "Recherche"
+ },
+ "picos": {
+  "t": "PICOS — population, intervention, comparateur, outcome, study design",
+  "d": "Canevas pour formuler une question clinique précise et construire sa recherche bibliographique.",
   "dom": "Recherche"
  },
  "picot": {
@@ -3947,6 +5622,11 @@ window.GLOSSAIRE = {
   "d": "Renforcement durable d'une synapse après stimulation répétée. Substrat cellulaire de l'apprentissage, initié par l'entrée de calcium.",
   "dom": "Neurologie"
  },
+ "pmn": {
+  "t": "PMN — polynucléaires neutrophiles",
+  "d": "Globules blancs de première ligne : ils arrivent les premiers sur le foyer inflammatoire et forment le pus.",
+  "dom": "Physiopathologie"
+ },
  "pneumoconiose": {
   "t": "Pneumoconiose",
   "d": "Maladie pulmonaire due à l'inhalation prolongée de poussières : silicose, asbestose, bérylliose.",
@@ -3966,6 +5646,11 @@ window.GLOSSAIRE = {
   "t": "PNF — facilitation neuromusculaire proprioceptive",
   "d": "Technique d'étirement alternant contraction et relâchement du muscle pour gagner en amplitude, en exploitant les réflexes neuromusculaires.",
   "dom": "Musculo-squelettique"
+ },
+ "pnmt": {
+  "t": "PNMT — phényléthanolamine N-méthyltransférase",
+  "d": "Enzyme de la médullosurrénale qui transforme la noradrénaline en adrénaline.",
+  "dom": "Physiologie"
  },
  "polygone": {
   "t": "Polygone de sustentation",
@@ -3997,6 +5682,11 @@ window.GLOSSAIRE = {
   "d": "Production d'urine anormalement abondante.",
   "dom": "Physiopathologie"
  },
+ "poma": {
+  "t": "POMA — test de Tinetti",
+  "d": "Évaluation de l'équilibre et de la marche chez la personne âgée, orientée risque de chute.",
+  "dom": "Neurologie"
+ },
  "portale": {
   "t": "Circulation porte",
   "d": "Le sang du tube digestif passe par le foie avant de rejoindre la circulation générale : c'est le premier passage hépatique.",
@@ -4011,6 +5701,26 @@ window.GLOSSAIRE = {
   "t": "Pensée post-formelle",
   "d": "Au-delà du stade formel de Piaget : accepter l'ambiguïté, tenir plusieurs vérités à la fois, raisonner dans l'incertitude. Pensée de l'adulte.",
   "dom": "Psychologie"
+ },
+ "pot_pcc": {
+  "t": "POT, PCC, PICo — canevas de question de recherche",
+  "d": "Variantes du PICO adaptées aux études de prévalence, aux scoping reviews et aux travaux qualitatifs.",
+  "dom": "Recherche"
+ },
+ "pp_pancreas": {
+  "t": "Cellules PP — polypeptide pancréatique",
+  "d": "Quatrième population des îlots de Langerhans, après les cellules alpha, bêta et delta.",
+  "dom": "Physiologie"
+ },
+ "ppse": {
+  "t": "PPSE — potentiel postsynaptique excitateur",
+  "d": "Dépolarisation locale qui rapproche le neurone de son seuil de décharge.",
+  "dom": "Neurologie"
+ },
+ "ppsi": {
+  "t": "PPSI — potentiel postsynaptique inhibiteur",
+  "d": "Hyperpolarisation locale qui éloigne le neurone de son seuil de décharge.",
+  "dom": "Neurologie"
  },
  "pr": {
   "t": "PR — polyarthrite rhumatoïde",
@@ -4036,6 +5746,11 @@ window.GLOSSAIRE = {
   "t": "Prévalence",
   "d": "Nombre de cas existants dans une population à un instant donné, anciens et nouveaux confondus.",
   "dom": "Recherche"
+ },
+ "prg": {
+  "t": "PRG — pouvoir de réchauffement global",
+  "d": "Effet de serre d'un gaz comparé à celui du CO₂ sur cent ans : 25 pour le méthane, environ 300 pour le protoxyde d'azote.",
+  "dom": "SVT"
  },
  "prisma": {
   "t": "PRISMA",
@@ -4112,10 +5827,25 @@ window.GLOSSAIRE = {
   "d": "Démangeaison.",
   "dom": "Physiopathologie"
  },
+ "prvc": {
+  "t": "PRVC — ventilation à volume contrôlé régulé en pression",
+  "d": "Mode ventilatoire qui garantit le volume délivré en adaptant la pression à chaque cycle.",
+  "dom": "Cardio-respiratoire"
+ },
  "prédisposition": {
   "t": "Prédisposition",
   "d": "Terrain qui augmente le risque sans suffire à provoquer la maladie. Elle rend la prévention utile, pas inutile.",
   "dom": "Physiopathologie"
+ },
+ "psa": {
+  "t": "PSA — antigène prostatique spécifique",
+  "d": "Protéine fabriquée par la prostate, dosée dans le sang pour le dépistage et le suivi du cancer prostatique.",
+  "dom": "Physiopathologie"
+ },
+ "psp": {
+  "t": "PSP — paralysie supranucléaire progressive",
+  "d": "Syndrome parkinsonien atypique avec chutes précoces en arrière et paralysie du regard vertical.",
+  "dom": "Neurologie"
  },
  "psychometrique": {
   "t": "Qualités psychométriques",
@@ -4132,9 +5862,24 @@ window.GLOSSAIRE = {
   "d": "Module pratique consacré à l'installation du patient, aux transferts et aux aides techniques de déambulation.",
   "dom": "EAIF"
  },
+ "ptg": {
+  "t": "PTG — prothèse totale de genou",
+  "d": "Remplacement des surfaces articulaires du genou. Objectif de flexion d'environ 100° en rééducation.",
+  "dom": "Musculo-squelettique"
+ },
  "pth": {
   "t": "PTH — prothèse totale de hanche",
   "d": "Remplacement chirurgical des deux versants de l'articulation coxo-fémorale.",
+  "dom": "Musculo-squelettique"
+ },
+ "pth_ct": {
+  "t": "CT — calcitonine",
+  "d": "Hormone thyroïdienne qui freine les ostéoclastes et fait baisser la calcémie, à l'inverse de la parathormone.",
+  "dom": "Physiologie"
+ },
+ "pth_prothese": {
+  "t": "PTH — prothèse totale de hanche",
+  "d": "Remplacement de la tête fémorale et du cotyle. Appui dès le premier jour si la prothèse est cimentée.",
   "dom": "Musculo-squelettique"
  },
  "pubalgie": {
@@ -4192,6 +5937,16 @@ window.GLOSSAIRE = {
   "d": "20 activités cotées de 0 à 5 selon la difficulté ressentie. Bonne sensibilité au changement dans la lombalgie.",
   "dom": "Musculo-squelettique"
  },
+ "qi": {
+  "t": "QI — quotient intellectuel",
+  "d": "Score standardisé de performance cognitive, utilisé notamment dans l'expérience de Rosenthal et Jacobson.",
+  "dom": "Psychologie"
+ },
+ "qol": {
+  "t": "QOL — qualité de vie",
+  "d": "Ce que le patient dit de son propre état, au-delà des mesures cliniques. SCI-QOL, SS-QOL et SGRQ en sont des déclinaisons.",
+  "dom": "Démarche clinique"
+ },
  "qr": {
   "t": "QR — quotient respiratoire",
   "d": "Rapport entre le CO₂ produit et l'O₂ consommé. Il renseigne sur le substrat brûlé : proche de 0,7 pour les lipides, de 1 pour les glucides.",
@@ -4202,10 +5957,30 @@ window.GLOSSAIRE = {
   "d": "Déflexion de l'ECG qui traduit la dépolarisation des ventricules. Durée normale : 0,06 à 0,10 seconde.",
   "dom": "Cardio-respiratoire"
  },
+ "qsd": {
+  "t": "QSD — quadrant supérieur droit",
+  "d": "Région de l'abdomen qui contient foie et vésicule ; siège du signe de Murphy.",
+  "dom": "Physiopathologie"
+ },
+ "qsg": {
+  "t": "QSG — quadrant supérieur gauche",
+  "d": "Région abdominale contenant estomac et rate ; le signe de Murphy y est indolore, à l'inverse du quadrant droit.",
+  "dom": "Physiopathologie"
+ },
+ "qst": {
+  "t": "QST — évaluation sensorielle quantitative",
+  "d": "Batterie de tests qui mesure les seuils de détection et de douleur : elle objective une sensibilisation centrale.",
+  "dom": "Musculo-squelettique"
+ },
  "quantitatif": {
   "t": "Quantitatif et qualitatif",
   "d": "Le quantitatif compte et mesure ; le qualitatif cherche le sens, par entretiens et observation. Deux regards complémentaires.",
   "dom": "Recherche"
+ },
+ "ra_polyarthrite": {
+  "t": "RA — polyarthrite rhumatoïde",
+  "d": "Rheumatoid arthritis : arthrite inflammatoire chronique et symétrique des petites articulations.",
+  "dom": "Musculo-squelettique"
  },
  "radiculopathie": {
   "t": "Radiculopathie",
@@ -4217,10 +5992,40 @@ window.GLOSSAIRE = {
   "d": "Traitement du cancer par rayonnements ionisants. Fatigue, radiodermite et fibrose tardive en sont les effets fréquents.",
   "dom": "Physiopathologie"
  },
+ "ramboman": {
+  "t": "RAMBOMAN — grille de lecture d'une étude",
+  "d": "Moyen mnémotechnique pour passer en revue les points critiques d'une étude primaire : recrutement, allocation, maintien, mesure en aveugle, analyse.",
+  "dom": "Recherche"
+ },
+ "rank_opg": {
+  "t": "RANK, RANKL, OPG — trépied du remodelage osseux",
+  "d": "RANKL, produit par l'ostéoblaste, active l'ostéoclaste via son récepteur RANK ; l'ostéoprotégérine OPG le neutralise. L'équilibre des trois règle la masse osseuse.",
+  "dom": "Physiologie"
+ },
  "ranvier": {
   "t": "Nœuds de Ranvier",
   "d": "Les interruptions de la gaine de myéline. Le potentiel d'action y saute de l'un à l'autre : c'est la conduction saltatoire.",
   "dom": "Neurologie"
+ },
+ "rass": {
+  "t": "RASS — Richmond Agitation-Sedation Scale",
+  "d": "Cote le niveau de sédation ou d'agitation du patient en réanimation, de −5 à +4.",
+  "dom": "Cardio-respiratoire"
+ },
+ "rb_p53": {
+  "t": "RB — gène du rétinoblastome",
+  "d": "Gène suppresseur de tumeur : son inactivation lève un frein sur le cycle cellulaire, comme celle de P53.",
+  "dom": "Physiopathologie"
+ },
+ "rc_module": {
+  "t": "RC — raisonnement clinique",
+  "d": "Le module qui enchaîne recueil, hypothèses et décision à partir de cas cliniques réels.",
+  "dom": "Démarche clinique"
+ },
+ "rch": {
+  "t": "RCH — rectocolite hémorragique",
+  "d": "Inflammation continue de la muqueuse du rectum et du côlon, avec diarrhée glairo-sanglante.",
+  "dom": "Physiopathologie"
  },
  "rct": {
   "t": "RCT — randomized controlled trial",
@@ -4257,6 +6062,11 @@ window.GLOSSAIRE = {
   "d": "Intervalle qui suit un potentiel d'action, pendant lequel la fibre ne peut pas — ou difficilement — en produire un autre.",
   "dom": "Physiologie"
  },
+ "rem": {
+  "t": "REM — sommeil paradoxal",
+  "d": "Phase de sommeil avec mouvements oculaires rapides, atonie musculaire et rêves.",
+  "dom": "Physiologie"
+ },
  "remission": {
   "t": "Rémission",
   "d": "Disparition des signes de la maladie, sans garantie qu'elle soit guérie. La rechute reste possible.",
@@ -4271,6 +6081,11 @@ window.GLOSSAIRE = {
   "t": "Repolarisation",
   "d": "Retour du potentiel de membrane à sa valeur de repos après le potentiel d'action.",
   "dom": "Physiologie"
+ },
+ "rer_rel": {
+  "t": "RER, REL — réticulum endoplasmique",
+  "d": "Rugueux, couvert de ribosomes, il fabrique les protéines ; lisse, il assure la détoxification et le stockage du calcium.",
+  "dom": "SVT"
  },
  "resilience": {
   "t": "Résilience",
@@ -4302,20 +6117,40 @@ window.GLOSSAIRE = {
   "d": "Boucle qui amplifie la perturbation initiale si elle est positive, ou qui l'atténue si elle est négative.",
   "dom": "SVT"
  },
+ "rgo": {
+  "t": "RGO — reflux gastro-œsophagien",
+  "d": "Remontée du contenu acide de l'estomac dans l'œsophage, par défaillance du sphincter inférieur.",
+  "dom": "Physiopathologie"
+ },
  "rhabdomyosarcome": {
   "t": "Rhabdomyosarcome",
   "d": "Cancer né du muscle strié, surtout chez l'enfant.",
   "dom": "Physiopathologie"
+ },
+ "ri_re": {
+  "t": "RI, RE — rotations interne et externe",
+  "d": "Les deux sens de rotation d'un segment autour de son axe longitudinal, notés dans tous les bilans articulaires.",
+  "dom": "EAIF"
  },
  "ribosome": {
   "t": "Ribosome",
   "d": "Organite qui assemble les acides aminés pour fabriquer les protéines.",
   "dom": "Physiologie"
  },
+ "rice_price": {
+  "t": "RICE, PRICE, POLICE — anciens protocoles de l'entorse",
+  "d": "Repos, glace, compression, élévation, avec protection puis charge optimale. Remplacés aujourd'hui par PEACE & LOVE.",
+  "dom": "EAIF"
+ },
  "rmdq": {
   "t": "RMDQ — Roland-Morris Disability Questionnaire",
   "d": "24 items oui/non sur l'impact de la lombalgie au quotidien. Adapté aux lombalgies légères à modérées ; au-delà, l'Oswestry est préféré.",
   "dom": "Musculo-squelettique"
+ },
+ "roc": {
+  "t": "ROC — courbe de performance diagnostique",
+  "d": "Courbe sensibilité contre faux positifs : son aire mesure la capacité d'un test à séparer malades et non-malades.",
+  "dom": "Recherche"
  },
  "rom": {
   "t": "Range of Motion — amplitude articulaire",
@@ -4332,20 +6167,65 @@ window.GLOSSAIRE = {
   "d": "Bras en chandelier, on ouvre et ferme les mains trois minutes. Lourdeur et fourmillements : défilé thoraco-brachial.",
   "dom": "Musculo-squelettique"
  },
+ "ros_ero": {
+  "t": "ROS — espèces réactives de l'oxygène",
+  "d": "Radicaux libres issus du métabolisme, aussi notés ERO. En excès, ils abîment membranes, protéines et ADN.",
+  "dom": "Physiologie"
+ },
  "rpg": {
   "t": "RPG — rééducation posturale globale",
   "d": "Méthode de traitement par postures d'étirement actives tenues longuement, sur des chaînes musculaires entières.",
   "dom": "Musculo-squelettique"
+ },
+ "rps": {
+  "t": "RPS — Reaching Performance Scale",
+  "d": "Évalue la qualité de l'atteinte manuelle après AVC sur six composantes, cible posée à 1 cm puis à 30 cm.",
+  "dom": "Neurologie"
+ },
+ "rs_sigle": {
+  "t": "RS — réticulum sarcoplasmique",
+  "d": "Réserve de calcium de la fibre musculaire. Sa libération déclenche la contraction.",
+  "dom": "Physiologie"
+ },
+ "rsh": {
+  "t": "RSH — rythme scapulo-huméral",
+  "d": "Coordination entre scapula et humérus pendant l'élévation du bras, classiquement deux degrés d'humérus pour un de scapula.",
+  "dom": "Musculo-squelettique"
+ },
+ "rsi": {
+  "t": "RSI — microtraumatismes répétés",
+  "d": "Repetitive strain injury : lésions liées à la répétition prolongée d'un même geste au travail.",
+  "dom": "Sociologie"
  },
  "rsm": {
   "t": "RSM — reprogrammation sensori-motrice",
   "d": "Rééducation du contrôle du mouvement plutôt que de la force pure : peu de résistance, beaucoup de répétitions, au moins 6 semaines pour obtenir une adaptation neurale.",
   "dom": "Musculo-squelettique"
  },
+ "rsm_sigle": {
+  "t": "RSM — renforcement sous-maximal",
+  "d": "Travail de force conduit en deçà de la charge maximale, pour respecter la cicatrisation.",
+  "dom": "EAIF"
+ },
+ "rsv_sigle": {
+  "t": "RSV — respiratory syncytial virus",
+  "d": "Le VRS en anglais : premier agent de la bronchiolite du nourrisson, environ deux tiers des cas.",
+  "dom": "Cardio-respiratoire"
+ },
+ "ru_sigle": {
+  "t": "RU — radio-ulnaire",
+  "d": "Les articulations radio-ulnaires proximale et distale assurent pronation et supination.",
+  "dom": "Anatomie"
+ },
  "ruffini": {
   "t": "Récepteurs cutanés",
   "d": "Meissner pour le toucher fin, Pacini pour la vibration, Merkel pour la pression, Ruffini pour l'étirement.",
   "dom": "Physiologie"
+ },
+ "rvo_sigle": {
+  "t": "RVO — réflexe vestibulo-oculaire",
+  "d": "Autre notation du réflexe qui stabilise le regard pendant les mouvements de la tête.",
+  "dom": "Neurologie"
  },
  "rx": {
   "t": "RX — radiographie",
@@ -4356,6 +6236,11 @@ window.GLOSSAIRE = {
   "t": "Rétroversion",
   "d": "Bascule d'un segment vers l'arrière, l'inverse de l'antéversion.",
   "dom": "Musculo-squelettique"
+ },
+ "saa_crp": {
+  "t": "SAA — sérum amyloïde A",
+  "d": "Protéine de la phase aiguë de l'inflammation, comme la CRP.",
+  "dom": "Physiopathologie"
  },
  "sackett": {
   "t": "Sackett",
@@ -4437,6 +6322,11 @@ window.GLOSSAIRE = {
   "d": "Elle fabrique la myéline dans le système nerveux périphérique et guide la repousse de l'axone après lésion.",
   "dom": "Neurologie"
  },
+ "sci_qol": {
+  "t": "SCI — lésion médullaire",
+  "d": "Spinal cord injury. Les échelles SCIM et SCI-QOL en mesurent l'autonomie et la qualité de vie.",
+  "dom": "Neurologie"
+ },
  "scim": {
   "t": "SCIM",
   "d": "Mesure d'indépendance spécifique de la lésion médullaire, cotée de 0 à 100, plus sensible que la MIF dans cette population.",
@@ -4446,6 +6336,11 @@ window.GLOSSAIRE = {
   "t": "Scintigraphie",
   "d": "Imagerie après injection d'un traceur radioactif : elle montre le fonctionnement d'un tissu plutôt que sa forme.",
   "dom": "Physiopathologie"
+ },
+ "sciql": {
+  "t": "SCIQL-23 — qualité de vie après lésion médullaire",
+  "d": "Version courte à vingt-trois items, cotée de 0 à 100, explorant le physique, le psychologique et le social.",
+  "dom": "Neurologie"
  },
  "scissure": {
   "t": "Scissure",
@@ -4467,10 +6362,30 @@ window.GLOSSAIRE = {
   "d": "Déviation du rachis dans les trois plans, avec rotation des vertèbres — d'où la gibbosité à la flexion du tronc. Mesurée par l'angle de Cobb.",
   "dom": "Anatomie"
  },
+ "scom": {
+  "t": "SCOM — sterno-cléido-occipito-mastoïdien",
+  "d": "Muscle latéral du cou, de la clavicule et du sternum à la mastoïde. Inclinaison homolatérale, rotation controlatérale.",
+  "dom": "Anatomie"
+ },
  "scoping": {
   "t": "Scoping review",
   "d": "Revue exploratoire qui cartographie l'étendue d'une littérature, sans la sélectivité d'une revue systématique.",
   "dom": "Recherche"
+ },
+ "sd_sigle": {
+  "t": "SD — standard deviation",
+  "d": "L'écart type en anglais. Les scores du SF-36 sont normalisés à 50 avec un SD de 10.",
+  "dom": "Recherche"
+ },
+ "sdmt": {
+  "t": "SDMT — Symbol Digit Modalities Test",
+  "d": "Test rapide de vitesse de traitement de l'information, sensible aux atteintes cognitives.",
+  "dom": "Neurologie"
+ },
+ "sdra": {
+  "t": "SDRA — syndrome de détresse respiratoire aiguë",
+  "d": "Inflammation pulmonaire diffuse avec œdème lésionnel : hypoxémie sévère résistante à l'oxygène.",
+  "dom": "Cardio-respiratoire"
  },
  "sedation": {
   "t": "Sédation",
@@ -4537,15 +6452,40 @@ window.GLOSSAIRE = {
   "d": "Cloison qui sépare deux cavités : septum nasal, septum interventriculaire du cœur.",
   "dom": "Anatomie"
  },
+ "serm": {
+  "t": "SERM — modulateur sélectif des récepteurs aux œstrogènes",
+  "d": "Médicament qui imite l'œstrogène sur l'os et le bloque sur le sein. Utilisé dans l'ostéoporose.",
+  "dom": "Pharmacologie"
+ },
  "sertoli": {
   "t": "Cellules de Sertoli et de Leydig",
   "d": "Sertoli nourrit les cellules germinales dans le tube séminifère ; Leydig, à côté, produit la testostérone.",
   "dom": "Physiologie"
  },
+ "set_sonde": {
+  "t": "SET — sonde endotrachéale",
+  "d": "Voie d'aspiration des sécrétions chez le patient intubé, à côté des voies nasopharyngée et oropharyngée.",
+  "dom": "Cardio-respiratoire"
+ },
+ "sf36": {
+  "t": "SF-36 — Short Form 36",
+  "d": "Questionnaire générique de qualité de vie en trente-six items, référence internationale. Il se résume en deux scores, PCS physique et MCS mental.",
+  "dom": "Recherche"
+ },
+ "sfc": {
+  "t": "SFC — syndrome de fatigue chronique",
+  "d": "Fatigue invalidante de plus de six mois, non soulagée par le repos, sans cause organique retrouvée.",
+  "dom": "Physiopathologie"
+ },
  "sfp": {
   "t": "SFP — syndrome fémoro-patellaire",
   "d": "Douleur antérieure du genou liée au mauvais engagement de la rotule dans la trochlée. Explorée par McConnell, Clarke et l'angle Q.",
   "dom": "Musculo-squelettique"
+ },
+ "sgrq": {
+  "t": "SGRQ — St George's Respiratory Questionnaire",
+  "d": "Questionnaire de qualité de vie spécifique des maladies respiratoires chroniques.",
+  "dom": "Cardio-respiratoire"
  },
  "shaking": {
   "t": "Shaking et vibrations",
@@ -4557,15 +6497,45 @@ window.GLOSSAIRE = {
   "d": "Bruits respiratoires d'obstruction. Sibilants aigus des petites bronches — asthme ; ronchi graves des grosses bronches encombrées.",
   "dom": "Cardio-respiratoire"
  },
+ "sida": {
+  "t": "SIDA — syndrome d'immunodéficience acquise",
+  "d": "Stade avancé de l'infection par le VIH, défini par l'effondrement des défenses et l'apparition d'infections opportunistes.",
+  "dom": "Physiopathologie"
+ },
  "sin-ss": {
   "t": "SIN-SS",
   "d": "Grille de lecture de l'examen subjectif : Sévérité, Irritabilité, Nature, Stage (stade d'évolution) et Stability (stabilité). Elle dicte jusqu'où pousser l'examen objectif.",
+  "dom": "Musculo-squelettique"
+ },
+ "sin_ss": {
+  "t": "SIN-SS — sévérité, irritabilité, nature, stade, stabilité",
+  "d": "Grille de lecture de l'examen subjectif en musculo-squelettique. Elle dicte jusqu'où pousser l'examen objectif sans aggraver le patient.",
   "dom": "Musculo-squelettique"
  },
  "sinusite": {
   "t": "Sinusite",
   "d": "Inflammation des sinus de la face, le plus souvent après une rhinite.",
   "dom": "Physiopathologie"
+ },
+ "sips": {
+  "t": "EIPS — épine iliaque postéro-supérieure",
+  "d": "Saillie postérieure de la crête iliaque, repère de l'articulation sacro-iliaque.",
+  "dom": "Anatomie"
+ },
+ "sirs": {
+  "t": "SIRS — syndrome de réponse inflammatoire systémique",
+  "d": "Réaction inflammatoire généralisée : fièvre, tachycardie, polypnée, anomalie des globules blancs.",
+  "dom": "Physiopathologie"
+ },
+ "sis": {
+  "t": "SIS — Stroke Impact Scale",
+  "d": "Questionnaire du retentissement de l'AVC sur la force, la mémoire, l'humeur et la participation.",
+  "dom": "Neurologie"
+ },
+ "sisp": {
+  "t": "SISP — coiffe des rotateurs",
+  "d": "Supra-épineux, infra-épineux, petit rond et subscapulaire : les quatre muscles qui recentrent la tête humérale.",
+  "dom": "Anatomie"
  },
  "sla": {
   "t": "SLA — sclérose latérale amyotrophique",
@@ -4582,6 +6552,11 @@ window.GLOSSAIRE = {
   "d": "Les chaînes musculaires obliques et longitudinales qui transmettent les forces d'un membre à l'autre à travers le tronc.",
   "dom": "Biomécanique"
  },
+ "slnms": {
+  "t": "SLNMS — syndrome de la lésion du neurone moteur supérieur",
+  "d": "Spasticité, hyperréflexie et Babinski par atteinte des voies descendantes, à distinguer de la rigidité parkinsonienne.",
+  "dom": "Neurologie"
+ },
  "slr": {
   "t": "SLR — Straight Leg Raise",
   "d": "Test neurodynamique du nerf sciatique, aussi appelé test de Lasègue : élévation du membre inférieur tendu, genou en extension.",
@@ -4591,6 +6566,21 @@ window.GLOSSAIRE = {
   "t": "SMART",
   "d": "Critères d'un objectif bien posé : Spécifique, Mesurable, Atteignable, Réaliste, Temporellement défini.",
   "dom": "Recherche"
+ },
+ "sme": {
+  "t": "SME — système musculo-squelettique",
+  "d": "L'ensemble os, articulations, muscles et tendons, étudié dans la partie pratique du module.",
+  "dom": "Musculo-squelettique"
+ },
+ "smfr_huc": {
+  "t": "SMFR-HUC — service de médecine physique de Coimbra",
+  "d": "Service portugais dont la version adaptée d'une échelle d'autonomie est utilisée dans le cours.",
+  "dom": "Démarche clinique"
+ },
+ "sn_sigle": {
+  "t": "SN — système nerveux",
+  "d": "SN sympathique et SN parasympathique forment le système autonome, qui règle les fonctions involontaires.",
+  "dom": "Neurologie"
  },
  "sna": {
   "t": "SNA — système nerveux autonome",
@@ -4602,10 +6592,35 @@ window.GLOSSAIRE = {
   "d": "Encéphale et moelle épinière, protégés par les méninges et le liquide cérébro-spinal.",
   "dom": "Anatomie"
  },
+ "snc_sigle": {
+  "t": "SNC — système nerveux central",
+  "d": "L'encéphale et la moelle spinale, par opposition au système nerveux périphérique.",
+  "dom": "Neurologie"
+ },
  "snp": {
   "t": "SNP — système nerveux périphérique",
   "d": "Tout le tissu nerveux hors encéphale et moelle : nerfs crâniens, nerfs rachidiens et ganglions.",
   "dom": "Anatomie"
+ },
+ "sns_sigle": {
+  "t": "SNS — système nerveux sympathique",
+  "d": "Branche du système autonome qui prépare à l'action : accélération cardiaque, bronchodilatation, mobilisation du glucose.",
+  "dom": "Neurologie"
+ },
+ "soc": {
+  "t": "SOC — sélection, optimisation, compensation",
+  "d": "Modèle de Baltes : bien vieillir, c'est choisir ses objectifs, optimiser ses moyens et compenser ses pertes.",
+  "dom": "Psychologie"
+ },
+ "sod1": {
+  "t": "SOD1 — superoxyde dismutase 1",
+  "d": "Enzyme antioxydante dont la mutation est en cause dans certaines formes familiales de sclérose latérale amyotrophique.",
+  "dom": "Physiopathologie"
+ },
+ "sofa": {
+  "t": "SOFA — Sequential Organ Failure Assessment",
+  "d": "Score de défaillance d'organe en réanimation. Sa version rapide, le qSOFA, dépiste le sepsis au lit du patient.",
+  "dom": "Physiopathologie"
  },
  "sommation": {
   "t": "Sommation",
@@ -4702,20 +6717,85 @@ window.GLOSSAIRE = {
   "d": "Glissement d'une vertèbre vers l'avant par rapport à celle du dessous.",
   "dom": "Musculo-squelettique"
  },
+ "spss": {
+  "t": "SPSS — logiciel de statistiques",
+  "d": "Logiciel d'analyse statistique très répandu en recherche clinique.",
+  "dom": "Recherche"
+ },
  "spurling": {
   "t": "Test de Spurling",
   "d": "Extension, inclinaison et rotation de la nuque du côté douloureux, avec compression axiale. Reproduit la douleur d'une radiculopathie cervicale.",
   "dom": "Musculo-squelettique"
+ },
+ "squire": {
+  "t": "SQUIRE — checklist des travaux d'amélioration de la qualité",
+  "d": "Liste de contrôle pour publier une démarche d'amélioration des soins.",
+  "dom": "Recherche"
+ },
+ "sr_revue": {
+  "t": "RS — revue systématique",
+  "d": "Synthèse exhaustive et reproductible de la littérature sur une question précise ; neuf phases, environ un an.",
+  "dom": "Recherche"
+ },
+ "sr_systematic": {
+  "t": "SR — systematic review",
+  "d": "La revue systématique en anglais. On la retrouve dans le nom des grilles, comme INSPECT-SR.",
+  "dom": "Recherche"
  },
  "sraa": {
   "t": "SRAA — système rénine-angiotensine-aldostérone",
   "d": "Cascade hormonale déclenchée par la baisse de pression rénale : elle retient le sodium et l'eau, et remonte la pression artérielle.",
   "dom": "Physiologie"
  },
+ "sras": {
+  "t": "SRAS — syndrome respiratoire aigu sévère",
+  "d": "Pneumonie virale grave due à un coronavirus ; le SARS-CoV-2 en est le second représentant.",
+  "dom": "Physiopathologie"
+ },
+ "srdq": {
+  "t": "SRDQ — questionnaire d'auto-évaluation du handicap",
+  "d": "Auto-questionnaire du retentissement fonctionnel rempli par le patient.",
+  "dom": "Démarche clinique"
+ },
+ "srm": {
+  "t": "SRAA — système rénine-angiotensine-aldostérone",
+  "d": "Cascade hormonale qui remonte la pression artérielle en contractant les vaisseaux et en retenant le sel.",
+  "dom": "Physiologie"
+ },
+ "srm_sigle": {
+  "t": "SRM — standardized response mean",
+  "d": "Indice de sensibilité au changement d'une échelle : plus il est élevé, mieux l'outil détecte une évolution.",
+  "dom": "Recherche"
+ },
+ "ssc": {
+  "t": "SSC — cycle étirement-détente",
+  "d": "Stretch-shortening cycle : un étirement rapide précède la contraction et augmente la force produite. Principe de la pliométrie.",
+  "dom": "EAIF"
+ },
+ "ssp": {
+  "t": "SSP — trajectoires socio-économiques partagées",
+  "d": "Scénarios du GIEC qui combinent hypothèses démographiques, économiques et politiques pour projeter le climat futur.",
+  "dom": "SVT"
+ },
+ "ssqol": {
+  "t": "SS-QOL — qualité de vie après AVC",
+  "d": "Stroke-Specific Quality of Life : questionnaire coté de 1 à 5, spécifique des suites d'accident vasculaire cérébral.",
+  "dom": "Neurologie"
+ },
+ "st_qt_pr": {
+  "t": "Segment ST, intervalle QT, intervalle PR — repères de l'ECG",
+  "d": "Le segment ST explore la repolarisation, l'intervalle QT la durée totale de l'activité ventriculaire, l'intervalle PR la conduction auriculo-ventriculaire.",
+  "dom": "Cardio-respiratoire"
+ },
  "stabilisateur": {
   "t": "Stabilisateur",
   "d": "Muscle qui fixe un segment pour que le mouvement se fasse ailleurs. Il ne produit pas le geste, il le rend possible.",
   "dom": "Biomécanique"
+ },
+ "staccato": {
+  "t": "Rythme staccato",
+  "d": "Mobilisation passive appliquée par à-coups rapides en fin d'amplitude, pour gagner sur la raideur plutôt que sur la douleur.",
+  "dom": "EAIF"
  },
  "steatohepatite": {
   "t": "Stéatohépatite",
@@ -4802,6 +6882,11 @@ window.GLOSSAIRE = {
   "d": "La vulnérabilité particulière d'un individu à une maladie ou à un traitement, d'origine génétique ou acquise.",
   "dom": "Physiopathologie"
  },
+ "swt": {
+  "t": "SWT — Shuttle Walk Test",
+  "d": "Marche en navette entre deux plots, à rythme imposé croissant : mesure la tolérance à l'effort.",
+  "dom": "Cardio-respiratoire"
+ },
  "symbolique": {
   "t": "Fonction symbolique",
   "d": "La capacité d'évoquer par un signe ce qui est absent : mot, image, jeu de faire-semblant. Elle ouvre le stade préopératoire.",
@@ -4872,10 +6957,50 @@ window.GLOSSAIRE = {
   "d": "Mesure la spasticité en comparant l'amplitude obtenue à vitesse lente et à vitesse rapide. Contrairement à Ashworth, elle sépare la raideur vraie du réflexe d'étirement.",
   "dom": "Neurologie"
  },
+ "tb_sigle": {
+  "t": "TB — tuberculose",
+  "d": "Infection par Mycobacterium tuberculosis, le plus souvent pulmonaire, parfois osseuse ou vertébrale.",
+  "dom": "Physiopathologie"
+ },
+ "tbc_sigle": {
+  "t": "TBC — tuberculose",
+  "d": "Autre abréviation de la tuberculose, notamment comme cause d'épanchement pleural.",
+  "dom": "Physiopathologie"
+ },
+ "tc_sigle": {
+  "t": "TC — tronc cérébral",
+  "d": "Bulbe, pont et mésencéphale : lieu de croisement des voies longues et siège des noyaux des nerfs crâniens.",
+  "dom": "Anatomie"
+ },
+ "tca_sigle": {
+  "t": "TCA — temps de céphaline activée",
+  "d": "Test de la voie intrinsèque de la coagulation, utilisé pour surveiller l'héparine.",
+  "dom": "Physiopathologie"
+ },
+ "tce": {
+  "t": "TCE — traumatisme crânio-encéphalique",
+  "d": "Choc sur le crâne avec retentissement cérébral, de la commotion simple à l'hématome compressif.",
+  "dom": "Neurologie"
+ },
+ "tcl": {
+  "t": "TCL — théorème central limite",
+  "d": "Au-delà d'une trentaine de sujets, la moyenne d'un échantillon suit une loi normale, ce qui autorise les tests paramétriques.",
+  "dom": "Recherche"
+ },
+ "tcp_tcd": {
+  "t": "TCP, TCD — tubes contournés du néphron",
+  "d": "Tube contourné proximal, où se fait l'essentiel de la réabsorption, et tube contourné distal, lieu du réglage fin par l'aldostérone.",
+  "dom": "Anatomie"
+ },
  "tdm": {
   "t": "TDM — tomodensitométrie",
   "d": "Le scanner : des coupes reconstruites à partir de l'atténuation des rayons X, chiffrée en unités Hounsfield.",
   "dom": "Physiopathologie"
+ },
+ "tee": {
+  "t": "TEE — technique d'expansion thoracique",
+  "d": "Inspirations amples, parfois avec pause, pour recruter les territoires mal ventilés. Deuxième temps de l'ACBT.",
+  "dom": "Cardio-respiratoire"
  },
  "tendinopathie": {
   "t": "Tendinopathie",
@@ -4907,6 +7032,11 @@ window.GLOSSAIRE = {
   "d": "Paralysie des quatre membres, par lésion médullaire cervicale.",
   "dom": "Neurologie"
  },
+ "tf_sigle": {
+  "t": "TF — facteur tissulaire",
+  "d": "Déclencheur de la voie extrinsèque de la coagulation ; son excès est au départ de la CIVD.",
+  "dom": "Physiopathologie"
+ },
  "tfg": {
   "t": "TFG — taux de filtration glomérulaire",
   "d": "Volume de plasma filtré par les glomérules par minute. C'est l'indicateur de référence de la fonction rénale.",
@@ -4917,10 +7047,40 @@ window.GLOSSAIRE = {
   "d": "Muscle latéral de la hanche prolongé par la bandelette ilio-tibiale. Sa rétraction est recherchée par le test d'Ober.",
   "dom": "Musculo-squelettique"
  },
+ "tfpi": {
+  "t": "TFPI — inhibiteur de la voie du facteur tissulaire",
+  "d": "Frein naturel de la coagulation, qui limite l'activation déclenchée par le facteur tissulaire.",
+  "dom": "Physiopathologie"
+ },
+ "tgb": {
+  "t": "TGB — thyroglobuline",
+  "d": "Protéine du follicule thyroïdien sur laquelle sont fabriquées puis stockées les hormones T3 et T4.",
+  "dom": "Physiologie"
+ },
+ "tgf": {
+  "t": "TGF-β — facteur de croissance transformant bêta",
+  "d": "Cytokine de la réparation : elle stimule la synthèse de collagène, au risque de la fibrose.",
+  "dom": "Physiologie"
+ },
+ "tgo_tgp": {
+  "t": "TGO, TGP — transaminases",
+  "d": "Enzymes hépatiques dont l'élévation signe une souffrance des cellules du foie.",
+  "dom": "Physiopathologie"
+ },
+ "thc": {
+  "t": "THC — tétrahydrocannabinol",
+  "d": "Principe actif du cannabis, qui augmente la libération de dopamine dans le circuit de la récompense.",
+  "dom": "Pharmacologie"
+ },
  "thermoregulation": {
   "t": "Thermorégulation",
   "d": "Le maintien de la température centrale autour de 37 °C, piloté par l'hypothalamus.",
   "dom": "Physiologie"
+ },
+ "thg": {
+  "t": "THG — transfert horizontal de gènes",
+  "d": "Passage de gènes entre organismes sans lien de descendance, par conjugaison, transduction ou transformation.",
+  "dom": "SVT"
  },
  "thomas": {
   "t": "Test de Thomas",
@@ -4972,6 +7132,11 @@ window.GLOSSAIRE = {
   "d": "Caillot formé dans un vaisseau et qui y reste. S'il se détache et migre, il devient une embolie.",
   "dom": "Cardio-respiratoire"
  },
+ "ths": {
+  "t": "THS — traitement hormonal substitutif",
+  "d": "Apport d'œstrogènes après la ménopause, qui ralentit la perte osseuse.",
+  "dom": "Pharmacologie"
+ },
  "thymome": {
   "t": "Thymome",
   "d": "Tumeur du thymus, souvent associée à une myasthénie.",
@@ -5002,6 +7167,16 @@ window.GLOSSAIRE = {
   "d": "Évalue séparément l'équilibre et la marche, sur 28 points. Un score bas annonce les chutes chez la personne âgée.",
   "dom": "Neurologie"
  },
+ "tis": {
+  "t": "TIS — Trunk Impairment Scale",
+  "d": "Échelle du contrôle du tronc après AVC, cotée de 0 à 23 : équilibre assis statique, dynamique et coordination.",
+  "dom": "Neurologie"
+ },
+ "tlr": {
+  "t": "TLR — récepteurs de type Toll",
+  "d": "Capteurs de l'immunité innée qui reconnaissent les motifs microbiens et lancent la réponse inflammatoire.",
+  "dom": "Physiopathologie"
+ },
  "tms": {
   "t": "TMS — troubles musculo-squelettiques",
   "d": "Atteintes d'origine professionnelle liées aux gestes répétitifs, aux postures contraignantes et aux efforts.",
@@ -5011,6 +7186,16 @@ window.GLOSSAIRE = {
   "t": "TNF — tumor necrosis factor",
   "d": "Cytokine de l'inflammation. Dans l'ostéoporose post-ménopausique, sa montée active les ostéoclastes.",
   "dom": "Physiopathologie"
+ },
+ "tnm": {
+  "t": "TNM — tumeur, nodule, métastase",
+  "d": "Classification internationale des cancers : taille de la tumeur, atteinte ganglionnaire, présence de métastases.",
+  "dom": "Physiopathologie"
+ },
+ "toc": {
+  "t": "TOC — trouble obsessionnel compulsif",
+  "d": "Pensées intrusives répétées et rituels destinés à faire baisser l'angoisse qu'elles provoquent.",
+  "dom": "Psychologie"
  },
  "topodiagnostic": {
   "t": "Topodiagnostic",
@@ -5057,10 +7242,20 @@ window.GLOSSAIRE = {
   "d": "Liquide pauvre en protéines, dû à un déséquilibre des pressions et non à une inflammation.",
   "dom": "Physiopathologie"
  },
+ "trend": {
+  "t": "TREND — checklist des études non randomisées",
+  "d": "Liste de contrôle pour les évaluations d'intervention sans tirage au sort.",
+  "dom": "Recherche"
+ },
  "trendelenburg": {
   "t": "Signe de Trendelenburg",
   "d": "En appui sur une jambe, le bassin bascule du côté opposé : les abducteurs de hanche — moyen fessier en tête — ne tiennent pas.",
   "dom": "Musculo-squelettique"
+ },
+ "trh": {
+  "t": "TRH — thyréolibérine",
+  "d": "Hormone hypothalamique qui stimule la sécrétion de TSH par l'hypophyse.",
+  "dom": "Physiologie"
  },
  "tricuspide": {
   "t": "Valves auriculo-ventriculaires",
@@ -5107,20 +7302,90 @@ window.GLOSSAIRE = {
   "d": "Protéine du filament fin qui démasque les sites de fixation de la myosine quand le calcium s'y lie. Dosée dans le sang, elle signe la souffrance du myocarde.",
   "dom": "Physiologie"
  },
+ "trpv1": {
+  "t": "TRPV1 — récepteur vanilloïde",
+  "d": "Canal des terminaisons nociceptives activé par la chaleur et la capsaïcine ; impliqué dans l'action centrale du paracétamol.",
+  "dom": "Pharmacologie"
+ },
+ "tsh": {
+  "t": "TSH — thyréostimuline",
+  "d": "Hormone hypophysaire qui commande la thyroïde. Son dosage est le premier test devant une suspicion de dysthyroïdie.",
+  "dom": "Physiopathologie"
+ },
+ "tsm_sigle": {
+  "t": "TSM — travail statique maintenu",
+  "d": "Contraction tenue sans mouvement, utilisée pour l'endurance posturale.",
+  "dom": "EAIF"
+ },
+ "tso": {
+  "t": "TSO — traitement substitutif de l'ostéoporose",
+  "d": "Ensemble des traitements qui freinent la perte osseuse : bisphosphonates, calcitonine, parathormone.",
+  "dom": "Pharmacologie"
+ },
  "tt": {
   "t": "TT — articulation tibio-tarsienne",
   "d": "La cheville proprement dite, entre tibia, fibula et talus. Mouvements principaux : flexion dorsale et flexion plantaire.",
   "dom": "Musculo-squelettique"
+ },
+ "tta": {
+  "t": "TTA — tubérosité tibiale antérieure",
+  "d": "Relief osseux sous la rotule où se termine le tendon rotulien. Repère d'ancrage en taping.",
+  "dom": "Anatomie"
  },
  "tuberculose": {
   "t": "Tuberculose",
   "d": "Infection par le bacille de Koch, à tropisme surtout pulmonaire, qui forme des granulomes à nécrose caséeuse.",
   "dom": "Physiopathologie"
  },
+ "tug": {
+  "t": "TUG — Timed Up and Go",
+  "d": "Se lever d'une chaise, marcher trois mètres, faire demi-tour et se rasseoir, chronométré. Test rapide de mobilité fonctionnelle et de risque de chute.",
+  "dom": "Neurologie"
+ },
+ "tvp": {
+  "t": "TVP — thrombose veineuse profonde",
+  "d": "Caillot dans une veine profonde, le plus souvent au mollet. Risque majeur : la migration vers l'artère pulmonaire.",
+  "dom": "Cardio-respiratoire"
+ },
+ "uc_module": {
+  "t": "UC — unité de cours",
+  "d": "L'unité d'enseignement, évaluée en deux temps par des fiches écrites individuelles.",
+  "dom": "Recherche"
+ },
+ "ue_bpco": {
+  "t": "UE — Union européenne",
+  "d": "Cadre de comparaison des dépenses de santé : la BPCO y pèse plus de la moitié du budget respiratoire.",
+  "dom": "Sociologie"
+ },
+ "uh": {
+  "t": "UH — unité Hounsfield",
+  "d": "Échelle de densité du scanner : −1000 pour l'air, 0 pour l'eau, +1000 pour l'os compact.",
+  "dom": "Physiopathologie"
+ },
+ "ui_sigle": {
+  "t": "UI — unité internationale",
+  "d": "Unité de dosage propre à chaque substance biologique, comme les 400 à 800 UI de vitamine D par jour.",
+  "dom": "Pharmacologie"
+ },
  "ulceration": {
   "t": "Ulcération",
   "d": "Perte de substance d'un revêtement — peau ou muqueuse — qui met le tissu sous-jacent à nu.",
   "dom": "Physiopathologie"
+ },
+ "ulnt": {
+  "t": "ULNT — tests de tension des nerfs du membre supérieur",
+  "d": "Séquences de mise en tension qui orientent vers une origine neurale : ULNT1 pour le médian, ULNT3 pour l'ulnaire.",
+  "dom": "Musculo-squelettique"
+ },
+ "um_sigle": {
+  "t": "UM — unité motrice",
+  "d": "Un motoneurone et toutes les fibres musculaires qu'il commande. Le recrutement des unités motrices gradue la force.",
+  "dom": "Neurologie"
+ },
+ "umn": {
+  "t": "UMN — neurone moteur supérieur",
+  "d": "Le motoneurone central, du cortex à la moelle. Son atteinte donne spasticité et hyperréflexie.",
+  "dom": "Neurologie"
  },
  "updrs": {
   "t": "MDS-UPDRS",
@@ -5146,6 +7411,11 @@ window.GLOSSAIRE = {
   "t": "Utricule et saccule",
   "d": "Les deux organes otolithiques du vestibule : ils détectent les accélérations linéaires et la position de la tête.",
   "dom": "Neurologie"
+ },
+ "uv_sigle": {
+  "t": "UV — ultraviolets",
+  "d": "Rayonnement solaire invisible qui stimule la mélanine mais lèse l'ADN des kératinocytes : premier facteur de risque de mélanome.",
+  "dom": "Physiologie"
  },
  "valgum": {
   "t": "Valgum et varum",
@@ -5192,9 +7462,24 @@ window.GLOSSAIRE = {
   "d": "Élargissement du calibre des vaisseaux : le débit local augmente et la pression artérielle baisse.",
   "dom": "Cardio-respiratoire"
  },
+ "vbp": {
+  "t": "VBP — voie biliaire principale",
+  "d": "Canal cholédoque formé par la réunion des canaux hépatiques droit et gauche, qui conduit la bile au duodénum.",
+  "dom": "Anatomie"
+ },
+ "vc_pc": {
+  "t": "VC, PC — modes ventilatoires",
+  "d": "Volume contrôlé, où la machine impose le volume, et pression contrôlée, où elle impose la pression.",
+  "dom": "Cardio-respiratoire"
+ },
  "vci": {
   "t": "VCI — veine cave inférieure",
   "d": "Gros tronc veineux qui ramène le sang de l'abdomen et des membres inférieurs vers l'oreillette droite.",
+  "dom": "Anatomie"
+ },
+ "vci_vcs": {
+  "t": "VCI, VCS — veines caves",
+  "d": "Veine cave inférieure et veine cave supérieure, qui ramènent le sang désoxygéné à l'oreillette droite.",
   "dom": "Anatomie"
  },
  "vcs": {
@@ -5206,6 +7491,21 @@ window.GLOSSAIRE = {
   "t": "VD — variable dépendante",
   "d": "Ce que l'on mesure : la variable supposée varier sous l'effet de l'intervention.",
   "dom": "Recherche"
+ },
+ "vdc": {
+  "t": "VDC — vérification des connaissances",
+  "d": "Méthode de l'exercice 1 du Bac SVT : extraire, mettre en relation puis conclure à partir des documents.",
+  "dom": "SVT"
+ },
+ "vegf": {
+  "t": "VEGF — facteur de croissance de l'endothélium vasculaire",
+  "d": "Déclenche la formation de nouveaux vaisseaux, dans la cicatrisation comme dans la tumeur.",
+  "dom": "Physiologie"
+ },
+ "vem_sigle": {
+  "t": "VEM — volume de l'espace mort",
+  "d": "Partie du volume courant qui n'atteint pas les alvéoles et ne participe pas aux échanges.",
+  "dom": "Cardio-respiratoire"
  },
  "vems": {
   "t": "VEMS — volume expiratoire maximal en 1 seconde",
@@ -5222,25 +7522,75 @@ window.GLOSSAIRE = {
   "d": "Illusion de mouvement, de soi ou du décor. À distinguer du malaise et de l'instabilité, qui ne tournent pas.",
   "dom": "Neurologie"
  },
+ "vhb_vhc": {
+  "t": "VHB, VHC — virus des hépatites B et C",
+  "d": "Virus à tropisme hépatique, responsables d'hépatites chroniques, de cirrhose et de cancer du foie.",
+  "dom": "Physiopathologie"
+ },
  "vi": {
   "t": "VI — variable indépendante",
   "d": "Ce que l'on manipule : l'intervention ou le facteur dont on teste l'effet.",
   "dom": "Recherche"
+ },
+ "vi_ve": {
+  "t": "VI, VE — validités interne et externe",
+  "d": "La validité interne juge si le résultat est vrai dans l'étude ; la validité externe, s'il est transposable ailleurs.",
+  "dom": "Recherche"
+ },
+ "vih": {
+  "t": "VIH — virus de l'immunodéficience humaine",
+  "d": "Rétrovirus qui détruit les lymphocytes T CD4 et conduit au sida en l'absence de traitement.",
+  "dom": "Physiopathologie"
  },
  "virulence": {
   "t": "Virulence",
   "d": "La capacité d'un germe à provoquer des dégâts. Distincte de la contagiosité, qui est sa capacité à se transmettre.",
   "dom": "Physiopathologie"
  },
+ "vm_sigle": {
+  "t": "VM — ventilation mécanique",
+  "d": "Suppléance respiratoire par machine, invasive ou non.",
+  "dom": "Cardio-respiratoire"
+ },
+ "vmi": {
+  "t": "VMI — ventilation mécanique invasive",
+  "d": "Ventilation délivrée par sonde d'intubation ou trachéotomie, par opposition à la VNI.",
+  "dom": "Cardio-respiratoire"
+ },
+ "vms": {
+  "t": "VMS — veine mésentérique supérieure",
+  "d": "Elle draine l'intestin grêle et rejoint la veine splénique pour former la veine porte.",
+  "dom": "Anatomie"
+ },
+ "vni": {
+  "t": "VNI — ventilation non invasive",
+  "d": "Assistance respiratoire délivrée par un masque, sans intubation. Elle soulage les muscles inspiratoires et corrige l'hypercapnie.",
+  "dom": "Cardio-respiratoire"
+ },
  "vo2max": {
   "t": "VO₂ max",
   "d": "Consommation maximale d'oxygène, plafond de la capacité aérobie d'un individu.",
   "dom": "Physiologie"
  },
+ "voies_sc_im": {
+  "t": "SC, IM, IV, PO — voies d'administration",
+  "d": "Sous-cutanée, absorption lente ; intramusculaire, uniforme ; intraveineuse, biodisponibilité totale mais la plus risquée ; per os, soumise au premier passage hépatique.",
+  "dom": "Pharmacologie"
+ },
  "volcanisme": {
   "t": "Volcanisme",
   "d": "Remontée de magma en surface. Il accompagne les dorsales, les zones de subduction et les points chauds.",
   "dom": "SVT"
+ },
+ "vor": {
+  "t": "VOR — réflexe vestibulo-oculaire",
+  "d": "Stabilise le regard pendant les mouvements de tête. Son atteinte donne une vision instable à la marche.",
+  "dom": "Neurologie"
+ },
+ "vpl": {
+  "t": "VPL — noyau ventro-postéro-latéral du thalamus",
+  "d": "Relais thalamique de la sensibilité du corps avant son arrivée au cortex pariétal.",
+  "dom": "Neurologie"
  },
  "vr": {
   "t": "VR — volume résiduel",
@@ -5257,6 +7607,11 @@ window.GLOSSAIRE = {
   "d": "Volume que l'on peut encore inspirer au-delà d'une inspiration courante.",
   "dom": "Cardio-respiratoire"
  },
+ "vrs": {
+  "t": "VRS — virus respiratoire syncytial",
+  "d": "Virus responsable de la majorité des bronchiolites du nourrisson.",
+  "dom": "Cardio-respiratoire"
+ },
  "vt": {
   "t": "VT — volume courant",
   "d": "Volume mobilisé à chaque cycle respiratoire au repos, de l'ordre d'un demi-litre chez l'adulte.",
@@ -5266,6 +7621,11 @@ window.GLOSSAIRE = {
   "t": "Vygotsky",
   "d": "Psychologue du développement pour qui l'apprentissage précède et tire la maturation, grâce à l'étayage d'un adulte ou d'un pair.",
   "dom": "Psychologie"
+ },
+ "wai": {
+  "t": "WAI — Work Ability Index",
+  "d": "Indice d'aptitude au travail, qui confronte les exigences du poste aux ressources de la personne.",
+  "dom": "Sociologie"
  },
  "warfarine": {
   "t": "Warfarine",
@@ -5277,10 +7637,20 @@ window.GLOSSAIRE = {
   "d": "Fondateur du behaviorisme : seul le comportement observable compte, et tout s'apprend par conditionnement.",
   "dom": "Psychologie"
  },
+ "wcpt": {
+  "t": "WCPT — confédération mondiale de physiothérapie",
+  "d": "Organisation internationale qui fédère les associations nationales de kinésithérapie.",
+  "dom": "Recherche"
+ },
  "weber-rinne": {
   "t": "Weber et Rinne",
   "d": "Deux épreuves au diapason qui séparent une surdité de transmission d'une surdité de perception : Weber compare les deux oreilles, Rinne compare l'air et l'os d'un même côté.",
   "dom": "Neurologie"
+ },
+ "who_oms": {
+  "t": "WHO — Organisation mondiale de la santé",
+  "d": "L'OMS en français : agence des Nations unies pour la santé, à l'origine de la CIF et de la CIM.",
+  "dom": "Démarche clinique"
  },
  "wilson": {
   "t": "Cycle de Wilson",
@@ -5297,10 +7667,20 @@ window.GLOSSAIRE = {
   "d": "Abduction et rotation externe du bras : recherche une compression sous le petit pectoral, autre site du défilé thoraco-brachial.",
   "dom": "Musculo-squelettique"
  },
+ "xyy_xo": {
+  "t": "XYY, XO — anomalies des chromosomes sexuels",
+  "d": "XYY donne un développement masculin peu marqué par l'anomalie ; XO, un seul X, définit le syndrome de Turner.",
+  "dom": "SVT"
+ },
  "yergason": {
   "t": "Test de Yergason",
   "d": "Supination contrariée, coude fléchi à 90°. Douleur dans la gouttière bicipitale : long biceps.",
   "dom": "Musculo-squelettique"
+ },
+ "zgc": {
+  "t": "ZGC — zone gâchette chémoréceptrice",
+  "d": "Zone du tronc cérébral, hors barrière hémato-encéphalique, qui détecte les toxiques sanguins et déclenche le vomissement.",
+  "dom": "Physiologie"
  },
  "zpd": {
   "t": "ZPD — zone proximale de développement",

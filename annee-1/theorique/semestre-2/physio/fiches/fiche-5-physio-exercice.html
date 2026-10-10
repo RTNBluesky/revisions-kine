@@ -523,7 +523,7 @@ ul li::before { content: '›'; position: absolute; left: 4px; color: var(--text
                   <div class="kv-row"><span class="kv-key">Sarcolemme</span><span class="kv-val">Membrane plasmique de la fibre musculaire</span></div>
                   <div class="kv-row"><span class="kv-key">Tubules T</span><span class="kv-val">Invaginations du sarcolemme, transmettent le PA en profondeur</span></div>
                   <div class="kv-row"><span class="kv-key">Réticulum <span class="def" data-terme="sarcoplasmique">sarcoplasmique</span></span><span class="kv-val">Stockage et libération du Ca²⁺ (déclencheur de la contraction)</span></div>
-                  <div class="kv-row"><span class="kv-key">Triade</span><span class="kv-val">Tubule T + 2 citernes du RS (jonction tripartite)</span></div>
+                  <div class="kv-row"><span class="kv-key">Triade</span><span class="kv-val">Tubule T + 2 citernes du <span class="def" data-terme="rs_sigle">RS</span> (jonction tripartite)</span></div>
                   <div class="kv-row"><span class="kv-key">Mitochondries</span><span class="kv-val">Production d'<span class="def" data-terme="atp">ATP</span> (voie aérobie)</span></div>
                   <div class="kv-row"><span class="kv-key">Noyaux</span><span class="kv-val">Multiples par fibre (cellule multinucléée)</span></div>
                 </div>
@@ -626,7 +626,7 @@ ul li::before { content: '›'; position: absolute; left: 4px; color: var(--text
                   </thead>
                   <tbody>
                     <tr><td>Débit cardiaque</td><td>5 L/min</td><td>25–30 L/min</td></tr>
-                    <tr><td>FC (fréquence cardiaque)</td><td>70–80 cycles/min</td><td>~160 cycles/min</td></tr>
+                    <tr><td><span class="def" data-terme="fc">FC</span> (fréquence cardiaque)</td><td>70–80 cycles/min</td><td>~160 cycles/min</td></tr>
                     <tr><td>Débit musculaire</td><td>15–20% DC</td><td>15–20 L/min (×20)</td></tr>
                     <tr><td>Ventilation (air)</td><td>6 L/min</td><td>jusqu'à 100 L/min</td></tr>
                     <tr><td>FC athlète</td><td></td><td>×6 de la valeur repos</td></tr>
@@ -813,10 +813,10 @@ ul li::before { content: '›'; position: absolute; left: 4px; color: var(--text
                 <h3><span class="dot"></span>Définitions fondamentales</h3>
                 <div class="kv">
                   <div class="kv-row"><span class="kv-key">Métabolisme</span><span class="kv-val">Ensemble des processus d'acquisition et d'utilisation d'énergie (<span class="def" data-terme="catabolisme">catabolisme</span> + anabolisme)</span></div>
-                  <div class="kv-row"><span class="kv-key">Catabolisme</span><span class="kv-val">Dégradation de molécules complexes → énergie libérée → resynthèse ATP/NADH <a class="schema-lien" href="https://commons.wikimedia.org/wiki/File:Respiration_cellulaire_sch%C3%A9ma_global.png" target="_blank" rel="noopener" title="Respiration cellulaire — schéma libre de droits sur Wikimédia Commons (nouvel onglet)" aria-label="Voir le schéma : Respiration cellulaire">🖼</a></span></div>
-                  <div class="kv-row"><span class="kv-key">Anabolisme</span><span class="kv-val">Biosynthèse à partir de <span class="def" data-terme="pyruvate">pyruvate</span>, acétyl-CoA, intermédiaires TCA</span></div>
+                  <div class="kv-row"><span class="kv-key">Catabolisme</span><span class="kv-val">Dégradation de molécules complexes → énergie libérée → resynthèse ATP/<span class="def" data-terme="nadh">NADH</span> <a class="schema-lien" href="https://commons.wikimedia.org/wiki/File:Respiration_cellulaire_sch%C3%A9ma_global.png" target="_blank" rel="noopener" title="Respiration cellulaire — schéma libre de droits sur Wikimédia Commons (nouvel onglet)" aria-label="Voir le schéma : Respiration cellulaire">🖼</a></span></div>
+                  <div class="kv-row"><span class="kv-key">Anabolisme</span><span class="kv-val">Biosynthèse à partir de <span class="def" data-terme="pyruvate">pyruvate</span>, acétyl-CoA, intermédiaires <span class="def" data-terme="tca_sigle">TCA</span></span></div>
                   <div class="kv-row"><span class="kv-key"><span class="def" data-terme="metabolite">Métabolites</span></span><span class="kv-val">Produits intermédiaires ou finaux des voies métaboliques</span></div>
-                  <div class="kv-row"><span class="kv-key">Acétyl-CoA</span><span class="kv-val">Intermédiaire clé de <span class="def" data-terme="convergence">convergence</span> de l'oxydation des glucides, lipides, AA</span></div>
+                  <div class="kv-row"><span class="kv-key">Acétyl-CoA</span><span class="kv-val">Intermédiaire clé de <span class="def" data-terme="convergence">convergence</span> de l'oxydation des glucides, lipides, <span class="def" data-terme="aa_bb_dd">AA</span></span></div>
                   <div class="kv-row"><span class="kv-key">ATP musculaire</span><span class="kv-val">Concentration ~6 mM/kg → seulement quelques secondes de contraction</span></div>
                 </div>
               </div>
@@ -833,7 +833,7 @@ ul li::before { content: '›'; position: absolute; left: 4px; color: var(--text
                   </div>
                   <div class="kv-row">
                     <span class="kv-key">💪 Muscle</span>
-                    <span class="kv-val">Utilise glucose, AG, corps cétoniques, AA. Réserve de <span class="def" data-terme="phosphocreatine">phosphocréatine</span> (PCr → ATP sans dépenser glucose).</span>
+                    <span class="kv-val">Utilise glucose, <span class="def" data-terme="ag_sigle">AG</span>, corps cétoniques, AA. Réserve de <span class="def" data-terme="phosphocreatine">phosphocréatine</span> (PCr → ATP sans dépenser glucose).</span>
                   </div>
                 </div>
               </div>
@@ -851,7 +851,7 @@ ul li::before { content: '›'; position: absolute; left: 4px; color: var(--text
                 </div>
                 <div class="card" style="border-top: 3px solid var(--accent2);">
                   <div class="card-title" style="color:var(--accent2)">③ Aérobie</div>
-                  <p>Krebs + CTE → CO₂ + H₂O<br><span class="hl-green">Durée illimitée si substrat</span></p>
+                  <p>Krebs + <span class="def" data-terme="cte">CTE</span> → CO₂ + H₂O<br><span class="hl-green">Durée illimitée si substrat</span></p>
                 </div>
               </div>
             </div>
@@ -984,7 +984,7 @@ ul li::before { content: '›'; position: absolute; left: 4px; color: var(--text
                   <div class="step"><div class="step-num step-green">1</div><div class="step-text"><strong>Phosphorylation du glucose</strong> → Glucose-6-P (consomme 1 ATP, enzyme : hexokinase)</div></div>
                   <div class="step"><div class="step-num step-green">2</div><div class="step-text"><strong>Isomérisation</strong> G-6-P → Fructose-6-P (phosphoglucose isomérase)</div></div>
                   <div class="step"><div class="step-num step-green">3</div><div class="step-text"><strong>Phosphorylation</strong> F-6-P → Fructose-1,6-bisP (consomme 1 ATP, enzyme clé : <span class="hl-green">phosphofructokinase</span>)</div></div>
-                  <div class="step"><div class="step-num step-green">4</div><div class="step-text"><strong>Clivage</strong> F-1,6-bisP → DHAP + G-3-P (aldolase)</div></div>
+                  <div class="step"><div class="step-num step-green">4</div><div class="step-text"><strong>Clivage</strong> F-1,6-bisP → <span class="def" data-terme="dhap">DHAP</span> + G-3-P (aldolase)</div></div>
                   <div class="step"><div class="step-num step-green">5</div><div class="step-text"><strong>Isomérisation</strong> DHAP → G-3-P (triose phosphate isomérase)</div></div>
                 </div>
               </div>
@@ -1009,7 +1009,7 @@ ul li::before { content: '›'; position: absolute; left: 4px; color: var(--text
                 </div>
                 <div class="card">
                   <div class="card-title" style="color:var(--accent3)">En anaérobie (<span class="def" data-terme="fermentation">fermentation</span>)</div>
-                  <p>Le pyruvate est réduit en <strong>lactate</strong> (muscles) ou en <strong>éthanol + CO₂</strong> (levures). Réoxyde le NADH → NAD⁺ pour maintenir la <span class="def" data-terme="glycolyse">glycolyse</span>.</p>
+                  <p>Le pyruvate est réduit en <strong>lactate</strong> (muscles) ou en <strong>éthanol + CO₂</strong> (levures). Réoxyde le NADH → <span class="def" data-terme="nad_gtp">NAD</span>⁺ pour maintenir la <span class="def" data-terme="glycolyse">glycolyse</span>.</p>
                 </div>
               </div>
             </div>
