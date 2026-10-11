@@ -15,18 +15,21 @@
   --text-secondary: #9aa3b8;
   --text-muted: #6a7388;
 
-  /* Couleurs par système */
-  --c-digestif: var(--accent-4, #ff8fa3);
+  /* Couleurs par système : une seule teinte, celle du thème choisi.
+     On ne redéfinit jamais --accent à partir de ces variables : --accent-4
+     dérive lui-même de --accent (themes.css), et la boucle rendrait toute
+     la famille invalide — les couleurs retomberaient alors sur le rose de
+     repli, quel que soit le thème. */
+  --c-digestif: var(--accent, #ff6b9d);
   --c-digestif-soft: rgba(var(--accent-rgb, 255,107,157), 0.15);
-  --c-urinaire: var(--accent-4, #ff8fa3);
+  --c-urinaire: var(--accent, #ff6b9d);
   --c-urinaire-soft: rgba(var(--accent-rgb, 255,107,157), 0.15);
-  --c-cardio: #20243a;
-  --c-cardio-soft: rgba(var(--accent-2-rgb, 255,92,107), 0.15);
-  --c-respi: var(--accent-3, #f472b6);
+  --c-cardio: var(--accent, #ff6b9d);
+  --c-cardio-soft: rgba(var(--accent-rgb, 255,107,157), 0.15);
+  --c-respi: var(--accent, #ff6b9d);
   --c-respi-soft: rgba(var(--accent-rgb, 255,107,157), 0.15);
 
-  --accent: var(--c-urinaire);
-  --accent-soft: var(--c-urinaire-soft);
+  --accent-soft: rgba(var(--accent-rgb, 255,107,157), 0.15);
 }
 
 html {
@@ -591,11 +594,13 @@ footer {
   .nav-btn { min-width: 100%; }
 }
 
-/* Couleurs accent par système (override via class sur body) */
-body.theme-digestif { --accent: var(--c-digestif); --accent-soft: var(--c-digestif-soft); }
-body.theme-urinaire { --accent: var(--c-urinaire); --accent-soft: var(--c-urinaire-soft); }
-body.theme-cardio   { --accent: var(--c-cardio);   --accent-soft: var(--c-cardio-soft); }
-body.theme-respi    { --accent: var(--c-respi);    --accent-soft: var(--c-respi-soft); }
+/* Les quatre systèmes partagent désormais la couleur du thème : plus de
+   redéfinition de --accent ici (c'était l'autre moitié de la boucle), seul
+   le voile de fond reste déclaré. */
+body.theme-digestif,
+body.theme-urinaire,
+body.theme-cardio,
+body.theme-respi { --accent-soft: rgba(var(--accent-rgb, 255,107,157), 0.15); }
 
 /* ========== QCM ========== */
 .qcm-list {

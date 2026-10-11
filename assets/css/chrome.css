@@ -336,7 +336,7 @@ nav.topnav, .topbar, nav.fiche-nav { display: none; }
 }
 .infini-fiche:hover { text-decoration: underline; }
 .infini-actions { margin-top: 18px; }
-.infini-chargement, .infini-vide { color: var(--muted, #9aa3b8); padding: 26px 0; }
+.infini-chargement, .infini-vide, .quiz-vide { color: var(--muted, #9aa3b8); padding: 26px 0; }
 
 /* répartition par cours, dans le bilan */
 .infini-repartition { margin-top: 22px; padding-top: 16px; border-top: 1px solid var(--line, rgba(255,255,255,0.08)); }

@@ -10,6 +10,18 @@
    les styles en ligne des pages.
    ------------------------------------------------------------------ */
 
+/* ------------------------------------------------------------------
+   Le thème par défaut : le rose.
+   Il est posé ici, et pas seulement dans style.css, parce que toutes les
+   pages ne chargent pas style.css : sans cette déclaration, --accent était
+   vide sur ces pages tant qu'aucun thème n'était choisi, et les éléments
+   qui s'en servent sans valeur de repli perdaient leur couleur.
+   ------------------------------------------------------------------ */
+html:root {
+  --accent: #ff6b9d;
+  --accent-rgb: 255,107,157;
+}
+
 html[data-theme="rouge"] {
   --accent: #fa5252 !important;   --accent-rgb: 250,82,82 !important;
   --accent-2: #e03131 !important; --accent-2-rgb: 224,49,49 !important;
@@ -78,7 +90,7 @@ html:root, html[data-theme] {
 }
 
 /* les variables dérivées suivent toutes la palette active */
-html[data-theme] {
+html:root, html[data-theme] {
   --accent-soft:    rgba(var(--accent-rgb), 0.12);
   --accent-soft-2:  rgba(var(--accent-rgb), 0.20);
   --accent-bord:    rgba(var(--accent-rgb), 0.30);

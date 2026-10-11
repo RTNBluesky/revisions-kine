@@ -38,11 +38,31 @@
     return n;
   }
 
+  /* Safari en navigation privée refuse l'accès à localStorage : la lecture
+     lève une exception. Sans garde, le quiz entier s'arrêtait là. */
+  function lireMode() {
+    try { return localStorage.getItem("pratiqueQuizMode") || "revision"; }
+    catch (e) { return "revision"; }
+  }
+  function ecrireMode(valeur) {
+    try { localStorage.setItem("pratiqueQuizMode", valeur); }
+    catch (e) { /* le choix ne sera pas mémorisé, le quiz fonctionne quand même */ }
+  }
+
   window.demarrerQuiz = function () {
     var data = window.QUIZ;
     var root = document.getElementById("quiz");
+    if (!root) return;
+    /* les questions sont posées dans la page par un <script> : si ce bloc
+       manque ou n'a pas été lu, on le dit au lieu de s'arrêter en silence */
+    if (!data || !data.questions || !data.questions.length) {
+      root.innerHTML = "";
+      root.appendChild(el("p", "quiz-vide",
+        "Les questions n\u2019ont pas pu \u00eatre charg\u00e9es. Recharge la page."));
+      return;
+    }
     var total = data.questions.length;
-    var mode = localStorage.getItem("pratiqueQuizMode") || "revision";
+    var mode = lireMode();
 
     var barre = document.querySelector(".bar > i");
     var compteur = document.getElementById("compteur");
@@ -80,7 +100,7 @@
     cartesMode.forEach(function (c) {
       c.addEventListener("click", function () {
         mode = c.dataset.mode;
-        localStorage.setItem("pratiqueQuizMode", mode);
+        ecrireMode(mode);
         majMode();
       });
     });
@@ -472,7 +492,7 @@
           mode === "exam" ? "Refaire en mode révision" : "Passer en mode examen");
         swap.type = "button";
         swap.addEventListener("click", function () {
-          localStorage.setItem("pratiqueQuizMode", mode === "exam" ? "revision" : "exam");
+          ecrireMode(mode === "exam" ? "revision" : "exam");
           location.reload();
         });
         act.appendChild(swap);

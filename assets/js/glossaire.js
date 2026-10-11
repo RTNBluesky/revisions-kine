@@ -177,11 +177,6 @@ window.GLOSSAIRE = {
   "d": "Aussi appelée vasopressine. Elle ouvre les aquaporines du tube collecteur et fait réabsorber l'eau, concentrant les urines.",
   "dom": "Physiologie"
  },
- "adh_sigle": {
-  "t": "ADH — hormone antidiurétique",
-  "d": "Aussi appelée vasopressine : elle ouvre les aquaporines du tube collecteur et concentre les urines.",
-  "dom": "Physiologie"
- },
  "adherence": {
   "t": "Adhérence",
   "d": "Accolement anormal entre deux plans qui devraient glisser l'un sur l'autre. Conséquence fréquente d'une inflammation ou d'une chirurgie.",
@@ -399,7 +394,7 @@ window.GLOSSAIRE = {
  },
  "amenorrhee": {
   "t": "Aménorrhée",
-  "d": "Absence de règles.",
+  "d": "Absence de règles : primaire si elles n'ont jamais eu lieu, secondaire si elles s'arrêtent plus de trois mois. Chez la sportive, elle accompagne le déficit énergétique et fragilise l'os.",
   "dom": "Physiopathologie"
  },
  "ami": {
@@ -1474,7 +1469,7 @@ window.GLOSSAIRE = {
  },
  "cervicalgie": {
   "t": "Cervicalgie",
-  "d": "Douleur du cou.",
+  "d": "Douleur du rachis cervical, avec ou sans irradiation dans le membre supérieur. Commune et le plus souvent bénigne, elle impose d'écarter d'abord les drapeaux rouges : traumatisme, fièvre, déficit neurologique.",
   "dom": "Musculo-squelettique"
  },
  "cervicobrachialgie": {
@@ -1844,7 +1839,7 @@ window.GLOSSAIRE = {
  },
  "coxarthrose": {
   "t": "Coxarthrose",
-  "d": "Arthrose de la hanche.",
+  "d": "Arthrose de la hanche : pincement de l'interligne, douleur inguinale à la marche, perte d'amplitude qui commence par la rotation interne et l'extension.",
   "dom": "Musculo-squelettique"
  },
  "cozen": {
@@ -2274,7 +2269,7 @@ window.GLOSSAIRE = {
  },
  "diplopie": {
   "t": "Diplopie",
-  "d": "Vision double.",
+  "d": "Vision double, par défaut de parallélisme des deux yeux. Elle oriente vers une atteinte des nerfs oculomoteurs (III, IV, VI) ou de leurs noyaux dans le tronc cérébral.",
   "dom": "Neurologie"
  },
  "discopathie": {
@@ -2479,7 +2474,7 @@ window.GLOSSAIRE = {
  },
  "dysphagie": {
   "t": "Dysphagie",
-  "d": "Difficulté à avaler.",
+  "d": "Difficulté à avaler, de la simple gêne au blocage. Elle fait courir un risque de fausse route et de pneumopathie d'inhalation : on la dépiste avant toute reprise alimentaire.",
   "dom": "Physiopathologie"
  },
  "dysphonie": {
@@ -2651,11 +2646,6 @@ window.GLOSSAIRE = {
   "t": "EIAS — épine iliaque antéro-supérieure",
   "d": "Relief osseux à l'avant de la crête iliaque. Repère de palpation utilisé pour l'angle Q et l'alignement du bassin.",
   "dom": "Musculo-squelettique"
- },
- "eias_sigle": {
-  "t": "EIAS — épine iliaque antéro-supérieure",
-  "d": "Saillie antérieure de la crête iliaque, repère palpatoire majeur du bassin.",
-  "dom": "Anatomie"
  },
  "eic": {
   "t": "EIC — espace intercostal",
@@ -2937,11 +2927,6 @@ window.GLOSSAIRE = {
   "d": "Lésion cutanée puis profonde causée par une pression prolongée sur une zone d'appui, favorisée par l'immobilité et le déficit sensitif.",
   "dom": "EAIF"
  },
- "escarre-bis": {
-  "t": "Escarre",
-  "d": "Lésion due à la pression prolongée sur une zone d'appui, de la rougeur jusqu'à la nécrose profonde.",
-  "dom": "Physiopathologie"
- },
  "esicm": {
   "t": "ESICM — société européenne de médecine intensive",
   "d": "Société savante dont les recommandations encadrent la kinésithérapie en réanimation.",
@@ -3173,11 +3158,6 @@ window.GLOSSAIRE = {
   "dom": "Neurologie"
  },
  "fet": {
-  "t": "FET — technique d'expiration forcée",
-  "d": "Le huffing : expiration active glotte ouverte, moins collapsante que la toux pour remonter les sécrétions.",
-  "dom": "Cardio-respiratoire"
- },
- "fet_sigle": {
   "t": "FET — technique d'expiration forcée",
   "d": "Expiration active bouche ouverte, le « huff », qui remonte les sécrétions sans fermer les bronches comme le ferait la toux.",
   "dom": "Cardio-respiratoire"
@@ -3502,11 +3482,6 @@ window.GLOSSAIRE = {
   "d": "L'articulation de l'épaule proprement dite, entre la tête humérale et la glène de la scapula.",
   "dom": "Biomécanique"
  },
- "gh_sigle": {
-  "t": "GH — gléno-humérale",
-  "d": "L'articulation de l'épaule proprement dite, entre tête humérale et glène scapulaire.",
-  "dom": "Anatomie"
- },
  "gi_sigle": {
   "t": "GI — gastro-intestinal",
   "d": "Qualifie le tube digestif, de la bouche à l'anus.",
@@ -3614,7 +3589,7 @@ window.GLOSSAIRE = {
  },
  "gonarthrose": {
   "t": "Gonarthrose",
-  "d": "Arthrose du genou.",
+  "d": "Arthrose du genou, le plus souvent fémoro-tibiale interne. Douleur mécanique, raideur au démarrage, limitation de la flexion, et une marche qui se raccourcit.",
   "dom": "Musculo-squelettique"
  },
  "goniometrie": {
@@ -4253,11 +4228,6 @@ window.GLOSSAIRE = {
   "dom": "Physiopathologie"
  },
  "ifp": {
-  "t": "IFP — interphalangienne proximale",
-  "d": "Articulation entre la première et la deuxième phalange d'un doigt.",
-  "dom": "Anatomie"
- },
- "ifp_pip": {
   "t": "IFP — interphalangienne proximale",
   "d": "Articulation entre la première et la deuxième phalange d'un doigt. Notée PIP en anglais. Touchée tôt dans la polyarthrite rhumatoïde.",
   "dom": "Anatomie"
@@ -4962,11 +4932,6 @@ window.GLOSSAIRE = {
   "d": "Le plus petit écart de score que le patient perçoit réellement comme une amélioration. En dessous, une variation n'est pas interprétable comme un progrès.",
   "dom": "Musculo-squelettique"
  },
- "mcid_sigle": {
-  "t": "MCID — différence minimale cliniquement importante",
-  "d": "Le plus petit changement de score que le patient perçoit comme une vraie amélioration.",
-  "dom": "Recherche"
- },
  "mckenzie": {
   "t": "Méthode McKenzie",
   "d": "Mouvements actifs répétés et positions maintenues, choisis selon la réponse des symptômes : on retient la direction qui centralise la douleur vers le rachis. Le patient s'autotraite, le kinésithérapeute oriente.",
@@ -4980,11 +4945,6 @@ window.GLOSSAIRE = {
  "mcp": {
   "t": "MCP — métacarpo-phalangienne",
   "d": "Articulation entre un métacarpien et la première phalange du doigt.",
-  "dom": "Anatomie"
- },
- "mcp_sigle": {
-  "t": "MCP — métacarpo-phalangienne",
-  "d": "Articulation entre un métacarpien et la première phalange, à la racine du doigt.",
   "dom": "Anatomie"
  },
  "mct": {
@@ -5182,11 +5142,6 @@ window.GLOSSAIRE = {
   "d": "Coude tendu, on étire passivement les extenseurs en fléchissant poignet et doigts. Douleur latérale : épicondylite.",
   "dom": "Musculo-squelettique"
  },
- "mip_pim": {
-  "t": "PIM — pression inspiratoire maximale",
-  "d": "Force des muscles inspiratoires mesurée à la bouche. Son pendant expiratoire est la PEM.",
-  "dom": "Cardio-respiratoire"
- },
  "mip_pneumo": {
   "t": "MIP — pneumopathie interstitielle diffuse",
   "d": "Atteinte diffuse du tissu entre les alvéoles, qui raidit le poumon et altère les échanges gazeux.",
@@ -5342,11 +5297,6 @@ window.GLOSSAIRE = {
   "d": "Articulation entre un métatarsien et la première phalange d'un orteil.",
   "dom": "Anatomie"
  },
- "mtp_sigle": {
-  "t": "MTP — métatarso-phalangienne",
-  "d": "Articulation entre un métatarsien et la première phalange de l'orteil.",
-  "dom": "Anatomie"
- },
  "mtr": {
   "t": "MTR — méthodes et techniques de recherche",
   "d": "Le module qui apprend à lire un article, à construire une question clinique et à juger du niveau de preuve.",
@@ -5384,7 +5334,7 @@ window.GLOSSAIRE = {
  },
  "myalgie": {
   "t": "Myalgie",
-  "d": "Douleur musculaire.",
+  "d": "Douleur musculaire, diffuse ou localisée. D'effort elle est banale ; spontanée et accompagnée de faiblesse, elle fait chercher une myosite, un médicament ou une cause métabolique.",
   "dom": "Musculo-squelettique"
  },
  "myasthenie": {
@@ -6197,11 +6147,6 @@ window.GLOSSAIRE = {
   "d": "Décider en croisant trois sources : les meilleures données de la recherche, l'expérience du clinicien et les préférences du patient.",
   "dom": "Recherche"
  },
- "pbe_sigle": {
-  "t": "PBE — pratique fondée sur les preuves",
-  "d": "Décider en combinant les meilleures données de la recherche, l'expérience du praticien et les préférences du patient.",
-  "dom": "Recherche"
- },
  "pcc": {
   "t": "PCC",
   "d": "Population, Concept, Contexte : la grille des scoping reviews, plus large que PICO.",
@@ -6774,7 +6719,7 @@ window.GLOSSAIRE = {
  },
  "prurit": {
   "t": "Prurit",
-  "d": "Démangeaison.",
+  "d": "Démangeaison, qui pousse à se gratter. Localisée elle évoque la peau, généralisée elle fait penser au foie, au rein ou à un médicament.",
   "dom": "Physiopathologie"
  },
  "prvc": {
@@ -6819,18 +6764,13 @@ window.GLOSSAIRE = {
  },
  "pth": {
   "t": "PTH — prothèse totale de hanche",
-  "d": "Remplacement chirurgical des deux versants de l'articulation coxo-fémorale.",
+  "d": "Remplacement de la tête fémorale et du cotyle. Appui dès le premier jour si la prothèse est cimentée.",
   "dom": "Musculo-squelettique"
  },
  "pth_ct": {
   "t": "CT — calcitonine",
   "d": "Hormone thyroïdienne qui freine les ostéoclastes et fait baisser la calcémie, à l'inverse de la parathormone.",
   "dom": "Physiologie"
- },
- "pth_prothese": {
-  "t": "PTH — prothèse totale de hanche",
-  "d": "Remplacement de la tête fémorale et du cotyle. Appui dès le premier jour si la prothèse est cimentée.",
-  "dom": "Musculo-squelettique"
  },
  "pubalgie": {
   "t": "Pubalgie",
@@ -7602,11 +7542,6 @@ window.GLOSSAIRE = {
   "d": "Inflammation des sinus de la face, le plus souvent après une rhinite.",
   "dom": "Physiopathologie"
  },
- "sips": {
-  "t": "EIPS — épine iliaque postéro-supérieure",
-  "d": "Saillie postérieure de la crête iliaque, repère de l'articulation sacro-iliaque.",
-  "dom": "Anatomie"
- },
  "sirs": {
   "t": "SIRS — syndrome de réponse inflammatoire systémique",
   "d": "Réaction inflammatoire généralisée : fièvre, tachycardie, polypnée, anomalie des globules blancs.",
@@ -7681,11 +7616,6 @@ window.GLOSSAIRE = {
   "t": "SNC — système nerveux central",
   "d": "Encéphale et moelle épinière, protégés par les méninges et le liquide cérébro-spinal.",
   "dom": "Anatomie"
- },
- "snc_sigle": {
-  "t": "SNC — système nerveux central",
-  "d": "L'encéphale et la moelle spinale, par opposition au système nerveux périphérique.",
-  "dom": "Neurologie"
  },
  "snp": {
   "t": "SNP — système nerveux périphérique",
@@ -7851,11 +7781,6 @@ window.GLOSSAIRE = {
   "t": "SRDQ — questionnaire d'auto-évaluation du handicap",
   "d": "Auto-questionnaire du retentissement fonctionnel rempli par le patient.",
   "dom": "Démarche clinique"
- },
- "srm": {
-  "t": "SRAA — système rénine-angiotensine-aldostérone",
-  "d": "Cascade hormonale qui remonte la pression artérielle en contractant les vaisseaux et en retenant le sel.",
-  "dom": "Physiologie"
  },
  "srm_sigle": {
   "t": "SRM — standardized response mean",
@@ -8746,11 +8671,6 @@ window.GLOSSAIRE = {
   "t": "VEGF — facteur de croissance de l'endothélium vasculaire",
   "d": "Déclenche la formation de nouveaux vaisseaux, dans la cicatrisation comme dans la tumeur.",
   "dom": "Physiologie"
- },
- "vem_sigle": {
-  "t": "VEM — volume de l'espace mort",
-  "d": "Partie du volume courant qui n'atteint pas les alvéoles et ne participe pas aux échanges.",
-  "dom": "Cardio-respiratoire"
  },
  "vems": {
   "t": "VEMS — volume expiratoire maximal en 1 seconde",
