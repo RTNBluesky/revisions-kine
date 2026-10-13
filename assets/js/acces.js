@@ -77,10 +77,10 @@
         '<h1 id="acces-titre">Révisions Kinésithérapie</h1>' +
         '<p class="acces-sous-titre">Ces fiches sont personnelles.<br>Entre le code d’accès pour continuer.</p>' +
         '<form novalidate>' +
-          '<input type="password" id="acces-code" placeholder="Code d’accès" ' +
+          '<input type="password" id="acces-code" class="ui-systeme" placeholder="Code d’accès" ' +
                  'autocomplete="off" autocapitalize="none" autocorrect="off" spellcheck="false" ' +
                  'aria-label="Code d’accès" aria-describedby="acces-erreur">' +
-          '<button type="submit">Entrer</button>' +
+          '<button type="submit" class="ui-systeme">Entrer</button>' +
           '<p class="acces-erreur" id="acces-erreur" role="status" aria-live="polite"></p>' +
         '</form>' +
         '<p class="acces-note">Le code est redemandé à la fermeture de l’onglet. ' +

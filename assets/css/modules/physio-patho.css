@@ -43,20 +43,20 @@
   --pink-light: #1a1d2a !important;
   --pink-pale: #1a1d2a !important;
 }
-html, body { background: #0f1117 !important; color: var(--accent-4, #ff8fa3) !important; }
-main, article, .container, .content, .wrapper, .main, .page { background: transparent !important; color: var(--accent-4, #ff8fa3) !important; }
+html, body { background: #0f1117 !important; color: var(--ink, #e8eaf0); }
+main, article, .container, .content, .wrapper, .main, .page { background: transparent !important; color: var(--ink, #e8eaf0); }
 .card, [class*="card-"], .box, .panel, .info-box, .summary-strip, .def-box, .highlight, .highlight-box, .callout, .compare-col, .feedback-box, .key-block, .key-item, .lesion-card, .syndrome-block, .patho-block, .level-row, .level-bar, .step, .step-content, .timeline-item, .timeline-content, .stat-box, .niveau-item, .asia-card, .memory-card, .mc-content, .mnemonic, .sym-item, .warning-box, .success-box, .danger-box {
   background: #161922 !important;
   border-color: var(--accent-2, #ff5c6b) !important;
   color: var(--orange, #ffa657) !important;
 }
 [style*="background:#ffffff"], [style*="background: #ffffff"], [style*="background:#ffffff"], [style*="background: #ffffff"], [style*="background:white"], [style*="background: white"], [style*="background:var(--orange, #ffa657)"], [style*="background: var(--orange, #ffa657)"], [style*="background:var(--orange, #ffa657)"], [style*="background: var(--orange, #ffa657)"] { background: #161922 !important; }
-table { background: transparent !important; color: var(--accent-4, #ff8fa3) !important; }
+table { background: transparent !important; color: var(--ink, #e8eaf0); }
 table thead, table thead tr, table th { background: #0f1117 !important; color: var(--accent-4, #ff8fa3) !important; border-color: var(--accent-2, #ff5c6b) !important; }
-table tbody tr { background: transparent !important; color: var(--accent-4, #ff8fa3) !important; }
+table tbody tr { background: transparent !important; color: var(--ink, #e8eaf0); }
 table tbody tr:nth-child(even) { background: rgba(255,255,255,0.02) !important; }
 table tbody tr:hover { background: rgba(var(--accent-rgb, 255,107,157), 0.06) !important; }
-table td { color: var(--accent-4, #ff8fa3) !important; border-color: var(--accent-2, #ff5c6b) !important; }
+table td { color: var(--ink, #e8eaf0); border-color: var(--accent-2, #ff5c6b) !important; }
 table tr { border-color: var(--accent-2, #ff5c6b) !important; }
 .td-blue, td.td-blue { background: var(--accent-2, #ff5c6b) !important; color: var(--accent-3, #f472b6) !important; }
 .td-green, td.td-green { background: #1a1d2a !important; color: var(--accent, #ff6b9d) !important; }
@@ -96,7 +96,8 @@ section { background: transparent !important; }
 .highlight-gold strong { color: var(--accent-4, #ff8fa3) !important; }
 .memo, .memory-card, .mc-content { background: #0f1117 !important; color: var(--accent-4, #ff8fa3) !important; border: 1px solid var(--accent-2, #ff5c6b) !important; }
 .memo span, .memory-card .mc-content span { color: var(--accent-4, #ff8fa3) !important; }
-input, select, textarea, button { background: #161922 !important; color: var(--accent-4, #ff8fa3) !important; border-color: var(--accent-2, #ff5c6b) !important; }
+/* les contrôles du site (.ui-systeme) gardent leur propre habillage */
+input:not(.ui-systeme), select, textarea, button:not(.ui-systeme) { background: #161922 !important; color: var(--accent-4, #ff8fa3) !important; border-color: var(--accent-2, #ff5c6b) !important; }
 code, pre { background: #0f1117 !important; color: var(--accent-4, #ff8fa3) !important; border: 1px solid var(--accent-2, #ff5c6b) !important; }
 .level-bar { color: var(--accent-4, #ff8fa3) !important; }
 .callout-info, .callout.callout-info { background: rgba(var(--accent-rgb, 255,107,157), 0.1) !important; border-color: var(--accent-3, #f472b6) !important; color: var(--accent-4, #ff8fa3) !important; }

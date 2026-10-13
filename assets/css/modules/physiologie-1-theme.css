@@ -20,5 +20,5 @@ em { color:var(--accent-4, #ff8fa3) !important; }
 .note, .info, .tip { background:rgba(var(--accent-rgb, 255,107,157), 0.08) !important; border-left-color:var(--accent, #ff6b9d) !important; }
 table { background:#0f1117 !important; border-color:#2a3050 !important; }
 th { background:#0f1117 !important; color:var(--accent-4, #ff8fa3) !important; }
-td { color:var(--accent-4, #ff8fa3) !important; border-color:#2a3050 !important; }
+td { color: var(--ink, #e8eaf0); border-color:#2a3050 !important; }
 code { background:#0f1117 !important; color:var(--accent-4, #ff8fa3) !important; }

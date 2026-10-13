@@ -52,7 +52,7 @@ h4 {
 
 p, li {
   font-size: 14.5px !important;
-  color: var(--accent-4, #ff8fa3) !important;
+  color: var(--ink, #e8eaf0);
   line-height: 1.7 !important;
 }
 p strong, li strong, td strong { color: var(--accent-4, #ff8fa3) !important; font-weight: 600 !important; }
@@ -181,7 +181,9 @@ tr:hover td { background: rgba(var(--accent-rgb, 255,107,157), 0.04) !important;
 }
 
 /* Buttons */
-button:not(.tab):not(.mode-btn):not(.choice):not(.opt):not(.start-btn):not(.check-btn):not(.restart-btn):not(.btn):not(#startBtn):not(#restartBtn) {
+/* .ui-systeme exclut le bouton de thème et l'écran d'accès : ces contrôles
+   ont leur propre habillage, commun à tout le site. */
+button:not(.tab):not(.mode-btn):not(.choice):not(.opt):not(.start-btn):not(.check-btn):not(.restart-btn):not(.btn):not(.ui-systeme):not(#startBtn):not(#restartBtn) {
   background: #1a1d2a !important;
   color: #e8eaf0 !important;
   border: 1px solid #2a3050 !important;
@@ -200,7 +202,7 @@ ul li, ol li { padding: 3px 0 !important; }
 
 /* Accents inside cards */
 .card-title { color: #e8eaf0 !important; font-weight: 700 !important; }
-.card-desc { color: var(--accent-4, #ff8fa3) !important; }
+.card-desc { color: var(--muted, #9aa3b8); }
 .card-cta { color: var(--accent-4, #ff8fa3) !important; font-weight: 700 !important; }
 
 /* Print-friendly print rules removed */

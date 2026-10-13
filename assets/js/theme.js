@@ -48,7 +48,9 @@
     var bouton = document.createElement('button');
     bouton.id = 'theme-bouton';
     bouton.type = 'button';
-    bouton.className = 'theme-bouton';
+    /* ui-systeme : marque les contrôles du site, que les feuilles de module
+       excluent de leurs règles sur les boutons de contenu */
+    bouton.className = 'theme-bouton ui-systeme';
     bouton.setAttribute('aria-label', 'Changer la couleur du site');
     bouton.setAttribute('aria-haspopup', 'true');
     bouton.setAttribute('aria-expanded', 'false');
@@ -62,6 +64,7 @@
     THEMES.forEach(function (t) {
       var b = document.createElement('button');
       b.type = 'button';
+      b.className = 'ui-systeme';
       b.setAttribute('role', 'radio');
       b.setAttribute('aria-checked', String(t.id === actuel));
       b.innerHTML = '<span class="pois" style="background:' + t.pois + '"></span>' + t.nom;

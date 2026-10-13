@@ -11,5 +11,5 @@ h4 { color:var(--accent-4, #ff8fa3) !important; }
 .highlight { color:var(--accent-4, #ff8fa3) !important; }
 table { background:#1a1d2a !important; }
 th { background:#0f1117 !important; color:var(--accent-4, #ff8fa3) !important; border-color:#2a3050 !important; }
-td { border-color:#2a3050 !important; color:var(--accent-4, #ff8fa3) !important; }
+td { border-color:#2a3050 !important; color: var(--ink, #e8eaf0); }
 b, strong { color:var(--accent-4, #ff8fa3) !important; }
