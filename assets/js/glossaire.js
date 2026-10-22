@@ -3432,6 +3432,11 @@ window.GLOSSAIRE = {
   "d": "Masse de selles durcies bloquée dans le rectum. Complication classique de l'alitement et des lésions médullaires.",
   "dom": "Physiopathologie"
  },
+ "feedback": {
+  "t": "Feedback (rétroaction)",
+  "d": "Le contrôle par le retour sensoriel : les récepteurs (proprioceptifs, visuels, vestibulaires) renseignent le système nerveux, qui corrige le mouvement après coup. Plus lent que le feed-forward, qui anticipe.",
+  "dom": "Neurologie"
+ },
  "feedforward": {
   "t": "Ajustement anticipé (feedforward)",
   "d": "Le système nerveux prépare la posture avant le mouvement, sans attendre le retour sensoriel. Le feedback, lui, corrige après coup.",
@@ -6172,6 +6177,11 @@ window.GLOSSAIRE = {
   "d": "Inflammation d'un nerf. La névrite optique est souvent révélatrice d'une sclérose en plaques.",
   "dom": "Neurologie"
  },
+ "nevrome": {
+  "t": "Névrome",
+  "d": "Amas désorganisé de fibres nerveuses qui repoussent après une lésion du nerf (névrome d'amputation). Le névrome de Morton est un épaississement fibreux d'un nerf interdigital du pied.",
+  "dom": "Neurologie"
+ },
  "newton_lois": {
   "t": "Lois de Newton",
   "d": "Les trois principes de la mécanique : inertie, F = m·a, et action-réaction. Toute analyse de force musculaire, de bras de levier et d'appui au sol en découle.",
@@ -7432,6 +7442,11 @@ window.GLOSSAIRE = {
   "d": "Sensibilité grossière — douleur, température, toucher mal localisé — qui emprunte le faisceau spinothalamique. L'épicritique est fine et passe par les cordons postérieurs.",
   "dom": "Neurologie"
  },
+ "protraction_scap": {
+  "t": "Protraction, rétraction (scapula)",
+  "d": "Glissement de la scapula vers l'avant et le dehors sur le thorax (protraction : dentelé antérieur, petit pectoral) ou vers l'arrière et le dedans (rétraction : rhomboïdes, trapèze moyen).",
+  "dom": "Anatomie"
+ },
  "protrusion": {
   "t": "Protrusion",
   "d": "Avancée d'une structure au-delà de sa position normale : protrusion discale, protrusion de la langue.",
@@ -8082,6 +8097,11 @@ window.GLOSSAIRE = {
   "d": "Trois muscles latéraux du cou, inspirateurs accessoires. Le paquet vasculo-nerveux du bras passe entre eux : premier défilé thoraco-brachial.",
   "dom": "Anatomie"
  },
+ "scaphoide_carpe": {
+  "t": "Scaphoïde (carpe)",
+  "d": "Os de la première rangée du carpe, côté pouce, au fond de la tabatière anatomique. Sa fracture, après une chute main tendue, passe facilement inaperçue et peut se compliquer de nécrose : au moindre test positif, on réfère.",
+  "dom": "Anatomie"
+ },
  "scapula": {
   "t": "Scapula (omoplate)",
   "d": "Os plat triangulaire posé sur la face postérieure du thorax, suspendu par ses muscles. Elle porte la glène, l'acromion et le processus coracoïde, et doit tourner avec l'humérus pour que l'épaule monte au-delà de 90°.",
@@ -8600,6 +8620,11 @@ window.GLOSSAIRE = {
  "spurling": {
   "t": "Test de Spurling",
   "d": "Extension, inclinaison et rotation de la nuque du côté douloureux, avec compression axiale. Reproduit la douleur d'une radiculopathie cervicale.",
+  "dom": "Musculo-squelettique"
+ },
+ "squeeze_test": {
+  "t": "Squeeze test",
+  "d": "Deux tests portent ce nom. À la hanche (0°, 45°, 90°), le patient serre contre le kiné : une douleur aux adducteurs ou à la symphyse oriente vers une pubalgie. À la jambe, le kiné comprime tibia et fibula au tiers distal : une douleur oriente vers la syndesmose ou une fracture de stress.",
   "dom": "Musculo-squelettique"
  },
  "squire": {

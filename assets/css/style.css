@@ -742,6 +742,14 @@ article.fiche span.trace-spiro-debit-volume, article.fiche span.trace-spiro-volu
 }
 article.fiche span.trace-volumes { aspect-ratio: 84 / 46; background: #fff; }
 article.fiche span.trace-electrodes { aspect-ratio: 62 / 52; max-width: 420px; background: #fff; }
+/* diagrammes de mouvement (Maitland), niveaux médullaires, cicatrisation */
+article.fiche span.trace[data-trace^="dre-"], .q span.trace[data-trace^="dre-"] {
+  aspect-ratio: 100 / 62; max-width: 480px; background: #fff;
+}
+article.fiche span.trace[data-trace="asia-niveaux"], .q span.trace[data-trace="asia-niveaux"] {
+  aspect-ratio: 104 / 44; max-width: 640px; background: #fff;
+}
+article.fiche span.trace[data-trace="cicatrisation"] { aspect-ratio: 96 / 40; background: #fff; }
 article.fiche ul.galerie > li > p { margin: 7px 0 0; font-size: .9rem; line-height: 1.5; }
 article.fiche ul.galerie > li > p + p { margin-top: 3px; }
 

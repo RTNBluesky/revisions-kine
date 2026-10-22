@@ -302,11 +302,118 @@
     return svg(W, Hh, c);
   }
 
+  /* ------------------------------------------------ diagramme de mouvement (Maitland)
+     A début · B limite normale · L limite disponible · C intensité maximale.
+     D douleur (D1 début, D′ fin qui ne limite pas, D2 fin qui limite),
+     R résistance (R1, R′, R2), E spasme. Chaque variante = un stade. */
+  var DRE = {
+    // aigu : la douleur arrive avant la résistance et limite
+    douleur:   { L: 0.55, D: [0.18, 1], R: [0.42, 0.34], titre: 'aigu : douleur avant résistance' },
+    // subaigu : douleur et résistance ensemble
+    simultane: { L: 0.72, D: [0.35, 1], R: [0.43, 0.9], titre: 'subaigu : douleur et résistance ensemble' },
+    // chronique (l'exemple du cours) : la résistance limite, la douleur non
+    resistance:{ L: 0.80, D: [0.55, 0.45], R: [0.36, 1], titre: 'chronique : résistance avant douleur' },
+    // spasme protecteur : il monte d'un coup et arrête le mouvement
+    spasme:    { L: 0.50, D: [0.22, 0.62], E: [0.40, 1], titre: 'spasme : il arrête le mouvement' }
+  };
+  function diagramme(nom, muet) {
+    var v = DRE[nom], W = 100, Hh = 62, x0 = 11, y0 = 50, l = 62, h = 40, VIOLET = '#6a1b9a';
+    var X = function (u) { return x0 + u * l; }, Y = function (f) { return y0 - f * h; };
+    var c = '<rect x="' + x0 + '" y="' + (y0 - h) + '" width="' + l + '" height="' + h + '" fill="#fbfcfe" stroke="'
+      + GRIS + '" stroke-width="0.25"/>';
+    c += ligne(X(v.L), y0, X(v.L), y0 - h, ENCRE, 0.35, '1 0.7');
+    c += txt(x0, y0 + 3.6, 'A', { a: 'middle', g: 1, c: ENCRE }) + txt(x0 + l, y0 + 3.6, 'B', { a: 'middle', g: 1, c: ENCRE })
+      + txt(X(v.L), y0 + 3.6, 'L', { a: 'middle', g: 1, c: ENCRE }) + txt(x0 - 1.6, y0 - h + 0.8, 'C', { a: 'end', g: 1, c: ENCRE })
+      + txt(x0 + l / 2, y0 + 7.4, 'amplitude →', { a: 'middle', t: 1.9 })
+      + '<text transform="translate(' + (x0 - 5.5) + ' ' + (y0 - h / 2) + ') rotate(-90)" font-size="1.9" fill="'
+      + GRIS + '" text-anchor="middle">intensité →</text>';
+    function courbe(depart, fin, col, n1, n2, raide) {
+      var pts = [], a = depart, b = v.L, k;
+      for (k = 0; k <= 24; k++) {
+        var u = k / 24, f = raide ? Math.pow(u, 2.6) : u * (0.55 + 0.45 * u);
+        pts.push(X(a + (b - a) * u).toFixed(2) + ',' + Y(f * fin).toFixed(2));
+      }
+      var s = poly(pts, col, 0.55)
+        + '<circle cx="' + X(a).toFixed(2) + '" cy="' + y0 + '" r="0.75" fill="' + col + '"/>';
+      if (!muet) {
+        s += txt(X(a), y0 - 1.4, n1, { c: col, g: 1, a: 'middle', t: 2 });
+        s += txt(X(b) + 1.2, Y(fin) + (fin > 0.95 ? 2.2 : 0.7), n2, { c: col, g: 1, t: 2 });
+      }
+      return s;
+    }
+    if (v.R) c += courbe(v.R[0], v.R[1], BLEU, 'R1', v.R[1] > 0.95 ? 'R2' : 'R′');
+    if (v.D) c += courbe(v.D[0], v.D[1], ROUGE, 'D1', v.D[1] > 0.95 ? 'D2' : 'D′');
+    if (v.E) c += courbe(v.E[0], v.E[1], VIOLET, 'E', '', true);
+    var leg = [['D douleur', ROUGE]];
+    if (v.R) leg.push(['R résistance', BLEU]);
+    if (v.E) leg.push(['E spasme', VIOLET]);
+    c += legende(x0 + l + 2.6, y0 - h + 3, leg, 3.2);
+    if (!muet) c += txt(x0, 5.2, v.titre, { t: 2.2, c: ENCRE, g: 1 });
+    return svg(W, Hh, c);
+  }
+
+  /* ------------------------------------------------ niveaux médullaires (ASIA) */
+  function niveaux() {
+    var seg = [], i;
+    for (i = 1; i <= 8; i++) seg.push('C' + i);
+    for (i = 1; i <= 12; i++) seg.push('T' + i);
+    for (i = 1; i <= 5; i++) seg.push('L' + i);
+    seg.push('S1', 'S2', 'S3', 'S4-5');
+    var W = 104, Hh = 44, x0 = 3, larg = (W - 6) / seg.length, yb = 17, hb = 7, OCRE = '#b26a00', c = '';
+    seg.forEach(function (s, k) {
+      var cle = (k >= 4 && k <= 8) || (k >= 21 && k <= 25);           // C5-T1 · L2-S1
+      var sacre = s === 'S4-5';
+      var fond = sacre ? '#c2185b' : cle ? BLEU : (k >= 9 && k <= 20) ? '#f3e2c4' : '#e3e7ee';
+      c += '<rect x="' + (x0 + k * larg).toFixed(2) + '" y="' + yb + '" width="' + (larg - 0.3).toFixed(2) + '" height="'
+        + hb + '" rx="0.5" fill="' + fond + '"/>';
+      var etiq = ['C1', 'C5', 'T1', 'T6', 'T12', 'L2', 'S1', 'S4-5'].indexOf(s) >= 0;
+      if (etiq) c += txt(x0 + k * larg + larg / 2, yb + hb + 3, s, { a: 'middle', t: 1.8, g: 1, c: ENCRE });
+    });
+    var mil = function (a, b) { return x0 + (a + b + 1) / 2 * larg; };
+    c += txt(mil(4, 8), yb - 2.2, 'muscles clés C5-T1', { a: 'middle', t: 1.9, c: BLEU, g: 1 })
+      + txt(mil(21, 25), yb - 2.2, 'muscles clés L2-S1', { a: 'middle', t: 1.9, c: BLEU, g: 1 })
+      + txt(mil(9, 20), yb - 2.2, 'T2-L1 : pas de muscle clé', { a: 'middle', t: 1.9, c: OCRE, g: 1 })
+      + txt(mil(9, 20), yb - 5.2, '→ le niveau sensitif donne le niveau', { a: 'middle', t: 1.7, c: OCRE });
+    function repere(k, s1, s2, a) {
+      var x = x0 + k * larg + larg / 2, xt = a === 'end' ? x + larg / 2 : x;
+      return ligne(x, yb + hb + 4.4, x, yb + hb + 7.6, GRIS, 0.25) + txt(xt, yb + hb + 9.8, s1, { a: a || 'middle', t: 1.7, c: ENCRE })
+        + (s2 ? txt(xt, yb + hb + 12, s2, { a: a || 'middle', t: 1.6 }) : '');
+    }
+    c += repere(3, 'C3-C5', 'diaphragme') + repere(13, 'T6', 'dysréflexie au-dessus')
+      + repere(21, 'L2', 'fin de la moelle') + repere(28, 'S4-S5', 'complète ou non', 'end');
+    c += txt(x0, 5, 'Les segments médullaires et ce que l\'examen ASIA y cherche', { t: 2.1, c: ENCRE, g: 1 });
+    return svg(W, Hh, c);
+  }
+
+  /* ------------------------------------------------ phases de cicatrisation */
+  function cicatrisation() {
+    var W = 96, Hh = 40, x0 = 4, l = 88, c = '';
+    var X = function (u) { return x0 + u * l; };
+    var P = [[0, 0.32, 'inflammatoire', 'J0 → J5-7', ROUGE, 'aigu · protéger'],
+             [0.15, 0.62, 'réparation (prolifération)', 'J3 → S3-6', '#ef6c00', 'subaigu · récupérer'],
+             [0.45, 1, 'remodelage', 'S3 → 12 mois et +', VERT, 'chronique · charger']];
+    P.forEach(function (p, k) {
+      var y = 9 + k * 9;
+      c += '<rect x="' + X(p[0]).toFixed(2) + '" y="' + y + '" width="' + (X(p[1]) - X(p[0])).toFixed(2)
+        + '" height="6" rx="1.2" fill="' + p[4] + '" fill-opacity="0.16" stroke="' + p[4] + '" stroke-width="0.3"/>'
+        + txt(X(p[0]) + 1.2, y + 2.7, p[2], { c: p[4], g: 1, t: 2 }) + txt(X(p[0]) + 1.2, y + 5.1, p[3], { t: 1.7 })
+        + txt(X(p[1]) - 1, y + 5.1, p[5], { a: 'end', t: 1.8, c: ENCRE, g: 1 });
+    });
+    c += ligne(x0, 37, x0 + l, 37, GRIS, 0.25) + txt(x0, 4.6, 'Phases de cicatrisation et stade (repères usuels)',
+      { t: 2.1, c: ENCRE, g: 1 });
+    return svg(W, Hh, c);
+  }
+
   var AUTRES = { 'spiro-debit-volume': function () { return debitVolume(); },
                  'spiro-dv-normal': function () { return debitVolume('normal'); },
                  'spiro-dv-obst': function () { return debitVolume('obst'); },
                  'spiro-dv-rest': function () { return debitVolume('rest'); },
-                 'spiro-volume-temps': volumeTemps, 'volumes': volumes, 'electrodes': electrodes };
+                 'spiro-volume-temps': volumeTemps, 'volumes': volumes, 'electrodes': electrodes,
+                 'asia-niveaux': niveaux, 'cicatrisation': cicatrisation };
+  Object.keys(DRE).forEach(function (k) {
+    AUTRES['dre-' + k] = function () { return diagramme(k); };
+    AUTRES['dre-' + k + '-muet'] = function () { return diagramme(k, true); };   // pour une question
+  });
 
   /* ------------------------------------------------ pose */
   function dessiner() {
