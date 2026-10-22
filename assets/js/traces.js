@@ -201,12 +201,18 @@
   }
 
   /* ------------------------------------------------ spirométrie */
-  function debitVolume() {
+  /* seul : 'normal' | 'obst' | 'rest' → une seule courbe, sans légende
+     (pour une question où il faut la reconnaître) */
+  function debitVolume(seul) {
     var W = 86, Hh = 48, x0 = 9, y0 = Hh - 11, l = W - 14, h = Hh - 14, vmax = 5.6, dmax = 9;
     var X = function (v) { return x0 + v / vmax * l; }, Y = function (q) { return y0 - q / dmax * h; };
     var c = axes(x0, y0, l, h, 'volume expiré (L)', 'débit (L/s)');
     for (var v = 1; v <= 5; v++) c += ligne(X(v), y0 - 0.4, X(v), y0 + 0.4) + txt(X(v), y0 + 2.2, v, { a: 'middle', t: 2 });
-    [[5.0, 8.4, 0.45, 1.0, VERT], [4.2, 5.2, 0.35, 2.6, ROUGE], [3.0, 6.6, 0.38, 1.0, BLEU]].forEach(function (k) {
+    var profils = { normal: [5.0, 8.4, 0.45, 1.0, VERT], obst: [4.2, 5.2, 0.35, 2.6, ROUGE],
+                    rest: [3.0, 6.6, 0.38, 1.0, BLEU] };
+    var liste = seul ? [profils[seul]] : [profils.normal, profils.obst, profils.rest];
+    if (seul) liste[0] = liste[0].slice(0, 4).concat([ENCRE]);
+    liste.forEach(function (k) {
       var pts = [];
       for (var i = 0; i <= 80; i++) {
         var vv = k[0] * i / 80, q;
@@ -216,8 +222,10 @@
       }
       c += poly(pts, k[4]);
     });
-    c += txt(X(0.62) + 0.8, Y(8.4) + 1.8, '← DEP (débit de pointe)', { t: 1.9 });
-    c += legende(W - 33, 6, [['normal', VERT], ['obstructif : creusée', ROUGE], ['restrictif : petite', BLEU]]);
+    if (!seul) {
+      c += txt(X(0.62) + 0.8, Y(8.4) + 1.8, '← DEP (débit de pointe)', { t: 1.9 });
+      c += legende(W - 33, 6, [['normal', VERT], ['obstructif : creusée', ROUGE], ['restrictif : petite', BLEU]]);
+    }
     return svg(W, Hh, c);
   }
 
@@ -294,8 +302,11 @@
     return svg(W, Hh, c);
   }
 
-  var AUTRES = { 'spiro-debit-volume': debitVolume, 'spiro-volume-temps': volumeTemps,
-                 'volumes': volumes, 'electrodes': electrodes };
+  var AUTRES = { 'spiro-debit-volume': function () { return debitVolume(); },
+                 'spiro-dv-normal': function () { return debitVolume('normal'); },
+                 'spiro-dv-obst': function () { return debitVolume('obst'); },
+                 'spiro-dv-rest': function () { return debitVolume('rest'); },
+                 'spiro-volume-temps': volumeTemps, 'volumes': volumes, 'electrodes': electrodes };
 
   /* ------------------------------------------------ pose */
   function dessiner() {
@@ -308,6 +319,19 @@
       if (s) el.innerHTML = s;
     }
   }
-  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', dessiner);
-  else dessiner();
+  /* les questions d'un quiz sont créées après le chargement : on dessine
+     aussi ce qui arrive ensuite dans la page */
+  function surveiller() {
+    dessiner();
+    if (!('MutationObserver' in window)) return;
+    var attente = false;
+    new MutationObserver(function () {
+      if (attente) return;
+      attente = true;
+      (window.requestAnimationFrame || window.setTimeout)(function () { attente = false; dessiner(); });
+    }).observe(document.body, { childList: true, subtree: true });
+  }
+  window.dessinerTraces = dessiner;
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', surveiller);
+  else surveiller();
 })();
