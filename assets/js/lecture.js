@@ -128,7 +128,9 @@
   }
 
   function genreDeBloc(e) {
-    if (e.tagName === 'UL' && e.classList.contains('branches')) return 'schema';   // une voie après l'autre
+    if (e.tagName === 'UL' && (e.classList.contains('branches') || e.classList.contains('galerie'))) {
+      return 'schema';                       // une voie, une image après l'autre
+    }
     if (e.tagName !== 'OL') return '';
     if (e.classList.contains('schema')) return 'schema';
     if (e.classList.contains('etapes')) return 'frise';

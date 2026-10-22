@@ -692,6 +692,67 @@ article.fiche ul.branches ol.schema > li.schema-etape:first-child .schema-titre,
 article.fiche ul.branches ol.schema > li.schema-etape:first-child .schema-detail { color: #fff; }
 article.fiche ul.branches .schema-legende { margin: 0 0 8px; text-align: center; font-size: .9rem; }
 article.fiche ol.schema.schema-tronc { margin-bottom: 4px; }
+/* ul.galerie : des images légendées en grille — tracés ECG, courbes,
+   schémas. Une colonne sur téléphone, deux ou trois sur ordinateur. */
+article.fiche ul.galerie {
+  list-style: none;
+  margin: 14px 0 22px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 14px;
+}
+article.fiche ul.galerie > li {
+  margin: 0;
+  padding: 10px 10px 12px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: rgba(255,255,255,0.02);
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+article.fiche ul.galerie > li:hover {
+  border-color: rgba(var(--accent-rgb, 255,107,157), 0.45);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.22);
+}
+article.fiche ul.galerie > li::marker { content: none; }
+article.fiche ul.galerie img {
+  display: block; width: 100%; max-width: 560px; height: auto; margin: 0 auto;
+  border-radius: 6px; background: #fff;
+}
+/* span.trace : un tracé ou une courbe dessiné par traces.js (pas d'image
+   stockée). Le cadre garde ses proportions avant même le dessin. */
+article.fiche span.trace {
+  display: block; width: 100%; max-width: 560px; margin: 0 auto;
+  aspect-ratio: 80 / 22; border-radius: 6px; overflow: hidden; background: #fff8fa;
+}
+article.fiche span.trace svg { display: block; width: 100%; height: 100%; }
+article.fiche span.trace-spiro-debit-volume, article.fiche span.trace-spiro-volume-temps {
+  aspect-ratio: 86 / 48; background: #fff;
+}
+article.fiche span.trace-volumes { aspect-ratio: 84 / 46; background: #fff; }
+article.fiche span.trace-electrodes { aspect-ratio: 62 / 52; max-width: 420px; background: #fff; }
+article.fiche ul.galerie > li > p { margin: 7px 0 0; font-size: .9rem; line-height: 1.5; }
+article.fiche ul.galerie > li > p + p { margin-top: 3px; }
+
+/* table.empile : sur téléphone, un tableau large devient une pile de cartes,
+   chaque case précédée du nom de sa colonne (fiches de station). */
+@media (max-width: 600px) {
+  article.fiche table.empile thead { display: none; }
+  article.fiche table.empile, article.fiche table.empile tbody,
+  article.fiche table.empile tr, article.fiche table.empile td { display: block; width: 100%; }
+  article.fiche table.empile tr { border-bottom: 2px solid rgba(var(--accent-rgb, 255,107,157), 0.30); }
+  article.fiche table.empile td { border: 0; border-top: 1px solid var(--line); padding: 7px 12px; }
+  article.fiche table.empile td:first-child {
+    border-top: 0; font-size: 1.02rem; background: rgba(var(--accent-rgb, 255,107,157), 0.07);
+  }
+  article.fiche table.empile td[data-label]::before {
+    content: attr(data-label); display: block; margin-bottom: 2px;
+    font-size: .7rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted);
+  }
+  article.fiche table.empile td:first-child::before { display: none; }
+  article.fiche table.empile tbody tr:hover > :first-child { box-shadow: none; }
+}
+
 article.fiche ul.branches.apres-tronc { margin-top: 0; position: relative; }
 article.fiche ul.branches.apres-tronc::before {
   content: '↓';
@@ -751,6 +812,7 @@ article.fiche p.formule em { color: var(--muted); font-weight: 400; font-size: .
   article.fiche ul.branches, article.fiche ul.branches > li.branche { background: #fff; border-color: #999; }
   article.fiche ul.branches ol.schema > li.schema-etape:first-child { background: #eee; }
   article.fiche ul.branches ol.schema > li.schema-etape:first-child .schema-titre { color: #000; }
+  article.fiche ul.galerie > li { break-inside: avoid; border-color: #999; }
   article.fiche ol.schema .schema-titre, article.fiche ol.schema .schema-detail,
   article.fiche ol.etapes .etape-titre { color: #000; }
 }
