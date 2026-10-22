@@ -107,7 +107,6 @@ nav.topnav, .topbar, nav.fiche-nav { display: none; }
    recouvrent pas la première ligne. */
 body > header:first-of-type,
 body > .hero:first-of-type { padding-top: 76px; }
-body > a.back-btn { display: none; }
 
 @media (max-width: 780px) {
   /* la bascule n'est plus flottante : la réserve de 76 px n'a plus lieu d'être */

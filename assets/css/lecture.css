@@ -1,0 +1,144 @@
+/* ------------------------------------------------------------------
+   lecture.css — confort de lecture, sur tout le site (avec lecture.js).
+
+   · .lecture-barre : la progression dans la page, tout en haut
+                      (fiches, antisèches, annales, glossaire) ;
+   · .haut-de-page  : le bouton rond qui ramène en haut (partout) ;
+   · .apparition    : un bloc, ou une carte d'accueil, qui entre en douceur
+                      quand on arrive dessus ;
+   · .deroule       : un schéma ou une frise qui se déroule étape par étape.
+
+   Les classes ne sont posées que par le script : sans lui, rien n'est
+   caché. Les mouvements restent courts et discrets, et disparaissent à
+   l'impression comme quand le système demande moins d'animations.
+   ------------------------------------------------------------------ */
+
+/* ---------------- la barre de lecture ---------------- */
+.lecture-barre {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  z-index: 10002;
+  pointer-events: none;
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+  background: linear-gradient(90deg, var(--accent-2, #ff5c6b), var(--accent, #ff6b9d), var(--accent-4, #ff8fa3));
+  box-shadow: 0 0 10px rgba(var(--accent-rgb, 255, 107, 157), 0.55);
+  border-radius: 0 3px 3px 0;
+  transition: transform 0.1s linear;
+  will-change: transform;
+}
+
+/* ---------------- le bouton « haut de page » ---------------- */
+.haut-de-page {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 9990;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50%;
+  border: 1px solid var(--accent-bord, rgba(var(--accent-rgb, 255, 107, 157), 0.35));
+  background: rgba(20, 22, 32, 0.88);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  color: var(--accent, #ff6b9d);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(14px) scale(0.9);
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s, border-color 0.2s, box-shadow 0.2s;
+}
+.haut-de-page.visible { opacity: 1; visibility: visible; transform: none; }
+.haut-de-page:hover {
+  border-color: var(--accent, #ff6b9d);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.4), 0 0 0 4px rgba(var(--accent-rgb, 255, 107, 157), 0.12);
+  transform: translateY(-2px);
+}
+.haut-de-page:focus-visible { outline: 2px solid var(--accent, #ff6b9d); outline-offset: 3px; }
+.haut-de-page svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+@media (max-width: 600px) {
+  .haut-de-page { right: 12px; bottom: 12px; width: 40px; height: 40px; }
+}
+/* dans un quiz, le bouton « Revenir au score » occupe déjà le coin :
+   on se range juste au-dessus */
+body:has(.retour-score.visible) .haut-de-page { bottom: 74px; }
+
+/* ---------------- un bloc qui apparaît ----------------
+   « translate » et « scale » sont des propriétés à part : elles ne
+   gênent pas les « transform » des survols. */
+html.lecture-prete .apparition {
+  opacity: 0;
+  translate: 0 14px;
+  transition: opacity 0.55s ease, translate 0.6s cubic-bezier(0.2, 0.7, 0.2, 1);
+  transition-delay: var(--retard, 0ms);       /* ce qui arrive ensemble arrive en cascade */
+}
+html.lecture-prete .apparition.vu { opacity: 1; translate: none; }
+
+/* le trait sous un grand titre se trace à son arrivée */
+html.lecture-prete article.fiche > h2.apparition::after { width: 0; }
+html.lecture-prete article.fiche > h2.apparition.vu::after { width: 64px; transition: width 0.7s ease 0.15s; }
+
+/* ---------------- un schéma qui se déroule ---------------- */
+html.lecture-prete .deroule > li {
+  --d: calc(var(--i, 0) * 70ms + var(--retard, 0ms));
+  opacity: 0;
+  translate: 0 10px;
+  transition: opacity 0.45s ease var(--d), translate 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) var(--d),
+              scale 0.45s ease var(--d);
+}
+/* les boîtes gardent leur survol pendant qu'elles arrivent */
+html.lecture-prete article.fiche ol.schema.deroule > li.schema-etape {
+  transition: opacity 0.45s ease var(--d), translate 0.5s cubic-bezier(0.2, 0.7, 0.2, 1) var(--d),
+              transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+html.lecture-prete .deroule > li.schema-fleche { translate: none; scale: 0.4; }
+html.lecture-prete .deroule.vu > li { opacity: 1; translate: none; scale: none; }
+
+/* une frise : les numéros arrivent l'un après l'autre, le fil se tire */
+html.lecture-prete ol.etapes.deroule > li { --d: calc(var(--i, 0) * 110ms + var(--retard, 0ms)); }
+html.lecture-prete ol.etapes.deroule > li::after {
+  transform: scaleY(0);
+  transform-origin: 50% 0;
+  transition: transform 0.5s ease calc(var(--d) + 250ms);
+}
+html.lecture-prete ol.etapes.deroule.vu > li::after { transform: scaleY(1); }
+
+/* une réaction : la flèche fait un petit pas en avant à l'arrivée */
+article.fiche p.formule .fleche { display: inline-block; }
+p.formule.vu .fleche { animation: lecture-pas 0.9s ease 0.35s 1; }
+@keyframes lecture-pas {
+  0%, 100% { transform: none; }
+  45% { transform: translateX(4px); }
+}
+
+/* ---------------- moins d'animations, impression ---------------- */
+@media (prefers-reduced-motion: reduce) {
+  .lecture-barre, .haut-de-page { transition: none; }
+  html.lecture-prete .apparition, html.lecture-prete .deroule > li {
+    opacity: 1; translate: none; scale: none; transition: none;
+  }
+  html.lecture-prete ol.etapes.deroule > li::after { transform: none; transition: none; }
+}
+@media print {
+  .lecture-barre, .haut-de-page { display: none !important; }
+  html.lecture-prete .apparition, html.lecture-prete .deroule > li {
+    opacity: 1 !important; translate: none !important; scale: none !important;
+  }
+  html.lecture-prete ol.etapes.deroule > li::after { transform: none !important; }
+}

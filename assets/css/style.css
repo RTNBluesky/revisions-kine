@@ -209,26 +209,61 @@ article.fiche {
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 34px 38px 44px;
+  padding: 38px 42px 48px;
   box-shadow: var(--shadow);
+  line-height: 1.72;
 }
+article.fiche > :first-child { margin-top: 0; }
 article.fiche h1 {
   font-family: 'Playfair Display', serif;
   font-size: 1.7rem; color: var(--accent); margin: 0 0 22px;
 }
 article.fiche h2 {
   font-family: 'Playfair Display', serif;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
+  line-height: 1.35;
   color: var(--accent);
-  margin: 34px 0 12px;
-  padding-bottom: 8px;
-  border-bottom: 2px solid rgba(var(--accent-rgb, 255,107,157), 0.25);
+  margin: 48px 0 14px;
+  padding-bottom: 9px;
+  border-bottom: 2px solid rgba(var(--accent-rgb, 255,107,157), 0.16);
   letter-spacing: -.2px;
 }
-article.fiche h3 { font-size: 1.02rem; color: var(--accent-4); margin: 22px 0 6px; font-weight: 700; }
-article.fiche p { margin: 8px 0; color: var(--ink); }
-article.fiche ul, article.fiche ol { margin: 8px 0; padding-left: 22px; }
-article.fiche li { margin: 5px 0; }
+/* un trait d'accent sous chaque grande partie, qui s'étire au survol */
+article.fiche > h2 { position: relative; }
+article.fiche > h2::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 64px;
+  height: 2px;
+  border-radius: 2px;
+  background: linear-gradient(90deg, var(--accent-2), var(--accent));
+  transition: width .5s ease;
+}
+article.fiche > h2:hover::after { width: 100%; }
+article.fiche h3 { font-size: 1.05rem; line-height: 1.4; color: var(--accent-4); margin: 28px 0 8px; font-weight: 700; }
+/* un petit repère devant les sous-parties */
+article.fiche > h3::before {
+  content: '';
+  display: inline-block;
+  width: 4px;
+  height: .95em;
+  margin-right: 9px;
+  border-radius: 2px;
+  vertical-align: -0.12em;
+  background: linear-gradient(180deg, var(--accent), var(--accent-2));
+  opacity: .85;
+}
+article.fiche h4 { margin: 20px 0 6px; color: var(--ink); }
+article.fiche p { margin: 10px 0; color: var(--ink); }
+article.fiche ul, article.fiche ol { margin: 10px 0; padding-left: 22px; }
+article.fiche li { margin: 6px 0; }
+article.fiche ul > li::marker { color: var(--accent); }
+article.fiche ol:not(.schema):not(.etapes) > li::marker { color: var(--accent); font-weight: 700; }
+article.fiche li > p { margin: 4px 0; }
+article.fiche li > p:first-child { margin-top: 0; }
+article.fiche li > p:last-child { margin-bottom: 0; }
 article.fiche strong { color: var(--accent-4); font-weight: 600; }
 article.fiche em { color: var(--muted); }
 article.fiche code {
@@ -237,20 +272,28 @@ article.fiche code {
   border-radius: 5px; padding: 1px 6px; font-size: .9em;
   color: var(--accent-4);
 }
-article.fiche hr { border: 0; border-top: 1px solid var(--line); margin: 30px 0; }
+article.fiche hr {
+  border: 0; height: 1px; margin: 36px 0;
+  background: linear-gradient(90deg, transparent, var(--line-strong, rgba(255,255,255,0.14)), transparent);
+}
 article.fiche a { color: var(--accent); }
 
 article.fiche blockquote {
-  margin: 16px 0;
-  padding: 14px 18px;
+  margin: 20px 0;
+  padding: 15px 20px;
   background: linear-gradient(135deg, rgba(var(--accent-rgb, 255,107,157), 0.10), rgba(var(--accent-2-rgb, 255,92,107), 0.05));
   border-left: 4px solid var(--accent);
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 12px 12px 0;
   color: var(--ink);
+  transition: background-color .25s ease, box-shadow .25s ease;
+}
+article.fiche blockquote:hover {
+  background-color: rgba(var(--accent-rgb, 255,107,157), 0.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.18);
 }
 article.fiche blockquote p { margin: 4px 0; }
 
-.table-wrap { overflow-x: auto; margin: 16px 0; border-radius: 10px; border: 1px solid var(--line); }
+.table-wrap { overflow-x: auto; margin: 20px 0; border-radius: 12px; border: 1px solid var(--line); }
 article.fiche table { border-collapse: collapse; width: 100%; font-size: .92rem; }
 article.fiche th, article.fiche td {
   border: 1px solid var(--line);
@@ -266,9 +309,14 @@ article.fiche th {
   letter-spacing: .2px;
 }
 article.fiche td { color: var(--ink); }
+article.fiche td > :first-child, article.fiche th > :first-child { margin-top: 0; }
+article.fiche td > :last-child, article.fiche th > :last-child { margin-bottom: 0; }
 article.fiche td strong { color: var(--accent-4); }
 article.fiche tbody tr:nth-child(even) { background: rgba(255,255,255,0.02); }
-article.fiche tbody tr:hover { background: rgba(var(--accent-rgb, 255,107,157), 0.05); }
+article.fiche tbody tr { transition: background-color .18s ease; }
+article.fiche tbody tr:hover { background: rgba(var(--accent-rgb, 255,107,157), 0.07); }
+article.fiche tbody tr > :first-child { transition: box-shadow .18s ease; }
+article.fiche tbody tr:hover > :first-child { box-shadow: inset 3px 0 0 var(--accent); }
 
 /* ---------- quiz ---------- */
 
@@ -494,7 +542,8 @@ article.fiche tbody tr:hover { background: rgba(var(--accent-rgb, 255,107,157), 
 
 @media (max-width: 600px) {
   .wrap { padding: 0 16px 60px; }
-  article.fiche { padding: 24px 20px 32px; }
+  article.fiche { padding: 26px 20px 34px; line-height: 1.68; }
+  article.fiche h2 { margin-top: 40px; }
   header.top { padding: 24px 0 22px; }
 }
 
@@ -541,3 +590,175 @@ article.fiche tbody tr:hover { background: rgba(var(--accent-rgb, 255,107,157), 
 .essentiel ul { margin: 0; padding-left: 20px; }
 .essentiel li { margin: 6px 0; color: var(--ink); line-height: 1.55; }
 .essentiel > p { margin: 0; color: var(--ink); line-height: 1.6; }
+
+/* ─────────────────────────────── schémas ───────────────────────────────
+   ol.schema  : des étapes reliées par des flèches — un axe hormonal, un
+                trajet, une cascade. À plat jusqu'à quatre étapes courtes,
+                l'une sous l'autre au-delà, et toujours sur petit écran.
+   ol.etapes  : des étapes numérotées, en frise verticale.
+   p.formule  : une réaction ou une formule, seule sur sa ligne.          */
+article.fiche ol.schema {
+  list-style: none; margin: 18px 0 22px; padding: 0;
+  display: flex; flex-wrap: nowrap; align-items: stretch; justify-content: center;
+}
+article.fiche ol.schema > li { margin: 0; padding: 0; }
+article.fiche ol.schema > li.schema-etape {
+  flex: 1 1 0; min-width: 0; max-width: 250px;
+  display: flex; flex-direction: column; justify-content: center; gap: 4px;
+  padding: 12px 14px; text-align: center; line-height: 1.35;
+  background: rgba(var(--accent-rgb, 255,107,157), 0.07);
+  border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.30);
+  border-radius: 12px;
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease, background-color .2s ease;
+}
+article.fiche ol.schema > li.schema-etape:hover {
+  transform: translateY(-2px);
+  border-color: rgba(var(--accent-rgb, 255,107,157), 0.6);
+  background-color: rgba(var(--accent-rgb, 255,107,157), 0.11);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.28);
+}
+article.fiche ol.schema .schema-titre { display: block; color: var(--ink); font-weight: 700; }
+article.fiche ol.schema .schema-titre strong { color: inherit; font-weight: inherit; }
+article.fiche ol.schema .schema-lettre {
+  display: block; font-family: 'Playfair Display', serif; font-size: 1.6rem;
+  line-height: 1; color: var(--accent); font-weight: 900;
+}
+article.fiche ol.schema .schema-detail { display: block; font-size: .86rem; font-weight: 600; color: var(--accent-4); }
+article.fiche ol.schema .schema-note { display: block; font-size: .82rem; color: var(--muted); }
+article.fiche ol.schema small { font-size: inherit; }
+article.fiche ol.schema > li.schema-fleche {
+  flex: 0 0 34px; display: flex; flex-direction: column; align-items: center; justify-content: center;
+  color: var(--accent); font-size: 1.3rem; line-height: 1; font-weight: 700;
+}
+article.fiche ol.schema > li.schema-fleche::before { content: '→'; }
+article.fiche ol.schema > li.schema-fleche em {
+  display: block; margin-top: 5px; max-width: 92px; text-align: center;
+  font-size: .72rem; line-height: 1.2; font-weight: 600; font-style: italic; color: var(--muted);
+}
+article.fiche ol.schema > li.schema-fleche.avec-legende { flex-basis: 92px; }
+article.fiche ol.schema > li.schema-inhibe::before { content: '⊣'; color: var(--accent-red, #f87171); }
+article.fiche ol.schema > li.schema-fleche.schema-plus::before { content: '+'; font-size: 1.5rem; }
+article.fiche ol.schema > li.schema-fleche.schema-double::before { content: '↔'; }
+
+article.fiche ol.schema.schema-vertical { flex-direction: column; align-items: center; }
+article.fiche ol.schema.schema-vertical > li.schema-etape { flex: none; width: 100%; max-width: 480px; padding: 9px 14px; }
+article.fiche ol.schema.schema-vertical > li.schema-fleche {
+  flex: none; flex-direction: row; gap: 10px; padding: 3px 0; min-height: 26px;
+}
+article.fiche ol.schema.schema-vertical > li.schema-fleche::before { content: '↓'; }
+article.fiche ol.schema.schema-vertical > li.schema-inhibe::before { content: '⊥'; }
+article.fiche ol.schema.schema-vertical > li.schema-fleche.schema-plus::before { content: '+'; }
+article.fiche ol.schema.schema-vertical > li.schema-fleche.schema-double::before { content: '↕'; }
+article.fiche ol.schema.schema-vertical > li.schema-fleche em { margin-top: 0; max-width: 400px; font-size: .8rem; text-align: left; }
+
+article.fiche .schema-legende { margin: 14px 0 -8px; font-weight: 700; color: var(--accent-4); }
+
+/* ul.branches : des voies parallèles écrites ensemble (« LH → … » puis
+   « FSH → … »). Un même cadre dit qu'elles vont ensemble ; une colonne
+   chacune, et leur point de départ mis en avant, disent qu'elles ne se
+   suivent pas. Après un tronc commun, une flèche y descend. */
+article.fiche ul.branches {
+  list-style: none;
+  margin: 16px 0 22px;
+  padding: 14px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  border: 1px dashed rgba(var(--accent-rgb, 255,107,157), 0.32);
+  border-radius: 16px;
+  background: rgba(255,255,255,0.015);
+}
+article.fiche ul.branches > li.branche {
+  margin: 0;
+  padding: 12px 10px;
+  border-radius: 12px;
+  background: rgba(var(--accent-rgb, 255,107,157), 0.035);
+  border: 1px solid var(--line);
+}
+article.fiche ul.branches > li.branche::marker { content: none; }
+article.fiche ul.branches ol.schema { margin: 0; }
+article.fiche ul.branches ol.schema > li.schema-etape { padding: 8px 10px; }
+@media (max-width: 600px) {
+  article.fiche ul.branches { padding: 10px; gap: 8px; }
+  article.fiche ul.branches > li.branche { padding: 10px 7px; }
+  article.fiche ul.branches ol.schema > li.schema-etape { padding: 7px 8px; font-size: .9rem; }
+}
+/* la tête de chaque voie : l'hormone, la cause, le point de départ */
+article.fiche ul.branches ol.schema > li.schema-etape:first-child {
+  background: linear-gradient(135deg, var(--accent-2), var(--accent));
+  border-color: transparent;
+}
+article.fiche ul.branches ol.schema > li.schema-etape:first-child .schema-titre,
+article.fiche ul.branches ol.schema > li.schema-etape:first-child .schema-detail { color: #fff; }
+article.fiche ul.branches .schema-legende { margin: 0 0 8px; text-align: center; font-size: .9rem; }
+article.fiche ol.schema.schema-tronc { margin-bottom: 4px; }
+article.fiche ul.branches.apres-tronc { margin-top: 0; position: relative; }
+article.fiche ul.branches.apres-tronc::before {
+  content: '↓';
+  position: absolute; top: -2px; left: 50%; transform: translate(-50%, -100%);
+  color: var(--accent); font-weight: 700; font-size: 1.3rem; line-height: 1;
+}
+article.fiche ol.schema.schema-tronc + ul.branches.apres-tronc { margin-top: 30px; }
+
+article.fiche ol.etapes { list-style: none; counter-reset: etape; margin: 16px 0 20px; padding: 0; }
+article.fiche ol.etapes > li {
+  counter-increment: etape; position: relative; margin: 0; padding: 0 0 16px 46px; line-height: 1.55;
+}
+article.fiche ol.etapes > li::before {
+  content: counter(etape); position: absolute; left: 0; top: 0;
+  width: 30px; height: 30px; border-radius: 50%; box-sizing: border-box;
+  display: flex; align-items: center; justify-content: center;
+  background: rgba(var(--accent-rgb, 255,107,157), 0.14);
+  border: 1px solid rgba(var(--accent-rgb, 255,107,157), 0.50);
+  color: var(--accent); font-weight: 700; font-size: .85rem;
+}
+article.fiche ol.etapes > li[data-n]::before { content: attr(data-n); }
+article.fiche ol.etapes > li::before { transition: background-color .2s ease, box-shadow .2s ease, color .2s ease; }
+article.fiche ol.etapes > li:hover::before {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 0 0 4px rgba(var(--accent-rgb, 255,107,157), 0.15);
+}
+article.fiche ol.etapes > li::after {
+  content: ''; position: absolute; left: 14.5px; top: 34px; bottom: 4px; width: 1px;
+  background: rgba(var(--accent-rgb, 255,107,157), 0.32);
+}
+article.fiche ol.etapes > li:last-child { padding-bottom: 0; }
+article.fiche ol.etapes > li:last-child::after { display: none; }
+article.fiche ol.etapes .etape-titre { display: block; padding-top: 4px; margin-bottom: 2px; color: var(--accent-4); font-weight: 700; }
+
+article.fiche p.formule {
+  margin: 12px 0; padding: 10px 16px; text-align: center; font-size: 1.02rem; font-weight: 600;
+  background: rgba(255,255,255,0.03); border: 1px dashed var(--line-strong, rgba(255,255,255,0.14));
+  border-radius: 10px; color: var(--ink);
+}
+article.fiche p.formule .fleche { color: var(--accent); padding: 0 .4em; font-weight: 700; }
+article.fiche span.fleche { color: var(--accent); font-weight: 700; padding: 0 .15em; }
+article.fiche p.formule em { color: var(--muted); font-weight: 400; font-size: .9rem; }
+
+@media (max-width: 640px) {
+  article.fiche ol.schema { flex-direction: column; align-items: center; }
+  article.fiche ol.schema > li.schema-etape { flex: none; width: 100%; max-width: none; padding: 9px 14px; }
+  article.fiche ol.schema > li.schema-fleche { flex: none; flex-direction: row; gap: 10px; padding: 3px 0; min-height: 26px; }
+  article.fiche ol.schema > li.schema-fleche::before { content: '↓'; }
+  article.fiche ol.schema > li.schema-inhibe::before { content: '⊥'; }
+  article.fiche ol.schema > li.schema-fleche.schema-plus::before { content: '+'; }
+  article.fiche ol.schema > li.schema-fleche.schema-double::before { content: '↕'; }
+  article.fiche ol.schema > li.schema-fleche em { margin-top: 0; max-width: 300px; font-size: .8rem; text-align: left; }
+}
+@media print {
+  article.fiche ol.schema > li.schema-etape, article.fiche p.formule { background: #fff; border-color: #999; }
+  article.fiche ul.branches, article.fiche ul.branches > li.branche { background: #fff; border-color: #999; }
+  article.fiche ul.branches ol.schema > li.schema-etape:first-child { background: #eee; }
+  article.fiche ul.branches ol.schema > li.schema-etape:first-child .schema-titre { color: #000; }
+  article.fiche ol.schema .schema-titre, article.fiche ol.schema .schema-detail,
+  article.fiche ol.etapes .etape-titre { color: #000; }
+}
+
+/* moins d'animations demandées par le système : les survols restent
+   lisibles (couleurs), sans mouvement */
+@media (prefers-reduced-motion: reduce) {
+  article.fiche > h2::after, article.fiche blockquote, article.fiche tbody tr,
+  article.fiche ol.schema > li.schema-etape, article.fiche ol.etapes > li::before { transition: none; }
+  article.fiche ol.schema > li.schema-etape:hover { transform: none; }
+}
