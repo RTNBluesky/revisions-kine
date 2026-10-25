@@ -77,6 +77,11 @@ window.GLOSSAIRE = {
   "d": "La position en flexion complète de hanches, genoux et chevilles. Son analyse renseigne sur mobilité, force et équilibre.",
   "dom": "Biomécanique"
  },
+ "ace2": {
+  "t": "ACE2 — enzyme de conversion de l'angiotensine 2",
+  "d": "Enzyme de la surface des cellules (poumon, vaisseaux) ; c'est la porte d'entrée du SARS-CoV-2.",
+  "dom": "Physiopathologie"
+ },
  "acetabulum": {
   "t": "Acétabulum (cotyle)",
   "d": "Cavité de l'os coxal qui reçoit la tête fémorale, bordée par un bourrelet fibro-cartilagineux. Sa couverture insuffisante donne une dysplasie et une coxarthrose précoce.",
@@ -212,6 +217,11 @@ window.GLOSSAIRE = {
   "d": "Accolement anormal entre deux plans qui devraient glisser l'un sur l'autre. Conséquence fréquente d'une inflammation ou d'une chirurgie.",
   "dom": "Physiopathologie"
  },
+ "adhesion": {
+  "t": "ICAM-1, VCAM-1, PECAM-1 — molécules d'adhésion",
+  "d": "Protéines de l'endothélium qui accrochent les globules blancs et les font passer dans le tissu enflammé (diapédèse). MCP-1 est une chimiokine qui attire les monocytes.",
+  "dom": "Physiopathologie"
+ },
  "adiadococinesie": {
   "t": "Adiadococinésie",
   "d": "Impossibilité d'enchaîner rapidement deux mouvements opposés, comme les marionnettes. Autre signe cérébelleux, à côté de la dysmétrie et de l'asynergie.",
@@ -240,6 +250,11 @@ window.GLOSSAIRE = {
  "adn": {
   "t": "ADN — acide désoxyribonucléique",
   "d": "Molécule porteuse de l'information génétique, en double hélice de nucléotides A, T, G et C.",
+  "dom": "SVT"
+ },
+ "adn_t": {
+  "t": "ADN-T — ADN de transfert",
+  "d": "Fragment du plasmide Ti d'Agrobacterium qui s'intègre au génome de la plante : l'outil naturel de la transgenèse végétale.",
   "dom": "SVT"
  },
  "adp": {
@@ -291,6 +306,11 @@ window.GLOSSAIRE = {
   "t": "AGREE — grille d'évaluation des recommandations",
   "d": "Outil qui note la qualité méthodologique d'une recommandation de bonne pratique.",
   "dom": "Recherche"
+ },
+ "ah_vp": {
+  "t": "VP, AH — veine porte, artère hépatique",
+  "d": "Avec le canal biliaire, elles forment la triade portale, aux angles des lobules du foie.",
+  "dom": "Anatomie"
  },
  "aica": {
   "t": "AICA — artère cérébelleuse antéro-inférieure",
@@ -422,6 +442,11 @@ window.GLOSSAIRE = {
   "d": "Démence dégénérative la plus fréquente, marquée par une atrophie hippocampique, des plaques amyloïdes et une dégénérescence neurofibrillaire. Elle débute par la mémoire épisodique récente, puis atteint langage, gestes et orientation.",
   "dom": "Neurologie"
  },
+ "am404": {
+  "t": "AM404 — métabolite du paracétamol",
+  "d": "Formé dans le cerveau à partir du paracétamol, il agit sur les récepteurs TRPV1 et le système cannabinoïde : une partie de l'effet antalgique.",
+  "dom": "Pharmacologie"
+ },
  "amaigrissement": {
   "t": "Amaigrissement",
   "d": "Perte de poids involontaire. Au-delà de 5 % du poids en six mois, c'est un signe d'alerte qui impose de chercher un cancer, une infection chronique ou une dénutrition.",
@@ -456,6 +481,11 @@ window.GLOSSAIRE = {
   "t": "Récepteur AMPA",
   "d": "Récepteur du glutamate à réponse rapide, acteur de la transmission excitatrice et de la potentialisation à long terme.",
   "dom": "Neurologie"
+ },
+ "ampc": {
+  "t": "AMPc — AMP cyclique",
+  "d": "Second messager fabriqué à partir de l'ATP par l'adénylate cyclase : il relaie dans la cellule le message de nombreuses hormones (adrénaline, ADH, glucagon).",
+  "dom": "Physiologie"
  },
  "amphiarthrose": {
   "t": "Amphiarthrose",
@@ -727,6 +757,11 @@ window.GLOSSAIRE = {
   "d": "Suicide programmé de la cellule, sans inflammation. Mécanisme normal de renouvellement des tissus.",
   "dom": "Physiopathologie"
  },
+ "apoptose_voies": {
+  "t": "Fas, FasL, FADD, APAF-1 — voies de l'apoptose",
+  "d": "Voie extrinsèque : FasL ou le TNF se fixent sur Fas ou TNFR1 → FADD → caspase-8. Voie intrinsèque : cytochrome c + APAF-1 → apoptosome → caspase-9. Les deux finissent par les caspases exécutrices.",
+  "dom": "Physiopathologie"
+ },
  "app": {
   "t": "APP — protéine précurseur de l'amyloïde",
   "d": "Son clivage anormal produit le peptide bêta-amyloïde qui s'accumule dans la maladie d'Alzheimer.",
@@ -761,6 +796,11 @@ window.GLOSSAIRE = {
   "t": "APTA — American Physical Therapy Association",
   "d": "Association professionnelle américaine de physiothérapie, à l'origine de nombreuses recommandations.",
   "dom": "Recherche"
+ },
+ "aqp2": {
+  "t": "AQP2 — aquaporine 2",
+  "d": "Canal à eau du tube collecteur du rein, inséré dans la membrane sous l'effet de l'ADH : l'urine se concentre.",
+  "dom": "Physiologie"
  },
  "aquaporine": {
   "t": "Aquaporine",
@@ -997,6 +1037,11 @@ window.GLOSSAIRE = {
   "d": "Charge qu'on ne peut soulever qu'un nombre donné de fois. La 1 RM est la charge maximale sur une répétition.",
   "dom": "EAIF"
  },
+ "atpase": {
+  "t": "ATPase — pompe à ions",
+  "d": "Enzyme qui utilise l'énergie de l'ATP pour transporter des ions contre leur gradient : la pompe Na⁺/K⁺ ATPase fait sortir 3 Na⁺ et entrer 2 K⁺, ce qui entretient le potentiel de repos.",
+  "dom": "Physiologie"
+ },
  "atrophie": {
   "t": "Atrophie",
   "d": "Diminution du volume d'un tissu ou d'un organe, par perte de substance ou de cellules.",
@@ -1041,6 +1086,11 @@ window.GLOSSAIRE = {
   "t": "AV — atrio-ventriculaire",
   "d": "Qui relie oreillettes et ventricules. Le nœud AV ralentit l'influx (intervalle PR) avant le faisceau de His ; un BAV est un bloc à ce niveau.",
   "dom": "Cardio-respiratoire"
+ },
+ "avaf": {
+  "t": "AVAF — utérus antéversé, antéfléchi",
+  "d": "La position normale de l'utérus chez environ 80 % des femmes : basculé vers l'avant et plié sur lui-même vers l'avant.",
+  "dom": "Anatomie"
  },
  "avasculaire": {
   "t": "Avasculaire",
@@ -1392,6 +1442,11 @@ window.GLOSSAIRE = {
   "d": "Procédure de Beaton : deux traductions directes, leur synthèse, puis deux rétrotraductions à l'aveugle avant validation par un comité d'experts.",
   "dom": "Recherche"
  },
+ "bte": {
+  "t": "BTE — pompage trachéal expiratoire",
+  "d": "Technique du nourrisson (bombagem traqueal expiratória) : de petites pressions du pouce sur la trachée, au-dessus du sternum, pendant l'expiration, font remonter les sécrétions proximales vers le pharynx.",
+  "dom": "Cardio-respiratoire"
+ },
  "bulbe_rachidien": {
   "t": "Bulbe rachidien (moelle allongée)",
   "d": "Partie basse du tronc cérébral, entre la moelle et la protubérance. Il contient les centres respiratoire et vasomoteur, et c'est là que croisent les fibres du faisceau pyramidal.",
@@ -1597,6 +1652,11 @@ window.GLOSSAIRE = {
   "d": "La base des revues systématiques Cochrane, référence en kinésithérapie.",
   "dom": "Recherche"
  },
+ "ce_cortico": {
+  "t": "CE — corticoïdes",
+  "d": "Anti-inflammatoires stéroïdiens ; en aérosol ou inhalés, ils traitent l'inflammation et l'œdème bronchiques (asthme, BPCO).",
+  "dom": "Pharmacologie"
+ },
  "centromedullaire": {
   "t": "Syndrome centromédullaire",
   "d": "Lésion du centre de la moelle cervicale après une hyperextension sur canal étroit : les membres supérieurs sont plus atteints que les inférieurs, avec rétention urinaire.",
@@ -1641,6 +1701,11 @@ window.GLOSSAIRE = {
   "t": "Triade de Charcot",
   "d": "Douleur de l'hypochondre droit, ictère et fièvre avec frissons : les trois signes de l'angiocholite, une obstruction infectée de la voie biliaire. C'est une urgence.",
   "dom": "Physiopathologie"
+ },
+ "chef_equipe": {
+  "t": "Chef d'équipe (transfert)",
+  "d": "Le porteur qui tient la tête et le haut du tronc, la zone la plus à risque : il donne la commande verbale et synchronise les autres.",
+  "dom": "Démarche clinique"
  },
  "cheloide": {
   "t": "Chéloïde",
@@ -1806,6 +1871,11 @@ window.GLOSSAIRE = {
   "t": "CMT — concentration maximale tolérée",
   "d": "La plus haute concentration que l'organisme supporte sans effet toxique.",
   "dom": "Pharmacologie"
+ },
+ "cmv": {
+  "t": "CMV — cytomégalovirus",
+  "d": "Virus de la famille des herpès, souvent sans symptôme ; dangereux pendant la grossesse (surdité congénitale) et chez l'immunodéprimé.",
+  "dom": "Physiopathologie"
  },
  "cntf": {
   "t": "CNTF — facteur neurotrophique ciliaire",
@@ -2036,6 +2106,11 @@ window.GLOSSAIRE = {
   "t": "COSMIN",
   "d": "Référentiel d'évaluation des qualités psychométriques d'un instrument de mesure.",
   "dom": "Recherche"
+ },
+ "cough_assist": {
+  "t": "Cough Assist — in-exsufflation mécanique",
+  "d": "Appareil qui insuffle puis aspire brusquement l'air des poumons pour remplacer une toux trop faible (débit de pointe à la toux sous 160 L/min) : la « toux mécanique ».",
+  "dom": "Cardio-respiratoire"
  },
  "couturier": {
   "t": "Couturier (sartorius)",
@@ -2620,6 +2695,11 @@ window.GLOSSAIRE = {
  "dmard": {
   "t": "DMARD — traitement de fond de la polyarthrite",
   "d": "Médicament qui freine l'évolution de la maladie rhumatismale, et pas seulement ses symptômes.",
+  "dom": "Pharmacologie"
+ },
+ "dmards": {
+  "t": "DMARDs — traitements de fond des rhumatismes",
+  "d": "Disease-modifying antirheumatic drugs : méthotrexate, biothérapies… Ils freinent l'évolution de la polyarthrite rhumatoïde, au lieu de seulement calmer la douleur.",
   "dom": "Pharmacologie"
  },
  "dmla": {
@@ -3382,6 +3462,11 @@ window.GLOSSAIRE = {
   "d": "Dont l'état change dans le temps, le plus souvent en s'aggravant. Un tableau évolutif oblige à réévaluer régulièrement plutôt qu'à se fier au bilan initial.",
   "dom": "Démarche clinique"
  },
+ "exacerbation": {
+  "t": "Exacerbation",
+  "d": "Aggravation aiguë et durable d'une maladie chronique, typiquement la BPCO : plus de dyspnée, de toux et de crachats, souvent après une infection.",
+  "dom": "Cardio-respiratoire"
+ },
  "examen_complementaire": {
   "t": "Examen complémentaire",
   "d": "Imagerie, biologie ou mesure instrumentale demandée pour confirmer ou écarter une hypothèse. Complémentaire veut dire après l'examen clinique, pas à sa place : une image anormale chez un patient asymptomatique ne fait pas un diagnostic.",
@@ -3957,6 +4042,11 @@ window.GLOSSAIRE = {
   "d": "Étendre les conclusions d'un échantillon à toute une population. Elle n'est légitime que si l'échantillon la représente.",
   "dom": "Recherche"
  },
+ "generations_bronchiques": {
+  "t": "Générations bronchiques",
+  "d": "Chaque division de l'arbre bronchique est une génération : la trachée est la génération 0, puis les bronches principales… jusqu'aux alvéoles vers la 23e. Elles situent l'encombrement : proximal jusqu'à la 4e-5e, distal jusqu'à la 13e-14e, périphérique de la 16e à la 23e.",
+  "dom": "Cardio-respiratoire"
+ },
  "generativite": {
   "t": "Générativité",
   "d": "Chez Erikson, le besoin de l'adulte d'âge mûr de transmettre et de contribuer. Son contraire est la stagnation.",
@@ -4217,6 +4307,11 @@ window.GLOSSAIRE = {
   "d": "Hormone du placenta qui maintient le corps jaune en début de grossesse. Base des tests de grossesse.",
   "dom": "Physiologie"
  },
+ "hcl": {
+  "t": "HCl — acide chlorhydrique",
+  "d": "Acide sécrété par les cellules pariétales de l'estomac (pH 1-2) ; il est régulé par l'histamine, l'acétylcholine et la gastrine.",
+  "dom": "Physiologie"
+ },
  "hdl": {
   "t": "HDL — lipoprotéine de haute densité",
   "d": "Ramène le cholestérol des tissus vers le foie : le « bon » cholestérol.",
@@ -4331,6 +4426,11 @@ window.GLOSSAIRE = {
   "t": "Hernie discale",
   "d": "Migration du nucleus à travers une fissure de l'annulus. Elle ne fait mal que si elle comprime ou irrite une racine : d'où la radiculalgie, le trajet, et des images fréquentes chez des gens sans douleur.",
   "dom": "Musculo-squelettique"
+ },
+ "hfc": {
+  "t": "HFC — hydrofluorocarbures",
+  "d": "Gaz réfrigérants qui ont remplacé les CFC : sans danger pour l'ozone, mais à très fort pouvoir de réchauffement.",
+  "dom": "SVT"
  },
  "hgpo": {
   "t": "HGPO — hyperglycémie provoquée par voie orale",
@@ -4555,6 +4655,11 @@ window.GLOSSAIRE = {
  "hyperinsufflation": {
   "t": "Hyperinsufflation",
   "d": "Poumons distendus par de l'air piégé, faute de pouvoir expirer complètement. Classique dans la BPCO : le thorax se met en tonneau.",
+  "dom": "Cardio-respiratoire"
+ },
+ "hyperinsufflation_manuelle": {
+  "t": "Hyperinsufflation manuelle",
+  "d": "Chez le patient intubé ou trachéotomisé, insufflations lentes et profondes au ballon suivies d'un relâchement rapide : elles ouvrent les alvéoles et mobilisent les sécrétions périphériques.",
   "dom": "Cardio-respiratoire"
  },
  "hyperinsulinemie": {
@@ -4791,6 +4896,11 @@ window.GLOSSAIRE = {
   "t": "Ictère",
   "d": "La jaunisse : coloration jaune de la peau et des yeux par accumulation de bilirubine.",
   "dom": "Physiopathologie"
+ },
+ "icu_aw": {
+  "t": "ICU-AW — faiblesse acquise en réanimation",
+  "d": "Déficit moteur diffus et symétrique après un séjour en réanimation (polyneuropathie et myopathie de réanimation) ; on le retient sous 48/60 au MRC. La mobilisation précoce le prévient.",
+  "dom": "Cardio-respiratoire"
  },
  "idiopathique": {
   "t": "Idiopathique",
@@ -5042,6 +5152,11 @@ window.GLOSSAIRE = {
   "d": "Pression délivrée pendant l'inspiration en ventilation à deux niveaux de pression.",
   "dom": "Cardio-respiratoire"
  },
+ "ipaq": {
+  "t": "IPAQ — questionnaire international d'activité physique",
+  "d": "Questionnaire qui estime le temps passé en activité intense, modérée, en marche et assis sur les sept derniers jours.",
+  "dom": "Démarche clinique"
+ },
  "ipbes": {
   "t": "IPBES — plateforme intergouvernementale sur la biodiversité",
   "d": "L'équivalent du GIEC pour le vivant : elle évalue l'état de la biodiversité et des services écosystémiques.",
@@ -5086,6 +5201,11 @@ window.GLOSSAIRE = {
   "t": "IRM — imagerie par résonance magnétique",
   "d": "Imagerie sans rayons X, fondée sur le comportement des protons dans un champ magnétique. Excellente pour les tissus mous.",
   "dom": "Physiopathologie"
+ },
+ "irmf": {
+  "t": "IRMf — IRM fonctionnelle",
+  "d": "IRM qui repère les régions du cerveau qui s'activent pendant une tâche, par la variation de leur oxygénation (signal BOLD).",
+  "dom": "Neurologie"
  },
  "irr_sigle": {
   "t": "IRR — information de retour sur le résultat",
@@ -5282,6 +5402,11 @@ window.GLOSSAIRE = {
   "d": "La suture entre l'occipital et les pariétaux, en forme de lambda. La coronale sépare frontal et pariétaux, la sagittale les deux pariétaux.",
   "dom": "Anatomie"
  },
+ "laryngite": {
+  "t": "Laryngite",
+  "d": "Inflammation du larynx, le plus souvent virale : voix rauque, toux aboyante. Chez l'enfant, la laryngite sous-glottique peut donner un stridor : avis médical, pas de toux provoquée.",
+  "dom": "Physiopathologie"
+ },
  "lasegue": {
   "t": "Signe de Lasègue",
   "d": "Jambe tendue, on élève le membre inférieur. La douleur irradiée avant 60° évoque une souffrance radiculaire L5-S1.",
@@ -5361,6 +5486,11 @@ window.GLOSSAIRE = {
   "t": "Lévodopa",
   "d": "Précurseur de la dopamine, traitement de référence du Parkinson. À long terme : fluctuations et dyskinésies.",
   "dom": "Pharmacologie"
+ },
+ "levres_pincees": {
+  "t": "Lèvres pincées (freinage labial)",
+  "d": "Expirer lentement par la bouche, lèvres serrées comme pour souffler une bougie : la pression maintient les bronches ouvertes, vide mieux les poumons et calme la dyspnée (BPCO, emphysème, asthme).",
+  "dom": "Cardio-respiratoire"
  },
  "lfa": {
   "t": "LFA-1 — intégrine leucocytaire",
@@ -5502,6 +5632,11 @@ window.GLOSSAIRE = {
   "d": "Éverse le pied et soutient l'arche plantaire transversale.",
   "dom": "Anatomie"
  },
+ "lps": {
+  "t": "LPS — lipopolysaccharide",
+  "d": "Composant de la paroi des bactéries Gram négatif ; libéré à leur lyse, c'est une endotoxine qui déclenche une inflammation violente (choc septique).",
+  "dom": "Physiopathologie"
+ },
  "lr_sigle": {
   "t": "LR — rapport de vraisemblance",
   "d": "LR+ et LR− : de combien un résultat de test modifie la probabilité de la maladie.",
@@ -5586,6 +5721,11 @@ window.GLOSSAIRE = {
   "t": "MAC — complexe d'attaque membranaire",
   "d": "Pore formé par le complément qui perfore la membrane bactérienne.",
   "dom": "Physiopathologie"
+ },
+ "macnew": {
+  "t": "MacNew — qualité de vie en cardiologie",
+  "d": "Questionnaire de qualité de vie spécifique des maladies cardiaques (MacNew Heart Disease) : physique, émotionnel, social.",
+  "dom": "Cardio-respiratoire"
  },
  "macrophage": {
   "t": "Macrophage",
@@ -5676,6 +5816,11 @@ window.GLOSSAIRE = {
   "t": "Test de McConnell",
   "d": "On cherche l'angle douloureux en extension résistée du genou, puis on refait le test rotule médialisée. Si la douleur diminue : syndrome fémoro-patellaire.",
   "dom": "Musculo-squelettique"
+ },
+ "mcgill": {
+  "t": "Questionnaire de McGill (douleur)",
+  "d": "Décrit la douleur avec des mots choisis par le patient, en dimensions sensorielle, affective et évaluative.",
+  "dom": "Démarche clinique"
  },
  "mci": {
   "t": "MCI — trouble cognitif léger",
@@ -6053,8 +6198,8 @@ window.GLOSSAIRE = {
   "dom": "Physiopathologie"
  },
  "mrc": {
-  "t": "MRC — échelle de dyspnée du Medical Research Council",
-  "d": "Cote l'essoufflement dans la vie courante, de 0, gêné à l'effort intense, à 4, gêné pour s'habiller.",
+  "t": "MRC, mMRC — échelles du Medical Research Council",
+  "d": "Deux échelles portent ce nom. La cotation MRC de la force musculaire, de 0 (aucune contraction) à 5 (force normale). Et l'échelle de dyspnée mMRC, de 0 (essoufflé seulement à l'effort intense) à 4 (trop essoufflé pour sortir ou s'habiller).",
   "dom": "Cardio-respiratoire"
  },
  "ms_membre": {
@@ -6220,6 +6365,11 @@ window.GLOSSAIRE = {
  "na_sigle": {
   "t": "NA — noradrénaline",
   "d": "Neurotransmetteur du système sympathique : vasoconstriction, accélération cardiaque, vigilance.",
+  "dom": "Physiologie"
+ },
+ "nacl": {
+  "t": "NaCl — chlorure de sodium",
+  "d": "Le sel. Le sérum physiologique est du NaCl à 0,9 % ; le sérum hypertonique, à 3 % ou plus.",
   "dom": "Physiologie"
  },
  "nad_gtp": {
@@ -6402,6 +6552,11 @@ window.GLOSSAIRE = {
   "d": "Les trois principes de la mécanique : inertie, F = m·a, et action-réaction. Toute analyse de force musculaire, de bras de levier et d'appui au sol en découle.",
   "dom": "Biomécanique"
  },
+ "nfkb": {
+  "t": "NF-κB — facteur de transcription de l'inflammation",
+  "d": "Il allume dans le noyau les gènes de l'inflammation (cytokines, molécules d'adhésion) quand la cellule détecte un danger.",
+  "dom": "Physiopathologie"
+ },
  "nfs": {
   "t": "NFS — numération formule sanguine",
   "d": "Comptage des globules rouges, des globules blancs et des plaquettes, avec le détail des différents leucocytes.",
@@ -6561,6 +6716,11 @@ window.GLOSSAIRE = {
   "t": "NTA — nécrose tubulaire aiguë",
   "d": "Destruction des cellules des tubules rénaux après un choc ou une substance toxique : la cause la plus fréquente d'insuffisance rénale aiguë organique.",
   "dom": "Physiopathologie"
+ },
+ "nucleases": {
+  "t": "DNase, RNase — nucléases",
+  "d": "Enzymes qui découpent l'ADN (DNase) ou l'ARN (RNase).",
+  "dom": "SVT"
  },
  "nyha": {
   "t": "NYHA — classification de la New York Heart Association",
@@ -6947,6 +7107,11 @@ window.GLOSSAIRE = {
   "d": "Systolique, diastolique et moyenne. La moyenne est le produit du débit cardiaque par les résistances périphériques.",
   "dom": "Cardio-respiratoire"
  },
+ "pamps": {
+  "t": "PAMPs — motifs moléculaires des pathogènes",
+  "d": "Structures propres aux microbes (LPS, ARN viral…) reconnues par les récepteurs de l'immunité innée, comme les TLR.",
+  "dom": "Physiopathologie"
+ },
  "pancreas": {
   "t": "Pancréas",
   "d": "Glande mixte derrière l'estomac : exocrine, elle verse enzymes et bicarbonates dans le duodénum ; endocrine, ses îlots sécrètent insuline et glucagon. L'insuffisance exocrine donne une stéatorrhée, la destruction endocrine un diabète.",
@@ -7072,9 +7237,19 @@ window.GLOSSAIRE = {
   "d": "Physical Component Summary et Mental Component Summary : les deux scores synthétiques du questionnaire de qualité de vie SF-36.",
   "dom": "Recherche"
  },
+ "pd_l1": {
+  "t": "PD-1, PD-L1 — point de contrôle immunitaire",
+  "d": "PD-L1, exprimé par certaines tumeurs, se fixe sur PD-1 des lymphocytes T et les freine ; les immunothérapies anti-PD-1 / anti-PD-L1 lèvent ce frein.",
+  "dom": "Physiopathologie"
+ },
  "pd_pk": {
   "t": "PD, PK — pharmacodynamie et pharmacocinétique",
   "d": "Ce que le médicament fait à l'organisme, et ce que l'organisme fait au médicament.",
+  "dom": "Pharmacologie"
+ },
+ "pde5": {
+  "t": "PDE5 — phosphodiestérase 5",
+  "d": "Enzyme qui dégrade le GMPc ; ses inhibiteurs (sildénafil) prolongent la vasodilatation : érection, hypertension artérielle pulmonaire.",
   "dom": "Pharmacologie"
  },
  "pdgf": {
@@ -7130,6 +7305,11 @@ window.GLOSSAIRE = {
  "pep": {
   "t": "PEP — pression expiratoire positive",
   "d": "Pression maintenue en fin d'expiration pour garder les alvéoles ouvertes.",
+  "dom": "Cardio-respiratoire"
+ },
+ "pep_oscillante": {
+  "t": "PEP oscillante, PEP linéaire",
+  "d": "Une résistance à l'expiration garde les bronches ouvertes. Linéaire, elle est constante (valve à seuil, orifice) ; oscillante, elle vibre (bille du Flutter, aimant de l'Acapella) et décolle le mucus.",
   "dom": "Cardio-respiratoire"
  },
  "percussion": {
@@ -7537,6 +7717,11 @@ window.GLOSSAIRE = {
   "d": "Position anatomique de référence, à partir de laquelle le goniomètre mesure toutes les amplitudes : méthode du zéro neutre.",
   "dom": "Musculo-squelettique"
  },
+ "positions_repos": {
+  "t": "Positions de repos (dyspnée)",
+  "d": "Positions qui soulagent l'essoufflement en libérant le diaphragme et en fixant les bras : assis penché en avant, avant-bras sur les cuisses (position du cocher), debout appuyé à un mur ou une table.",
+  "dom": "Cardio-respiratoire"
+ },
  "posologie": {
   "t": "Posologie",
   "d": "La dose, le rythme et la durée de prise d'un médicament.",
@@ -7570,6 +7755,11 @@ window.GLOSSAIRE = {
  "ppse": {
   "t": "PPSE — potentiel postsynaptique excitateur",
   "d": "Dépolarisation locale qui rapproche le neurone de son seuil de décharge.",
+  "dom": "Neurologie"
+ },
+ "ppse_ppsi": {
+  "t": "PPSE, PPSI — potentiels post-synaptiques",
+  "d": "Excitateur (EPSP, PPSE) : la membrane se dépolarise, le neurone se rapproche du seuil. Inhibiteur (IPSP, PPSI) : elle s'hyperpolarise, il s'en éloigne.",
   "dom": "Neurologie"
  },
  "ppsi": {
@@ -7932,6 +8122,16 @@ window.GLOSSAIRE = {
   "d": "Rheumatoid arthritis : arthrite inflammatoire chronique et symétrique des petites articulations.",
   "dom": "Musculo-squelettique"
  },
+ "raa_renine": {
+  "t": "RAA — système rénine-angiotensine-aldostérone",
+  "d": "Système hormonal qui retient le sel et l'eau et resserre les vaisseaux quand la pression ou la volémie baissent : le rein libère la rénine, qui aboutit à l'angiotensine II et à l'aldostérone.",
+  "dom": "Physiologie"
+ },
+ "raa_rhumatisme": {
+  "t": "RAA — rhumatisme articulaire aigu",
+  "d": "Complication d'une angine à streptocoque A : polyarthrite fébrile et atteinte des valves cardiaques. Les ASLO le confirment.",
+  "dom": "Physiopathologie"
+ },
  "rachis": {
   "t": "Rachis",
   "d": "La colonne vertébrale : 7 cervicales, 12 thoraciques, 5 lombaires, le sacrum et le coccyx. Elle protège la moelle, porte la tête et transmet les charges au bassin.",
@@ -7976,6 +8176,11 @@ window.GLOSSAIRE = {
   "t": "Nœuds de Ranvier",
   "d": "Les interruptions de la gaine de myéline. Le potentiel d'action y saute de l'un à l'autre : c'est la conduction saltatoire.",
   "dom": "Neurologie"
+ },
+ "ras_myc": {
+  "t": "RAS, MYC — proto-oncogènes",
+  "d": "Gènes qui poussent la cellule à se diviser ; mutés ou amplifiés, ils deviennent des oncogènes et entretiennent la prolifération tumorale.",
+  "dom": "Physiopathologie"
  },
  "rass": {
   "t": "RASS — Richmond Agitation-Sedation Scale",
@@ -8056,6 +8261,11 @@ window.GLOSSAIRE = {
   "t": "Période réfractaire",
   "d": "Intervalle qui suit un potentiel d'action, pendant lequel la fibre ne peut pas — ou difficilement — en produire un autre.",
   "dom": "Physiologie"
+ },
+ "rehabilitation_resp": {
+  "t": "Réhabilitation respiratoire",
+  "d": "Programme de plusieurs semaines pour le patient respiratoire chronique : réentraînement à l'effort, renforcement, éducation, kiné respiratoire. Elle améliore la dyspnée et la qualité de vie.",
+  "dom": "Cardio-respiratoire"
  },
  "rem": {
   "t": "REM — sommeil paradoxal",
@@ -8152,6 +8362,11 @@ window.GLOSSAIRE = {
   "d": "Cancer né du muscle strié, surtout chez l'enfant.",
   "dom": "Physiopathologie"
  },
+ "rhinite": {
+  "t": "Rhinite",
+  "d": "Inflammation de la muqueuse du nez : nez bouché, écoulement, éternuements. Le nourrisson respire par le nez : on le désobstrue (lavage, DRR).",
+  "dom": "Physiopathologie"
+ },
  "ri_re": {
   "t": "RI, RE — rotations interne et externe",
   "d": "Les deux sens de rotation d'un segment autour de son axe longitudinal, notés dans tous les bilans articulaires.",
@@ -8232,6 +8447,11 @@ window.GLOSSAIRE = {
   "d": "Évalue la qualité de l'atteinte manuelle après AVC sur six composantes, cible posée à 1 cm puis à 30 cm.",
   "dom": "Neurologie"
  },
+ "rrn": {
+  "t": "RRN — bruits respiratoires normaux",
+  "d": "Le murmure vésiculaire sans bruit ajouté (ruídos respiratórios normais). Dans l'organigramme de Postiaux, il oriente vers une atteinte du contenant : un syndrome restrictif.",
+  "dom": "Cardio-respiratoire"
+ },
  "rs_sigle": {
   "t": "RS — réticulum sarcoplasmique",
   "d": "Réserve de calcium de la fibre musculaire. Sa libération déclenche la contraction.",
@@ -8267,6 +8487,11 @@ window.GLOSSAIRE = {
   "d": "Les articulations radio-ulnaires proximale et distale assurent pronation et supination.",
   "dom": "Anatomie"
  },
+ "rubp": {
+  "t": "RuBP — ribulose bisphosphate",
+  "d": "Molécule à cinq carbones qui accepte le CO₂ dans le cycle de Calvin, grâce à la RubisCO.",
+  "dom": "SVT"
+ },
  "ruffini": {
   "t": "Récepteurs cutanés",
   "d": "Meissner pour le toucher fin, Pacini pour la vibration, Merkel pour la pression, Ruffini pour l'étirement.",
@@ -8291,6 +8516,11 @@ window.GLOSSAIRE = {
   "t": "Rétroversion",
   "d": "Bascule d'un segment vers l'arrière, l'inverse de l'antéversion.",
   "dom": "Musculo-squelettique"
+ },
+ "s5q": {
+  "t": "S5Q — cinq questions standardisées",
+  "d": "En réanimation, cinq consignes simples (ouvrir les yeux, regarder, tirer la langue, hocher la tête, froncer les sourcils) : 5/5 = patient coopérant, condition pour coter la force au MRC.",
+  "dom": "Cardio-respiratoire"
  },
  "sa_amenorrhee": {
   "t": "SA — semaines d'aménorrhée",
@@ -8326,6 +8556,11 @@ window.GLOSSAIRE = {
   "t": "Sacrum",
   "d": "Os triangulaire issu de la fusion de cinq vertèbres, encastré entre les deux os iliaques. Il transmet le poids du tronc au bassin par les articulations sacro-iliaques.",
   "dom": "Anatomie"
+ },
+ "sad": {
+  "t": "SAD — dépression saisonnière",
+  "d": "Seasonal affective disorder : dépression qui revient chaque hiver, liée au manque de lumière et à la mélatonine ; on la traite par luminothérapie.",
+  "dom": "Psychologie"
  },
  "sadoul": {
   "t": "Sadoul — échelle de dyspnée",
@@ -8787,6 +9022,11 @@ window.GLOSSAIRE = {
   "d": "Branche du système autonome qui prépare à l'action : accélération cardiaque, bronchodilatation, mobilisation du glucose.",
   "dom": "Neurologie"
  },
+ "so_postiaux": {
+  "t": "SO I à IV — syndromes obstructifs (Postiaux)",
+  "d": "Classement de l'encombrement d'après l'auscultation. SO I : bruits de transmission, voies aériennes supérieures. SO II : crépitants basse fréquence, voies proximales. SO III : moyenne fréquence, voies distales. SO IV : haute fréquence, voies périphériques. Les sibilants forment un SO mixte.",
+  "dom": "Cardio-respiratoire"
+ },
  "soc": {
   "t": "SOC — sélection, optimisation, compensation",
   "d": "Modèle de Baltes : bien vieillir, c'est choisir ses objectifs, optimiser ses moyens et compenser ses pertes.",
@@ -8821,6 +9061,11 @@ window.GLOSSAIRE = {
   "t": "Test de Sorensen",
   "d": "Endurance des extenseurs du dos : en décubitus ventral, le tronc dans le vide au bord de la table, le patient tient l'horizontale le plus longtemps possible.",
   "dom": "Musculo-squelettique"
+ },
+ "sos_sphincter": {
+  "t": "SOS — sphincter œsophagien supérieur",
+  "d": "Muscle strié, volontaire, à l'entrée de l'œsophage ; il s'ouvre à la déglutition. Le SOI, en bas, est lisse.",
+  "dom": "Anatomie"
  },
  "soto-hall": {
   "t": "Test de Soto-Hall",
@@ -8906,6 +9151,11 @@ window.GLOSSAIRE = {
   "t": "Faisceau spinothalamique",
   "d": "La voie de la douleur et de la température. Elle croise dès la moelle, contrairement aux cordons postérieurs qui croisent dans le bulbe.",
   "dom": "Neurologie"
+ },
+ "spiro_incitative": {
+  "t": "Spirométrie incitative (inspirométrie)",
+  "d": "Appareil qui montre au patient le volume ou le débit qu'il inspire, pour l'encourager à des inspirations lentes et profondes : prévention des atélectasies, surtout après une chirurgie.",
+  "dom": "Cardio-respiratoire"
  },
  "spirometrie": {
   "t": "Spirométrie",
@@ -9010,6 +9260,11 @@ window.GLOSSAIRE = {
  "ssp": {
   "t": "SSP — trajectoires socio-économiques partagées",
   "d": "Scénarios du GIEC qui combinent hypothèses démographiques, économiques et politiques pour projeter le climat futur.",
+  "dom": "SVT"
+ },
+ "ssp_giec": {
+  "t": "SSP — scénarios du GIEC",
+  "d": "Shared Socioeconomic Pathways : SSP1-1.9 le plus sobre (environ +1,5 °C en 2100), SSP5-8.5 le plus émetteur (environ +4,4 °C).",
   "dom": "SVT"
  },
  "ssqol": {
@@ -9247,6 +9502,11 @@ window.GLOSSAIRE = {
   "d": "En densitométrie osseuse, l'écart à la densité d'un adulte jeune. Sous −2,5 écarts-types : ostéoporose.",
   "dom": "Musculo-squelettique"
  },
+ "t25fw": {
+  "t": "T25FW — Timed 25-Foot Walk",
+  "d": "Marche chronométrée sur 7,62 m, à vitesse rapide et sûre : mesure de la marche dans la sclérose en plaques.",
+  "dom": "Neurologie"
+ },
  "ta_tension": {
   "t": "TA — tension artérielle",
   "d": "Synonyme courant de pression artérielle (PA), notée systolique sur diastolique.",
@@ -9355,6 +9615,11 @@ window.GLOSSAIRE = {
  "tee": {
   "t": "TEE — technique d'expansion thoracique",
   "d": "Inspirations amples, parfois avec pause, pour recruter les territoires mal ventilés. Deuxième temps de l'ACBT.",
+  "dom": "Cardio-respiratoire"
+ },
+ "tef": {
+  "t": "TEF — technique d'expiration forcée",
+  "d": "Expirations forcées glotte ouverte (huffing), à haut volume pour les voies proximales : l'équivalent de l'AFE rapide.",
   "dom": "Cardio-respiratoire"
  },
  "tendinopathie": {
@@ -9617,6 +9882,16 @@ window.GLOSSAIRE = {
   "d": "Le kiné ou un appareil remplace les abdominaux défaillants : poussée manuelle sur l'abdomen ou le thorax au moment de la toux, ou insufflation-exsufflation mécanique.",
   "dom": "Cardio-respiratoire"
  },
+ "toux_dirigee": {
+  "t": "Toux dirigée",
+  "d": "Toux volontaire commandée par le kiné — inspiration, courte pause, toux — pour expulser les sécrétions proximales sans s'épuiser.",
+  "dom": "Cardio-respiratoire"
+ },
+ "toux_provoquee": {
+  "t": "Toux provoquée",
+  "d": "Chez le nourrisson qui ne tousse pas sur demande, une brève pression du pouce sur la trachée, au-dessus du sternum, déclenche une toux réflexe qui expulse les sécrétions remontées.",
+  "dom": "Cardio-respiratoire"
+ },
  "toxicite": {
   "t": "Toxicité",
   "d": "Capacité d'une substance à nuire. Elle dépend de la dose : la marge entre dose efficace et dose toxique s'appelle l'index thérapeutique.",
@@ -9637,10 +9912,25 @@ window.GLOSSAIRE = {
   "d": "Inflammation de la trachée : toux sèche et douleur rétrosternale.",
   "dom": "Cardio-respiratoire"
  },
+ "transaminases": {
+  "t": "ALAT, ASAT — transaminases",
+  "d": "Enzymes du foie (et du muscle pour l'ASAT) ; leur hausse dans le sang signe une cytolyse hépatique.",
+  "dom": "Physiopathologie"
+ },
  "transduction": {
   "t": "Transduction sensorielle",
   "d": "La conversion d'un stimulus physique — pression, lumière, chaleur — en message électrique nerveux.",
   "dom": "Physiologie"
+ },
+ "transfert_australien": {
+  "t": "Transfert australien",
+  "d": "Deux porteurs de même taille, face au trajet, appuient l'épaule contre le gril costal du patient, sous l'aisselle mais sans appuyer dans le creux, et se tiennent sous ses cuisses : le patient est assis sur leurs bras. Pour les longs trajets, les escaliers, remonter dans le lit.",
+  "dom": "Démarche clinique"
+ },
+ "transfert_drap": {
+  "t": "Transfert au drap",
+  "d": "Quatre porteurs déplacent le patient entre deux lits parallèles en tirant le drap roulé serré : deux à la tête et au tronc, deux au bassin et aux jambes.",
+  "dom": "Démarche clinique"
  },
  "transgenese": {
   "t": "Transgenèse",
@@ -9976,6 +10266,11 @@ window.GLOSSAIRE = {
   "t": "Varus",
   "d": "Déviation d'un segment vers l'intérieur — genoux qui s'écartent, en O.",
   "dom": "Musculo-squelettique"
+ },
+ "vas_voies": {
+  "t": "VAS — voies aériennes supérieures",
+  "d": "Nez, cavités nasales, pharynx et larynx, au-dessus de la trachée. Leur encombrement donne des bruits de transmission (SO I) : on mouche, on fait renifler, DRR chez le nourrisson.",
+  "dom": "Cardio-respiratoire"
  },
  "vascularise": {
   "t": "Vascularisation",
