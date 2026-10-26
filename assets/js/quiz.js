@@ -144,7 +144,7 @@
         });
         return {
           n: i + 1, stem: q.q, opts: melanger(opts), why: q.e || "",
-          multi: bonnes.length > 1, nbBonnes: bonnes.length
+          multi: bonnes.length > 1
         };
       });
 
@@ -224,10 +224,10 @@
         var bloc = el("div", "q");
         bloc.appendChild(el("div", "num", "QUESTION " + q.n));
         bloc.appendChild(el("div", "stem", q.stem));
-        if (q.multi) {
-          bloc.appendChild(el("div", "multi-hint",
-            "Plusieurs réponses attendues — " + q.nbBonnes + " propositions à cocher."));
-        }
+        /* on dit s'il y a une ou plusieurs réponses, jamais combien :
+           c'est à l'étudiant de trouver lesquelles cocher */
+        bloc.appendChild(el("div", q.multi ? "multi-hint" : "multi-hint seule",
+          q.multi ? "Plusieurs réponses possibles" : "Une seule réponse"));
 
         var lignes = [];
         var etat = { q: q, lignes: lignes, choix: null, repondu: false, juste: false, bloc: bloc };

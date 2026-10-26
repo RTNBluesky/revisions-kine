@@ -88,7 +88,8 @@
       var i = tirer();
       enCours = i;
       var q = questions[i];
-      var multiple = Object.prototype.toString.call(q.r) === '[object Array]';
+      var liste = Object.prototype.toString.call(q.r) === '[object Array]';
+      var multiple = liste && q.r.length > 1;
 
       zone.innerHTML = '';
       var carte = el('div', 'q infini-q');
@@ -103,10 +104,9 @@
       stem.innerHTML = q.q;
       carte.appendChild(stem);
 
-      if (multiple) {
-        var aide = el('div', 'multi-hint', 'Plusieurs bonnes réponses');
-        carte.appendChild(aide);
-      }
+      /* une ou plusieurs réponses, jamais combien */
+      carte.appendChild(el('div', multiple ? 'multi-hint' : 'multi-hint seule',
+                           multiple ? 'Plusieurs réponses possibles' : 'Une seule réponse'));
 
       /* on mélange aussi les propositions : la place de la bonne réponse
          ne doit pas devenir un indice */
@@ -142,7 +142,7 @@
 
       function corriger() {
         if (corrige) return;                         /* une seule correction par question */
-        var bonnes = multiple ? q.r.slice() : [q.r];
+        var bonnes = liste ? q.r.slice() : [q.r];
         var choisis = cases.filter(function (c) { return c.inp.checked; })
                            .map(function (c) { return c.k; });
         if (!choisis.length) return;                 /* rien coché : on attend */
