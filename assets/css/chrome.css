@@ -336,6 +336,9 @@ nav.topnav, .topbar, nav.fiche-nav { display: none; }
 }
 .infini-fiche:hover { text-decoration: underline; }
 .infini-actions { margin-top: 18px; }
+/* fin d'un tour : toutes les questions de la matière ont été posées */
+.infini-fin-tour .infini-fin-titre { margin: 8px 0 4px; font-size: 1.08rem; font-weight: 700; color: var(--ink, #e8eaf0); }
+.infini-fin-tour .actions { margin-top: 18px; }
 .infini-chargement, .infini-vide, .quiz-vide { color: var(--muted, #9aa3b8); padding: 26px 0; }
 
 /* répartition par cours, dans le bilan */

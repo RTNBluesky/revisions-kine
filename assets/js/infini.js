@@ -10,6 +10,10 @@
    autres n'ont pas été posées : on mélange le paquet, on le distribue,
    puis on le remélange. C'est ce que fait un jeu de cartes, et c'est
    la seule façon de ne pas retomber trois fois de suite sur la même.
+
+   Quand le paquet est vide, toutes les questions de la matière ont été
+   posées : on le dit à l'élève (score du tour) et on lui propose de
+   continuer pour un nouveau tour ou de s'arrêter sur le bilan.
    ------------------------------------------------------------------ */
 
 (function () {
@@ -53,6 +57,8 @@
 
     var paquet = [];              /* indices restant à poser dans le tour en cours */
     var posees = 0, justes = 0;
+    var tour = 1, poseesTour = 0, justesTour = 0, toursFinis = 0;
+    var total = questions.length;
     var serie = 0, meilleure = 0;
     var ratees = [];              /* { i, choisi } */
     var parSource = {};           /* statistiques par cours d'origine */
@@ -67,7 +73,7 @@
       var pct = posees ? Math.round(justes / posees * 100) : 0;
       compteur.innerHTML = '';
       compteur.appendChild(el('span', 'infini-stat',
-        posees + (posees > 1 ? ' questions' : ' question')));
+        (tour > 1 ? 'tour ' + tour + ' · ' : '') + poseesTour + ' / ' + total));
       compteur.appendChild(el('span', 'infini-stat', justes + ' juste' + (justes > 1 ? 's' : '')));
       if (posees) compteur.appendChild(el('span', 'infini-stat', pct + ' %'));
       if (serie > 1) compteur.appendChild(el('span', 'infini-stat infini-serie', 'série de ' + serie));
@@ -95,7 +101,7 @@
       var carte = el('div', 'q infini-q');
 
       var tete = el('div', 'infini-tete');
-      tete.appendChild(el('span', 'num', 'Question ' + (posees + 1)));
+      tete.appendChild(el('span', 'num', 'Question ' + (poseesTour + 1) + ' / ' + total));
       var src = sources[q.s];
       if (src) tete.appendChild(el('span', 'infini-source', src.t));
       carte.appendChild(tete);
@@ -157,8 +163,8 @@
           else if (c.inp.checked) c.lab.classList.add('wrong');
         });
 
-        posees++;
-        if (gagne) { justes++; serie++; if (serie > meilleure) meilleure = serie; }
+        posees++; poseesTour++;
+        if (gagne) { justes++; justesTour++; serie++; if (serie > meilleure) meilleure = serie; }
         else { serie = 0; ratees.push({ i: i, choisi: choisis.slice() }); }
 
         var cle = String(q.s);
@@ -181,14 +187,14 @@
           carte.insertBefore(lien, actions);
         }
 
-        valider.textContent = 'Question suivante →';
+        valider.textContent = paquet.length ? 'Question suivante →' : 'Terminer le tour →';
         valider.classList.add('ready');
         majCompteur();
       }
 
       /* un seul bouton pour les deux temps : on corrige, puis on enchaîne */
       valider.addEventListener('click', function () {
-        if (corrige) { poser(); amener(zone); return; }
+        if (corrige) { if (paquet.length) poser(); else finTour(); amener(zone); return; }
         corriger();
       });
       if (!multiple) {
@@ -201,6 +207,39 @@
       majCompteur();
     }
 
+    /* toutes les questions de la matière ont été posées une fois */
+    function finTour() {
+      toursFinis++;
+      zone.innerHTML = '';
+      var pct = poseesTour ? Math.round(justesTour / poseesTour * 100) : 0;
+      var box = el('div', 'score infini-fin-tour ' + (pct >= 70 ? 'good' : pct >= 50 ? '' : 'bad'));
+      box.setAttribute('role', 'status');
+      box.appendChild(el('div', 'score-mode', 'Quiz infini — ' + banque.titre));
+      box.appendChild(el('p', 'infini-fin-titre',
+        (tour > 1 ? 'Tour ' + tour + ' terminé : ' : 'Fin des questions : ') +
+        'tu as vu les ' + total + ' questions de la matière.'));
+      box.appendChild(el('div', 'big', justesTour + ' / ' + poseesTour + '  (' + pct + ' %)'));
+      box.appendChild(el('p', 'msg', 'Tu veux continuer pour un nouveau tour, ou t’arrêter ici ? ' +
+        'Au tour suivant, les mêmes questions reviennent dans un autre ordre.'));
+      var act = el('div', 'actions');
+      var cont = el('button', 'btn quiz', 'Continuer : nouveau tour');
+      cont.type = 'button';
+      cont.addEventListener('click', function () {
+        tour++; poseesTour = 0; justesTour = 0;
+        poser(); amener(zone);
+      });
+      act.appendChild(cont);
+      var fin = el('button', 'btn ghost', 'M’arrêter et voir le bilan');
+      fin.type = 'button';
+      fin.addEventListener('click', bilan);
+      act.appendChild(fin);
+      box.appendChild(act);
+      zone.appendChild(box);
+      if (compteur) compteur.innerHTML = '';
+      amener(box);
+      try { cont.focus({ preventScroll: true }); } catch (e) { /* vieux navigateurs */ }
+    }
+
     function bilan() {
       zone.innerHTML = '';
       var pct = posees ? Math.round(justes / posees * 100) : 0;
@@ -210,7 +249,9 @@
       box.appendChild(el('div', 'big', justes + ' / ' + posees + '  (' + pct + ' %)'));
       box.appendChild(el('p', 'msg', posees
         ? 'Meilleure série : ' + meilleure + ' bonne' + (meilleure > 1 ? 's' : '') +
-          ' réponse' + (meilleure > 1 ? 's' : '') + ' d’affilée.'
+          ' réponse' + (meilleure > 1 ? 's' : '') + ' d’affilée.' +
+          (toursFinis ? ' Tour' + (toursFinis > 1 ? 's' : '') + ' complet' + (toursFinis > 1 ? 's' : '') +
+            ' : ' + toursFinis + ' (' + total + ' questions chacun).' : '')
         : 'Aucune question posée.'));
 
       /* répartition par cours */
