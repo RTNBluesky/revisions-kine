@@ -273,6 +273,7 @@ main { flex: 1; }
 .year-card.year-4 { --year-accent: var(--accent, #ff6b9d); }
 /* Annexes — indigo, pour les distinguer d'un coup d'œil des années de kiné */
 .year-card.bac,
+.year-card.annales,
 .year-card.glossaire { --year-accent: var(--accent, #ff6b9d); }
 
 /* Divider title */
@@ -484,7 +485,7 @@ footer {
             <div class="ed-line"></div>
             <div>
               <div class="ed-label">Annexes</div>
-              <div class="ed-sub">Préparation Bac · Outils</div>
+              <div class="ed-sub">Annales · Préparation Bac · Outils</div>
             </div>
             <div class="ed-line"></div>
           </div>
@@ -516,6 +517,34 @@ footer {
                 <span class="year-cta">Ouvrir →</span>
               </div>
             </a>
+            <!-- carte annales -->
+            <a href="annales/accueil-annales.html" class="year-card annales">
+              <div class="year-card-head">
+                <div class="year-badge" style="font-size:24px;">📄</div>
+                <div class="year-card-titles">
+                  <div class="year-eyebrow">K1 à K4 · selon le plan d'études</div>
+                  <div class="year-title">Annales des partiels</div>
+                </div>
+              </div>
+              <div class="desc">
+                <strong>Les sujets des années précédentes</strong>, rangés par année, semestre et matière, avec un corrigé proposé à déplier sous chaque question. Schémas compressés, chargés seulement si on les ouvre.
+              </div>
+              <div class="stats">
+                <div class="stat"><span class="num">33</span><span class="lbl">Matières</span></div>
+                <div class="stat"><span class="num">2 273</span><span class="lbl">Questions</span></div>
+                <div class="stat"><span class="num">2 245</span><span class="lbl">Corrigés</span></div>
+                <div class="stat"><span class="num">4</span><span class="lbl">Années</span></div>
+              </div>
+              <div class="foot">
+                <div class="year-tags">
+                  <span class="year-tag">Partiels</span>
+                  <span class="year-tag">Corrigés</span>
+                  <span class="year-tag">S1 · S2</span>
+                </div>
+                <span class="year-cta">Ouvrir →</span>
+              </div>
+            </a>
+            <!-- /carte annales -->
             <a href="glossaire.html" class="year-card glossaire">
               <div class="year-card-head">
                 <div class="year-badge" style="font-size:24px;">📖</div>
